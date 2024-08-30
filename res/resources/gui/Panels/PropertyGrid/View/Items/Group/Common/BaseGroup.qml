@@ -183,13 +183,11 @@ Item {
 
 		for (var i=0; i<childrenRepeater.count; ++i) {
 			var delegateItem = childrenRepeater.itemAt(i)
-			if (delegateItem && delegateItem.item)
-			{
+			if (delegateItem && delegateItem.item) {
 				if (delegateItem.isGroup()) {
 					var group = delegateItem.item
 					result = Math.max(result, group.getLabelsImplicitWidth())
-				}
-				else {
+				} else {
 					var propertyItem = delegateItem.item
 					if (propertyItem.label && propertyItem.label.enabled) {
 						var width = Settings.propertyLeftPadding
@@ -301,7 +299,7 @@ Item {
 			}
 
 			function getType() {
-				return itemModel ? itemModel[root.childTypeRole] : ""
+				return delegateRoot.itemModel ? delegateRoot.itemModel[root.childTypeRole] : ""
 			}
 
 			function isGroup() {

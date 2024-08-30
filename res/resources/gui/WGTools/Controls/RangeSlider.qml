@@ -8,6 +8,8 @@ T.RangeSlider {
 
 	property alias ticks: ticks
 	property alias labels: labels
+	property alias firstToolTip: firstToolTip
+	property alias secondToolTip: secondToolTip
 
 	implicitWidth: Math.max(
 		background ? background.implicitWidth : 0,
@@ -31,8 +33,8 @@ T.RangeSlider {
 	contentItem: Details.RangeSliderContent {}
 	background: Details.SliderBackground {}
 
-	Details.SliderToolTip {source: control.first; x: (parent.width * 3/4) - width/2}
-	Details.SliderToolTip {source: control.second; x: (parent.width * 1/4) - width/2}
+	Details.SliderToolTip {id: firstToolTip; source: control.first; x: (parent.width * 3/4) - width/2}
+	Details.SliderToolTip {id: secondToolTip; source: control.second; x: (parent.width * 1/4) - width/2}
 
 	Details.SliderScaleData {id: ticks}
 	Details.SliderLabelsData {id: labels}

@@ -12,15 +12,14 @@ Item {
 	property var value: 0
 	property var scale: null
 
-	Binding on x {
-		value: timeline.scale.fromValueToPixels(
-				slider.value)
-	}
-
 	width: 1
 	height: width
 
 	anchors.alignWhenCentered: false
+
+	Binding on x {
+		value: timeline.scale.fromValueToPixels(slider.value)
+	}
 
 	onXChanged: {
 		var val = Math.round(scale.fromPixelsToValue(x))
@@ -30,13 +29,11 @@ Item {
 
 	Connections {
 		target: timeline.scale
-		onScaleChanged: x = timeline.scale.fromValueToPixels(
-				value)
+		onScaleChanged: x = timeline.scale.fromValueToPixels(value)
 	}
 
 	Rectangle {
 		id: sliderFrame
-
 		antialiasing: true
 
 		height: sliderMA.drag.active 
@@ -60,7 +57,6 @@ Item {
 		Rectangle {
 			width: 1
 			height: 11
-
 			color: sliderFrame.activeFocus
 				? Settings.timelineSliderFocusedStrokeColor
 				: Settings.timelineSliderDefaultStrokeColor
@@ -86,12 +82,10 @@ Item {
 			drag.onActiveChanged: {
 				if (drag.active) {
 					sliderMA._waitingDrag = true
-				}
-				else if (sliderMA._waitingDrag) {
+				} else if (sliderMA._waitingDrag) {
 					sliderMA._waitingDrag = false
 					value = slider.scale.fromPixelsToValue(slider.x)
-					slider.valueModified(
-						value, true)
+					slider.valueModified(value, true)
 				}
 			}
 		}

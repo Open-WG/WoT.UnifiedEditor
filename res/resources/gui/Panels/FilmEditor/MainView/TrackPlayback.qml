@@ -28,6 +28,7 @@ Item {
 	property bool disabled: false
 
 	implicitHeight: Constants.timelineScaleHeight
+	clip: true
 
 	Rectangle {
 		z: 100
@@ -321,8 +322,6 @@ Item {
 			onScrollToTheEnd: lastFrameButton.clicked()
 			onPreviousKey: prevFrameButton.clicked()
 			onNextKey: nextFrameButton.clicked()
-			onZoomOut: sequenceTree.zoomShortcutActivated(-120)
-			onZoomIn: sequenceTree.zoomShortcutActivated(120)
 			onZoomSwitch: switchZoom(scale)
 		}
 	}

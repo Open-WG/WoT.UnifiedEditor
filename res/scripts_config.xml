@@ -5,24 +5,79 @@
 	grammar is solely defined by the personality script.
 -->
 <scripts_config.xml>
-	<!--
-		Current policy: defined in overrides.
-		Format:
-		<login>
-			<host>
-				<name> name of server </name>
-				<short_name> short name of server </short_name>
-				<url> address:port </url>
-				<url_token> alternative address:port </url_token> - optional
-				<public_key_path> path to public key </public_key_path> - optional
-				<game_area_id> ... </game_area_id> - optional
-				<periphery_id> ... </periphery_id> - optional
-			</host>
-			...
-		</login>
+	<login>
+		<host>
+			<name> wotgbbranch01 </name>
+			<url> by1-gb-01:25000 </url>
+		</host>
+		<host>
+			<name> wotart1308 </name>
+			<url> 10.128.8.66:25000</url>
+		</host>
+		<host>
+			<name>wotart1310</name>
+			<url>by1-wotart-14:61310</url>
+		</host>
+		<host>
+			<name>RnD_benchmark</name>
+			<url>10.128.13.65:25000</url>
+		</host>
+		<host>
+			<name>VideoTeam</name>
+			<url>10.128.13.201:25000 </url>
+		</host>
+		<host>
+			<name>LocalServer</name>
+			<url>192.168.50.50:5000 </url>
+		</host>
+		<host>
+			<name> LD_1306 </name>
+			<url> by1-wotart-02:25000 </url>
+		</host>
+		<host>
+			<name> LD_3004 </name>
+			<url> by1-wotart-04:63004 </url>
+		</host>
+		<host>
+			<name> qamaps1 </name>
+			<short_name> qamaps1 </short_name>
+			<url> by1-wotqa-maps1:25001 </url>
+		</host>
+		<host>
+			<name> qamaps2 </name>
+			<short_name> qamaps2 </short_name>
+			<url> qamaps2.wgdp.iv:25001 </url>
+		</host>
+		<host>
+			<name> qamaps3 </name>
+			<short_name> qamaps3</short_name>
+			<url> by1-wotqa-maps3:25001 </url>
+		</host>
+		<host>
+			<name> qamaps4 </name>
+			<short_name> qamaps4 </short_name>
+			<url> by1-wotqa-maps4:25001 </url>
+		</host>
+		<host>
+			<name> qamaps5 </name>
+			<short_name> qamaps5 </short_name>
+			<url> by1-wotqa-maps5:25000 </url>
+		</host>
+		<host>
+			<name> wotqacc1 </name>
+			<short_name> index </short_name>
+			<url> wotqacc1.wgdp.iv:25000 </url>
+		</host>
+		<host>
+			<name> CertainAffinity </name>
+			<url> by1-wotca-02.corp.wargaming.local:25000 </url>
+		</host>
+		<host>
+			<name> Bongfish_wotdd02 </name>
+			<url> 10.128.13.242:25000 </url>
+		</host>
+	</login>
 
-		<csisUrl> url to Cluster Status Information System. </csisUrl>
-	-->
 	<updateUrl> http://game.worldoftanks.ru/update </updateUrl>
 	<silhouetteColors>
 		<common>

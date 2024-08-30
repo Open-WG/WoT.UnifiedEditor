@@ -1837,21 +1837,15 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 0.401547 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_002_Light.model </resource>
 		<transform>
-			<row0> -0.723923 -0.026530 -0.689365 </row0>
-			<row1> -0.036622 0.999327 -0.000001 </row1>
-			<row2> 0.688903 0.025246 -0.724410 </row2>
-			<row3> 28.416225 6.571468 90.190582 </row3>
+			<row0> -0.724339 0.005893 -0.689412 </row0>
+			<row1> 0.015000 0.999858 -0.007213 </row1>
+			<row2> 0.689274 -0.015566 -0.724328 </row2>
+			<row3> 28.416195 6.571460 90.190559 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -1859,6 +1853,7 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 63 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>
@@ -5428,48 +5423,6 @@
 			<row1> -0.005353 0.261419 0.015057 </row1>
 			<row2> -0.003527 0.014986 -0.261453 </row2>
 			<row3> 5.100878 6.185868 93.360573 </row3>
-		</transform>
-		<castsShadow> true </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<serverId> 246 </serverId>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
-		<transform>
-			<row0> -0.261885 0.000351 0.003167 </row0>
-			<row1> 0.000350 0.261907 -0.000000 </row1>
-			<row2> -0.003166 0.000005 -0.261887 </row2>
-			<row3> 3.044918 214.452805 97.552521 </row3>
-		</transform>
-		<castsShadow> true </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<serverId> 247 </serverId>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
-		<transform>
-			<row0> -0.128253 0.000172 0.228353 </row0>
-			<row1> 0.000350 0.261906 0.000001 </row1>
-			<row2> -0.228352 0.000305 -0.128254 </row2>
-			<row3> 3.592163 214.452164 98.059402 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>

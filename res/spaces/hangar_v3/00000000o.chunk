@@ -1229,10 +1229,10 @@
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_T-44.model </resource>
 		<transform>
-			<row0> -0.459331 -0.028849 0.887778 </row0>
-			<row1> 0.004560 0.999362 0.034834 </row1>
-			<row2> -0.888234 0.020049 -0.458915 </row2>
-			<row3> 29.215776 6.529279 11.303450 </row3>
+			<row0> -0.459076 0.001555 0.888376 </row0>
+			<row1> 0.004308 0.999969 0.000475 </row1>
+			<row2> -0.888366 0.004046 -0.459077 </row2>
+			<row3> 29.215033 6.494493 11.302812 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -1735,10 +1735,10 @@
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_037_Canisters_02.model </resource>
 		<transform>
-			<row0> 0.983664 0.000000 -0.179899 </row0>
-			<row1> 0.000000 0.999978 0.000000 </row1>
-			<row2> 0.179899 0.000000 0.983664 </row2>
-			<row3> 16.486677 6.379586 7.029891 </row3>
+			<row0> 0.983354 -0.031679 -0.178801 </row0>
+			<row1> 0.032210 0.999459 0.000066 </row1>
+			<row2> 0.178706 -0.005824 0.983864 </row2>
+			<row3> 16.488607 6.337987 7.029853 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -2915,21 +2915,15 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.027225 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_005_Repairkit_01.model </resource>
 		<transform>
-			<row0> -0.344898 0.000000 -0.938613 </row0>
-			<row1> 0.000000 0.999977 0.000000 </row1>
-			<row2> 0.938613 0.000000 -0.344898 </row2>
-			<row3> 25.763119 6.595333 13.439321 </row3>
+			<row0> -0.343555 0.024438 -0.938787 </row0>
+			<row1> 0.059061 0.998221 0.004372 </row1>
+			<row2> 0.937246 -0.053945 -0.344395 </row2>
+			<row3> 25.762350 6.555480 13.439256 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -2937,6 +2931,7 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 80 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>
@@ -4701,21 +4696,15 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 0.008258 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_005_Repairkit_03.model </resource>
 		<transform>
-			<row0> 0.832123 0.000000 0.554570 </row0>
-			<row1> 0.000000 0.999992 0.000000 </row1>
-			<row2> -0.554570 0.000000 0.832123 </row2>
-			<row3> 27.622293 6.618225 14.662864 </row3>
+			<row0> 0.832075 -0.010656 0.554538 </row0>
+			<row1> 0.008867 0.999935 0.005910 </row1>
+			<row2> -0.554569 -0.000000 0.832122 </row2>
+			<row3> 27.622252 6.490921 14.662836 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -4723,6 +4712,7 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 158 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>

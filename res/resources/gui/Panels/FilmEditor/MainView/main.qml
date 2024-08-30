@@ -3,51 +3,40 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0
 
 import WGTools.ControlsEx 1.0 as ControlsEx
-import "../../SequenceTimeline"
-
+import Panels.SequenceTimeline 1.0
 
 ControlsEx.Panel {
 	id: root
+
+	property var rootContext: context
+
 	title: "Filmmaker"
 	layoutHint: "center"
 
-	property var rootContext : context
+	ColumnLayout {
+		width: parent.width
+		height: parent.height
+		spacing: 0
 
-	ReplayTimeline {
-		id: replayTimeline
-		anchors.left: root.left
-		anchors.right: root.right
-		height: 100
+		ReplayTimeline {
+			context: rootContext.replayTimelineContext
 
-		context : rootContext.replayTimelineContext
+			Layout.fillWidth: true
+			Layout.preferredHeight: 100
+		}
+
+		TrackTimeline {
+			context: rootContext.filmtrackTimelineContext
+
+			Layout.fillWidth: true
+			Layout.fillHeight: true
+		}
 	}
 
-	TrackTimeline {
-		id: trackTimeline
-
-		anchors.top: replayTimeline.bottom
-		anchors.bottom: root.bottom
-		anchors.left: root.left
-		anchors.right: root.right
-
-		context : rootContext.filmtrackTimelineContext
-	}
-
-	MouseArea {
-		id: splitter
-
-		width: 20
-		x: drag.minimumX
-		cursorShape: Qt.SizeHorCursor
-		hoverEnabled: true
-		preventStealing: true
-
-		anchors.top: replayTimeline.top
-		anchors.bottom: parent.bottom
-
-		drag.target: splitter
-		drag.axis: Drag.XAxis
-		drag.minimumX: trackTimeline.minSplitterPos
-		drag.maximumX: Math.max(0, root.width - width)
+	Splitter {
+		id: timelineSplitter
+		height: parent.height
+		minPosition: Constants.minTreeViewWidth
+		maxPosition: Math.max(0, parent.width - width)
 	}
 }

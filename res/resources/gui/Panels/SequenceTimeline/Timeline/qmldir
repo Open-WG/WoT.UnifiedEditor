@@ -1,0 +1,14 @@
+module Panels.SequenceTimeline.Timeline
+
+EmptySequencePanel            1.0 EmptySequencePanel.qml
+SelectionFrame                1.0 SelectionFrame.qml
+TimelineFooter                1.0 TimelineFooter.qml
+TimelineItemLoader            1.0 TimelineItemLoader.qml
+TimelineGlobalCommentsLines   1.0 GlobalComments/Lines/TimelineGlobalCommentsLines.qml
+TimelineGlobalCommentsMarkers 1.0 GlobalComments/Markers/TimelineGlobalCommentsMarkers.qml
+TimelineNavigationArea        1.0 TimelineNavigationArea.qml
+TimelineCursor                1.0 Cursors/TimelineCursor.qml
+TimelineInsertionArea         1.0 Cursors/TimelineInsertionArea.qml
+TimelineScale                 1.0 Scale/TimelineScale.qml
+TimelineStrokes               1.0 TimelineStrokes.qml
+TimelineTracksView            1.0 TimelineTracksView.qml

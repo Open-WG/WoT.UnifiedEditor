@@ -270,6 +270,7 @@
 			<Creator> class draganddrop::itemcreatordecal </Creator>
 			<Creator> class draganddrop::itemcreatortank </Creator>
 			<Creator> class draganddrop::itemcreatorprefab </Creator>
+			<Creator> class draganddrop::itemcreatorsequence </Creator>
 		</Factory>
 		<Filter>
 			<Water>
@@ -375,7 +376,7 @@
 				<assetFileExtesion> xml </assetFileExtesion>
 			</ImpassableZone>
 			<AnimationSequence>
-				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<factoryName> class draganddrop::itemcreatorsequence </factoryName>
 				<assetFilePath/>
 				<assetFileName/>
 				<assetFileExtesion> seq </assetFileExtesion>

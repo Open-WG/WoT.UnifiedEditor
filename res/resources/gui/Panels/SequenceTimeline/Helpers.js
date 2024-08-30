@@ -11,7 +11,7 @@ function focusSequence(timelineContext) {
 	}
 
 	if (endSeconds == 0)
-		endSeconds = 20
+		endSeconds = 30
 		
 	var end = timelineContext.timelineController.fromSecondsToFrames(endSeconds)
 
@@ -27,11 +27,15 @@ function overlap(x1, y1, w1, h1, x2, y2, w2, h2) {
 		&& (Math.abs(cy1 - cy2) * 2 < (h1 + h2))
 }
 
-function selectKeys(selModel, box, repeater, view, selectionHelper) {
+function selectKeys(box, repeater, view, selectionHelper) {
 	var selectionChanged = false
 
 	for (var i = 0; i < repeater.count; ++i) {
 		var item = repeater.itemAt(i)
+
+		if (item.hasOwnProperty("item")) {
+			item = item.item
+		}
 
 		if (!item.visible)
 			continue
@@ -39,9 +43,7 @@ function selectKeys(selModel, box, repeater, view, selectionHelper) {
 		var center = Qt.point(item.x, item.y)
 		center = repeater.mapToItem(view, center.x, center.y)
 
-		if (overlap(box.x, box.y, box.width, box.height,
-				center.x, center.y, 
-				item.realWidth, item.realHeight)) {
+		if (overlap(box.x, box.y, box.width, box.height, center.x, center.y, item.realWidth, item.realHeight)) {
 			selectionHelper.push(item.modelIndex)
 			selectionChanged = true;
 		}

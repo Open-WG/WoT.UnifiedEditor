@@ -30,6 +30,13 @@
 			<item label="Random killer Dog Tag" action="from avatar_helpers.dog_tags_helpers import DogTagsHelpers; DogTagsHelpers.showRandomKillerDogTag()"/>
 		</item>
 	</item>
+
+	<item label="Battle Notifier">
+			<item label="ShowWin" action="$battle_notifier.showWin()"/>
+			<item label="ShowDraw" action="$battle_notifier.showDraw()"/>
+			<item label="ShowLose" action="$battle_notifier.showLose()"/>
+			<item label="ShowQueuing" action="$battle_notifier.createQueue()"/>
+	</item>
 	
 	<item label="Shortcuts">
 		<item label="In battle (CAPSLOCK+)...">

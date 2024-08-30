@@ -3,7 +3,7 @@ import QtQuick.Controls 2.3
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
-import "..//Constants.js" as Constants
+import Panels.SequenceTimeline 1.0
 import "..//Backgrounds"
 
 Button {
@@ -18,7 +18,6 @@ Button {
 	// hasHoveredState helps to fix the bug with ColorOverlay::getColor() 
 	// it returns wrong color for a button without hovered state
 	property var hasHoveredState: true
-	property var textColor: Constants.defaultButtonTextColor
 
 	hoverEnabled: true
 	focusPolicy: Qt.NoFocus
@@ -74,7 +73,7 @@ Button {
 			visible: root.text != ""
 
 			text: !visible ? "" : root.text
-			color: root.enabled ? textColor : Constants.defaultButtonDisabledTextColor
+			color: root.enabled ? _palette.color1 : _palette.color3
 
 			font.pixelSize: 12
 			font.family: Constants.proximaRg

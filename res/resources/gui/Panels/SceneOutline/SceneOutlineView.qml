@@ -233,9 +233,21 @@ Views.TreeView {
 				width: parent.width
 				height: parent.height
 				visible: styleData.value != undefined
-				sourceComponent: columnModel != undefined && columnModel.type != undefined && columnModel.type == "bool"
-					? checkBoxDelegate
-					: textDelegate
+				sourceComponent: {
+					if (columnModel == undefined) {
+						return textDelegate
+					}
+					switch (columnModel.type) {
+						case 'bool':
+							return checkBoxDelegate
+						case 'Vector2':
+						case 'Vector3':
+						case 'Vector4':
+						    return vectorDelegate
+						default:
+							return textDelegate
+					}
+				}
 
 				Loader {
 					width: parent.width
@@ -253,9 +265,31 @@ Views.TreeView {
 				}
 
 				Component {
+					id: vectorDelegate
+					Misc.Text {
+						text: {
+							if (styleData.value != undefined) {
+								var result = []
+								for (var prop in styleData.value) {
+									result.push(Math.round(styleData.value[prop] * 1000) / 1000)
+								}
+								return result.join(", ")
+							}
+							else {
+								return ""
+							}
+							
+						}
+						elide: Text.ElideRight
+						verticalAlignment: Text.AlignVCenter
+						padding: 10
+					}
+				}
+
+				Component {
 					id: textDelegate
 					Misc.Text {
-						text: styleData.value != undefined ? styleData.value : ""
+						text: styleData.value != undefined ? styleData.value.toString() : ""
 						elide: Text.ElideRight
 						verticalAlignment: Text.AlignVCenter
 						padding: 10

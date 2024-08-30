@@ -1,455 +1,267 @@
-import QtQuick 2.7
-import QtQml.Models 2.2
-import QtQuick.Controls 2.0
-import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.0
-
-import QtQuick.Window 2.2
-import QtQuick.Controls 1.4 as Controls14
-
+import QtQuick 2.11
+import QtQuick.Controls 2.4
+import QtQuick.Layouts 1.4
+import QtQml.Models 2.11
 import WGTools.AnimSequences 1.0 as Sequences
-import WGTools.Utils.QMLCursor 1.0 as QMLCursor
-import WGTools.Debug 1.0
-
+import Panels.SequenceTimeline.Tree 1.0
+import Panels.SequenceTimeline.Timeline 1.0
+import Panels.SequenceTimeline.CurveEditor 1.0
 import "Constants.js" as Constants
-import "Menus"
-import "Buttons"
 
 FocusScope {
 	id: rootSequenceTree
 
-	signal moveKey(var index, real newStartTime)
-	signal zoomShortcutActivated(real delta)
-	signal zoomToTimeCursorShortcutActivated(real delta)
-
-	property real treeColumnWidth: 0
-	property real spacing: 0
-
 	readonly property alias adapter: modelAdapter
 	property alias model: modelAdapter.model
-	property alias timelineViewID: timelineView
+
+	property alias timelineViewID: timelineForeground // TODO: delete
+	property alias curvesView: curvesView
+	property alias curveActions: curveActions
 
 	property var rootContext: null
 	property var selectionModel: null
-	property var timelineController: null
 	property var containerTopZValue: 0
 
-	property Component rowDelegate
+	property bool draggingEnabled: false
+	property bool selectionDraggable: false
+	property var draggingItem: null
 
 	implicitHeight: 300
+	clip: true
 
-	function isExpanded(index) { return modelAdapter.isExpanded(styleData.index) }
-
-	function expand(index) { modelAdapter.expand(index) }
-
-	function collapse(index) { modelAdapter.collapse(index) }
-
-	Sequences.SequenceModelAdapter {
-		id: modelAdapter
+	function expand(index) {
+		modelAdapter.expand(index)
 	}
 
-	Rectangle {
-		color: _palette.color8
-		anchors.fill: parent
+	function collapse(index) {
+		modelAdapter.collapse(index)
 	}
 
-	BB{c: "green"; visible: Constants.gDebugMode }
+	function isExpanded(index){
+		return modelAdapter.isExpanded(styleData.index)
+	}
 
-	Column {
-		id: rowsLayout
-		width: parent.width
-		spacing: columnsLayout.spacing
-		y: -flickable.contentY
+	function zoom(delta) {
+		var pos = context.timelineController.fromSecondsToScale(context.sequenceModel.sequenceDuration / 2)
+		zoomTo(delta, pos)
+	}
 
-		Repeater {
-			id: rowsRepeater
-			model: ListModel { id: rowsModel }
-			delegate: Loader {
-				width: parent.width
-				height: model.item.height
-				sourceComponent: rootSequenceTree.rowDelegate
+	function zoomToCursor(delta) {
+		var pos = timelineCursor.getPosition()
+		zoomTo(delta, pos)
+	}
 
-				// per each delegate in repeater
-				property QtObject styleData: QtObject {
-					readonly property bool alternative: index % 2
-					property bool rowSelected: false
-				}
-			}
+	function zoomTo(delta, position) {
+		context.timelineController.zoom(delta, position)
+	}
+
+	Connections {
+		target: context.timelineActionManager
+		onAddKeyToSelection: context.sequenceModel.addKeyToSelection(context.selectionModel.selection)
+		onZoomIn: rootSequenceTree.zoom(120)
+		onZoomOut: rootSequenceTree.zoom(-120)
+		onZoomInToTimeCursor: rootSequenceTree.zoomToCursor(120)
+		onZoomOutFromTimeCursor: rootSequenceTree.zoomToCursor(-120)
+	}
+
+	signal updateHeihgts()
+
+	Connections {
+		target: treeView.repeater
+		onCountChanged: Qt.callLater(function() {rootSequenceTree.updateHeihgts()})
+	}
+
+	Connections {
+        target: context
+        enabled: !context.curveMode
+        onCurveModeChanged: Qt.callLater(function() {rootSequenceTree.updateHeihgts()})
+    }
+
+	Connections {
+		target: rootSequenceTree.selectionModel
+		ignoreUnknownSignals: false
+		enabled: draggingEnabled
+		onSelectionChanged: {
+			selectionDraggable = context.isSelectionDraggable()
 		}
 	}
 
-	TimelineView {
-		id: timelineView
-		scaleController: rootSequenceTree.timelineController
-		model: rootSequenceTree.timelineController 
-			? rootSequenceTree.timelineController.scaleModel
-			: null
-		context: rootContext
-
-		anchors.fill: parent
-		anchors.leftMargin: rootSequenceTree.treeColumnWidth + rootSequenceTree.spacing
+	CurveActions {
+		id: curveActions
+		sequenceModel: rootSequenceTree.model
+		selectionModel: rootSequenceTree.selectionModel
 	}
 
 	Flickable {
 		id: flickable
-
-		enabled: rootContext ? rootContext.sequenceOpened && rootContext.modelSelected : false
-
+		width: parent.width
+		height: parent.height
 		contentWidth: width
-		contentHeight: columnsLayout.height
-		focus: true
-		interactive: true
+		contentHeight: treeView.height
 		flickableDirection: Flickable.VerticalFlick
 		maximumFlickVelocity: 400
+		interactive: true
+		enabled: context.sequenceOpened && context.modelSelected
+		focus: true
+		clip: true
 
-		anchors.fill: parent
-		anchors.leftMargin: rootSequenceTree.spacing
+		ScrollBar.vertical: ScrollBar {}
+		Sequences.SequenceModelAdapter { id: modelAdapter }
 
-		function resetSelectionBox() {
-			selectionBox.width = 0
-			selectionBox.height = 0
-			selectionBox.x = 0
-			selectionBox.y = 0
-		}
+		RowLayout {
+			width: flickable.width
+			height: Math.max(flickable.contentHeight, flickable.height)
+			spacing: timelineSplitter.width
 
-		function getCursorPos() {
-			if (rootContext.playbackController)
-				return Math.round(rootContext.timelineController.fromSecondsToScale(
-					rootContext.playbackController.sample))
-
-			return 0
-		}
-
-		ScrollBar.vertical: ScrollBar { 
-			id: flickableScrollBar
-		}
-
-		MouseArea {
-			id: treeMA
-
-			property var _moving: false
-			property real _initialY: 0
-			property real _prevClickY: 0
-
-			acceptedButtons: Qt.LeftButton | Qt.MiddleButton
-
-			propagateComposedEvents: true
-			hoverEnabled: true
-			preventStealing: true
-
-			anchors.left: parent.left
-			anchors.right: flickableMA.left
-
-			y: flickable.contentY
-			z: _moving ? 1000 : 0
-
-			height: flickable.height
-
-			onPressed: {
-				_moving = true
-
-				_initialY = _prevClickY = mouse.y
-
-				cursorShape = Qt.ClosedHandCursor
-			}
-
-			onReleased: {
-				_prevClickY = 0
-
-				cursorShape = Qt.ArrowCursor
-
-				flickable.flick(0.0, 10.0)
-
-				_moving = false
-			}
-
-			onPositionChanged: {
-				if (_moving) {
-					var deltaY = mouse.y - _prevClickY
-					_prevClickY = mouse.y
-
-					flickable.contentY -= deltaY
-				}
-			}
-
-			onWheel: {
-				if (wheel.modifiers == Qt.ControlModifier)
-					timelineView.scaleController.zoom(wheel.angleDelta.y, wheel.x)
-				else if (wheel.modifiers == Qt.AltModifier)
-					timelineView.scaleController.zoom(wheel.angleDelta.x, flickable.getCursorPos())
-				else 
-					wheel.accepted = false
-			}
-		}
-
-		MouseArea {
-			id: flickableMA
-
-			property bool moving: false
-			property real prevClickX: 0
-			property real prevClickY: 0
-			property real initialX: 0
-			property real initialY: 0
-
-			z: moving ? 1000 : 0
-			y: flickable.contentY
-			height: flickable.height
-			width: timelineView.width
-			anchors.right: parent.right
-			
-			acceptedButtons: Qt.LeftButton | Qt.MidButton
-			propagateComposedEvents: true
-			hoverEnabled: true
-			preventStealing: true
-
-			onWheel: {
-				if (wheel.modifiers == Qt.ControlModifier)
-					timelineView.scaleController.zoom(wheel.angleDelta.y, wheel.x)
-				else if (wheel.modifiers == Qt.AltModifier)
-					timelineView.scaleController.zoom(wheel.angleDelta.x, flickable.getCursorPos())
-				else 
-					wheel.accepted = false
-			}
-
-			Connections {
-				target: rootSequenceTree
-				onZoomShortcutActivated: {
-					var pos = rootContext.timelineController.fromSecondsToScale(
-						rootContext.sequenceModel.sequenceDuration / 2)
-
-					timelineView.scaleController.zoom(delta, pos)
-				}
-				onZoomToTimeCursorShortcutActivated: {
-					timelineView.scaleController.zoom(delta, flickable.getCursorPos())
-				}
-			}
-
-			Sequences.SelectionHelper {
-				id: selectionHelper
-				model: rootSequenceTree.selectionModel
-			}
-
-			onClicked: { forceActiveFocus() }
-
-			onPressed: {
-				moving = true
-				flickable.resetSelectionBox()
-
-				initialX = prevClickX = mouse.x
-				initialY = prevClickY = mouse.y
-
-				if (mouse.button == Qt.MidButton)
-					cursorShape = Qt.ClosedHandCursor
-				else
-					selectionBox.visible = true
-
-				mouse.accepted = true
-			}
-
-			onReleased: {
-				if (mouse.button == Qt.MidButton) {
-					prevClickX = 0
-					prevClickY = 0
-
-					cursorShape = Qt.ArrowCursor
-
-					flickable.flick(0.0, 10.0)
-				}
-
-				moving = false
-				if (!(mouse.modifiers & Qt.ControlModifier))
-					rootSequenceTree.selectionModel.clearSelection()
-				
-				selectionBox.visible = false
-				for (var i = 0; i < leavesRepeater.count; ++i)
-					leavesRepeater.itemAt(i).selectItems(selectionModel, selectionBox, selectionHelper)
-
-				selectionHelper.flush(ItemSelectionModel.Select)
-			}
-
-			onPositionChanged: {
-				if (moving) {
-					if (mouse.buttons & Qt.MidButton) {
-						cursorShape = Qt.ClosedHandCursor
-
-						var deltaX = mouse.x - prevClickX
-						prevClickX = mouse.x
-
-						timelineView.scaleController.move(deltaX)
-
-						var deltaY = mouse.y - prevClickY
-						prevClickY = mouse.y
-
-						flickable.contentY -= deltaY
-					}
-					else if (mouse.buttons & Qt.LeftButton) {
-						var mx = mouse.x
-						var my = mouse.y
-
-						if (mx > flickableMA.width)
-							mx = flickableMA.width
-						else if (mx < 0)
-							mx = 0
-
-						if (my > flickableMA.height)
-							my = flickableMA.height
-						else if (my < 0)
-							my = 0
-
-						var newWidth = mx - initialX
-						var newHeight = my - initialY
-
-						selectionBox.width = newWidth
-						selectionBox.height = newHeight
-
-						if (newWidth > 0) {
-							selectionBox.width = newWidth
-							selectionBox.x = initialX
-						}
-						else {
-							selectionBox.width = -newWidth
-							selectionBox.x = initialX + newWidth
-						}
-
-						if (newHeight > 0) {
-							selectionBox.height = newHeight
-							selectionBox.y = initialY
-						}
-						else {
-							selectionBox.height = -newHeight
-							selectionBox.y = initialY + newHeight
-						}
-					}
-				}
-			}
-		}
-
-		Column {
-			id: columnsLayout
-			objectName: "sequenceTreeItems"
-			width: parent.width
-			spacing: 0
-
-			Repeater {
-				id: leavesRepeater
-
-				onItemAdded: {
-					if (item.visible){
-						rowsModel.insert(index, {"item": item})
-						
-						if(context.selectionModel.hasSelection) {
-							var modelIndex = delegateModel.modelIndex(index)
-							var parInd = modelAdapter.getRealParentModIndex(modelIndex);
-
-							if (context.selectionModel.isSelected(parInd))
-								rowsRepeater.itemAt(index).styleData.rowSelected = true
-						}
-					}
-				}
-
-				onItemRemoved: {
-					if (item.visible)
-						rowsModel.remove(index)
-				}
-
-				model: DelegateModel {
-					id: delegateModel
-
-					model: modelAdapter
-
-					delegate: SequenceTreeDelegate {
-						treeColumnWidth: rootSequenceTree.treeColumnWidth
-						sourceModelAdapter: modelAdapter
-						thisDelegateModel: delegateModel
-						selectionModel: rootSequenceTree.selectionModel
-						viewOwner : flickable
-					}
-				}
-			}
-
-			//Fake item to correct scrolling over the Add Sequence Object Button
+			/******************************************************************
+			 * tree
+			 */
 			Item {
-				height: Constants.seqTreeItemHeight
-				width: 1
+				Layout.preferredWidth: timelineSplitter.x
+				Layout.fillHeight: true
+				
+				TreeNavigationArea {
+					width: parent.width; height: parent.height
+					y: flickable.contentY
+					z: moving ? 1000 : 0
+
+					onMoved: flickable.contentY = Math.max(0, flickable.contentY - delta)
+					onMovingFinished: flickable.flick(0.0, 10.0)
+					onZoomed: {
+						if (toCursor)
+							rootSequenceTree.zoomToCursor(delta)
+						else
+							rootSequenceTree.zoomTo(delta, -mouseX)
+					}
+				}
+				
+				TreeView {
+					id: treeView
+					width: parent.width
+					sourceModelAdapter: modelAdapter
+					selectionModel: rootSequenceTree.selectionModel
+				}
+			}
+
+			/******************************************************************
+			 * timeline
+			 */
+			Item {
+				id: timeline
+
+				Layout.fillWidth: true
+				Layout.fillHeight: true
+
+				Item {
+					id: timelineBackground
+					width: parent.width; height: flickable.height
+					y: flickable.contentY
+
+					TimelineStrokes {
+						visible: context && context.sequenceOpened && context.modelSelected
+						model: context ? context.timelineController.scaleModel : null
+
+						anchors.fill: parent
+					}
+
+					TimelineNavigationArea {
+						id: timelineNavArea
+						parent: moving ? timelineForeground : timelineBackground
+						z: 1000
+
+						anchors.fill: parent
+
+						onMoved: {
+							context.timelineController.move(deltaX)
+							flickable.contentY = Math.max(0, flickable.contentY - deltaY)
+						}
+
+						onMovingFinished: {
+							flickable.flick(0.0, 10.0)
+						}
+
+						onZoomed: {
+							if (toCursor)
+								rootSequenceTree.zoomToCursor(delta)
+							else
+								rootSequenceTree.zoomTo(delta, mouseX)
+						}
+
+						onUpdateSelection: {
+							if (clearAndSelect && rootSequenceTree.selectionModel) {
+								rootSequenceTree.selectionModel.clearSelection()
+							}
+
+							if (context.curveMode) {
+								curvesView.select(selectionFrame, selectionHelper)
+							} else {
+								tracksView.select(selectionFrame, selectionHelper)
+							}
+
+							selectionHelper.flush(ItemSelectionModel.Select)
+						}
+
+						Sequences.SelectionHelper {
+							id: selectionHelper
+							model: rootSequenceTree.selectionModel
+						}
+					}
+				}
+
+				TimelineTracksView {
+					id: tracksView
+					sourceModelAdapter: visible ? modelAdapter : null
+					selectionModel: visible ? rootSequenceTree.selectionModel : null
+					visible: !context.curveMode
+
+					anchors.fill: parent
+				}
+
+				Item {
+					id: timelineForeground
+					width: parent.width; height: flickable.height
+					y: flickable.contentY
+					clip: true
+
+					CurveViewLoader {
+						id: curvesView
+						width: parent.width
+						sourceModelAdapter: visible ? modelAdapter : null
+						selectionModel: visible ? rootSequenceTree.selectionModel : null
+						foreground: parent
+						visible: context.curveMode && context.sequenceOpened
+
+						anchors.fill: parent
+					}
+
+					TimelineGlobalCommentsLines {
+						anchors.fill: parent
+					}
+
+					SelectionFrame {
+						id: selectionFrame
+						frameData: timelineNavArea.frameData
+					}
+
+					TimelineCursor {
+						id: timelineCursor
+						height: parent.height
+					}
+				}
 			}
 		}
 	}
 
 	Item {
-		id: selectionBoxArea
+		width: timeline.width
+		height: timeline.height
+		x: timeline.x
+		y: timeline.y
+		clip: true
 
-		anchors.fill: timelineView
-
-		SelectionBox {
-			id: selectionBox
-
-			visible: false
-		}
-
-		BB{c: "blue"; visible: Constants.gDebugMode}
-	}
-
-	TimelineButton {
-		id: addObjButton
-		objectName: "addObjButton"
-
-		anchors.bottom : parent.bottom
-		anchors.right: timelineView.left
-		anchors.left: parent.left
-		anchors.leftMargin: 9
-		anchors.rightMargin: anchors.leftMargin
-		anchors.bottomMargin: 5
-
-		padding: 4
-
-		enabled: context.sequenceOpened
-		visible: context.seqObjectFactory && context.seqObjectFactory.availableObjects
-			&& context.seqObjectFactory.availableObjects.hasItems
-
-		text: "Add Sequence Object"
-		iconImage: Constants.iconAddButton
-
-		onClicked: {
-			if (popup.visible)
-				popup.close()
-			else {
-				popup.open()
-			}
+		EmptySequencePanel {
+			anchors.centerIn: parent
 		}
 	}
 
-	AddSeqObjectPopup {
-		id: popup
-
-		width: addObjButton.width
-		x: addObjButton.x
-		y: height
-
-		model: context.seqObjectFactory && context.seqObjectFactory.availableObjects
-
-		Component.onCompleted: y = Qt.binding(function() { return addObjButton.y - popup.height })
-	}
-
-	Connections {
-		target: context.selectionModel
-		onSelectionChanged:{
-			var selectedRowIndexes = modelAdapter.selectionToFlatIntIndexes(selected)
-			var deselectedRowIndexes = modelAdapter.selectionToFlatIntIndexes(deselected)
-
-			for (var i=0; i < deselectedRowIndexes.length; i++)
-			{
-				rowsRepeater.itemAt(deselectedRowIndexes[i]).styleData.rowSelected = false
-			}
-			for (var i=0; i < selectedRowIndexes.length; i++)
-			{
-				rowsRepeater.itemAt(selectedRowIndexes[i]).styleData.rowSelected = true
-			}
-		}
-	}
-
-	Connections {
-		target: context.timelineActionManager
-		onDeleteItem: context.sequenceModel.deleteItems(context.selectionModel.selection)
-		onAddKeyToSelection: context.sequenceModel.addKeyToSelection(context.selectionModel.selection)
-	}
 }

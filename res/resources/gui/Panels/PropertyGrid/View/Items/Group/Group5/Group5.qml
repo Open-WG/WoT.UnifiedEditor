@@ -1,6 +1,7 @@
 import QtQuick 2.7
 import "../Common"
 import "../Group2"
+import "../Group6"
 import "../../../Settings.js" as Settings
 
 BaseGroup {
@@ -14,4 +15,6 @@ BaseGroup {
 		overridden: model ? model.node.overridden : false
 		actions: model ? model.node.actions : null
 	}
+
+	groupDelegate: Group6 {}
 }

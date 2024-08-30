@@ -310,18 +310,50 @@
 			<battleEndingSoonTime> 60 </battleEndingSoonTime>
 		</domination30x30>
 	</gameplayTypes>
-	<!--
 	<extraSoundRemapping>
+		<bootcamp>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>bootcamp.pck</name>
+					</bank>
+					<bank>
+						<name>bootcamp_gui.bnk</name>
+					</bank>
+					<bank>
+						<name>bootcamp_hangar.bnk</name>
+					</bank>
+					<bank>
+						<name>bootcamp_hangar_voiceover.bnk</name>
+					</bank>
+					<bank>
+						<name>bootcamp_voiceover.bnk</name>
+					</bank>
+					<bank>
+						<name>bootcamp_result_screen.bnk</name>
+					</bank>
+					<bank>
+						<name>bootcamp_video.pck</name>
+					</bank>
+					<bank>
+						<name>bootcamp_video.bnk</name>
+					</bank>
+				</loadBanks>
+			</soundRemapping>
+		</bootcamp>
+		<!--
 		<[game_mode_name]>
 			<soundRemapping>
 				<loadBanks>
-					<bank>	[name_1].bnk	</bank>
-					<bank>	[name_2].bnk	</bank>
-					<bank>	[name_n].bnk	</bank>
+					<bank>
+						<name>[name_load].bnk</name>
+						<priority>[0<N<100]</priority>
+					</bank>
 				</loadBanks>
 				<unloadBanks>
-					<bank>	[name_unload_1].bnk	</bank>
-					<bank>	[name_unload_n].bnk	</bank>
+					<bank>
+						<name>[name_unload].bnk</name>
+					</bank>
 				</unloadBanks>
 				<events>
 					<event>
@@ -331,6 +363,6 @@
 				</events>
 			</soundRemapping>
 		</[game_mode_name]>
+		-->
 	</extraSoundRemapping>
-	-->
 </root>

@@ -15,17 +15,21 @@ import "../../SequenceTimeline"
 import "../../SequenceTimeline/Buttons"
 
 Item{
-	id : root
-	property bool disabled : true
+	id: root
+
+	property bool disabled: true
+
+	implicitWidth: layout.implicitWidth
+	implicitHeight: layout.implicitHeight
 
 	RowLayout {
+		id: layout
 		spacing: 0
+
 		anchors.fill: parent
-		//anchors.rightMargin: -1
 
 		TimelineButton {
 			id: nextFrameButton1
-
 			enabled: root.disabled
 
 			Layout.fillHeight: true
@@ -94,5 +98,4 @@ Item{
 		border.color: "black"
 		border.width: 1
 	}
-
 }

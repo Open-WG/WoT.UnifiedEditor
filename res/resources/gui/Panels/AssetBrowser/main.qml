@@ -67,7 +67,7 @@ ControlsEx.Panel {
 
 	Loader {
 		id: paletteLoader
-		Shortcut {sequence: "Ctrl+P"; onActivated: paletteLoader.source = "../../WGTools/Debug/Palette.qml"}
+		Shortcut {sequence: "Ctrl+Shift+P"; onActivated: paletteLoader.source = "../../WGTools/Debug/Palette.qml"}
 		Connections {target: paletteLoader.item; onVisibleChanged: if (!paletteLoader.item.visible) paletteLoader.source = ""}
 	}
 	// ************************* debug

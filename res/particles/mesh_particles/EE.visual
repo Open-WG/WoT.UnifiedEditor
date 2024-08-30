@@ -16,29 +16,29 @@
 			<primitive> indices </primitive>
 			<primitiveGroup> 0
 				<material>
-					<identifier> Material #145 </identifier>
+					<identifier> Material #106 </identifier>
 					<fx> shaders/wg_particles/pbs_mesh_particles.fx </fx>
-					<property> diffuseMap
-						<Texture> particles/mesh_particles/tex/metal_am.dds </Texture>
-					</property>
 					<collisionFlags> 0 </collisionFlags>
 					<materialKind> 0 </materialKind>
-					<property> pbsMap
-						<Texture> particles/mesh_particles/tex/metal_gmm.dds </Texture>
+					<property> diffuseMap
+						<Texture> particles/mesh_particles/tex/stone_am.dds </Texture>
 					</property>
 					<property> g_lighting_params
-						<Vector4> 1.000000 0.000000 0.000000 1.000000 </Vector4>
+						<Vector4> 1.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> g_meshParticlesZWriteEnable
 						<Bool> true </Bool>
+					</property>
+					<property> pbsMap
+						<Texture> particles/mesh_particles/tex/stone_gmm.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min> -0.007071 -0.004353 -0.003536 </min>
-		<max> 0.007071 0.005647 0.003536 </max>
+		<min> -0.005000 -0.005000 -0.005000 </min>
+		<max> 0.005000 0.005000 0.005000 </max>
 	</boundingBox>
 	<metaData>
 		<settings>
@@ -46,8 +46,8 @@
 			<exportMode> 1 </exportMode>
 			<boneCount> 17 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
-			<allowScale> false </allowScale>
-			<bumpMapped> false </bumpMapped>
+			<allowScale> true </allowScale>
+			<bumpMapped> true </bumpMapped>
 			<keepExistingMaterials> true </keepExistingMaterials>
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
@@ -56,7 +56,7 @@
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
-			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
 			<useLegacyOrientation> false </useLegacyOrientation>
 			<sceneRootAdded> false </sceneRootAdded>
 			<recalculateTangents> false </recalculateTangents>

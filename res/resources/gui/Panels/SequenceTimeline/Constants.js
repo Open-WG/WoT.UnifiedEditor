@@ -68,12 +68,24 @@ var splitterColor = "black"
 
 //font
 var fontSize = 12
+var cursorFontSize = 9
 var proximaRg = "Proxima Nova Rg"
 var proximaBold = "Proxima Nova Th"
+var segoiUI = "Segoe UI"
 
 var seqContainerKeyResFontSize = 12;
 
+//opacity
+var trackBarOpacity = 0.3
+
 //sizes
+var rowHeight = 26
+var barHeight = 18
+var barRadius = 3
+
+var keySize = Math.sqrt(72)
+var keySelectedSize = Math.sqrt(289 / 2)
+
 var timelineScaleHeight = 26
 var timelineEventHeight = 26
 
@@ -83,17 +95,12 @@ var seqTreeIconWidth = 16
 var seqTreeIconHeight = 16
 var seqTreeIconFrameWidth = 26
 var seqTreeIconFrameHeight = 26
-var seqKeySize = Math.sqrt(81 / 2)
-var seqKeySelectedSize = Math.sqrt(289 / 2)
 var seqKeyConnectionHeight = 1
-var seqContainerKeyHeight = 24
 var seqContainerKeySelectedBorderWidth = 2
 var seqContainerKeySizerWidth = 5
 var seqObjSeparatorHeight = 3
 
-var addSeqObjectButtonHeight = 24
-var addSeqObjectButtonWidth = 252
-var addSeqObjectButtonRadius = 3
+var minTreeViewWidth = 252
 
 var addPopupTrackRadius = 3
 var addPopupTrackShadowRadius = 15
@@ -103,8 +110,11 @@ var playbackButtonMinWidth = 38
 var playbackIconWidth = 16
 var playbackIconHeight = 16
 
-var cursorWidth = 7
-var cursorHeight = 21
+var cursorRectangleBottomMargin = 6
+var cursorRectangleRadius = 4
+var cursorTextPadding = 20
+var cursorTriangleWidth = 7
+var cursorTriangleHeight = 7
 
 var dropArrowButtonWidth = 15
 var dropArrowButtonHeight = 14
@@ -123,6 +133,8 @@ var curveValueDisplayTopBotPadding = 4
 var addPopupTrackVOffset = 3
 var seqSaveLoadItemsMargin = 10
 
+var containerKeyTextMargin = 10
+
 var popupDefaultTopPadding = 5
 var popupDefaultBottomPadding = 5
 var popupDefaultLeftPadding = 1
@@ -133,7 +145,7 @@ var popupTextColor= "white"
 
 //icons
 var iconCollapseExpand = "image://gui/animation_sequence/collapse-expand"
-var iconRecordButton = "image://gui/animation_sequence/playback/record.svg"
+var iconRecordButton = "image://gui/animation_sequence/playback/record"
 var iconFirstFrameButton = "image://gui/animation_sequence/playback/first-keyframe"
 var iconPrevFrameButton = "image://gui/animation_sequence/playback/prev-frame"
 var iconPlayButton = "image://gui/animation_sequence/playback/play"
@@ -145,22 +157,28 @@ var iconAddButton = "image://gui/animation_sequence/add"
 var iconDropDownArrows = "image://gui/animation_sequence/dropdown-arrows"
 var iconSave = "image://gui/animation_sequence/save"
 var iconOpen = "image://gui/animation_sequence/open"
-
-var iconLightObj = "image://gui/animation_sequence/objects/light"
-var iconParticleObj = "image://gui/animation_sequence/objects/particle"
-var iconSoundObj = "image://gui/animation_sequence/objects/sound"
-var iconModelObj = "image://gui/animation_sequence/objects/root-model"
-var iconDynamicModelObj = "image://gui/animation_sequence/objects/dynamic-model"
+var iconNewSequence = "image://gui/animation_sequence/new-sequence"
 
 var iconVisibility = "image://gui/animation_sequence/tracks/visibility"
-var iconFocus = "image://gui/animation_sequence/focus"
+var iconFocus = "image://gui/animation_sequence/fit-to"
 var iconFeedback = "image://gui/animation_sequence/feedback"
 var iconCheckmark = "image://gui/animation_sequence/checkmark"
+var iconCurves =  "image://gui/animation_sequence/curves"
 var openedEye = "image://gui/model_asset/eye"
 var closedEye = "image://gui/model_asset/close_eye"
+var soundEnabled = "image://gui/animation_sequence/btn_sound"
+var soundDisabled = "image://gui/animation_sequence/btn_sound_off"
+var soloEnabled = "image://gui/animation_sequence/solo-on"
+var soloDisabled = "image://gui/animation_sequence/solo-off"
+
+var tangentBroken = "image://gui/animation_sequence/tangent/tangent-broken"
+var tangentFree = "image://gui/animation_sequence/tangent/tangent-free"
+var tangentLinear = "image://gui/animation_sequence/tangent/tangent-linear"
+var tangentSmooth = "image://gui/animation_sequence/tangent/tangent-smooth"
+var tangentStepped = "image://gui/animation_sequence/tangent/tangent-stepped"
 
 //images
-var imageCursor = "image://gui/animation_sequence/playback/cursor"
+var imageCursor = "image://gui/shapes/triangle"
 var noSequenceTransition = "image://gui/animation_sequence/transitions/no_sequence"
 
 //other

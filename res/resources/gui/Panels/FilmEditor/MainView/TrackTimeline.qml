@@ -1,122 +1,59 @@
 import QtQuick 2.11
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.0
-import QtQml 2.2
-import QtQml.Models 2.2
+import QtQuick.Layouts 1.4
+import Panels.SequenceTimeline 1.0
+import Panels.SequenceTimeline.Timeline 1.0
 
-import QtQuick.Controls 1.4
-import QtQuick.Window 2.2
-
-import "../../SequenceTimeline/Helpers.js" as Helpers
-import "../../SequenceTimeline/Constants.js" as Constants
-import "../../SequenceTimeline"
-
-
-Rectangle {
+Item {
 	id: root
 
 	property var context
-	property alias context: root.context
 
-	property alias mainWindow: root
-	property alias minSplitterPos: timelinePlayback.minWidth
-
-	property real separatorPos: splitter.x + Math.round(splitter.width / 2)
-	property real separatorWidth: 1
-
-	Binding {
-		target: context.timelineController
-		property: "controlSize"
-		value: Math.max(timelineScale.width, 0)
-	}
-
-	RowLayout {
-		id: playbackScaleLayout
-
-		spacing: root.separatorWidth
+	ColumnLayout {
+		id: layout
 		width: parent.width
+		height: parent.height
+		spacing: 0
 
-		TrackPlayback {
-			id: timelinePlayback
-
-			playbackController: context.playbackController
-			timelineController: context.timelineController
-			treeAdapter: sequenceTree.adapter
-			disabled: context.sequenceOpened
-
-			Layout.preferredWidth: root.separatorPos
-		}
-
-		TimelineScale {
-			id: timelineScale
-
-			model: context.timelineController.scaleModel
-			cursorEnabled: context.sequenceOpened
-
-			anchors.leftMargin: root.separatorWidth
-			clip: true
+		RowLayout {
+			id: playbackScaleLayout
+			spacing: timelineSplitter.width
 
 			Layout.fillWidth: true
-		}
-	}
 
+			TrackPlayback {
+				playbackController: context.playbackController
+				timelineController: context.timelineController
+				treeAdapter: sequenceTree.adapter
+				disabled: context.sequenceOpened
 
-	///////////////////////////////////////////////////////////////////
+				Layout.preferredWidth: timelineSplitter.x
+			}
 
-	SequenceTree {
-		id: sequenceTree
-		treeColumnWidth: root.separatorPos
-		spacing: root.separatorWidth
-		clip: true
+			TimelineScale {
+				id: timelineScale
+				model: context.timelineController.scaleModel
+				cursorEnabled: context.sequenceOpened
 
-		timelineController: context.timelineController
-		rootContext: context
-		model: context.sequenceModel
-		selectionModel: context.selectionModel
+				Layout.fillWidth: true
 
-		rowDelegate: Rectangle {
-			color: styleData.alternative ? Constants.seqTreeEvenItemColor : Constants.seqTreeOddItemColor
-		}
-
-		anchors {
-			bottom: parent.bottom
-			left: parent.left
-			right: parent.right
-			top: playbackScaleLayout.bottom
+				Binding {
+					target: context.timelineController
+					property: "controlSize"
+					value: Math.max(timelineScale.width, 0)
+				}
+			}
 		}
 
-		onMoveKey: {
-			context.sequenceModel.moveKey(index, newStartTime)
-		}
-	}
+		///////////////////////////////////////////////////////////////////
 
-	Rectangle {
-		id: splitterRect
+		SequenceTree {
+			id: sequenceTree
+			rootContext: context
+			model: context.sequenceModel
+			selectionModel: context.selectionModel
 
-		anchors.top : playbackScaleLayout.top
-		anchors.bottom: parent.bottom
-
-		x: root.separatorPos
-		width: root.separatorWidth
-		color: "black"
-	}
-
-	Item {
-		anchors.left: splitterRect.right
-		anchors.bottom: parent.bottom
-		anchors.right: parent.right
-		anchors.top: playbackScaleLayout.top
-
-		clip: true
-
-		TimelineCursorExt {
-			visible: context.sequenceOpened
-
-			timelineController: context.timelineController
-			playbackController: context.playbackController
-
-			anchors.top: parent.top
-			anchors.bottom: parent.bottom
+			Layout.fillWidth: true
+			Layout.fillHeight: true
 		}
 	}
 

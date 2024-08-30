@@ -6,6 +6,8 @@ BasicSliderContent {
 
 	Accessible.name: "Slider"
 
+	property alias sliderRange: sliderRange
+
 	__leftPadding: control.first.handle ? control.first.handle.width / 2 : 0
 	__rightPadding: control.second.handle ? control.second.handle.width / 2 : 0
 	__topPadding: control.first.handle ? control.first.handle.height / 2 : 0
@@ -29,6 +31,8 @@ BasicSliderContent {
 	}
 
 	SliderRange {
+		id: sliderRange
+
 		readonly property real __rangeSize: Math.abs(control.second.visualPosition - control.first.visualPosition)
 		readonly property real __rangePosition: Math.min(control.first.visualPosition, control.second.visualPosition)
 

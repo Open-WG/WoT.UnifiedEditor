@@ -1,13 +1,9 @@
 <root>
-	<version> 11 </version>
+	<version> 13 </version>
 	<property>
 		<label> Apply Overlay </label>
 		<value> Apply Overlay Checker.Apply Overlay </value>
 		<type> bool </type>
-	</property>
-	<property>
-		<value> Apply audio </value>
-		<type> Method </type>
 	</property>
 	<property>
 		<value> Artillery ID </value>
@@ -1124,16 +1120,6 @@
 				<name> Sky </name>
 				<children>
 					<property>
-						<label> Import Deferred Skydome </label>
-						<value> Sky.Import Deferred Skydome </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Import Forward Skydome </label>
-						<value> Sky.Import Forward Skydome </value>
-						<type> Method </type>
-					</property>
-					<property>
 						<label> Sky Lum Multiplier </label>
 						<value> Sky.Sky Lum Multiplier </value>
 						<type> float </type>
@@ -1406,11 +1392,6 @@
 				<type> int </type>
 			</property>
 			<property>
-				<label> Generate Cubemap </label>
-				<value> Generate cubemap (Deferred) </value>
-				<type> Method </type>
-			</property>
-			<property>
 				<value> Label text </value>
 				<type> string </type>
 			</property>
@@ -1599,11 +1580,6 @@
 				<value> Use color temperature </value>
 				<type> bool </type>
 			</property>
-			<property>
-				<label> new </label>
-				<value> addFrame </value>
-				<type> Method </type>
-			</property>
 			<group>
 				<name> Frames </name>
 				<children>
@@ -1615,11 +1591,6 @@
 								<value> Frames.0.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.0.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1629,11 +1600,6 @@
 								<label> frame </label>
 								<value> Frames.1.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.1.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1645,11 +1611,6 @@
 								<value> Frames.10.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.10.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1659,11 +1620,6 @@
 								<label> frame </label>
 								<value> Frames.11.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.11.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1675,11 +1631,6 @@
 								<value> Frames.12.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.12.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1689,11 +1640,6 @@
 								<label> frame </label>
 								<value> Frames.13.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.13.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1705,11 +1651,6 @@
 								<value> Frames.14.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.14.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1719,11 +1660,6 @@
 								<label> frame </label>
 								<value> Frames.15.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.15.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1735,11 +1671,6 @@
 								<value> Frames.16.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.16.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1749,11 +1680,6 @@
 								<label> frame </label>
 								<value> Frames.17.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.17.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1765,11 +1691,6 @@
 								<value> Frames.18.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.18.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1779,11 +1700,6 @@
 								<label> frame </label>
 								<value> Frames.19.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.19.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1795,11 +1711,6 @@
 								<value> Frames.2.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.2.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1809,11 +1720,6 @@
 								<label> frame </label>
 								<value> Frames.20.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.20.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1825,11 +1731,6 @@
 								<value> Frames.3.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.3.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1839,11 +1740,6 @@
 								<label> frame </label>
 								<value> Frames.4.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.4.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1855,11 +1751,6 @@
 								<value> Frames.5.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.5.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1869,11 +1760,6 @@
 								<label> frame </label>
 								<value> Frames.6.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.6.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1885,11 +1771,6 @@
 								<value> Frames.7.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.7.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1900,11 +1781,6 @@
 								<value> Frames.8.frame </value>
 								<type> Vector2 </type>
 							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.8.remove </value>
-								<type> Method </type>
-							</property>
 						</children>
 					</group>
 					<group>
@@ -1914,11 +1790,6 @@
 								<label> frame </label>
 								<value> Frames.9.frame </value>
 								<type> Vector2 </type>
-							</property>
-							<property>
-								<label> remove </label>
-								<value> Frames.9.remove </value>
-								<type> Method </type>
 							</property>
 						</children>
 					</group>
@@ -1940,10 +1811,6 @@
 			<property>
 				<value> Road Id </value>
 				<type> string </type>
-			</property>
-			<property>
-				<value> Split road after point: </value>
-				<type> Method </type>
 			</property>
 			<group>
 				<name> Road </name>
@@ -2058,11 +1925,6 @@
 						<value> Road.Texture NM </value>
 						<type> string </type>
 					</property>
-					<property>
-						<label> flipRoadHorizontally </label>
-						<value> Road.flipRoadHorizontally </value>
-						<type> Method </type>
-					</property>
 				</children>
 			</group>
 		</children>
@@ -2091,14 +1953,6 @@
 				<type> bool </type>
 			</property>
 			<property>
-				<value> Fit to space </value>
-				<type> Method </type>
-			</property>
-			<property>
-				<value> Generate Lighting </value>
-				<type> Method </type>
-			</property>
-			<property>
 				<value> Grid type </value>
 				<type> bool </type>
 			</property>
@@ -2109,10 +1963,6 @@
 			<property>
 				<value> Probe distance </value>
 				<type> float </type>
-			</property>
-			<property>
-				<value> Recalculate probe list </value>
-				<type> Method </type>
 			</property>
 			<property>
 				<value> Snap to walls </value>
@@ -2143,11 +1993,6 @@
 				<name> Atlases Settings </name>
 				<children>
 					<property>
-						<label> Apply </label>
-						<value> Atlases Settings.Apply </value>
-						<type> Method </type>
-					</property>
-					<property>
 						<label> Atlas Height </label>
 						<value> Atlases Settings.Atlas Height </value>
 						<type> unsigned_int </type>
@@ -2163,11 +2008,6 @@
 						<type> unsigned_int </type>
 					</property>
 					<property>
-						<label> Decals </label>
-						<value> Atlases Settings.Decals </value>
-						<type> Method </type>
-					</property>
-					<property>
 						<label> Display Atlas </label>
 						<value> Atlases Settings.Display Atlas </value>
 						<type> enum_BW__AtlasesController__DisplayType </type>
@@ -2177,21 +2017,6 @@
 			<group>
 				<name> Cube Map Generator </name>
 				<children>
-					<property>
-						<label> Generate </label>
-						<value> Cube Map Generator.Generate </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Generate All Probes </label>
-						<value> Cube Map Generator.Generate All Probes </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Generate Reflection Only </label>
-						<value> Cube Map Generator.Generate Reflection Only </value>
-						<type> Method </type>
-					</property>
 					<property>
 						<label> HDR Shot Resolution </label>
 						<value> Cube Map Generator.HDR Shot Resolution </value>
@@ -2248,11 +2073,6 @@
 				<name> Lighting Generator </name>
 				<children>
 					<property>
-						<label> Generate Lighting </label>
-						<value> Lighting Generator.Generate Lighting </value>
-						<type> Method </type>
-					</property>
-					<property>
 						<label> Ground Probes </label>
 						<value> Lighting Generator.Ground Probes </value>
 						<type> bool </type>
@@ -2278,11 +2098,6 @@
 						<type> string </type>
 					</property>
 					<property>
-						<label> Generate on Client </label>
-						<value> Lighting Generator (Developer Debugging).Generate on Client </value>
-						<type> Method </type>
-					</property>
-					<property>
 						<label> Ground Probes </label>
 						<value> Lighting Generator (Developer Debugging).Ground Probes </value>
 						<type> bool </type>
@@ -2291,11 +2106,6 @@
 						<label> SH Grid </label>
 						<value> Lighting Generator (Developer Debugging).SH Grid </value>
 						<type> bool </type>
-					</property>
-					<property>
-						<label> Save Manifest </label>
-						<value> Lighting Generator (Developer Debugging).Save Manifest </value>
-						<type> Method </type>
 					</property>
 					<property>
 						<label> Water Probes </label>
@@ -2368,7 +2178,7 @@
 					</property>
 					<property>
 						<label> Material type </label>
-						<value> General Settings.Material type </value>
+						<value> Material type </value>
 						<type> enum_BW__deferred_decal__Render__EMaterialType </type>
 					</property>
 					<property>
@@ -2448,20 +2258,8 @@
 				<type> enum_BW__Terrain__TerrainRenderer2__BlendMode </type>
 			</property>
 			<property>
-				<value> Calculate Forward Shadows </value>
-				<type> Method </type>
-			</property>
-			<property>
-				<value> Calculate Heights Range </value>
-				<type> Method </type>
-			</property>
-			<property>
 				<value> Capture additional height </value>
 				<type> float </type>
-			</property>
-			<property>
-				<value> Capture outland cubemaps </value>
-				<type> Method </type>
 			</property>
 			<property>
 				<value> Compression </value>
@@ -2474,14 +2272,6 @@
 			<property>
 				<value> Fix Range </value>
 				<type> float </type>
-			</property>
-			<property>
-				<value> Fix outland heights </value>
-				<type> Method </type>
-			</property>
-			<property>
-				<value> Generate </value>
-				<type> Method </type>
 			</property>
 			<property>
 				<value> Global LoD Factor </value>
@@ -2940,36 +2730,6 @@
 			<group>
 				<name> TerrainSettings </name>
 				<children>
-					<property>
-						<label> Recreate Outland </label>
-						<value> TerrainSettings.Recreate Outland </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Recreate Tile Atlas </label>
-						<value> TerrainSettings.Recreate Tile Atlas </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Recreate Tile Index Map(s) </label>
-						<value> TerrainSettings.Recreate Tile Index Map(s) </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> Update Mesh </label>
-						<value> TerrainSettings.Update Mesh </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> addCascade </label>
-						<value> TerrainSettings.addCascade </value>
-						<type> Method </type>
-					</property>
-					<property>
-						<label> addTile </label>
-						<value> TerrainSettings.addTile </value>
-						<type> Method </type>
-					</property>
 					<group>
 						<name> Cascades </name>
 						<children>
@@ -2995,11 +2755,6 @@
 										<label> Normal Map </label>
 										<value> TerrainSettings.Cascades.0.Normal Map </value>
 										<type> string </type>
-									</property>
-									<property>
-										<label> Remove cascade </label>
-										<value> TerrainSettings.Cascades.0.Remove cascade </value>
-										<type> Method </type>
 									</property>
 									<property>
 										<label> Tile Map </label>
@@ -3035,11 +2790,6 @@
 										<label> Normal Map </label>
 										<value> TerrainSettings.Cascades.1.Normal Map </value>
 										<type> string </type>
-									</property>
-									<property>
-										<label> Remove cascade </label>
-										<value> TerrainSettings.Cascades.1.Remove cascade </value>
-										<type> Method </type>
 									</property>
 									<property>
 										<label> Tile Map </label>
@@ -3110,10 +2860,6 @@
 			<property>
 				<value> Local offset </value>
 				<type> Vector3 </type>
-			</property>
-			<property>
-				<value> Remove audio </value>
-				<type> Method </type>
 			</property>
 		</children>
 	</group>
@@ -3294,10 +3040,6 @@
 			<property>
 				<value> Soft edge depth </value>
 				<type> float </type>
-			</property>
-			<property>
-				<value> Update </value>
-				<type> Method </type>
 			</property>
 			<property>
 				<value> Visualization color </value>

@@ -1,169 +1,110 @@
 import QtQuick 2.11
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.0
-import QtQml 2.2
-import QtQml.Models 2.2
-
-import QtQuick.Controls 1.4
-import QtQuick.Window 2.2
-
+import QtQuick.Layouts 1.4
 import WGTools.Styles.Text 1.0 as WGText
 import WGTools.Controls 2.0 as WGControls
+import Panels.SequenceTimeline 1.0
+import Panels.SequenceTimeline.Timeline 1.0
 
-import "../../SequenceTimeline/Helpers.js" as Helpers
-import "../../SequenceTimeline/Constants.js" as Constants
-import "../../SequenceTimeline"
-import "../../SequenceTimeline/Buttons"
-
-
-Rectangle {
+Item {
 	id: root
 
 	property var context
 
-	property alias mainWindow: root
+	implicitWidth: layout.implicitWidth
+	implicitHeight: layout.implicitHeight
 
-	property real separatorPos: splitter.x + Math.round(splitter.width / 2)
-	property real separatorWidth: 1
-
-	Binding {
-		target: context.timelineController
-		property: "controlSize"
-		value: Math.max(timelineScale.width, 0)
-	}
-
-	RowLayout {
-		id: playbackScaleLayout
-
-		spacing: root.separatorWidth
+	ColumnLayout {
+		id: layout
 		width: parent.width
+		height: parent.height
+		spacing: 0
 
-
-		ReplayPlayback{
-			Layout.preferredWidth: root.separatorPos
-			Layout.fillHeight: true
-		}
-
-		TimelineScale {
-			id: timelineScale
-
-			model: context.timelineController.scaleModel
-			cursorEnabled: context.sequenceOpened
-
-			anchors.leftMargin: root.separatorWidth
-			clip: true
+		RowLayout {
+			id: playbackScaleLayout
+			spacing: timelineSplitter.width
 
 			Layout.fillWidth: true
 
+			ReplayPlayback {
+				Layout.preferredWidth: timelineSplitter.x
+				Layout.fillHeight: true
+			}
 
-			Rectangle {
-				id: replayDuration
+			TimelineScale {
+				id: timelineScale
+				model: context.timelineController.scaleModel
+				cursorEnabled: true// context.sequenceOpened
 
-				width: getWidth()
-				anchors.top: parent.top
-				anchors.bottom: parent.bottom
-				anchors.margins: 1
+				Layout.fillWidth: true
 
-				x: context.timelineController.fromValueToPixels(0)
-
-				color: Qt.rgba(0, 1, 0, 0.2)
-
-				function getWidth() {
-					var replayLength = context.playbackController.replayLength;
-					var seqDuration = context.timelineController.fromSecondsToFrames(replayLength);
-					return context.timelineController.fromValueToPixels(seqDuration) - x;
+				Binding {
+					target: context.timelineController
+					property: "controlSize"
+					value: Math.max(timelineScale.width, 0)
 				}
 
-				Connections {
-					target: context.timelineController
-					ignoreUnknownSignals: true
-					onScaleChanged: {
-						replayDuration.x = context.timelineController.fromValueToPixels(0)
+				Rectangle {
+					id: replayDuration
+					width: getWidth()
+					color: Qt.rgba(0, 1, 0, 0.2)
+					x: context.timelineController.fromValueToPixels(0)
+
+					anchors.top: parent.top
+					anchors.bottom: parent.bottom
+					anchors.margins: 1
+
+					function getWidth() {
+						var replayLength = context.playbackController.replayLength;
+						var seqDuration = context.timelineController.fromSecondsToFrames(replayLength);
+						return context.timelineController.fromValueToPixels(seqDuration) - x;
+					}
+
+					Connections {
+						target: context.timelineController
+						ignoreUnknownSignals: true
+						onScaleChanged: {
+							replayDuration.x = context.timelineController.fromValueToPixels(0)
+						}
 					}
 				}
 			}
 		}
-	}
 
+		///////////////////////////////////////////////////////////////////
 
-	///////////////////////////////////////////////////////////////////
+		SequenceTree {
+			id: sequenceTree
+			rootContext: context
+			selectionModel: context.selectionModel
 
-	SequenceTree {
-		id: sequenceTree
-		treeColumnWidth: root.separatorPos
-		spacing: root.separatorWidth
-		clip: true
+			Layout.fillWidth: true
+			Layout.fillHeight: true
 
-		timelineController: context.timelineController
-		rootContext: context
-		//selectionModel: context.selectionModel
+			ColumnLayout {
+				width: timelineSplitter.x
+				height: parent.height
 
-		anchors {
-			bottom: parent.bottom
-			left: parent.left
-			right: parent.right
-			top: playbackScaleLayout.bottom
-		}
+				WGText.BaseRegular{
+					horizontalAlignment: Text.AlignHCenter
+					verticalAlignment: Text.AlignVCenter
+					text: context.replayName
 
-		ColumnLayout
-		{
-			width: root.separatorPos
-			height: parent.height
+					Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+					Layout.topMargin: 10
+					Layout.bottomMargin: 0
+				}
 
-			WGText.BaseRegular{
-				Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-				Layout.topMargin: 10
-				Layout.bottomMargin: 0
+				WGControls.Button {
+					text: "choose..."
+					enabled: context.canChangeReplay
 
-				horizontalAlignment: Text.AlignHCenter
-				verticalAlignment: Text.AlignVCenter
+					Layout.alignment: Qt.AlignHCenter
+					Layout.topMargin: 0
+					Layout.bottomMargin: 10
 
-				text: context.replayName
+					onClicked: context.chooseReplay()
+				}
 			}
-
-			WGControls.Button
-			{
-				Layout.alignment: Qt.AlignHCenter
-				Layout.topMargin: 0
-				Layout.bottomMargin: 10
-
-				text: "choose..."
-				enabled: context.canChangeReplay
-
-				onClicked: context.chooseReplay()
-			}
-
-		}
-	}
-
-	Rectangle {
-		id: splitterRect
-
-		anchors.top : playbackScaleLayout.top
-		anchors.bottom: parent.bottom
-
-		x: root.separatorPos
-		width: root.separatorWidth
-		color: "black"
-	}
-
-
-	Item {
-		anchors.left: splitterRect.right
-		anchors.bottom: parent.bottom
-		anchors.right: parent.right
-		anchors.top: playbackScaleLayout.top
-
-		clip: true
-
-		TimelineCursorExt {
-			visible: context.sequenceOpened
-
-			timelineController: context.timelineController
-			playbackController: context.playbackController
-
-			anchors.top: parent.top
-			anchors.bottom: parent.bottom
 		}
 	}
 
