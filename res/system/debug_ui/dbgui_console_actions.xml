@@ -4,6 +4,7 @@
 	<item label="Obtain vehicle" action="$obtainVehicle" input="true" format="('%s')"/>
 	<item label="Set hangar" action="$hangar.setPath">
 		<param> ('hangar_v3')	</param>
+		<param> ('hangar_v3_rts')	</param>
 	</item>
 	<item label="Add money" action="$p.stats.setMoney">
 		<param label="100000000">	(100000000,100000000,100000000,100000000)	</param>
@@ -31,13 +32,29 @@
 		</item>
 	</item>
 
+	<item label="Order of War - RTS">
+		<item label="Hangar">
+			<item label="Add 1x7 currency" action="$p.tokens.configureToken($p.serverSettings['rts_config']['metaEconomics']['currency1x7Token'], 10000, 3600 * 24 * 365)"/>
+			<item label="Add 1x1 currency" action="$p.tokens.configureToken($p.serverSettings['rts_config']['metaEconomics']['currency1x1Token'], 10000, 3600 * 24 * 365)"/>
+			<item label="Add item into collection" action="$p.tokens.configureToken('rts:meta:collection_item', 1, 3600 * 24 * 365)"/>
+			<item label="Complete collection" action="$p.tokens.configureToken('rts:meta:collection_item', 18, 3600 * 24 * 365)"/>
+
+			<item label="Set default 1x7 roster" action="$p.setAIRoster(39, {'vehicles': [7169, 15697, 3473, 13857, 64529, 19969, 15953], 'rtsManners': [2, 2, 2, 2, 2, 2, 2], 'supplies': [60817, 60305, 60049]})"/>
+			<item label="Set default 1x1 roster" action="$p.setAIRoster(40, {'vehicles': [7169, 15697, 3473, 19969, 64529, 19201, 15953], 'rtsManners': [2, 2, 2, 2, 2, 2, 2], 'supplies': [60817, 60561, 60049]})"/>
+
+			<!-- RTS Bootcamp -->
+			<item label="Run RTS Bootcamp" action="from helpers import dependency; from skeletons.gui.game_control import IRTSBattlesController; dependency.instance(IRTSBattlesController).runRTSBootcamp()"/>
+			<item label="Mark RTS Bootcamp Incomplete" action="from gui.rts_battles.rts_helpers import markRTSBootcampComplete; markRTSBootcampComplete(False)"/>
+		</item>
+	</item>
+
 	<item label="Battle Notifier">
 			<item label="ShowWin" action="$battle_notifier.showWin()"/>
 			<item label="ShowDraw" action="$battle_notifier.showDraw()"/>
 			<item label="ShowLose" action="$battle_notifier.showLose()"/>
 			<item label="ShowQueuing" action="$battle_notifier.createQueue()"/>
 	</item>
-	
+
 	<item label="Daily Quests">
 			<item label="Complete Quest" action="$p.stats.completeDailyQuest">
 				<param label="easy">("easy")</param>

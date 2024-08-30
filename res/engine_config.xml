@@ -122,6 +122,34 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<streamCacheSizeKB> 51200 </streamCacheSizeKB>
 		<!-- The size the animation cache will grow too before it
 		starts evicting data. (KByts) -->
+		<parallel> true </parallel>
+		<!-- Parallel sequences calculation. -->
+		<optimize> true </optimize>
+		<!-- Optimize sequences calculation. -->
+		<lod>
+			<distance> 8 </distance>
+			<!-- Switching distance. -->
+			<frames> 2 </frames>
+			<!-- Frames for update. -->
+		</lod>
+		<lod>
+			<distance> 20 </distance>
+			<frames> 3 </frames>
+		</lod>
+		<lod>
+			<distance> 50 </distance>
+			<frames> 4 </frames>
+		</lod>
+		<lod>
+			<distance> 125 </distance>
+			<frames> 5 </frames>
+		</lod>
+		<lod>
+			<distance> 312 </distance>
+			<frames> 6 </frames>
+		</lod>
+		<dynamicShadows> false </dynamicShadows>
+		<!-- Dynamic shadows by sequence items. -->
 	</animation>
 	<screenShot>
 		<!-- These are the defaults when taking a screenshot. -->
@@ -574,6 +602,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
+				<bank>
+					<name>r4_hangar.bnk</name>
+				</bank>
 				<bank>
 					<name> fort_area.bnk </name>
 				</bank>

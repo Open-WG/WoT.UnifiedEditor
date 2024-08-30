@@ -2023,7 +2023,7 @@
 		<model>
 			<modelName> vegetation/Broadleaves/DryTree_Autumn/DryTree_Autumn_01.srt </modelName>
 			<offset> 0.000000 5.000000 0.000000 </offset>
-			<wwsound> ambient_trees_yellow_dry_comb_small_01 </wwsound>
+			<wwsound> ambient_trees_yellow_soft_comb_mid_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/DryTree_Autumn/DryTree_Autumn_6m.srt </modelName>
@@ -2038,22 +2038,22 @@
 		<model>
 			<modelName> vegetation/Broadleaves/Maple_Autumn_Fallen/Maple_Autumn_Fallen_4-5m_dry.srt </modelName>
 			<offset> 0.000000 2.000000 0.000000 </offset>
-			<wwsound> ambient_trees_yellow_soft_comb_small_01 </wwsound>
+			<wwsound> ambient_trees_without_foliage_bush_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Maple_Autumn_Fallen/Maple_Autumn_Fallen_4m_dry.srt </modelName>
 			<offset> 0.000000 2.000000 0.000000 </offset>
-			<wwsound> ambient_trees_yellow_soft_comb_small_01 </wwsound>
+			<wwsound> ambient_trees_without_foliage_bush_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Maple_Autumn_Fallen/Maple_Autumn_Fallen_12m.srt </modelName>
 			<offset> 0.000000 4.000000 0.000000 </offset>
-			<wwsound> ambient_trees_yellow_dry_comb_big_01 </wwsound>
+			<wwsound> ambient_trees_yellow_soft_comb_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Maple_Autumn_Fallen/Maple_Autumn_Fallen_21m.srt </modelName>
 			<offset> 0.000000 5.000000 0.000000 </offset>
-			<wwsound> ambient_trees_yellow_dry_comb_big_02 </wwsound>
+			<wwsound> ambient_trees_yellow_soft_comb_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Shrubs/Bush_Wild_Autumn_Fallen/Bush_Wild_Autumn_Fallen_5m.srt </modelName>
@@ -2068,12 +2068,12 @@
 		<model>
 			<modelName> vegetation/Broadleaves/Shrubs/Hawthorn_Autumn_Fallen/Hawthorn_Autumn_Fallen_01.srt </modelName>
 			<offset> 0.000000 2.000000 0.000000 </offset>
-			<wwsound> ambient_trees_green_comb_small_01 </wwsound>
+			<wwsound> ambient_bush_yellow_dry_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Shrubs/Hawthorn_Autumn_Fallen/Hawthorn_Autumn_Fallen_05.srt </modelName>
 			<offset> 0.000000 1.500000 0.000000 </offset>
-			<wwsound> ambient_trees_green_comb_small_01 </wwsound>
+			<wwsound> ambient_bush_yellow_dry_big_01 </wwsound>
 		</model>
 		<model>
 			<modelName> vegetation/Broadleaves/Shrubs/Aucuba/Aucuba_5m.srt </modelName>
@@ -2144,6 +2144,16 @@
 			<modelName> vegetation/Broadleaves/DryTree_Frost_Light/DryTree_Frost_Light_Bush_var1.srt </modelName>
 			<offset> 0.000000 0.000000 0.000000 </offset>
 			<wwsound> ambient_bush_yellow_dry_small_01 </wwsound>
+		</model>
+		<model>
+			<modelName> content/Decor/hd_dec_UNI_015_Oilcloth/normal/lod0/hd_dec_UNI_015_Oilcloth_Damaged01_anim.model </modelName>
+			<offset> 0.000000 0.000000 0.000000 </offset>
+			<wwsound> amb_map_06_ensk_flag </wwsound>
+		</model>
+		<model>
+			<modelName> vegetation/Broadleaves/Maple/Maple_33m.srt </modelName>
+			<offset> 0.000000 25.000000 0.000000 </offset>
+			<wwsound> ambient_trees_green_comb_big_02 </wwsound>
 		</model>
 	</lightSounds>
 	<birds>

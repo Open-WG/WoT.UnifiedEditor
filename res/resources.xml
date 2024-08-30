@@ -16,7 +16,7 @@
 		<!-- Texture map to be used in place of missing textures -->
 		<blackBmp>	system/maps/col_black.dds		</blackBmp>
 		<!-- Black texture map -->
-		<whiteBmp>	system/maps/col_white.dds		</whiteBmp> 
+		<whiteBmp>	system/maps/col_white.dds		</whiteBmp>
 		<!-- White texture map -->
 		<defaultNorms>	system/maps/default_norms.dds		</defaultNorms>
 		<!-- Default flat normal map -->
@@ -44,9 +44,9 @@
 		<streamingConfigXML>	streaming_config.xml	</streamingConfigXML>
 		<!-- Global streaming settings -->
 
-		<consoleFonts>	
-			<!-- List of font files the console can use. The one that 
-			better matches the desired width will be used. The desired width 
+		<consoleFonts>
+			<!-- List of font files the console can use. The one that
+			better matches the desired width will be used. The desired width
 			is computed based on the display width and desired console width -->
 
 			<font>	system_tiny.font		</font>
@@ -56,9 +56,9 @@
 		</consoleFonts>
 
 		<loadingScreen>	system/maps/loading_screen.dds	</loadingScreen>
-		<!-- Points to image to be shown right after creating the 
-		display device, while the application is initialising and 
-		resources pre-loading. This is only used if loadingScreenGUI 
+		<!-- Points to image to be shown right after creating the
+		display device, while the application is initialising and
+		resources pre-loading. This is only used if loadingScreenGUI
 		is not defined or can't be found -->
 		<geometricsMaterial> system/materials/geometrics.mfm </geometricsMaterial>
 		<!-- Material to be used when rendering geometrics -->
@@ -71,7 +71,7 @@
 		<defaultShaderPath> shaders/std_effects/ </defaultShaderPath>
 		<!-- The default shader path for ModelEditor -->
 		<defaultMfmPath> materials/template_mfms </defaultMfmPath>
-		<!-- The default MFM path for ModelEditor -->		
+		<!-- The default MFM path for ModelEditor -->
 		<defaultLightsPath> helpers/lights </defaultLightsPath>
 		<!-- The default light path for ModelEditor -->
 		<terrain2> system/data/terrain2.xml </terrain2>
@@ -124,7 +124,7 @@
 		<!-- Points to the XML describing ecotypes -->
 		<skyXML>		system/data/sky.xml			</skyXML>
 		<!-- Points to the xml containing data for the sky light map (cloud
-		shadowing)-->		
+		shadowing)-->
 		<splodgeMaterial>	system/materials/splodge.mfm	</splodgeMaterial>
 		<!-- Splodge shadow material -->
 		<floraMaterial>	system/materials/flora.mfm	</floraMaterial>
@@ -138,7 +138,7 @@
 		<skyDomeVisual>	system/models/fx_skydome.visual	</skyDomeVisual>
 		<!-- Visual used to render the sky dome -->
 		<ZBufferOccluderFX>	shaders/environment/z_buffer_occluder.fx	</ZBufferOccluderFX>
-		<!-- Effect file used by z buffer occluder to render test geometry for lens flares -->		
+		<!-- Effect file used by z buffer occluder to render test geometry for lens flares -->
 		<billboardMaterial>	system/materials/billboard.mfm </billboardMaterial>
 		<!-- Material used to render billboards -->
 		<billboardVisual> system/models/fx_billboard.visual </billboardVisual>
@@ -169,7 +169,7 @@
 		<waterSimCookieMap> maps/water_cookie.dds </waterSimCookieMap>
 		<!-- Water simulation cookie -->
 		<waterNullSimMap> system/maps/null_sim.dds </waterNullSimMap>
-		<!-- Null simulation map -->	
+		<!-- Null simulation map -->
 		<waterEdgeMap> system/maps/edge_foam3.dds </waterEdgeMap>
 		<!-- Water edge foam -->
 		<waterFoamMap> system/maps/foam.dds </waterFoamMap>
@@ -179,9 +179,9 @@
 		<waterEffect> shaders/water/water.fx </waterEffect>
 		<!-- Water FX Shader -->
 		<waterSimEffect> shaders/water/simulation.fx </waterSimEffect>
-		<!-- Water Simulation FX Shader -->		
+		<!-- Water Simulation FX Shader -->
 		<waterMaskEffect> shaders/water/water_mask.fx </waterMaskEffect>
-		<!-- Water Mask FX Shader -->		
+		<!-- Water Mask FX Shader -->
 		<lightningBmpName>	system/maps/fx_arc.dds	</lightningBmpName>
 		<!-- Lightning strike texture map -->
 		<terrainTextureSpacing> 10.0			</terrainTextureSpacing>
@@ -252,6 +252,7 @@
 		<areaBorderModel>	system/models/fx_area_border.model </areaBorderModel>
 		<projDecalDefaultGM>system/maps/projection_decal_default_GM.dds</projDecalDefaultGM>
 		<areaBorderModelSmall>	system/models/fx_area_border_small.model </areaBorderModelSmall>
+		<tankPathUVSpeed> 1.0 </tankPathUVSpeed>
 	</gameplay>
 	<asset_pipeline>
 		<havok_processor>
@@ -265,6 +266,7 @@
 			<module> client.cgf_components.marker_component </module>
 			<module> client.vehicle_systems.components.debris_crashed_tracks </module>
 			<module> client.vehicle_systems.components.vehicle_custom_effects_settings </module>
+			<module> client.rts.base_highlight </module>
 		</script>
 
 		<!-- Test componetns

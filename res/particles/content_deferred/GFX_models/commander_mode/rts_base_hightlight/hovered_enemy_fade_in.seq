@@ -1,0 +1,54 @@
+<root>
+	<duration> 0.200000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model Object 0 </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/content_deferred/GFX_models/commander_mode/rts_base_hightlight/rts_base_hightlight.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.200000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> lambert1 </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 0.015686 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 1.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 1.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.200000 </startTime>
+				<value> 1.000000 0.015686 0.000000 0.200000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 0.276826 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 0.276826 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

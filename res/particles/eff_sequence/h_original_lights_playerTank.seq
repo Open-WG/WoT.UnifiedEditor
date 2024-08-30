@@ -1,5 +1,5 @@
 <root>
-	<duration> 0.000000 </duration>
+	<duration> 0.016667 </duration>
 	<sequenceObject>
 		<name> Root </name>
 		<type> model </type>
@@ -104,6 +104,10 @@
 			<type> bool </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 0.016667 </startTime>
 				<value> true </value>
 			</frame>
 		</track>
@@ -217,6 +221,10 @@
 			<type> bool </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 0.016667 </startTime>
 				<value> true </value>
 			</frame>
 		</track>

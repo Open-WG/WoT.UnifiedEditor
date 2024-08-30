@@ -26,28 +26,82 @@
 	<updateUrl> http://game.worldoftanks.ru/update </updateUrl>
 	<silhouetteColors>
 		<common>
-			<!-- (134 133 131) -->
+			<!-- 134 133 131 -->
 			<self> 0.5 0.5 0.5 1 </self>
-			<!-- (255 18 7) -->
+			<!-- 255 18 7 -->
 			<enemy> 1.0 0.070 0.027 1 </enemy>
-			<!-- (125, 215, 6) -->
+			<!-- 125, 215, 6 -->
 			<friend> 0.488 0.839 0.023 1 </friend>
 			<!-- 255 255 255 -->
 			<flag> 1 1 1 1 </flag>
 			<!-- 253 199 66 -->
 			<hangar> 0.992 0.780 0.259 1 </hangar>
+			<!-- 169 200 133 -->
+			<rtsFocus> 0.66 0.78 0.52 1 </rtsFocus>
+			<!-- contour improvement solid mode -->
+			<overlaySolidColors>
+				<enemy>
+					<!-- 255 0 0 -->
+					<overlay> 1 0 0 0.5 </overlay>
+					<!-- 133 0 0 -->
+					<destructible> 0.522 0 0 0.5 </destructible>
+				</enemy>
+				<friend>
+					<!-- 124 213 6 -->
+					<overlay> 0.486 0.835 0.023 0.5 </overlay>
+					<!-- 72 128 0 -->
+					<destructible> 0.282 0.502 0 0.5 </destructible>
+				</friend>
+			</overlaySolidColors>
+			<!-- contour improvement pattern mode -->
+			<overlayPatternColors>
+				<enemy>
+					<!-- 76 0 0 -->
+					<overlay> 0.298 0 0 0.25 </overlay>
+				    <!-- 255 0 0 -->
+					<overlayForeground> 1 0 0 1 </overlayForeground>
+					<!-- 76 0 0 -->
+					<destructible> 0.298 0 0 0.25 </destructible>
+					<!-- 255 0 0 -->
+					<destructibleForeground> 1 0 0 1 </destructibleForeground>
+				</enemy>
+				<friend>
+					<!-- 49 86 0 -->
+					<overlay> 0.192 0.337 0 0.25 </overlay>
+					<!-- 123 213 6 -->
+					<overlayForeground> 0.482 0.835 0.023 1 </overlayForeground>
+					<!-- 49 86 0 -->
+					<destructible> 0.192 0.337 0 0.25 </destructible>
+					<!-- 123 213 6 -->
+					<destructibleForeground> 0.482 0.835 0.023 1 </destructibleForeground>
+				</friend>
+			</overlayPatternColors>	
 		</common>
 		<colorBlind>
-			<!-- (134 133 131) -->
-			<self> 0.5 0.5 0.5 1 </self>
-			<!-- hex representaion #8379FE, RGB representation (131,121,254) -->
+			<!-- 131,121,254 -->
 			<enemy> 0.511 0.472 0.992 1 </enemy>
-			<!-- (125, 215, 6) -->
-			<friend> 0.488 0.839 0.023 1 </friend>
-			<!-- 255 255 255 -->
-			<flag> 1 1 1 1 </flag>
-			<!-- 253 199 66 -->
-			<hangar> 0.992 0.780 0.259 1 </hangar>
+			<!-- solid mode overrides -->
+			<overlaySolidColors>
+				<enemy>
+					<!-- 130 120 252 -->
+					<overlay> 0.510 0.471 0.988 0.5 </overlay>
+					<!-- 67 61 132 -->
+					<destructible> 0.263 0.239 0.518 0.5 </destructible>
+				</enemy>
+			</overlaySolidColors>
+			<!-- pattern mode overrides -->
+			<overlayPatternColors>
+				<enemy>
+					<!-- 40 37 79 -->
+					<overlay> 0.157 0.145 0.310 0.25 </overlay>
+					<!-- 130 120 252 -->
+					<overlayForeground> 0.510 0.471 0.988 1 </overlayForeground>
+					<!-- 40 37 79 -->
+					<destructible> 0.157 0.145 0.310 0.25 </destructible>
+					<!-- 130 120 252 -->
+					<destructibleForeground> 0.510 0.471 0.988 1 </destructibleForeground>
+				</enemy>
+			</overlayPatternColors>
 		</colorBlind>
 	</silhouetteColors>
 	<decal>

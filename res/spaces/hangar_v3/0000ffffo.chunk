@@ -4901,12 +4901,6 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 0.012802 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
@@ -4915,9 +4909,12 @@
 			<resource> content/Hangars/CharacterAnimations/Sequences/Walks/walk04.seq </resource>
 			<speed> 1.000000 </speed>
 			<delay> 0.000000 </delay>
-			<loopCount> 1.000000 </loopCount>
+			<loopCount> 1 </loopCount>
 			<autoStart> true </autoStart>
 			<isStateMachine> false </isStateMachine>
+			<isSynchronized> false </isSynchronized>
+			<loop> true </loop>
+			<lodScale> 0.100000 </lodScale>
 		</sequence>
 		<transform>
 			<row0> -0.536684 0.000000 -0.843760 </row0>
@@ -4930,17 +4927,23 @@
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 12 </serverId>
+		<megalodFlag> 0 </megalodFlag>
+		<inverseKinematics>
+			<avatar/>
+			<binding/>
+			<collisionFlags> 0 </collisionFlags>
+			<balancerPower> 0.100000 0.050000 </balancerPower>
+			<rootSmoothing> 0.200000 </rootSmoothing>
+			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
+			<maxIterations> 50 </maxIterations>
+			<maxDistanceError> 0.000100 </maxDistanceError>
+			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
+		</inverseKinematics>
 	</model>
 	<model>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 0.938332 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
@@ -4949,6 +4952,11 @@
 			<resource> content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01.ssm </resource>
 			<autoStart> true </autoStart>
 			<isStateMachine> true </isStateMachine>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
 		</sequence>
 		<transform>
 			<row0> 0.388673 0.000000 -0.921369 </row0>
@@ -4961,6 +4969,18 @@
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
 		<decorative> 1 </decorative>
+		<megalodFlag> 0 </megalodFlag>
+		<inverseKinematics>
+			<avatar/>
+			<binding/>
+			<collisionFlags> 0 </collisionFlags>
+			<balancerPower> 0.100000 0.050000 </balancerPower>
+			<rootSmoothing> 0.200000 </rootSmoothing>
+			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
+			<maxIterations> 50 </maxIterations>
+			<maxDistanceError> 0.000100 </maxDistanceError>
+			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
+		</inverseKinematics>
 	</model>
 	<model>
 		<editorOnly>
@@ -5011,6 +5031,7 @@
 			<isStateMachine> false </isStateMachine>
 			<isSynchronized> false </isSynchronized>
 			<loop> true </loop>
+			<lodScale> 0.100000 </lodScale>
 		</sequence>
 		<transform>
 			<row0> -0.138267 0.000000 -0.990377 </row0>

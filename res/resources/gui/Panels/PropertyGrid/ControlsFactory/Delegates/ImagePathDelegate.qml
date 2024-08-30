@@ -18,6 +18,15 @@ ImagePathDelegate {
 	propertyData: model ? model.node.property : null
 	onPropertyDataChanged: control.reset()
 
+	Connections {
+		target: delegateRoot
+		onImagePreviewFileChanged: {
+			// Forcefully update preview when a file is modified in the file system.
+			control.fileName = ""
+			control.fileName = Qt.binding(function() { return delegateRoot.imagePreviewPath })
+		}
+	}
+
 	Details.PreviewPanel {
 		id: control
 		width: parent.width

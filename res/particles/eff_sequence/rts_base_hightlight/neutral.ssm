@@ -1,0 +1,80 @@
+<root>
+	<params>
+		<param>
+			<name> hovered </name>
+			<type> bool </type>
+		</param>
+		<param>
+			<name> click </name>
+			<type> trigger </type>
+		</param>
+	</params>
+	<node>
+		<name> idle </name>
+		<type> sleep </type>
+		<time> 1.000000 1.000000 </time>
+		<transition>
+			<to> hovered </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> bool </type>
+					<name> hovered </name>
+					<checked> true </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -364.000000 7.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hovered </name>
+		<type> sequence </type>
+		<resource> particles/eff_sequence/rts_base_hightlight/hovered.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> click </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> click </name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> idle </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> bool </type>
+					<name> hovered </name>
+					<checked> false </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -155.000000 -83.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> click </name>
+		<type> sequence </type>
+		<resource> particles/eff_sequence/rts_base_hightlight/click.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> hovered </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> 53.000000 10.000000 0.000000 </uiPosition>
+	</node>
+</root>

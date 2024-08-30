@@ -1,0 +1,120 @@
+<root>
+	<params>
+		<param>
+			<name> hovered </name>
+			<type> bool </type>
+		</param>
+		<param>
+			<name> click </name>
+			<type> trigger </type>
+		</param>
+	</params>
+	<node>
+		<name> idle </name>
+		<type> sequence </type>
+		<resource> particles/eff_sequence/null_01s.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> hovered_fade_in </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> bool </type>
+					<name> hovered </name>
+					<checked> true </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -362.000000 145.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hovered </name>
+		<type> sequence </type>
+		<resource> particles/content_deferred/GFX_models/commander_mode/rts_base_hightlight/hovered_enemy.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> click </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> click </name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> hovered_fade_out </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> bool </type>
+					<name> hovered </name>
+					<checked> false </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -128.000000 -187.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> click </name>
+		<type> sequence </type>
+		<resource> particles/content_deferred/GFX_models/commander_mode/rts_base_hightlight/click_enemy.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> hovered </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> 190.000000 -39.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hovered_fade_in </name>
+		<type> sequence </type>
+		<resource> particles/content_deferred/GFX_models/commander_mode/rts_base_hightlight/hovered_enemy_fade_in.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> hovered </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -206.000000 -33.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hovered_fade_out </name>
+		<type> sequence </type>
+		<resource> particles/content_deferred/GFX_models/commander_mode/rts_base_hightlight/hovered_enemy_fade_out.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> idle </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -455.000000 -70.000000 0.000000 </uiPosition>
+	</node>
+</root>

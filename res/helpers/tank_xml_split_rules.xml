@@ -29,6 +29,8 @@
 			</radioman>
 		</crew>
 		<supplySlots/>
+		<postProgressionTree/>
+		<customRoleSlotOptions/>
 		<speedLimits>
 			<forward />
 			<backward />
@@ -88,6 +90,23 @@
 			<variants>
 				<_ANY_NAME_>
 					<weight />
+					<armor>
+						<_ANYTHING_ />
+					</armor>
+					<primaryArmor />
+					<mediumArmor />
+					<armorHomogenization />
+					<weight />
+					<maxHealth />
+					<ammoBayHealth>
+						<maxHealth />
+						<maxRegenHealth />
+						<repairCost />
+						<healthRegenPerSec />
+						<healthBurnPerSec />
+						<chanceToHit />
+					</ammoBayHealth>
+					<!--<_ANYTHING_ />-->
 				</_ANY_NAME_>
 			</variants>
 			<fakeTurrets>
@@ -235,6 +254,9 @@
 						<autoreload>
 							<reloadTime/>
 							<revertFraction/>
+							<boostFraction/>
+							<boostStartTime/>
+							<boostResidueTime/>
 						</autoreload>
 						<burst>
 							<count />
@@ -269,6 +291,9 @@
 			<soundStateChange>
 				<on/>
 				<off/>
+				<npcOn/>
+				<npcOff/>
+				<isEngine/>
 			</soundStateChange>
 			<autoSwitchOffRequiredVehicleSpeed />
 			<autoSwitchOnRequiredVehicleSpeed />
@@ -283,6 +308,7 @@
 					<pitchMax />
 				</wheelsCorrectionAngles>
 				<isEnabled />
+				<isFlexible />
 			</pitch>
 			<yawDisabled />
 		</hull_aiming>
@@ -296,6 +322,12 @@
 				</sounds>
 				<deviceUserString />
 			</wheel_Health>
+			<leftTrack0Health>
+				<_ANYTHING_ />
+			</leftTrack0Health>
+			<rightTrack0Health>
+				<_ANYTHING_ />
+			</rightTrack0Health>
 			<leftTrack1Health>
 				<_ANYTHING_ />
 			</leftTrack1Health>
@@ -447,6 +479,22 @@
 					<hitTester>
 						<_ANYTHING_ />
 					</hitTester>
+					<models>
+						<undamaged />
+						<destroyed />
+						<exploded />
+						<sets>
+							<_ANYTHING_ />
+						</sets>
+					</models>
+					<exhaust>
+						<pixie />
+						<nodes />
+						<tags>
+							<_ANYTHING_ />
+						</tags>
+						<rates />
+					</exhaust>
 				</_ANY_NAME_>
 			</variants>
 			<AODecals>

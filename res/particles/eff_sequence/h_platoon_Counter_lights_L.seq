@@ -1,15 +1,21 @@
 <root>
-	<duration> 0.000000 </duration>
+	<duration> 0.166667 </duration>
 	<sequenceObject>
 		<name> Root </name>
 		<type> model </type>
-		<enabledInEditor> true </enabledInEditor>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
 		<name> CounterLight_Left </name>
 		<type> light </type>
-		<enabledInEditor> true </enabledInEditor>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<lightType> spotlight </lightType>
 		<track>
 			<name> position </name>
@@ -67,17 +73,6 @@
 			</frame>
 		</track>
 		<track>
-			<name> rotation </name>
-			<type> quaternion </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<value> 0.028855 -0.967498 0.129779 0.215109 </value>
-				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
-				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
-				<tangentMode> 0 </tangentMode>
-			</frame>
-		</track>
-		<track>
 			<name> rotationEuler </name>
 			<type> vector3 </type>
 			<frame>
@@ -122,7 +117,10 @@
 	<sequenceObject>
 		<name> TopLight_Left </name>
 		<type> light </type>
-		<enabledInEditor> true </enabledInEditor>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<lightType> spotlight </lightType>
 		<track>
 			<name> position </name>
@@ -180,17 +178,6 @@
 			</frame>
 		</track>
 		<track>
-			<name> rotation </name>
-			<type> quaternion </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<value> 0.367858 0.184079 -0.074541 0.908427 </value>
-				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
-				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
-				<tangentMode> 0 </tangentMode>
-			</frame>
-		</track>
-		<track>
 			<name> rotationEuler </name>
 			<type> vector3 </type>
 			<frame>
@@ -233,18 +220,28 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name> CounterLight_PlayerTank </name>
+		<name> CounterLight_PlayerTank_01 </name>
 		<type> light </type>
-		<enabledInEditor> true </enabledInEditor>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<lightType> spotlight </lightType>
 		<track>
 			<name> position </name>
 			<type> vector3 </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 3.226000 9.664000 5.842000 </value>
+				<value> 0.929000 6.637000 10.267000 </value>
 				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.166667 </startTime>
+				<value> 0.929000 6.637000 10.267000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
 			</frame>
 		</track>
@@ -253,7 +250,7 @@
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 7.000000 </value>
+				<value> 12.000000 </value>
 				<inTangent> 0.000000 </inTangent>
 				<outTangent> 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -264,7 +261,7 @@
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 0.000000 </value>
+				<value> 2.500000 </value>
 				<inTangent> 0.000000 </inTangent>
 				<outTangent> 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -275,7 +272,7 @@
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 39.788734 </value>
+				<value> 55.704227 </value>
 				<inTangent> 0.000000 </inTangent>
 				<outTangent> 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -293,22 +290,11 @@
 			</frame>
 		</track>
 		<track>
-			<name> rotation </name>
-			<type> quaternion </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<value> 0.040908 -0.953955 0.153311 0.254541 </value>
-				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
-				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
-				<tangentMode> 0 </tangentMode>
-			</frame>
-		</track>
-		<track>
 			<name> rotationEuler </name>
 			<type> vector3 </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 18.260000 -150.119995 0.000000 </value>
+				<value> -12.710000 173.639999 0.000000 </value>
 				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -319,7 +305,112 @@
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 120.000000 </value>
+				<value> 60.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> castShadow </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> true </value>
+			</frame>
+		</track>
+		<track>
+			<name> lodShift </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 200.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> CounterLight_PlayerTank_02 </name>
+		<type> light </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<lightType> spotlight </lightType>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 10.315000 9.778000 -2.397000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> outerRadius </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 13.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> innerRadius </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 5.600000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> multiplier </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 63.661976 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> color </name>
+			<type> vector4 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 0.698039 0.349020 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 14.220000 -63.910000 6.640000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> coneAngle </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 30.000000 </value>
 				<inTangent> 0.000000 </inTangent>
 				<outTangent> 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -348,7 +439,10 @@
 	<sequenceObject>
 		<name> TopLight_PlayerTank </name>
 		<type> light </type>
-		<enabledInEditor> true </enabledInEditor>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<lightType> spotlight </lightType>
 		<track>
 			<name> position </name>
@@ -402,17 +496,6 @@
 				<value> 0.774078 0.924694 1.000000 0.000000 </value>
 				<inTangent> 6.777715 -6.799722 -19.529594 0.000000 </inTangent>
 				<outTangent> 6.777715 -6.799722 -19.529594 0.000000 </outTangent>
-				<tangentMode> 0 </tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name> rotation </name>
-			<type> quaternion </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<value> 0.367858 0.184079 -0.074541 0.908427 </value>
-				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
-				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
 			</frame>
 		</track>

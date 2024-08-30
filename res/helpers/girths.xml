@@ -8,6 +8,8 @@
 			<height>	2.500000	</height>
 			<radius>	2.500000	</radius>
 			<halfWidth>	1.250000	</halfWidth>
+			<narrowInnerThreshold>	2.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	2.500000	</narrowOuterThreshold>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -19,6 +21,8 @@
 			<height>	2.950000	</height>
 			<radius>	3.500000	</radius>
 			<halfWidth>	1.750000	</halfWidth>
+			<narrowInnerThreshold>	3.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	3.500000	</narrowOuterThreshold>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -30,6 +34,8 @@
 			<height>	3.550000	</height>
 			<radius>	4.500000	</radius>
 			<halfWidth>	2.250000	</halfWidth>
+			<narrowInnerThreshold>	4.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	4.500000	</narrowOuterThreshold>
 			<upSlope>	27.000000	</upSlope>
 			<downSlope>	27.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -41,6 +47,8 @@
 			<height>	4.000000	</height>
 			<radius>	5.500000	</radius>
             <halfWidth>	2.750000	</halfWidth>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
 			<downSlope>	25.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -52,6 +60,8 @@
 			<height>	1.950000	</height>
 			<radius>	4.000000	</radius>
 			<halfWidth>	2.000000	</halfWidth>            
+			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
 			<upSlope>	35.000000	</upSlope>
 			<downSlope>	35.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -63,6 +73,8 @@
 			<height>	2.500000	</height>
 			<radius>	3.500000	</radius>
 			<halfWidth>	1.750000	</halfWidth>
+			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.000000	</upClimb>
@@ -91,6 +103,7 @@
 			<shootingPointDistance> 20.0 </shootingPointDistance>
 			<shootingPointMinDirectionDelta> 20.0 </shootingPointMinDirectionDelta>
 			<shootingPointLimitDistanceByCoverRadius> false </shootingPointLimitDistanceByCoverRadius>
+			<shootingPointAtOrigin> false </shootingPointAtOrigin>
 			<initialSamples> 20 </initialSamples>
 			<coverRayCastParams> 
 				<param>
@@ -111,6 +124,42 @@
 			<antiSpgRayCastFlatRadius> 150.0 </antiSpgRayCastFlatRadius>
 			<maxSampleHeightDifference> </maxSampleHeightDifference>
 			<minSpacingMulSq> 1.0 </minSpacingMulSq>
+			<agentDependent>
+				<default>
+					<shootingHeight>	2.000000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</default>
+				<agent>
+					<girth> CTF_2.5 </girth>
+					<shootingHeight>	2.000000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> CTF_3.5 </girth>
+					<shootingHeight>	2.360000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> CTF_4.5 </girth>
+					<shootingHeight>	2.840000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> CTF_5.5 </girth>
+					<shootingHeight>	3.200000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> BTCAMP_4.0 </girth>
+					<shootingHeight>	1.56	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> BR_8 </girth>
+					<shootingHeight>	2.000000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+			</agentDependent>
 		</Default>
 		<Static>
 		</Static>
@@ -135,6 +184,7 @@
 			</shootingPointDirectionLimits>
 			<shootingPointMinSampleAngle> 2.0 </shootingPointMinSampleAngle>
 			<shootingPointDistance> 15.0 </shootingPointDistance>
+			<shootingPointAtOrigin> true </shootingPointAtOrigin>
 		</Flora>
 		<Destructible>
 			<coverRayCastParams> 
@@ -165,6 +215,12 @@
 			<shootingPointDistance> 150.0 </shootingPointDistance>
 			<minSpacingMulSq> 9.0 </minSpacingMulSq>
 		</Slope>
+		<Low>
+			<shootingPointDistance> 0.0 </shootingPointDistance>
+			<shootingPointAtOrigin> true </shootingPointAtOrigin>
+			<minShootingWindow> 2.0 </minShootingWindow>
+			<coverValidationEnabled> false </coverValidationEnabled>
+		</Low>
 	</covers>
 	<visibilityGrid>
 		<gridSourceWidth> 50 </gridSourceWidth>
@@ -173,8 +229,8 @@
 		<gridTargetHeight> 50 </gridTargetHeight>
 		<startFinishHeight>
 			<min> 
-				<from> 1.3 </from>
-				<to> 1.8 </to>
+				<from> 1.0 </from>
+				<to> 1.0 </to>
 			</min>
 			<max> 
 				<from> 3.35 </from>
@@ -185,7 +241,7 @@
 	</visibilityGrid>
 	<zones>
 		<center_generator>
-			<navmeshGirth> CTF_2.5 </navmeshGirth>
+			<navmeshGirth> CTF_5.5 </navmeshGirth>
 			<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			<gridStepX> 20 </gridStepX>
 			<gridStepY> 20 </gridStepY>
@@ -197,7 +253,7 @@
 		<link_generator>
 			<common>
 				<maxNavmeshQueryNodes> 10000 </maxNavmeshQueryNodes>
-				<navmeshGirth> CTF_2.5 </navmeshGirth>
+				<navmeshGirth> CTF_5.5 </navmeshGirth>
 				<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			</common>
 			<move>
