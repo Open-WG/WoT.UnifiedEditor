@@ -5,7 +5,7 @@ import QtQml.Models 2.2
 Item {
 	id: root
 
-	property bool selected: styleData.selectionModel.isSelected(index)
+	property bool selected: styleData.selectionModel ? styleData.selectionModel.isSelected(index) : false
 
 	readonly property var _lineOffset: styleData.vertexHeight / 2
 

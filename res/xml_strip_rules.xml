@@ -3,6 +3,10 @@
 		<rule>//metaData</rule>
 	</strip_metadata>
 	<default_vehicles>
+		<create>
+			<path>//chassis//(hysteresisHealth div healthRegenPerSec)</path>
+			<name>repairTime</name>
+		</create>
 		<rule>//xmlns:xmlref</rule>
 		<rule>//xpFactor</rule>
 		<rule>//freeXpFactor</rule>

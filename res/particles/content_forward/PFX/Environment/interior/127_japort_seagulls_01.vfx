@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -147,13 +147,13 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 255.000000 255.000000 255.000000 0.000000 </value_RGBA>
-				<time> 0.007075 </time>
-				<value_RGBA> 255.000000 255.000000 255.000000 1.000000 </value_RGBA>
-				<time> 0.990566 </time>
-				<value_RGBA> 255.000000 255.000000 255.000000 1.000000 </value_RGBA>
+				<value_RGBA> 0.000000 0.000000 0.000000 0.000000 </value_RGBA>
+				<time> 0.054245 </time>
+				<value_RGBA> 243.000000 243.000000 243.000000 1.000000 </value_RGBA>
+				<time> 0.936321 </time>
+				<value_RGBA> 243.000000 243.000000 243.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 255.000000 255.000000 255.000000 0.000000 </value_RGBA>
+				<value_RGBA> 0.000000 0.000000 0.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -232,7 +232,7 @@
 			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex_seagull_01.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> \data\shaders\ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.700000 </lighting_params.f_diffuse_light_multiplier>
-			<lighting_params.f_indirect_light_multiplier> 0.700000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.300000 </lighting_params.f_indirect_light_multiplier>
 			<lighting_params.f_scattered_light_multiplier> 0.300000 </lighting_params.f_scattered_light_multiplier>
 			<lighting_params.f_constant_scattered_light_ammount> 0.200000 </lighting_params.f_constant_scattered_light_ammount>
 			<lighting_params.f_self_shadow_power> 0.100000 </lighting_params.f_self_shadow_power>

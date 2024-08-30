@@ -9,9 +9,10 @@ Rectangle {
 
 	signal edgeCreationStarted()
 	signal leftClicked()
+	signal doubleClicked()
 
 	property var selfModelIndex: styleData.selfModelIndex
-	property var selected: styleData.selectionModel.isSelected(selfModelIndex)
+	property var selected: styleData.selectionModel ? styleData.selectionModel.isSelected(selfModelIndex) : false
 	property var textColor: "white"
 
 	x: model ? getComp(model.itemData.centerX, width) : 0
@@ -73,6 +74,9 @@ Rectangle {
 			else if (mouse.button == Qt.LeftButton) {
 				leftClicked()
 			}
+		}
+		onDoubleClicked: {
+			vertex.doubleClicked()
 		}
 
 		Connections {

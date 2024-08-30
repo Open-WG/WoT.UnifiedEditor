@@ -29,7 +29,7 @@ ResizeMinimapDelegate {
 
 	enabled: propertyData && !propertyData.readonly
 
-	readonly property int max_space_size : 33
+	readonly property int max_space_size : 32
 	readonly property int rescaleBorder : max_space_size / 4
 	readonly property int scale : isDimensionsBig() ? 1 : 2
 	readonly property int stepSize : (innerHeight / max_space_size) * scale
@@ -37,21 +37,21 @@ ResizeMinimapDelegate {
 	function isDimensionsBig () {
 		return Math.abs(verticalAxis.x) >= rescaleBorder
 				|| Math.abs(verticalAxis.y) >= rescaleBorder
-				|| Math.abs(horizontalAxis.x) >= rescaleBorder
-				|| Math.abs(horizontalAxis.y) >= rescaleBorder
+				|| Math.abs(horizontalAxis.x) >= 2 * rescaleBorder
+				|| Math.abs(horizontalAxis.y) >= 2 * rescaleBorder
 	}
 
 	readonly property var center : Qt.point(width / 2, height / 2)
 
 	// Coordinates of the corner points of the resizing rectangle
 	readonly property var topLeft     :
-		Qt.point(center.x + delegateRoot.horizontalAxis.x * stepSize - stepSize / 2, center.y - delegateRoot.verticalAxis.y * stepSize - stepSize / 2)
+		Qt.point(center.x + delegateRoot.horizontalAxis.x * stepSize, center.y - delegateRoot.verticalAxis.y * stepSize)
 	readonly property var topRight    :
-		Qt.point(center.x + delegateRoot.horizontalAxis.y * stepSize + stepSize / 2, center.y - delegateRoot.verticalAxis.y * stepSize - stepSize / 2)
+		Qt.point(center.x + delegateRoot.horizontalAxis.y * stepSize, center.y - delegateRoot.verticalAxis.y * stepSize)
 	readonly property var bottomLeft  :
-		Qt.point(center.x + delegateRoot.horizontalAxis.x * stepSize - stepSize / 2, center.y - delegateRoot.verticalAxis.x * stepSize + stepSize / 2)
+		Qt.point(center.x + delegateRoot.horizontalAxis.x * stepSize, center.y - delegateRoot.verticalAxis.x * stepSize)
 	readonly property var bottomRight :
-		Qt.point(center.x + delegateRoot.horizontalAxis.y * stepSize + stepSize / 2, center.y - delegateRoot.verticalAxis.x * stepSize + stepSize / 2)
+		Qt.point(center.x + delegateRoot.horizontalAxis.y * stepSize, center.y - delegateRoot.verticalAxis.x * stepSize)
 
 	// Corner points of the resizing rectangle
 	Repeater {
@@ -241,8 +241,8 @@ ResizeMinimapDelegate {
 			readonly property alias bottomLeft: delegateRoot.minimapBottomLeft
 			readonly property alias topRight: delegateRoot.minimapTopRight
 
-			x: itemRoot.center.x + bottomLeft.x * stepSize - stepSize / 2
-			y: itemRoot.center.y - topRight.y * stepSize - stepSize / 2
+			x: itemRoot.center.x + bottomLeft.x * stepSize
+			y: itemRoot.center.y - topRight.y * stepSize - stepSize 
 
 			source: delegateRoot.minimapPath.length ? "file:///" + delegateRoot.minimapPath : ""
 			width:  (topRight.x - bottomLeft.x + 1) * stepSize
@@ -256,10 +256,10 @@ ResizeMinimapDelegate {
 			property var horizontalAxis: Qt.point(delegateRoot.horizontalAxis.x, delegateRoot.horizontalAxis.y)
 			property var verticalAxis:   Qt.point(delegateRoot.verticalAxis.x, delegateRoot.verticalAxis.y)
 
-			x: itemRoot.center.x + horizontalAxis.x * stepSize - stepSize / 2 - lineWidth / 2
-			y: itemRoot.center.y - verticalAxis.y * stepSize - stepSize / 2 - lineWidth / 2
-			width: (horizontalAxis.y - horizontalAxis.x + 1) * stepSize + lineWidth
-			height: (verticalAxis.y - verticalAxis.x + 1) * stepSize + lineWidth
+			x: itemRoot.center.x + horizontalAxis.x * stepSize - lineWidth / 2
+			y: itemRoot.center.y - verticalAxis.y * stepSize - lineWidth / 2
+			width: (horizontalAxis.y - horizontalAxis.x) * stepSize + lineWidth
+			height: (verticalAxis.y - verticalAxis.x) * stepSize + lineWidth
 			color: "transparent"
 			border.width: lineWidth
 			border.color: _palette.greenChannel

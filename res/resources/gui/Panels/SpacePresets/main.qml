@@ -219,7 +219,7 @@ ControlsEx.Panel {
 			text: "Apply"
 			enabled: context.applyEnabled
 			
-			onPressed: {
+			onClicked: {
 				context.loadPreset()
 			}
 		}

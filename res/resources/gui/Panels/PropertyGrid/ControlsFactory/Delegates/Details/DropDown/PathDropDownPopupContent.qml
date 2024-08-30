@@ -15,7 +15,8 @@ ComboBoxPopupContent {
 		property string resourceType: ""		// "texture", "shader", etc.
 
 		function openFileDialog() {
-			if (propertyData.value != undefined && WGTResources.Resources.fileExists(propertyData.value)) {
+			if (propertyData.value != undefined && WGTResources.Resources.fileExists(propertyData.value) &&
+					!(resourceType == "texture" && propertyData.value == "helpers/aid_builder.dds")) {
 				dialog.initialFolder = WGTResources.Resources.getFilePath(propertyData.value)
 				dialog.selectedFile = propertyData.value
 			} else if (dialog.initialPath) {

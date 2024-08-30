@@ -47,6 +47,12 @@
 			<additionalInvisibilityDevice>
 				<invisibilityBonus/>
 			</additionalInvisibilityDevice>
+			<trophyBasicAdditionalInvisibilityDevice>
+				<invisibilityBonus/>
+			</trophyBasicAdditionalInvisibilityDevice>
+			<trophyUpgradedAdditionalInvisibilityDevice>
+				<invisibilityBonus/>
+			</trophyUpgradedAdditionalInvisibilityDevice>
 		</optDevsOverrides>
 		<repairCost />
 		<xpFactor />
@@ -122,6 +128,12 @@
 				<repairCost />
 				<healthRegenPerSec />
 				<healthBurnPerSec />
+				<trackPairParams>
+					<_ANYTHING_ />
+				</trackPairParams>
+				<brokenTrackLosses>
+					<_ANYTHING_ />
+				</brokenTrackLosses>
 			</_CHASSIS_NAME_>
 		</chassis>
 		<turrets0>
@@ -284,6 +296,12 @@
 				</sounds>
 				<deviceUserString />
 			</wheel_Health>
+			<leftTrack1Health>
+				<_ANYTHING_ />
+			</leftTrack1Health>
+			<rightTrack1Health>
+				<_ANYTHING_ />
+			</rightTrack1Health>
 			<shoot />
 			<noAmmo />
 			<gunReload />
@@ -294,9 +312,15 @@
 				<wheel_Health>
 					<multiple />
 				</wheel_Health>
+				<leftTrack1Health />
+				<rightTrack1Health />
 			</devices>
 			<tankmen />
 		</deviceExtras>
+		<extrasProtection>
+			<leftTrack1Health />
+			<rightTrack1Health />
+		</extrasProtection>
 		<useHullZ/>
 		<useHullZSize />
 		<useHullZOffset />
@@ -470,6 +494,9 @@
 					<modelSets>
 						<_ANYTHING_ />
 					</modelSets>
+					<trackPair>
+						<_ANYTHING_ />
+					</trackPair>
 				</splineDesc>
 				<physicalTracks>
 					<_ANYTHING_ />
@@ -490,6 +517,9 @@
 					<leftMaterial />
 					<rightMaterial />
 					<textureScale />
+					<trackPair>
+						<_ANYTHING_ />
+					</trackPair>
 				</tracks>
 				<wheels>
 					<lodDist />
@@ -519,6 +549,7 @@
 						<scrollProcessor>
 							<_ANYTHING_ />
 						</scrollProcessor>
+						<trackPairIdx />
 						<rollProcessor>
 							<_ANYTHING_ />
 						</rollProcessor>
@@ -546,6 +577,10 @@
 						<scrollProcessor>
 							<_ANYTHING_ />
 						</scrollProcessor>
+						<geometry>
+							<radius />
+						</geometry>
+						<trackPairIdx />
 					</group>
 					<generalWheels />
 					<activePostmortem />
@@ -571,6 +606,7 @@
 						<isLeft />
 						<minOffset />
 						<maxOffset />
+						<affectedWheelsTemplate />
 					</group>
 					<node>
 						<name />
@@ -618,6 +654,7 @@
 				<wwsoundNPC />
 				<hullPosition />
 				<hitTester>
+					<trackPairIdx />
 					<collisionModelServer/>
 					<collisionModelClient/>
 					<crashed/>

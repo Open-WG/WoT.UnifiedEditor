@@ -1,6 +1,7 @@
 import QtQuick 2.7
 import WGTools.Controls 2.0
 import WGTools.Controls.Controllers 1.0
+import WGTools.Misc 1.0 as Misc
 
 TextField {
 	id: control
@@ -34,5 +35,9 @@ TextField {
 				text = delegateRoot.hex
 			}
 		}
+	}
+	
+	Misc.QmlEventFilter {
+		target: control
 	}
 }

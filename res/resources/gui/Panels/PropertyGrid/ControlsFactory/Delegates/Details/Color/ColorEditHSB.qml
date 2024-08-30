@@ -57,7 +57,7 @@ RowLayout {
 
 			// to prevent handling keys input in parent control
 			Keys.priority: Keys.AfterItem
-			Keys.onPressed: event.accepted = true
+			//Keys.onPressed: event.accepted = true
 		}
 	}
 }

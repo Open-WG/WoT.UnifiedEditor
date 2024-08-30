@@ -21,7 +21,8 @@ Details.BasicIndicatorButton {
 	ToolTip.visible: ToolTip.text && hovered
 
 	function openFileDialog() {
-		if (propertyData.value != undefined && WGTResources.Resources.fileExists(propertyData.value)) {
+		if (propertyData.value != undefined && WGTResources.Resources.fileExists(propertyData.value) &&
+				!(resourceType == "texture" && propertyData.value == "helpers/aid_builder.dds")) {
 			dialog.initialFolder = WGTResources.Resources.getFilePath(propertyData.value)
 		} else if (dialog.initialPath) {
 			dialog.initialFolder = dialog.initialPath // can be optimised

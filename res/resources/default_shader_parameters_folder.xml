@@ -1,0 +1,46 @@
+<root>
+	<shaderRules>
+		<shaderName> PBS_tiled_atlas </shaderName>
+		<property>
+			<name> atlas* </name>
+			<rule>
+				<modelDirectory> content/Buildings/ </modelDirectory>
+				<dialogDirectory> content/Buildings/00_Atlases/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content_cw/Buildings/ </modelDirectory>
+				<dialogDirectory> content_cw/Buildings/00_Atlases/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content/Environment/ </modelDirectory>
+				<dialogDirectory> content/Environment/00_Atlases/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content_cw/Environment/ </modelDirectory>
+				<dialogDirectory> content_cw/Environment/00_Atlases/ </dialogDirectory>
+			</rule>
+		</property>
+	</shaderRules>
+	<shaderRules>
+		<shaderName> PBS_tiled </shaderName>
+		<property>
+			<name> *Tile* </name>
+			<rule>
+				<modelDirectory> content/Buildings </modelDirectory>
+				<dialogDirectory> content/Buildings/00_Tiles/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content/Environment </modelDirectory>
+				<dialogDirectory> content/Environment/00_Tiles/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content_cw/Buildings </modelDirectory>
+				<dialogDirectory> content_cw/Buildings/00_Tiles/ </dialogDirectory>
+			</rule>
+			<rule>
+				<modelDirectory> content_cw/Environment </modelDirectory>
+				<dialogDirectory> content_cw/Environment/00_Tiles/ </dialogDirectory>
+			</rule>
+		</property>
+	</shaderRules>
+</root>

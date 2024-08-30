@@ -110,7 +110,7 @@ Rectangle {
 								property var _selected: checkSelection()
 
 								function checkSelection() {
-									return selectionModel.isSelected(_selfIndex)
+									return selectionModel ? selectionModel.isSelected(_selfIndex) : false
 								}
 
 								Connections {

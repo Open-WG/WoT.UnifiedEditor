@@ -4,53 +4,63 @@
 	The presets are organised in the same way as the options.xml 
 	file in the game folder.
 	The tags are organised like this:
-	<graphicsPreferences> HIGH       // Name of the preset
-		<GPUMemory>800</GPUMemory>   // minimum total GPU Memory
-		<RAM>4000</RAM>              // minimum RAM amount
+	<graphicsPreferences> HIGH        // Name of the preset
+		<GPUMemory> 1024 </GPUMemory> // minimum total GPU Memory
+		<RAM> 3000 </RAM>             // minimum RAM amount
 	</graphicsPreferences>
-	
 	-->
-
 	<graphicsPreferences> ULTRA
-		<GPUMemory> 2048 </GPUMemory>
+		<GPUMemory> 2800 </GPUMemory>
+		<GPUShared> 0 </GPUShared>
 		<RAM> 4000 </RAM>
-		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
+		<VirtualMemory> 4000 </VirtualMemory>
 		<GPUScore> 2150 </GPUScore>
 		<CPUScore> 110000 </CPUScore>
+		<CPUCores> 4 </CPUCores>
 	</graphicsPreferences>
 	<graphicsPreferences> MAX
-		<GPUMemory> 1024 </GPUMemory>
+		<GPUMemory> 1570 </GPUMemory>
+		<GPUShared> 0 </GPUShared>
 		<RAM> 3000 </RAM>
-		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
+		<VirtualMemory> 3000 </VirtualMemory>
 		<GPUScore> 1400 </GPUScore>
 		<CPUScore> 85000 </CPUScore>
+		<CPUCores> 4 </CPUCores>
 	</graphicsPreferences>
 	<graphicsPreferences> HIGH
-		<GPUMemory> 1024 </GPUMemory>
+		<GPUMemory> 1400 </GPUMemory>
+		<GPUShared> 0 </GPUShared>
 		<RAM> 3000 </RAM>
-		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
-		<GPUScore>890</GPUScore>
+		<VirtualMemory> 3000 </VirtualMemory>
+		<GPUScore> 890 </GPUScore>
 		<CPUScore> 75000 </CPUScore>
+		<CPUCores> 4 </CPUCores>
 	</graphicsPreferences>
 	<graphicsPreferences> MEDIUM
-		<GPUMemory> 512 </GPUMemory>
-		<RAM> 2000 </RAM>
-		<AvailableVirtualMemory> 1500 </AvailableVirtualMemory>
-		<GPUScore>450</GPUScore>
+		<GPUMemory> 850 </GPUMemory>
+		<GPUShared> 300 </GPUShared>
+		<RAM> 2500 </RAM>
+		<VirtualMemory> 2500 </VirtualMemory>
+		<GPUScore> 450 </GPUScore>
 		<CPUScore> 60000 </CPUScore>
+		<CPUCores> 2 </CPUCores>
 	</graphicsPreferences>
 	<graphicsPreferences> LOW
-		<GPUMemory> 200 </GPUMemory>
-		<RAM> 1000 </RAM>
-		<AvailableVirtualMemory> 1000 </AvailableVirtualMemory>
-		<GPUScore>150</GPUScore>
+		<GPUMemory> 380 </GPUMemory>
+		<GPUShared> 0 </GPUShared>
+		<RAM> 2000 </RAM>
+		<VirtualMemory> 2000 </VirtualMemory>
+		<GPUScore> 150 </GPUScore>
 		<CPUScore> 50000 </CPUScore>
+		<CPUCores> 2 </CPUCores>
 	</graphicsPreferences>	
 	<graphicsPreferences> MIN
 		<GPUMemory> 64 </GPUMemory>
-		<RAM> 1000 </RAM>
-		<AvailableVirtualMemory> 1000 </AvailableVirtualMemory>
-		<GPUScore>0</GPUScore>
-		<CPUScore> 0 </CPUScore>
+		<GPUShared> 0 </GPUShared>
+		<RAM> 1500 </RAM>
+		<VirtualMemory> 1500 </VirtualMemory>
+		<GPUScore> 50 </GPUScore>
+		<CPUScore> 10000 </CPUScore>
+		<CPUCores> 2 </CPUCores>
 	</graphicsPreferences>
 </root>

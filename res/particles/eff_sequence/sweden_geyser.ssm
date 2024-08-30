@@ -1,0 +1,33 @@
+<stateMachine>
+	<node name="fountain_idle">
+		<type>sequence</type>
+		<resource>particles/eff_sequence/sweden_geyser_idle.seq</resource>
+		<loop>1.0 1.0</loop>
+		<transition>
+			<to>fountain_s</to>
+			<condition>1</condition>
+		</transition>
+		<transition>
+			<to>fountain_s2</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="fountain_s">
+		<type>sequence</type>
+		<resource>particles/eff_sequence/sweden_geyser_1.seq</resource>
+		<loop>1.0 1.0</loop>
+		<transition>
+			<to>fountain_idle</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="fountain_s2">
+		<type>sequence</type>
+		<resource>particles/eff_sequence/sweden_geyser_2.seq</resource>
+		<loop>1.0 1.0</loop>
+		<transition>
+			<to>fountain_idle</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+</stateMachine>

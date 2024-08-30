@@ -23,5 +23,6 @@ Item {
 
 		FitToButton { id: fitToButton }
 		CurveModeButton {}
+		GizmoButton {}
 	}
 }
