@@ -1,5 +1,5 @@
 <root>
-	<version> 15 </version>
+	<version> 16 </version>
 	<property>
 		<label> Apply Overlay </label>
 		<value> Apply Overlay Checker.Apply Overlay </value>
@@ -2907,6 +2907,11 @@
 				<value> UDO Properties.order </value>
 				<type> unsigned_int </type>
 			</property>
+            <property>
+                <label> Zones Map </label>
+                <value> UDO Properties.zonesMap </value>
+                <type> string </type>
+            </property>
 		</children>
 	</group>
 	<group>

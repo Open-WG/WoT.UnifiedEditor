@@ -1,4 +1,4 @@
-<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by WG_Licensing (GameStream) -->
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Wargaming Limited (Wargaming Group Limited) -->
 <!--
 	Default settings for arena types.
 	See _example_.xml for settings descriptions.
@@ -171,27 +171,36 @@
 			<runDelayDev> 45 </runDelayDev>
 			<maxPlayersInTeam> 7 </maxPlayersInTeam>
 		</COMP7>
-		<BATTLE_ROYALE_SOLO>
-			<runDelay> 30 </runDelay>
-			<runDelayDev> 15 </runDelayDev>
-		</BATTLE_ROYALE_SOLO>
-		<BATTLE_ROYALE_SQUAD>
-			<runDelay> 30 </runDelay>
-			<runDelayDev> 15 </runDelayDev>
-		</BATTLE_ROYALE_SQUAD>
-		<BATTLE_ROYALE_TRN_SOLO>
-			<runDelay> 30 </runDelay>
-			<runDelayDev> 15 </runDelayDev>
-		</BATTLE_ROYALE_TRN_SOLO>
-		<BATTLE_ROYALE_TRN_SQUAD>
-			<runDelay> 30 </runDelay>
-			<runDelayDev> 15 </runDelayDev>
-		</BATTLE_ROYALE_TRN_SQUAD>
 		<TOURNAMENT_COMP7>
 			<runDelay> 45 </runDelay>
 			<runDelayDev> 45 </runDelayDev>
 			<maxPlayersInTeam> 7 </maxPlayersInTeam>
 		</TOURNAMENT_COMP7>
+		<TRAINING_COMP7>
+			<runDelay> 45 </runDelay>
+			<runDelayDev> 45 </runDelayDev>
+			<maxPlayersInTeam> 7 </maxPlayersInTeam>
+		</TRAINING_COMP7>
+		<BATTLE_ROYALE_SOLO>
+			<estimatedLoad> 0.75 </estimatedLoad>
+			<runDelay> 30 </runDelay>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_SOLO>
+		<BATTLE_ROYALE_SQUAD>
+			<estimatedLoad> 0.75 </estimatedLoad>
+			<runDelay> 30 </runDelay>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_SQUAD>
+		<BATTLE_ROYALE_TRN_SOLO>
+			<estimatedLoad> 0.75 </estimatedLoad>
+			<runDelay> 30 </runDelay>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_TRN_SOLO>
+		<BATTLE_ROYALE_TRN_SQUAD>
+			<estimatedLoad> 0.75 </estimatedLoad>
+			<runDelay> 30 </runDelay>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_TRN_SQUAD>
 	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf>
@@ -229,11 +238,6 @@
 			<winnerIfTimeout> 1 </winnerIfTimeout>
 			<winnerIfExtermination>	1	</winnerIfExtermination>
 		</assault2>
-		<bootcamp>
-			<roundLength> 900 </roundLength>
-			<battleEndWarningDuration> 5 </battleEndWarningDuration>
-			<battleEndingSoonTime> 60 </battleEndingSoonTime>
-		</bootcamp>
 		<epic>
 			<stopVehiclesAtArenaFreeze> True </stopVehiclesAtArenaFreeze>
 			<addGameTimePerDestructible> 0 </addGameTimePerDestructible>
@@ -377,6 +381,12 @@
 					</bank>
 					<bank>
 						<name>story_mode_lobby.bnk</name>
+					</bank>
+					<bank>
+						<name>story_mode_special.bnk</name>
+					</bank>
+					<bank>
+						<name>story_mode_special.pck</name>
 					</bank>
 				</loadBanks>
 			</soundRemapping>

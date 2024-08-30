@@ -157,7 +157,7 @@ Views.TreeView {
 	 function lookAtIndex(index) {
 		if (index.valid) {
 			treeView.expandAllParents(index)
-			treeView.positionViewAtIndex(index, ListView.Visible)
+			treeView.positionViewAtIndex(index, ListView.Contain)
 		} else {
 			treeView.positionViewAtBeginning()
 		}

@@ -386,6 +386,15 @@
 				</info>
 			</StorageTypeInfo>
 		</mode_init_time>
+		<survey>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> emoji_value </name>
+					<type> int </type>
+				</info>
+			</StorageTypeInfo>
+		</survey>
 	</storages>
 	<publisher> StatsD </publisher>
 	<publishers>
@@ -407,6 +416,7 @@
 						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/session_focus/ue_focus_time.seconds </key>
 						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/initialize/ue_init_time.seconds </key>
 						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/crash_count/crash.count </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/satisfaction/survey.emoji_value </key>
 						<!-- MODE -->
 						<!-- ELI_FR_3 -->
 						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/editor_total_time.editor_name/resource/editor_total_time.resource/info/session_total/editor_total_time.seconds </key>

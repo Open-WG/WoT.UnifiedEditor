@@ -51,14 +51,18 @@ Loader {
 		anchors.fill: parent
 
 		onPressed: {
+			
 			if (mouse.button == Qt.RightButton) {
 				var point = mapToItem(timeLineTrackLoader, mouse.x, mouse.y)
 				trackPopupMenu.x = point.x
 				trackPopupMenu.y = point.y
 				trackPopupMenu.open()
+                                mouse.accepted = true
 			}
-
-			mouse.accepted = false
+			else
+			{
+				mouse.accepted = false
+			}	
 		}
 
 		onDoubleClicked: {

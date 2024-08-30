@@ -15,6 +15,7 @@ FactoryManager {
 	Factories.ColorGradientFactory {}
 	Factories.ImageFactory {}
 	Factories.ImagePathFactory {}		// TODO: improve performance
+	Factories.UVImageFactory {}
 	Factories.TagFactory {}
 	Factories.PathFactory {}
 	Factories.TextAreaFactory {}

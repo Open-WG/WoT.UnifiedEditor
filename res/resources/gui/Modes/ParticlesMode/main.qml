@@ -65,7 +65,95 @@ ControlsEx.Panel {
 		Rectangle {
 			Layout.fillWidth: true
 			height: 1
-			color: "gray"
+			color: _palette.color2
+		}
+
+		RowLayout {
+			id: toolbar
+			Layout.leftMargin: 4
+
+			Controls.CheckBox {
+				id: showCpu
+				text: "CPU"
+				checked: true
+				onToggled: {
+					treeView.model.filters ^= treeView.filters.showCpuEmitters
+				}
+			}
+
+			Controls.CheckBox {
+				id: showGpu
+				text: "GPU"
+				checked: true
+				onToggled: {
+					treeView.model.filters ^= treeView.filters.showGpuEmitters
+				}
+			}
+
+			Rectangle {
+				Layout.preferredHeight: parent.height
+				width: 1
+				color: _palette.color2
+			}
+
+			Controls.Button {
+				id: expandAllButton
+				Layout.preferredHeight: parent.height
+				implicitWidth: height
+				onClicked:
+				{
+					treeView.model.expandAll()
+				}
+
+				Image {
+					anchors.fill: parent
+					source: "image://gui/expand_all"
+				}
+			}
+
+			Controls.Button {
+				id: collapseAllButton
+				Layout.preferredHeight: parent.height
+				implicitWidth: height
+				onClicked: {
+					treeView.model.collapseAllCustom()
+				}
+
+				Image {
+					anchors.fill: parent
+					source: "image://gui/collapse_all"
+				}
+			}
+
+			Rectangle {
+				Layout.preferredHeight: parent.height
+				width: 1
+				color: _palette.color2
+			}
+
+			Controls.Button {
+				id: previewToggleButton
+				Layout.preferredHeight: parent.height
+				implicitWidth: height
+				onClicked: {
+					treeView.showPreviewValues = !treeView.showPreviewValues
+					treeView.model.showPreviewValues = treeView.showPreviewValues
+				}
+
+				Image {
+					anchors.centerIn: parent
+					fillMode: Image.PreserveAspectFit
+					width: parent.width - 4
+					height: parent.height - 4
+					source: "image://gui/info"
+				}
+			}
+		}
+
+		Rectangle {
+			Layout.fillWidth: true
+			height: 1
+			color: _palette.color2
 		}
 		
 		Controls.Button {
@@ -78,6 +166,15 @@ ControlsEx.Panel {
 
 		Views.TreeView {
 			id: treeView
+
+			// Filters
+			readonly property var filters: QtObject {
+				readonly property int none: 0
+				readonly property int showCpuEmitters: 1 << 0
+				readonly property int showGpuEmitters: 1 << 1
+			}
+
+			property bool showPreviewValues: model.showPreviewValues
 
 			// Index of the item upon which the menu was invoked.
 			property var __menuSourceIndex
@@ -132,6 +229,15 @@ ControlsEx.Panel {
 			itemDelegate: Item {
 				implicitWidth: row.implicitWidth
 
+				readonly property var type: QtObject {
+					readonly property int influx: 0
+					readonly property int lod: 1
+					readonly property int emitter: 2
+					readonly property int childInflux: 3
+					readonly property int gpuEmitter: 4
+					readonly property int gpuEmitterGroup: 5
+				}
+
 				readonly property var _lodCountColor: _palette.color2
 				readonly property var _emitterLifetimeColor: "#04b25b"
 				readonly property var _particlesLifetimeColor: "#00b6fe"
@@ -142,12 +248,13 @@ ControlsEx.Panel {
 				property bool _showLodDistance: model && typeof model.lodDistance !== 'undefined'
 				property bool _showParticleCount: model && typeof model.particleCount !== 'undefined'
 				property bool _showParticleLifetime: model && typeof model.particleLifetime !== 'undefined'
+				property bool _showPreviewValue: model && typeof model.previewValue !== 'undefined' && treeView.showPreviewValues
 
 				function formatToolTip(model) {
 					if (model === null) return "";
 					function formatRow(label, value, color) {
 						return "<font color=\"" + _palette.color1 + "\">" + label + ": </font> " +
-							   "<font color=\"" + color + "\">" + value + "</font>"
+								"<font color=\"" + color + "\">" + value + "</font>"
 					}
 					let rows = []
 					if (typeof model.emitterLifetime !== 'undefined') {
@@ -216,49 +323,61 @@ ControlsEx.Panel {
 					}
 
 					Misc.Text {
-						visible: _showEmitterLifetime
-						text: _showEmitterLifetime ? model.emitterLifetime : ""
+						visible: _showPreviewValue
+						text: _showPreviewValue ? model.previewValue : ""
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showPreviewValue && model.previewValue != ""
+						text: "|"
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						visible: treeView.showPreviewValues && _showEmitterLifetime
+						text: treeView.showPreviewValues && _showEmitterLifetime ? model.emitterLifetime : ""
 						color: _modelActive ? _emitterLifetimeColor : _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showEmitterLifetime
+						visible: treeView.showPreviewValues && _showEmitterLifetime
 						text: "|"
 						color: _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showLodDistance
-						text: _showLodDistance ? model.lodDistance : ""
+						visible: treeView.showPreviewValues && _showLodDistance
+						text: treeView.showPreviewValues && _showLodDistance ? model.lodDistance : ""
 						color: _modelActive ? _lodCountColor : _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showLodDistance
+						visible: treeView.showPreviewValues && _showLodDistance
 						text: "|"
 						color: _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showParticleCount
-						text: _showParticleCount ? model.particleCount : ""
+						visible: treeView.showPreviewValues && _showParticleCount
+						text: treeView.showPreviewValues && _showParticleCount ? model.particleCount : ""
 						color: _modelActive ? _particleCountColor : _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showParticleCount
+						visible: treeView.showPreviewValues && _showParticleCount
 						text: "|"
 						color: _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showParticleLifetime
-						text: _showParticleLifetime ? model.particleLifetime : ""
+						visible: treeView.showPreviewValues && _showParticleLifetime
+						text: treeView.showPreviewValues && _showParticleLifetime ? model.particleLifetime : ""
 						color: _modelActive ? _particlesLifetimeColor : _palette.color3
 					}
 
 					Misc.Text {
-						visible: _showParticleLifetime
+						visible: treeView.showPreviewValues && _showParticleLifetime
 						text: "|"
 						color: _palette.color3
 					}
@@ -266,7 +385,11 @@ ControlsEx.Panel {
 					Misc.Text {
 						text: styleData.value
 						font.bold: model && model.emphasized
-						color: _modelActive ? _palette.color1 : _palette.color3
+						color: !_modelActive ? _palette.color3 :
+							model.type == type.lod ? _palette.lightRed :
+							model.type == type.emitter ? _palette.color1 :
+							model.type == type.gpuEmitter ? _palette.lightYellow :
+							_palette.color1
 					}
 
 					Item {
@@ -274,11 +397,23 @@ ControlsEx.Panel {
 					}
 
 					Controls.Button {
-						id: minusButton
+						id: addButton
+
+						icon.source: "image://gui/add"
+
+						visible: model && model.collection
+						onClicked: {
+							treeView.model.onAddButtonClicked(styleData.index)
+						}
+					}
+
+					Controls.Button {
+						id: removeButton
+
 						icon.source: "image://gui/icon-remove"
 						visible: model && model.removable
 						onClicked: {
-							treeView.model.removeInfluxGroup(styleData.index)
+							treeView.model.onRemoveButtonClicked(styleData.index)
 						}
 					}
 				}

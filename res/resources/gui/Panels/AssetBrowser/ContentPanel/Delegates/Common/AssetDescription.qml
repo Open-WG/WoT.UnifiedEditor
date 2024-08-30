@@ -3,7 +3,7 @@ import QtQuick 2.7
 Item {
 	id: root
 
-	property alias text: commonDescription.text
+	property string text: ""
 	property alias extension: assetExtention.extension
 	property alias favorite: commonDescription.favorite
 
@@ -13,6 +13,17 @@ Item {
 
 	implicitWidth: column.implicitWidth
 	implicitHeight: column.implicitHeight
+
+	onTextChanged: {
+		var fullExtension = "." + root.extension
+		var modifiedText = text
+		if (root.text.includes(fullExtension) && root.extensionVisible) {
+			var extensionRegex = "\\" + fullExtension + "$"
+			console.log(extensionRegex)
+			modifiedText = root.text.replace(new RegExp(extensionRegex, 'i'), "")
+		}
+		commonDescription.text = modifiedText
+	}
 
 	Column {
 		id: column

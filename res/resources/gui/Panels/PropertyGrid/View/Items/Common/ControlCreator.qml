@@ -32,7 +32,7 @@ Item {
 					item.initialize()
 				}
 
-			} else {
+			} else if (item != null) {
 				if (item.hasOwnProperty("finalize") && typeof item["finalize"] == "function") {
 					item.finalize()
 				}

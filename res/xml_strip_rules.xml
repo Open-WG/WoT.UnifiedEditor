@@ -33,10 +33,6 @@
 		<rule>//healthRegenPerSec</rule>
 		<rule>//healthBurnPerSec</rule>
 	</tank_components>
-	<shells>
-		<rule>//normalizationAngle</rule>
-		<rule>//ricochetAngle</rule>
-	</shells>
 	<vehicle>
 		<rule>//balance</rule>
 	</vehicle>
@@ -53,4 +49,7 @@
 		<rule>//rotationEuler</rule>
 		<rule>//editorOnly</rule>
 	</sequence_editor>
+	<prefabs>
+		<rule>//property[normalize-space(isEditorOnly)='true']</rule>
+	</prefabs>
 </root>

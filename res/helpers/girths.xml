@@ -37,7 +37,7 @@
 			<narrowInnerThreshold>	4.500000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	4.500000	</narrowOuterThreshold>
 			<upSlope>	27.000000	</upSlope>
-			<downSlope>	27.000000	</downSlope>
+			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.250000	</waterDepthLimit1>
@@ -50,31 +50,18 @@
 			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
-			<downSlope>	25.000000	</downSlope>
+			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
 		</config> 
 		<config>	
-			<girth> BTCAMP_4.0 </girth>
-			<height>	1.950000	</height>
-			<radius>	4.000000	</radius>
-			<halfWidth>	1.500000	</halfWidth>            
-			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
-			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
-			<upSlope>	35.000000	</upSlope>
-			<downSlope>	35.000000	</downSlope>
-			<upClimb>	1.330000	</upClimb>
-			<downClimb>	1.330000	</downClimb>
-			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
-		</config>
-		<config>	
 			<girth> Onboarding_4.0 </girth>
 			<height>	3.070000	</height>
 			<radius>	4.000000	</radius>
 			<halfWidth>	2.000000	</halfWidth>            
-			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
-			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
+			<narrowInnerThreshold>	4.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	4.000000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
 			<downSlope>	25.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -332,53 +319,18 @@
 		<searchRadiusFactor> 0.5 </searchRadiusFactor>
 		<searchRadiusStepFactor> 0.5 </searchRadiusStepFactor>
 	</visibilityGrid>
-	<stealthGrid>
-		<type> average </type>
-		<gridCellWidth> 20 </gridCellWidth>
-		<gridCellHeight> 20 </gridCellHeight>
-		<!-- Any number of specific traces can be defined per x/z sample. Average result will be written into the grid. -->
-		<!-- Weight argument is optional (default is 1.0). If specified, it is applied as a multiplier to the amount of such traces within each given cell, -->
-		<!-- thus affecting both final value and generation speed. Valid weight must be > 0.0 and <= 1.0. -->
-		<traceHeights>
-			<trace>
-				<eye> 1.65 </eye> <!-- T-100 LT, Manticore -->
-				<target> 2.8 </target> <!-- T110E5, Super Conqueror -->
-			</trace>
-			<trace>
-				<eye> 2.2 </eye> <!-- AMX 13-105 -->
-				<target> 2.2 </target> <!-- Obj. 140, Progetto 65 -->
-			</trace>
-			<trace>
-				<eye> 1.65 </eye> <!-- T-100 LT, Manticore -->
-				<target> 3.8 </target> <!-- Type 5 Heavy -->
-				<weight> 0.5 </weight>
-			</trace>
-			<trace>
-				<eye> 3.8 </eye> <!-- Type 5 Heavy -->
-				<target> 2.5 </target> <!-- TVP T50/51 -->
-				<weight> 0.2 </weight>
-			</trace>
-		</traceHeights>
-		<samplesPerCell> 100 </samplesPerCell>
-		<exposureMap>
-			<type> average </type>
-			<resolutionMultiplier> 5 </resolutionMultiplier>
-			<exposureVisionRadius> 470 </exposureVisionRadius>
-			<coverageVisionRadius> 445 </coverageVisionRadius>
-			<minBaseInvisibility> 0.1 </minBaseInvisibility>
-			<maxBaseInvisibility> 0.5 </maxBaseInvisibility>
-		</exposureMap>
-	</stealthGrid>
 	<navHeightMap>
 		<gridCellWidth> 4 </gridCellWidth>
 		<gridCellHeight> 4 </gridCellHeight>
 	</navHeightMap>
+	<navWaterDepthMap>
+		<gridCellWidth> 4 </gridCellWidth>
+		<gridCellHeight> 4 </gridCellHeight>
+	</navWaterDepthMap>
 	<zones>
 		<center_generator>
 			<navmeshGirth> CTF_5.5 </navmeshGirth>
 			<navmeshSnapRadius> 10 </navmeshSnapRadius>
-			<gridStepX> 20 </gridStepX>
-			<gridStepY> 20 </gridStepY>
 			<minDesirabilityAreaThreshold> 30 </minDesirabilityAreaThreshold>
 			<maxDesirabilityAreaThreshold> 90 </maxDesirabilityAreaThreshold>
 			<minDesirability> 35 </minDesirability>
@@ -413,6 +365,26 @@
 		</link_generator>
 		<paths>
 			<maxAdditionalPathOverBestRoute> 100 </maxAdditionalPathOverBestRoute>
+
+            <!--
+                Maximum number of ZonesMaps of type "Patch" compatible with the base ZonesMap
+                (the one move link paths are generated for), and affecting move links in some way.
+                Move link path diffs will be generated for each possible combination of these patches
+                (order-independent), meaning that if number of patches is n, there will be (n^2 - 1) combinations.
+                Creating too much patches would cause exponential bloat of the data (and generation time),
+                so this setting limits it to "sane" values.
+                Default value 4 allows up to 15 diffs to be generated.
+                Maximum allowed value is hardcoded to 16 (65535 diffs - not recommended).
+            -->
+			<maxPatches> 4 </maxPatches>
 		</paths>
 	</zones>
+	<visibilityVolume>
+		<gridCellSize> 100.0 100.0 </gridCellSize>
+		<cellHeight> 100.0 </cellHeight>
+		<subdivisionLevel> 6 </subdivisionLevel>
+	</visibilityVolume>
+	<computeGrid>
+		<cellSize> 20.0 20.0 </cellSize>
+	</computeGrid>
 </root>

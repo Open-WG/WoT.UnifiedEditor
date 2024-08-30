@@ -4,7 +4,7 @@ import QtQml.Models 2.11
 ListModel {
 	ListElement {display: "Favorites"; filter: "#Favorites"}
 	ListElement {display: "Spaces"; filter: "$asset_type=space"}
-	ListElement {display: "Models"; filter: "$asset_type=model lod0"}
+	ListElement {display: "Models"; filter: "$asset_type=model lod0 $havok_model=false"}
 	ListElement {display: "Atlas"; filter: "$asset_type=atlas"}
 	ListElement {display: "SpeedTree"; filter: "$asset_type=speedtree"}
 	ListElement {display: "Prefabs"; filter: "$asset_type=prefab"}

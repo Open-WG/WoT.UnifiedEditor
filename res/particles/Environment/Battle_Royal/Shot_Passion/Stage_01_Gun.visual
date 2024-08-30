@@ -34,7 +34,7 @@
 						<Texture> particles/content_deferred/GFX_models/GFX_textures/Gradients/br_shotPassion.dds </Texture>
 					</property>
 					<property> lightMultipliers
-						<Vector4> 500.000000 0.000000 0.000000 0.000000 </Vector4>
+						<Vector4> 650.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> distortion_UV_Speed_Amount
 						<Vector4> -0.830000 0.190000 0.020000 0.100000 </Vector4>
@@ -67,7 +67,7 @@
 						<Float> 6.000000 </Float>
 					</property>
 					<property> diffuseUVSpeedAlphaOffset
-						<Vector4> -0.020000 0.400000 7.000000 0.000000 </Vector4>
+						<Vector4> -1.000000 0.400000 9.000000 0.000000 </Vector4>
 					</property>
 					<property> opacityMapEnable
 						<Bool> true </Bool>
@@ -83,6 +83,9 @@
 					</property>
 					<property> destBlend
 						<Int> 2 </Int>
+					</property>
+					<property> TintlColor
+						<Vector4> 1.000000 0.129412 0.129412 1.000000 </Vector4>
 					</property>
 				</material>
 			</primitiveGroup>

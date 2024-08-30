@@ -21,3 +21,4 @@
 *.qm filter=lfs diff=lfs merge=lfs -text
 *.pak filter=lfs diff=lfs merge=lfs -text
 *.qmlc filter=lfs diff=lfs merge=lfs -text
+SoundbanksInfo.xml filter=lfs diff=lfs merge=lfs -text

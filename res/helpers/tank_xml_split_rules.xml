@@ -224,6 +224,7 @@
 							<whileGunDamaged />
 						</shotDispersionFactors>
 						<reloadTime />
+						<forcedReloadTime />
 						<chargeTime />
 						<multiGunEffects />
 						<dualGun>
@@ -272,6 +273,11 @@
 							<count />
 							<rate />
 						</burst>
+						<autoShoot>
+							<shotDispersionPerSec />
+							<maxShotDispersion />
+							<groupSize />
+						</autoShoot>
 						<shots>
 							<_ANYTHING_ />
 						</shots>
@@ -395,7 +401,9 @@
 			<volumeFactor />
 		</horns>
 		<hull>
-			<prefab />
+			<prefabs>
+				<_ANYTHING_ />
+			</prefabs>
 			<models>
 				<undamaged />
 				<destroyed />
@@ -537,7 +545,9 @@
 		</hull>
 		<chassis>
 			<_CHASSIS_NAME_>
-				<prefab />
+				<prefabs>
+					<_ANYTHING_ />
+				</prefabs>
 				<models>
 					<undamaged />
 					<destroyed />
@@ -759,7 +769,9 @@
 		</chassis>
 		<turrets0>
 			<_TURRET_NAME_>
-				<prefab />
+				<prefabs>
+					<_ANYTHING_ />
+				</prefabs>
 				<models>
 					<undamaged />
 					<destroyed />
@@ -781,7 +793,9 @@
 				</multiGun>
 				<guns>
 					<_GUN_NAME_>
-						<prefab />
+						<prefabs>
+							<_ANYTHING_ />
+						</prefabs>
 						<models>
 							<undamaged />
 							<destroyed />
@@ -909,6 +923,7 @@
 			</_TURRET_NAME_>
 		</turrets0>
 	</tank_appearance>
+
 	<!-- Camouflage parameters for specific tank -->
 	<tank_camouflage outFolderName="camouflages">
 		<customizationNation />

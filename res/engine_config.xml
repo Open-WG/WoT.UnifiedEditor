@@ -107,6 +107,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<controlPointCullDistance>
 				1400
 			</controlPointCullDistance>
+			<terrainSelectedAreaCullDistance>
+				1000
+			</terrainSelectedAreaCullDistance>
 		</ObjectsFarPlaneManager>
 		<StreamedTexturePrecache>
 			<Mode>
@@ -385,6 +388,7 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<!-- Enable debug color fill for trees and buildings -->
 		<enableColorFill> false </enableColorFill>
 		<remotePythonConsole> true </remotePythonConsole>
+		<timePerFrameWarningThreshold> 1000.0 </timePerFrameWarningThreshold>
 	</debug>
 	<hitchDetector>
 		<!-- The number of frames that count towards the running average -->
@@ -482,6 +486,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 			</voice_soundbanks>
 			<SFX_soundbanks_loadonce>
+				<bank>
+					<name> death_camera.bnk </name>
+				</bank>
 				<bank>
 					<name> ambient.pck </name>
 				</bank>
@@ -999,4 +1006,7 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<cpuCoresThreshold>5</cpuCoresThreshold>
 		</taskSystem>
 	</gameface>
+	<visualScript>
+		<debuggerPort>    1454    </debuggerPort>
+	</visualScript>
 </engine_config.xml>

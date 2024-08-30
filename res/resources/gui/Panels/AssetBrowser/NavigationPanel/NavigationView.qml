@@ -36,7 +36,7 @@ Views.TreeView {
 		onCurrentChanged: {
 			if (current.valid) {
 				view.expandAllParents(current)
-				view.positionViewAtIndex(current, ListView.Visible)
+				view.positionViewAtIndex(current, ListView.Contain)
 			} else {
 				view.positionViewAtBeginning()
 			}

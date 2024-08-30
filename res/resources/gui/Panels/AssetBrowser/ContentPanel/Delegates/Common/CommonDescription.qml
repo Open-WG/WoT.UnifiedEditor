@@ -23,7 +23,7 @@ Item {
 		leftPadding: parent.favorite ? favoritesIndicator.width + parent.spacing : 0
 		elide: Text.ElideRight
 		wrapMode: wrapEnabled ? Text.Wrap : Text.NoWrap
-		maximumLineCount: (styleData.hovered || styleData.selected) ? 2 : 1
+		maximumLineCount: 2
 		enabled: false
 
 		Behavior on leftPadding {

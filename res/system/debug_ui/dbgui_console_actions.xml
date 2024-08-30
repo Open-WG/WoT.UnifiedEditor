@@ -12,6 +12,20 @@
 		<param label="0">(0, 0, 0, 0)</param>
 	</item>
 
+	<item label="Add BattlePass points">
+		<item label="Standard amounts" action="$p.stats.addBattlePassPoints">
+			<param label="50">(0, 50)</param>
+			<param label="500">(0, 500)</param>
+			<param label="1250">(0, 1250)</param>
+			<param label="2500">(0, 2500)</param>
+			<param label="5000">(0, 5000)</param>
+			<param label="7500">(0, 7500)</param>
+		</item>
+		<item label="Custom amount" action="$p.stats.addBattlePassPoints(0, " input="true" format="%s)"/>
+	</item>
+
+	<item label="Set battlesCount" action="$p.stats.setDossierField('a15x15.battlesCount', " input="true" format="%s)"/>
+
 	<item label="Premium Account">
 		<item label="Leave blank for 24h"/>
 		<item label="WoT Premium (seconds)" action="$p.stats.setPremium(2, " input="true" format="%s)"/>
@@ -79,17 +93,40 @@
 	</item>
 
 	<item label="PersonalReserves">
-		<item label="Add reserves" action="$boosters.addBooster">
+		<item label="Add a reserve by Id" action="$boosters.addBooster(" input="true" format="%s, 1)"/>
+		<item label="Add standard reserves" action="$boosters.addBooster">
 			<param label="xp">(121000, 10)</param>
-			<param label="xp - expiration">(122240, 10)</param>
 			<param label="xp - premium">(121001, 10)</param>
 			<param label="credits">(121002, 10)</param>
-			<param label="credits - expiration">(122241, 10)</param>
 			<param label="credits - premium">(121003, 10)</param>
 			<param label="crew+fxp">(121004, 10)</param>
-			<param label="crew+fxp - expiration">(122242, 10)</param>
 			<param label="crew+fxp - premium">(121005, 10)</param>
 			<param label="frontline xp">(111001, 10)</param>
+		</item>
+		<item label="Add expirable reserves" action="$boosters.addBooster">
+			<param label="xp 7 days">(122210, 3)</param>
+			<param label="xp 14 days">(122211, 3)</param>
+			<param label="xp 28 days">(122212, 3)</param>
+			<param label="xp - premium 7 days">(122310, 3)</param>
+			<param label="xp - premium 14 days">(122311, 3)</param>
+			<param label="xp - premium 28 days">(122312, 3)</param>
+			<param label="credits 7 days">(122410, 3)</param>
+			<param label="credits 14 days">(122411, 3)</param>
+			<param label="credits 28 days">(122412, 3)</param>
+			<param label="crew+fxp 7 days">(122510, 3)</param>
+			<param label="crew+fxp 14 days">(122511, 3)</param>
+			<param label="crew+fxp 28 days">(122512, 3)</param>
+			<param label="crew+fxp - premium 7 days">(122610, 3)</param>
+			<param label="crew+fxp - premium 14 days">(122611, 3)</param>
+			<param label="crew+fxp - premium 28 days">(122612, 3)</param>
+		</item>
+		<item label="Add custom expirable reserves (expires in seconds)">
+			<item label="These commands might cause incorrect behavior." />
+			<item label="xp" action="$boosters.addExpiringBooster(122210, 3, " input="true" format="%s)"/>
+			<item label="xp premium " action="$boosters.addExpiringBooster(122310, 3, " input="true" format="%s)"/>
+			<item label="credits" action="$boosters.addExpiringBooster(122410, 3, " input="true" format="%s)"/>
+			<item label="crew+fxp" action="$boosters.addExpiringBooster(122510, 3, " input="true" format="%s)"/>
+			<item label="crew+fxp premium" action="$boosters.addExpiringBooster(122610, 3, " input="true" format="%s)"/>
 		</item>
 		<item label="Clear reserves" action="$boosters.clearBoosters()" />
 		<item label="Activate clan reserves" action="$boosters.activateClanBooster">
@@ -103,6 +140,7 @@
 			<param label="crew_xp_2.0">(16)</param>
 		</item>
 		<item label="Clear clan reserves" action="$boosters.deactivateClanBoosters()" />
+		<item label="Reset account settings" action="$boosters.resetAccountSettings()" />
 	</item>
 
 	<item label="Shortcuts">
@@ -183,50 +221,65 @@
 		<item label="Show NoVehicles screen" action="from gui.development import showComp7NoVehiclesScreen; showComp7NoVehiclesScreen()"/>
 		<item label="Show Intro screen" action="from gui.development import showComp7IntroScreen; showComp7IntroScreen()"/>
 		<item label="Show What's New screen" action="from gui.development import showComp7WhatsNewScreen; showComp7WhatsNewScreen()"/>
-		<item label="Show Season Statistics screen" action="from gui.development import showComp7SeasonStatisticsScreen; showComp7SeasonStatisticsScreen()"/>
+		<item label="Show Season Statistics screen" action="from gui.development import showComp7SeasonStatisticsScreen; showComp7SeasonStatisticsScreen" input="true" format="('%s')"/>
 		<item label="Show Ranks Rewards screen" action="from gui.development import showComp7RanksRewardsScreen; showComp7RanksRewardsScreen">
 			<param label="Any">()</param>
-			<param label="Iron E">('comp7_3_2_ranks_65')</param>
-			<param label="Iron D">('comp7_3_2_ranks_64')</param>
-			<param label="Iron C">('comp7_3_2_ranks_63')</param>
-			<param label="Iron B">('comp7_3_2_ranks_62')</param>
-			<param label="Iron A">('comp7_3_2_ranks_61')</param>
-			<param label="Bronze E">('comp7_3_2_ranks_55')</param>
-			<param label="Bronze D">('comp7_3_2_ranks_54')</param>
-			<param label="Bronze C">('comp7_3_2_ranks_53')</param>
-			<param label="Bronze B">('comp7_3_2_ranks_52')</param>
-			<param label="Bronze A">('comp7_3_2_ranks_51')</param>
-			<param label="Silver E">('comp7_3_2_ranks_45')</param>
-			<param label="Silver D">('comp7_3_2_ranks_44')</param>
-			<param label="Silver C">('comp7_3_2_ranks_43')</param>
-			<param label="Silver B">('comp7_3_2_ranks_42')</param>
-			<param label="Silver A">('comp7_3_2_ranks_41')</param>
-			<param label="Gold E">('comp7_3_2_ranks_35')</param>
-			<param label="Gold D">('comp7_3_2_ranks_34')</param>
-			<param label="Gold C">('comp7_3_2_ranks_33')</param>
-			<param label="Gold B">('comp7_3_2_ranks_32')</param>
-			<param label="Gold A">('comp7_3_2_ranks_31')</param>
-			<param label="Champion A">('comp7_3_2_ranks_21')</param>
-			<param label="Legend A">('comp7_3_2_ranks_11')</param>
+			<param label="Iron E">('comp7_4_1_ranks_65')</param>
+			<param label="Iron D">('comp7_4_1_ranks_64')</param>
+			<param label="Iron C">('comp7_4_1_ranks_63')</param>
+			<param label="Iron B">('comp7_4_1_ranks_62')</param>
+			<param label="Iron A">('comp7_4_1_ranks_61')</param>
+			<param label="Bronze E">('comp7_4_1_ranks_55')</param>
+			<param label="Bronze D">('comp7_4_1_ranks_54')</param>
+			<param label="Bronze C">('comp7_4_1_ranks_53')</param>
+			<param label="Bronze B">('comp7_4_1_ranks_52')</param>
+			<param label="Bronze A">('comp7_4_1_ranks_51')</param>
+			<param label="Silver E">('comp7_4_1_ranks_45')</param>
+			<param label="Silver D">('comp7_4_1_ranks_44')</param>
+			<param label="Silver C">('comp7_4_1_ranks_43')</param>
+			<param label="Silver B">('comp7_4_1_ranks_42')</param>
+			<param label="Silver A">('comp7_4_1_ranks_41')</param>
+			<param label="Gold E">('comp7_4_1_ranks_35')</param>
+			<param label="Gold D">('comp7_4_1_ranks_34')</param>
+			<param label="Gold C">('comp7_4_1_ranks_33')</param>
+			<param label="Gold B">('comp7_4_1_ranks_32')</param>
+			<param label="Gold A">('comp7_4_1_ranks_31')</param>
+			<param label="Champion A">('comp7_4_1_ranks_21')</param>
+			<param label="Legend A">('comp7_4_1_ranks_11')</param>
 		</item>
 		<item label="Show Tokens Rewards screen" action="from gui.development import showComp7TokensRewardsScreen; showComp7TokensRewardsScreen">
 			<param label="Any">()</param>
-			<param label="1">('comp7_3_2_token_rewards_1')</param>
-			<param label="3">('comp7_3_2_token_rewards_3')</param>
-			<param label="5">('comp7_3_2_token_rewards_5')</param>
-			<param label="6">('comp7_3_2_token_rewards_6')</param>
+			<param label="1">('comp7_4_1_token_rewards_1')</param>
+			<param label="3">('comp7_4_1_token_rewards_3')</param>
+			<param label="5">('comp7_4_1_token_rewards_5')</param>
+			<param label="6">('comp7_4_1_token_rewards_6')</param>
 		</item>
 		<item label="Show Qualification Rewards screen" action="from gui.development import showComp7QualificationRewardsScreen; showComp7QualificationRewardsScreen">
-			<param label="Iron">(['comp7_3_2_ranks_65'])</param>
-			<param label="Bronze">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55'])</param>
-			<param label="Silver">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55', 'comp7_3_2_ranks_45'])</param>
-			<param label="Gold">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55', 'comp7_3_2_ranks_45', 'comp7_3_2_ranks_35'])</param>
+			<param label="Iron">(['comp7_4_1_ranks_65'])</param>
+			<param label="Bronze">(['comp7_4_1_ranks_65', 'comp7_4_1_ranks_55'])</param>
+			<param label="Silver">(['comp7_4_1_ranks_65', 'comp7_4_1_ranks_55', 'comp7_4_1_ranks_45'])</param>
+			<param label="Gold">(['comp7_4_1_ranks_65', 'comp7_4_1_ranks_55', 'comp7_4_1_ranks_45', 'comp7_4_1_ranks_35'])</param>
 		</item>
+		<item label="Show Yearly Rewards screen" action="from gui.development import showComp7YearlyRewardsScreen; showComp7YearlyRewardsScreen">
+			<param label="3">(0)</param>
+			<param label="6">(1)</param>
+			<param label="9">(2)</param>
+			<param label="12">(3)</param>
+			<param label="15">(4)</param>
+			<param label="18">(5)</param>
+		</item>
+		<item label="Show Rewards Selection screen" action="from gui.development import showComp7RewardsSelectionWindow; showComp7RewardsSelectionWindow()"/>
+		<item label="Show Rewards Selected view" action="from gui.development import showComp7SelectedRewardsWindow; showComp7SelectedRewardsWindow()"/>
 	</item>
 	<item label="Crew">
 		<item label="earn all skills" action="$earnAllSkills"/>
 		<item label="Add all unique tankmen" action="$p.inventory.addAllUniqueTankmen()"/>
 		<item label="Empty barracks" action="$p.inventory.emptyBarracks()"/>
+		<item label="Show exact loading tip" action="from helpers.tips import showExactTip; showExactTip" input="true" format="('%s')"/>
+		<item label="Give all tankmen max XP" action="$p.inventory.giveAllTankmenMaxXp()"/>
+		<item label="Fill all tankmen skills" action="$p.inventory.fillAllTankmenSkills()"/>
+		<item label="Reset all tankmen skills" action="$p.inventory.resetAllTankmenSkills()"/>
+		<item label="Output TTC logs" action="from constants import IS_DEVELOPMENT;from gui.shared.items_parameters import params; setattr(params, '_DO_TTC_LOG', not params._DO_TTC_LOG and IS_DEVELOPMENT)"/>
 	</item>
 
 	<item label="Game Loading">
@@ -234,5 +287,9 @@
 	</item>
 
 	<item label="ReInit battle hints" action="$reInitBattleHintsData"/>
+
+	<item label="Environment Switching">
+		<item label="Change battle environment" action="$p.base.setDevelopmentFeature" input="true" format="(0, 'changeEnvironment', 0, '%s')"/>
+	</item>
 
 </root>

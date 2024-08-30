@@ -86,7 +86,7 @@
   <rule pattern=".*(\.prefab)$">
     <root>true</root>
     <converter>XMLConverter</converter>
-    <converterParams>-stripRuleSets strip_metadata</converterParams>
+    <converterParams>-stripRuleSets prefabs;strip_metadata</converterParams>
   </rule>
   <rule pattern=".*(\.ika)$">
     <root>true</root>
@@ -110,6 +110,36 @@
   </rule>
   <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_824_BigGun.*lod0.*(\.visual).*$">
     <!-- Needed in order to be able to place stickers on HQs -->
+    <root>true</root>
+    <converter>VisualProcessor</converter>
+    <converterParams>-createVisualTree</converterParams>
+  </rule>
+  <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_066_PillboxGun.*lod0.*(\.visual).*$">
+    <!-- Needed in order to be able to place stickers on Bunker -->
+    <root>true</root>
+    <converter>VisualProcessor</converter>
+    <converterParams>-createVisualTree</converterParams>
+  </rule>
+  <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_072_PillboxLeft.*lod0.*(\.visual).*$">
+    <!-- Needed in order to be able to place stickers on Bunker -->
+    <root>true</root>
+    <converter>VisualProcessor</converter>
+    <converterParams>-createVisualTree</converterParams>
+  </rule>
+  <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_075_PillboxBunker.*lod0.*(\.visual).*$">
+    <!-- Needed in order to be able to place stickers on Bunker -->
+    <root>true</root>
+    <converter>VisualProcessor</converter>
+    <converterParams>-createVisualTree</converterParams>
+  </rule>
+  <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_076_PillboxTank.*lod0.*(\.visual).*$">
+    <!-- Needed in order to be able to place stickers on Bunker -->
+    <root>true</root>
+    <converter>VisualProcessor</converter>
+    <converterParams>-createVisualTree</converterParams>
+  </rule>
+  <rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_078_PillboxRight.*lod0.*(\.visual).*$">
+    <!-- Needed in order to be able to place stickers on Bunker -->
     <root>true</root>
     <converter>VisualProcessor</converter>
     <converterParams>-createVisualTree</converterParams>

@@ -1,0 +1,60 @@
+<root>
+	<params>
+		<param>
+			<name> Hit </name>
+			<type> trigger </type>
+		</param>
+	</params>
+	<node>
+		<name> Idle </name>
+		<type> sleep </type>
+		<time> 1.000000 1.000000 </time>
+		<transition>
+			<to> hull_hit_01 </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> Hit </name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> hull_hit_02 </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> Hit </name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -252.000000 -158.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hull_hit_02 </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz20_ShPTK_TVP_100_mm_CO_3DSt/scared_birds_hit_02.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> Idle </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition> -403.000000 -247.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> hull_hit_01 </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz20_ShPTK_TVP_100_mm_CO_3DSt/scared_birds_hit_01.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> Idle </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition> -109.000000 -248.000000 0.000000 </uiPosition>
+	</node>
+</root>

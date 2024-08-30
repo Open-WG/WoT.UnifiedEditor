@@ -143,7 +143,7 @@
 			</shotSound>
 		</effects>
 	</shot_Gochkins_auto>
-	<!-- small (20-49 mm) -->
+	<!--small (20-49 mm)-->
 	<shot_small>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -246,7 +246,109 @@
 			</shotSound>
 		</effects>
 	</shot_small_mb>
-	<!-- medium (50-84 mm) -->
+	<shot_small_auto>
+		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
+		<timeline>
+			<lighting2> 0.075 </lighting2>
+			<end> 0.4 </end>
+			<endpixie> 0.5 </endpixie>
+			<soundplaystop> 5 </soundplaystop>
+		</timeline>
+		<effects>
+			<pixie>
+				<startKey> start </startKey>
+				<endKey> endpixie </endKey>
+				<file> particles/Tank/shots/shot_small_auto_01.eff </file>
+				<force> 1 </force>
+				<position> HP_gunFire </position>
+			</pixie>
+			<light>
+				<startKey> start </startKey>
+				<endKey> lighting2 </endKey>
+				<innerRadius> 0.125 </innerRadius>
+				<outerRadius> 3 </outerRadius>
+				<castShadows> false </castShadows>
+				<position> HP_gunFire </position>
+				<animation>
+					<time> 0.0 </time>
+					<color> 255 150 0 </color>
+					<multiplier> 4 </multiplier>
+				</animation>
+				<animation>
+					<time> 0.15 </time>
+					<color> 255 200 100 </color>
+					<multiplier> 6 </multiplier>
+				</animation>
+				<animation>
+					<time> 0.65 </time>
+					<color> 170 65 25 </color>
+					<multiplier> 4 </multiplier>
+				</animation>
+				<animation>
+					<time> 1.0 </time>
+					<color> 0 0 0 0 </color>
+					<multiplier> 2 </multiplier>
+				</animation>
+			</light>
+			<shotSound>
+				<startKey> start </startKey>
+				<wwsoundPC> wpn_small_PC </wwsoundPC>
+				<wwsoundNPC> wpn_small_NPC </wwsoundNPC>
+			</shotSound>
+		</effects>
+	</shot_small_auto>
+	<shot_small_auto_mb>
+		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
+		<timeline>
+			<lighting2> 0.075 </lighting2>
+			<end> 0.4 </end>
+			<endpixie> 0.5 </endpixie>
+			<soundplaystop> 5 </soundplaystop>
+		</timeline>
+		<effects>
+			<pixie>
+				<startKey> start </startKey>
+				<endKey> endpixie </endKey>
+				<file> particles/Tank/shots/shot_small_auto_02.eff </file>
+				<force> 1 </force>
+				<position> HP_gunFire </position>
+			</pixie>
+			<light>
+				<startKey> start </startKey>
+				<endKey> lighting2 </endKey>
+				<innerRadius> 0.125 </innerRadius>
+				<outerRadius> 3 </outerRadius>
+				<castShadows> false </castShadows>
+				<position> HP_gunFire </position>
+				<animation>
+					<time> 0.0 </time>
+					<color> 255 150 0 </color>
+					<multiplier> 4 </multiplier>
+				</animation>
+				<animation>
+					<time> 0.15 </time>
+					<color> 255 200 100 </color>
+					<multiplier> 6 </multiplier>
+				</animation>
+				<animation>
+					<time> 0.65 </time>
+					<color> 170 65 25 </color>
+					<multiplier> 4 </multiplier>
+				</animation>
+				<animation>
+					<time> 1.0 </time>
+					<color> 0 0 0 0 </color>
+					<multiplier> 2 </multiplier>
+				</animation>
+			</light>
+			<shotSound>
+				<startKey> start </startKey>
+				<wwsoundPC> wpn_small_PC </wwsoundPC>
+				<wwsoundNPC> wpn_small_NPC </wwsoundNPC>
+			</shotSound>
+		</effects>
+	</shot_small_auto_mb>
+	<!--medium (50-84 mm) -->
 	<shot_KwK_L46>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -391,7 +493,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_medium_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -507,7 +609,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_medium_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -530,7 +632,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_medium_mb>
-	<!-- main (85-99 mm) -->
+	<!--main (85-99 mm)-->
 	<shot_main>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -557,22 +659,22 @@
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier>10</multiplier>
 				</animation>
 				<animation>
 					<time> 0.25 </time>
 					<color> 255 200 100 </color>
-					<multiplier> 15 </multiplier>
+					<multiplier> 15</multiplier>
 				</animation>
 				<animation>
 					<time> 0.75 </time>
 					<color> 170 65 25 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier>10</multiplier>
 				</animation>
 				<animation>
 					<time> 1.0 </time>
 					<color> 0 0 0 0 </color>
-					<multiplier> 5 </multiplier>
+					<multiplier>5</multiplier>
 				</animation>
 			</light>
 			<shotSound>
@@ -624,7 +726,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_medium_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -673,7 +775,7 @@
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier>10</multiplier>
 				</animation>
 				<animation>
 					<time> 0.25 </time>
@@ -683,12 +785,12 @@
 				<animation>
 					<time> 0.75 </time>
 					<color> 170 65 25 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier> 10</multiplier>
 				</animation>
 				<animation>
 					<time> 1.0 </time>
 					<color> 0 0 0 0 </color>
-					<multiplier> 5 </multiplier>
+					<multiplier> 5</multiplier>
 				</animation>
 			</light>
 			<shotSound>
@@ -740,7 +842,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -763,7 +865,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_main_mb>
-	<!-- main dualgun _dualgun1 - is a single shot for one of dual guns -->
+	<!--main dualgun _dualgun1 - is a single shot for one of dual guns-->
 	<shot_dualgun1_main_mb_L>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -778,7 +880,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_main_02.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -786,7 +888,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -894,7 +996,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_main_02.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -902,7 +1004,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1001,7 +1103,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -1010,7 +1112,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_main_02_L.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1018,7 +1120,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1041,17 +1143,17 @@
 				</animation>
 			</light>
 			<!--Dualgun shot effect consists of two effects, played together at same time.
-			     Even so, only one sound is needed. -->
-			<!-- <shotSound> -->
-			<!-- <startKey> start </startKey> -->
-			<!-- <wwsoundPC> wpn_main_PC </wwsoundPC> -->
-			<!-- <wwsoundNPC> wpn_main_NPC </wwsoundNPC> -->
-			<!-- </shotSound> -->
+			Even so, only one sound is needed.-->
+			<!--<shotSound>-->
+			<!--<startKey> start </startKey>-->
+			<!--<wwsoundPC> wpn_main_PC </wwsoundPC>-->
+			<!--<wwsoundNPC> wpn_main_NPC </wwsoundNPC>-->
+			<!--</shotSound>-->
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting>6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
@@ -1119,7 +1221,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -1128,7 +1230,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_main_02_R.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1136,7 +1238,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1160,55 +1262,55 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_main_dual_PC </wwsoundPC>
+				<wwsoundPC> wpn_main_dual_PC</wwsoundPC>
 				<wwsoundNPC> wpn_main_dual_NPC </wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting> 6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> default </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> ground </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> stone </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> sand </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> snow </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> water </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
@@ -1244,7 +1346,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_main_01.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1252,7 +1354,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1360,7 +1462,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_main_01.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1368,7 +1470,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1467,7 +1569,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -1476,7 +1578,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_main_01_L.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1484,7 +1586,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1507,17 +1609,17 @@
 				</animation>
 			</light>
 			<!--Dualgun shot effect consists of two effects, played together at same time.
-			     Even so, only one sound is needed. -->
-			<!-- <shotSound> -->
-			<!-- <startKey> start </startKey> -->
-			<!-- <wwsoundPC> wpn_main_PC </wwsoundPC> -->
-			<!-- <wwsoundNPC> wpn_main_NPC </wwsoundNPC> -->
-			<!-- </shotSound> -->
+			Even so, only one sound is needed.-->
+			<!--<shotSound>-->
+			<!--<startKey> start </startKey>-->
+			<!--<wwsoundPC> wpn_main_PC </wwsoundPC>-->
+			<!--<wwsoundNPC> wpn_main_NPC </wwsoundNPC>-->
+			<!--</shotSound>-->
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting>6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
@@ -1585,7 +1687,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -1594,7 +1696,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_main_01_R.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -1602,7 +1704,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -1626,55 +1728,55 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_main_dual_PC </wwsoundPC>
+				<wwsoundPC> wpn_main_dual_PC</wwsoundPC>
 				<wwsoundNPC> wpn_main_dual_NPC </wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting> 6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> default </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> ground </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> stone </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> sand </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> snow </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> water </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
@@ -1696,7 +1798,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_main_R>
-	<!-- mainext (100-104 mm) -->
+	<!--mainext (100-104 mm)-->
 	<shot_mainext>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -1717,34 +1819,34 @@
 				<startKey> start </startKey>
 				<endKey> lighting2 </endKey>
 				<innerRadius> 100 </innerRadius>
-				<outerRadius> 600 </outerRadius>
+				<outerRadius> 600</outerRadius>
 				<castShadows> false </castShadows>
 				<position> HP_gunFire </position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier> 10</multiplier>
 				</animation>
 				<animation>
 					<time> 0.25 </time>
 					<color> 255 200 100 </color>
-					<multiplier> 15 </multiplier>
+					<multiplier> 15</multiplier>
 				</animation>
 				<animation>
 					<time> 0.75 </time>
 					<color> 170 65 25 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier> 10</multiplier>
 				</animation>
 				<animation>
 					<time> 1.0 </time>
 					<color> 0 0 0 0 </color>
-					<multiplier> 5 </multiplier>
+					<multiplier> 5</multiplier>
 				</animation>
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_main_extra_PC </wwsoundPC>
-				<wwsoundNPC> wpn_main_extra_NPC </wwsoundNPC>
+				<wwsoundPC>wpn_main_extra_PC</wwsoundPC>
+				<wwsoundNPC>wpn_main_extra_NPC </wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
@@ -1790,7 +1892,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -1839,12 +1941,12 @@
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
-					<multiplier> 10 </multiplier>
+					<multiplier> 10</multiplier>
 				</animation>
 				<animation>
 					<time> 0.25 </time>
 					<color> 255 200 100 </color>
-					<multiplier> 15 </multiplier>
+					<multiplier> 15</multiplier>
 				</animation>
 				<animation>
 					<time> 0.75 </time>
@@ -1854,13 +1956,13 @@
 				<animation>
 					<time> 1.0 </time>
 					<color> 0 0 0 0 </color>
-					<multiplier> 5 </multiplier>
+					<multiplier> 5</multiplier>
 				</animation>
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_main_extra_PC </wwsoundPC>
-				<wwsoundNPC> wpn_main_extra_NPC </wwsoundNPC>
+				<wwsoundPC>wpn_main_extra_PC</wwsoundPC>
+				<wwsoundNPC>wpn_main_extra_NPC</wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
@@ -1906,7 +2008,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2030,7 +2132,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_dirt_mb.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2146,7 +2248,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_dirt_mb.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2264,7 +2366,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_dualgun_main_dirt_mb.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2380,7 +2482,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/empty.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2496,7 +2598,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_dirt.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2612,7 +2714,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_main_dirt.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2730,7 +2832,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_dualgun_main_dirt.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2846,7 +2948,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> dirt </surfaceMatKind>
+						<surfaceMatKind> dirt</surfaceMatKind>
 						<file> particles/Tank/empty.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -2862,7 +2964,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_mainext_R>
-	<!-- large (105-125 mm) -->
+	<!--large (105-125 mm)-->
 	<shot_large>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -2956,7 +3058,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -3072,7 +3174,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -3095,7 +3197,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_large_mb>
-	<!-- large dualgun _dualgun1 - is a single shot for one of dual guns -->
+	<!--large dualgun _dualgun1 - is a single shot for one of dual guns-->
 	<shot_dualgun1_large_mb_L>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -3110,7 +3212,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_large_02.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3118,7 +3220,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3226,7 +3328,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_large_02.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3234,7 +3336,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3333,7 +3435,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -3342,7 +3444,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_large_02_L.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3350,7 +3452,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3373,17 +3475,17 @@
 				</animation>
 			</light>
 			<!--Dualgun shot effect consists of two effects, played together at same time.
-			     Even so, only one sound is needed. -->
-			<!-- <shotSound> -->
-			<!-- <startKey> start </startKey> -->
-			<!-- <wwsoundPC> wpn_large_PC </wwsoundPC> -->
-			<!-- <wwsoundNPC> wpn_large_NPC </wwsoundNPC> -->
-			<!-- </shotSound> -->
+			Even so, only one sound is needed.-->
+			<!--<shotSound>-->
+			<!--<startKey> start </startKey>-->
+			<!--<wwsoundPC> wpn_large_PC </wwsoundPC>-->
+			<!--<wwsoundNPC> wpn_large_NPC </wwsoundNPC>-->
+			<!--</shotSound>-->
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting>6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
@@ -3451,7 +3553,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -3460,7 +3562,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_large_02_R.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3468,7 +3570,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3492,55 +3594,55 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_large_dual_PC </wwsoundPC>
+				<wwsoundPC> wpn_large_dual_PC</wwsoundPC>
 				<wwsoundNPC> wpn_large_dual_NPC </wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting> 6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> default </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> ground </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> stone </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> sand </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> snow </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> water </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
@@ -3576,7 +3678,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_large_01.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3584,7 +3686,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3692,7 +3794,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_large_01.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3700,7 +3802,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3799,7 +3901,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -3808,7 +3910,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_large_01_L.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3816,7 +3918,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_L </position>
+				<position>HP_gunFire_L</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3839,17 +3941,17 @@
 				</animation>
 			</light>
 			<!--Dualgun shot effect consists of two effects, played together at same time.
-			     Even so, only one sound is needed. -->
-			<!-- <shotSound> -->
-			<!-- <startKey> start </startKey> -->
-			<!-- <wwsoundPC> wpn_large_PC </wwsoundPC> -->
-			<!-- <wwsoundNPC> wpn_large_NPC </wwsoundNPC> -->
-			<!-- </shotSound> -->
+			Even so, only one sound is needed.-->
+			<!--<shotSound>-->
+			<!--<startKey> start </startKey>-->
+			<!--<wwsoundPC> wpn_large_PC </wwsoundPC>-->
+			<!--<wwsoundNPC> wpn_large_NPC </wwsoundNPC>-->
+			<!--</shotSound>-->
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting>6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
@@ -3917,7 +4019,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 12 </endpixie>
+			<endpixie>12</endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -3926,7 +4028,7 @@
 				<endKey> endpixie </endKey>
 				<file> particles/Tank/shots/shot_dualgun_large_01_R.eff </file>
 				<force> 1 </force>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 			</pixie>
 			<light>
 				<startKey> start </startKey>
@@ -3934,7 +4036,7 @@
 				<innerRadius> 1.5 </innerRadius>
 				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
-				<position> HP_gunFire_R </position>
+				<position>HP_gunFire_R</position>
 				<animation>
 					<time> 0.0 </time>
 					<color> 255 150 0 </color>
@@ -3958,55 +4060,55 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_large_dual_PC </wwsoundPC>
+				<wwsoundPC> wpn_large_dual_PC</wwsoundPC>
 				<wwsoundNPC> wpn_large_dual_NPC </wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
 			<groundWave>
 				<timeline>
-					<shooting> 6 </shooting>
+					<shooting> 6</shooting>
 				</timeline>
 				<effects>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> default </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> ground </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> stone </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> sand </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> snow </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
 						<surfaceMatKind> water </surfaceMatKind>
-						<file> particles/Tank/empty.eff </file>
+						<file>particles/Tank/empty.eff</file>
 						<force> 1 </force>
 						<position> Scene Root </position>
 					</pixie>
@@ -4028,7 +4130,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_large_R>
-	<!-- largeext (126-139 mm) -->
+	<!--largeext (126-139 mm)-->
 	<shot_largeext>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4075,8 +4177,8 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_large_extra_PC </wwsoundPC>
-				<wwsoundNPC> wpn_large_extra_NPC </wwsoundNPC>
+				<wwsoundPC>wpn_large_extra_PC</wwsoundPC>
+				<wwsoundNPC>wpn_large_extra_NPC</wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
@@ -4122,7 +4224,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4191,8 +4293,8 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_large_extra_PC </wwsoundPC>
-				<wwsoundNPC> wpn_large_extra_NPC </wwsoundNPC>
+				<wwsoundPC>wpn_large_extra_PC</wwsoundPC>
+				<wwsoundNPC>wpn_large_extra_NPC</wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
@@ -4238,7 +4340,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4266,7 +4368,7 @@
 		<timeline>
 			<lighting2> 0.09 </lighting2>
 			<end> 0.5 </end>
-			<endpixie> 3.8 </endpixie>
+			<endpixie>3.8 </endpixie>
 			<soundplaystop> 9 </soundplaystop>
 		</timeline>
 		<effects>
@@ -4307,8 +4409,8 @@
 			</light>
 			<shotSound>
 				<startKey> start </startKey>
-				<wwsoundPC> wpn_large_extra_PC </wwsoundPC>
-				<wwsoundNPC> wpn_large_extra_NPC </wwsoundNPC>
+				<wwsoundPC>wpn_large_extra_PC</wwsoundPC>
+				<wwsoundNPC>wpn_large_extra_NPC</wwsoundNPC>
 			</shotSound>
 		</effects>
 		<relatedEffects>
@@ -4354,7 +4456,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4377,7 +4479,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_ch41>
-	<!-- huge (140-169 mm) -->
+	<!--huge (140-169 mm)-->
 	<shot_huge>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4471,7 +4573,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4587,7 +4689,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4610,7 +4712,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_huge_mb>
-	<!-- superhuge (170+ mm) -->
+	<!--superhuge (170+ mm)-->
 	<shot_huge2>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4704,7 +4806,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4820,7 +4922,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>
@@ -4936,7 +5038,7 @@
 					</pixie>
 					<pixie>
 						<startKey> start </startKey>
-						<surfaceMatKind> water </surfaceMatKind>
+						<surfaceMatKind>water</surfaceMatKind>
 						<file> particles/Tank/shots/groundwave_large_water.eff </file>
 						<force> 1 </force>
 						<position> Scene Root </position>

@@ -5,16 +5,27 @@ import WGTools.Controls.Details 2.0
 import "Delegates/Scripts.js" as Scripts
 
 ToolBar {
-	GridLayout {
-		flow: _toolbar.orientation === Qt.Horizontal ? GridLayout.LeftToRight : GridLayout.TopToBottom
-		columnSpacing: ControlsSettings.toolBarPadding * 2
-		rowSpacing: ControlsSettings.toolBarPadding * 2
-		
-		Accessible.name: "Toolbar"
+	ScrollView {
+		anchors.top: parent.top
+		anchors.bottom: parent.bottom
+		anchors.left: parent.left
+		anchors.right: parent.right
 
-		Repeater {
-			model: context.model
-			Loader { source: Scripts.getDelegate(model.type, "Delegates") }
+		clip: true
+		ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+		ScrollBar.vertical.policy: ScrollBar.AlwaysOff
+
+		GridLayout {
+			flow: _toolbar.orientation === Qt.Horizontal ? GridLayout.LeftToRight : GridLayout.TopToBottom
+			columnSpacing: ControlsSettings.toolBarPadding * 2
+			rowSpacing: ControlsSettings.toolBarPadding * 2
+			
+			Accessible.name: "Toolbar"
+
+			Repeater {
+				model: context.model
+				Loader { source: Scripts.getDelegate(model.type, "Delegates") }
+			}
 		}
 	}
 }

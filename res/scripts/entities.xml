@@ -19,13 +19,13 @@
 		<FlockExotic/>
 		<Login/>
 		<DetachedTurret/>
-		<BootcampAccount/>
 		<DebugDrawEntity/>
 		<ClientSelectableCameraObject/>
 		<ClientSelectableCameraVehicle/>
 		<ClientSelectableWebLinksOpener/>
 		<ClientSelectableEasterEgg/>
 		<EmptyEntity/>
+		<LimitedVisibilityEntity/>
 		<HeroTank/>
 		<PlatoonTank/>
 		<PlatoonLighting/>
@@ -36,6 +36,8 @@
 		<ProtectionZone/>
 		<HangarPoster/>
 		<TeamInfo/>
+		<AvatarInfo/>
+		<ArenaObserverInfo/>
 		<!-- BR: move into extension -->
 		<!-- AoE abilities -->
 		<AreaOfEffect/>
@@ -43,6 +45,7 @@
 		<AttackArtilleryFort/>
 		<PersonalDeathZone/>
 		<ClientSelectableRankedObject/>
+		<SimulatedVehicle/>
 		<ClientSelectableHangarsSwitcher/>
 		<StaticDeathZone/>
 		<BasicMine/>
@@ -75,7 +78,6 @@
 		<AccountRegistrator/>
 		<WebPrebattleMgr/>
 		<LoginQueue/>
-		<EntitiesQueue/>
 		<GameStatsCollector/>
 		<YYChatMgr/>
 		<UnitAssembler/>
@@ -98,11 +100,8 @@
 		<TMSUnitMgr/>
 		<TMSUnitQueue/>
 		<ClusterGameParamsController/>
-		<BootcampQueue/>
-		<EntityGetter/>
 		<EpicMgr/>
 		<AiArenaMgr/>
-		<BattleRoyaleMgr/>
 		<MapBoxMgr/>
 		<MapsTrainingBattlesMgr/>
 		<BaseBattleMgr/>

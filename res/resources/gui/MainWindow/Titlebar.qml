@@ -104,6 +104,39 @@ ColumnLayout {
 			}
 		}
 
+		Button {
+			anchors {
+				right: prefixText.left
+				top: parent.top
+				bottom: parent.bottom
+				rightMargin: 10
+			}
+
+			icon.source: "image://gui/submit_bug_icon"
+			icon.color: "transparent"
+
+			icon.width: 20
+			icon.height: 20
+
+			hoverEnabled: true
+			flat: true
+
+			Rectangle {
+				anchors.fill: parent
+				z: -1
+				color: parent.hovered
+					? _palette.color6
+					: "transparent"
+			}
+
+			onClicked: Qt.openUrlExternally("https://confluence.wargaming.net/x/GHGIfQ")
+
+			ToolTip.text: "Submit a Bug"
+			ToolTip.visible: hovered
+			ToolTip.delay: ControlsSettings.tooltipDelay
+			ToolTip.timeout: ControlsSettings.tooltipTimeout
+		}
+
 		Misc.Text {
 			id: prefixText
 			text: context.currentPrefix

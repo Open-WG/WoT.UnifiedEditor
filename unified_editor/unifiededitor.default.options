@@ -1,4 +1,8 @@
 <root>
+	<realm>
+		<isDevRealm> true </isDevRealm>
+		<currentRealm> DEV </currentRealm>
+	</realm>
 	<toolsExternal>
 		<nvtt> ../resources/nvcompress/nvcompress.exe </nvtt>
 	</toolsExternal>
