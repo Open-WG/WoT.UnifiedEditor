@@ -1,0 +1,144 @@
+<lit_particles_instancing.xml>
+	<!-- WARNING: KEEP THIS INTACT WITH bilboard_vertex_common and bilboard_vertex from PS_scope.cpp -->
+	<!-- 
+      per_vertex_data (stream 0)
+         0 FLOAT2      vertexOffset
+
+      bilboard_vertex_common (stream 1)
+         0 FLOAT3      pos
+        12 FLOAT3      radiusDir
+        24 FLOAT16_4   (f_soft_factor, camera_offset, cameraFadeInFrom, cameraFadeInTo)
+
+       bilboard_vertex_common (stream 2)
+         0 FLOAT4      color_0
+        16 FLOAT4      (ColorOp, solid_threshold, texBlendFactor, slopeFadeCoeff)
+
+       bilboard_vertex_common (stream 3)
+         0 FLOAT16_4   LightingParamsCommon
+         8 FLOAT16_4   LightingParamsSun
+        16 FLOAT16_4   LightingParamsHalo
+        24 FLOAT2      (reserved.zv)
+
+       bilboard_vertex (stream 4)
+         0 FLOAT4      (offset.xyz, reserved)
+        16 FLOAT4      (U1, V1, U2, V2)
+
+       billboard_vertex_restore ( stream 5)
+         0 FLOAT3      offsetDx
+        12 FLOAT3      offsetDy
+        24 FLOAT2      texFrameSize
+  -->
+	<streams>
+		<stream>
+			<index> 1 </index>
+			<inputMode> INSTANCE_DATA </inputMode>
+		</stream>
+		<stream>
+			<index> 2 </index>
+			<inputMode> INSTANCE_DATA </inputMode>
+		</stream>
+		<stream>
+			<index> 3 </index>
+			<inputMode> INSTANCE_DATA </inputMode>
+		</stream>
+		<stream>
+			<index> 4 </index>
+			<inputMode> INSTANCE_DATA </inputMode>
+		</stream>
+		<stream>
+			<index> 5 </index>
+			<inputMode> INSTANCE_DATA </inputMode>
+		</stream>
+	</streams>
+	<elements>
+		<!--  Instance data -->
+		<COLOR>
+			<!-- vertexOffset -->
+			<stream> 0 </stream>
+			<semanticIndex> 1 </semanticIndex>
+			<type> FLOAT2 </type>
+		</COLOR>
+		<!-- bilboard_vertex_common stream-->
+		<POSITION>
+			<!-- pos -->
+			<stream> 1 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT3 </type>
+		</POSITION>
+		<TEXCOORD>
+			<!-- (radiusDir.xyz) -->
+			<stream> 1 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT3 </type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<!-- (f_soft_factor, camera_offset, cameraFadeInFrom, cameraFadeInTo) -->
+			<stream> 1 </stream>
+			<semanticIndex> 1 </semanticIndex>
+			<type> FLOAT16_4 </type>
+		</TEXCOORD>
+		<COLOR>
+			<!-- color_0 -->
+			<stream> 2 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT4 </type>
+		</COLOR>
+		<TEXCOORD>
+			<!-- (ColorOp, solid_threshold, texBlendFactor, slopeFadeCoeff) -->
+			<stream> 2 </stream>
+			<semanticIndex> 2 </semanticIndex>
+			<type> FLOAT4 </type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<!-- LightingParamsCommon -->
+			<stream> 3 </stream>
+			<semanticIndex> 3 </semanticIndex>
+			<type> FLOAT16_4 </type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<!-- LightingParamsSun -->
+			<stream> 3 </stream>
+			<semanticIndex> 4 </semanticIndex>
+			<type> FLOAT16_4 </type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<!-- LightingParamsHalo -->
+			<stream> 3 </stream>
+			<semanticIndex> 5 </semanticIndex>
+			<type> FLOAT16_4 </type>
+		</TEXCOORD>
+		<!-- bilboard_vertex stream -->
+		<TEXCOORD>
+			<!-- (offset.xyz, reserved) -->
+			<stream> 4 </stream>
+			<semanticIndex> 6 </semanticIndex>
+			<type> FLOAT4 </type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<!-- (U, V) -->
+			<stream> 4 </stream>
+			<semanticIndex> 7 </semanticIndex>
+			<type> FLOAT4 </type>
+		</TEXCOORD>
+		<!-- vertex offsets for poos and textures -->
+		<NORMAL>
+			<!-- offsetDx -->
+			<stream> 5 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT3 </type>
+		</NORMAL>
+		<BINORMAL>
+			<!-- offsetDy -->
+			<stream> 5 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT3 </type>
+		</BINORMAL>
+		<TANGENT>
+			<!-- texFrameSize -->
+			<stream> 5 </stream>
+			<semanticIndex> 0 </semanticIndex>
+			<type> FLOAT2 </type>
+		</TANGENT>
+	</elements>
+</lit_particles_instancing.xml>
+

@@ -1,0 +1,57 @@
+<bigworld>
+	<rule name="default">
+		<!-- Assign default values for all textures below this folder -->
+		<lodMode> 0 </lodMode>
+		<mipCount> 0 </mipCount>
+		<horizontalMips> false </horizontalMips>
+		<verticalMips> false </verticalMips>
+		<noResize> false </noResize>
+		<noFilter> false </noFilter>
+		<normalMap> false </normalMap>
+		<streamable> false </streamable>
+		<streamingPriority> 0 </streamingPriority>
+		<mipSize> 0 </mipSize>
+		<maxExtent> 0 </maxExtent>
+		<format> A8R8G8B8 </format>
+		<formatCompressed> UNKNOWN </formatCompressed>
+		<paddingMode> NONE </paddingMode>
+		<paddingForcePixels> 0 </paddingForcePixels>
+		<paddingAnisotropicLevel> 0 </paddingAnisotropicLevel>
+		<paddingMipLevels> 0 </paddingMipLevels>
+	</rule>
+
+	<rule pattern=".*">
+		<lodMode>1</lodMode>
+		<format> DXT1 </format>
+		<paddingMode> NONE </paddingMode>
+		<paddingForcePixels> 0 </paddingForcePixels>
+		<paddingAnisotropicLevel> 4 </paddingAnisotropicLevel>
+		<paddingMipLevels> 6 </paddingMipLevels>
+		<paddingBaseSize> 1024 </paddingBaseSize>
+	</rule>
+
+	<rule pattern=".*">
+		<lodMode>1</lodMode>
+		<format> DXT5 </format>
+		<paddingMode> NONE </paddingMode>
+		<paddingForcePixels> 0 </paddingForcePixels>
+		<paddingAnisotropicLevel> 4 </paddingAnisotropicLevel>
+		<paddingMipLevels> 6 </paddingMipLevels>
+		<paddingBaseSize> 1024 </paddingBaseSize>
+	</rule>
+	<!-- If you change this pattern, remember to also change the code -->
+	<!-- in method addChunkStaticDecal in WorldEditorDirector.py -->
+
+<!-- The rule for previews of editors. Removed from Release -->	
+	<rule pattern=".*(\.thumbnail\.).*">
+		<streamable>	false	</streamable>
+		<lodMode>	0	</lodMode>
+	</rule>
+
+	<!-- The rule for PMREM, REM. Example res\wot\maps\skyboxes\01_Karelia_sky\lightcube\ -->	
+	<rule>
+		<lodMode>	0	</lodMode>
+		<pattern>	.*(lightcube|REM.dds|REM_|PMREM).*	</pattern>
+	</rule>
+
+</bigworld>

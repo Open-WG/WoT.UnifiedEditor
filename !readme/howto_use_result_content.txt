@@ -1,0 +1,7 @@
+To see the content you made in WoT game client:
+
+1. Make any changes to the map in the editor, save
+2. Close the editor
+3. Run compile_spaces.cmd batch located in the root installation directory
+4. Make sure that no error messages are found in console log
+5. Copy files from "asset_pipeline/.jit/output/spaces/[your map name]" folder to "game/res_mods/[your mod version and name]/spaces/[your map name]"

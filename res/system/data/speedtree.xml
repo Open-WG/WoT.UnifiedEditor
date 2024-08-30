@@ -1,0 +1,36 @@
+<speedtree.xml>
+	<lodMode> -2 </lodMode>
+	<!-- lodMode to use:
+		-1: dynamic (near and far LOD defined per tree using speedtreeCAD defined values);
+		-2: dynamic (use global near and far LOD values);
+		[0.0 - 1.0]: forces static value.
+	-->
+
+	<lodNear> 65 </lodNear>
+	<!-- Distance from camera at which trees will start 
+		to display maximum detail. Only used if lodMode is -2 -->
+
+	<lodFar> 315 </lodFar>
+	<!-- Distance from camera from which trees be rendered 
+	as billboards only. Only used if lodMode is -2 -->
+
+	<!-- Multiplier for lod levels. Lower values decrease distance for lod switching. Means lower lods will be used earlier. -->
+	<lods>
+		<MAX> 1.0f </MAX>
+		<HIGH> 0.8f </HIGH>
+		<MEDIUM> 0.6f </MEDIUM>
+		<LOW> 0.4f </LOW>
+	</lods>
+
+	<lod0Yardstick> 40 </lod0Yardstick>
+	<!-- Trees taller than the yardstick will LOD to billboard farther than LodFar.
+	Trees shorter than the yardstick will LOD to billboard closer than LodFar.
+	This should be set to average the height of your trees-->
+
+	<lod0Variance> 1 </lod0Variance>
+	<!-- How much will the lod level vary depending on the size of the tree -->
+
+	<speedWindINI> system/data/speedwind.ini </speedWindINI>
+	<!-- Global SpeedWind setup file -->
+
+</speedtree.xml>

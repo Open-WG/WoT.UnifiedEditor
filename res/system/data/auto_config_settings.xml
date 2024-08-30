@@ -1,0 +1,56 @@
+<root>
+	<!--
+	this file contains the presets for system auto config.
+	The presets are organised in the same way as the options.xml 
+	file in the game folder.
+	The tags are organised like this:
+	<graphicsPreferences> HIGH       // Name of the preset
+		<GPUMemory>800</GPUMemory>   // minimum total GPU Memory
+		<RAM>4000</RAM>              // minimum RAM amount
+	</graphicsPreferences>
+	
+	-->
+
+	<graphicsPreferences> ULTRA
+		<GPUMemory> 2048 </GPUMemory>
+		<RAM> 4000 </RAM>
+		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
+		<GPUScore> 2150 </GPUScore>
+		<CPUScore> 110000 </CPUScore>
+	</graphicsPreferences>
+	<graphicsPreferences> MAX
+		<GPUMemory> 1024 </GPUMemory>
+		<RAM> 3000 </RAM>
+		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
+		<GPUScore> 1400 </GPUScore>
+		<CPUScore> 85000 </CPUScore>
+	</graphicsPreferences>
+	<graphicsPreferences> HIGH
+		<GPUMemory> 1024 </GPUMemory>
+		<RAM> 3000 </RAM>
+		<AvailableVirtualMemory> 2500 </AvailableVirtualMemory>
+		<GPUScore>890</GPUScore>
+		<CPUScore> 75000 </CPUScore>
+	</graphicsPreferences>
+	<graphicsPreferences> MEDIUM
+		<GPUMemory> 512 </GPUMemory>
+		<RAM> 2000 </RAM>
+		<AvailableVirtualMemory> 1500 </AvailableVirtualMemory>
+		<GPUScore>450</GPUScore>
+		<CPUScore> 60000 </CPUScore>
+	</graphicsPreferences>
+	<graphicsPreferences> LOW
+		<GPUMemory> 200 </GPUMemory>
+		<RAM> 1000 </RAM>
+		<AvailableVirtualMemory> 1000 </AvailableVirtualMemory>
+		<GPUScore>150</GPUScore>
+		<CPUScore> 50000 </CPUScore>
+	</graphicsPreferences>	
+	<graphicsPreferences> MIN
+		<GPUMemory> 64 </GPUMemory>
+		<RAM> 1000 </RAM>
+		<AvailableVirtualMemory> 1000 </AvailableVirtualMemory>
+		<GPUScore>0</GPUScore>
+		<CPUScore> 0 </CPUScore>
+	</graphicsPreferences>
+</root>

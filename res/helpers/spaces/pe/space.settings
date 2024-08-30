@@ -1,0 +1,80 @@
+<space.settings>
+	<DecalsInfo>
+		<PBSDecals> true </PBSDecals>
+	</DecalsInfo>
+	<bounds>
+		<minX> -6 </minX>
+		<maxX> 5 </maxX>
+		<minY> -6 </minY>
+		<maxY> 5 </maxY>
+	</bounds>
+	<terrain>
+		<version> 250 </version>
+		<heightMapSize> 16 </heightMapSize>
+		<normalMapSize> 16 </normalMapSize>
+		<normalMapCaching> true </normalMapCaching>
+		<holeMapSize> 16 </holeMapSize>
+		<shadowMapSize> 16 </shadowMapSize>
+		<blendMapSize> 16 </blendMapSize>
+		<blendMapCaching> true </blendMapCaching>
+		<lodInfo>
+			<startBias> 0.800000 </startBias>
+			<endBias> 0.990000 </endBias>
+			<lodTextureDistance> 100.000000 </lodTextureDistance>
+			<macroLODStart> 0.000000 </macroLODStart>
+			<lodDistances>
+				<distance0> 0.000000 </distance0>
+				<distance1> 0.000000 </distance1>
+				<distance2> 250.000000 </distance2>
+			</lodDistances>
+		</lodInfo>
+		<outland>
+			<tiles/>
+		</outland>
+		<tessZoomThreshold> 0.050000 </tessZoomThreshold>
+		<tessZoomScale> 0.300000 </tessZoomScale>
+		<blendMacroInfluence> 1.000000 </blendMacroInfluence>
+		<blendGlobalThreshold> 0.500000 </blendGlobalThreshold>
+		<VTLodParams> 16.000000 0.250000 0.500000 1.000000 </VTLodParams>
+		<detailNormal>
+			<normalMap/>
+			<wrapU> 10.000000 </wrapU>
+			<wrapV> 10.000000 </wrapV>
+		</detailNormal>
+		<globalMap> helpers/spaces/pe/global_AM.dds </globalMap>
+		<noiseTexture/>
+		<soundOcclusion>
+			<directOcclusion> 0.000000 </directOcclusion>
+			<reverbOcclusion> 0.000000 </reverbOcclusion>
+		</soundOcclusion>
+		<editor>
+			<enableAutoRebuildNormalMap> true </enableAutoRebuildNormalMap>
+			<enableAutoRebuildWaterGeometry> true </enableAutoRebuildWaterGeometry>
+		</editor>
+	</terrain>
+	<havok>
+		<enabled> true </enabled>
+		<simRadius> 100.000000 </simRadius>
+	</havok>
+	<farPlane>
+		<max> 1200.000000 </max>
+		<high> 1000.000000 </high>
+		<medium> 1000.000000 </medium>
+		<low> 600.000000 </low>
+	</farPlane>
+	<flora/>
+	<navmeshGenerator> navgen </navmeshGenerator>
+	<shadowBaker>
+		<blurFilterExtent> 27 </blurFilterExtent>
+		<blurFilterFalloff> 0.000100 </blurFilterFalloff>
+	</shadowBaker>
+	<streaming>
+		<enabled> false </enabled>
+		<textures> 0 </textures>
+		<geometry>
+			<tanks> 0 </tanks>
+			<static> 0 </static>
+		</geometry>
+	</streaming>
+	<chunkSize> 100.000000 </chunkSize>
+</space.settings>

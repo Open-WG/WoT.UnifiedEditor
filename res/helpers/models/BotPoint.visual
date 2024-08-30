@@ -1,0 +1,44 @@
+<exporter_102_temp.visual>
+	<primitivesName> helpers/models/SpawnPoint_Tank_Any	</primitivesName>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>tank_mat</identifier>
+					<fx>shaders/editors/lightonly.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						<Int>0</Int>alphaReference
+					</property>
+					<property>
+						<Bool>false</Bool>alphaTestEnable
+					</property>
+					<property>
+						<Bool>false</Bool>doubleSided
+					</property>
+					<property>
+						<Texture>helpers/models/BotPoint.dds</Texture>diffuseMap
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-2.050000 0.000000 -5.700000	</min>
+		<max>	2.050000 4.423293 11.699999	</max>
+	</boundingBox>
+</exporter_102_temp.visual>

@@ -1,0 +1,89 @@
+<root>
+	<!--
+    This file is used by the BigWorld engine to determine the types of entities
+    available for use by the engine. Each tag must correspond to a definition
+    file and possibly a Python implementation script for the cell, base and
+    client version of the distributed entity.
+    -->
+
+	<ClientServerEntities>
+		<Account/>
+		<Avatar/>
+		<ArenaInfo/>
+		<ClientSelectableObject/>
+		<HangarVehicle/>
+		<Vehicle/>
+		<AreaDestructibles/>
+		<OfflineEntity/>
+		<Flock/>
+		<FlockExotic/>
+		<Login/>
+		<DetachedTurret/>
+		<BootcampAccount/>
+		<DebugDrawEntity/>
+		<!-- ExampleDestructible/ -->
+		<ClientSelectableCameraObject/>
+		<ClientSelectableCameraVehicle/>
+		<HeroTank/>
+		<ClientSelectableEasterEgg/>
+		<SectorBase/>
+		<Sector/>
+		<DestructibleEntity/>
+		<StepRepairPoint/>
+		<ProtectionZone/>
+		<HangarPoster/>
+		<ClientSelectableWebLinksOpener/>
+		<GameObjectEntity/>
+	</ClientServerEntities>
+
+	<ServerOnlyEntities>
+		<Admin/>
+		<Arena/>
+		<ArenaMgr/>
+		<TeamBase/>
+		<RepairBase/>
+		<ChatChannel/>
+		<SysMessenger/>
+		<BaseAppChatManager/>
+		<Clan/>
+		<ClanRequestProcessor/>
+		<Node/>
+		<Prebattle/>
+		<UnitMgr/>
+		<SquadUnitMgr/>
+		<FalloutUnitMgr/>
+		<SpecUnitMgr/>
+		<EventUnitMgr/>
+		<VoiceChatMgr/>
+		<MessageFilterManager/>
+		<CenterStatusReader/>
+		<AccountRegistrator/>
+		<WebPrebattleMgr/>
+		<LoginQueue/>
+		<EntitiesQueue/>
+		<GameStatsCollector/>
+		<YYChatMgr/>
+		<TutorialQueue/>
+		<UnitAssembler/>
+		<ClusterDismissal/>
+		<UnitFinder/>
+		<EventBattlesMgr/>
+		<FalloutMgr/>
+		<FalloutMultiteamMgr/>
+		<RankedBattlesMgr/>
+		<SpecBattleMgr/>
+		<ClanRelay/>
+		<AccountSurrogate/>
+		<RankedMatchmaker/>
+		<RandomBattleMatchmaker/>
+		<SandboxMgr/>
+		<SingletonLock/>
+		<ExternalBattleMgr/>
+		<ExternalUnitMgr/>
+		<ExternalUnitQueue/>
+		<ClusterGameParamsController/>
+		<BootcampQueue/>
+		<EntityGetter/>
+		<EpicMgr/>
+	</ServerOnlyEntities>
+</root>

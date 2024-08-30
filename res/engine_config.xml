@@ -1,0 +1,751 @@
+<engine_config.xml>
+	<!-- This file contains a variety of options to control and
+customise the behaviour of the BigWorld Client Engine. -->
+	<personality> game </personality>
+	<!-- This is the global personality script for the game. This should
+	set up the game, camera, GUI, etc.  The engine expects a properly
+	formed python script of this name to be in the entities/client
+	directory. -->
+	<!--//OVERRIDES_BEGIN:CGF_PREFERENCES//-->
+	<!--//DESCRIPTION: Common Test has different preferences filename//-->
+	<preferences> preferences.xml </preferences>
+	<!--//OVERRIDES_END:CGF_PREFERENCES//-->
+	<!-- Name of file where all user preferences will be saved -->
+	<enableBalanceCPU> true </enableBalanceCPU>
+	<!--  Divides work of main thread and driver thread for various CPU cores.
+	Thereafter WDDM driver is faster. Windows Vista, 7, 8 only. -->
+	<enableServerTimeSync> true </enableServerTimeSync>
+	<!--  Enables client timer to server timer synchronization
+	Should be enabled if client timer is unreliable -->
+	<lod>
+		<!-- Settings for the new projected-area based Level of Detail system. -->
+		<default>
+			<!-- Each value represents the default factor applied to reference
+			projected area for corresponding LoD, these values can be overridden
+			on per-object basis.
+			The values shall be NON-NEGATIVE.
+			Given a stationary scene, increasing the values will decrease
+			the detalization, whereas decreasing them will increase it. -->
+			<superModel>
+				<lod0> 1.0 </lod0>
+				<lod1> 1.0 </lod1>
+				<lod2> 1.0 </lod2>
+				<lod3> 1.0 </lod3>
+				<lod4> 1.0 </lod4>
+			</superModel>
+			<staticModel>
+				<lod0> 1.0 </lod0>
+				<lod1> 1.0 </lod1>
+				<lod2> 1.0 </lod2>
+				<lod3> 1.0 </lod3>
+				<lod4> 1.0 </lod4>
+			</staticModel>
+		</default>
+	</lod>
+	<renderer>
+		<!-- The render options are used by client engine to detail how
+	the application is to start up. -->
+		<concurrentRenderer> true </concurrentRenderer>
+		<!-- Enables multithreaded rendering. -->
+		<disableSLI> false </disableSLI>
+		<!-- Effects can be optionally cached at startup. This
+		reduces the need for ongoing loading. If false, the client
+		will start up much quicker, but effects will be loaded and
+		perhaps compiled at runtime on demand, causing pauses in
+		the frame-rate. -->
+		<gammaCorrectionOutside> 1.0 </gammaCorrectionOutside>
+		<gammaCorrectionInside> 1.0 </gammaCorrectionInside>
+		<gammaCorrectionSpeed> 0.2 </gammaCorrectionSpeed>
+		<!-- Changes the brightness of indoor and outdoor
+		environments & the rate of change between them -->
+		<!--	<gammaCorrection>   1.0	</gammaCorrection> -->
+		<!-- A default gamma correction can be specified if
+		distinct indoor and outdoor correction are not required. -->
+		<maxFrameRate> 1000 </maxFrameRate>
+		<!-- Maximum frame rate can be limited to allow other processes
+		some CPU time. In the fantasydemo example, this is used to provide
+		more time to the loading of terrain chunks. -->
+		<reducedFrameRate> 60 </reducedFrameRate>
+		<!-- Maximum frame rate in reduced mode. Used to prevent GPU overheating in hangar.-->
+		<!-- Shaders that need to setup an effect technique setting. -->
+		<settings>
+		</settings>
+		<!-- Use Umbra's latent occlusion queries -->
+		<useLatentOcclusionQueries> true </useLatentOcclusionQueries>
+		<DRRAutoscaler>
+			<criticalFPS> 15 </criticalFPS>
+			<!-- Minimum FPS, which autoscaler try to maintain. -->
+			<safeFPSMultiplier> 1.15 </safeFPSMultiplier>
+			<!-- Determines safe FPS, after which autoscaler try to increase resolution. safeFPS = criticalFPS * safeMult. -->
+			<timeStep> 1.0 </timeStep>
+			<!-- Frequency at which autoscaler updates itself. -->
+			<correctionStep> 0.05 </correctionStep>
+			<!-- Step with which DRR scale modified (except first decrease step) by autoscaler. -->
+			<correctionBigStep> 0.1 </correctionBigStep>
+			<!-- First step with which DRR scale is decreased by autoscaler. -->
+			<minScale> 0.5 </minScale>
+			<!-- Minimum DRR scale, which autoscaler can set. -->
+		</DRRAutoscaler>
+		<globalVBSize> 12582912 </globalVBSize>
+		<globalIBSize> 131072 </globalIBSize>
+		<streaming>
+			<MAX> 1 </MAX>
+			<HIGH> 0.5 </HIGH>
+			<MEDIUM> 0.25 </MEDIUM>
+			<LOW> 0.25 </LOW>
+			<MIN> 0.25 </MIN>
+		</streaming>
+		<ObjectsFarPlaneManager>
+			<cullVolume>
+				2800
+			</cullVolume>
+			<!-- ToDo (b_sviglo): reconsider distance. -->
+			<decalCullDistance>
+				400
+			</decalCullDistance>
+			<controlPointCullDistance>
+				1400
+			</controlPointCullDistance>
+		</ObjectsFarPlaneManager>
+		<StreamedTexturePrecache>
+			<Mode>
+				AUTO
+			</Mode>
+		</StreamedTexturePrecache>
+	</renderer>
+	<influx>
+		<force_use_bw_collision> true </force_use_bw_collision>
+		<control_point_hmap_offset> 0.1f </control_point_hmap_offset>
+		<control_point_grid_step> 1.0f </control_point_grid_step>
+	</influx>
+	<animation>
+		<streamCacheSizeKB> 51200 </streamCacheSizeKB>
+		<!-- The size the animation cache will grow too before it
+		starts evicting data. (KByts) -->
+	</animation>
+	<screenShot>
+		<!-- These are the defaults when taking a screenshot. -->
+		<!-- This can be either from pressing "PrtScn" or by calling -->
+		<!-- "BigWorld.screenShot()". -->
+		<extension> jpg </extension>
+		<!-- This can be "bmp", "jpg", "tga", "png" or "dds" -->
+		<name> screenshots/shot </name>
+		<!-- This is the default name to use for screenshots -->
+	</screenShot>
+	<superShot>
+		<!-- These are the defaults for toggling high quality settings for promotional screenshots (ctrl+PrintScreen) -->
+		<!-- Horizontal back buffer resolution -->
+		<hRes> 4096 </hRes>
+		<!--  Far plane distance. -->
+		<farPlaneDist> 1500 </farPlaneDist>
+		<!--  Flora Vertex Buffer Size -->
+		<floraVBSize> 16000000 </floraVBSize>
+		<!--  Turn off all GUI elements. -->
+		<disableGUI> true </disableGUI>
+	</superShot>
+	<accessMonitor> false </accessMonitor>
+	<!-- If true, records access to resource files.  Can be used
+	to build a list of files required for a distribution. -->
+	<!-- Logs events in the game, eg, when primitive count or
+	texture memory is over a threshold level, etc. -->
+	<!--	<breakOnCritical> false	</breakOnCritical> -->
+	<!-- Displays a dialog box to optionally enter the debugger if
+	a critical error occurs. -->
+	<hasDevelopmentAssertions> true </hasDevelopmentAssertions>
+	<debugKeys>
+		<combination>
+			<key> APPS </key>
+		</combination>
+		<combination>
+			<key> GRAVE </key>
+		</combination>
+		<enableEndStopApp> false </enableEndStopApp>
+		<benchmarkStartTime> 15.0 </benchmarkStartTime>
+	</debugKeys>
+	<!--Configures the keys that can be used to access debugging functionality.
+		See Keys.py for a list of possible keys. -->
+	<!-- <diaryPath>	C:\timing	</diaryPath>	-->
+	<!-- Enable diaries and stream them out to the given path.  A trailing
+	backslash is appended automatically.  You can view saved diaries using
+	the Diary Spy tool.  Note that long runs may create large files, can
+	be 10s or 100s of MB so take care. -->
+	<entities>
+		<disablePreloads> false </disablePreloads>
+		<!-- Models can be optionally pre-loaded into the game.  This
+		reduces the need for ongoing loading. If false, a small preload
+		function must be provided for every entity module that is to be
+		loaded before the game begins.  If true, then preloading is
+		disabled. -->
+		<enforcePreloads> false </enforcePreloads>
+		<!-- If this is true then no models will be loaded after the
+		preloading phase.  They will not exist in the game.  All
+		required entities must have the aforementioned preload
+		function implemented. -->
+		<entityCollision> false </entityCollision>
+		<!-- Enables/Disables collision detection. -->
+		<particlesActive> true </particlesActive>
+		<!-- Activates/Deactives the BigWorld Particle System  -->
+		<movementThreshold> 0.25 </movementThreshold>
+		<!-- If the players movement is less than this value, the Physics
+		Engine assumes player has stopped.  This saves unnecessary
+		processing for very slow moving objects.  The server updates will
+		compensate for change in position over time. -->
+	</entities>
+	<ui>
+		<!-- User interface settings. eg: GUI information,
+			movement/camera related settings, etc... -->
+		<straferate> 5.0 </straferate>
+		<loadingText> 151 231 233 </loadingText>
+		<!-- Colour of the loading text progress info -->
+	</ui>
+	<!--targeting>
+		<autoAim>
+		<autoAim/>
+	<targeting/-->
+	<!-- Targeting and AutoAim defaults, empty for now - See
+	Python Interface Documentation for possible values. -->
+	<camera>
+		<lookTable> 0.00	0.00 </lookTable>
+		<lookTable> 0.10	0.05 </lookTable>
+		<lookTable> 0.30	0.10 </lookTable>
+		<lookTable> 0.50	0.15 </lookTable>
+		<lookTable> 0.70	0.30 </lookTable>
+		<lookTable> 0.90	1.00 </lookTable>
+		<lookAxisMin> 0.10 </lookAxisMin>
+		<lookAxisMax> 0.91 </lookAxisMax>
+		<cameraYawSpeed> 90 </cameraYawSpeed>
+		<cameraPitchSpeed> 60 </cameraPitchSpeed>
+		<accelerateStart> 0.00 </accelerateStart>
+		<accelerateRate> 2.00 </accelerateRate>
+		<accelerateEnd> 1.00 </accelerateEnd>
+	</camera>
+	<directionCursor>
+		<!-- The direction cursor aims the player based upon user input,
+		providing lifelike movement to the character. It is also used by
+		the attached cursor camera to provide the correct viewing direction.
+		See BigWorld Python Interface Documentation for possible values.
+		-->
+		<invertVerticalMovement> false </invertVerticalMovement>
+		<!-- vertical mouse movement is inverted? -->
+		<mouseSensitivity> 0.005 </mouseSensitivity>
+		<!-- Determines how sensitive the direction cursor is to mouse
+		movement,  ie, how quickly the mouse movement affects the
+		direction cursor. -->
+		<mouseHVBias> 0.667 </mouseHVBias>
+		<!-- This effects whether the mouse is more sensitive in the Horizontal or
+		Vertical directions. It is clamped to be between 0 and 1, with 1 meaning
+		horizontal motion is greatest, and vertical is completely disregarded,
+		and 0 meaning vertical motion is most sensative, with horizontal being
+		disregarded. To make both axes more sensitive use the mouseSensitivity
+		attribute.. -->
+		<maxPitch> 50.0 </maxPitch>
+		<minPitch> -65.0 </minPitch>
+		<!-- Limits on the pitch of the direction cursor -->
+		<yaw> 0.000 </yaw>
+		<!-- Initial yaw of the direction cursor. -->
+		<pitch> 0.000 </pitch>
+		<!-- Initial pitch of the direction cursor. -->
+		<lookSpring> false </lookSpring>
+		<lookSpringRate> 0.75 </lookSpringRate>
+		<!-- Determines whether the direction cursor returns to
+		looking straight ahead after a period of non movement, and
+		the rate at which it will return to the forward position. -->
+		<lookSpringIdleTime> 3600.0 </lookSpringIdleTime>
+		<!-- Specifies the time before the direction cursor starts
+		returning to the front. -->
+		<lookSpringOnMove> true </lookSpringOnMove>
+		<!-- If set, the lookspring will come into effect if the
+		associated entity begins to move. -->
+	</directionCursor>
+	<simpleGui>
+		<breakOnLeak> false </breakOnLeak>
+		<!-- If set to true, will trigger a break
+		point if any SimpleGUIComponent instance is
+		still alive when exiting the client -->
+		<breakOnAllocId> 0 </breakOnAllocId>
+		<!-- If set to n (n>0), will trigger a break when
+		the n-th SimpleGUIComponent is instantiated.-->
+	</simpleGui>
+	<ParticleSystem>
+		<PS_PERFORMANCE_FIXED_FPS> 29.9 </PS_PERFORMANCE_FIXED_FPS>
+		<PS_PERFORMANCE_MIN_FPS> 22 </PS_PERFORMANCE_MIN_FPS>
+		<PS_PERFORMANCE_MAX_FPS> 26 </PS_PERFORMANCE_MAX_FPS>
+		<PS_PERFORMANCE_SPEED_MULT> 10 </PS_PERFORMANCE_SPEED_MULT>
+		<PS_PERFORMANCE_LOD_OFFSET> 0 </PS_PERFORMANCE_LOD_OFFSET>
+		<PS_PERFORMANCE_LOD_MULT> 1.2 </PS_PERFORMANCE_LOD_MULT>
+	</ParticleSystem>
+	<debug>
+		<!-- Enables getting full dump when application crashes -->
+		<fullDump> true </fullDump>
+		<!-- Sets server to send crash dumps for client -->
+		<clientUrl>
+		</clientUrl>
+		<!-- Sets server to send crash dumps for bots -->
+		<botsUrl> http://cat-st1.wargaming.net </botsUrl>
+		<!-- Enables generation of DxDiag output for collecting when application crashes -->
+		<dxdiag> true </dxdiag>
+		<!-- if set to anything greater than zero, the client
+		will run for the specified number of frames and quit -->
+		<framesCount> 0 </framesCount>
+		<!-- If enabled the Python and keyboard servers will run on ports
+		50001 and 50002 respectively. -->
+		<enableServers> false </enableServers>
+		<!-- Determines the size, in bytes, of the memory buffer used by the
+		profiler system to store per-frame data. Increase this value in the
+		case of overflows.
+		-->
+		<profilerBufferSize> 12582912 </profilerBufferSize>
+		<!-- Enable logging asset related messages into a log file. -->
+		<enableLoggingAssetMsg> false </enableLoggingAssetMsg>
+		<!-- Specify the path into which asset messages will put,
+		if not specified, asset.log located in the same folder as bwclient.exe
+		will be in used-->
+		<assetLogPath> asset.log </assetLogPath>
+		<!-- Enable debug color fill for trees and buildings -->
+		<enableColorFill> false </enableColorFill>
+		<remotePythonConsole> true </remotePythonConsole>
+	</debug>
+	<hitchDetector>
+		<!-- The number of frames that count towards the running average -->
+		<numTimeSamples> 10 </numTimeSamples>
+		<!-- The amount of time an individual frame can take before
+		triggering a hitch -->
+		<frameMSLimit> 100.0 </frameMSLimit>
+		<!-- The factor applied to the running average to determine if the latest
+		frame time is detected as a hitch -->
+		<overAverageFactor> 1.5 </overAverageFactor>
+	</hitchDetector>
+	<log_console>
+		<!-- enable/disable in-game client console (you may call this feature by pressing '~ + CTRL + P') -->
+		<enable> false </enable>
+		<monitor> false </monitor>
+		<colors> false </colors>
+		<timestamp> true </timestamp>
+		<real_time> true </real_time>
+		<wrap> false </wrap>
+		<auto_scroll> true </auto_scroll>
+		<!--
+			from left to right every number enable(1) or disable(0) some priority to show
+			for show only MESSAGE_PRIORITY_WARNING + MESSAGE_PRIORITY_ERROR + MESSAGE_PRIORITY_CRITICAL use '0000111000'
+			MESSAGE_PRIORITY_TRACE
+			MESSAGE_PRIORITY_DEBUG
+			MESSAGE_PRIORITY_INFO
+			MESSAGE_PRIORITY_NOTICE
+			MESSAGE_PRIORITY_WARNING
+			MESSAGE_PRIORITY_ERROR
+			MESSAGE_PRIORITY_CRITICAL
+			MESSAGE_PRIORITY_HACK
+			DEPRECATED_PRIORITY_SCRIPT
+			MESSAGE_PRIORITY_ASSET
+		-->
+		<priority> 1111111111 </priority>
+	</log_console>
+	<soundMgr>
+		<enabled> true </enabled>
+		<!--
+			This controls whether sound support is enabled.
+		-->
+		<communication> false </communication>
+		<!--
+			enable or disable network communication in consumer build
+		-->
+		<wwmediaPath> audioww </wwmediaPath>
+		<!--
+			The directory inside the res tree where your soundbanks reside.
+		-->
+		<memoryLimit>160</memoryLimit>
+		<!--
+			Memory limit warning in MB
+		-->
+		<highPriorityBankThread> true </highPriorityBankThread>
+		<!-- WWISE soundbanks -->
+		<WWISE_active_profile> WWISE_adv_profile </WWISE_active_profile>
+		<WWISE_emergency_profile> WWISE_low_profile </WWISE_emergency_profile>
+		<WWISE_adv_profile>
+			<memoryManager>
+				<defaultPool> 13 </defaultPool>
+				<lowEnginePool> 10 </lowEnginePool>
+				<streamingPool> 2 </streamingPool>
+				<IOPoolSize> 4 </IOPoolSize>
+				<IOGranularity> 16 </IOGranularity>
+			</memoryManager>
+			<memoryManager_64bit>
+				<defaultPool> 24 </defaultPool>
+				<lowEnginePool> 10 </lowEnginePool>
+				<streamingPool> 2 </streamingPool>
+				<IOPoolSize> 4 </IOPoolSize>
+				<IOGranularity> 16 </IOGranularity>
+			</memoryManager_64bit>
+			<soundRender>
+				<use_config>false</use_config>
+				<HDR_lower_threshold> -40 </HDR_lower_threshold>
+				<max_voices> 70 </max_voices>
+				<low_sample_rate>false</low_sample_rate>
+				<ambients>true</ambients>
+				<reverbs>true</reverbs>
+			</soundRender>
+			<voice_soundbanks>
+				<project>
+					<name> voiceover.bnk </name>
+				</project>
+			</voice_soundbanks>
+			<SFX_soundbanks_loadonce>
+				<project>
+					<name> ambient.pck </name>
+				</project>
+				<project>
+					<name> ambient_2D.pck </name>
+				</project>
+				<project>
+					<name> combat_atmosphere.pck </name>
+				</project>
+				<project>
+					<name> damage.pck </name>
+				</project>
+				<project>
+					<name> epic_battle.bnk </name>
+				</project>
+				<project>
+					<name> engines.pck </name>
+				</project>
+				<project>
+					<name> explosive_objects.pck </name>
+				</project>
+				<project>
+					<name> objects.pck </name>
+				</project>
+				<project>
+					<name> objects_generative.pck </name>
+				</project>
+				<project>
+					<name> plane.pck </name>
+				</project>
+				<project>
+					<name> streams.pck </name>
+				</project>
+				<project>
+					<name> treads_pc.pck </name>
+				</project>
+				<project>
+					<name> treads_npc.pck </name>
+				</project>
+				<project>
+					<name> turret.pck </name>
+				</project>
+				<project>
+					<name> gun_reload.pck </name>
+				</project>
+				<project>
+					<name> wpn.pck </name>
+				</project>
+				<project>
+					<name> gui.bnk </name>
+				</project>
+				<project>
+					<name> gui_ranked_battles.pck </name>
+				</project>
+				<project>
+					<name> epic_battle.pck </name>
+				</project>
+				<project>
+					<name> utility.bnk </name>
+				</project>
+				<project>
+					<name> music_interactive.bnk </name>
+				</project>
+				<project>
+					<name> music_interactive.pck </name>
+				</project>
+				<project>
+					<name> wheel_vehicle_GUI.pck </name>
+				</project>
+				<project>
+					<name> plugin_media.bnk </name>
+				</project>
+			</SFX_soundbanks_loadonce>
+			<SFX_soundbanks_hangar>
+				<project>
+					<name> fort_area.bnk </name>
+				</project>
+				<project>
+					<name> clans.bnk </name>
+				</project>
+				<project>
+					<name> gui_ranked_battles.bnk </name>
+				</project>
+				<project>
+					<name> Personal_missions.bnk </name>
+				</project>
+				<project>
+					<name> customization.bnk </name>
+				</project>
+				<project>
+					<name> shop.bnk </name>
+				</project>
+				<project>
+					<name> gui_hangar.bnk </name>
+				</project>
+				<project>
+					<name> gui_blueprints.bnk </name>
+				</project>
+				<project>
+					<name> researches.bnk </name>
+				</project>
+			</SFX_soundbanks_hangar>
+			<SFX_soundbanks_login>
+				<project>
+					<name> loginscreen.bnk </name>
+				</project>
+			</SFX_soundbanks_login>
+			<SFX_soundbanks_arena>
+			</SFX_soundbanks_arena>
+			<SFX_soundbanks_editor>
+				<project>
+					<name> fort_area.bnk </name>
+				</project>
+				<project>
+					<name> objects.bnk </name>
+				</project>
+				<project>
+					<name> objects_generative.bnk </name>
+				</project>
+				<project>
+					<name> explosive_objects.bnk </name>
+				</project>
+			</SFX_soundbanks_editor>
+		</WWISE_adv_profile>
+		<WWISE_low_profile>
+			<memoryManager>
+				<defaultPool> 8 </defaultPool>
+				<lowEnginePool> 6 </lowEnginePool>
+				<streamingPool> 2 </streamingPool>
+				<IOPoolSize> 4 </IOPoolSize>
+				<IOGranularity> 16 </IOGranularity>
+			</memoryManager>
+			<memoryManager_64bit>
+				<defaultPool> 24 </defaultPool>
+				<lowEnginePool> 10 </lowEnginePool>
+				<streamingPool> 2 </streamingPool>
+				<IOPoolSize> 4 </IOPoolSize>
+				<IOGranularity> 16 </IOGranularity>
+			</memoryManager_64bit>
+			<soundRender>
+				<use_config>true</use_config>
+				<HDR_lower_threshold> -40 </HDR_lower_threshold>
+				<max_voices> 70 </max_voices>
+				<low_sample_rate>false</low_sample_rate>
+				<ambients>false</ambients>
+				<reverbs>false</reverbs>
+			</soundRender>
+			<voice_soundbanks>
+				<project>
+					<name> voiceover.bnk </name>
+				</project>
+			</voice_soundbanks>
+			<SFX_soundbanks_loadonce>
+				<project>
+					<name> engines.pck </name>
+				</project>
+				<project>
+					<name> explosive_objects.pck </name>
+				</project>
+				<project>
+					<name> objects.pck </name>
+				</project>
+				<project>
+					<name> objects_generative.pck </name>
+				</project>
+				<project>
+					<name> plane.pck </name>
+				</project>
+				<project>
+					<name> streams.pck </name>
+				</project>
+				<project>
+					<name> treads_pc.pck </name>
+				</project>
+				<project>
+					<name> treads_npc.pck </name>
+				</project>
+				<project>
+					<name> turret.pck </name>
+				</project>
+				<project>
+					<name> gun_reload.pck </name>
+				</project>
+				<project>
+					<name> wpn.pck </name>
+				</project>
+				<project>
+					<name> gui.bnk </name>
+				</project>
+				<project>
+					<name> gui_ranked_battles.pck </name>
+				</project>
+				<project>
+					<name> utility.bnk </name>
+				</project>
+				<project>
+					<name> plugin_media.bnk </name>
+				</project>
+			</SFX_soundbanks_loadonce>
+			<SFX_soundbanks_hangar>
+				<project>
+					<name> fort_area.bnk </name>
+				</project>
+				<project>
+					<name> gui_ranked_battles.bnk </name>
+				</project>
+				<project>
+					<name> Personal_missions.bnk </name>
+				</project>
+				<project>
+					<name> customization.bnk </name>
+				</project>
+				<project>
+					<name> shop.bnk </name>
+				</project>
+			</SFX_soundbanks_hangar>
+			<SFX_soundbanks_login>
+				<project>
+					<name> loginscreen.bnk </name>
+				</project>
+			</SFX_soundbanks_login>
+			<SFX_soundbanks_arena>
+			</SFX_soundbanks_arena>
+			<SFX_soundbanks_editor>
+				<project>
+					<name> hangar_v2.bnk </name>
+				</project>
+				<project>
+					<name> fort_area.bnk </name>
+				</project>
+				<project>
+					<name> objects.bnk </name>
+				</project>
+				<project>
+					<name> objects_generative.bnk </name>
+				</project>
+				<project>
+					<name> explosive_objects.bnk </name>
+				</project>
+			</SFX_soundbanks_editor>
+		</WWISE_low_profile>
+	</soundMgr>
+	<logging>
+		<!--
+			This section controls the various settings for client log output
+		-->
+		<!--
+			Suppress client logging of various categories of log output.
+			By setting priority you can alter minimum priority level of a message
+			(by default all priorities are suppressed)
+		-->
+		<suppress>
+			<categories>
+				<!--
+				<category>
+					Scaleform
+					<priority> INFO </priority>
+				</category>
+				-->
+			</categories>
+		</suppress>
+		<!--
+			If enabled, warning and error messages will be logged to the
+			MessageLoggers. In order to use this variable you should set the
+			UID environment variable to the Unix UID so that usernames match.
+		-->
+		<logToMessageLogger> false </logToMessageLogger>
+		<!-- The ID used by the process when registering with MessageLoggers.
+			If this ID does not match a MessageLogger's filter, the process
+			will not log to that MessageLogger. The value range is 0-255. -->
+		<loggerID> 111 </loggerID>
+		<!-- fake ID, disables logging from clients -->
+		<file>
+			game.log
+			<!--if name is not set, then the executable_file_name.log will be used.-->
+			<enabled> true </enabled>
+			<!--if not set, then default as false-->
+			<openMode> a </openMode>
+			<!--possible value: "a"(append)  or "w"(overwrite), if not set, then default as "a"-->
+			<maxSizeKB> 2048 </maxSizeKB>
+			<!--if not set, then 0 don't trim-->
+			<trimToKB> 512 </trimToKB>
+			<!--enable timestamps-->
+			<showTime> true </showTime>
+			<!--activate flushing after each write-->
+			<disableBuffering> false </disableBuffering>
+			<!--length of message buffer. default value is 8192 -->
+			<messageLength> 8192 </messageLength>
+		</file>
+		<file>
+			python.log
+			<!--if name is not set,, then the executable_file_name.log will be used.-->
+			<enabled> true </enabled>
+			<!--if name is not set, then default as false-->
+			<!--possible values: TRACE,DEBUG,INFO,NOTICE,WARNING,ERROR,CRITICAL,HACK,ASSET, if not set, then ALL will be included -->
+			<!--<severity> INFO </severity>
+			<severity> WARNING </severity>
+			<severity> ERROR </severity>
+			<severity> CRITICAL </severity>
+			<severity> HACK </severity>-->
+			<!--category> Chunk</category>only one category is allowed, if not set, then all categories will be included.-->
+			<source> SCRIPT </source>
+			<source> UI </source>
+			<!--possible values: CPP, SCRIPT, if not set, then ALL will be included-->
+			<openMode> a </openMode>
+			<!--possible value: "a"(append)  or "w"(overwrite), if not set, then default as "a"-->
+			<maxSizeKB> 2048 </maxSizeKB>
+			<trimToKB> 512 </trimToKB>
+			<!--enable timestamps-->
+			<showTime> true </showTime>
+			<!--activate flushing after each write-->
+			<disableBuffering> false </disableBuffering>
+			<!--length of message buffer. default value is 8192 -->
+			<messageLength> 8192 </messageLength>
+		</file>
+		<file>
+			ui.log
+			<enabled> true </enabled>
+			<source> UI </source>
+			<openMode> a </openMode>
+			<maxSizeKB> 2048 </maxSizeKB>
+			<trimToKB> 512 </trimToKB>
+			<!--enable timestamps-->
+			<showTime> true </showTime>
+			<!--activate flushing after each write-->
+			<disableBuffering> false </disableBuffering>
+			<!--length of message buffer. default value is 8192 -->
+			<messageLength> 8192 </messageLength>
+		</file>
+	</logging>
+	<webBrowser>
+		<processExe> cef_browser_process </processExe>
+		<userAgent> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 WOWS/1.0 </userAgent>
+		<cachePath> profile/cef_cache </cachePath>
+		<resourcePath> cef </resourcePath>
+		<hardwareAcceleration> false </hardwareAcceleration>
+		<!-- Disable CEF HW Acceleration. More info [WWSD-57732] -->
+		<logFile> cef.log </logFile>
+		<logVerbosity> warning </logVerbosity>
+		<!-- "verbose", "info", "warning", "error", "disable" -->
+		<enableFlash> true </enableFlash>
+		<ignoreCertErrors>false</ignoreCertErrors>
+		<!-- Should SSL certificate errors be ignored (dev build only) -->
+		<debugPort> -1 </debugPort>
+		<!-- -1 is disabled, must be between 1024 and 65535 -->
+		<maxFrameRate> 0 </maxFrameRate>
+		<!-- 0 is default -->
+		<acceptLangList>
+		</acceptLangList>
+		<!-- Comma delimited ordered, list of language codes without any whitespace used in "Accept-Language" HTTP header -->
+		<locale>
+		</locale>
+		<!-- locale used by the browser, uses same language codes as acceptLangList -->
+		<autoPlayVideo> true </autoPlayVideo>
+		<!-- Enable video auto play. Works only in new CEF versions(61+) -->
+		<useOldSdk> false </useOldSdk>
+		<!-- use old CEF sdk version (that currently used for WinXp)-->
+	</webBrowser>
+</engine_config.xml>

@@ -1,0 +1,7 @@
+<root>
+	<rule pattern=".*(_hdr\.dds)$">
+		<compressHDR> true </compressHDR>
+		<lodMode> 0 </lodMode>
+		<formatCompressed> DXT5 </formatCompressed> 
+	</rule>
+</root>

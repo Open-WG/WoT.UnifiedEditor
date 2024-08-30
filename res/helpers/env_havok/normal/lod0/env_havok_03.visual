@@ -1,0 +1,44 @@
+<exporter_002_temp.visual>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>s_nd_0</identifier>
+					<fx>shaders/std_effects/lightonly.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						<Int>0</Int>alphaReference
+					</property>
+					<property>
+						<Bool>false</Bool>alphaTestEnable
+					</property>
+					<property>
+						<Bool>false</Bool>doubleSided
+					</property>
+					<property>
+						<Texture>helpers/env_havok/env035_Bridge.dds</Texture>diffuseMap
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-17.049900 -0.000000 -15.870193	</min>
+		<max>	17.049900 5.199709 15.870193	</max>
+	</boundingBox>
+	<customBsp>	true	</customBsp>
+</exporter_002_temp.visual>

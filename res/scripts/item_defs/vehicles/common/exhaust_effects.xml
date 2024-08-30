@@ -1,0 +1,155 @@
+<root>
+
+	<constants>
+		<constantsGroup name="diesel_small">
+			<constant name="_0" value="small_diesel"/>
+			<constant name="_fileDescriptor" value="small_diesel"/>
+		</constantsGroup>
+		<constantsGroup name="diesel_medium">
+			<constant name="_0" value="medium_diesel"/>
+			<constant name="_fileDescriptor" value="medium_diesel"/>
+		</constantsGroup>
+		<constantsGroup name="diesel_large">
+			<constant name="_0" value="large_diesel"/>
+			<constant name="_fileDescriptor" value="large_diesel"/>
+		</constantsGroup>
+		<constantsGroup name="gas_small">
+			<constant name="_0" value="small_gas"/>
+			<constant name="_fileDescriptor" value="small_gas"/>
+		</constantsGroup>
+		<constantsGroup name="gas_medium">
+			<constant name="_0" value="medium_gas"/>
+			<constant name="_fileDescriptor" value="medium_gas"/>
+		</constantsGroup>
+		<constantsGroup name="gas_large">
+			<constant name="_0" value="large_gas"/>
+			<constant name="_fileDescriptor" value="large_gas"/>
+		</constantsGroup>
+		<constantsGroup name="null">
+			<constant name="_0" value="null"/>
+			<constant name="_fileDescriptor" value="null"/>
+		</constantsGroup>
+	</constants>
+
+	<!-- ttl - Tme To Live - Time in sec fot emitting particles by the effect-->
+
+	<templates>
+		<template name = "GearUp">
+			<selector type = "discrete" variable = "_gearUp">
+				<selector key = "1" type = "effect" ttl="0.05" name = "particles/Tank/exhaust/{0}/rpm02_Load04.eff"/>
+			</selector>
+		</template>
+
+		<template name = "EngineStart">
+			<selector type = "discrete" variable = "_engineStart">
+				<selector key = "1" type = "effect" ttl="5.2" name = "particles/Tank/exhaust/{0}/start.eff"/>
+			</selector>
+		</template>
+
+		<template name = "PhysicLoad">
+			<selector type = "range" variable = "_physicLoad">
+				<selector key = "0" type = "range" variable = "_rpm">
+					<selector key = "0.00" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
+					<selector key = "0.5" type = "effect" name = "particles/Tank/exhaust/{0}/rpm02_Load01.eff"/>
+					<selector key = "0.9" type = "effect" name = "particles/Tank/exhaust/{0}/rpm03_Load01.eff"/>
+				</selector>
+				<selector key = "0.5" type = "range" variable = "_rpm">
+					<selector key = "0.00" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load02.eff"/>
+					<selector key = "0.5" type = "effect" name = "particles/Tank/exhaust/{0}/rpm02_Load02.eff"/>
+					<selector key = "0.9" type = "effect" name = "particles/Tank/exhaust/{0}/rpm03_Load02.eff"/>
+				</selector>
+				<selector key = "0.9" type = "range" variable = "_rpm">
+					<selector key = "0.00" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load03.eff"/>
+					<selector key = "0.5" type = "effect" name = "particles/Tank/exhaust/{0}/rpm02_Load03.eff"/>
+					<selector key = "0.9" type = "effect" name = "particles/Tank/exhaust/{0}/rpm03_Load03.eff"/>
+				</selector>
+				<selector key = "0.98" type = "range" variable = "_rpm">
+					<selector key = "0.00" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load04.eff"/>
+					<selector key = "0.5" type = "effect" name = "particles/Tank/exhaust/{0}/rpm02_Load04.eff"/>
+					<selector key = "0.9" type = "effect" name = "particles/Tank/exhaust/{0}/rpm03_Load04.eff"/>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="ExhaustLoad">
+			<selector type = "range" variable = "_engine_load">
+				<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
+				<selector key = "2" type = "template" name = "PhysicLoad"/>
+			</selector>
+		</template>
+		<template name = "Exhaust">
+			<selector type = "union">
+			<!--
+			Exhaust effects variables
+			_engine_load - engine is on load 1 = false 2 = true
+			_physicLoad - engine physic load 0-0.5 - moving downhill or no load, 0.5 - moving on a flat terrain, 0.5-1 - climbing the hill or overload
+			_rpm - fake engine RPM
+			_gearUp - gear is going up 0 - false, 1 - true
+			_engineStart - engine is starting 0 - false, 1 - true
+			-->
+
+				<selector type = "template" name = "ExhaustLoad" parameters = "_engine_load:engineLoad;
+					_physicLoad:physicLoad;
+					_rpm:RPM"/>
+
+				<selector type = "template" name = "GearUp" parameters = "_gearUp:gearUp"/>
+				<selector type = "template" name = "EngineStart" parameters = "_engineStart:engineStart"/>
+			</selector>
+		</template>
+		<!--
+		Strv exhaust
+		-->
+		<template name="STRVLoad">
+			<selector type = "range" variable = "engineState"> 
+				<selector key = "0.0" type = "discrete" variable = "siegeProgress">
+					<selector key = "0" type = "range" variable = "_engine_load">
+						<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
+						<selector key = "2" type = "template" name = "PhysicLoad"/>
+					</selector>
+					<selector key = "1" type = "effect" name = "particles/Tank/exhaust/strv_change_exhaust.eff"/>
+				</selector>
+				<selector key = "1.0" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
+				<selector key = "3.5" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
+			</selector>
+		</template>
+		<template name = "ExhaustSTRV">
+			<selector type = "union">
+				<selector type = "template" name = "STRVLoad" parameters = "_engine_load:engineLoad;
+					_physicLoad:physicLoad;
+					_rpm:RPM"/>
+				<selector type = "template" name = "GearUp" parameters = "_gearUp:gearUp"/>
+				<selector type = "template" name = "EngineStart" parameters = "_engineStart:engineStart"/>
+			</selector>
+		</template>
+	</templates>
+	<effects>
+		<default>
+			<selector type="template" name="Exhaust" constantsGroup = "gas_medium"/>
+		</default>
+		<diesel_small>
+			<selector type="template" name="Exhaust" constantsGroup = "diesel_small"/>
+		</diesel_small>
+		<diesel_medium>
+			<selector type="template" name="Exhaust" constantsGroup = "diesel_medium"/>
+		</diesel_medium>
+		<diesel_large>
+			<selector type="template" name="Exhaust" constantsGroup = "diesel_large"/>
+		</diesel_large>
+		<gas_small>
+			<selector type="template" name="Exhaust" constantsGroup = "gas_small"/>
+		</gas_small>
+		<gas_medium>
+			<selector type="template" name="Exhaust" constantsGroup = "gas_medium"/>
+		</gas_medium>
+		<gas_large>
+			<selector type="template" name="Exhaust" constantsGroup = "gas_large"/>
+		</gas_large>
+		<diesel_strv>
+			<selector type="template" name="ExhaustSTRV" constantsGroup = "diesel_large"/>
+		</diesel_strv>
+		<null>
+			<selector type="template" name="Exhaust" constantsGroup="null"/>
+		</null>
+	</effects>
+
+</root>

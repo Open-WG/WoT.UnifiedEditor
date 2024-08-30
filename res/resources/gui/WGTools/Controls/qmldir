@@ -1,0 +1,52 @@
+module Controls
+
+#******************
+# 3.0 (draft)
+#******************
+Button			3.0 3.0/Button.qml
+Popup			3.0 PopupDraft.qml
+
+#******************
+# 2.0
+#******************
+AbstractButton	2.0 AbstractButton.qml
+Action			2.0 Action.qml
+Button			2.0 Button.qml
+ButtonGroup		2.0 ButtonGroup.qml
+CheckBox		2.0 CheckBox.qml
+CheckDelegate	2.0 CheckDelegate.qml
+ComboBox		2.0 ComboBox.qml
+Container		2.0 Container.qml
+Control			2.0 Control.qml
+DoubleSpinBox	2.0 DoubleSpinBox.qml
+DropDownButton	2.0 DropDownButton.qml
+ItemDelegate	2.0 ItemDelegate.qml
+Label			2.0 Label.qml
+Menu			2.0 Menu.qml
+MenuHeader		2.0 MenuHeader.qml
+MenuItem		2.0 MenuItem.qml
+MenuSeparator	2.0 MenuSeparator.qml
+Pane			2.0 Pane.qml
+Popup			2.0 Popup.qml
+ProgressBar		2.0 ProgressBar.qml
+RadioButton		2.0 RadioButton.qml
+RadioDelegate	2.0 RadioDelegate.qml
+RangeSlider		2.0 RangeSlider.qml
+ScrollBar		2.0 ScrollBar.qml
+ScrollIndicator	2.0 ScrollIndicator.qml
+ScrollView		2.0 ScrollView.qml
+Slider			2.0 Slider.qml
+SpinBox			2.0 SpinBox.qml
+TextArea		2.0 TextArea.qml
+TextField		2.0 TextField.qml
+ToolBar			2.0 ToolBar.qml
+ToolButton		2.0 ToolButton.qml
+ToolSeparator	2.0 ToolSeparator.qml
+ToolTip			2.0 ToolTip.qml
+
+#******************
+# 1.0 (deprecated)
+#******************
+Menu			1.0 Menu1.qml
+MenuItem		1.0 MenuItem1.qml
+MenuSeparator	1.0 MenuSeparator1.qml

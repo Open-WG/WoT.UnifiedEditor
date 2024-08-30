@@ -1,0 +1,197 @@
+<themes>
+	<theme name="light">
+		<!-- Main color for base and caption font, icons, all in-button elements, sliders -->
+		<color1> #000000 </color1>
+		<!-- H2 headers, toolbar icons and most of 16x16 icons -->
+		<color2> #333333 </color2>
+		<!-- Button background and other similar elements -->
+		<color3> #666666 </color3>
+		<!-- Property Grid group -->
+		<color4> #999999 </color4>
+		<!-- Property Grid subgroup -->
+		<color5> #eeeeee </color5>
+		<!-- List crossline -->
+		<color6> #efefef </color6>
+		<!-- Panel background -->
+		<color7> #d4d4d4 </color7>
+		<!-- Stroke, Group Titlebars -->
+		<color8> #888888 </color8>
+		<!-- Background for Edits, Choices, Base-dark style (for non-clickable buttons) -->
+		<color9> #ffffff </color9>
+		<!-- Editor background -->
+		<color10> #0093FF </color10>
+		<!-- HiperLinks -->
+		<color11> #5FC4FF </color11>
+		<!-- Selected element -->
+		<color12> #3B79C3 </color12>
+		<!-- Error and blocking element -->
+		<color13> #f63131 </color13>
+		<!-- Priority colors for errors in Model Validator -->
+		<color14> #f5a623 </color14>
+		<!-- Progress bar color -->
+		<color15> #3f9b03 </color15>
+		<!--Background color for selected text -->
+		<color16> #084998 </color16>
+
+		<lod0> #999173 </lod0>
+		<lod1> #E16365 </lod1>
+		<lod2> #C9AC54 </lod2>
+		<lod3> #6C9B72 </lod3>
+		<lod4> #5A47CB </lod4>
+
+		<!-- Axis: 0 - x; 1 - y; 2 - z; 3 - w -->
+		<axisColor0> #BC0000 </axisColor0>
+		<axisColor1> #00C75A </axisColor1>
+		<axisColor2> #104FFF </axisColor2>
+		<axisColor3> #000000 </axisColor3>
+
+		<!-- Channels: 0 - red; 1 - green; 2 - blue; 3 - alpha -->
+		<colorChannel0> #BC0000 </colorChannel0>
+		<colorChannel1> #00C75A </colorChannel1>
+		<colorChannel2> #104FFF </colorChannel2>
+		<colorChannel3> #FFBABA </colorChannel3>
+
+		<redChannel> #BC0000 </redChannel>
+		<greenChannel> #00C75A </greenChannel>
+		<blueChannel> #104FFF </blueChannel>
+		<alphaChannel> #FFBABA </alphaChannel>
+
+		<!-- Tint colors -->
+		<hoveredTint> #18000000 </hoveredTint>
+
+	</theme>
+
+	<theme name="dark" default="true">
+		<!-- Main color for base and caption font, icons, all in-button elements, sliders -->
+		<color1> #ffffff </color1>
+		<!-- H2 headers, toolbar icons and most of 16x16 icons -->
+		<color2> #d4d4d4 </color2>
+		<!-- Button background and other similar elements -->
+		<color3> #8c8c8c </color3>
+		<!-- Property Grid group -->
+		<color4> #666666 </color4>
+		<!-- Property Grid subgroup -->
+		<color5> #595959 </color5>
+		<!-- List crossline -->
+		<color6> #515151 </color6>
+		<!-- Panel background -->
+		<color7> #4a4a4a </color7>
+		<!-- Stroke, Group Titlebars -->
+		<color8> #333333 </color8>
+		<!-- Background for Edits, Choices, Base-dark style (for non-clickable buttons) -->
+		<color9> #1a1a1a </color9>
+		<!-- Editor background -->
+		<color10> #000000 </color10>
+		<!-- HiperLinks -->
+		<color11> #5FC4FF </color11>
+		<!-- Selected element -->
+		<color12> #3B79C3 </color12>
+		<!-- Error and blocking element -->
+		<color13> #084998 </color13>
+		<!-- Priority colors for errors in Model Validator -->
+		<color14> #F63131 </color14>
+		<!-- Progress bar color -->
+		<color15> #F5A623 </color15>
+		<!--Background color for selected text -->
+		<color16> #59A600 </color16>
+
+		<lightRed> #d3524b </lightRed>
+		<lightOrange> #d49a5e </lightOrange>
+		<lightYellow> #e5bb4a </lightYellow>
+		<lightGreen> #79c861 </lightGreen>
+		<lightBlue> #53bae3 </lightBlue>
+		<lightPurple> #cd76e9 </lightPurple>
+		<lightPink> #e48595 </lightPink>
+
+		<lod0> #999173 </lod0>
+		<lod1> #E16365 </lod1>
+		<lod2> #C9AC54 </lod2>
+		<lod3> #6C9B72 </lod3>
+		<lod4> #5A47CB </lod4>
+
+		<!-- Axis: 0 - x; 1 - y; 2 - z; 3 - w -->
+		<axisColor0> #BC0000 </axisColor0>
+		<axisColor1> #00C75A </axisColor1>
+		<axisColor2> #104FFF </axisColor2>
+		<axisColor3> #000000 </axisColor3>
+
+		<!-- Channels: 0 - red; 1 - green; 2 - blue; 3 - alpha -->
+		<colorChannel0> #BC0000 </colorChannel0>
+		<colorChannel1> #00C75A </colorChannel1>
+		<colorChannel2> #104FFF </colorChannel2>
+		<colorChannel3> #FFBABA </colorChannel3>
+
+		<redChannel> #BC0000 </redChannel>
+		<greenChannel> #00C75A </greenChannel>
+		<blueChannel> #104FFF </blueChannel>
+		<alphaChannel> #FFBABA </alphaChannel>
+
+		<!-- Tint colors -->
+		<!-- Hovered tint (30% from color1) -->
+		<hoveredTint> #4DFFFFFF </hoveredTint>
+		<!-- Pressed tint (60% from color10) -->
+		<pressedTint> #9A000000 </pressedTint>
+	</theme>
+
+<!--
+	<theme name="debug">
+		<invalid> #FF00FF </invalid>
+	</theme>
+-->
+
+	<nativePalette>
+		<AlternateBase>
+			<All> color9 </All>
+		</AlternateBase>
+		<Base>
+			<All> color9 </All>
+		</Base>
+		<BrightText>
+			<All> color9 </All>
+		</BrightText>
+		<Button>
+			<All> color3 </All>
+		</Button>
+		<ButtonText>
+			<All> color2 </All>
+		</ButtonText>
+		<Dark>
+			<All> color8 </All>
+		</Dark>
+		<Highlight>
+			<All> color12 </All>
+		</Highlight>
+		<HighlightedText>
+			<All> color1 </All>
+		</HighlightedText>
+		<Light>
+			<All> color9 </All>
+		</Light>
+		<Link>
+			<All> color9 </All>
+		</Link>
+		<!-- <LinkVisited></LinkVisited> -->
+		<Mid>
+			<All> color9 </All>
+		</Mid>
+		<Midlight>
+			<All> color3 </All>
+		</Midlight>
+		<!-- <Shadow></Shadow> -->
+		<Text>
+			<All> color2 </All>
+		</Text>
+		<ToolTipBase>
+			<All> color9 </All>
+		</ToolTipBase>
+		<ToolTipText>
+			<All> color2 </All>
+		</ToolTipText>
+		<Window>
+			<All> color8 </All>
+		</Window>
+		<WindowText>
+			<All> color2 </All>
+		</WindowText>
+	</nativePalette>
+</themes>

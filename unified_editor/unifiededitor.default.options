@@ -1,0 +1,393 @@
+<root>
+	<toolsExternal>
+		<nvtt> ../resources/nvcompress/nvcompress.exe </nvtt>
+	</toolsExternal>
+	<logging>
+		<file>
+			<enabled>	true	</enabled>
+			<openMode> a </openMode>
+			<maxSizeKB> 10240 </maxSizeKB>
+			<trimToKB> 10240 </trimToKB>
+			<showTime>	true	</showTime>
+		</file>
+	</logging>
+	<render>
+		<drawHavok>	false
+			<Static>	false	</Static>
+			<Dynamic>	false	</Dynamic>
+			<Terrain>	false	</Terrain>
+			<UserObjects>	false	</UserObjects>
+			<OnlyCameraCollide>	false	</OnlyCameraCollide>
+			<Outland>	false	</Outland>
+			<InvisibleObjects>	false	</InvisibleObjects>
+			<InvisibleWalls>	false	</InvisibleWalls>
+			<modelEditor>	false	</modelEditor>
+			<AlphaBlend>	false	</AlphaBlend>
+			<Wireframe>	false	</Wireframe>
+		</drawHavok>
+		<editorObjectsScreenPercentLOD>	0.800000	</editorObjectsScreenPercentLOD>
+		<virtualTextureEnabled>	true	</virtualTextureEnabled>
+		<gameObjects>	true
+			<drawEntities>	true	</drawEntities>
+			<drawContentCheckers>	false	</drawContentCheckers>
+			<drawUserDataObjects>	true
+				<drawSpawnPointPositionNumbers>	false	</drawSpawnPointPositionNumbers>
+				<drawArtilleryTracers>	false	</drawArtilleryTracers>
+				<drawBenchmarkTrajectories>	false	</drawBenchmarkTrajectories>
+				<drawTessellatedBenchmarkTrajectories>	false	</drawTessellatedBenchmarkTrajectories>
+			</drawUserDataObjects>
+			<drawArenaBorder>	true	</drawArenaBorder>
+		</gameObjects>
+		<scenery>	true
+			<drawWater> true </drawWater>
+			<drawDecorModels>	true
+				<highlightDecorColorDeferredOnly>	1881210879	</highlightDecorColorDeferredOnly>
+				<drawDecorModelsForwardOnly>	false	</drawDecorModelsForwardOnly>
+				<drawDecorModelsMax>	true	</drawDecorModelsMax>
+				<drawDecorModelsMaxHight>	true	</drawDecorModelsMaxHight>
+				<drawDecorModelsDeferredOnly>	true	</drawDecorModelsDeferredOnly>
+				<highLightDecorObjects>	false	</highLightDecorObjects>
+				<highLightDecorObjectsColorMax>	1881210656	</highLightDecorObjectsColorMax>
+				<highLightDecorObjectsColorMaxHigh>	1881153791	</highLightDecorObjectsColorMaxHigh>
+				<highlightDecorColorForwardOnly>	1895768319	</highlightDecorColorForwardOnly>
+			</drawDecorModels>
+			<particle>	true	</particle>
+			<drawChunkLights> true </drawChunkLights>
+			<drawInvisibleWallMaterials>	false	</drawInvisibleWallMaterials>
+			<drawPrimGroupsCountInColor>	false	</drawPrimGroupsCountInColor>
+			<highlightUserTags>	false	</highlightUserTags>
+			<shells>	true	</shells>
+			<drawSHVolumes> false </drawSHVolumes>
+		</scenery>
+		<decals>	true
+			<showOverdraw>	false	</showOverdraw>
+			<renderCost>	false	</renderCost>
+		</decals>
+		<drawBSP>	false
+			<SpeedTrees>	true	</SpeedTrees>
+			<InvisibleWalls>	false	</InvisibleWalls>
+			<OtherModels>	true	</OtherModels>
+			<TreeLeaf>	true	</TreeLeaf>
+			<ImportedBSPs>	false	</ImportedBSPs>
+			<Roads>	false	</Roads>
+			<Destroyed>	false	</Destroyed>
+		</drawBSP>
+		<proxys>	true
+			<particleProxyLarge>	true	</particleProxyLarge>
+			<particleProxys>	true	</particleProxys>
+			<drawChunkSounds>	true	</drawChunkSounds>
+			<drawEnvProbesWithLabelsAndGrids>	false	</drawEnvProbesWithLabelsAndGrids>
+			<drawEnvironmentProbes>	true	</drawEnvironmentProbes>
+			<roadPoints>	true	</roadPoints>
+			<drawAutoChunkSounds>	false	</drawAutoChunkSounds>
+			<drawEnvProbesWithLabels>	false	</drawEnvProbesWithLabels>
+		</proxys>
+		<lighting>	false	</lighting>
+		<misc>	false
+			<shadeFrozenObjects>	true	</shadeFrozenObjects>
+			<editorCameraFov>	95	</editorCameraFov>
+			<drawEditorProxies>	false	</drawEditorProxies>
+			<shadeReadOnlyAreas>	true	</shadeReadOnlyAreas>
+		</misc>
+		<terrain>	true
+			<terrainOverlayMode>	0	</terrainOverlayMode>
+			<LODLocks>	false	</LODLocks>
+			<chunkGridVisibleThrough>	false	</chunkGridVisibleThrough>
+		</terrain>
+		<environment>	true
+			<drawSkyBoxes>	true	</drawSkyBoxes>
+			<drawDetailObjects>	true	</drawDetailObjects>
+			<drawSunAndMoon>	true	</drawSunAndMoon>
+			<drawSky>	true	</drawSky>
+			<drawClouds>	true	</drawClouds>
+		</environment>
+		<hideOutsideObjects>	false	</hideOutsideObjects>
+		<maxFarPlane>	5000.000000	</maxFarPlane>
+	</render>
+	<checkFileCase>	false	</checkFileCase>
+	<consoles>
+		<darkenBackground>	false	</darkenBackground>
+	</consoles>
+	<graphics>
+		<graphicsPreferencesXML>	resources/graphics_preferences.xml	</graphicsPreferencesXML>
+		<shadows>	false	</shadows>
+		<preset>	ULTRA	</preset>
+	</graphics>
+	<terrain2>
+		<blendsBuildInterval>	100	</blendsBuildInterval>
+	</terrain2>
+	<settings>
+		<background>	1	</background>
+		<distance>	20	</distance>
+		<centreModel>	false	</centreModel>
+		<showSkeleton>	false	</showSkeleton>
+		<bkgColour>	255.000000 255.000000 255.000000	</bkgColour>
+		<isVirtualDistance>	false	</isVirtualDistance>
+		<floorTexture> helpers/maps/system/default.bmp </floorTexture>
+		<useZeroPointAsPivot>	false	</useZeroPointAsPivot>
+		<vertexLength>	50	</vertexLength>
+		<checkForSparkles>	false	</checkForSparkles>
+		<showWireframe>	false	</showWireframe>
+		<showModelPartName>	true	</showModelPartName>
+		<showAxes>	false	</showAxes>
+		<showBoundingBox>	false	</showBoundingBox>
+		<destructibleState>	false	</destructibleState>
+		<groundModel>	false	</groundModel>
+		<showHardPoints>	false	</showHardPoints>
+		<showModel>	true	</showModel>
+		<visualizeHover>	false	</visualizeHover>
+		<visualizeSelection>	false	</visualizeSelection>
+		<showNormals>	false	</showNormals>
+		<showBinormals>	false	</showBinormals>
+		<showDoubleSide>	false	</showDoubleSide>
+		<showStatistics>	false	</showStatistics>
+		<showActions>	false	</showActions>
+		<showEffectNames>	false	</showEffectNames>
+		<showEditorProxy>	false	</showEditorProxy>
+		<showOriginalAnim>	false	</showOriginalAnim>
+		<showCustomHull>	false	</showCustomHull>
+		<showShadowing>	true	</showShadowing>
+		<floorGrid>	1.000000	</floorGrid>
+		<enableCameraHotkeys> true </enableCameraHotkeys>
+		<camera>
+			<fluency> 0.000000 </fluency>
+			<mouseSensitivity> 1.000000 </mouseSensitivity>
+			<fluencyEnabled> false </fluencyEnabled>
+			<speed> 32.000000 </speed>
+		</camera>
+		<sound>
+			<communication> true </communication>
+		</sound>
+		<unbound>
+			<cameraZoom> 100.000000 </cameraZoom>
+		</unbound>
+	</settings>
+	<screenshots>
+		<isDisablePostProcessing> false </isDisablePostProcessing>
+		<make_hdr> false </make_hdr>
+		<use_local_point> false </use_local_point>
+		<use_custom_resolution> false </use_custom_resolution>
+		<width> 1920 </width>
+		<height> 1080 </height>
+		<make_normal> true </make_normal>
+		<isDisableAnimation> false </isDisableAnimation>
+		<isDisableControlPoints> true </isDisableControlPoints>
+		<shot_delay> 3 </shot_delay>
+		<quality_flags> 1 </quality_flags>
+		<render_flags> 1 </render_flags>
+	</screenshots>
+	<imgui>
+		<visible>	true	</visible>
+		<fullLogWndHeight>	300.000000	</fullLogWndHeight>
+		<features>	-1	</features>
+		<watcherChanged>	true	</watcherChanged>
+		<suppressBriefLog>	false	</suppressBriefLog>
+		<logMessagePriority>	0	</logMessagePriority>
+		<isFullLogVisible>	false	</isFullLogVisible>
+		<navBarChunkNameMode>	false	</navBarChunkNameMode>
+	</imgui>
+	<snaps>
+		<itemSnapMode>	0	</itemSnapMode>
+		<xyzEnabled>	false	</xyzEnabled>
+		<itemSnapPivot>	0	</itemSnapPivot>
+		<movement>	0.100000 0.100000 0.100000	</movement>
+		<angle>	0.000000	</angle>
+		<rotationStep> 30.000000 30.000000 30.000000 </rotationStep>
+		<markerSize> 30 </markerSize>
+	</snaps>
+	<chunkTexture>
+		<defectiveSeams>
+			<show>	false	</show>
+			<showTilesHeightSeams>	false	</showTilesHeightSeams>
+			<threshold>	1	</threshold>
+		</defectiveSeams>
+		<numLayerWarning>	0	</numLayerWarning>
+		<numLayerWarningShow>	false	</numLayerWarningShow>
+	</chunkTexture>
+	<app>
+		<maxTimeDelta>	0.500000	</maxTimeDelta>
+		<timeScale>	1.000000	</timeScale>
+		<pause>	false	</pause>
+	</app>
+	<gizmo>
+		<forcedMode>	2	</forcedMode>
+		<useGizmoWSAD>	true	</useGizmoWSAD>
+	</gizmo>
+	<Visibility>
+		<controlPoints>	true	</controlPoints>
+	</Visibility>
+	<enableStatisticsAlarm>	false	</enableStatisticsAlarm>
+	<tools>
+		<useHangingItemsAutoFix>	false	</useHangingItemsAutoFix>
+		<coordFilter>	World	</coordFilter>
+	</tools>
+	<crashDump>
+		<type> 3 </type>
+		<url> http://cat-st1.wargaming.net </url>
+	</crashDump>
+	<camera>
+		<rotateSpeedMultiplier>	1.000000	</rotateSpeedMultiplier>
+		<farclip>	500.000000	</farclip>
+	</camera>
+	<versionControl>
+		<enable> false </enable>
+		<system> svn </system>
+		<xExtent> 5 </xExtent>
+		<yExtent> 1 </yExtent>
+		<autoupdate>
+			<enable> true </enable>
+			<delta> 5 </delta>
+		</autoupdate>
+	</versionControl>
+	<animationPlaybackState> playing </animationPlaybackState>
+	<fx>
+		<default>
+			<file> shaders/std_effects/PBS_ext.fx </file>
+			<file> shaders/std_effects/PBS_ext_atlas.fx </file>
+			<file> shaders/std_effects/PBS_ext_color.fx </file>
+			<file> shaders/std_effects/PBS_ext_detail.fx </file>
+			<file> shaders/std_effects/PBS_ext_detail_dual.fx </file>
+			<file> shaders/std_effects/PBS_ext_dual.fx </file>
+			<file> shaders/std_effects/PBS_ext_skinned.fx </file>
+			<file> shaders/std_effects/PBS_glass.fx </file>
+			<file> shaders/std_effects/PBS_tank.fx </file>
+			<file> shaders/std_effects/PBS_tank_crash.fx </file>
+			<file> shaders/std_effects/PBS_tank_skinned.fx </file>
+			<file> shaders/std_effects/PBS_tank_skinned_ao.fx </file>
+			<file> shaders/std_effects/PBS_tank_tracks.fx </file>
+			<file> shaders/std_effects/PBS_tiled_atlas.fx </file>
+		</default>
+	</fx>
+	<DragAndDrop>
+		<Factory>
+			<Creator> class draganddrop::itemcreatordefault </Creator>
+			<Creator> class draganddrop::itemcreatorroad </Creator>
+			<Creator> class draganddrop::itemcreatordecal </Creator>
+			<Creator> class draganddrop::itemcreatortank </Creator>
+			<Creator> class draganddrop::itemcreatorprefab </Creator>
+		</Factory>
+		<Filter>
+			<Water>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> helpers/misc/ </assetFilePath>
+				<assetFileName> water </assetFileName>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Water>
+			<Houdini>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> content/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> hda </assetFileExtesion>
+			</Houdini>
+			<Model>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> / </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> model </assetFileExtesion>
+			</Model>
+			<Speedtree>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> vegetation/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> srt </assetFileExtesion>
+			</Speedtree>
+			<Particles>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> particles/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> eff </assetFileExtesion>
+			</Particles>
+			<Light>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> helpers/lights/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Light>
+			<Road>
+				<factoryName> class draganddrop::itemcreatorroad </factoryName>
+				<assetFilePath> resources/road/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Road>
+			<Sound>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> resources/audio/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Sound>
+			<Shgrid>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> resources/sh_grid/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Shgrid>
+			<Environment>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> helpers/environments/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Environment>
+			<Decals>
+				<factoryName> class draganddrop::itemcreatordecal </factoryName>
+				<assetFilePath> / </assetFilePath>
+				<assetFileName> _am;_wetness;_ao;_sh </assetFileName>
+				<assetFileExtesion> dds </assetFileExtesion>
+			</Decals>
+			<Entities>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> scripts/entity_defs/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> def </assetFileExtesion>
+			</Entities>
+			<UserDataObjects>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> scripts/user_data_object_defs/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> def </assetFileExtesion>
+			</UserDataObjects>
+			<Tank>
+				<factoryName> class draganddrop::itemcreatortank </factoryName>
+				<assetFilePath> scripts/item_defs/vehicles/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Tank>
+			<Prefab>
+				<factoryName> class draganddrop::itemcreatorprefab </factoryName>
+				<assetFilePath/>
+				<assetFileName/>
+				<assetFileExtesion> prefab </assetFileExtesion>
+			</Prefab>
+			<Influx>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> resources/influx/ </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</Influx>
+			<ImpassableZone>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> helpers/misc/ </assetFilePath>
+				<assetFileName> impassableZone </assetFileName>
+				<assetFileExtesion> xml </assetFileExtesion>
+			</ImpassableZone>
+		</Filter>
+	</DragAndDrop>
+	<isStandalone>true</isStandalone>
+	<minimap>
+		<ownTeam> 1 </ownTeam>
+		<gridType> 1 </gridType>
+	</minimap>
+	<tankEditor>
+		<defaultCameraViewMatrix>
+			<row0> -0.523045 0.328219 0.786572 </row0>
+			<row1> 0.000000 0.922877 -0.385096 </row1>
+			<row2> -0.852305 -0.201422 -0.482706 </row2>
+			<row3> -0.017837 -1.370210 12.417826 </row3>
+		</defaultCameraViewMatrix>
+	</tankEditor>
+	<recent>
+		<path0>spaces/hangar_v3/space.settings</path0>
+	</recent>
+	<exePath>
+		<isUsersName>true</isUsersName>
+	</exePath>
+</root>

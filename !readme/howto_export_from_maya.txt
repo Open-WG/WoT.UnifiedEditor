@@ -1,0 +1,16 @@
+To install Maya exporter plug-in:
+
+1. Run Maya
+2. In main menu select "Windows", "Settings/Preferences", "Plug-in Manager"
+3. Click "Browse", navigate to our installation directory, then to "mayaexporter/[version of your Maya]", select visual.mll, press Ok
+4. In the rightmost column select "Auto load" checkbox, press Close
+5. Make sure that there's no errors in Maya log
+
+To use our exporter with any model made in Maya:
+
+1. Select any part of the model to be exported
+2. In main menu select "File", "Export selection"
+3. Navigate to our installation directory, then to "resources_wg", "content", "[your content folder name]"
+4. Enter the name of output file in "File name" field and select "BigWorldAsset" in dropdown menu below
+5. Press "Export selection"
+6. In the export dialog select any options you need for export and press OK button

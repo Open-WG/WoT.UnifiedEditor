@@ -1,0 +1,59 @@
+<stateMachine>	
+	<node name="SittingIdle01_Idle_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/SittingIdle01/SittingIdle01_Idle_A.seq</resource>
+		<loop>1.0 2.0</loop>
+		<transition>
+			<to>SittingIdle01_A_to_B</to>
+			<condition>0.4</condition>
+		</transition>
+		<transition>
+			<to>SittingIdle01_Idle_A</to>
+			<condition>0.2</condition>
+		</transition>
+		<transition>
+			<to>SittingIdle01_Action_A</to>
+			<condition>0.4</condition>
+		</transition>
+	</node>
+	<node name="SittingIdle01_Idle_B">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/SittingIdle01/SittingIdle01_Idle_B.seq</resource>
+		<loop>1.0 2.0</loop>
+		<transition>
+			<to>SittingIdle01_B_to_A</to>
+			<condition>0.7</condition>
+		</transition>
+		<transition>
+			<to>SittingIdle01_Idle_B</to>
+			<condition>0.3</condition>
+		</transition>
+	</node>
+	<node name="SittingIdle01_A_to_B">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/SittingIdle01/SittingIdle01_A_to_B.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>SittingIdle01_Idle_B</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="SittingIdle01_B_to_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/SittingIdle01/SittingIdle01_B_to_A.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>SittingIdle01_Idle_A</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="SittingIdle01_Action_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/SittingIdle01/SittingIdle01_Action_A.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>SittingIdle01_Idle_A</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+</stateMachine>

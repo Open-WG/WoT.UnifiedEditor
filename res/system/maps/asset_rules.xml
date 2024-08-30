@@ -1,0 +1,10 @@
+<root>
+	<!-- 
+  	These files are used by lighting generation as templates.
+  	While generating, we don't want to process, so lighting gen code can
+  	just load these from source, not in processed output.
+  -->
+	<rule pattern="^(PMREM_black\.dds)|(REM_SH_black\.xml)|(sh_grid_black\.dds)$">
+		<noConversion>true</noConversion>
+	</rule>
+</root>

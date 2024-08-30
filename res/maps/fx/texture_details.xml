@@ -1,0 +1,8 @@
+<!-- Rule for the shot decals. They are there: \res\wot\maps\fx\damage_stickers\. Rule is an insurance, all these textures must be saved without mipmaps-->
+<root>
+	<rule>
+		<lodMode>	0	</lodMode>
+		<format>	DXT3	</format>
+		<pattern>	.*(sticker).*	</pattern>
+	</rule>
+</root>

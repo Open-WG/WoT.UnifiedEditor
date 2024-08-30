@@ -1,0 +1,87 @@
+<root>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<stream>	colour	</stream>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>	lambert1	</identifier>
+					<fx>	shaders/std_effects/PBS_ext.fx	</fx>
+					<property>	diffuseMap
+						<Texture>	content/Hangars/hangar_v3/enviroment/hd_hv3_SU-152_AM.dds	</Texture>
+					</property>
+					<collisionFlags>	255	</collisionFlags>
+					<materialKind>	112	</materialKind>
+					<property>	normalMap
+						<Texture>	content/Hangars/hangar_v3/enviroment/hd_hv3_SU-152_ANM.dds	</Texture>
+					</property>
+					<property>	metallicGlossMap
+						<Texture>	content/Hangars/hangar_v3/enviroment/hd_hv3_SU-152_GMM.dds	</Texture>
+					</property>
+					<property>	alphaTestEnable
+						<Bool>	true	</Bool>
+					</property>
+					<property>	alphaReference
+						<Int>	66	</Int>
+					</property>
+					<property> g_enableAO
+						<Bool> true </Bool>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-1.619780 0.000517 -3.464124	</min>
+		<max>	1.619780 2.839149 5.441634	</max>
+	</boundingBox>
+	<customBsp>	true	</customBsp>
+	<metaData>
+		<settings>
+			<exportAnimation>	false	</exportAnimation>
+			<exportMode>	1	</exportMode>
+			<boneCount>	17	</boneCount>
+			<transformToOrigin>	false	</transformToOrigin>
+			<allowScale>	false	</allowScale>
+			<bumpMapped>	true	</bumpMapped>
+			<keepExistingMaterials>	true	</keepExistingMaterials>
+			<snapVertices>	false	</snapVertices>
+			<stripRefPrefix>	false	</stripRefPrefix>
+			<useReferenceNode>	false	</useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker>	false	</disableVisualChecker>
+			<useLegacyScaling>	false	</useLegacyScaling>
+			<fixCylindrical>	false	</fixCylindrical>
+			<fixNodeTreeLOD>	true	</fixNodeTreeLOD>
+			<useLegacyOrientation>	false	</useLegacyOrientation>
+			<sceneRootAdded>	false	</sceneRootAdded>
+			<recalculateTangents>	false	</recalculateTangents>
+			<includeMeshes>	true	</includeMeshes>
+			<includeEnvelopesAndBones>	false	</includeEnvelopesAndBones>
+			<includeNodes>	true	</includeNodes>
+			<includeMaterials>	true	</includeMaterials>
+			<includeAnimations>	false	</includeAnimations>
+			<useCharacterMode>	false	</useCharacterMode>
+			<animationName>	anim	</animationName>
+			<includePortals>	false	</includePortals>
+			<worldSpaceOrigin>	false	</worldSpaceOrigin>
+			<unitScale>	0.100000	</unitScale>
+			<localHierarchy>	false	</localHierarchy>
+			<nodeFilter>	1	</nodeFilter>
+			<copyExternalTextures>	true	</copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

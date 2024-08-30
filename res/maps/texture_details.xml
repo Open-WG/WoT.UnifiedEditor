@@ -1,0 +1,6 @@
+<root>
+	<!-- Since decals & flora don't use texture manager to load textures, forbid splitting off mip0 into HD pack -->
+	<rule pattern=".*">
+		<allowSplit>false</allowSplit>
+	</rule>
+</root>

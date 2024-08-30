@@ -1,0 +1,155 @@
+import QtQuick 2.10
+import QtQuick.Window 2.2
+import QtQuick.Layouts 1.3
+import WGTools.Controls 2.0
+import WGTools.Controls.Details 2.0
+import WGTools.Clickomatic 1.0 as Clickomatic
+import WGTools.Utils 1.0
+import "Settings.js" as Settings
+
+ColumnLayout {
+	spacing: 0
+
+	Rectangle {
+		Layout.fillWidth: true
+		Layout.fillHeight: true
+		implicitHeight: Settings.titlebarHeight
+		color: _palette.color9
+
+		Accessible.name: "Titlebar"
+		Clickomatic.ClickomaticItem.norecord: true
+
+		TabContextMenu {
+			id: contextMenu
+		}
+
+		Item {
+			height: parent.height
+			anchors.left: parent.left
+			anchors.right: sysMenu.left
+
+			DropdownButton {
+				id: menuButton
+				width: ControlsSettings.toolBarSize
+				menu: MainMenu {
+					y: parent.height
+				}
+
+				icon.source: Qt.application.state == Qt.ApplicationActive
+					? context.isDeveloper
+						? "image://gui/resources/unifiededitor_dev"
+						: "image://gui/resources/unifiededitor"
+					: "image://gui/icon-system-menu-disabled"
+					
+				icon.width: 16
+				icon.height: 16
+
+				anchors.left: parent.left
+				anchors.top: parent.top
+				anchors.bottom: parent.bottom
+
+				Accessible.name: "Logo"
+				ToolTip.text: Qt.application.name
+				ToolTip.visible: menuButton.hovered
+				ToolTip.delay: ControlsSettings.tooltipDelay
+				ToolTip.timeout: ControlsSettings.tooltipTimeout
+			}
+		
+			Tabbar {
+				id: tabs
+				model: context.model
+				width: Utils.clamp(parent.width - x - Settings.titlebarDragSpace, Settings.minimumTabWidth, implicitWidth)
+				height: parent.height
+				anchors.left: menuButton.right
+
+				Binding on currentIndex {
+					value: context.model.activateTabIndex
+				}
+			
+				delegate: Tab {
+					height: parent.height
+					width: Math.min(Settings.tabWidth, tabs.implicitWidth / tabs.count)
+
+					onActivatePressed: {
+						context.model.activateTab(index)
+					}
+
+					onCloseClicked: {
+						context.model.closeTab(index)
+					}
+
+					onContextMenuClicked: {
+						contextMenu.index = index
+						contextMenu.model = model
+						contextMenu.popupEx()
+					}
+				}
+
+				menuDelegate: MenuItem {
+					text: model.display
+					checkable: true
+					Binding on checked { value: model.active }
+
+					onTriggered: {
+						context.model.activateTab(index)
+						checked = model.active
+					}
+				}
+			}
+
+			Item {
+				id: captionArea
+				height: parent.height
+				anchors.left: tabs.right
+				anchors.right: parent.right
+
+				property int hitTest: 2 // HTCAPTION
+			}
+		}
+
+		Row {
+			id: sysMenu
+			height: parent.height
+			anchors.right: parent.right
+
+			WindowButton {
+				id: minButton
+				source: "image://gui/icon-sys-minimize?color=" + encodeURIComponent(_palette.color2)
+				onClicked: _mainWindow.showMinimized()
+			}
+
+			WindowButton {
+				id: maxButton
+				source: (_mainWindowHandle.visibility === Window.Windowed
+					? "image://gui/icon-sys-maximize?color="
+					: "image://gui/icon-sys-restore?color=") + encodeURIComponent(_palette.color2)
+
+				onClicked: {
+					if (_mainWindow.maximized) {
+						_mainWindow.showNormal()
+					} else {
+						_mainWindow.showMaximized()
+					}
+				}
+			}
+
+			WindowButton {
+				id: closeButton
+				source: "image://gui/icon-sys-close?color=" + encodeURIComponent(_palette.color2)
+				onClicked: _mainWindow.close()
+			}
+		}
+	}
+
+	Rectangle {
+		Layout.fillWidth: true
+		implicitHeight: Settings.titlebarSeparatorHeight
+		color: (context.model.activateTabIndex > -1) ? _palette.color8 : _palette.color9
+	}
+
+	Rectangle {
+		Layout.fillWidth: true
+		implicitHeight: Settings.titlebarSeparatorHeight
+		color: _palette.color9
+	}
+}

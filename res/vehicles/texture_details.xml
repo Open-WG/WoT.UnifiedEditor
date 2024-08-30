@@ -1,0 +1,17 @@
+<root>
+	<!-- Rule for Tanks department. During tank creation we use textures in *.tga format. They don't appear in release -->
+	<rule pattern=".*(\.tga)$">
+		<format> A8R8G8B8 </format>
+	</rule>
+	<!-- Split textures in this directory, except *_HangarShadowMap.dds -->
+	<rule pattern=".*">
+		<allowSplit> true </allowSplit>
+		<category> tanks </category>
+	</rule>
+	<rule pattern=".*_HangarShadowMap\.dds$">
+		<allowSplit> false </allowSplit>
+	</rule>
+	<rule pattern=".*_ID\.dds$">
+		<allowSplit> false </allowSplit>
+	</rule>
+</root>

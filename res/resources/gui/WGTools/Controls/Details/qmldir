@@ -1,0 +1,85 @@
+module Controls.Details
+
+#******************
+# 2.0
+#******************
+ButtonBackground		2.0 Button/ButtonBackground.qml
+ButtonContent			2.0 Button/ButtonContent.qml
+CheckBoxContent			2.0 CheckBox/CheckBoxContent.qml
+CheckBoxIndicator		2.0 CheckBox/CheckBoxIndicator.qml
+ComboBoxBackground		2.0 ComboBox/ComboBoxBackground.qml
+ComboBoxContent			2.0 ComboBox/ComboBoxContent.qml
+ComboBoxDelegate		2.0 ComboBox/ComboBoxDelegate.qml
+ComboBoxIndicator		2.0 ComboBox/ComboBoxIndicator.qml
+ComboBoxPopup			2.0 ComboBox/ComboBoxPopup.qml
+ComboBoxPopupContent	2.0 ComboBox/ComboBoxPopupContent.qml
+ItemDelegateBackground	2.0 ItemDelegate/ItemDelegateBackground.qml
+ItemDelegateContent		2.0 ItemDelegate/ItemDelegateContent.qml
+MenuBackground			2.0 Menu/MenuBackground.qml
+MenuContent				2.0 Menu/MenuContent.qml
+MenuItemArrow			2.0 MenuItem/MenuItemArrow.qml
+MenuItemBackground		2.0 MenuItem/MenuItemBackground.qml
+MenuItemContent			2.0 MenuItem/MenuItemContent.qml
+MenuItemIndicator		2.0 MenuItem/MenuItemIndicator.qml
+PaneBackground			2.0 Pane/PaneBackground.qml
+PopupBackground			2.0 Popup/PopupBackground.qml
+PopupEnterTransition	2.0 Popup/PopupEnterTransition.qml
+PopupExitTransition		2.0 Popup/PopupExitTransition.qml
+RadioButtonIndicator	2.0 RadioButton/RadioButtonIndicator.qml
+RangeSliderContent		2.0 RangeSlider/RangeSliderContent.qml
+RangeSliderHandleLeft	2.0 RangeSlider/RangeSliderHandleLeft.qml
+RangeSliderHandleRight	2.0 RangeSlider/RangeSliderHandleRight.qml
+ScrollBarHandle			2.0 ScrollBar/ScrollBarHandle.qml
+ScrollIndicatorContent	2.0 ScrollIndicator/ScrollIndicatorContent.qml
+BasicSliderHandle		2.0 Slider/BasicSliderHandle.qml
+BasicSliderContent		2.0 Slider/BasicSliderContent.qml
+SliderBackground		2.0 Slider/SliderBackground.qml
+SliderContent			2.0 Slider/SliderContent.qml
+SliderGroove			2.0 Slider/SliderGroove.qml
+SliderHandle			2.0 Slider/SliderHandle.qml
+SliderHandleLeft		2.0 Slider/SliderHandleLeft.qml
+SliderHandleRight		2.0 Slider/SliderHandleRight.qml
+SliderLabel				2.0 Slider/SliderLabel.qml
+SliderLabelsData		2.0 Slider/SliderLabelsData.qml
+SliderRange				2.0 Slider/SliderRange.qml
+SliderScale				2.0 Slider/SliderScale.qml
+SliderScaleData			2.0 Slider/SliderScaleData.qml
+SliderToolTip			2.0 Slider/SliderToolTip.qml
+SpinBoxBackground		2.0 SpinBox/SpinBoxBackground.qml
+SpinBoxContent			2.0 SpinBox/SpinBoxContent.qml
+SpinBoxLabel			2.0 SpinBox/SpinBoxLabel.qml
+SpinBoxSeparator		2.0 SpinBox/SpinBoxSeparator.qml
+SpinBoxUnitsLabel		2.0 SpinBox/SpinBoxUnitsLabel.qml
+SpinButtonDown			2.0 SpinBox/SpinButtonDown.qml
+SpinButtonUp			2.0 SpinBox/SpinButtonUp.qml
+CursorDelegate			2.0 TextField/CursorDelegate.qml
+TextFieldBackground		2.0 TextField/TextFieldBackground.qml
+TextFieldPlaceholder	2.0 TextField/TextFieldPlaceholder.qml
+TextFieldPrefix			2.0 TextField/TextFieldPrefix.qml
+TextFieldSeparator		2.0 TextField/TextFieldSeparator.qml
+ToolBarBackground		2.0 ToolBar/ToolBarBackground.qml
+ToolButtonBackground	2.0 ToolButton/ToolButtonBackground.qml
+ToolButtonContent		2.0 ToolButton/ToolButtonContent.qml
+ToolTipArrow			2.0 ToolTip/ToolTipArrow.qml
+ToolTipArrowLoader		2.0 ToolTip/ToolTipArrowLoader.qml
+ToolTipBackground		2.0 ToolTip/ToolTipBackground.qml
+ToolTipContent			2.0 ToolTip/ToolTipContent.qml
+
+# Common
+ColorBehavior			2.0 _Common/Behaviors/ColorBehavior.qml
+NumberBehavior			2.0 _Common/Behaviors/NumberBehavior.qml
+
+BasicIndicatorButton	2.0 _Common/BasicIndicatorButton.qml
+ColorImage				2.0 _Common/ColorImage.qml
+InteractiveImage		2.0 _Common/InteractiveImage.qml
+
+# Debug
+BackgroundBB			2.0 _Debug/BackgroundBB.qml
+ContentItemBB			2.0 _Debug/ContentItemBB.qml
+ControlBB				2.0 _Debug/ControlBB.qml
+DecorationsBB			2.0 _Debug/DecorationsBB.qml
+IndicatorBB				2.0 _Debug/IndicatorBB.qml
+
+# Scripts and Constants
+ControlsConstants		2.0 Constants.js
+ControlsSettings		2.0 Settings.js

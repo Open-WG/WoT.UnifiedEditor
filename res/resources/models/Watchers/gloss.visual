@@ -1,0 +1,76 @@
+<root>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier> gloss:Gloss </identifier>
+					<fx> shaders/std_effects/PBS.fx </fx>
+					<collisionFlags> 0 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<property> metallic 
+						<Float> 1.000000 </Float>
+					</property>
+					<property> gloss 
+						<Float> 1.000000 </Float>
+					</property>
+					<property> diffuseMap 
+						<Texture> resources/maps/greyLinear.dds </Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-0.259250 -0.260481 -0.258886	</min>
+		<max>	0.259250 0.260481 0.258886	</max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation>	false	</exportAnimation>
+			<exportMode>	1	</exportMode>
+			<boneCount>	17	</boneCount>
+			<transformToOrigin>	false	</transformToOrigin>
+			<allowScale>	false	</allowScale>
+			<bumpMapped>	false	</bumpMapped>
+			<keepExistingMaterials>	false	</keepExistingMaterials>
+			<snapVertices>	false	</snapVertices>
+			<stripRefPrefix>	false	</stripRefPrefix>
+			<useReferenceNode>	false	</useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker>	false	</disableVisualChecker>
+			<useLegacyScaling>	false	</useLegacyScaling>
+			<fixCylindrical>	false	</fixCylindrical>
+			<fixNodeTreeLOD>	true	</fixNodeTreeLOD>
+			<useLegacyOrientation>	false	</useLegacyOrientation>
+			<sceneRootAdded>	false	</sceneRootAdded>
+			<recalculateTangents>	false	</recalculateTangents>
+			<includeMeshes>	true	</includeMeshes>
+			<includeEnvelopesAndBones>	false	</includeEnvelopesAndBones>
+			<includeNodes>	true	</includeNodes>
+			<includeMaterials>	true	</includeMaterials>
+			<includeAnimations>	false	</includeAnimations>
+			<useCharacterMode>	false	</useCharacterMode>
+			<animationName>	anim	</animationName>
+			<includePortals>	false	</includePortals>
+			<worldSpaceOrigin>	false	</worldSpaceOrigin>
+			<unitScale>	0.100000	</unitScale>
+			<localHierarchy>	false	</localHierarchy>
+			<nodeFilter>	1	</nodeFilter>
+			<copyExternalTextures>	true	</copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

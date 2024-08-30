@@ -1,0 +1,167 @@
+<themes>
+	<theme name="light">
+		<panelBackground> #F9F9FF </panelBackground>
+		<panelBackgroundAlt> #FFFFFF </panelBackgroundAlt>
+		<panelDecor> #999999 </panelDecor>
+		<subpanelBackground> #666666 </subpanelBackground>
+		<headerBackground> #E9EBEB </headerBackground>
+		<menuBackground> #E9EBEB </menuBackground>
+		<menuShadow> #999999 </menuShadow>
+		<text> #333333 </text>
+		<textHovered> #000000 </textHovered>
+		<textDisabled> #999999 </textDisabled>
+		<textMinor> #777777 </textMinor>
+		<textMajor> #000000 </textMajor>
+		<textAlt> #3a87e2 </textAlt>
+		<highlightedText> #FFFFFF </highlightedText>
+		<scrollbarHandle> #333333 </scrollbarHandle>
+		<scrollbarHandlePressed> #999999 </scrollbarHandlePressed>
+		<buttonBackground> #FFFFFF </buttonBackground>
+		<controlBackgroundHovered> #3A87E2 </controlBackgroundHovered>
+		<controlBackgroundPressed> #3A5CE2 </controlBackgroundPressed>
+		<controlIndicator> #323232 </controlIndicator>
+		<controlIndicatorHevered> #666666 </controlIndicatorHevered>
+		<controlFrame> #A7B2B8 </controlFrame>
+		<controlDecor> #999999 </controlDecor>
+		<controlDecorAlt> #33336E </controlDecorAlt>
+		<toolButtonBackground> #0F0F0F </toolButtonBackground>
+		<breadcrumbBackground> #FFFFFF </breadcrumbBackground>
+		<windowBase> #CDD2D6 </windowBase>
+		<windowTitlebar> #A7B2B8 </windowTitlebar>
+		<windowTab> #A7B2B8 </windowTab>
+		<windowTabActive> #CDD2D6 </windowTabActive>
+		<windowTabHighlight> #BFCBD2 </windowTabHighlight>
+		<windowTabButton> #3a87e2 </windowTabButton>
+		<invalid> #CDD2D6 </invalid>
+
+		<lod0> #E16365 </lod0>
+		<lod1> #6C9B72 </lod1>
+		<lod2> #7874D1 </lod2>
+		<lod3> #9D4981 </lod3>
+		<lod4> #551EB0 </lod4>
+		<lodIndexBackground> #D8D8D8 </lodIndexBackground>
+
+		<!-- Tint colors -->
+		<hoveredTint> #18000000 </hoveredTint>
+
+		<!-- TODO: need to be categorized -->
+		<disabled> #CCCCCC </disabled>
+		<highlight> #3a87e2 </highlight>
+		<decor> #999999 </decor>
+		<selection> #C8E4F0 </selection>
+		<focus> #2828E2 </focus>
+	</theme>
+
+	<theme name="dark" default="true">
+		<panelBackground> #4a4a4a </panelBackground>
+		<panelBackgroundAlt> #515151 </panelBackgroundAlt>
+		<panelDecor> #191919 </panelDecor>
+		<subpanelBackground> #666666 </subpanelBackground>
+		<headerBackground> #323232 </headerBackground>
+		<menuBackground> #5C5C5C </menuBackground>
+		<menuShadow> #999999 </menuShadow>
+		<text> #d4d4d4 </text>
+		<textHovered> #FFFFFF </textHovered>
+		<textDisabled> #999999 </textDisabled>              
+		<textMinor> #777777 </textMinor>
+		<textMajor> #FFFFFF </textMajor>
+		<textAlt> #3A49C4 </textAlt>
+		<highlightedText> #ecd900 </highlightedText>
+		<scrollbarHandle> #BDBEBF </scrollbarHandle>
+		<scrollbarHandlePressed> #28282A </scrollbarHandlePressed>
+		<buttonBackground> #474747 </buttonBackground>
+		<controlBackgroundHovered> #3A49C4 </controlBackgroundHovered>
+		<controlBackgroundPressed> #3A5CE2 </controlBackgroundPressed>
+		<controlIndicator> #D9D9D9 </controlIndicator>
+		<controlIndicatorHevered> #FFFFFF </controlIndicatorHevered>
+		<controlFrame> #565656 </controlFrame>
+		<controlDecor> #999999 </controlDecor>
+		<controlDecorAlt> #FFFFFF </controlDecorAlt>
+		<toolButtonBackground> #333333 </toolButtonBackground>
+		<breadcrumbBackground> #565656 </breadcrumbBackground>
+		<windowBase> #191919 </windowBase>
+		<windowTitlebar> #262626 </windowTitlebar>
+		<windowTab> #262626 </windowTab>
+		<windowTabActive> #191919 </windowTabActive>
+		<windowTabHighlight> #3E3E3E </windowTabHighlight>
+		<windowTabButton> #3A49C4 </windowTabButton>
+		<invalid> #191919 </invalid>
+
+		<lod0> #E16365 </lod0>
+		<lod1> #6C9B72 </lod1>
+		<lod2> #7874D1 </lod2>
+		<lod3> #9D4981 </lod3>
+		<lod4> #551EB0 </lod4>
+		<lodIndexBackground> #D8D8D8 </lodIndexBackground>
+
+		<!-- Tint colors -->
+		<hoveredTint> #18FFFFFF </hoveredTint>
+
+		<!-- TODO: need to be categorized -->
+		<disabled> #999999 </disabled>
+		<highlight> #3A49C4 </highlight>
+		<decor> #999999 </decor>
+		<selection> #0a70dd </selection>
+		<focus> #E77E23 </focus>
+	</theme>
+
+	<theme name="debug">
+		<invalid> #FF00FF </invalid>
+	</theme>
+
+	<nativePalette>
+		<AlternateBase>
+			<All> invalid </All>
+		</AlternateBase>
+		<Base>
+			<All> windowBase </All>
+		</Base>
+		<BrightText>
+			<All> invalid </All>
+		</BrightText>
+		<Button>
+			<All> invalid </All>
+		</Button>
+		<ButtonText>
+			<All> text </All>
+		</ButtonText>
+		<Dark>
+			<All> invalid </All>
+		</Dark>
+		<Highlight>
+			<All> highlight </All>
+		</Highlight>
+		<HighlightedText>
+			<All> highlightedText </All>
+		</HighlightedText>
+		<Light>
+			<All> invalid </All>
+		</Light>
+		<Link>
+			<All> invalid </All>
+		</Link>
+		<!-- <LinkVisited></LinkVisited> -->
+		<Mid>
+			<All> invalid </All>
+		</Mid>
+		<Midlight>
+			<All> invalid </All>
+		</Midlight>
+		<!-- <Shadow></Shadow> -->
+		<Text>
+			<All> text </All>
+		</Text>
+		<ToolTipBase>
+			<All> invalid </All>
+		</ToolTipBase>
+		<ToolTipText>
+			<All> invalid </All>
+		</ToolTipText>
+		<Window>
+			<All> invalid </All>
+		</Window>
+		<WindowText>
+			<All> text </All>
+		</WindowText>
+	</nativePalette>
+</themes>

@@ -1,0 +1,23 @@
+<root>
+	<rule pattern=".*(\.vfx)$">
+		<root>true</root>
+		<converter>ParticlesBWToWGConverter</converter>
+	</rule>
+	<rule pattern=".*(\.eff)$">
+		<root>true</root>
+		<converter>ParticlesBWToWGConverter</converter>
+	</rule>
+	<rule pattern=".*(\.xml)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
+	<rule pattern=".*(\.effbin)$">
+		<sourcePattern>(\.effbin)$</sourcePattern>
+		<sourceFormat>.eff</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.vfxbin)$">
+		<sourcePattern>(\.vfxbin)$</sourcePattern>
+		<sourceFormat>.vfx</sourceFormat>
+	</rule>
+</root>

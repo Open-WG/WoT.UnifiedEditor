@@ -1,0 +1,43 @@
+<PBSConvertor.xml>
+	<PBSConvertor>
+		<PBSConversions>
+			<Terrain>
+				<EnabledConversion>	true	</EnabledConversion>
+				<AlbedoParams>	0.050000 0.810000 0.840000 0.170000	</AlbedoParams>
+				<GlossParams>	0.060000 0.850000 0.800000 1.400000	</GlossParams>
+				<MetallicParams>	0.030000 0.700000 1.330000 0.500000	</MetallicParams>
+			</Terrain>
+			<Flora>
+				<EnabledConversion>	true	</EnabledConversion>
+				<AlbedoParams>	0.040000 0.810000 0.840000 0.100000	</AlbedoParams>
+				<GlossParams>	0.070000 0.970000 1.000000 2.260000	</GlossParams>
+				<MetallicParams>	0.040000 1.900000 1.770000 0.600000	</MetallicParams>
+			</Flora>
+			<SpeedTree>
+				<EnabledConversion>	true	</EnabledConversion>
+				<AlbedoParams>	0.050000 0.750000 0.750000 0.100000	</AlbedoParams>
+				<GlossParams>	0.050000 0.750000 0.500000 2.000000	</GlossParams>
+				<MetallicParams>	0.020000 0.600000 2.000000 1.500000	</MetallicParams>
+			</SpeedTree>
+			<Objects>
+				<EnabledConversion>	true	</EnabledConversion>
+				<AlbedoParams>	0.050000 0.950000 0.700000 0.300000	</AlbedoParams>
+				<GlossParams>	0.050000 0.750000 0.500000 2.000000	</GlossParams>
+				<MetallicParams>	0.020000 0.600000 2.000000 1.500000	</MetallicParams>
+			</Objects>
+			<Decal>
+				<EnabledConversion>	true	</EnabledConversion>
+				<AlbedoParams>	0.020000 0.810000 0.840000 0.020000	</AlbedoParams>
+				<GlossParams>	0.030000 1.270000 1.040000 2.000000	</GlossParams>
+				<MetallicParams>	0.020000 0.600000 2.000000 1.500000	</MetallicParams>
+			</Decal>
+			<Overlay>
+				<EnabledConversion>	false	</EnabledConversion>
+				<AlbedoParams>	0.050000 0.950000 0.700000 0.300000	</AlbedoParams>
+				<GlossParams>	0.050000 0.750000 0.500000 2.000000	</GlossParams>
+				<MetallicParams>	0.020000 0.600000 2.000000 1.500000	</MetallicParams>
+			</Overlay>
+			<ObjectsAlbedoConversion>	0.900000	</ObjectsAlbedoConversion>
+		</PBSConversions>
+	</PBSConvertor>
+</PBSConvertor.xml>

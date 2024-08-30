@@ -1,0 +1,14 @@
+{
+	"models": [
+		{
+			"name": "models",
+			"description": "all models",
+			"criteria": "extension = model",
+		},
+		{
+			"name": "lod0",
+			"description": "all models lod0",
+			"criteria": "and(path contains lod0, extension is model)",
+		}
+	]
+}

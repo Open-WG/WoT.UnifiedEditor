@@ -1,0 +1,46 @@
+<root>
+	<strip_metadata>
+		<rule>//metaData</rule>
+	</strip_metadata>
+	<default_vehicles>
+		<rule>//xmlns:xmlref</rule>
+		<rule>//xpFactor</rule>
+		<rule>//freeXpFactor</rule>
+		<rule>//creditsFactor</rule>
+		<rule>//fireStoppingChance</rule>
+		<rule>//armorHomogenization</rule>
+		<rule>//hysteresisHealth</rule>
+		<rule>//healthRegenPerSec</rule>
+		<rule>//healthBurnPerSec</rule>
+		<rule>//physics/*[not(name()='detailed')]</rule>
+		<rule>//physics/detailed/*[not(name()='engines') and not(name()='chassis')]</rule>
+		<rule>//physics/detailed/engines/*[not(smplEnginePower) and not(name()='smplFwMaxSpeed')]</rule>
+		<rule>//physics/detailed/engines/*/*[not(name()='smplEnginePower') and not(name()='smplFwMaxSpeed')]</rule>
+		<rule>//physics/detailed/chassis/*[not(grounds) and not(axleCount) and not(axleSteeringLockAngles) and not(wheelRiseSpeed)]</rule>
+		<rule>//physics/detailed/chassis/*/*[not(name()='grounds') and not(name()='axleCount') and not(name()='axleSteeringLockAngles') and not(name()='wheelRiseSpeed')]</rule>
+		<rule>//physics/detailed/chassis/*/grounds/*[not(medium)]</rule>
+		<rule>//physics/detailed/chassis/*/grounds/*/*[not(name()='medium')]</rule>
+		<rule>//physics/detailed/chassis/*/grounds/*/*/*[not(name()='rollingFriction')]</rule>
+	</default_vehicles>
+	<tank_components>
+		<rule>//hysteresisHealth</rule>
+		<rule>//healthRegenPerSec</rule>
+		<rule>//healthBurnPerSec</rule>
+	</tank_components>
+	<shells>
+		<rule>//normalizationAngle</rule>
+		<rule>//ricochetAngle</rule>
+	</shells>
+	<vehicle>
+		<rule>//balance</rule>
+	</vehicle>
+	<terrain>
+		<rule>//terrain</rule>
+	</terrain>
+	<entity_def>
+		<rule>//ServerOnlyEntities</rule>
+	</entity_def>
+	<sequence_editor>
+		<rule>//rotationEuler</rule>
+	</sequence_editor>
+</root>

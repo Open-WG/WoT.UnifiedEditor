@@ -1,0 +1,71 @@
+<root>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>	Material #104	</identifier>
+					<fx>	shaders/wg_particles/pbs_mesh_particles.fx	</fx>
+					<collisionFlags> 0 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<property> pbsMap 
+						<Texture> particles/mesh_particles/tex/wood_gmm.dds </Texture>
+					</property>
+					<property> g_meshParticlesZWriteEnable 
+						<Bool> true </Bool>
+					</property>
+					<property> g_lighting_params 
+						<Vector4> 1 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> diffuseMap 
+						<Texture> particles/mesh_particles/tex/wood_am.dds </Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-0.085880 -0.026172 -0.075331	</min>
+		<max>	0.193461 0.026172 0.546653	</max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation>	false	</exportAnimation>
+			<exportMode>	1	</exportMode>
+			<boneCount>	17	</boneCount>
+			<transformToOrigin>	false	</transformToOrigin>
+			<allowScale>	true	</allowScale>
+			<bumpMapped>	true	</bumpMapped>
+			<keepExistingMaterials>	true	</keepExistingMaterials>
+			<snapVertices>	false	</snapVertices>
+			<stripRefPrefix>	false	</stripRefPrefix>
+			<useReferenceNode>	false	</useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker>	false	</disableVisualChecker>
+			<useLegacyScaling>	false	</useLegacyScaling>
+			<fixCylindrical>	false	</fixCylindrical>
+			<fixNodeTreeLOD>	true	</fixNodeTreeLOD>
+			<useLegacyOrientation>	false	</useLegacyOrientation>
+			<sceneRootAdded>	false	</sceneRootAdded>
+			<recalculateTangents>	false	</recalculateTangents>
+			<unitScale>	0.100000	</unitScale>
+			<nodeFilter>	1	</nodeFilter>
+			<copyExternalTextures>	true	</copyExternalTextures>
+			<copyTexturesTo/>
+			<textureOverwriteOption>	2	</textureOverwriteOption>
+			<debug>	false	</debug>
+		</settings>
+	</metaData>
+</root>

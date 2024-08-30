@@ -1,0 +1,166 @@
+<root>
+<!--
+	Defines battle types (or modes) for worldeditor:
+
+	<name> - display name of the battle mode, as shown in property editor
+	         and in the "Battle mode" dropdown box on "Tool options: Objects" page.
+	<tagName> - name for tag in arena_defs/mapname.xml file in <gameplayTypes> section
+	<visibilityMask> - integer value which corresponds to one of GAMEPLAY_TYPE_TO_VISIBILITY_MASK
+	         values in common/ArenaType.py script
+		
+ -->
+	<battleVisibility>
+		<type>
+			<name> Capture the Flag </name>
+			<tagName> ctf </tagName>
+			<visibilityMask> 1 </visibilityMask>
+		</type>
+		<type>
+			<name> Domination </name>
+			<tagName> domination </tagName>
+			<visibilityMask> 2 </visibilityMask>
+		</type>
+		<type>
+			<name> Assault </name>
+			<tagName> assault </tagName>
+			<visibilityMask> 4 </visibilityMask>
+		</type>	
+		<type>
+			<name> Nations </name>
+			<visibilityMask> 8 </visibilityMask>
+			<tagName> nations </tagName>
+		</type>		
+		<type>
+			<name> Capture the Flag 2 </name>
+			<tagName> ctf2 </tagName>
+			<visibilityMask> 16 </visibilityMask>
+		</type>
+		<type>
+			<name> Domination 2 </name>
+			<tagName> domination2 </tagName>
+			<visibilityMask> 32 </visibilityMask>
+		</type>
+		<type>
+			<name> Assault 2 </name>
+			<visibilityMask> 64 </visibilityMask>
+			<tagName> assault2 </tagName>
+		</type>
+		<type>
+			<name> Fallout Bomb </name>
+			<tagName> fallout </tagName>
+			<visibilityMask> 128 </visibilityMask>
+		</type>
+		<type>
+			<name> Fallout2 Flag </name>
+			<tagName> fallout2 </tagName>
+			<visibilityMask> 256 </visibilityMask>
+		</type>
+		<type>
+			<name> Fallout 3 </name>
+			<tagName> fallout3 </tagName>
+			<visibilityMask> 512 </visibilityMask>
+		</type>
+		<type>
+			<name> Fallout 4 </name>
+			<tagName> fallout4 </tagName>
+			<visibilityMask> 1024 </visibilityMask>
+		</type>
+		<type>
+			<name> Capture the Flag 30 vs 30 </name>
+			<tagName> ctf30x30 </tagName>
+			<visibilityMask> 2048 </visibilityMask>
+		</type>
+		<type>
+			<name> Domination 30 vs 30 </name>
+			<tagName> domination30x30 </tagName>
+			<visibilityMask> 4096 </visibilityMask>
+		</type>
+		<type>
+			<name> Sandbox </name>
+			<tagName> sandbox </tagName>
+			<visibilityMask> 8192 </visibilityMask>
+		</type>
+		<type>
+			<name> Bootcamp </name>
+			<tagName> bootcamp </tagName>
+			<visibilityMask> 16384 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible for Observer </name>
+			<visibilityMask> 2147483648 </visibilityMask>
+			<tagName> observerVisible </tagName>
+		</type>
+	</battleVisibility>	
+	<hangarVisibility>
+		<type>
+			<name> Visible 1 </name>
+			<tagName> hang1 </tagName>
+			<visibilityMask> 1 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 2 </name>
+			<tagName> hang2 </tagName>
+			<visibilityMask> 2 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 3 </name>
+			<tagName> hang3 </tagName>
+			<visibilityMask> 4 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 4 </name>
+			<tagName> hang4 </tagName>
+			<visibilityMask> 8 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 5 </name>
+			<tagName> hang5 </tagName>
+			<visibilityMask> 16 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 6 </name>
+			<tagName> hang6 </tagName>
+			<visibilityMask> 32 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 7 </name>
+			<tagName> hang7 </tagName>
+			<visibilityMask> 64 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 8 </name>
+			<tagName> hang8 </tagName>
+			<visibilityMask> 128 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 9 </name>
+			<tagName> hang9 </tagName>
+			<visibilityMask> 256 </visibilityMask>
+		</type>
+		<type>
+			<name> Visible 10 </name>
+			<tagName> hang10 </tagName>
+			<visibilityMask> 512 </visibilityMask>
+		</type>
+		<type>
+			<name> NA </name>
+			<tagName> hangNA </tagName>
+			<visibilityMask> 65536 </visibilityMask>
+		</type>
+		<type>
+			<name> ASIA </name>
+			<tagName> hangASIA </tagName>
+			<visibilityMask> 131072 </visibilityMask>
+		</type>
+		<type>
+			<name> EU </name>
+			<tagName> hangEU </tagName>
+			<visibilityMask> 262144 </visibilityMask>
+		</type>
+		<type>
+			<name> RU </name>
+			<tagName> hangRU </tagName>
+			<visibilityMask> 524288 </visibilityMask>
+		</type>
+	</hangarVisibility>
+</root>

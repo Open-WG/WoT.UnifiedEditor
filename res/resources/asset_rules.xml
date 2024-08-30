@@ -1,0 +1,9 @@
+<root>
+	<rule pattern=".*/(timeline_shortcuts.xml)$">
+		<noConversion>false</noConversion>
+	</rule>
+
+	<rule pattern=".*(\.xml)$">
+		<noConversion>true</noConversion>
+	</rule>
+</root>

@@ -1,0 +1,151 @@
+<root>
+	<algorithms>
+		<UE_CAMAUFLAGE>
+			<root>
+				<_objectName> root </_objectName>
+				<name> root </name>
+				<index> 0 </index>
+				<vPos> 194.000000 24.000000 </vPos>
+				<dependings/>
+			</root>
+
+			<open_file_section>
+				<_objectName> open_file_section </_objectName>
+				<name> open_file_section </name>
+				<index> 1 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<FilePath> scripts\item_defs\customization\camouflages\list.xml </FilePath>
+				<dependings>
+					<parent> 0
+						<selfslot> 0 </selfslot>
+						<parentslot> 0 </parentslot>
+					</parent>
+				</dependings>
+			</open_file_section>
+
+			<meta_component>
+				<_objectName> meta_component </_objectName>
+				<name> meta_component </name>
+				<index> 2 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<AttachedAlgorithm> OBJECT_CREATOR </AttachedAlgorithm>
+				<dependings>
+					<parent> 1
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+
+				<slots_in>
+					<slot>
+						<uiname> DataSection </uiname>
+						<typeName> Data Section </typeName>
+					</slot>
+				</slots_in>
+				<slots_out>
+					<slot>
+						<uiname> Objects Container </uiname>
+						<typeName> Objects Container </typeName>
+					</slot>
+				</slots_out>
+
+			</meta_component>
+
+			<terminal>
+				<_objectName> terminal </_objectName>
+				<name> terminal </name>
+				<index> 3 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<dependings>
+					<parent> 2
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</terminal>
+		</UE_CAMAUFLAGE>
+
+		<OBJECT_CREATOR>
+			<Iterate_section_children>
+				<_objectName> Iterate_section_children </_objectName>
+				<name> Iterate_section_children </name>
+				<index> 0 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<SpecialSectionName> itemGroup </SpecialSectionName>
+				<ComponentType> root </ComponentType>
+			</Iterate_section_children>
+
+			<open_data_section>
+				<_objectName> open_data_section </_objectName>
+				<name> open_data_section </name>
+				<index> 1 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<SectionName> camouflage </SectionName>
+				<dependings>
+					<parent> 0
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</open_data_section>
+
+			<open_data_section>
+				<_objectName> open_data_section </_objectName>
+				<name> open_data_section </name>
+				<index> 2 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<SectionName> texture </SectionName>
+				<dependings>
+					<parent> 1
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</open_data_section>
+
+			<read_section_value>
+				<_objectName> read_section_value </_objectName>
+				<name> read_section_value </name>
+				<index> 3 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<ValueType> String </ValueType>
+				<dependings>
+					<parent> 2
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</read_section_value>
+
+
+			<generic_object>
+				<_objectName> generic_object </_objectName>
+				<name> generic_object </name>
+				<index> 4 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<ValueType> String </ValueType>
+				<dependings>
+					<parent> 3
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</generic_object>
+
+
+			<generic_object_container>
+				<_objectName> generic_object_container </_objectName>
+				<name> generic_object_container </name>
+				<index> 5 </index>
+				<vPos> 105.000000 527.000000 </vPos>
+				<ComponentType> terminal </ComponentType>
+				<dependings>
+					<parent> 4
+						<selfslot> 0 </selfslot>
+						<parentslot> 1 </parentslot>
+					</parent>
+				</dependings>
+			</generic_object_container>
+		</OBJECT_CREATOR>
+	</algorithms>
+</root>

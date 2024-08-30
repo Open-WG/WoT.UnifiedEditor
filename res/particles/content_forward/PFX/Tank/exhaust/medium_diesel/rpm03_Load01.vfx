@@ -1,0 +1,20 @@
+<root>
+	<dw_mode_lod_effect>
+		<dw_mode_lodeffect_mutable> 1 </dw_mode_lodeffect_mutable>
+	</dw_mode_lod_effect>
+	<lod>
+		<s_effect_name> Lod_0_60 </s_effect_name>
+		<i_lod_mask>
+			<ps_particle_lod_default> 1 </ps_particle_lod_default>
+			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
+			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
+		</i_lod_mask>
+		<f_near_clip> 0.000000 </f_near_clip>
+		<f_far_clip> 60.000000 </f_far_clip>
+		<f_Skip_time> 0.000000 </f_Skip_time>
+		<buffer/>
+		<dw_mode>
+			<ps_element_off> 0 </ps_element_off>
+		</dw_mode>
+	</lod>
+</root>

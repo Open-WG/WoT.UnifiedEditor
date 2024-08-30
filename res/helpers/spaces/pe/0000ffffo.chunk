@@ -1,0 +1,24 @@
+<root>
+	<shGridVolume>
+		<cellSize> 100.000000 </cellSize>
+		<elevation> 2.000000 </elevation>
+		<globalHeight> 25.000000 </globalHeight>
+		<distFromWall> 0.400000 </distFromWall>
+		<searchRadius> 1.000000 </searchRadius>
+		<useBestFit> false </useBestFit>
+		<findClosestWall> true </findClosestWall>
+		<alwaysShowProbes> false </alwaysShowProbes>
+		<useQuadTree> true </useQuadTree>
+		<showQuadTree> true </showQuadTree>
+		<slopeThreshold> 1.500000 </slopeThreshold>
+		<maxDepth> 3 </maxDepth>
+		<enable> true </enable>
+		<position> 0.000000 0.000000 99.999985 </position>
+		<scale> 1199.999756 99.999939 1199.999756 </scale>
+		<globalLerp> 10.000000 </globalLerp>
+		<needsRegeneration> false </needsRegeneration>
+	</shGridVolume>
+	<terrain>
+		<resource> 0000ffffo.cdata/terrain2 </resource>
+	</terrain>
+</root>

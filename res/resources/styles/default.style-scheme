@@ -1,0 +1,109 @@
+{
+	"_comment": "**************************************************************",
+	"_comment": "* font styles                                                *",
+	"_comment": "**************************************************************",
+
+	"font-base": {
+		"font.family": "Segoe UI",
+		"font.pixelSize": 12,
+		"font.weight": "Normal"
+	},
+
+	"font-base-link": {
+		"base": "font-base",
+		"font.underline": true
+	},
+
+	"font-bold": {
+		"font.family": "Segoe UI Bold",
+		"base": "font-base",
+		"font.weight": "Bold"
+	},
+
+	"font-bold-link": {
+		"base": "font-base-link",
+		"font.bold": true
+	},
+
+	"_comment": "**************************************************************",
+	"_comment": "* text styles                                                *",
+	"_comment": "**************************************************************",
+
+	"text-base":			{ "base": "font-base", "color": "color1"  },
+	"text-base-label":		{ "base": "font-base", "color": "color2"  },
+	"text-base-disabled":	{ "base": "font-base", "color": "color3"  },
+	"text-base-blue":		{ "base": "font-base", "color": "color11" },
+	"text-base-red":		{ "base": "font-base", "color": "color14" },
+	"text-base-orange":		{ "base": "font-base", "color": "color15" },
+	"text-base-green":		{ "base": "font-base", "color": "color16" },
+	"text-base-dark":		{ "base": "font-base", "color": "color10" },
+	"text-base-link":		{ "base": ["font-base-link", "text-base-blue"] },
+
+	"text-bold":			{ "base": ["font-bold", "text-base"       ] },
+	"text-bold-red":		{ "base": ["font-bold", "text-base-red"   ] },
+	"text-bold-orange":		{ "base": ["font-bold", "text-base-orange"] },
+	"text-bold-green":		{ "base": ["font-bold", "text-base-green" ] },
+	"text-bold-dark":		{ "base": ["font-bold", "text-base-dark"  ] },
+	"text-bold-link":		{ "base": ["font-bold", "text-base-link"  ] },
+
+	"_comment": "**************************************************************",
+	"_comment": "* button styles                                              *",
+	"_comment": "**************************************************************",
+
+	"button": {
+		"background.radius": 3,
+		"background.implicitWidth": 50,
+		"background.implicitHeight": 20,
+		"background.baseColor": "color5"
+	},
+
+	"button-hovered": {
+		"base": "button",
+		"background.tintColor": "hoveredTint"
+	},
+
+	"button-pressed": {
+		"base": "button",
+		"background.tintColor": "pressedTint"
+	},
+
+	"button-highlighted": {
+		"base": "button",
+		"background.border.width": 1,
+		"background.border.color": "color1"
+	},
+
+	"button-disabled": {
+		"base": "button",
+		"background.baseColor": "transparent",
+		"background.border.width": 1,
+		"background.border.color": "color7"
+	},
+
+	"_comment": "**************************************************************",
+	"_comment": "* checked button styles                                      *",
+	"_comment": "**************************************************************",
+
+	"button-checked-color": { "background.baseColor": "color12" },
+
+	"button-checked": {
+		"base": ["button-checked-color", "button"]
+	},
+
+	"button-checked-hovered": {
+		"base": ["button-checked-color", "button-hovered"]
+	},
+
+	"button-checked-pressed": {
+		"base": ["button-checked-color", "button-pressed"]
+	},
+
+	"button-checked-highlighted": {
+		"base": ["button-checked-color", "button-highlighted"]
+	},
+
+	"button-checked-disabled": {
+		"base": "button",
+		"background.baseColor": "color7"
+	}
+}

@@ -1,0 +1,25 @@
+<root>
+	<!-- See sources/src/lib/physics2/worldtri.hpp/TRIANGLE_XXX flags -->
+	<collisionFlags>
+
+		<All..Collisions> 0 </All..Collisions>
+
+		<No..Collisions> 255 </No..Collisions>
+
+		<!-- TRIANGLE_CAMERANOCOLLIDE -->
+		<No..Camera..Collisions> 1 </No..Camera..Collisions>
+
+		<!-- TRIANGLE_NOCOLLIDE -->
+		<No..Entity..Collisions> 16 </No..Entity..Collisions>
+
+		<!-- TRIANGLE_PROJECTILENOCOLLIDE -->
+		<No..Projectile..Collisions> 128 </No..Projectile..Collisions>
+
+		<!-- TRIANGLE_CAMERANOCOLLIDE|TRIANGLE_PROJECTILENOCOLLIDE|TRIANGLE_TRANSPARENT-->
+		<Invisible..Wall> 131 </Invisible..Wall>
+
+		<!-- TRIANGLE_NOCOLLIDE|TRIANGLE_PROJECTILENOCOLLIDE-->
+		<Only..Camera..Collisions> 144 </Only..Camera..Collisions>
+
+	</collisionFlags>
+</root>

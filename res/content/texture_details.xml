@@ -1,0 +1,32 @@
+<root>
+<!-- Split textures in this directory -->
+	<rule pattern=".*">
+		<allowSplit>true</allowSplit>
+		<category> content </category>
+	</rule>
+
+	<rule pattern=".*atlas_blend.*\.png$">
+		<format>DXT5</format> 
+		<allowSplit>false</allowSplit>
+		<noResize> true </noResize>
+		<editableTags>ME;UE</editableTags>
+	</rule>
+	<rule pattern=".*atlas_blend.*\.dds$">
+		<allowSplit>false</allowSplit>
+		<noResize> true </noResize>
+	</rule>
+	<rule pattern=".*_BAM\.dds">
+		<allowSplit>true</allowSplit>
+		<lodMode> 4 </lodMode>
+	</rule>
+	<rule pattern=".*_BANM\.dds">
+		<allowSplit>true</allowSplit>
+		<lodMode> 4 </lodMode>
+	</rule>
+	<rule pattern=".*_BGMM\.dds">
+		<allowSplit>true</allowSplit>
+		<lodMode> 4 </lodMode>
+	</rule>
+
+</root>
+

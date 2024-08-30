@@ -1,0 +1,16 @@
+and(
+	or(
+		path:filter4,
+		or(
+			path:filter5,
+			programm1:filter6
+		)
+	),
+	and(
+		file:filter1,
+		and(
+			file:filter2,
+			file:filter3
+		)
+	)
+)	

@@ -1,0 +1,76 @@
+<root>
+	<chunks />
+	<items>
+		<model>
+			<editorOnly>
+				<hidden>	false	</hidden>
+				<frozen>	false	</frozen>
+				<castsShadow>	true	</castsShadow>
+			</editorOnly>
+			<visibilityMask>	4294967295	</visibilityMask>
+			<resource>	[CHASSIS_MODEL]	</resource>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	0.000000 0.000000 0.000000	</row3>
+			</transform>
+			<destructibleState>	undamaged	</destructibleState>
+		</model>
+		<model>
+			<editorOnly>
+				<hidden>	false	</hidden>
+				<frozen>	false	</frozen>
+				<castsShadow>	true	</castsShadow>
+			</editorOnly>
+			<visibilityMask>	4294967295	</visibilityMask>
+			<resource>	[HULL_MODEL]	</resource>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	[HULL_POS]	</row3>
+			</transform>
+		</model>
+		<model>
+			<editorOnly>
+				<hidden>	false	</hidden>
+				<frozen>	false	</frozen>
+				<castsShadow>	true	</castsShadow>
+			</editorOnly>
+			<visibilityMask>	4294967295	</visibilityMask>
+			<resource>	[TURRET_MODEL]	</resource>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	[TURRET_POS]	</row3>
+			</transform>
+			<destructibleState>	undamaged	</destructibleState>
+		</model>
+		<model>
+			<editorOnly>
+				<hidden>	false	</hidden>
+				<frozen>	false	</frozen>
+				<castsShadow>	true	</castsShadow>
+			</editorOnly>
+			<visibilityMask>	4294967295	</visibilityMask>
+			<resource>	[GUN_MODEL]	</resource>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	[GUN_POS]	</row3>
+			</transform>
+			<destructibleState>	undamaged	</destructibleState>
+		</model>
+	</items>
+	<boundingBox>
+		<min>	-2.0 -2.0 -2.0	</min>
+		<max>	2.0 2.0 2.0	</max>
+	</boundingBox>
+	<snaps>
+		<position>	0.000000 0.000000 0.000000	</position>
+		<angle>	0.000000	</angle>
+	</snaps>
+</root>

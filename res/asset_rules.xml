@@ -1,0 +1,361 @@
+<root>
+	<!--ignore rules, placed first for faster early out-->
+	<rule pattern=".*/(\.bwthumbs)/.*$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern="vehicles/[^/]+/[^/]+/collision/.*$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*(asset_rules\.xml)$" continueMatching="true">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*(xml_strip_rules\.xml)$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*(texture_details\.xml)$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern="helpers/languages/.*(\.xml)$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern="^server/.*$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*/(server)/.*$">
+		<noConversion>true</noConversion>
+	</rule>
+	<!-- ignore navgen temporary files -->
+	<rule pattern="(.*/)?[0-9a-f]{8}o-[0-9]{9}-(filtering|postfilter|prefilter)\.tga$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*(version\.xml)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(development\.build)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>	
+	<!--special rule for resources.xml-->
+	<rule pattern="^resources.xml$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-collateAndCollapse</converterParams> <!--collapse down all copies into a single XML file-->
+	</rule>
+	<!--never process anything inside bin folders - this situation can be found in tools -->
+	<rule pattern="^(win32|win64)/.*$">
+		<root>true</root>
+		<noConversion>true</noConversion>
+	</rule>
+	<!--source rules-->
+	<rule pattern=".*(\.)$" continueMatching="true">
+		<root>true</root>
+		<converter>WoTSpeedTreeTextureConverter</converter>
+		<converterParams>-sh resources/shaders/spt_fwd_texture_gen.fx -level 0 -path vegetation</converterParams>
+	</rule>
+
+	<rule pattern="^system/data/texture_detail_levels.config$">
+		<root>true</root>
+		<converter>HierarchicalConfigConverter</converter>
+		<converterParams>-f texture_details.xml -o system/data/texture_detail_levels.xml</converterParams>
+	</rule>
+	<rule pattern=".*(\.(bmp|tga|png|dds))$">
+		<root>true</root>
+		<converter>TextureConverter</converter>
+		<converterParams>-split -pad -exts bmp|tga|png</converterParams>
+	</rule>
+	<rule pattern="^virtual://.*(\.fxo)$">
+		<converter>EffectConverter</converter>
+		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water </converterParams>
+	</rule>
+	<rule pattern=".*(\.fx)$">
+		<root>true</root>
+		<converter>EffectConverter</converter>
+		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water </converterParams>
+	</rule>
+	<rule pattern=".*(collision_client.*\.model)$">
+		<root>false</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
+	<rule pattern=".*(\.model)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
+	<rule pattern=".*(\.seq)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata;sequence_editor</converterParams>
+	</rule>
+	<rule pattern=".*(\.ssm)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
+	<rule pattern=".*MilitaryEnvironment.*hd_mle_UNI_824_BigGun.*lod0.*(\.visual).*$">
+		<!-- Needed in order to be able to place stickers on HQs -->
+		<root>true</root>
+		<converter>VisualProcessor</converter>
+		<converterParams>-createVisualTree</converterParams>
+	</rule>
+	<rule pattern=".*(collision_client.*\.visual)$">
+		<root>true</root>
+		<converter>VisualProcessor</converter>
+		<converterParams>-skipInBuild</converterParams>
+	</rule>
+	<rule pattern=".*(\.visual)$">
+		<root>true</root>
+		<converter>VisualProcessor</converter>
+	</rule>
+	<rule pattern=".*(\.primitives)$">
+		<converter>PrimitiveProcessor</converter>
+		<converterParams>-target D3D9</converterParams>
+	</rule>
+	<rule pattern=".*(\.thumbnail\.jpg)$">
+		<noConversion>true</noConversion>
+	</rule>
+	<!-- XML conversion should consider regional overrides non-root -->
+	<rule pattern=".*\.[a-zA-Z]*\.xml$">
+		<noConversion>true</noConversion>
+	</rule>
+	<rule pattern=".*(particles\.xml)$">
+ 	    <root>true</root>
+ 	    <converter>ParticlesPrecacheConverter</converter>
+ 	</rule>
+	<rule pattern=".*(\.(xml|mfm|def|font|ppchain|texformat|texanim|gui))$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+	</rule>
+	<rule pattern=".*(\.pubkey)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(\.pth)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(\.ttf)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<!-- space compilation rules -->
+	<rule pattern="^virtual://.*(/space\.settings)?xmlconverter$">
+		<converter>XMLConverter</converter>
+		<converterParams> -stripRuleSets terrain </converterParams> <!-- terrain settings is embedded in space.bin -->
+	</rule>
+	<rule pattern=".*(/space\.settings)$">
+		<root>true</root>
+		<converter>WoTSpaceConverter</converter>
+	</rule>
+
+	<!-- Cached vehicles textures -->
+	<rule pattern=".*/(vehicle_combined_textures\.placeholders)$">
+		<root>true</root>
+		<converter>VehicleCombinedTexturesConverter</converter>
+		<converterParams>-skipTextures _hd.dds;_HangarShadowMap.dds;_ID.dds -numMips 5</converterParams>
+	</rule>
+	<rule pattern=".*/(vehicle_combined_textures\.bin)$">
+		<sourcePattern>(vehicle_combined_textures\.bin)$</sourcePattern>
+		<sourceFormat>vehicle_combined_textures.placeholders</sourceFormat>
+	</rule>
+
+	<rule pattern=".*(\.cdata)$">
+		<root>true</root>
+		<converter>CdataConverter</converter>
+	</rule>
+	<rule pattern=".*(\.odata)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(/decals\.bin)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(/overlay\.bin)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(\.spt)$">
+		<root>true</root>
+		<converter>WoTSpeedTreeConverter</converter>
+	</rule>
+	<rule pattern=".*(\.srt)$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*speedwind\.ini$">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+	<rule pattern=".*(\.py)$">
+		<root>true</root>
+		<converter>PythonConverter</converter>
+	</rule>
+	<rule pattern=".*(\.chunk)$">
+		<root>true</root>
+		<converter>DetourNavigationConverter</converter>    
+	</rule>
+	<rule pattern="^virtual://.*(\.chunk)?ChunkCollisionConverter$">
+		<converter>ChunkCollisionConverter</converter>
+		<converterParams><!-- -writeDebugOBJs --></converterParams>
+	</rule>
+	<rule pattern="^virtual://.*(\.chunk)?DetourNavigationConverter$">
+		<converter>DetourNavigationConverter</converter>
+	</rule>
+	<rule pattern="^virtual://.*(\.chunk)?DetourNavigationConverterNavmesh$">
+		<converter>DetourNavigationConverter</converter>
+	</rule>
+	<rule pattern="^.*(\.fbx)$">
+		<root>true</root>
+		<converter>FbxConverter</converter>
+	</rule>
+	<rule pattern="^virtual://.*(\.fbx)?FbxConverter$">
+		<root>true</root>
+		<converter>FbxConverter</converter>
+	</rule>
+	<!-- realm-specific texture overrides aren't to be considered root -->
+	<rule pattern=".*/_realm/.*">
+		<root>false</root>
+	</rule>
+
+	<rule pattern=".*(\.atlas)$" continueMatching="true">
+		<root>true</root>
+		<converter>CopyConverter</converter>
+	</rule>
+
+	<!-- Cached atlas -->
+	<rule pattern=".*(\.atlas)$">
+		<root>true</root>
+		<converter>TextureConverter</converter>
+		<converterParams>-cache</converterParams>
+	</rule>
+
+	<rule pattern=".*(\.atlas)$" continueMatching="true">
+		<sourcePattern>(\.atlas)$</sourcePattern>
+		<sourceFormat>.atlas</sourceFormat>
+	</rule>
+
+	<!-- Cached atlas -->
+	<rule pattern=".*(\.atlas_processed)$" >
+		<sourcePattern>(\.atlas_processed)$</sourcePattern>
+		<sourceFormat>.atlas</sourceFormat>
+	</rule>
+
+	<!--destination rules-->
+	<rule pattern=".*(\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm))$" continueMatching="true">
+		<sourcePattern>\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm)$</sourcePattern>
+		<sourceFormat>.\1</sourceFormat>
+	</rule>
+	<rule pattern="^system/data/texture_detail_levels.xml$">
+		<sourcePattern>(\.xml)$</sourcePattern>
+		<sourceFormat>.config</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.dds)$" continueMatching="true">
+		<sourcePattern>(\.dds)$</sourcePattern>
+		<sourceFormat>.dds|.png|.tga|.bmp</sourceFormat>
+	</rule>
+	<rule pattern=".*(_hd\.dds)$" continueMatching="true">
+		<sourcePattern>(_hd\.dds)$</sourcePattern>
+		<sourceFormat>.dds|.png|.tga|.bmp</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.(bmp|tga|png)\.dds)$">
+		<sourcePattern>\.(bmp|tga|png)\.dds$</sourcePattern>
+		<sourceFormat>.\1</sourceFormat>
+	</rule>
+
+	<rule pattern=".*(\.fxo)$">
+		<sourcePattern>([^\.]+)(\.[0-1]+)?((\.(dx\d{1,2})|(gl(es)?\d{3}))?\.fxo)$</sourcePattern>
+		<sourceFormat>virtual://\1.fx?\0</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.fx.allcombos)$">
+		<sourcePattern>(.*)\.allcombos$</sourcePattern>
+		<sourceFormat>\1</sourceFormat>
+	</rule>
+	<rule pattern=".*(/space\.settings)$">
+		<sourcePattern>.*(/space\.settings)$</sourcePattern>
+		<sourceFormat>virtual://\0?xmlconverter</sourceFormat>
+	</rule>
+	<rule pattern=".*/(space\.bin)$">
+		<sourcePattern>(space\.bin)$</sourcePattern>
+		<sourceFormat>space.settings</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.cdata_processed)$">
+		<sourcePattern>(\.cdata_processed)$</sourcePattern>
+		<sourceFormat>.cdata</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.visual_processed)$">
+		<sourcePattern>(\.visual_processed)$</sourcePattern>
+		<sourceFormat>.visual</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.vt)$">
+		<sourcePattern>(.*)\.vt$</sourcePattern>
+		<sourceFormat>virtual://\1.visual?VisualTree</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.primitives_processed)$">
+		<sourcePattern>(\.primitives_processed)$</sourcePattern>
+		<sourceFormat>.primitives</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.ctree)$">
+		<sourcePattern>(\.ctree)$</sourcePattern>
+		<sourceFormat>.spt</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.pyc)$">
+		<sourcePattern>(\.pyc)$</sourcePattern>
+		<sourceFormat>.py</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.spt)$">
+		<sourcePattern>(\.spt)$</sourcePattern>
+		<sourceFormat>.spt</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.srt)$">
+		<sourcePattern>(\.srt)$</sourcePattern>
+		<sourceFormat>.srt</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.havok)$">
+		<sourcePattern>(.*)\.havok$</sourcePattern>
+		<sourceFormat>virtual://\1.model?HavokProcessor</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.ChunkCollisionConverter)$">
+		<sourcePattern>(.*)(\.ChunkCollisionConverter)$</sourcePattern>
+		<sourceFormat>virtual://\1?ChunkCollisionConverter</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.DetourNavigationConverter)$">
+		<sourcePattern>(.*)(\.DetourNavigationConverter)$</sourcePattern>
+		<sourceFormat>virtual://\1?DetourNavigationConverter</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.DetourNavigationConverterNavmesh)$">
+		<sourcePattern>(.*)(\.DetourNavigationConverterNavmesh)$</sourcePattern>
+		<sourceFormat>virtual://\1?DetourNavigationConverterNavmesh</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.col)$">
+		<sourcePattern>(.*)(\.col)$</sourcePattern>
+		<sourceFormat>virtual://\1.chunk?ChunkCollisionConverter</sourceFormat>
+	</rule>
+	<rule pattern=".*(\.anim_processed)$">
+		<sourcePattern>(.*)\.anim_processed$</sourcePattern>
+		<sourceFormat>virtual://\1.fbx?FbxConverter</sourceFormat>
+	</rule>
+	<ruleDirectory>helpers/spaces</ruleDirectory>
+	<ruleDirectory>scripts</ruleDirectory>
+	<ruleDirectory>common/resources</ruleDirectory>
+	<ruleDirectory>audioww</ruleDirectory>
+	<ruleDirectory>cat</ruleDirectory>
+	<ruleDirectory>cef</ruleDirectory>
+	<ruleDirectory>compatibility</ruleDirectory>
+	<ruleDirectory>gui</ruleDirectory>
+	<ruleDirectory>particles</ruleDirectory>
+	<ruleDirectory>spaces</ruleDirectory>
+	<ruleDirectory>text</ruleDirectory>
+	<ruleDirectory>text_en</ruleDirectory>
+	<ruleDirectory>vehicles</ruleDirectory>
+	<ruleDirectory>vibroeffects</ruleDirectory>
+	<ruleDirectory>system/maps</ruleDirectory>
+	<!-- tools resources -->
+	<ruleDirectory>resources</ruleDirectory>
+	<ruleDirectory>resources/data</ruleDirectory>
+	<ruleDirectory>resources/html</ruleDirectory>
+	<ruleDirectory>resources/screenshots</ruleDirectory>
+	<ruleDirectory>resources/scripts</ruleDirectory>
+	<ruleDirectory>resources/ual</ruleDirectory>
+</root>

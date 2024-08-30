@@ -1,0 +1,72 @@
+<stateMachine>	
+	<node name="StandingIdle01_Idle_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_Idle_A.seq</resource>
+		<loop>1.0 2.0</loop>
+		<transition>
+			<to>StandingIdle01_A_to_B</to>
+			<condition>0.4</condition>
+		</transition>
+		<transition>
+			<to>StandingIdle01_Idle_A</to>
+			<condition>0.2</condition>
+		</transition>
+		<transition>
+			<to>StandingIdle01_Action_A</to>
+			<condition>0.4</condition>
+		</transition>
+	</node>
+	<node name="StandingIdle01_Idle_B">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_Idle_B.seq</resource>
+		<loop>1.0 2.0</loop>
+		<transition>
+			<to>StandingIdle01_B_to_A</to>
+			<condition>0.4</condition>
+		</transition>
+		<transition>
+			<to>StandingIdle01_Idle_B</to>
+			<condition>0.2</condition>
+		</transition>
+		<transition>
+			<to>StandingIdle01_Action_B</to>
+			<condition>0.4</condition>
+		</transition>
+	</node>
+	<node name="StandingIdle01_A_to_B">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_A_to_B.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>StandingIdle01_Idle_B</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="StandingIdle01_B_to_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_B_to_A.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>StandingIdle01_Idle_A</to>
+			<condition>1</condition>
+		</transition>
+	</node>
+	<node name="StandingIdle01_Action_A">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_Action_A.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>StandingIdle01_Idle_A</to>
+			<condition>0.5</condition>
+		</transition>
+	</node>
+	<node name="StandingIdle01_Action_B">
+		<type>sequence</type>
+		<resource>content/Hangars/CharacterAnimations/Sequences/StandingIdle01/StandingIdle01_Action_B.seq</resource>
+		<loop>1.0</loop>
+		<transition>
+			<to>StandingIdle01_Idle_B</to>
+			<condition>0.5</condition>
+		</transition>
+	</node>
+</stateMachine>

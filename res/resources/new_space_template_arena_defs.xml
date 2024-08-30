@@ -1,0 +1,45 @@
+<root>
+	<name>	#arenas:new_space_template/name	</name>
+	<description>	#arenas:new_space_template/description	</description>
+	<geometry>	spaces/new_space_template	</geometry>
+	<boundingBox>
+		<bottomLeft>	-500.0 -500.0	</bottomLeft>
+		<upperRight>	500.0 500.0	</upperRight>
+	</boundingBox>
+	<roundLength>	900	</roundLength>
+	<minimap>	spaces/new_space_template/mmap.dds	</minimap>
+	<vehicleCamouflageKind>	summer	</vehicleCamouflageKind>
+	<maxPlayersInTeam>	15	</maxPlayersInTeam>
+	<wwmusicSetup>
+		<wwmusicLoading>	music_karelia_loading_screen	</wwmusicLoading>
+		<wwmusicIntensive>	music_karelia_dron_intensive	</wwmusicIntensive>
+		<wwmusicRelaxed>	music_karelia_dron_relaxed	</wwmusicRelaxed>
+		<wwmusicStop>	music_dron_stop	</wwmusicStop>
+		<wwmusicEndbattleStop>	music_dron_endbattle_stop	</wwmusicEndbattleStop>
+		<wwmusicResultWin>	music_karelia_result_win	</wwmusicResultWin>
+		<wwmusicResultDrawn>	music_karelia_result_drawn	</wwmusicResultDrawn>
+		<wwmusicResultDefeat>	music_karelia_result_defeat	</wwmusicResultDefeat>
+	</wwmusicSetup>
+	<wwambientSound>	ambient_wind_autumn_01	</wwambientSound>
+	<umbraEnabled>	1	</umbraEnabled>
+	<batchingEnabled>	0	</batchingEnabled>
+	<water>
+		<texScale>	0	</texScale>
+		<freqX>	0	</freqX>
+		<freqZ>	0	</freqZ>
+	</water>
+	<gameplayTypes>
+		<ctf>
+			<teamBasePositions>
+				<team1>
+					<position1>	0.0 50.0	</position1>
+				</team1>
+				<team2>
+					<position1>	0.0 -50.0	</position1>
+				</team2>
+			</teamBasePositions>
+		</ctf>
+	</gameplayTypes>
+	<mapActivities>
+	</mapActivities>
+</root>

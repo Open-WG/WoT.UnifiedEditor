@@ -1,0 +1,41 @@
+<root>
+	<rotateRangeMin> -360 </rotateRangeMin>
+	<rotateRangeMax> 360 </rotateRangeMax>
+	<rotateCentre> 0 </rotateCentre>
+	<scaleSliderExponent> 2 </scaleSliderExponent>
+	<scaleRangeMin> 0.01 </scaleRangeMin>
+	<scaleRangeMax> 10.0 </scaleRangeMax>
+	<scaleCentre> 1 </scaleCentre>
+	<Presets>
+		<preset>
+			<name> Random Yaw </name>
+			<linkRotation> false </linkRotation>
+			<linkScale> false </linkScale>
+			<minRot> -180.000000 0.000000 0.000000 </minRot>
+			<maxRot> 180.000000 0.000000 0.000000 </maxRot>
+			<minScale> 1.000000 1.000000 1.000000 </minScale>
+			<maxScale> 1.000000 1.000000 1.000000 </maxScale>
+			<uniformScale> false </uniformScale>
+		</preset>
+		<preset>
+			<name> Random Scale </name>
+			<linkRotation> false </linkRotation>
+			<linkScale> true </linkScale>
+			<minRot> 0.000000 0.000000 0.000000 </minRot>
+			<maxRot> 0.000000 0.000000 0.000000 </maxRot>
+			<minScale> 0.700000 0.700000 0.700000 </minScale>
+			<maxScale> 1.300000 1.300000 1.300000 </maxScale>
+			<uniformScale> true </uniformScale>
+		</preset>
+		<preset>
+			<name> Yaw + Scale </name>
+			<linkRotation> false </linkRotation>
+			<linkScale> true </linkScale>
+			<minRot> -180.000000 0.000000 0.000000 </minRot>
+			<maxRot> 180.000000 0.000000 0.000000 </maxRot>
+			<minScale> 0.700000 0.700000 0.700000 </minScale>
+			<maxScale> 1.300000 1.300000 1.300000 </maxScale>
+			<uniformScale> true </uniformScale>
+		</preset>
+	</Presets>
+</root>

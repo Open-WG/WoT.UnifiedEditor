@@ -1,0 +1,38 @@
+<root>
+	<strength> 100.000000 </strength>
+	<size> 50.000000 </size>
+	<Alpha>
+		<AlphaMask>
+			<name> Round gradient </name>
+			<texture> resources/brush/Default-Round-Gradient.png </texture>
+		</AlphaMask>
+		<AlphaMask>
+			<name> Round </name>
+			<texture> resources/brush/Default-Round.png </texture>
+		</AlphaMask>
+		<AlphaMask>
+			<name> Square </name>
+			<texture> resources/brush/Default-Square.png </texture>
+		</AlphaMask>
+	</Alpha>
+	<TextureBrushMask>
+		<Active> true </Active>
+		<TexName> resources/brush/Default-Round-Gradient.png </TexName>
+		<PreviewTexName> resources/temp/Default-Round-Gradient_4.png </PreviewTexName>
+		<GreyScale> true </GreyScale>
+		<useRandomizeParams> false </useRandomizeParams>
+		<rotateByMovement> false </rotateByMovement>
+		<spacing> 0.000000 </spacing>
+		<RandomizeParams>
+			<rotation> 0.000000 </rotation>
+			<offsHorz> 0.000000 </offsHorz>
+			<offsVert> 0.000000 </offsVert>
+			<rescale> 1.000000 </rescale>
+			<alpha> 1.000000 </alpha>
+			<flipHorz> false </flipHorz>
+			<flipVert> false </flipVert>
+			<offsetValue> 0.000000 0.000000 </offsetValue>
+		</RandomizeParams>
+	</TextureBrushMask>
+	<Overlay/>
+</root>

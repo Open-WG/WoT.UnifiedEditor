@@ -1,0 +1,24 @@
+<!--
+	Shortcut must be a string containing a sequence of keyboard keys.
+	For more info see https://doc.qt.io/qt-5.10/qkeysequence.html under
+		Standard Shortcuts.
+
+	For now, refrain from having whitespaces in a shortcut string
+	Do not modify timeline_shortcut.default.xml!!!
+
+	Enter key is labeled as Return. Actual Enter means enter key on the numpad 
+-->
+
+<root>
+	<playback> Space </playback>
+	<record> Shift+R </record>
+	<stop> Return </stop>
+	<firstFrame> Ctrl+Left </firstFrame>
+	<lastFrame> Ctrl+Right </lastFrame>
+	<addKey> K </addKey>
+	<zoomIn> ] </zoomIn>
+	<zoomOut> [ </zoomOut>
+	<nextKey> Right </nextKey>
+	<prevKey> Left </prevKey>
+	<removeKey> Delete </removeKey>
+</root>

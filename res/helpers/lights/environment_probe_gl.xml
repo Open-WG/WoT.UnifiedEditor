@@ -1,0 +1,21 @@
+<environmentProbe.xml>
+	<environmentProbe>
+		<targetType> 0 </targetType> <!-- Don't change!!! It defines probe object type -->
+		<probeType> 0 </probeType> <!-- 0 = specular + diffuse, 1 = specular, 2 = diffuse -->
+
+		<shapeBox> true </shapeBox>
+		<showRadius> true </showRadius>
+		<alwaysShowRadius> false </alwaysShowRadius>
+		<autoGenerate> false </autoGenerate>
+		<resolutionOfHDRShot> 512 </resolutionOfHDRShot>
+		<numberOfPasses> 1 </numberOfPasses>
+		<cubemapSizeREM> 64 </cubemapSizeREM>
+		<cubemapSizePMREM> 512 </cubemapSizePMREM>
+		<width>	100.0 </width>
+		<height> 100.0 </height>
+		<length> 100.0 </length>	
+		<boxTransitionDistance> 1.0 </boxTransitionDistance>
+		<innerRadius>	1.0		</innerRadius>
+		<outerRadius>	12.0		</outerRadius>
+	</environmentProbe>
+</environmentProbe.xml>

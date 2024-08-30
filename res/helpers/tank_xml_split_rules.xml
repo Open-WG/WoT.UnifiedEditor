@@ -1,0 +1,857 @@
+<xml_import_rules>
+	<!--
+	Keywords:
+		_CHASSIS_NAME_
+		_TURRET_NAME_
+		_GUN_NAME_
+		_ANY_NAME_
+		_ANYTHING_
+	-->
+
+	<!-- Game balance tank properties -->
+	<tank_game_balance outFolderName="game_balance">
+		<notInShop />
+		<crew>
+			<commander>
+				<_ANYTHING_ />
+			</commander>
+			<gunner>
+				<_ANYTHING_ />
+			</gunner>
+			<driver>
+				<_ANYTHING_ />
+			</driver>
+			<loader>
+				<_ANYTHING_ />
+			</loader>
+			<radioman>
+				<_ANYTHING_ />
+			</radioman>
+		</crew>
+		<speedLimits>
+			<forward />
+			<backward />
+		</speedLimits>
+		<invisibility>
+			<moving />
+			<still />
+			<camouflageBonus />
+			<camouflageNetBonus />
+			<firePenalty />
+		</invisibility>
+		<repairCost />
+		<xpFactor />
+		<freeXpFactor />
+		<crewXpFactor />
+		<premiumVehicleXPFactor />
+		<creditsFactor />
+		<healthBurnPerSec />
+		<camouflage>
+			<priceFactor />
+		</camouflage>
+		<hull>
+			<armor>
+				<_ANYTHING_ />
+			</armor>
+			<primaryArmor />
+			<mediumArmor />
+			<armorHomogenization />
+			<weight />
+			<maxHealth />
+			<ammoBayHealth>
+				<maxHealth />
+				<maxRegenHealth />
+				<repairCost />
+				<healthRegenPerSec />
+				<healthBurnPerSec />
+				<chanceToHit />
+			</ammoBayHealth>
+			<variants>
+				<_ANY_NAME_>
+					<weight />
+				</_ANY_NAME_>
+			</variants>
+			<fakeTurrets>
+				<lobby />
+				<battle />
+			</fakeTurrets>
+			<healthBurnPerSec /> <!--legacy??-->
+		</hull>
+		<chassis>
+			<_CHASSIS_NAME_>
+				<notInShop />
+				<userString />
+				<description />
+				<shortUserString />
+				<tags />
+				<level />
+				<price />
+				<unlocks>
+					<_ANYTHING_ />
+				</unlocks>
+				<armor>
+					<_ANYTHING_ />
+				</armor>
+				<weight />
+				<maxLoad />
+				<terrainResistance />
+				<brakeForce />
+				<rotationIsAroundCenter />
+				<rotationSpeed />
+				<shotDispersionFactors>
+					<vehicleMovement />
+					<vehicleRotation />
+				</shotDispersionFactors>
+				<bulkHealthFactor />
+				<maxHealth />
+				<maxRegenHealth />
+				<hysteresisHealth />
+				<repairCost />
+				<healthRegenPerSec />
+				<healthBurnPerSec />
+			</_CHASSIS_NAME_>
+		</chassis>
+		<turrets0>
+			<_TURRET_NAME_>
+				<notInShop />
+				<userString />
+				<description />
+				<shortUserString />
+				<tags />
+				<level />
+				<price />
+				<ceilless /> <!--legacy??-->
+				<unlocks>
+					<_ANYTHING_ />
+				</unlocks>
+				<armor>
+					<_ANYTHING_ />
+				</armor>
+				<primaryArmor />
+				<mediumArmor />
+				<armorHomogenization />
+				<invisibilityFactor />
+				<weight />
+				<maxHealth />
+				<rotationSpeed />
+				<yawLimits />
+				<turretRotatorHealth>
+					<maxHealth />
+					<maxRegenHealth />
+					<hysteresisHealth />
+					<repairCost />
+					<healthRegenPerSec />
+					<healthBurnPerSec />
+				</turretRotatorHealth>
+				<circularVisionRadius />
+				<surveyingDeviceHealth>
+					<maxHealth />
+					<maxRegenHealth />
+					<hysteresisHealth />
+					<repairCost />
+					<healthRegenPerSec />
+					<healthBurnPerSec />
+				</surveyingDeviceHealth>
+				<!-- legacy begin -->
+				<stickers>
+					<lodDist />
+				</stickers>
+				<!-- legacy end -->
+				<guns>
+					<_GUN_NAME_>
+						<notInShop />
+						<maxAmmo />
+						<unlocks>
+							<_ANYTHING_ />
+						</unlocks>
+						<armor>
+							<_ANYTHING_ />
+						</armor>
+						<shotDispersionRadius />
+						<shotDispersionFactors>
+							<turretRotation />
+							<afterShot />
+							<whileGunDamaged />
+						</shotDispersionFactors>
+						<reloadTime />
+						<chargeTime />
+						<multiGunEffects />
+						<dualGun>
+							<chargeTime />
+							<shootImpulse />
+							<reloadLockTime />
+							<reloadTimes />
+							<rateTime />
+							<chargeThreshold />
+							<afterShotDelay />
+							<preChargeIndication />
+							<chargeCancelTime />
+						</dualGun>
+						<aimingTime />
+						<pitchLimits>
+							<minPitch />
+							<maxPitch />
+						</pitchLimits>
+						<turretYawLimits />
+						<hullPitchAimingFirst />
+						<extraPitchLimits>
+							<back />
+							<transition />
+							<front />
+						</extraPitchLimits>
+						<invisibilityFactorAtShot />
+						<clip>
+							<count />
+							<rate />
+						</clip>
+						<autoreload>
+							<reloadTime/>
+							<revertFraction/>
+						</autoreload>
+						<burst>
+							<count />
+							<rate />
+						</burst>
+						<shots>
+							<_ANYTHING_ />
+						</shots>
+					</_GUN_NAME_>
+				</guns>
+			</_TURRET_NAME_>
+		</turrets0>
+		<physics>
+			<_ANYTHING_ />
+		</physics>
+		<clientAdjustmentFactors>
+			<_ANYTHING_ />
+		</clientAdjustmentFactors>
+		<engines>
+			<_ANYTHING_ />
+		</engines>
+		<fuelTanks>
+			<_ANYTHING_ />
+		</fuelTanks>
+		<radios>
+			<_ANYTHING_ />
+		</radios>
+		<siege_mode>
+			<switchOnTime/>
+			<switchOffTime/>
+			<engineDamageCoeff/>
+			<soundStateChange>
+				<on/>
+				<off/>
+			</soundStateChange>
+			<autoSwitchOffRequiredVehicleSpeed />
+			<autoSwitchOnRequiredVehicleSpeed />
+			<switchCancelEnabled />
+		</siege_mode>
+		<hull_aiming>
+			<pitch>
+				<wheelCorrectionCenterZ />
+				<wheelsCorrectionSpeed />
+				<wheelsCorrectionAngles>
+					<pitchMin />
+					<pitchMax />
+				</wheelsCorrectionAngles>
+			</pitch>
+			<yawDisabled />
+		</hull_aiming>
+		<extras>
+			<wheel_Health>
+				<sounds>
+					<destroyed />
+					<critical />
+					<functional />
+					<functionalCanMove />
+				</sounds>
+				<deviceUserString />
+			</wheel_Health>
+			<shoot />
+			<noAmmo />
+			<gunReload />
+			<charger />
+		</extras>
+		<deviceExtras>
+			<devices>
+				<wheel_Health>
+					<multiple />
+				</wheel_Health>
+			</devices>
+			<tankmen />
+		</deviceExtras>
+		<useHullZ/>
+		<useHullZSize />
+		<useHullZOffset />
+	</tank_game_balance>
+
+	<!--  Appearance tank properties -->
+	<tank_appearance outFolderName="appearance">
+		<effects>
+			<_ANYTHING_ />
+		</effects>
+		<emblems>
+			<default />
+			<lodDist />
+			<alpha />
+		</emblems>
+		<horns>
+			<priceFactor />
+			<distanceFactor />
+			<volumeFactor />
+		</horns>
+		<hull>
+			<models>
+				<undamaged />
+				<destroyed />
+				<exploded />
+				<sets>
+					<_ANYTHING_ />
+				</sets>
+			</models>
+			<swinging>
+				<lodDist />
+				<pitchParams />
+				<rollParams />
+				<sensitivityToImpulse />
+			</swinging>
+			<exhaust>
+				<pixie />
+				<nodes />
+				<tags>
+					<_ANYTHING_ />
+				</tags>
+				<rates />
+			</exhaust>
+			<turretPositions>
+				<turret />
+			</turretPositions>
+			<turretHardPoints>
+				<_ANYTHING_ />
+			</turretHardPoints>
+			<hitTester>
+				<collisionModelServer/>
+				<collisionModelClient/>
+			</hitTester>
+			<emblemSlots>
+				<clan>
+					<rayStart />
+					<rayEnd />
+					<rayUp />
+					<size />
+					<hideIfDamaged />
+					<isMirrored />
+				</clan>
+				<inscription>
+					<rayStart />
+					<rayEnd />
+					<rayUp />
+					<size />
+					<hideIfDamaged />
+					<isMirrored />
+				</inscription>
+				<player>
+					<rayStart />
+					<rayEnd />
+					<rayUp />
+					<size />
+					<hideIfDamaged />
+					<isMirrored />
+				</player>
+				<fixedInscription>
+					<rayStart />
+					<rayEnd />
+					<rayUp />
+					<size />
+					<hideIfDamaged />
+					<isMirrored />
+					<emblemId />
+				</fixedInscription>
+				<fixedEmblem>
+					<rayStart />
+					<rayEnd />
+					<rayUp />
+					<size />
+					<hideIfDamaged />
+					<isMirrored />
+					<emblemId />
+				</fixedEmblem>
+			</emblemSlots>
+			<customizationSlots>
+				<_ANYTHING_ />
+			</customizationSlots>
+			<customization>
+				<_ANYTHING_ />
+			</customization>
+			<animateEmblemSlots />
+			<variants>
+				<_ANY_NAME_>
+					<turretPositions>
+						<_ANYTHING_ />
+					</turretPositions>
+					<turretHardPoints>
+						<_ANYTHING_ />
+					</turretHardPoints>
+					<emblemSlots>
+						<_ANYTHING_ />
+					</emblemSlots>
+					<customizationSlots>
+						<_ANYTHING_ />
+					</customizationSlots>
+					<hitTester>
+						<_ANYTHING_ />
+					</hitTester>
+				</_ANY_NAME_>
+			</variants>
+			<AODecals>
+				<decal>
+					<transform>
+						<row0 />
+						<row1 />
+						<row2 />
+						<row3 />
+					</transform>
+				</decal>
+			</AODecals>
+			<hangarShadowTexture />
+			<burnoutAnimation>
+				<accumulationImpulse/>
+				<dischargeImpulse/>
+				<timeToAccumulationImpulse/>
+			</burnoutAnimation>
+		</hull>
+		<chassis>
+			<_CHASSIS_NAME_>
+				<models>
+					<undamaged />
+					<destroyed />
+					<exploded />
+					<sets>
+						<_ANYTHING_ />
+					</sets>
+				</models>
+				<splineDesc>
+					<segmentModelLeft />
+					<segmentModelRight />
+					<segment2ModelLeft />
+					<segment2ModelRight />
+					<segment2Offset />
+					<left />
+					<right />
+					<segmentLength />
+					<segmentOffset />
+					<lodDist />
+					<atlas>
+						<UTiles />
+						<VTiles />
+					</atlas>
+					<modelSets>
+						<_ANYTHING_ />
+					</modelSets>
+				</splineDesc>
+				<physicalTracks>
+					<_ANYTHING_ />
+				</physicalTracks>
+				<traces>
+					<lodDist />
+					<bufferPrefs />
+					<textureSet />
+					<size />
+					<activePostmortem />
+					<!-- legacy begin -->
+					<decalGroup />
+					<decalTexture />
+					<!-- legacy end -->
+				</traces>
+				<tracks>
+					<lodDist />
+					<leftMaterial />
+					<rightMaterial />
+					<textureScale />
+				</tracks>
+				<wheels>
+					<lodDist />
+					<leadingWheelSyncAngle /> <!--legacy-->
+					<wheel>
+						<index />
+						<deflatable />
+						<geometry>
+							<radius />
+							<width />
+							<pivotXOffset />
+						</geometry>
+						<proceduralCollisionBody />
+						<deflation>
+							<maxYShift />
+							<explodedRadius />
+						</deflation>
+						<isLeft />
+						<isLeading />
+						<name />
+						<radius />
+						<template />
+						<syncAngle />
+						<steeringProcessor>
+							<_ANYTHING_ />
+						</steeringProcessor>
+						<scrollProcessor>
+							<_ANYTHING_ />
+						</scrollProcessor>
+						<rollProcessor>
+							<_ANYTHING_ />
+						</rollProcessor>
+						<hitTester>
+							<collisionModelServer />
+							<collisionModelClient />
+						</hitTester>
+						<hardPoint />
+						<armor>
+							<_ANYTHING_ />
+						</armor>
+						<wheelPos />
+						<nonTrack />
+					</wheel>
+					<group>
+						<isLeft />
+						<radius />
+						<template />
+						<startIndex />
+						<count />
+						<steeringProcessor>
+							<_ANYTHING_ />
+						</steeringProcessor>
+						<scrollProcessor>
+							<_ANYTHING_ />
+						</scrollProcessor>
+					</group>
+					<generalWheels />
+					<activePostmortem />
+					<globalDeflationShaderParams>
+						<wheelRadius />
+						<rimRadius />
+						<sideShift />
+						<peakShift />
+					</globalDeflationShaderParams>
+					<traces>
+						<_ANYTHING_ />
+					</traces>
+				</wheels>
+				<groundNodes>
+					<lodSettings>
+						<maxLodDistance/>
+						<maxPriority/>
+					</lodSettings>
+					<group>
+						<template />
+						<startIndex />
+						<count />
+						<isLeft />
+						<minOffset />
+						<maxOffset />
+					</group>
+					<node>
+						<name />
+						<affectedWheelName />
+						<collisionSamplesCount />
+						<isLeft />
+						<minOffset />
+						<maxOffset />
+					</node>
+					<activePostmortem />
+				</groundNodes>
+				<drivingWheels />
+				<trackNodes>
+					<enable />
+					<linkBones />
+					<maxAmplitude />
+					<maxOffset />
+					<gravity />
+					<elasticity />
+					<damping />
+					<forwardElastK />
+					<backwardElastK />
+					<offset />
+					<node>
+						<isLeft />
+						<name />
+						<forwardElastK />
+						<backwardElastK />
+						<offset />
+						<leftSibling />
+						<rightSibling />
+						<damping />
+						<elasticity />
+					</node>
+				</trackNodes>
+				<trackThickness />
+				<effects>
+					<lodDist />
+					<dust />
+					<mud />
+				</effects>
+				<soundPC />
+				<soundNPC />
+				<wwsoundPC />
+				<wwsoundNPC />
+				<hullPosition />
+				<hitTester>
+					<collisionModelServer/>
+					<collisionModelClient/>
+				</hitTester>
+				<topRightCarryingPoint />
+				<maxClimbAngle />
+				<navmeshGirth />
+				<leveredSuspension>
+					<_ANYTHING_ />
+				</leveredSuspension>
+				<hullAiming>
+					<_ANYTHING_ />
+				</hullAiming>
+				<AODecals>
+					<decal>
+						<transform>
+							<row0 />
+							<row1 />
+							<row2 />
+							<row3 />
+						</transform>
+					</decal>
+				</AODecals>
+				<icon />
+				<customizationSlots>
+					<_ANYTHING_ />
+				</customizationSlots>
+				<customization>
+					<_ANYTHING_ />
+				</customization>
+			</_CHASSIS_NAME_>
+		</chassis>
+		<turrets0>
+			<_TURRET_NAME_>
+				<models>
+					<undamaged />
+					<destroyed />
+					<exploded />
+					<sets>
+						<_ANYTHING_ />
+					</sets>
+				</models>
+				<hitTester>
+					<collisionModelServer/>
+					<collisionModelClient/>
+				</hitTester>
+				<gunPosition />
+				<multiGun>
+					<_ANYTHING_ />
+				</multiGun>
+				<guns>
+					<_GUN_NAME_>
+						<models>
+							<undamaged />
+							<destroyed />
+							<exploded />
+							<sets>
+								<_ANYTHING_ />
+							</sets>
+						</models>
+						<hitTester>
+							<collisionModelServer/>
+							<collisionModelClient/>
+						</hitTester>
+						<emblemSlots>
+							<insigniaOnGun>
+								<rayStart />
+								<rayEnd />
+								<rayUp />
+								<size />
+								<hideIfDamaged />
+								<isMirrored />
+								<isUVProportional />
+							</insigniaOnGun>
+						</emblemSlots>
+						<customizationSlots>
+							<_ANYTHING_ />
+						</customizationSlots>
+						<animateEmblemSlots />
+						<reloadEffect />
+						<effects />
+						<AODecals>
+							<decal>
+								<transform>
+									<row0 />
+									<row1 />
+									<row2 />
+									<row3 />
+								</transform>
+							</decal>
+						</AODecals>
+						<recoil>
+							<lodDist />
+							<amplitude />
+							<backoffTime />
+							<returnTime />
+							<recoilEffect />
+						</recoil>
+						<drivenJoints>
+							<_ANYTHING_ />
+						</drivenJoints>
+						<customization>
+							<_ANYTHING_ />
+						</customization>
+					</_GUN_NAME_>
+				</guns>
+				<emblemSlots>
+					<player>
+						<rayStart />
+						<rayEnd />
+						<rayUp />
+						<size />
+						<hideIfDamaged />
+						<isMirrored />
+					</player>
+					<clan>
+						<rayStart />
+						<rayEnd />
+						<rayUp />
+						<size />
+						<hideIfDamaged />
+						<isMirrored />
+					</clan>
+					<inscription>
+						<rayStart />
+						<rayEnd />
+						<rayUp />
+						<size />
+						<hideIfDamaged />
+						<isMirrored />
+					</inscription>
+					<fixedInscription>
+						<rayStart />
+						<rayEnd />
+						<rayUp />
+						<size />
+						<hideIfDamaged />
+						<isMirrored />
+						<emblemId />
+					</fixedInscription>
+					<fixedEmblem>
+						<rayStart />
+						<rayEnd />
+						<rayUp />
+						<size />
+						<hideIfDamaged />
+						<isMirrored />
+						<emblemId />
+					</fixedEmblem>
+				</emblemSlots>
+				<customizationSlots>
+					<_ANYTHING_ />
+				</customizationSlots>
+				<showEmblemsOnGun />
+				<physicsShape />
+				<turretRotatorSoundManual />
+				<turretRotatorSoundGear />
+				<wwturretRotatorSoundManual />
+				<wwturretRotatorSoundGear />
+				<icon />
+				<AODecals>
+					<decal>
+						<transform>
+							<row0 />
+							<row1 />
+							<row2 />
+							<row3 />
+						</transform>
+					</decal>
+				</AODecals>
+				<customization>
+					<_ANYTHING_ />
+				</customization>
+			</_TURRET_NAME_>
+		</turrets0>
+	</tank_appearance>
+	<!-- Camouflage parameters for specific tank -->
+	<tank_camouflage outFolderName="camouflages">
+		<customizationNation />
+		<baseColorID/>
+		<!-- legacy begin -->
+		<customDefaultCamouflage/>
+		<camouflage>
+			<exclusionMask />
+			<tiling />
+			<density />
+			<aoTextureSize />
+		</camouflage>
+		<!-- legacy end -->
+		<!-- legacy begin -->
+		<chassis>
+			<_CHASSIS_NAME_>
+				<camouflage>
+					<exclusionMask />
+					<tiling />
+				</camouflage>
+			</_CHASSIS_NAME_>
+		</chassis>
+		<!-- legacy end -->
+		<hull>
+			<!-- legacy begin -->
+			<camouflage>
+				<exclusionMask />
+				<tiling />
+				<density />
+				<aoTextureSize />
+			</camouflage>
+			<!-- legacy end -->
+			<exclusionMask />
+			<tiling />
+			<variants>
+				<_ANY_NAME_>
+					<camouflage>
+						<_ANYTHING_ />
+					</camouflage>
+				</_ANY_NAME_>
+			</variants>
+			<_ANY_NAME_>
+				<texture />
+			</_ANY_NAME_>
+		</hull>
+		<turrets0>
+			<_TURRET_NAME_>
+				<!-- legacy begin -->
+				<camouflage>
+					<_ANYTHING_ />
+				</camouflage>
+				<!-- legacy end -->
+				<guns>
+					<_GUN_NAME_>
+						<!-- legacy begin -->
+						<camouflage>
+							<_ANYTHING_ />
+						</camouflage>
+						<!-- legacy end -->
+						<exclusionMask />
+						<tiling />
+						<_ANY_NAME_>
+							<texture />
+						</_ANY_NAME_>
+					</_GUN_NAME_>
+				</guns>
+				<exclusionMask />
+				<tiling />
+				<_ANY_NAME_>
+					<texture />
+				</_ANY_NAME_>
+			</_TURRET_NAME_>
+		</turrets0>
+		<camouflages>
+			<_ANYTHING_ />
+		</camouflages>
+		<repaintParameters>
+			<refColor />
+			<refGloss />
+			<refColorMult />
+			<refGlossMult />
+		</repaintParameters>
+	</tank_camouflage>
+
+</xml_import_rules>

@@ -1,0 +1,656 @@
+<root>
+	<map>
+		<COMMIT_SIZE>
+			<min>	0	</min>
+			<max>	12000 </max>
+		</COMMIT_SIZE>
+		<FPS>
+			<min>	30	</min>
+			<max>	250	</max>
+		</FPS>
+		<VISIBLE_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	6000	</max>
+		</VISIBLE_OBJECT_COUNT>
+		<VISIBLE_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	200	</max>
+		</VISIBLE_DECAL_COUNT>
+		<VISIBLE_ROAD_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	5000	</max>
+		</VISIBLE_ROAD_DECAL_COUNT>	
+		<VISIBLE_TERRAIN_CHUNKS>
+			<min>	0	</min>
+			<max>	200	</max>
+		</VISIBLE_TERRAIN_CHUNKS>
+		<VISIBLE_TREES_COUNT>
+			<min>	0	</min>
+			<max>	6000</max>
+		</VISIBLE_TREES_COUNT>
+				
+
+		<TRIANGLE_COUNT>
+			<min>	0	</min>
+			<max>	3000000	</max>
+		</TRIANGLE_COUNT>
+		<DIPS>
+			<min>	0	</min>
+			<max>	1500	</max>
+		</DIPS>
+		<ALL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	455	</max>
+		</ALL_UNIQUE_ITEMS>
+		<UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+			<min>	0	</min>
+			<max>	260	</max>
+		</UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+		<SPECIAL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	260	</max>
+		</SPECIAL_UNIQUE_ITEMS>
+		<PRIMITIVES_COUNT>
+			<min>	0	</min>
+			<max>	700	</max>
+		</PRIMITIVES_COUNT>
+		<ALL_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	7600	</max>
+		</ALL_OBJECT_COUNT>
+		<ALL_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	16500	</max>
+		</ALL_DECAL_COUNT>
+		<ALL_ROAD_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	11000	</max>
+		</ALL_ROAD_DECAL_COUNT>
+		<OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	4	</max>
+		</OVERLAY_COUNT>
+		<OBJECTS_OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	300	</max>
+		</OBJECTS_OVERLAY_COUNT>
+		<TEXTURES>
+			<min>	0	</min>
+			<max>	900	</max>
+		</TEXTURES>
+		<OBJECTS_TEXTURE>
+			<min>	0	</min>
+			<max>	390</max>
+		</OBJECTS_TEXTURE>
+		<TERRAIN_TEXTURES>
+			<min>	0	</min>
+			<max>	220	</max>
+		</TERRAIN_TEXTURES>
+		<TERRAIN_TILE_TEXTURES>
+			<min>	0	</min>
+			<max>	22	</max>
+		</TERRAIN_TILE_TEXTURES>
+		<TERRAIN_COLOR_TEXTURES>
+			<min>	0	</min>
+			<max>	22	</max>
+		</TERRAIN_COLOR_TEXTURES>
+		<TERRAIN_BLEND_TEXTURES>
+			<min>	0	</min>
+			<max>	95	</max>
+		</TERRAIN_BLEND_TEXTURES>
+		<DECALS_TEXTURES>
+			<min>	0	</min>
+			<max>	67	</max>
+		</DECALS_TEXTURES>
+		<DECALS_TEXTURES_TERRAIN>
+			<min>	0	</min>
+			<max>	57	</max>
+		</DECALS_TEXTURES_TERRAIN>
+		<DECALS_TEXTURES_TREE>
+			<min>	0	</min>
+			<max>	0	</max>
+		</DECALS_TEXTURES_TREE>
+		<DECALS_TEXTURES_FLORA>
+			<min>	0	</min>
+			<max>	0	</max>
+		</DECALS_TEXTURES_FLORA>
+		<DECALS_TEXTURES_STATIC_OBJECTS>
+			<min>	0	</min>
+			<max>	7	</max>
+		</DECALS_TEXTURES_STATIC_OBJECTS>
+		<DECALS_TEXTURES_DYNAMIC_OBJECTS>
+			<min>	0	</min>
+			<max>	0	</max>
+		</DECALS_TEXTURES_DYNAMIC_OBJECTS>
+		<SPEEDTREE_TEXTURES>
+			<min>	0	</min>
+			<max>	203	</max>
+		</SPEEDTREE_TEXTURES>
+		<FLORA_TEXTURES>
+			<min>	0	</min>
+			<max>	40	</max>
+		</FLORA_TEXTURES>
+		<PARTICLE_TEXTURES>
+			<min>	0	</min>
+			<max>	33	</max>
+		</PARTICLE_TEXTURES>
+		<SKYBOX_TEXTURES>
+			<min>	0	</min>
+			<max>	6	</max>
+		</SKYBOX_TEXTURES>
+		<WATER_TEXTURES>
+			<min>	0	</min>
+			<max>	40	</max>
+		</WATER_TEXTURES>
+		<SYSTEM_TEXTURES>
+			<min>	0	</min>
+			<max>	4	</max>
+		</SYSTEM_TEXTURES>
+		<DECOR_TEXTURES>
+			<min>	0	</min>
+			<max>	5	</max>
+		</DECOR_TEXTURES>
+		<VERTICES>
+			<min>	0	</min>
+			<max>	130	</max>
+		</VERTICES>
+		<OBJECT_VERTICES>
+			<min>	0	</min>
+			<max>	70	</max>
+		</OBJECT_VERTICES>
+		<TERRAIN_VERTICES>
+			<min>	0	</min>
+			<max>	80	</max>
+		</TERRAIN_VERTICES>
+		<SPEEDTREE_VERTICES>
+			<min>	0	</min>
+			<max>	8	</max>
+		</SPEEDTREE_VERTICES>
+		<SPEEDGRASS_INSTANCE_COUNT>
+			<min>	0	</min>
+			<max>	15000	</max>
+		</SPEEDGRASS_INSTANCE_COUNT>
+		<FLORA_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</FLORA_VERTICES>
+		<ROAD_TEXTURES>
+			<min>	0	</min>
+			<max>	150	</max>
+		</ROAD_TEXTURES>
+		<PARTICLE_VERTICES>
+			<min>	0	</min>
+			<max>	4	</max>
+		</PARTICLE_VERTICES>
+		<WATER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</WATER_VERTICES>
+		<OTHER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OTHER_VERTICES>
+		<DECOR_VERTICES>
+			<min>	0	</min>
+			<max>	2	</max>
+		</DECOR_VERTICES>
+		<LOCAL_LIGHTS>
+			<min>	0	</min>
+			<max>	12	</max>
+		</LOCAL_LIGHTS>
+		<OMNI_LIGHTS>
+			<min>	0	</min>
+			<max>	11	</max>
+		</OMNI_LIGHTS>
+		<SPOT_LIGHTS>
+			<min>	0	</min>
+			<max>	2	</max>
+		</SPOT_LIGHTS>
+		<SOUND_ITEMS>
+			<min>	0	</min>
+			<max>	20	</max>
+		</SOUND_ITEMS>
+		<DECOR_OBJECTS>
+			<min>	0	</min>
+			<max>	3000	</max>
+		</DECOR_OBJECTS>
+		<DECOR_OBJECTS_VISIBLE>
+			<min>	0	</min>
+			<max>	2800 </max>
+		</DECOR_OBJECTS_VISIBLE>	
+		<HAVOK_HEAP_MEMORY>
+			<min>	0	</min>
+			<max>	120 </max>
+		</HAVOK_HEAP_MEMORY>
+		
+	</map>
+	<hangar>
+		<COMMIT_SIZE>
+			<min>	0	</min>
+			<max>	12000	</max>
+		</COMMIT_SIZE>
+		<FPS>
+			<min>	25	</min>
+			<max>	250	</max>
+		</FPS>
+		<VISIBLE_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	80	</max>
+		</VISIBLE_OBJECT_COUNT>
+		<VISIBLE_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	100	</max>
+		</VISIBLE_DECAL_COUNT>
+		<VISIBLE_ROAD_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	0	</max>
+		</VISIBLE_ROAD_DECAL_COUNT>
+		<VISIBLE_TERRAIN_CHUNKS>
+			<min>	0	</min>
+			<max>	200	</max>
+		</VISIBLE_TERRAIN_CHUNKS>
+		<VISIBLE_TREES_COUNT>
+			<min>	0	</min>
+			<max>	6000</max>
+		</VISIBLE_TREES_COUNT>
+		<TRIANGLE_COUNT>
+			<min>	0	</min>
+			<max>	220000	</max>
+		</TRIANGLE_COUNT>
+		<DIPS>
+			<min>	0	</min>
+			<max>	300	</max>
+		</DIPS>
+		<ALL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	42	</max>
+		</ALL_UNIQUE_ITEMS>
+		<UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+			<min>	0	</min>
+			<max>	42	</max>
+		</UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+		<SPECIAL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	42	</max>
+		</SPECIAL_UNIQUE_ITEMS>
+		<PRIMITIVES_COUNT>
+			<min>	0	</min>
+			<max>	135	</max>
+		</PRIMITIVES_COUNT>
+		<ALL_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	10000	</max>
+		</ALL_OBJECT_COUNT>
+		<ALL_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	170	</max>
+		</ALL_DECAL_COUNT>
+		<ALL_ROAD_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	0	</max>
+		</ALL_ROAD_DECAL_COUNT>
+		<OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	4	</max>
+		</OVERLAY_COUNT>
+		<OBJECTS_OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	300	</max>
+		</OBJECTS_OVERLAY_COUNT>
+		<TEXTURES>
+			<min>	0	</min>
+			<max>	610	</max>
+		</TEXTURES>
+		<OBJECTS_TEXTURE>
+			<min>	0	</min>
+			<max>	55	</max>
+		</OBJECTS_TEXTURE>
+		<TERRAIN_TEXTURES>
+			<min>	0	</min>
+			<max>	4	</max>
+		</TERRAIN_TEXTURES>
+		<TERRAIN_TILE_TEXTURES>
+			<min>	0	</min>
+			<max>	2	</max>
+		</TERRAIN_TILE_TEXTURES>
+		<TERRAIN_COLOR_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</TERRAIN_COLOR_TEXTURES>
+		<TERRAIN_BLEND_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</TERRAIN_BLEND_TEXTURES>
+		<DECALS_TEXTURES>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES>
+		<DECALS_TEXTURES_TERRAIN>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_TERRAIN>
+		<DECALS_TEXTURES_TREE>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_TREE>
+		<DECALS_TEXTURES_FLORA>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_FLORA>
+		<DECALS_TEXTURES_STATIC_OBJECTS>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_STATIC_OBJECTS>
+		<DECALS_TEXTURES_DYNAMIC_OBJECTS>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_DYNAMIC_OBJECTS>
+		<SPEEDTREE_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</SPEEDTREE_TEXTURES>
+		<FLORA_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</FLORA_TEXTURES>
+		<PARTICLE_TEXTURES>
+			<min>	0	</min>
+			<max>	17	</max>
+		</PARTICLE_TEXTURES>
+		<SKYBOX_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</SKYBOX_TEXTURES>
+		<WATER_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</WATER_TEXTURES>
+		<SYSTEM_TEXTURES>
+			<min>	0	</min>
+			<max>	20	</max>
+		</SYSTEM_TEXTURES>
+		<DECOR_TEXTURES>
+			<min>	0	</min>
+			<max>	15	</max>
+		</DECOR_TEXTURES>
+		<VERTICES>
+			<min>	0	</min>
+			<max>	45	</max>
+		</VERTICES>
+		<OBJECT_VERTICES>
+			<min>	0	</min>
+			<max>	12	</max>
+		</OBJECT_VERTICES>
+		<TERRAIN_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</TERRAIN_VERTICES>
+		<SPEEDTREE_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</SPEEDTREE_VERTICES>
+		<SPEEDGRASS_INSTANCE_COUNT>
+			<min>	0	</min>
+			<max>	30000	</max>
+		</SPEEDGRASS_INSTANCE_COUNT>
+		<FLORA_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</FLORA_VERTICES>
+		<PARTICLE_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</PARTICLE_VERTICES>
+		<WATER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</WATER_VERTICES>
+		<OTHER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OTHER_VERTICES>
+		<DECOR_VERTICES>
+			<min>	0	</min>
+			<max>	12	</max>
+		</DECOR_VERTICES>
+		<LOCAL_LIGHTS>
+			<min>	0	</min>
+			<max>	125	</max>
+		</LOCAL_LIGHTS>
+		<OMNI_LIGHTS>
+			<min>	0	</min>
+			<max>	55	</max>
+		</OMNI_LIGHTS>
+		<SPOT_LIGHTS>
+			<min>	0	</min>
+			<max>	70	</max>
+		</SPOT_LIGHTS>
+		<SOUND_ITEMS>
+			<min>	0	</min>
+			<max>	20	</max>
+		</SOUND_ITEMS>
+		<DECOR_OBJECTS>
+			<min>	0	</min>
+			<max>	200	</max>
+		</DECOR_OBJECTS>
+		<DECOR_OBJECTS_VISIBLE>
+			<min>	0	</min>
+			<max>	200	</max>
+		</DECOR_OBJECTS_VISIBLE>
+	</hangar>
+	<hangarmap>
+		<COMMIT_SIZE>
+			<min>	0	</min>
+			<max>	12000	</max>
+		</COMMIT_SIZE>
+		<FPS>
+			<min>	25	</min>
+			<max>	250	</max>
+		</FPS>
+		<VISIBLE_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	40	</max>
+		</VISIBLE_OBJECT_COUNT>
+		<VISIBLE_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	5	</max>
+		</VISIBLE_DECAL_COUNT>
+		<VISIBLE_ROAD_DECAL_COUNT >
+			<min>	0	</min>
+			<max>	5	</max>
+		</VISIBLE_ROAD_DECAL_COUNT >
+		<VISIBLE_TERRAIN_CHUNKS>
+			<min>	0	</min>
+			<max>	200	</max>
+		</VISIBLE_TERRAIN_CHUNKS>
+		<VISIBLE_TREES_COUNT>
+			<min>	0	</min>
+			<max>	6000</max>
+		</VISIBLE_TREES_COUNT>
+		  
+		<TRIANGLE_COUNT>
+			<min>	0	</min>
+			<max>	220000	</max>
+		</TRIANGLE_COUNT>
+		<DIPS>
+			<min>	0	</min>
+			<max>	300	</max>
+		</DIPS>
+		<ALL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	78	</max>
+		</ALL_UNIQUE_ITEMS>
+		<UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+			<min>	0	</min>
+			<max>	60	</max>
+		</UNIQUE_OBJECTS_TREES_DECALS_LIGHTS>
+		<SPECIAL_UNIQUE_ITEMS>
+			<min>	0	</min>
+			<max>	60	</max>
+		</SPECIAL_UNIQUE_ITEMS>
+		<PRIMITIVES_COUNT>
+			<min>	0	</min>
+			<max>	700	</max>
+		</PRIMITIVES_COUNT>
+		<ALL_OBJECT_COUNT>
+			<min>	0	</min>
+			<max>	445	</max>
+		</ALL_OBJECT_COUNT>
+		<ALL_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	77	</max>
+		</ALL_DECAL_COUNT>
+		<ALL_ROAD_DECAL_COUNT>
+			<min>	0	</min>
+			<max>	5	</max>
+		</ALL_ROAD_DECAL_COUNT>
+		<OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OVERLAY_COUNT>
+		<OBJECTS_OVERLAY_COUNT>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OBJECTS_OVERLAY_COUNT>
+		<TEXTURES>
+			<min>	0	</min>
+			<max>	610	</max>
+		</TEXTURES>
+		<OBJECTS_TEXTURE>
+			<min>	0	</min>
+			<max>	55	</max>
+		</OBJECTS_TEXTURE>
+		<TERRAIN_TEXTURES>
+			<min>	0	</min>
+			<max>	126	</max>
+		</TERRAIN_TEXTURES>
+		<TERRAIN_TILE_TEXTURES>
+			<min>	0	</min>
+			<max>	17	</max>
+		</TERRAIN_TILE_TEXTURES>
+		<TERRAIN_COLOR_TEXTURES>
+			<min>	0	</min>
+			<max>	17	</max>
+		</TERRAIN_COLOR_TEXTURES>
+		<TERRAIN_BLEND_TEXTURES>
+			<min>	0	</min>
+			<max>	5	</max>
+		</TERRAIN_BLEND_TEXTURES>
+		<DECALS_TEXTURES>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES>
+		<DECALS_TEXTURES_TERRAIN>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_TERRAIN>
+		<DECALS_TEXTURES_TREE>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_TREE>
+		<DECALS_TEXTURES_FLORA>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_FLORA>
+		<DECALS_TEXTURES_STATIC_OBJECTS>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_STATIC_OBJECTS>
+		<DECALS_TEXTURES_DYNAMIC_OBJECTS>
+			<min>	0	</min>
+			<max>	46	</max>
+		</DECALS_TEXTURES_DYNAMIC_OBJECTS>
+		<SPEEDTREE_TEXTURES>
+			<min>	0	</min>
+			<max>	12	</max>
+		</SPEEDTREE_TEXTURES>
+		<FLORA_TEXTURES>
+			<min>	0	</min>
+			<max>	6	</max>
+		</FLORA_TEXTURES>
+		<PARTICLE_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</PARTICLE_TEXTURES>
+		<SKYBOX_TEXTURES>
+			<min>	0	</min>
+			<max>	5	</max>
+		</SKYBOX_TEXTURES>
+		<WATER_TEXTURES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</WATER_TEXTURES>
+		<SYSTEM_TEXTURES>
+			<min>	0	</min>
+			<max>	22	</max>
+		</SYSTEM_TEXTURES>
+		<DECOR_TEXTURES>
+			<min>	0	</min>
+			<max>	15	</max>
+		</DECOR_TEXTURES>
+		<VERTICES>
+			<min>	0	</min>
+			<max>	45	</max>
+		</VERTICES>
+		<OBJECT_VERTICES>
+			<min>	0	</min>
+			<max>	3	</max>
+		</OBJECT_VERTICES>
+		<TERRAIN_VERTICES>
+			<min>	0	</min>
+			<max>	4	</max>
+		</TERRAIN_VERTICES>
+		<SPEEDTREE_VERTICES>
+			<min>	0	</min>
+			<max>	2	</max>
+		</SPEEDTREE_VERTICES>
+		<SPEEDGRASS_INSTANCE_COUNT>
+			<min>	0	</min>
+			<max>	30000	</max>
+		</SPEEDGRASS_INSTANCE_COUNT>
+		<FLORA_VERTICES>
+			<min>	0	</min>
+			<max>	95	</max>
+		</FLORA_VERTICES>
+		<PARTICLE_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</PARTICLE_VERTICES>
+		<WATER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</WATER_VERTICES>
+		<OTHER_VERTICES>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OTHER_VERTICES>
+		<DECOR_VERTICES>
+			<min>	0	</min>
+			<max>	3	</max>
+		</DECOR_VERTICES>
+		<LOCAL_LIGHTS>
+			<min>	0	</min>
+			<max>	25	</max>
+		</LOCAL_LIGHTS>
+		<OMNI_LIGHTS>
+			<min>	0	</min>
+			<max>	1	</max>
+		</OMNI_LIGHTS>
+		<SPOT_LIGHTS>
+			<min>	0	</min>
+			<max>	25	</max>
+		</SPOT_LIGHTS>
+		<SOUND_ITEMS>
+			<min>	0	</min>
+			<max>	10	</max>
+		</SOUND_ITEMS>
+		<DECOR_OBJECTS>
+			<min>	0	</min>
+			<max>	200	</max>
+		</DECOR_OBJECTS>
+		<DECOR_OBJECTS_VISIBLE>
+			<min>	0	</min>
+			<max>	200	</max>
+		</DECOR_OBJECTS_VISIBLE>
+	</hangarmap>
+</root>

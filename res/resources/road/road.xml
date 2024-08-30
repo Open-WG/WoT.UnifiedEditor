@@ -1,0 +1,23 @@
+<road.xml>
+	<road>
+		<decalSettings>
+			<textureAM>maps/decals_pbs/PBS_Road_03_AM.dds</textureAM> 
+			<textureNM>maps/decals_pbs/PBS_Road_03_NM.dds</textureNM> 
+			<textureGMM>maps/decals_pbs/PBS_Road_03_GMM.dds</textureGMM> 
+			<deltaHeight>0.500000</deltaHeight> 
+			<offsetOverlapping>0.000000</offsetOverlapping> 
+			<decalAlpha>1.000000</decalAlpha> 
+			<parallaxAmplitude>0.000000</parallaxAmplitude> 
+			<parallaxOffset>0.500000</parallaxOffset> 
+			<priority>0</priority> 
+		</decalSettings>
+		<pathSettings>
+			<minAngleRoadBend>5.000000</minAngleRoadBend> 
+			<minAngleRoadDrop>5.000000</minAngleRoadDrop> 
+			<minAngleRoadTorsion>5.000000</minAngleRoadTorsion> 
+			<preciseStep>0.99</preciseStep> 
+			<roadWidth>3.000000</roadWidth> 
+			<tesselationStep>1.99</tesselationStep> 
+		</pathSettings>
+	</road>
+</road.xml>

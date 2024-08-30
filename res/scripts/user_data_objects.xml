@@ -1,0 +1,29 @@
+<root>
+	<!-- Base classes need to be before derived classes -->
+	<MegalodChunkModel/>
+	<PatrolNode/>
+	<SpawnPoint/>
+	<BootcampBotSpawnPoint/>
+	<PillboxBotSpawnPoint/>
+	<Artillery/>
+	<ArtilleryAimingPoint/>
+	<ArtilleryEquipment/>
+	<CameraNode/>
+	<BenchmarkLocation/>
+	<AimTrigger/>
+	<AreaTrigger/>
+	<SimplePatrolNode/>
+	<CircularFlyer/>
+	<TankHangarShadowProxy/>
+	<BotPoint/>
+	<Viewpoint/>
+	<SoundZoneTrigger/>
+	<VehicleTriggerArea/>
+	<MarkerPoint/>
+	<SectorWayPoint/>
+	<AiScenarioSpawnPoint/>
+	<AiZoneNode/>
+	<AiZoneCenter/>
+	<AiZoneEntryPoint/>
+	<BadNavmeshZone/>
+</root>

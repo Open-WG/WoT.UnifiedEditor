@@ -1,0 +1,7 @@
+<root>
+	<!-- Path is relative to this file -->
+	<path>../asset_pipeline/jit_compiler</path>
+
+	<!-- These override configuration in asset_pipeline.config and jit_compiler.config -->
+	<params> --auto-close 10 </params>
+</root>

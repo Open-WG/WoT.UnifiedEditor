@@ -1,0 +1,474 @@
+<preset_checks.xml>
+	<preset>
+		<name> LUT </name>
+		<checks>
+			<Fog> false
+				<deferred> false
+					<altitudeHigh> false </altitudeHigh>
+					<altitudeLow> false </altitudeLow>
+					<altitudeMid> false </altitudeMid>
+					<colorHigh> false </colorHigh>
+					<colorLow> false </colorLow>
+					<colorSunHigh> false </colorSunHigh>
+					<colorSunLow> false </colorSunLow>
+					<exponent> false </exponent>
+					<farHigh> false </farHigh>
+					<farLow> false </farLow>
+					<heightFog> false </heightFog>
+					<nearHigh> false </nearHigh>
+					<nearLow> false </nearLow>
+					<skyAltitudeHigh> false </skyAltitudeHigh>
+					<skyAltitudeLow> false </skyAltitudeLow>
+					<skyAltitudeMid> false </skyAltitudeMid>
+					<sunAngle> false </sunAngle>
+					<sunExponent> false </sunExponent>
+					<useEdgeFog> false </useEdgeFog>
+				</deferred>
+				<enable> false </enable>
+				<forward> false
+					<altitudeHigh> false </altitudeHigh>
+					<altitudeLow> false </altitudeLow>
+					<altitudeMid> false </altitudeMid>
+					<colorHigh> false </colorHigh>
+					<colorLow> false </colorLow>
+					<farHigh> false </farHigh>
+					<farLow> false </farLow>
+					<heightFog> false </heightFog>
+					<nearHigh> false </nearHigh>
+					<nearLow> false </nearLow>
+					<skyAltitudeHigh> false </skyAltitudeHigh>
+					<skyAltitudeLow> false </skyAltitudeLow>
+					<skyAltitudeMid> false </skyAltitudeMid>
+					<useEdgeFog> false </useEdgeFog>
+				</forward>
+				<innerBB> false </innerBB>
+				<outerBB> false </outerBB>
+				<version> false </version>
+			</Fog>
+			<day_night_cycle> false
+				<ambientkey> false
+					<colour> false </colour>
+					<time> false </time>
+				</ambientkey>
+				<ambientkey> false
+					<colour> false </colour>
+					<time> false </time>
+				</ambientkey>
+				<ambientkey> false
+					<colour> false </colour>
+					<time> false </time>
+				</ambientkey>
+				<ambientkey> false
+					<colour> false </colour>
+					<time> false </time>
+				</ambientkey>
+				<deferred> false
+					<angle> false </angle>
+					<angleZ> false </angleZ>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+				</deferred>
+				<forward> false
+					<angle> false </angle>
+					<angleZ> false </angleZ>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+					<lightkey> false
+						<colour> false </colour>
+						<time> false </time>
+					</lightkey>
+				</forward>
+				<hourlength> false </hourlength>
+				<isMoon> false </isMoon>
+				<starttime> false </starttime>
+				<sunColor> false </sunColor>
+				<sunColorForward> false </sunColorForward>
+				<sunScale> false </sunScale>
+				<sunScaleForward> false </sunScaleForward>
+				<sunTexture> false </sunTexture>
+				<sunTextureForward> false </sunTextureForward>
+			</day_night_cycle>
+			<cloudsShadow> false
+				<angle> false </angle>
+				<enabled> false </enabled>
+				<projectionAltitude1> false </projectionAltitude1>
+				<projectionAltitude2> false </projectionAltitude2>
+				<shadowFactor> false </shadowFactor>
+				<speed> false </speed>
+				<texture> false </texture>
+				<tiling> false </tiling>
+			</cloudsShadow>
+			<HDR> true
+				<adaptationSpeed> false </adaptationSpeed>
+				<bloom> false
+					<brightThreshold> false </brightThreshold>
+					<enable> false </enable>
+					<factor> false </factor>
+					<mipWeight0> false </mipWeight0>
+					<mipWeight1> false </mipWeight1>
+					<mipWeight2> false </mipWeight2>
+					<mipWeight3> false </mipWeight3>
+					<mipWeight4> false </mipWeight4>
+					<tint> false </tint>
+				</bloom>
+				<colorCorrection> true
+					<map> true </map>
+				</colorCorrection>
+				<enable> false </enable>
+				<environment> false
+					<ambientLumMultiplier> false </ambientLumMultiplier>
+					<CIESkyType> false </CIESkyType>
+					<enableLDR2HDRSky> false </enableLDR2HDRSky>
+					<skyLumMultiplier> false </skyLumMultiplier>
+					<skyTonemapHDRbias> false </skyTonemapHDRbias>
+					<skyTonemapHDRmultiplier> false </skyTonemapHDRmultiplier>
+					<skyTonemapLDRmultiplier> false </skyTonemapLDRmultiplier>
+					<sunlightLumMultiplier> false </sunlightLumMultiplier>
+					<sunLumMultiplier> false </sunLumMultiplier>
+				</environment>
+				<gammaCorrection> false
+					<enabled> false </enabled>
+				</gammaCorrection>
+				<tonemappings> false
+					<active> false </active>
+					<tonemapping> false
+						<blackPoint> false </blackPoint>
+						<eyeDarkLimit> false </eyeDarkLimit>
+						<eyeLightLimit> false </eyeLightLimit>
+						<middleGray> false </middleGray>
+						<name> false </name>
+						<whitePoint> false </whitePoint>
+					</tonemapping>
+					<tonemapping> false
+						<blackPoint> false </blackPoint>
+						<eyeDarkLimit> false </eyeDarkLimit>
+						<eyeLightLimit> false </eyeLightLimit>
+						<middleGray> false </middleGray>
+						<name> false </name>
+						<whitePoint> false </whitePoint>
+					</tonemapping>
+					<tonemapping> false
+						<blackPoint> false </blackPoint>
+						<eyeDarkLimit> false </eyeDarkLimit>
+						<eyeLightLimit> false </eyeLightLimit>
+						<middleGray> false </middleGray>
+						<name> false </name>
+						<whitePoint> false </whitePoint>
+					</tonemapping>
+				</tonemappings>
+				<version> false </version>
+			</HDR>
+			<GodRays> false
+				<attenuationPower> false </attenuationPower>
+				<color> false </color>
+				<decay> false </decay>
+				<enable> false </enable>
+			</GodRays>
+			<SSAO> false
+				<amplify> false </amplify>
+				<enable> false </enable>
+				<fadeNear> false </fadeNear>
+				<influences> false
+					<localLights> false </localLights>
+					<objects> false </objects>
+					<speedtree> false </speedtree>
+					<terrain> false </terrain>
+				</influences>
+				<radius> false </radius>
+				<roDistanceFar> false </roDistanceFar>
+				<roDistanceNear> false </roDistanceNear>
+				<roGlossScale> false </roGlossScale>
+				<roOccluderThickness> false </roOccluderThickness>
+				<terrainAOGammaCorrection> false </terrainAOGammaCorrection>
+			</SSAO>
+			<SSShadows> false
+				<amplify> false </amplify>
+				<distanceFar> false </distanceFar>
+				<distanceNear> false </distanceNear>
+				<enable> false </enable>
+				<noise> false </noise>
+			</SSShadows>
+			<overlayMaterial> false
+				<applyOnVehicles> false </applyOnVehicles>
+				<enable> false </enable>
+			</overlayMaterial>
+			<LensFlare> false
+				<chromDistortion> false </chromDistortion>
+				<colorTexture> false </colorTexture>
+				<colorUVScale> false </colorUVScale>
+				<dirtOffset> false </dirtOffset>
+				<dirtTexture> false </dirtTexture>
+				<dirtWeight> false </dirtWeight>
+				<enable> false </enable>
+				<ghostDispersion> false </ghostDispersion>
+				<haloFade> false </haloFade>
+				<haloWidth> false </haloWidth>
+				<starIntensity> false </starIntensity>
+				<starOffset> false </starOffset>
+				<starTexture> false </starTexture>
+				<sunBrightness> false </sunBrightness>
+				<sunSize> false </sunSize>
+				<sunSpeed> false </sunSpeed>
+				<sunTexture1> false </sunTexture1>
+				<sunTexture2> false </sunTexture2>
+				<sunTintColor> false </sunTintColor>
+			</LensFlare>
+		</checks>
+	</preset>
+	<preset>
+		<name> LightPresets </name>
+		<checks>
+			<Fog> true
+				<deferred> true
+					<altitudeHigh> true </altitudeHigh>
+					<altitudeLow> true </altitudeLow>
+					<altitudeMid> true </altitudeMid>
+					<colorHigh> true </colorHigh>
+					<colorLow> true </colorLow>
+					<colorSunHigh> true </colorSunHigh>
+					<colorSunLow> true </colorSunLow>
+					<exponent> true </exponent>
+					<farHigh> true </farHigh>
+					<farLow> true </farLow>
+					<heightFog> true </heightFog>
+					<nearHigh> true </nearHigh>
+					<nearLow> true </nearLow>
+					<skyAltitudeHigh> true </skyAltitudeHigh>
+					<skyAltitudeLow> true </skyAltitudeLow>
+					<skyAltitudeMid> true </skyAltitudeMid>
+					<sunAngle> true </sunAngle>
+					<sunExponent> true </sunExponent>
+					<useEdgeFog> true </useEdgeFog>
+				</deferred>
+				<enable> true </enable>
+				<forward> true
+					<altitudeHigh> true </altitudeHigh>
+					<altitudeLow> true </altitudeLow>
+					<altitudeMid> true </altitudeMid>
+					<colorHigh> true </colorHigh>
+					<colorLow> true </colorLow>
+					<farHigh> true </farHigh>
+					<farLow> true </farLow>
+					<heightFog> true </heightFog>
+					<nearHigh> true </nearHigh>
+					<nearLow> true </nearLow>
+					<skyAltitudeHigh> true </skyAltitudeHigh>
+					<skyAltitudeLow> true </skyAltitudeLow>
+					<skyAltitudeMid> true </skyAltitudeMid>
+					<useEdgeFog> true </useEdgeFog>
+				</forward>
+				<innerBB> true </innerBB>
+				<outerBB> true </outerBB>
+				<version> true </version>
+			</Fog>
+			<day_night_cycle> true
+				<ambientkey> true
+					<colour> true </colour>
+					<time> true </time>
+				</ambientkey>
+				<ambientkey> true
+					<colour> true </colour>
+					<time> true </time>
+				</ambientkey>
+				<ambientkey> true
+					<colour> true </colour>
+					<time> true </time>
+				</ambientkey>
+				<ambientkey> true
+					<colour> true </colour>
+					<time> true </time>
+				</ambientkey>
+				<ambientkey> true
+					<colour> true </colour>
+					<time> true </time>
+				</ambientkey>
+				<deferred> true
+					<angle> true </angle>
+					<angleZ> true </angleZ>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+				</deferred>
+				<forward> true
+					<angle> true </angle>
+					<angleZ> true </angleZ>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+					<lightkey> true
+						<colour> true </colour>
+						<time> true </time>
+					</lightkey>
+				</forward>
+				<hourlength> true </hourlength>
+				<isMoon> true </isMoon>
+				<starttime> true </starttime>
+				<sunColor> true </sunColor>
+				<sunColorForward> true </sunColorForward>
+				<sunScale> true </sunScale>
+				<sunScaleForward> true </sunScaleForward>
+				<sunTexture> true </sunTexture>
+				<sunTextureForward> true </sunTextureForward>
+			</day_night_cycle>
+			<cloudsShadow> true
+				<angle> false </angle>
+				<enabled> true </enabled>
+				<projectionAltitude1> false </projectionAltitude1>
+				<projectionAltitude2> false </projectionAltitude2>
+				<shadowFactor> false </shadowFactor>
+				<speed> false </speed>
+				<texture> false </texture>
+				<tiling> false </tiling>
+			</cloudsShadow>
+			<HDR> true
+				<adaptationSpeed> true </adaptationSpeed>
+				<bloom> true
+					<brightThreshold> true </brightThreshold>
+					<enable> true </enable>
+					<factor> true </factor>
+					<mipWeight0> true </mipWeight0>
+					<mipWeight1> true </mipWeight1>
+					<mipWeight2> true </mipWeight2>
+					<mipWeight3> true </mipWeight3>
+					<mipWeight4> true </mipWeight4>
+					<tint> true </tint>
+				</bloom>
+				<colorCorrection> true
+					<map> true </map>
+				</colorCorrection>
+				<enable> true </enable>
+				<environment> true
+					<ambientLumMultiplier> true </ambientLumMultiplier>
+					<CIESkyType> true </CIESkyType>
+					<enableLDR2HDRSky> true </enableLDR2HDRSky>
+					<skyLumMultiplier> true </skyLumMultiplier>
+					<skyTonemapHDRbias> true </skyTonemapHDRbias>
+					<skyTonemapHDRmultiplier> true </skyTonemapHDRmultiplier>
+					<skyTonemapLDRmultiplier> true </skyTonemapLDRmultiplier>
+					<sunlightLumMultiplier> true </sunlightLumMultiplier>
+					<sunLumMultiplier> true </sunLumMultiplier>
+				</environment>
+				<gammaCorrection> true
+					<enabled> true </enabled>
+				</gammaCorrection>
+				<tonemappings> true
+					<active> true </active>
+					<tonemapping> true
+						<blackPoint> true </blackPoint>
+						<eyeDarkLimit> true </eyeDarkLimit>
+						<eyeLightLimit> true </eyeLightLimit>
+						<middleGray> true </middleGray>
+						<name> true </name>
+						<whitePoint> true </whitePoint>
+					</tonemapping>
+					<tonemapping> true
+						<blackPoint> true </blackPoint>
+						<eyeDarkLimit> true </eyeDarkLimit>
+						<eyeLightLimit> true </eyeLightLimit>
+						<middleGray> true </middleGray>
+						<name> true </name>
+						<whitePoint> true </whitePoint>
+					</tonemapping>
+					<tonemapping> true
+						<blackPoint> true </blackPoint>
+						<eyeDarkLimit> true </eyeDarkLimit>
+						<eyeLightLimit> true </eyeLightLimit>
+						<middleGray> true </middleGray>
+						<name> true </name>
+						<whitePoint> true </whitePoint>
+					</tonemapping>
+				</tonemappings>
+				<version> true </version>
+			</HDR>
+			<GodRays> true
+				<attenuationPower> true </attenuationPower>
+				<color> true </color>
+				<decay> true </decay>
+				<enable> true </enable>
+			</GodRays>
+			<SSAO> false
+				<amplify> false </amplify>
+				<enable> false </enable>
+				<fadeNear> false </fadeNear>
+				<influences> false
+					<localLights> false </localLights>
+					<objects> false </objects>
+					<speedtree> false </speedtree>
+					<terrain> false </terrain>
+				</influences>
+				<radius> false </radius>
+				<roDistanceFar> false </roDistanceFar>
+				<roDistanceNear> false </roDistanceNear>
+				<roGlossScale> false </roGlossScale>
+				<roOccluderThickness> false </roOccluderThickness>
+				<terrainAOGammaCorrection> false </terrainAOGammaCorrection>
+			</SSAO>
+			<SSShadows> false
+				<amplify> false </amplify>
+				<distanceFar> false </distanceFar>
+				<distanceNear> false </distanceNear>
+				<enable> false </enable>
+				<noise> false </noise>
+			</SSShadows>
+			<overlayMaterial> false
+				<applyOnVehicles> false </applyOnVehicles>
+				<enable> false </enable>
+			</overlayMaterial>
+			<LensFlare> true
+				<chromDistortion> false </chromDistortion>
+				<colorTexture> false </colorTexture>
+				<colorUVScale> false </colorUVScale>
+				<dirtOffset> false </dirtOffset>
+				<dirtTexture> false </dirtTexture>
+				<dirtWeight> false </dirtWeight>
+				<enable> true </enable>
+				<ghostDispersion> false </ghostDispersion>
+				<haloFade> false </haloFade>
+				<haloWidth> false </haloWidth>
+				<starIntensity> false </starIntensity>
+				<starOffset> false </starOffset>
+				<starTexture> false </starTexture>
+				<sunBrightness> false </sunBrightness>
+				<sunSize> false </sunSize>
+				<sunSpeed> false </sunSpeed>
+				<sunTexture1> false </sunTexture1>
+				<sunTexture2> false </sunTexture2>
+				<sunTintColor> false </sunTintColor>
+			</LensFlare>
+		</checks>
+	</preset>
+</preset_checks.xml>

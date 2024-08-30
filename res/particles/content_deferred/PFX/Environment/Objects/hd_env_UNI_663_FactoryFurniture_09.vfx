@@ -1,0 +1,2803 @@
+<root>
+	<dw_mode_lod_effect>
+		<dw_mode_lodeffect_mutable> 1 </dw_mode_lodeffect_mutable>
+	</dw_mode_lod_effect>
+	<lod>
+		<s_effect_name> Lod_0_60 </s_effect_name>
+		<i_lod_mask>
+			<ps_particle_lod_default> 1 </ps_particle_lod_default>
+			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
+			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
+		</i_lod_mask>
+		<f_near_clip> 0.000000 </f_near_clip>
+		<f_far_clip> 60.000000 </f_far_clip>
+		<f_Skip_time> 0.000000 </f_Skip_time>
+		<buffer/>
+		<dw_mode>
+			<ps_element_off> 0 </ps_element_off>
+		</dw_mode>
+		<emitter>
+			<s_emitter_name> dust_rain </s_emitter_name>
+			<type> Sprites </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Hard_small </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 1 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 1 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 1.000000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.500000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.500000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.500000 </f_Z_dim_volume>
+			<f_strt_angle_min> 1.399998 </f_strt_angle_min>
+			<f_strt_angle_max> 1.649999 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 0.700000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.140000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 2.803738 </value>
+				<time> 0.125628 </time>
+				<value> 5.420561 </value>
+				<time> 0.291457 </time>
+				<value> 6.915888 </value>
+				<time> 1.000000 </time>
+				<value> 9.766356 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key/>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 5.048984 </value>
+				<time> 0.083922 </time>
+				<value> 1.712651 </value>
+				<time> 0.137809 </time>
+				<value> 0.822962 </value>
+				<time> 0.206714 </time>
+				<value> 0.600540 </value>
+				<time> 1.000000 </time>
+				<value> 0.289149 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.287958 </time>
+				<value> 0.444444 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 153.000000 146.000000 138.000000 0.000000 </value_RGBA>
+				<time> 0.068750 </time>
+				<value_RGBA> 153.000000 146.000000 138.000000 1.000000 </value_RGBA>
+				<time> 0.753750 </time>
+				<value_RGBA> 153.000000 146.000000 138.000000 0.620000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 153.000000 146.000000 138.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.054688 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.466667 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -4.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 2.000000 1.000000 2.000000 </fa_epicenter_box>
+			<Ex_Filename/>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 1021 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 1021 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.500000 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 1 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.600000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 2.000000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.400000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.800000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 1.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 1.400000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.125000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.937500 </particle.UV_set.up>
+			<particle.UV_set.right> 0.187500 </particle.UV_set.right>
+			<particle.UV_set.down> 0.906000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 2 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 1 </particle.i_frame_div_V>
+			<particle.f_fps> 24.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.200000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 0.400000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> 0.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 0.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.200000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.700000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.100000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.700000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.200000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_planks_01 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.540000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.600000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 1.000000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 3.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_01.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.680000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 3.200000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 4.800000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_planks_02 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.800000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 5.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_02.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.400000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.406000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.050000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 4.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 5.600000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_cracks_small_01 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.800000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.800000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.100000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 5.001990 </value>
+				<time> 0.026502 </time>
+				<value> 2.664000 </value>
+				<time> 0.059187 </time>
+				<value> 1.918830 </value>
+				<time> 0.129859 </time>
+				<value> 1.555550 </value>
+				<time> 1.000000 </time>
+				<value> 0.996673 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_03.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.200000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.800000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.600000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 2.800000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 4.000000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -7.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 7.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> -15.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 15.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_cracks_small_02 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.800000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.800000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.100000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 5.001990 </value>
+				<time> 0.026502 </time>
+				<value> 2.664000 </value>
+				<time> 0.059187 </time>
+				<value> 1.918830 </value>
+				<time> 0.129859 </time>
+				<value> 1.555550 </value>
+				<time> 1.000000 </time>
+				<value> 0.996673 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 210.000000 186.000000 156.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_04.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.200000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.800000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.600000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 3.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 5.000000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -7.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 7.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> -15.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 15.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> rust </s_emitter_name>
+			<type> Sprites </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Hard_small </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 1 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.600000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 2 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 6.283185 </f_strt_angle_max>
+			<f_strt_angle_speed_min> -0.436332 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.349066 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.200000 </value>
+				<time> 0.016000 </time>
+				<value> 1.002000 </value>
+				<time> 0.055000 </time>
+				<value> 2.004000 </value>
+				<time> 1.000000 </time>
+				<value> 2.988000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.087000 </time>
+				<value> 1.121000 </value>
+				<time> 1.000000 </time>
+				<value> 0.701000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 98.000000 85.000000 73.000000 0.000000 </value_RGBA>
+				<time> 0.200472 </time>
+				<value_RGBA> 98.000000 85.000000 73.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 98.000000 85.000000 73.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename/>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> true </QUALITY_MIN>
+			<QUALITY_LOW> true </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.000000 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 1 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 0.800000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.340000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.480000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 2.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 5.000000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.125000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.031250 </particle.UV_set.right>
+			<particle.UV_set.down> 0.093750 </particle.UV_set.down>
+			<particle.i_frame_div_U> 1 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 1 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000074 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000046 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 3.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> -9.981363 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 3.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.200000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.700000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.100000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.700000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.200000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> Dust_Down </s_emitter_name>
+			<type> Sprites </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Dust_light </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 1 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.600000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 4.000000 </f_rate>
+			<vt.ui_volume_type> 2 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.600000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.500000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 6.283185 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.050000 </f_wind_weight>
+			<f_wind_weight_max> 0.200000 </f_wind_weight_max>
+			<f_part_tangenta> 0.000000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.032663 </time>
+				<value> 6.028038 </value>
+				<time> 0.055276 </time>
+				<value> 8.060748 </value>
+				<time> 0.109297 </time>
+				<value> 9.532710 </value>
+				<time> 1.000000 </time>
+				<value> 14.649530 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key/>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 3.364486 </value>
+				<time> 0.079146 </time>
+				<value> 1.261682 </value>
+				<time> 0.198492 </time>
+				<value> 0.280374 </value>
+				<time> 1.000000 </time>
+				<value> 0.500000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.287958 </time>
+				<value> 0.444444 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key/>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+				<time> 0.101415 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.450980 </value_RGBA>
+				<time> 0.794811 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.250980 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.054688 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.466667 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 4.000000 </fa_epicenter_box>
+			<Ex_Filename/>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> true </QUALITY_MIN>
+			<QUALITY_LOW> true </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<m_supportedPassMask> 1021 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 1021 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.500000 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 1 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.600000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 2.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.340000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.480000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 0.700000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 1.500000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.500000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.750000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.750000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.500000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 8 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 8 </particle.i_frame_div_V>
+			<particle.f_fps> 14.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.200000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 0.400000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> 0.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 0.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.300000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.800000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.100000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.600000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 1.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 2.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 1.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 50.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.100000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+	</lod>
+	<lod>
+		<s_effect_name> Lod_60_120 </s_effect_name>
+		<i_lod_mask>
+			<ps_particle_lod_default> 1 </ps_particle_lod_default>
+			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
+			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
+		</i_lod_mask>
+		<f_near_clip> 60.000000 </f_near_clip>
+		<f_far_clip> 120.000000 </f_far_clip>
+		<f_Skip_time> 0.000000 </f_Skip_time>
+		<buffer/>
+		<dw_mode>
+			<ps_element_off> 0 </ps_element_off>
+		</dw_mode>
+		<emitter>
+			<s_emitter_name> 3d_planks_01 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.540000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.600000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 1.000000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 3.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_01.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.680000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 3.200000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 4.800000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_planks_02 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.800000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 3.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_02.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.400000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.406000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.050000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 4.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 5.600000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> Dust_Down </s_emitter_name>
+			<type> Sprites </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Dust_light </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 1 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.500000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 2 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.600000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 6.283185 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.050000 </f_wind_weight>
+			<f_wind_weight_max> 0.200000 </f_wind_weight_max>
+			<f_part_tangenta> 0.000000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.032663 </time>
+				<value> 6.028038 </value>
+				<time> 0.055276 </time>
+				<value> 8.060748 </value>
+				<time> 0.109297 </time>
+				<value> 9.532710 </value>
+				<time> 1.000000 </time>
+				<value> 14.649530 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key/>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 3.364486 </value>
+				<time> 0.079146 </time>
+				<value> 1.261682 </value>
+				<time> 0.198492 </time>
+				<value> 0.280374 </value>
+				<time> 1.000000 </time>
+				<value> 0.500000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.287958 </time>
+				<value> 0.444444 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key/>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+				<time> 0.101415 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.450980 </value_RGBA>
+				<time> 0.794811 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.250980 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.054688 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.466667 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 4.000000 </fa_epicenter_box>
+			<Ex_Filename/>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> true </QUALITY_MIN>
+			<QUALITY_LOW> true </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<m_supportedPassMask> 1 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 1 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.500000 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 1 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.600000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 2.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.340000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.480000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 0.700000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 1.500000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.500000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.750000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.750000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.500000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 8 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 8 </particle.i_frame_div_V>
+			<particle.f_fps> 14.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.200000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 0.400000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> 0.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 0.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.300000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.800000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.100000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.600000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 1.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 2.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 1.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 50.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.100000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+	</lod>
+	<lod>
+		<s_effect_name> Lod_120_500 </s_effect_name>
+		<i_lod_mask>
+			<ps_particle_lod_default> 1 </ps_particle_lod_default>
+			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
+			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
+		</i_lod_mask>
+		<f_near_clip> 120.000000 </f_near_clip>
+		<f_far_clip> 500.000000 </f_far_clip>
+		<f_Skip_time> 0.000000 </f_Skip_time>
+		<buffer/>
+		<dw_mode>
+			<ps_element_off> 0 </ps_element_off>
+		</dw_mode>
+		<emitter>
+			<s_emitter_name> 3d_planks_01 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.540000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 1.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.600000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 1.000000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 208.000000 205.000000 199.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -3.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 3.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_01.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.680000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 3.200000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 4.800000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> 3d_planks_02 </s_emitter_name>
+			<type> Mesh </type>
+			<disabled_in_havok> true </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Mesh_particle </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 0 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 0 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 1 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.800000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 1 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.400000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.600000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 0.000000 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
+			<f_part_tangenta> 0.250000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.071000 </time>
+				<value> 2.222000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_gravity_key>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 4.311000 </value>
+				<time> 0.026000 </time>
+				<value> 2.222000 </value>
+				<time> 0.074000 </time>
+				<value> 0.667000 </value>
+				<time> 1.000000 </time>
+				<value> 0.356000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.644000 </value>
+				<time> 0.111000 </time>
+				<value> 7.956000 </value>
+				<time> 0.285000 </time>
+				<value> 0.250000 </value>
+				<time> 0.447000 </time>
+				<value> 8.000000 </value>
+				<time> 0.671000 </time>
+				<value> 1.022000 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key>
+				<time> 0.000000 </time>
+				<value> 1.000000 </value>
+				<time> 1.000000 </time>
+				<value> 1.000000 </value>
+			</tl_angle_speed_key>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 0.793000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 1.000000 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 166.000000 161.000000 158.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.055000 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.467000 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
+			<Ex_Filename> particles/mesh_particles/wood_board_02.visual </Ex_Filename>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> false </QUALITY_MIN>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 28 </m_supportedQualityMask>
+			<m_supportedPassMask> 0 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 0 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 0.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 3.142000 3.142000 3.142000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.012500 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 0 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 1.400000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.406000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.050000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 4.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 5.600000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.625000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.062000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.562000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 4 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 4 </particle.i_frame_div_V>
+			<particle.f_fps> 18.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.800000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 1.000000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> -1.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 1.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> -3.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 5.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 20.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> none </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \shaders\wg_particles\pbs_mesh_particles.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.000000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.000000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+		<emitter>
+			<s_emitter_name> Dust_Down </s_emitter_name>
+			<type> Sprites </type>
+			<disabled_in_havok> false </disabled_in_havok>
+			<reserved_buffer/>
+			<reserved> #Dust_light </reserved>
+			<dw_mode>
+				<ps_emitter_mode_onetime_emission> 1 </ps_emitter_mode_onetime_emission>
+				<ps_element_dead> 0 </ps_element_dead>
+				<ps_element_particle> 0 </ps_element_particle>
+				<ps_element_emitter> 0 </ps_element_emitter>
+				<ps_element_type_reserved01> 0 </ps_element_type_reserved01>
+				<ps_element_found_external_data> 0 </ps_element_found_external_data>
+				<ps_element_not_active> 0 </ps_element_not_active>
+				<ps_element_inconsumable> 0 </ps_element_inconsumable>
+				<ps_element_no_gravity> 0 </ps_element_no_gravity>
+				<ps_element_destructed> 1 </ps_element_destructed>
+				<ps_element_not_used> 0 </ps_element_not_used>
+				<ps_element_use_size_timeline> 1 </ps_element_use_size_timeline>
+				<ps_element_use_color_timeline> 1 </ps_element_use_color_timeline>
+				<ps_emitter_use_rate_timeline> 0 </ps_emitter_use_rate_timeline>
+				<ps_emitter_use_gravity_timeline> 0 </ps_emitter_use_gravity_timeline>
+				<ps_emitter_use_tangent_speed_timeline> 0 </ps_emitter_use_tangent_speed_timeline>
+				<ps_emitter_use_angle_speed_timeline> 0 </ps_emitter_use_angle_speed_timeline>
+				<ps_emitter_use_speed_timeline> 1 </ps_emitter_use_speed_timeline>
+				<ps_emitter_use_color_op_timeline> 0 </ps_emitter_use_color_op_timeline>
+				<ps_element_use_timeline_9> 0 </ps_element_use_timeline_9>
+				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
+				<ps_element_not_render> 0 </ps_element_not_render>
+				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
+				<ps_element_off> 0 </ps_element_off>
+				<ps_emitter_off> 0 </ps_emitter_off>
+				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
+				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
+				<ps_element_world_offset> 0 </ps_element_world_offset>
+				<ps_element_y_emission> 0 </ps_element_y_emission>
+				<ps_element_x_emission> 0 </ps_element_x_emission>
+				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
+			</dw_mode>
+			<dw_ext_mode>
+				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
+				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
+				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
+				<ps_emitter_ext_mode_model_hmap_lim> 0 </ps_emitter_ext_mode_model_hmap_lim>
+				<ps_emitter_ext_mode_havok_disable> 0 </ps_emitter_ext_mode_havok_disable>
+				<ps_emitter_ext_mode_length_depends_on_size> 0 </ps_emitter_ext_mode_length_depends_on_size>
+				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
+			</dw_ext_mode>
+			<i_RT_shader_num> -1 </i_RT_shader_num>
+			<emitter.f_life_min> 0.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 0.000000 </emitter.f_life_max>
+			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
+			<emitter.fa_start_pos> 0.000000 0.500000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 2.000000 </f_rate>
+			<vt.ui_volume_type> 2 </vt.ui_volume_type>
+			<f_X_dim_volume> 0.500000 </f_X_dim_volume>
+			<f_Y_dim_volume> 0.400000 </f_Y_dim_volume>
+			<f_Z_dim_volume> 0.500000 </f_Z_dim_volume>
+			<f_strt_angle_min> 0.000000 </f_strt_angle_min>
+			<f_strt_angle_max> 6.283185 </f_strt_angle_max>
+			<f_strt_angle_speed_min> 0.000000 </f_strt_angle_speed_min>
+			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
+			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
+			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_wind_weight> 0.050000 </f_wind_weight>
+			<f_wind_weight_max> 0.200000 </f_wind_weight_max>
+			<f_part_tangenta> 0.000000 </f_part_tangenta>
+			<f_Espeed_time> 0.000000 </f_Espeed_time>
+			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
+			<f_minDistanceBeforeEmission> 0.000000 </f_minDistanceBeforeEmission>
+			<m_sortType> 0 </m_sortType>
+			<tl_size_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.032663 </time>
+				<value> 6.028038 </value>
+				<time> 0.055276 </time>
+				<value> 8.060748 </value>
+				<time> 0.109297 </time>
+				<value> 9.532710 </value>
+				<time> 1.000000 </time>
+				<value> 14.649530 </value>
+			</tl_size_key>
+			<tl_rate_key/>
+			<tl_gravity_key/>
+			<tl_speed_key>
+				<time> 0.000000 </time>
+				<value> 3.364486 </value>
+				<time> 0.079146 </time>
+				<value> 1.261682 </value>
+				<time> 0.198492 </time>
+				<value> 0.280374 </value>
+				<time> 1.000000 </time>
+				<value> 0.500000 </value>
+			</tl_speed_key>
+			<tl_tangent_speed_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.287958 </time>
+				<value> 0.444444 </value>
+				<time> 1.000000 </time>
+				<value> 0.000000 </value>
+			</tl_tangent_speed_key>
+			<tl_angle_speed_key/>
+			<tl_Color_key>
+				<time> 0.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+				<time> 0.101415 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.450980 </value_RGBA>
+				<time> 0.794811 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.250980 </value_RGBA>
+				<time> 1.000000 </time>
+				<value_RGBA> 70.000000 67.000000 62.000000 0.000000 </value_RGBA>
+			</tl_Color_key>
+			<tl_color_op_key>
+				<time> 0.000000 </time>
+				<value> 0.000000 </value>
+				<time> 0.054688 </time>
+				<value> 0.000000 </value>
+				<time> 1.000000 </time>
+				<value> 3.466667 </value>
+			</tl_color_op_key>
+			<coordinate_system> World </coordinate_system>
+			<fa_epicenter_pos> 0.000000 -1.000000 0.000000 </fa_epicenter_pos>
+			<fa_epicenter_box> 0.000000 0.000000 4.000000 </fa_epicenter_box>
+			<Ex_Filename/>
+			<f_solidThreshold> 0.000000 </f_solidThreshold>
+			<QUALITY_MIN> true </QUALITY_MIN>
+			<QUALITY_LOW> true </QUALITY_LOW>
+			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
+			<QUALITY_HIGH> true </QUALITY_HIGH>
+			<QUALITY_ULTRA> true </QUALITY_ULTRA>
+			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<m_supportedPassMask> 1 </m_supportedPassMask>
+			<m_supportedSniperPassMask> 1 </m_supportedSniperPassMask>
+			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_dir_length_max> 0.000000 </f_dir_length_max>
+			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
+			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
+			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
+			<particle_ex.f_soft_factor> 0.500000 </particle_ex.f_soft_factor>
+			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle.dw_mode>
+				<ps_particle_use_frames> 1 </ps_particle_use_frames>
+				<ps_particle_random_frame> 0 </ps_particle_random_frame>
+				<ps_particle_local> 0 </ps_particle_local>
+				<ps_particle_horizont> 0 </ps_particle_horizont>
+				<ps_particle_soft> 0 </ps_particle_soft>
+				<ps_particle_water_level> 0 </ps_particle_water_level>
+				<ps_particle_stop_on_last_frame> 0 </ps_particle_stop_on_last_frame>
+				<ps_particle_do_not_blend> 0 </ps_particle_do_not_blend>
+				<ps_particle_use_direction_for_angle> 0 </ps_particle_use_direction_for_angle>
+				<ps_element_directional> 0 </ps_element_directional>
+				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
+			</particle.dw_mode>
+			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
+			<particle.base.f_life_min> 1.600000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 2.200000 </particle.base.f_life_max>
+			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
+			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
+			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
+			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
+			<particle.f_particle_size> 0.340000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.480000 </particle.f_particle_size_max>
+			<particle.f_part_speed_module> 0.700000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> 1.500000 </particle.f_part_speed_module_max>
+			<particle.UV_set.left> 0.500000 </particle.UV_set.left>
+			<particle.UV_set.up> 0.750000 </particle.UV_set.up>
+			<particle.UV_set.right> 0.750000 </particle.UV_set.right>
+			<particle.UV_set.down> 0.500000 </particle.UV_set.down>
+			<particle.i_frame_div_U> 8 </particle.i_frame_div_U>
+			<particle.i_frame_div_V> 8 </particle.i_frame_div_V>
+			<particle.f_fps> 14.000000 </particle.f_fps>
+			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
+			<particle.f_K_gravity> 0.200000 </particle.f_K_gravity>
+			<particle.f_K_gravity_max> 0.400000 </particle.f_K_gravity_max>
+			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
+			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
+			<particle.f_PITCH_min> 0.000000 </particle.f_PITCH_min>
+			<particle.f_PITCH_max> 0.000000 </particle.f_PITCH_max>
+			<particle.f_ROLL_min> 0.000000 </particle.f_ROLL_min>
+			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
+			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
+			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
+			<lighting_params.f_diffuse_light_multiplier> 0.300000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 0.800000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.100000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 0.600000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 1.000000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 2.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 1.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 50.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
+			<lighting_params.f_normal_generation_offset> 0.100000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+		</emitter>
+	</lod>
+</root>

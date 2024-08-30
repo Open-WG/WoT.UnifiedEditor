@@ -1,0 +1,2213 @@
+<root>
+	<!--nodes decriptors -->
+	<nodes>
+		<node name="HP_Wheel_L_01_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_Wheel_L_01_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_Wheel_L_02_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_Wheel_L_02_Rear" model="chassis" waterY="True" drawOrder="30"/>
+		<node name="HP_Wheel_L_03_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_Wheel_L_03_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_Wheel_L_04_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_Wheel_L_04_Rear" model="chassis" waterY="True" drawOrder="30"/>
+
+		<node name="HP_WheelUp_L_01_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_WheelUp_L_01_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_WheelUp_L_02_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_WheelUp_L_02_Rear" model="chassis" waterY="True" drawOrder="30"/>
+		<node name="HP_WheelUp_L_03_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_WheelUp_L_03_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_WheelUp_L_04_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_WheelUp_L_04_Rear" model="chassis" waterY="True" drawOrder="30"/>
+
+		<node name="HP_Wheel_R_01_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_Wheel_R_01_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_Wheel_R_02_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_Wheel_R_02_Rear" model="chassis" waterY="True" drawOrder="30"/>
+		<node name="HP_Wheel_R_03_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_Wheel_R_03_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_Wheel_R_04_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_Wheel_R_04_Rear" model="chassis" waterY="True" drawOrder="30"/>
+
+		<node name="HP_WheelUp_R_01_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_WheelUp_R_01_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_WheelUp_R_02_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_WheelUp_R_02_Rear" model="chassis" waterY="True" drawOrder="30"/>
+		<node name="HP_WheelUp_R_03_Front" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_WheelUp_R_03_Rear" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_WheelUp_R_04_Front" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_WheelUp_R_04_Rear" model="chassis" waterY="True" drawOrder="30"/>
+
+		<node name="HP_Track_LFront" model="chassis" waterY="True" drawOrder="-30"/>
+		<node name="HP_Track_RFront" model="chassis" waterY="True" drawOrder="40"/>
+		<node name="HP_Track_LRear" model="chassis" waterY="True" drawOrder="-40"/>
+		<node name="HP_Track_RRear" model="chassis" waterY="True" drawOrder="30"/>
+		<node name="HP_TrackUp_LFront" model="hull" waterY="False" drawOrder="-10"/>
+		<node name="HP_TrackUp_RFront" model="hull" waterY="False" drawOrder="20"/>
+		<node name="HP_TrackUp_LRear" model="hull" waterY="False" drawOrder="-20"/>
+		<node name="HP_TrackUp_RRear" model="hull" waterY="False" drawOrder="10"/>
+		<node name="DM_Mid_Trail" model="hull" waterY="False" drawOrder="0"/>
+		<node name="gun" model="hull" waterY="False" drawOrder="0"/>
+		<node name="HP_gui" model="hull" waterY="False" drawOrder="0"/>
+		<node name="chassis" model="chassis" waterY="False" drawOrder="0"/>
+	</nodes>
+	<effectLists>
+		<strv_change_hull_ground>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_ground.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_ground>
+		<strv_change_hull_sand>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_sand.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_sand>
+		<strv_change_hull_snow>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_snow.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_snow>
+		<strv_change_hull_stone>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_stone.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_stone>
+		<strv_change_hull_water>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_water.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_water>
+	</effectLists>
+	<constants>
+		<constantsGroup name="small">
+			<constant name="_0" value="small"/>
+			<constant name="_fileDescriptor" value="small"/>
+			<!--Drift effects constants; 
+			hullAngle1 - start effect; 
+			hullAngle3 - max effect; 
+			hullAngle6 - stop effect; 
+			Hull Angle to Velocity Vector in Radians-->
+			<constant name="_hullAngle1" value="0.2"/>
+			<constant name="_hullAngle2" value="0.8"/>
+			<constant name="_hullAngle3" value="1.3"/>
+			<constant name="_hullAngle4" value="1.9"/>
+			<constant name="_hullAngle5" value="2.4"/>
+			<constant name="_hullAngle6" value="2.9"/>
+			<!--Turn effects constants; 
+			_rotSpeedMed - start speed for medium effect state; 
+			_rotSpeedMax - start speed for medium effect state; 
+			Hull turning speed in Radians / sec-->
+			<constant name="_rotSpeedMaxCcw" value="-0.7"/>
+			<constant name="_rotSpeedMedCcw" value="-0.4"/>
+			<constant name="_rotSpeedMedCw" value="0.4"/>
+			<constant name="_rotSpeedMaxCw" value="0.7"/>
+			<!--Slip effects constants;
+			_###DustStartSpeed - tank speed to start movement dust effect;
+			_###SlipMinStart - slip speed to start minimum slip effect;
+			_###SlipMedStart - slip speed to start medium slip effect;
+			_###SlipMaxStart - slip speed to start maximum slip effect;
+			Speed for movement and slip in Meters / sec-->
+			<constant name="_sandDustStartSpeedOp" value="-8"/>
+			<constant name="_sandDustStartSpeedPos" value="8"/>
+			<constant name="_sandSlipMinStart" value="0.5"/>
+			<constant name="_sandSlipMedStart" value="1"/>
+			<constant name="_sandSlipMaxStart" value="3"/>
+			<constant name="_groundDustStartSpeedOp" value="-12"/>
+			<constant name="_groundDustStartSpeedPos" value="12"/>
+			<constant name="_groundSlipMinStart" value="0.6"/>
+			<constant name="_groundSlipMedStart" value="1.5"/>
+			<constant name="_groundSlipMaxStart" value="3.5"/>
+			<constant name="_snowDustStartSpeedOp" value="-10"/>
+			<constant name="_snowDustStartSpeedPos" value="10"/>
+			<constant name="_snowSlipMinStart" value="0.4"/>
+			<constant name="_snowSlipMedStart" value="2"/>
+			<constant name="_snowSlipMaxStart" value="3.5"/>
+			<constant name="_stoneDustStartSpeedOp" value="-16"/>
+			<constant name="_stoneDustStartSpeedPos" value="16"/>
+			<constant name="_stoneSlipMinStart" value="1"/>
+			<constant name="_stoneSlipMedStart" value="3"/>
+			<constant name="_stoneSlipMaxStart" value="6"/>
+		</constantsGroup>
+		<constantsGroup name="medium">
+			<constant name="_0" value="medium"/>
+			<constant name="_fileDescriptor" value="medium"/>
+			<!--Drift effects constants; 
+			hullAngle1 - start effect; 
+			hullAngle3 - max effect; 
+			hullAngle6 - stop effect; 
+			Hull Angle to Velocity Vector in Radians-->
+			<constant name="_hullAngle1" value="0.2"/>
+			<constant name="_hullAngle2" value="0.8"/>
+			<constant name="_hullAngle3" value="1.3"/>
+			<constant name="_hullAngle4" value="1.9"/>
+			<constant name="_hullAngle5" value="2.4"/>
+			<constant name="_hullAngle6" value="2.9"/>
+			<!--Turn effects constants; 
+			_rotSpeedMed - start speed for medium effect state; 
+			_rotSpeedMax - start speed for medium effect state; 
+			Hull turning speed in Radians / sec-->
+			<constant name="_rotSpeedMaxCcw" value="-0.7"/>
+			<constant name="_rotSpeedMedCcw" value="-0.4"/>
+			<constant name="_rotSpeedMedCw" value="0.4"/>
+			<constant name="_rotSpeedMaxCw" value="0.7"/>
+			<!--Slip effects constants;
+			_###DustStartSpeed - tank speed to start movement dust effect;
+			_###SlipMinStart - slip speed to start minimum slip effect;
+			_###SlipMedStart - slip speed to start medium slip effect;
+			_###SlipMaxStart - slip speed to start maximum slip effect;
+			Speed for movement and slip in Meters / sec-->
+			<constant name="_sandDustStartSpeedOp" value="-6"/>
+			<constant name="_sandDustStartSpeedPos" value="6"/>
+			<constant name="_sandSlipMinStart" value="0.5"/>
+			<constant name="_sandSlipMedStart" value="1"/>
+			<constant name="_sandSlipMaxStart" value="3"/>
+			<constant name="_groundDustStartSpeedOp" value="-9"/>
+			<constant name="_groundDustStartSpeedPos" value="9"/>
+			<constant name="_groundSlipMinStart" value="0.6"/>
+			<constant name="_groundSlipMedStart" value="1.5"/>
+			<constant name="_groundSlipMaxStart" value="3.5"/>
+			<constant name="_snowDustStartSpeedOp" value="-7.5"/>
+			<constant name="_snowDustStartSpeedPos" value="7.5"/>
+			<constant name="_snowSlipMinStart" value="0.4"/>
+			<constant name="_snowSlipMedStart" value="2"/>
+			<constant name="_snowSlipMaxStart" value="3.5"/>
+			<constant name="_stoneDustStartSpeedOp" value="-12"/>
+			<constant name="_stoneDustStartSpeedPos" value="12"/>
+			<constant name="_stoneSlipMinStart" value="1"/>
+			<constant name="_stoneSlipMedStart" value="3"/>
+			<constant name="_stoneSlipMaxStart" value="6"/>
+		</constantsGroup>
+		<constantsGroup name="large">
+			<constant name="_0" value="large"/>
+			<constant name="_fileDescriptor" value="large"/>
+			<!--Drift effects constants; 
+			hullAngle1 - start effect; 
+			hullAngle3 - max effect; 
+			hullAngle6 - stop effect; 
+			Hull Angle to Velocity Vector in Radians-->
+			<constant name="_hullAngle1" value="0.2"/>
+			<constant name="_hullAngle2" value="0.8"/>
+			<constant name="_hullAngle3" value="1.3"/>
+			<constant name="_hullAngle4" value="1.9"/>
+			<constant name="_hullAngle5" value="2.4"/>
+			<constant name="_hullAngle6" value="2.9"/>
+			<!--Turn effects constants; 
+			_rotSpeedMed - start speed for medium effect state; 
+			_rotSpeedMax - start speed for medium effect state; 
+			Hull turning speed in Radians / sec-->
+			<constant name="_rotSpeedMaxCcw" value="-0.7"/>
+			<constant name="_rotSpeedMedCcw" value="-0.4"/>
+			<constant name="_rotSpeedMedCw" value="0.4"/>
+			<constant name="_rotSpeedMaxCw" value="0.7"/>
+			<!--Slip effects constants;
+			_###DustStartSpeed - tank speed to start movement dust effect;
+			_###SlipMinStart - slip speed to start minimum slip effect;
+			_###SlipMedStart - slip speed to start medium slip effect;
+			_###SlipMaxStart - slip speed to start maximum slip effect;
+			Speed for movement and slip in Meters / sec-->
+			<constant name="_sandDustStartSpeedOp" value="-5"/>
+			<constant name="_sandDustStartSpeedPos" value="5"/>
+			<constant name="_sandSlipMinStart" value="0.5"/>
+			<constant name="_sandSlipMedStart" value="1"/>
+			<constant name="_sandSlipMaxStart" value="3"/>
+			<constant name="_groundDustStartSpeedOp" value="-7.5"/>
+			<constant name="_groundDustStartSpeedPos" value="7.5"/>
+			<constant name="_groundSlipMinStart" value="0.6"/>
+			<constant name="_groundSlipMedStart" value="1.5"/>
+			<constant name="_groundSlipMaxStart" value="3.5"/>
+			<constant name="_snowDustStartSpeedOp" value="-6"/>
+			<constant name="_snowDustStartSpeedPos" value="6"/>
+			<constant name="_snowSlipMinStart" value="0.4"/>
+			<constant name="_snowSlipMedStart" value="2"/>
+			<constant name="_snowSlipMaxStart" value="3.5"/>
+			<constant name="_stoneDustStartSpeedOp" value="-10"/>
+			<constant name="_stoneDustStartSpeedPos" value="10"/>
+			<constant name="_stoneSlipMinStart" value="1"/>
+			<constant name="_stoneSlipMedStart" value="3"/>
+			<constant name="_stoneSlipMaxStart" value="6"/>
+		</constantsGroup>
+	</constants>
+
+	<!--nodes decriptors -->
+	<templates>
+		<!--Drift effects -->
+		<template name="Drift">
+			<selector type="discrete" variable="_direction">
+				<selector key="_const1" type="matkind" variable="_matkind">
+					<!--sand -->
+					<selector key="sand" type="range" variable="_hullAngle">
+						<selector key="_hullAngle1" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_hullAngle6" type="union">
+						</selector>
+					</selector>
+					<!--ground -->
+					<selector key="ground" type="range" variable="_hullAngle">
+						<selector key="_hullAngle1" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_hullAngle6" type="union">
+						</selector>
+					</selector>
+					<!--stone -->
+					<selector key="stone" type="range" variable="_hullAngle">
+						<selector key="_hullAngle1" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_hullAngle6" type="union">
+						</selector>
+					</selector>
+					<!--snow -->
+					<selector key="snow" type="range" variable="_hullAngle">
+						<selector key="_hullAngle1" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_hullAngle6" type="union">
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<!-- Turn effects -->
+		<template name="Turn">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="-2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/sand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="-2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/ground/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="-2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/stone/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="-2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/snow/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+
+			</selector>
+		</template>
+		<!--Slip effects -->
+		<!-- speed = m/sec -->
+		<template name="SlipL">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd1.eff" effectHP="_TrackFront"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd2.eff" effectHP="_TrackFront"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd3.eff" effectHP="_TrackFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="SlipR">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd1.eff" effectHP="_TrackFront"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd2.eff" effectHP="_TrackFront"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/slip_{0}_trackfront_spd3.eff" effectHP="_TrackFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="TrailR">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>1
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--water -->
+				<selector key="water" type="discrete" variable="_direction">
+					<selector key="_const1" type="discrete" variable="_isUnderWater">						
+						<selector key="0" type="range" variable="_speed">
+							<selector key="-500" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-7" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-4" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd0.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd0.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd0.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd0.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="4" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd1.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd1.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="7" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd2.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd2.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="10" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd3.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd3.eff" effectHP="_TrackFront"/>
+							</selector>
+						</selector>						
+						<selector key="1" type="range" variable="_speed">
+							<selector key="-500" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spdBack.eff" effectHP="_TankDust"/>
+							</selector>
+							<selector key="-2" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spd0.eff" effectHP="_TankDust"/>
+							</selector>
+							<selector key="2" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spd1.eff" effectHP="_TankDust"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<!--Trail effects -->
+		<template name="TrailL">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/dust_{0}.eff" effectHP="_TankDust"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/dust_{0}_spd2.eff" effectHP="_TankDust"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/dust_{0}_spd3.eff" effectHP="_TankDust"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--water -->
+				<selector key="water" type="discrete" variable="_direction">
+					<selector key="_const1" type="discrete" variable="_isUnderWater">
+						<selector key="0" type="range" variable="_speed">
+							<selector key="-500" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-7" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-4" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd0.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd0.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union">
+							</selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd0.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd0.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="4" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd1.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd1.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="7" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd2.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd2.eff" effectHP="_TrackFront"/>
+							</selector>
+							<selector key="10" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd3.eff" effectHP="_TrackRear"/>
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd3.eff" effectHP="_TrackFront"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<!--ForceField effects -->
+		<template name="ForceFieldL">
+			<selector type="discrete" variable="_direction">
+				<selector key="_const1" type="range" variable="_speed">
+					<selector key="-500" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision_reverse.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd3.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd3.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="-9" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision_reverse.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd2.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd2.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="-5" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_TrackRear"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd1.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision_reverse.eff" effectHP="_TankDust"/>
+					</selector>
+					<selector key="-2" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision.eff" effectHP="_TankDust"/>
+					</selector>
+					<selector key="2" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd1.eff" effectHP="_TankDust"/>
+					</selector>
+					<selector key="5" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd2.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd2.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="9" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_collision.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_dust_spd3.eff" effectHP="_TankDust"/>
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd3.eff" effectHP="_TrackRear"/>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="ForceFieldR">
+			<selector type="discrete" variable="_direction">
+				<selector key="_const1" type="range" variable="_speed">
+					<selector key="-500" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd3.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="-9" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd2.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="-5" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="-2" type="union">	
+					</selector>
+					<selector key="2" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="5" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd2.eff" effectHP="_TrackRear"/>
+					</selector>
+					<selector key="9" type="union">
+						<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd3.eff" effectHP="_TrackRear"/>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="Slip_R_NPC">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--water -->
+				<selector key="water" type="discrete" variable="_direction">
+					<selector key="_const1" type="discrete" variable="_isUnderWater">
+						<selector key="0" type="range" variable="_delta">
+							<selector key="0" type="range" variable="_speed">
+								<selector key="-500" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd3.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd3.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-10" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd2.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd2.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-7" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd1.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd1.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-4" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd0.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd0.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-0.5" type="union">
+								</selector>
+								<selector key="0.5" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd0.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd0.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="4" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd1.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd1.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="7" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd2.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd2.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="10" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_spd3.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_r_front_spd3.eff" effectHP="_TrackFront"/>
+								</selector>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="Slip_L_NPC">
+			<selector type="matkind" variable="_matkind">
+				<!--sand -->
+				<selector key="sand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/sand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/sand/dust_{0}.eff" effectHP="_TankDust"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--ground -->
+				<selector key="ground" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/ground/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--snow -->
+				<selector key="snow" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/dust_{0}_spd2.eff" effectHP="_TankDust"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/snow/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+							<selector type="effect" name="particles/Tank/movement/snow/dust_{0}_spd3.eff" effectHP="_TankDust"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--stone -->
+				<selector key="stone" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union">
+						</selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/stone/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<!--water -->
+				<selector key="water" type="discrete" variable="_direction">
+					<selector key="_const1" type="discrete" variable="_isUnderWater">
+						<selector key="0" type="range" variable="_delta">
+							<selector key="0" type="range" variable="_speed">
+								<selector key="-500" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd3.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd3.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-10" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd2.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd2.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-7" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd1.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd1.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-4" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd0.eff" effectHP="_TrackFront"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd0.eff" effectHP="_TrackRear"/>
+								</selector>
+								<selector key="-0.5" type="union">
+								</selector>
+								<selector key="0.5" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd0.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd0.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="4" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd1.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd1.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="7" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd2.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd2.eff" effectHP="_TrackFront"/>
+								</selector>
+								<selector key="10" type="union">
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_spd3.eff" effectHP="_TrackRear"/>
+									<selector type="effect" name="particles/Tank/movement/water/trail_{0}_l_front_spd3.eff" effectHP="_TrackFront"/>
+								</selector>
+							</selector>
+						</selector>
+						<selector key="1" type="range" variable="_speed">
+							<selector key="-500" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spdBack.eff" effectHP="_TankDust"/>
+							</selector>
+							<selector key="-2" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spd0.eff" effectHP="_TankDust"/>
+							</selector>
+							<selector key="2" type="union">
+								<selector type="effect" name="particles/Tank/movement/water/trail_{0}_underwater_spd1.eff" effectHP="_TankDust"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="ChassisOneDirEffectsSet">
+			<selector type="union">
+				<!-- Drift -->
+				<selector type="template" name="Drift" parameters="_matkind:matkindR;
+					_direction:directionR;
+					_const1:_frontOrRear;
+					_delta:deltaR;
+					_hullAngle:hullAngle;
+					_TrackFront:_RFrontLogicalNode;
+					_TrackRear:_RRearLogicalNode;
+					_Turret:DM_Mid_Trail"/>
+				<selector type="template" name="Drift" parameters="_matkind:matkindL;
+					_direction:directionL;
+					_const1:_frontOrRear;
+					_delta:deltaL;
+					_hullAngle:hullAngle;
+					_TrackFront:_LFrontLogicalNode;
+					_TrackRear:_LRearLogicalNode;
+					_Turret:DM_Mid_Trail"/>
+				<!-- Turn -->
+				<selector type="template" name="Turn" parameters="_matkind:matkindR;
+					_direction:directionR;
+					_speed:speed;
+					_const1:_frontOrRear;
+					_delta:deltaR;
+					_TrackFront:_RFrontLogicalNode;
+					_TrackRear:_RRearLogicalNode;
+					_rotSpeed:rotSpeed"/>
+				<selector type="template" name="Turn" parameters="_matkind:matkindL;
+					_direction:directionL;
+					_speed:speed;
+					_const1:_frontOrRear;
+					_delta:deltaL;
+					_TrackFront:_LFrontLogicalNode;
+					_TrackRear:_LRearLogicalNode;
+					_rotSpeed:rotSpeed"/>
+				<!-- Slip -->
+				<selector type="template" name="SlipR" parameters="_matkind:matkindR;
+					_direction:directionR;
+					_const1:_frontOrRear;
+					_delta:deltaR;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_RRearLogicalNode;
+					_TrackFront:_RFrontLogicalNode;
+					_TrackUpRear:_RRearLogicalUpNode;
+					_TrackUpFront:_RFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+				<selector type="template" name="SlipL" parameters="_matkind:matkindL;
+					_direction:directionL;
+					_const1:_frontOrRear;
+					_delta:deltaL;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_LRearLogicalNode;
+					_TrackFront:_LFrontLogicalNode;
+					_TrackUpRear:_LRearLogicalUpNode;
+					_TrackUpFront:_LFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+				<!-- ForceField -->
+				<selector type="template" name="ForceFieldR" parameters="_direction:directionR;
+					_const1:_frontOrRear;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_RRearLogicalNode;
+					_TrackFront:_RFrontLogicalNode;
+					_TankDust:DM_Mid_Trail"/>
+				<selector type="template" name="ForceFieldL" parameters="_direction:directionL;
+					_const1:_frontOrRear;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_LRearLogicalNode;
+					_TrackFront:_LFrontLogicalNode;
+					_TankDust:DM_Mid_Trail"/>
+				<!-- Trail -->
+				<selector type="template" name="TrailR" parameters="_matkind:matkindR;
+					_direction:directionR;
+					_const1:_frontOrRear;
+					_delta:deltaR;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_RRearLogicalNode;
+					_TrackFront:_RFrontLogicalNode;
+					_TrackUpRear:_RRearLogicalUpNode;
+					_TrackUpFront:_RFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+				<selector type="template" name="TrailL" parameters="_matkind:matkindL;
+					_direction:directionL;
+					_const1:_frontOrRear;
+					_delta:deltaL;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_LRearLogicalNode;
+					_TrackFront:_LFrontLogicalNode;
+					_TrackUpRear:_LRearLogicalUpNode;
+					_TrackUpFront:_LFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+			</selector>
+		</template>
+		<template name="ChassisBiDirEffectsSet">
+			<selector type="union">
+				<selector type="template" name="ChassisOneDirEffectsSet" parameters="_RRearLogicalNode:_RRearActualNode;
+					_RFrontLogicalNode:_RFrontActualNode;
+					_RRearLogicalUpNode:_RRearActualUpNode;
+					_RFrontLogicalUpNode:_RFrontActualUpNode;
+					_LRearLogicalNode:_LRearActualNode;
+					_LFrontLogicalNode:_LFrontActualNode;
+					_LRearLogicalUpNode:_LRearActualUpNode;
+					_LFrontLogicalUpNode:_LFrontActualUpNode;
+					_frontOrRear:1"/>
+				<selector type="template" name="ChassisOneDirEffectsSet" parameters="_RRearLogicalNode:_RFrontActualNode;
+					_RFrontLogicalNode:_RRearActualNode;
+					_RRearLogicalUpNode:_RFrontActualUpNode;
+					_RFrontLogicalUpNode:_RRearActualUpNode;
+					_LRearLogicalNode:_LFrontActualNode;
+					_LFrontLogicalNode:_LRearActualNode;
+					_LRearLogicalUpNode:_LFrontActualUpNode;
+					_LFrontLogicalUpNode:_LRearActualUpNode;
+					_frontOrRear:-1"/>
+			</selector>
+		</template>
+		<template name="ChassisOneDirEffectsSet_NPC">
+			<selector type="union">
+				<selector type="template" name="Slip_R_NPC" parameters="_matkind:matkindR;
+					_direction:directionR;
+					_const1:_frontOrRear;
+					_delta:deltaR;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_RRearLogicalNode;
+					_TrackFront:_RFrontLogicalNode;
+					_TrackUpFront:_RFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+				<selector type="template" name="Slip_L_NPC" parameters="_matkind:matkindL;
+					_direction:directionL;
+					_const1:_frontOrRear;
+					_delta:deltaL;
+					_speed:speed;
+					_isUnderWater:isUnderWater;
+					_TrackRear:_LRearLogicalNode;
+					_TrackFront:_LFrontLogicalNode;
+					_TrackUpFront:_LFrontLogicalUpNode;
+					_TankDust:DM_Mid_Trail"/>
+			</selector>
+		</template>
+		<template name="ChassisBiDirEffectsSet_NPC">
+			<selector type="union">
+				<selector type="template" name="ChassisOneDirEffectsSet_NPC" parameters="_RRearLogicalNode:_RRearActualNode;
+					_RFrontLogicalNode:_RFrontActualNode;
+					_RFrontLogicalUpNode:_RFrontActualUpNode;
+					_LRearLogicalNode:_LRearActualNode;
+					_LFrontLogicalNode:_LFrontActualNode;
+					_LFrontLogicalUpNode:_LFrontActualUpNode;
+					_frontOrRear:1"/>
+				<selector type="template" name="ChassisOneDirEffectsSet_NPC" parameters="_RRearLogicalNode:_RFrontActualNode;
+					_RFrontLogicalNode:_RRearActualNode;
+					_RFrontLogicalUpNode:_RRearActualUpNode;
+					_LRearLogicalNode:_LFrontActualNode;
+					_LFrontLogicalNode:_LRearActualNode;
+					_LFrontLogicalUpNode:_LRearActualUpNode;
+					_frontOrRear:-1"/>
+			</selector>
+		</template>
+		<template name="TrackEffect1">
+			<selector type="union" isPC="true">
+				<selector type="template" name="ChassisBiDirEffectsSet" parameters="_RRearActualNode:HP_Track_RRear;
+					_RFrontActualNode:HP_Track_RFront;
+					_RRearActualUpNode:HP_TrackUp_RRear;
+					_RFrontActualUpNode:HP_TrackUp_RFront;
+					_LRearActualNode:HP_Track_LRear;
+					_LFrontActualNode:HP_Track_LFront;
+					_LRearActualUpNode:HP_TrackUp_LRear;
+					_LFrontActualUpNode:HP_TrackUp_LFront"/>
+			</selector>
+		</template>
+		<template name="TrackEffect1_NPC">
+			<selector type="union" isPC="false">
+				<selector type="template" name="ChassisBiDirEffectsSet_NPC" parameters="_RRearActualNode:HP_Track_RRear;
+					_RFrontActualNode:HP_Track_RFront;
+					_RRearActualUpNode:HP_TrackUp_RRear;
+					_RFrontActualUpNode:HP_TrackUp_RFront;
+					_LRearActualNode:HP_Track_LRear;
+					_LFrontActualNode:HP_Track_LFront;
+					_LRearActualUpNode:HP_TrackUp_LRear;
+					_LFrontActualUpNode:HP_TrackUp_LFront"/>
+			</selector>
+		</template>
+
+		<!-- Wheeled tanks templates -->
+		<!--Trail effects -->
+		<template name="WheelEffectdust">
+			<selector type="discrete" variable="_Wheel:contact">
+				<selector key="1" type="range" variable="RPM">
+					<selector key="0.0" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+					<selector key="0.4" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="WheelEffectsolid">
+			<selector type="discrete" variable="_Wheel:contact">
+				<selector key = "1" type="range" variable="RPM">
+					<selector key="0.0" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+					<selector key="0.4" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="WheelEffectfinish">
+			<selector type="discrete" variable="_Wheel:contact">
+				<selector key = "1" type="range" variable="RPM">
+					<selector key="0.0" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+					<selector key="0.4" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/> 
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/> 
+						</selector>
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+
+		<template name="WheelSlipEffect">
+			<selector type="discrete" variable="_Wheel:contact">
+				<selector key = "1" type="matkind" variable="_matkind">
+					<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
+					<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
+					<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
+					<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="4WheeledTrailSide">
+			<selector type="union">
+				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"></selector>
+				<selector type="template" name="WheelEffectsolid" parameters="_Node:_Node2;_Wheel:_W2"></selector>
+				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"></selector>
+			</selector>
+		</template>
+
+		<template name="6WheeledTrailSide">
+			<selector type="union">
+				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"></selector>
+				<selector type="template" name="WheelEffectsolid" parameters="_Node:_Node2;_Wheel:_W2"></selector>
+				<selector type="template" name="WheelEffectsolid" parameters="_Node:_Node3;_Wheel:_W3"></selector>
+				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"></selector>
+			</selector>
+		</template>
+
+		<template name="8WheeledTrailSide">
+			<selector type="union">
+				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"></selector>
+				<selector type="template" name="WheelEffectsolid" parameters="_Node:_Node2;_Wheel:_W2"></selector>
+				<selector type="template" name="WheelEffectsolid" parameters="_Node:_Node3;_Wheel:_W3"></selector>
+				<selector type="template" name="WheelEffectfinish" parameters="_Node:_Node4;_Wheel:_W4"></selector>
+				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"></selector>
+			</selector>
+		</template>
+
+		<template name="4WheeledEffectsSet">
+			<selector type="union">
+				<selector type="union">
+					<!-- Right side -->
+					<selector type="template" name="4WheeledTrailSide" parameters = 
+						"_Node1:_RNode1;
+						_Node2:_RNode2;
+						_W1:_RW1;
+						_W2:_RW2;
+						_matkind:matkindR
+						">
+					</selector>
+					<!-- Left side -->
+					<selector type="template" name="4WheeledTrailSide"  parameters = 
+						"_Node1:_LNode1;
+						_Node2:_LNode2;
+						_W1:_LW1;
+						_W2:_LW2;
+						_matkind:matkindL
+						">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="6WheeledEffectsSet">
+			<selector type="union">
+				<selector type="union">
+					<!-- Right side -->
+					<selector type="template" name="6WheeledTrailSide" parameters = 
+						"_Node1:_RNode1;
+						_Node2:_RNode2;
+						_Node3:_RNode3;
+						_W1:_RW1;
+						_W2:_RW2;
+						_W3:_RW3;
+						_matkind:matkindR
+						">
+					</selector>
+					<!-- Left side -->
+					<selector type="template" name="6WheeledTrailSide"  parameters = 
+						"_Node1:_LNode1;
+						_Node2:_LNode2;
+						_Node3:_LNode3;
+						_W1:_LW1;
+						_W2:_LW2;
+						_W3:_LW3;
+						_matkind:matkindL
+						">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="8WheeledEffectsSet">
+			<selector type="union">
+				<selector type="union">
+					<!-- Right side -->
+					<selector type="template" name="8WheeledTrailSide" parameters = 
+						"_Node1:_RNode1;
+						_Node2:_RNode2;
+						_Node3:_RNode3;
+						_Node4:_RNode4;
+						_W1:_RW1;
+						_W2:_RW2;
+						_W3:_RW3;
+						_W4:_RW4;
+						_matkind:matkindR
+						">
+					</selector>
+					<!-- Left side -->
+					<selector type="template" name="8WheeledTrailSide"  parameters = 
+						"_Node1:_LNode1;
+						_Node2:_LNode2;
+						_Node3:_LNode3;
+						_Node4:_LNode4;
+						_W1:_LW1;
+						_W2:_LW2;
+						_W3:_LW3;
+						_W4:_LW4;
+						_matkind:matkindL
+						">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="WheeledSlipEffectsSet">
+			<selector type="union">
+				<!-- Right side -->
+				<selector type="template" name="WheelSlipEffect" parameters = "_Node:_RNode;_Wheel:_RW;_matkind:matkindR"/>
+				<!-- Left side -->
+				<selector type="template" name="WheelSlipEffect" parameters = "_Node:_LNode;_Wheel:_LW;_matkind:matkindL"/>
+			</selector>
+		</template>
+
+		<template name="4WheelsEffect">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="4WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_02_Front;
+						_RNode2:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_02_Front;
+						_LNode2:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:WD_R0;
+						_LW1:WD_L1;
+						_LW2:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="4WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_02_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_02_Rear;
+						_RW1:WD_R1;
+						_RW2:WD_R0;
+						_LW1:WD_L1;
+						_LW2:WD_L0">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_02_Front;
+						_RW:WD_R0;
+						_LNode:HP_Wheel_L_02_Front;
+						_LW:WD_L0"> 
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_01_Rear;
+						_RW:WD_R1;
+						_LNode:HP_Wheel_L_01_Rear;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="6WheelsEffect">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="6WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_03_Front;
+						_RNode2:HP_Wheel_R_02_Front;
+						_RNode3:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_03_Front;
+						_LNode2:HP_Wheel_L_02_Front;
+						_LNode3:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:W_R0;
+						_RW3:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L0;
+						_LW3:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="6WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_02_Rear;
+						_RNode3:HP_Wheel_R_03_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_02_Rear;
+						_LNode3:HP_Wheel_L_03_Rear;
+						_RW1:WD_R1;
+						_RW2:W_R0;
+						_RW3:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L0;
+						_LW3:WD_L0">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_03_Front;
+						_RW:WD_R0;
+						_LNode:HP_Wheel_L_03_Front;
+						_LW:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_01_Rear;
+						_RW:WD_R1;
+						_LNode:HP_Wheel_L_01_Rear;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+
+		<template name="6WheelsEffectGendron">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="4WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_03_Front;
+						_RNode2:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_03_Front;
+						_LNode2:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:W_R0;
+						_RW3:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L0;
+						_LW3:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="4WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_03_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_03_Rear;
+						_RW1:WD_R0;
+						_RW2:W_R0;
+						_RW3:WD_R1;
+						_LW1:WD_L0;
+						_LW2:W_L0;
+						_LW3:WD_L1">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_03_Front;
+						_RW:WD_R0;
+						_LNode:HP_Wheel_L_03_Front;
+						_LW:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_01_Rear;
+						_RW:WD_R1;
+						_LNode:HP_Wheel_L_01_Rear;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>	
+
+		<template name="8WheelsEffect">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="8WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_04_Front;
+						_RNode2:HP_Wheel_R_03_Front;
+						_RNode3:HP_Wheel_R_02_Front;
+						_RNode4:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_04_Front;
+						_LNode2:HP_Wheel_L_03_Front;
+						_LNode3:HP_Wheel_L_02_Front;
+						_LNode4:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:W_R1;
+						_RW3:W_R0;
+						_RW4:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L1;
+						_LW3:W_L0;
+						_LW4:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="8WheeledEffectsSet" parameters=
+						"_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_02_Rear;
+						_RNode3:HP_Wheel_R_03_Rear;
+						_RNode4:HP_Wheel_R_04_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_02_Rear;
+						_LNode3:HP_Wheel_L_03_Rear;
+						_LNode4:HP_Wheel_L_04_Rear;
+						_RW1:WD_R0;
+						_RW2:W_R0;
+						_RW3:W_R1;
+						_RW4:WD_R1;
+						_LW1:WD_L0;
+						_LW2:W_L0;
+						_LW3:W_L1;
+						_LW4:WD_L1">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_04_Front;
+						_LNode:HP_Wheel_L_04_Front;
+						_RW:WD_R0;
+						_LW:WD_L0">
+					</selector>
+					<selector key="-1" type="union"></selector>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters=
+						"_RNode:HP_Wheel_R_01_Rear;
+						_LNode:HP_Wheel_L_01_Rear;
+						_RW:WD_R1;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+	</templates>
+	<effects>
+		<default>
+			<selector type="union">
+				<selector type="template" name="TrackEffect1" constantsGroup="medium"/>
+				<selector type="template" name="TrackEffect1_NPC" constantsGroup="medium"/>
+			</selector>
+		</default>
+		<smallTankMud>
+			<selector type="union">
+				<selector type="template" name="TrackEffect1" constantsGroup="small"/>
+				<selector type="template" name="TrackEffect1_NPC" constantsGroup="small"/>
+			</selector>
+		</smallTankMud>
+		<mediumTankMud>
+			<selector type="union">
+				<selector type="template" name="TrackEffect1" constantsGroup="medium"/>
+				<selector type="template" name="TrackEffect1_NPC" constantsGroup="medium"/>
+			</selector>
+		</mediumTankMud>
+		<largeTankMud>
+			<selector type="union">
+				<selector type="template" name="TrackEffect1" constantsGroup="large"/>
+				<selector type="template" name="TrackEffect1_NPC" constantsGroup="large"/>
+			</selector>
+		</largeTankMud>
+		<strvMud>
+			<selector type="union">
+				<selector type="template" name="TrackEffect1" constantsGroup="large"/>
+				<selector type="template" name="TrackEffect1_NPC" constantsGroup="large"/>
+				<selector type="discrete" variable="siegeStart">
+					<selector key="1" type="matkind" variable="matkindR">
+						<selector key="ground" type="effectList" name="strv_change_hull_ground" effectHP="chassis"/>
+						<selector key="stone" type="effectList" name="strv_change_hull_stone" effectHP="chassis"/>
+						<selector key="wood" type="effectList" name="strv_change_hull_ground" effectHP="chassis"/>
+						<selector key="metal" type="effectList" name="strv_change_hull_stone" effectHP="chassis"/>
+						<selector key="snow" type="effectList" name="strv_change_hull_snow" effectHP="chassis"/>
+						<selector key="sand" type="effectList" name="strv_change_hull_sand" effectHP="chassis"/>
+						<selector key="water" type="effectList" name="strv_change_hull_water" effectHP="chassis"/>
+					</selector>
+				</selector>
+			</selector>
+		</strvMud>
+		<medium4WheelsMud>
+			<selector type="union">
+				<selector type="template" name="4WheelsEffect" constantsGroup="medium"/>
+			</selector>
+		</medium4WheelsMud>
+		<medium6WheelsMud>
+			<selector type="union">
+				<selector type="template" name="6WheelsEffect" constantsGroup="medium"/>
+			</selector>
+		</medium6WheelsMud>
+		<medium6WheelsMudGendron>
+			<selector type="union">
+				<selector type="template" name="6WheelsEffectGendron" constantsGroup="medium"/>
+			</selector>
+		</medium6WheelsMudGendron>
+		<medium8WheelsMud>
+			<selector type="union">
+				<selector type="template" name="8WheelsEffect" constantsGroup="medium"/>
+			</selector>
+		</medium8WheelsMud>
+	</effects>
+</root>

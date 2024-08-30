@@ -1,0 +1,6 @@
+<root>
+	<!-- WOTD-70100. Colortexes shouldn't be affected by Texture Quality setting. -->
+	<rule pattern=".*color_tex.*(\.dds)$">
+		<lodMode> 0 </lodMode>
+	</rule>
+</root>

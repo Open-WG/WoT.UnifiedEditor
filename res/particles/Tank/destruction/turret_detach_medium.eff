@@ -1,0 +1,79 @@
+<root>
+	<influx>
+		<serialiseVersionData> 2 </serialiseVersionData>
+		<windFactor_> 0.000000 </windFactor_>
+		<explicitTransform_> false </explicitTransform_>
+		<explicitPosition_> 0.000000 0.000000 0.000000 </explicitPosition_>
+		<explicitDirection_> 0.000000 0.000000 1.000000 </explicitDirection_>
+		<localOffset_> 0.000000 0.000000 0.000000 </localOffset_>
+		<maxLod_> 400.000000 </maxLod_>
+		<fixedFrameRate_> -1.000000 </fixedFrameRate_>
+		<Actions>
+			<Influx>
+				<delay_> 0.000000 </delay_>
+				<minimumAge_> 0.000000 </minimumAge_>
+				<name_> Influx 1 </name_>
+				<fn_influx_effect_forward> particles/content_forward/PFX/Tank/destruction/turret_detach_medium.vfx </fn_influx_effect_forward>
+				<fn_influx_effect_deferred> particles/content_deferred/PFX/Tank/destruction/turret_detach_medium.vfx </fn_influx_effect_deferred>
+				<local_effect> true </local_effect>
+			</Influx>
+		</Actions>
+		<Renderer>
+			<MeshParticleRenderer>
+				<viewDependent_> false </viewDependent_>
+				<local_> false </local_>
+				<visualName_> particles/holder_model/holder_model.visual </visualName_>
+				<doubleSided_> false </doubleSided_>
+				<materialFX_> 1 </materialFX_>
+				<sortType_> 1 </sortType_>
+			</MeshParticleRenderer>
+		</Renderer>
+		<capacity> 1 </capacity>
+		<boundingBox>
+			<min> -0.591060 -0.591060 -0.591060 </min>
+			<max> 0.591060 0.591060 0.591060 </max>
+		</boundingBox>
+	</influx>
+	<influx>
+		<serialiseVersionData> 2 </serialiseVersionData>
+		<windFactor_> 0.000000 </windFactor_>
+		<explicitPosition_> 0.000000 0.000000 0.000000 </explicitPosition_>
+		<explicitDirection_> 0.000000 0.000000 1.000000 </explicitDirection_>
+		<explicitTransform_> false </explicitTransform_>
+		<localOffset_> 0.000000 0.000000 0.000000 </localOffset_>
+		<maxLod_> 800.000000 </maxLod_>
+		<fixedFrameRate_> -1.000000 </fixedFrameRate_>
+		<Actions>
+			<Influx>
+				<delay_> 0.000000 </delay_>
+				<minimumAge_> 0.000000 </minimumAge_>
+				<name_> Influx 1 </name_>
+				<fn_influx_effect_forward> particles/content_forward/PFX/Tank/destruction/quality_set_0_turret_detach_medium.vfx </fn_influx_effect_forward>
+				<fn_influx_effect_deferred> particles/content_deferred/PFX/Tank/destruction/quality_set_0_turret_detach_medium.vfx </fn_influx_effect_deferred>
+				<b_is_local_effect> false </b_is_local_effect>
+			</Influx>
+		</Actions>
+		<Renderer>
+			<MeshParticleRenderer>
+				<viewDependent_> false </viewDependent_>
+				<local_> false </local_>
+				<doubleSided_> false </doubleSided_>
+				<materialFX_> 1 </materialFX_>
+				<sortType_> 1 </sortType_>
+				<visualName_> particles/holder_model/holder_model.visual </visualName_>
+			</MeshParticleRenderer>
+		</Renderer>
+		<capacity> 1 </capacity>
+		<boundingBox>
+			<min> -0.591060 -0.591060 -0.591060 </min>
+			<max> 0.591060 0.591060 0.591060 </max>
+		</boundingBox>
+	</influx>
+	<metaData>
+		<modified_by> d_shlyk </modified_by>
+		<modified_on> 1421316792 </modified_on>
+	</metaData>
+	<addition>
+		<inv_render_groups> 0 </inv_render_groups>
+	</addition>
+</root>
