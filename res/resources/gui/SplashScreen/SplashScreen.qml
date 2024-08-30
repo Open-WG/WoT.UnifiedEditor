@@ -15,7 +15,7 @@ Rectangle {
 
 	Image {
 		id: background
-		source: context.isDeveloper ? "bg-dev.png" : "bg.png"
+		source: context.isDeveloper ? "../../images/splash-screen-bk-dev" : "../../images/splash-screen-bk"
 		anchors.fill: parent
 
 		Column {
@@ -25,7 +25,7 @@ Rectangle {
 
 			Image {
 				id: icon
-				source: context.isDeveloper ? "logo-dev.png" : "logo.png"
+				source: "../../images/unifiededitor_64x64"
 				width: 64
 				height: 64
 			}

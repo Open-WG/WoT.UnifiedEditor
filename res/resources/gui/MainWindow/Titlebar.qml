@@ -36,9 +36,7 @@ ColumnLayout {
 				}
 
 				icon.source: Qt.application.state == Qt.ApplicationActive
-					? context.isDeveloper
-						? "image://gui/resources/unifiededitor_dev"
-						: "image://gui/resources/unifiededitor"
+					? "image://gui/unifiededitor_16x16"
 					: "image://gui/icon-system-menu-disabled"
 					
 				icon.width: 16

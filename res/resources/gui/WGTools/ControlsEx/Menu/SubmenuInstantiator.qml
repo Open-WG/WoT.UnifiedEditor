@@ -10,22 +10,26 @@ Instantiator {
 	property var rootIndex: null
 
 	onObjectAdded: {
-
-		if (object.item)
-		{
+		if (object.item) {
+			var newIndex = startIndex + index
 			if (object.isMenu) {
-				menu.insertMenu(startIndex + index, object.item)
+				menu.insertMenu(newIndex, object.item)
+				var menuItem = menu.itemAt(newIndex)
+				var submenu = menu.menuAt(newIndex)
+				if (object.icon.length > 0) {
+					menuItem.icon.source = "image://gui/" + object.icon
+					menuItem.icon.color = "transparent"
+				}
+				menuItem.visible = Qt.binding(function() { return submenu.count > 0 })
 			}
-			else{
-				menu.insertItem(startIndex + index, object.item)
+			else {
+				menu.insertItem(newIndex, object.item)
 			}
 		}
 	}
 
 	onObjectRemoved: {
-
-		if (object.item)
-		{
+		if (object.item) {
 			if (object.isMenu) {
 				menu.removeMenu(object.item)
 			}
@@ -45,6 +49,7 @@ Instantiator {
 		delegate: QtObject {
 			property var item: null
 			property var isMenu: false
+			property string icon: ""
 
 			Component.onCompleted: {
 				if (item != null) {
@@ -52,7 +57,6 @@ Instantiator {
 				}
 
 				var modelIndex = delegateModel.modelIndex(index)
-				var numChildren = delegateModel.model.rowCount(modelIndex)
 
 				if (!model.isValid) {
 					item = menuInvalidItemComponent.createObject(parent)
@@ -63,7 +67,7 @@ Instantiator {
 				else if (model.isSeparator) {
 					item = menuSeparatorComponent.createObject(parent)
 				}
-				else if (model.isContainer && numChildren > 0) {
+				else if (model.isContainer) {
 					var component = Qt.createComponent("Submenu.qml")
 
 					item = component.createObject(parent, {
@@ -72,12 +76,16 @@ Instantiator {
 						"title": model.itemName})
 
 					isMenu = true
+					icon = model.itemIcon
 				}
 			}
 
 			readonly property Component __itemComponent: Component {
 				id: menuItemComponent
 				MenuItem {
+					display: AbstractButton.TextBesideIcon
+					icon.source: model.itemIcon.length > 0 ? "image://gui/" + model.itemIcon : ""
+					icon.color: "transparent"
 					text: model.itemName
 					checkable: model.action.checkable
 					checked: model.action.checked
@@ -89,7 +97,7 @@ Instantiator {
 			readonly property Component __invalidItemComponent: Component {
 				id: menuInvalidItemComponent
 				MenuItem {
-					text: "???"
+					text: "<Unknown Action>"
 					enabled: false
 				}
 			}

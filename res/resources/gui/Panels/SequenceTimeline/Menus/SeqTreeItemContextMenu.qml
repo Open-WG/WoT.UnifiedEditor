@@ -30,7 +30,8 @@ Controls.Menu {
 	Controls.MenuItem {
 		text: "Normalize"
 
-		visible: itemData && itemData.hasOwnProperty("canBeNormalized") ? itemData.canBeNormalized : false
+		visible: itemData && itemData.hasOwnProperty("hasNormalizeAbility") ? itemData.hasNormalizeAbility : false
+		enabled: itemData && itemData.hasOwnProperty("canBeNormalized") ? itemData.canBeNormalized : false
 
 		onTriggered: {
 			normalizePosDialogTriggered()
@@ -47,7 +48,7 @@ Controls.Menu {
 
 		Controls.MenuItem {
 			text: "+Z"
-			
+
 			onTriggered: itemData.autoCalculate(Qt.vector3d(0, 0, 0))
 		}
 

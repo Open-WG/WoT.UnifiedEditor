@@ -1,4 +1,4 @@
-import QtQuick 2.7
+import QtQuick 2.11
 import QtQuick.Controls 1.4
 import WGTools.Controls 2.0 as Controls
 import WGTools.Controls.Details 2.0
@@ -8,6 +8,8 @@ import WGTools.Misc 1.0 as Misc
 import "Delegates/Table" as Delegates
 import "Modes/Table/Details" as Details
 
+import QtQml.StateMachine 1.11 as SM
+
 Views.TableView {
 	id: table
 	__wheelAreaScrollSpeed: ControlsSettings.mouseWheelScrollVelocity2
@@ -15,6 +17,10 @@ Views.TableView {
 	property alias contextMenu: contextMenuArea.menuComponent
 	property bool sectionsEnabled
 	property real rowSize
+
+	property real minHeight: 26
+	property real maxHeight: 160
+	readonly property real rowHeight: minHeight + rowSize * (maxHeight - minHeight)
 
 	signal pathSelected(string selectedPath)
 
@@ -30,12 +36,92 @@ Views.TableView {
 
 	rowDelegate: Details.RowDelegate {
 		Accessible.ignored: true
-		size: table.rowSize
+		height: table.rowHeight
 	}
 
 	onRowSizeChanged: {
 		if (table.currentRow != -1) {
 			table.positionViewAtRow(table.currentRow, ListView.Contain)
+		}
+	}
+
+	// State Machine to set minimum size for "Name" column
+	SM.StateMachine {
+		initialState: abRoot.settings.tableViewState == "custom" ? customState : relatveState
+		running: true
+
+		SM.State {
+			id: relatveState
+			initialState: relatveInitingState
+
+			property bool muted: false
+
+			function update() {
+				muted = true
+				nameColumn.width = Math.max(customState.minWidth, table.viewport.width * 0.3)
+				muted = false
+			}
+
+			onEntered: {
+				abRoot.settings.tableViewState = "relatve"
+				update()
+			}
+
+			SM.State {
+				id: relatveInitingState
+				SM.TimeoutTransition {
+					targetState: relatveInitedState
+					timeout: 0
+				}
+			}
+
+			SM.State {
+				id: relatveInitedState
+
+				SM.SignalTransition {
+					targetState: customState
+					signal: nameColumn.widthChanged
+					guard: !relatveState.muted
+				}
+
+				SM.SignalTransition {
+					targetState: customState
+					signal: table.rowSizeChanged
+				}
+			}
+
+			Connections {
+				enabled: relatveState.active
+				target: table.viewport
+				onWidthChanged: relatveState.update()
+			}
+		}
+
+		SM.State {
+			id: customState
+
+			readonly property real minWidth: 2*table.rowHeight
+
+			function update() {
+				nameColumn.width = Math.max(nameColumn.width, minWidth)
+			}
+
+			onEntered: {
+				abRoot.settings.tableViewState = "custom"
+				update()
+			}
+
+			Connections {
+				target: table
+				onRowHeightChanged: customState.update()
+				enabled: customState.active
+			}
+
+			Connections {
+				target: nameColumn
+				onWidthChanged: customState.update()
+				enabled: customState.active
+			}
 		}
 	}
 
@@ -78,9 +164,10 @@ Views.TableView {
 	}
 
 	TableViewColumn {
+		id: nameColumn
 		role: "display"
 		title: "Name"
-		width: table.viewport.width * 0.3
+
 		delegate: Delegates.Display {
 			id: loader
 
@@ -102,8 +189,15 @@ Views.TableView {
 	TableViewColumn {
 		role: "tags"
 		title: "Tags"
-		width: table.viewport.width * 0.4
+		width: table.viewport.width * 0.3
 		delegate: Delegates.Tags {}
+	}
+
+	TableViewColumn {
+		role: "extension"
+		title: "Extension"
+		width: table.viewport.width * 0.1
+		delegate: Delegates.Extension {}
 	}
 
 	TableViewColumn {
@@ -143,6 +237,33 @@ Views.TableView {
 					continue
 
 				table.__columns[i].width = w
+			}
+		}
+	}
+
+	onHeaderMenuRequested: headerMenu.popupEx()
+
+	Controls.Menu {
+		id: headerMenu
+
+		Instantiator {
+			model: table.columnCount
+
+			onObjectAdded: {
+				if (table.getColumn(index).title != "Name")
+					headerMenu.insertItem(index, object)
+			}
+			onObjectRemoved: headerMenu.removeItem(object)
+
+			Controls.MenuItem {
+				readonly property var column: table.getColumn(index)
+
+				text: column ? column.title : ""
+				onClicked: column.visible = !column.visible
+
+				Binding on checked {
+					value: column && column.visible
+				}
 			}
 		}
 	}

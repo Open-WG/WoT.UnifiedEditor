@@ -56,6 +56,8 @@ ControlsEx.Panel {
 
 			model: context.model
 			Controls.ScrollBar.vertical: Controls.ScrollBar {}
+
+			onCurrentIndexChanged: context.model.selectionChanged(grid.currentIndex)
 		}
 
 		Component {
@@ -74,7 +76,6 @@ ControlsEx.Panel {
 
 				onClicked : {
 					grid.currentIndex = index
-					context.model.selectionChanged(grid.currentIndex)
 				}
 
 				Component.onCompleted: context.model.selectionChanged(grid.currentIndex)

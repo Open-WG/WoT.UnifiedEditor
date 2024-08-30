@@ -113,6 +113,10 @@ Menu {
 	}
 
 	Details.ActionMenuItem {
+		source: context.model.action("activate_frontline_mode_action", index)
+	}
+
+	Details.ActionMenuItem {
 		source: context.model.action("spaceSettingsActionId", index)
 	}
 

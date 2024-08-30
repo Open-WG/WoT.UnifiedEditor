@@ -1,11 +1,13 @@
 import QtQuick 2.7
+import QtQuick.Controls 2.4
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
 
 Menu {
-	id: menu
+	id: toolBarMenu
 
 	property var contentView
+	property var tableView
 	property alias previewSize: previewSizeSlider.value
 
 	property string sortingRole
@@ -28,26 +30,23 @@ Menu {
 
 	Instantiator {
 		id: inst
+		model: tableView.columnCount
 		readonly property int startIndex: 1
 
-		model: [
-			{role: "display" , title: "Name"},
-			{role: "tags"    , title: "Tags"},
-			{role: "created" , title: "Date Created"},
-			{role: "modified", title: "Date Last Modified"},
-		]
-
-		onObjectAdded: menu.insertItem(startIndex + index, object)
-		onObjectRemoved: menu.removeItem(object)
+		onObjectAdded: toolBarMenu.insertItem(startIndex + index, object)
+		onObjectRemoved: toolBarMenu.removeItem(object)
 
 		MenuItem {
+			readonly property var column: tableView.getColumn(index)
+			
 			checkable: true
-			text: modelData.title
+			visible: viewMode == "grid" || column.visible
+			text: column ? column.title : ""
 			ButtonGroup.group: sortGroup
-			onClicked: menu.sortingRoleChosen(modelData.role)
+			onClicked: toolBarMenu.sortingRoleChosen(column.role)
 
 			Binding on checked {
-				value: modelData.role == menu.sortingRole
+				value: column && (column.role == toolBarMenu.sortingRole)
 			}
 		}
 	}
@@ -60,16 +59,16 @@ Menu {
 		text: "Ascending"
 		checkable: true
 		ButtonGroup.group: sortingOrderGroup
-		Binding on checked { value: menu.sortingOrder == Qt.AscendingOrder }
-		onClicked: menu.sortingOrderСhosen(Qt.AscendingOrder)
+		Binding on checked { value: toolBarMenu.sortingOrder == Qt.AscendingOrder }
+		onClicked: toolBarMenu.sortingOrderСhosen(Qt.AscendingOrder)
 	}
 
 	MenuItem {
 		text: "Descending"
 		checkable: true
 		ButtonGroup.group: sortingOrderGroup
-		Binding on checked { value: menu.sortingOrder == Qt.DescendingOrder }
-		onClicked: menu.sortingOrderСhosen(Qt.DescendingOrder)
+		Binding on checked { value: toolBarMenu.sortingOrder == Qt.DescendingOrder }
+		onClicked: toolBarMenu.sortingOrderСhosen(Qt.DescendingOrder)
 	}
 
 	// Preview size
@@ -105,23 +104,23 @@ Menu {
 	MenuItem {
 		property string viewMode: "grid"
 		checkable: true
-		checked: viewMode == menu.viewMode
+		checked: viewMode == toolBarMenu.viewMode
 		text: "Grid"
 		icon.source: "image://gui/icon-menu-viewmode-grid"
 		ButtonGroup.group: viewModeGroup
 		KeyNavigation.up: previewSizeSlider
-		onClicked: menu.viewModeItemClicked(viewMode)
+		onClicked: toolBarMenu.viewModeItemClicked(viewMode)
 	}
 
 	MenuItem {
 		id: tableViewModeItem
 		property string viewMode: "table"
 		checkable: true
-		checked: viewMode == menu.viewMode
+		checked: viewMode == toolBarMenu.viewMode
 		text: "Table"
 		icon.source: "image://gui/icon-menu-viewmode-table"
 		ButtonGroup.group: viewModeGroup
-		onClicked: menu.viewModeItemClicked(viewMode)
+		onClicked: toolBarMenu.viewModeItemClicked(viewMode)
 	}
 
 	// Layout
@@ -130,7 +129,7 @@ Menu {
 
 	MenuItem {
 		width: parent.width
-		text: menu.naviVisible ? "Hide Navigation Panel" : "Show Navigation Panel"
-		onClicked: menu.naviItemClicked()
+		text: toolBarMenu.naviVisible ? "Hide Navigation Panel" : "Show Navigation Panel"
+		onClicked: toolBarMenu.naviItemClicked()
 	}
 }

@@ -4,12 +4,6 @@ import WGTools.Views.Details 1.0 as ViewDetails
 
 Control {
 	id: control
-
-	property real size: 0
-	property real minHeight: 26
-	property real maxHeight: 160
-
-	height: minHeight + size * (maxHeight - minHeight)
 	hoverEnabled: true
 
 	Accessible.name: model && model.hasOwnProperty("display") ? model.display : ""

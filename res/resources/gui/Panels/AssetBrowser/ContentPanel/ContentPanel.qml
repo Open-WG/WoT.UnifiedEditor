@@ -11,6 +11,8 @@ FocusScope {
 	property var selectionModel: null
 	property var contextMenu: null
 
+	property alias tableView: table
+
 	property string sortingRole: "display"
 	property int sortingOrder: Qt.AscendingOrder
 

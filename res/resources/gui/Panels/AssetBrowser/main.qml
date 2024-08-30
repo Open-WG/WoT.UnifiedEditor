@@ -17,7 +17,7 @@ import "ToolBar/Query" as Query
 import "QuickFilters" as Details
 
 ControlsEx.Panel {
-	id: root
+	id: abRoot
 	title: "Asset Browser"
 
 	property var settings: QtObject {
@@ -40,6 +40,8 @@ ControlsEx.Panel {
 
 		property alias sortingRole: contentPanel.sortingRole
 		property alias sortingOrder: contentPanel.sortingOrder
+
+		property string tableViewState: "relative"
 	}
 
 	Keys.onPressed: {
@@ -132,6 +134,8 @@ ControlsEx.Panel {
 		tagsButton.onEnabledChanged: tagsEditor.close()
 
 		// ToolBar Menu
+		menu.tableView: contentPanel.tableView
+
 		menu.contentView: splitView
 
 		menu.sortingRole: contentPanel.sortingRole

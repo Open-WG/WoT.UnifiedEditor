@@ -66,12 +66,12 @@
 	</rule>
 	<rule pattern="^virtual://.*(\.fxo)$">
 		<converter>EffectConverter</converter>
-		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water </converterParams>
+		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow </converterParams>
 	</rule>
 	<rule pattern=".*(\.fx)$">
 		<root>true</root>
 		<converter>EffectConverter</converter>
-		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water </converterParams>
+		<converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow </converterParams>
 	</rule>
 	<rule pattern=".*(collision_client.*\.model)$">
 		<root>false</root>

@@ -27,12 +27,16 @@ T.MenuItem {
 	bottomPadding: ControlsSettings.smallPadding
 	hoverEnabled: true
 
-	font.family: ControlsSettings.fontFamily
-	font.pixelSize: ControlsSettings.textNormalSize
+	font {
+		family: ControlsSettings.fontFamily
+		pixelSize: ControlsSettings.textNormalSize
+	}
 
-	icon.width: ControlsSettings.iconSize
-	icon.height: ControlsSettings.iconSize
-	icon.color: checked || control.indicator ? _palette.color1 : _palette.color2
+	icon {
+		width: ControlsSettings.iconSize
+		height: ControlsSettings.iconSize
+		color: checked || control.indicator ? _palette.color1 : _palette.color2
+	}
 
 	arrow: Details.MenuItemArrow {}
 	indicator: Details.MenuItemIndicator {}

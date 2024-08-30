@@ -123,12 +123,12 @@ FogMinimapDelegate {
 					}
 				}
 
-				function setValue(dX, dY, setterFlags = 0) {
+				function setValue(dX, dY, setterFlags) {
 					var deltaVal = isHorizontal()
 						? root.fromPixelWidth(dX)
 						: root.fromPixelHeight(dY)
 
-					if (deltaVal == 0 && (setterFlags & )) {
+					if (deltaVal == 0 && (setterFlags & IValueData.TRANSIENT)) {
 						return
 					}
 
@@ -203,7 +203,7 @@ FogMinimapDelegate {
 						isEditing = false
 
 						var pos = mapToItem(parent, mouseX, mouseY)
-						parent.setValue(pos.x, pos.y)
+						parent.setValue(pos.x, pos.y, 0)
 					}
 
 					onPositionChanged: {

@@ -6,8 +6,10 @@ import WGTools.QmlUtils 1.0
 Impl.IconLabel {
 	readonly property real arrowCauseOffset: control.subMenu && control.arrow ? control.arrow.width + control.spacing : 0
 	readonly property real shortcutCauseOffset: shortcutLabel.visible ? shortcutLabel.width + control.spacing : 0
+	readonly property real iconOffset: control.icon.source == "" ? control.icon.width + control.spacing : 0
+	readonly property real indicatorOffset: control.checkable && control.indicator ? control.indicator.width + control.spacing : 0
 
-	leftPadding: control.indicator || (control.icon.source == "") ? (control.indicator.width + control.spacing) : 0
+	leftPadding: indicatorOffset + iconOffset
 	rightPadding: shortcutCauseOffset + arrowCauseOffset
 
 	spacing: control.spacing
