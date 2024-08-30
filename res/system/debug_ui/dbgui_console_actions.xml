@@ -3,29 +3,39 @@
 	<item label="Obtain all items" action="$obtainAll"/>
 	<item label="Obtain vehicle" action="$obtainVehicle" input="true" format="('%s')"/>
 	<item label="Set hangar" action="$hangar.setPath">
-		<param> ('hangar_v3')	</param>
-		<param> ('h33_comp7')	</param>
+		<param>('hangar_v3')</param>
+		<param>('h33_comp7')</param>
 	</item>
-	<item label="Add money" action="$p.stats.setMoney">
-		<param label="100000000">	(100000000,100000000,100000000,100000000)	</param>
+
+	<item label="Set money" action="$p.stats.setMoney">
+		<param label="100000000">(100000000, 100000000, 100000000, 100000000)</param>
+		<param label="0">(0, 0, 0, 0)</param>
 	</item>
+
+	<item label="Premium Account">
+		<item label="Leave blank for 24h"/>
+		<item label="WoT Premium (seconds)" action="$p.stats.setPremium(2, " input="true" format="%s)"/>
+		<item label="WG Premium (seconds)" action="$p.stats.setPremium(1, " input="true" format="%s)"/>
+		<item label="Clear Premium" action="$p.stats.setPremium(2, 0); $p.stats.setPremium(1, 0)"/>
+	</item>
+
 	<item label="Set herotank" action="$setHero">
-		<param> ('germany:G42_Maus') </param>
-		<param> ('japan:J27_O_I_120') </param>
-		<param> ('uk:GB94_Centurion_Mk5-1_RAAC') </param>
-		<param> ('ussr:R54_KV-5') </param>
+		<param>('germany:G42_Maus')</param>
+		<param>('japan:J27_O_I_120')</param>
+		<param>('uk:GB94_Centurion_Mk5-1_RAAC')</param>
+		<param>('ussr:R54_KV-5')</param>
 	</item>
+
 	<item label="[Event Platform] markers" action="$p.">
-		<param label="add marker to avatar position"> addOrRemoveMarkerTo(0) </param>
-		<param label="add marker to avatar"> addOrRemoveMarkerTo(2) </param>
-		<param label="remove all marker"> addOrRemoveMarkerTo(1) </param>
+		<param label="add marker to avatar position">addOrRemoveMarkerTo(0)</param>
+		<param label="add marker to avatar">addOrRemoveMarkerTo(2)</param>
+		<param label="remove all marker">addOrRemoveMarkerTo(1)</param>
 	</item>
 
 	<item label="Dog Tags">
 		<item label="In hangar">
 			<item label="Unlock all components" action="$p.dogTags.unlockAllComponentsDev()"/>
 		</item>
-
 		<item label="In battle">
 			<item label="Random victim Dog Tag" action="from avatar_helpers.dog_tags_helpers import DogTagsHelpers; DogTagsHelpers.showRandomVictimDogTag()"/>
 			<item label="Random killer Dog Tag" action="from avatar_helpers.dog_tags_helpers import DogTagsHelpers; DogTagsHelpers.showRandomKillerDogTag()"/>
@@ -38,7 +48,7 @@
 			<item label="ShowLose" action="$battle_notifier.showLose()"/>
 			<item label="ShowQueuing" action="$battle_notifier.createQueue()"/>
 	</item>
-	
+
 	<item label="Daily Quests">
 			<item label="Complete Quest" action="$p.stats.completeDailyQuest">
 				<param label="easy">("easy")</param>
@@ -82,7 +92,7 @@
 		</item>
 		<item label="Clear clan reserves" action="$boosters.deactivateClanBoosters()" />
 	</item>
-	
+
 	<item label="Shortcuts">
 		<item label="In battle (CAPSLOCK+)...">
 			<item label="Heel self 1" />
@@ -130,6 +140,7 @@
 			<param label="1920x1080   Ctrl+5">(1920, 1080)</param>
 			<param label="2200x1200   Ctrl+6">(2200, 1200)</param>
 			<param label="2560x1440   Ctrl+7">(2560, 1440)</param>
+			<param label="3840x2160   Ctrl+8">(3840, 2160)</param>
 		</item>
 		<item label="Init hot keys Change Window Size manager" action="from development.as_tools.change_window_size_manager import g_change_manager as m; m.">
 			<param label="start">start()</param>
@@ -153,20 +164,6 @@
 				<item label="unlock reserves" action="$p.unlockFrontlineReserves()"/>
 			</item>
 	</item>
-	<item label="New Year">
-		<item label="Show Levelup View" action="$showNYLevelUp">
-			<param label="Level 1"> (1) </param>
-			<param label="Level 2"> (2) </param>
-			<param label="Level 3"> (3) </param>
-			<param label="Level 4"> (4) </param>
-			<param label="Level 5"> (5) </param>
-			<param label="Level 6"> (6) </param>
-			<param label="Level 7"> (7) </param>
-			<param label="Level 8"> (8) </param>
-			<param label="Level 9"> (9) </param>
-			<param label="Level 10"> (10) </param>
-		</item>
-	</item>
 
 	<item label="UI Logging">
 		<item label="SF logger test dialog" action="from gui.development.ui import showSFUILoggerDemoView; showSFUILoggerDemoView()"/>
@@ -181,7 +178,6 @@
 		<item label="Add Equipment Item" action="$p.addEquipment" input="true" format="('%s')"/>
 		<item label="Remove Equipment Item" action="$p.removeEquipment" input="true" format="('%s')"/>
 	</item>
-
 
 	<item label="Competitive 7x7">
 		<item label="Show Meta view" action="from gui.development import showComp7MetaRootView; showComp7MetaRootView()"/>
@@ -223,8 +219,5 @@
 			<param label="200">('comp7_wins_200')</param>
 		</item>
 		<item label="Show First Rank Rewards screen" action="from gui.development import showComp7FirstRankRewardsScreen; showComp7FirstRankRewardsScreen()"/>
-	</item>
-	<item label="Tools">
-			<item label="GameFace viewer" action="$gfViewer" />
 	</item>
 </root>

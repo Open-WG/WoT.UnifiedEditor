@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -68,8 +68,8 @@
 			<i_RT_shader_num> -1 </i_RT_shader_num>
 			<emitter.f_life_min> 1.000000 </emitter.f_life_min>
 			<emitter.f_life_max> 1.300000 </emitter.f_life_max>
-			<emitter.f_delay_min> 5.000000 </emitter.f_delay_min>
-			<emitter.f_delay_max> 5.000000 </emitter.f_delay_max>
+			<emitter.f_delay_min> 2.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 2.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
 			<f_rate> 20.000000 </f_rate>
 			<vt.ui_volume_type> 4 </vt.ui_volume_type>
@@ -268,7 +268,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -280,8 +280,8 @@
 			<i_RT_shader_num> -1 </i_RT_shader_num>
 			<emitter.f_life_min> 2.500000 </emitter.f_life_min>
 			<emitter.f_life_max> 3.000000 </emitter.f_life_max>
-			<emitter.f_delay_min> 5.000000 </emitter.f_delay_min>
-			<emitter.f_delay_max> 5.000000 </emitter.f_delay_max>
+			<emitter.f_delay_min> 2.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 2.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
 			<f_rate> 1.000000 </f_rate>
 			<vt.ui_volume_type> 4 </vt.ui_volume_type>
@@ -484,7 +484,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -494,8 +494,8 @@
 				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
 			</dw_ext_mode>
 			<i_RT_shader_num> -1 </i_RT_shader_num>
-			<emitter.f_life_min> 5.000000 </emitter.f_life_min>
-			<emitter.f_life_max> 5.500000 </emitter.f_life_max>
+			<emitter.f_life_min> 2.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 2.000000 </emitter.f_life_max>
 			<emitter.f_delay_min> 0.200000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.200000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
@@ -698,7 +698,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -710,8 +710,8 @@
 			<i_RT_shader_num> -1 </i_RT_shader_num>
 			<emitter.f_life_min> 2.500000 </emitter.f_life_min>
 			<emitter.f_life_max> 3.000000 </emitter.f_life_max>
-			<emitter.f_delay_min> 5.000000 </emitter.f_delay_min>
-			<emitter.f_delay_max> 5.000000 </emitter.f_delay_max>
+			<emitter.f_delay_min> 2.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 2.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
 			<f_rate> 1.000000 </f_rate>
 			<vt.ui_volume_type> 4 </vt.ui_volume_type>
@@ -912,7 +912,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -924,8 +924,8 @@
 			<i_RT_shader_num> -1 </i_RT_shader_num>
 			<emitter.f_life_min> 2.500000 </emitter.f_life_min>
 			<emitter.f_life_max> 3.000000 </emitter.f_life_max>
-			<emitter.f_delay_min> 5.000000 </emitter.f_delay_min>
-			<emitter.f_delay_max> 5.000000 </emitter.f_delay_max>
+			<emitter.f_delay_min> 2.000000 </emitter.f_delay_min>
+			<emitter.f_delay_max> 2.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
 			<f_rate> 8.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
