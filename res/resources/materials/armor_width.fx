@@ -88,10 +88,9 @@ VS2PS_LightOnlyForward vs_main_2_0(IA2VS_GenericLightOnly i)
 }
 
 //--------------------------------------------------------------------------------------------------
-float4 ps_2_0(VS2PS_LightOnlyForward i, WG_DECLARE_VFACE(vFace), uniform bool blend) : COLOR0
+float4 ps_2_0(VS2PS_LightOnlyForward i, bool vFace : SV_IsFrontFace, uniform bool blend) : COLOR0
 {
-	
-	float3 normal = i.normal.xyz * (WG_GET_VFACE(vFace) ? 1.0f : -1.0f);
+	float3 normal = i.normal.xyz * (vFace ? 1.0f : -1.0f);
 	float armorAngleCos = dot(-g_cameraDir, normalize(normal));
 	float armorAngle = acos(armorAngleCos);
 	

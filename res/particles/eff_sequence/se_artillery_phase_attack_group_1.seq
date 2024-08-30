@@ -1,0 +1,266 @@
+<root>
+	<duration> 20.016668 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shell_1 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 18.098022 4.468933 84.116577 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 20.016668 </startTime>
+				<value> 18.098022 4.468933 84.116577 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.650000 </startTime>
+				<duration> 8.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_shell.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> expl_1 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1402.479980 -12.143900 84.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 8.816668 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_explosion_1.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shell_2 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 3.963928 -8.461535 282.291443 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.200000 </startTime>
+				<duration> 8.499999 </duration>
+				<value> particles/eff_sequence/se_artillery_shell.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> expl_2 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1367.630615 -0.460751 282.000244 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 9.583334 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_explosion_2.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shell_3 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -22.066711 -14.784632 396.336792 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.783333 </startTime>
+				<duration> 8.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_shell.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> expl_3 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1326.348511 -5.217686 396.000122 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 8.883334 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_explosion_1.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shell_4 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 57.160278 -9.129549 571.201904 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.750000 </startTime>
+				<duration> 8.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_shell.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> expl_4 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1401.320801 -3.985456 571.000122 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 8.600000 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_explosion_3.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shell_5 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 28.990906 -5.303152 701.923584 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.133333 </startTime>
+				<duration> 8.500001 </duration>
+				<value> particles/eff_sequence/se_artillery_shell.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> expl_5 </name>
+		<type> model </type>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1373.177979 0.000000 701.000122 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 8.250002 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/se_artillery_explosion_2.seq </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

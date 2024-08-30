@@ -33,7 +33,19 @@
 		<ProtectionZone/>
 		<HangarPoster/>
 		<ClientSelectableWebLinksOpener/>
+		<CustomizableSE20SceneObject/>
+  	  	<CameraAnchorObject/>
 		<GameObjectEntity/>
+		<ItemPickup/>
+		<EventControlPoint/>
+		<SE20HangarVehicle/>
+		<SE20ClientSelectableObject/>
+		<AnimatedScene/>
+		<ActionEffects/>
+		<AttackBomber/>
+		<DeathZone/>
+		<PersonalDeathZonesHelper/>
+		<SE20HeroTank/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -54,6 +66,7 @@
 		<FalloutUnitMgr/>
 		<SpecUnitMgr/>
 		<EventUnitMgr/>
+		<BobUnitMgr/>
 		<VoiceChatMgr/>
 		<MessageFilterManager/>
 		<CenterStatusReader/>
@@ -78,12 +91,16 @@
 		<RandomBattleMatchmaker/>
 		<SandboxMgr/>
 		<SingletonLock/>
-		<ExternalBattleMgr/>
-		<ExternalUnitMgr/>
-		<ExternalUnitQueue/>
+		<StrongholdBattleMgr/>
+		<StrongholdUnitMgr/>
+		<StrongholdUnitQueue/>
+		<TMSBattleMgr/>
+		<TMSUnitMgr/>
+		<TMSUnitQueue/>
 		<ClusterGameParamsController/>
 		<BootcampQueue/>
 		<EntityGetter/>
 		<EpicMgr/>
+		<BobMgr/>
 	</ServerOnlyEntities>
 </root>

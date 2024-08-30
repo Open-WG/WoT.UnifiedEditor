@@ -166,7 +166,7 @@ Item {
 							Accessible.ignored: true
 
 							onClicked: {
-								model.action.invoke();
+								model.action.invoke(sceneBrowserContext.assetSelection);
 							}
 						}
 					}

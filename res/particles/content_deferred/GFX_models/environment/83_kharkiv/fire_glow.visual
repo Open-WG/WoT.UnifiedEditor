@@ -27,14 +27,8 @@
 					<property> distortionMap
 						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_smoke.dds </Texture>
 					</property>
-					<property> enableLighting
-						<Bool> true </Bool>
-					</property>
 					<property> softFactor
 						<Float> 3.000000 </Float>
-					</property>
-					<property> selfIllumLight
-						<Vector3> 1.000000 0.223529 0.070588 </Vector3>
 					</property>
 					<property> TintlColor
 						<Vector4> 0.992157 0.427451 0.231373 0.200000 </Vector4>
@@ -53,6 +47,9 @@
 					</property>
 					<property> alphaFadeAmountFresnel
 						<Vector4> 1.000000 1.000000 1.000000 2.000000 </Vector4>
+					</property>
+					<property> enableLighting
+						<Bool> true </Bool>
 					</property>
 				</material>
 			</primitiveGroup>

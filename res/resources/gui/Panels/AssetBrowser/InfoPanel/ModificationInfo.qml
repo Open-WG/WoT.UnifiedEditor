@@ -21,6 +21,7 @@ Column {
 	Row {
 		width: parent.width
 		spacing: 5
+		visible: authorText.text != ""
 
 		Text.BaseRegular {
 			text: "by"

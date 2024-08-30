@@ -194,6 +194,9 @@
 		<angle>	0.000000	</angle>
 		<rotationStep> 30.000000 30.000000 30.000000 </rotationStep>
 		<markerSize> 30 </markerSize>
+		<ignoredShaders>
+			<file> shaders/custom/volumetric_effect_vtx.fx </file>
+		</ignoredShaders>
 	</snaps>
 	<chunkTexture>
 		<defectiveSeams>

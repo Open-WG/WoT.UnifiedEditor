@@ -1,0 +1,107 @@
+<root>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<stream>	colour	</stream>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier> lambert2 </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> TintlColor 
+						<Vector4> 0.0774 0.083574 0.09 0.9 </Vector4>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset 
+						<Vector4> 0.01 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> lightMultipliers 
+						<Vector4> 1 0.1 1 0.000000 </Vector4>
+					</property>
+					<property> selfIllumLight 
+						<Vector4> 0.000000 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel 
+						<Vector4> 0.000000 0.2 1 0.2 </Vector4>
+					</property>
+					<property> softFactor 
+						<Float> 40 </Float>
+					</property>
+					<property> fadeMinDistance 
+						<Float> 200 </Float>
+					</property>
+					<property> fadeMaxDistance 
+						<Float> 600 </Float>
+					</property>
+					<property> doubleSided 
+						<Bool> true </Bool>
+					</property>
+					<property> enableLighting 
+						<Bool> true </Bool>
+					</property>
+					<property> alphaFreshnelEnable 
+						<Bool> true </Bool>
+					</property>
+					<property> alphaAdditiveEnable 
+						<Bool> false </Bool>
+					</property>
+					<property> diffuseMap 
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/fog_grey.dds</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-127.028084 -4.818721 -125.013100	</min>
+		<max>	129.548752 18.887688 125.013100	</max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation>	false	</exportAnimation>
+			<exportMode>	1	</exportMode>
+			<boneCount>	3	</boneCount>
+			<transformToOrigin>	false	</transformToOrigin>
+			<allowScale>	false	</allowScale>
+			<bumpMapped>	true	</bumpMapped>
+			<keepExistingMaterials>	true	</keepExistingMaterials>
+			<snapVertices>	false	</snapVertices>
+			<stripRefPrefix>	false	</stripRefPrefix>
+			<useReferenceNode>	false	</useReferenceNode>
+			<referenceNodesFile />
+			<disableVisualChecker>	false	</disableVisualChecker>
+			<useLegacyScaling>	false	</useLegacyScaling>
+			<fixCylindrical>	false	</fixCylindrical>
+			<fixNodeTreeLOD>	true	</fixNodeTreeLOD>
+			<useLegacyOrientation>	false	</useLegacyOrientation>
+			<sceneRootAdded>	false	</sceneRootAdded>
+			<recalculateTangents>	false	</recalculateTangents>
+			<includeMeshes>	true	</includeMeshes>
+			<includeEnvelopesAndBones>	false	</includeEnvelopesAndBones>
+			<includeNodes>	true	</includeNodes>
+			<includeMaterials>	true	</includeMaterials>
+			<includeAnimations>	false	</includeAnimations>
+			<useCharacterMode>	false	</useCharacterMode>
+			<animationName>	anim	</animationName>
+			<includePortals>	false	</includePortals>
+			<worldSpaceOrigin>	false	</worldSpaceOrigin>
+			<unitScale>	0.100000	</unitScale>
+			<localHierarchy>	false	</localHierarchy>
+			<nodeFilter>	1	</nodeFilter>
+			<copyExternalTextures>	false	</copyExternalTextures>
+			<copyTexturesTo />
+		</settings>
+	</metaData>
+</root>

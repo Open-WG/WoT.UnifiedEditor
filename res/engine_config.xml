@@ -463,6 +463,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> wheel_vehicle_GUI.pck </name>
 				</project>
 				<project>
+					<name> weekend_brawl.pck </name>
+				</project>
+				<project>
 					<name> plugin_media.bnk </name>
 				</project>
 			</SFX_soundbanks_loadonce>
@@ -498,7 +501,16 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> researches.bnk </name>
 				</project>
 				<project>
+					<name> weekend_brawl.bnk </name>
+				</project>
+				<project>
 					<name> tasks.bnk </name>
+				</project>
+				<project>
+					<name> ev_10y_countdown_hangar.bnk </name>
+				</project>
+				<project>
+					<name> ev_10y_countdown_hangar.pck </name>
 				</project>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -752,7 +764,5 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<!-- locale used by the browser, uses same language codes as acceptLangList -->
 		<autoPlayVideo> true </autoPlayVideo>
 		<!-- Enable video auto play. Works only in new CEF versions(61+) -->
-		<useOldSdk> false </useOldSdk>
-		<!-- use old CEF sdk version (that currently used for WinXp)-->
 	</webBrowser>
 </engine_config.xml>

@@ -1,0 +1,243 @@
+<root>
+	<duration> 10.000001 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model_Il2_2 </name>
+		<type> model </type>
+		<resource> particles/mesh_particles/environment/Il2_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 10.000000 </duration>
+				<resourceID> particles/mesh_particles/environment/Il2_2.fbx </resourceID>
+				<clipName/>
+				<speed> 1.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -2.000000 0.000000 </value>
+				<inTangent> 0.000000 -0.042551 0.000000 </inTangent>
+				<outTangent> 0.000000 -0.042551 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 2.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000000 </startTime>
+				<value> 0.000000 -2.000000 0.000000 </value>
+				<inTangent> -0.000000 0.052007 -0.000000 </inTangent>
+				<outTangent> -0.000000 0.052007 -0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model_Il2_2_2 </name>
+		<type> model </type>
+		<resource> particles/mesh_particles/environment/Il2_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 10.000001 </duration>
+				<resourceID> particles/mesh_particles/environment/Il2_2.fbx </resourceID>
+				<clipName/>
+				<speed> 1.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -40.440769 2.000000 -22.211184 </value>
+				<inTangent> 0.000000 -0.800000 0.000000 </inTangent>
+				<outTangent> 0.000000 -0.800000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> -40.440769 -2.000000 -22.211184 </value>
+				<inTangent> 0.000000 -0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 -0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> -40.440769 2.000000 -22.211184 </value>
+				<inTangent> -0.000000 0.800000 -0.000000 </inTangent>
+				<outTangent> -0.000000 0.800000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model_Il2_2_3 </name>
+		<type> model </type>
+		<resource> particles/mesh_particles/environment/Il2_2.model </resource>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 10.000001 </duration>
+				<resourceID> particles/mesh_particles/environment/Il2_2.fbx </resourceID>
+				<clipName/>
+				<speed> 1.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 40.440769 2.500000 -22.211184 </value>
+				<inTangent> -0.000025 -1.000011 -0.000035 </inTangent>
+				<outTangent> -0.000025 -1.000011 -0.000035 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 40.440643 -2.500053 -22.211357 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> 40.440769 2.500000 -22.211184 </value>
+				<inTangent> 0.000025 1.000010 0.000035 </inTangent>
+				<outTangent> 0.000025 1.000010 0.000035 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model_Il2_2_4 </name>
+		<type> model </type>
+		<resource> particles/mesh_particles/environment/Il2_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 10.000001 </duration>
+				<resourceID> particles/mesh_particles/environment/Il2_2.fbx </resourceID>
+				<clipName/>
+				<speed> 1.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -80.000000 1.000000 1.000000 </value>
+				<inTangent> 0.000000 0.400000 -0.200000 </inTangent>
+				<outTangent> 0.000000 0.400000 -0.200000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> -80.000000 3.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> -80.000000 1.000000 1.000000 </value>
+				<inTangent> -0.000000 -0.400000 0.200000 </inTangent>
+				<outTangent> -0.000000 -0.400000 0.200000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model_Il2_2_5 </name>
+		<type> model </type>
+		<resource> particles/mesh_particles/environment/Il2_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 10.000001 </duration>
+				<resourceID> particles/mesh_particles/environment/Il2_2.fbx </resourceID>
+				<clipName/>
+				<speed> 1.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -120.000000 -1.000000 -22.211187 </value>
+				<inTangent> 0.000000 0.600000 0.000001 </inTangent>
+				<outTangent> 0.000000 0.600000 0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> -120.000000 2.000000 -22.211184 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> -120.000000 -1.000000 -22.211184 </value>
+				<inTangent> -0.000000 -0.600000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.600000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

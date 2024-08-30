@@ -216,10 +216,6 @@ ControlsEx.Panel {
 					onQuickSearchTextChanged: context.applyQuickSearchText(quickSearchText)
 
 					onDoubleClicked: {
-						console.debug("AssetBrowser::ContentPanel::onDoubleClicked: "
-						+ context.currentAssetInfo.fullName + ": "
-						+ qsTr(Qt.formatTime(new Date(), "hh:mm:ss.zzz")))
-
 						// alternatice action
 						if (Qt.ControlModifier == (ApplicationUtils.keyboardModifiers() & Qt.ControlModifier)) {
 							if (altAction.enabled) {

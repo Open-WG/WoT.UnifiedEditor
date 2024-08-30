@@ -163,7 +163,7 @@ Rectangle {
 				title: "Size"
 				text: getSize(p.getAssetData("size"))
 
-				function getSize(byteCount){
+				function getSize(byteCount) {
 
 					var suffixes = ["B", "KB", "MB", "GB", "TB"];
 					var currentSuffix = 0;

@@ -6,10 +6,6 @@ import "Factories" as Factories
 FactoryManager {
 	chooser: Chooser {}
 
-	Factories.UnboundSpinBoxFactory {}
-	Factories.UnboundAlignFactory {}
-	Factories.UnboundMarginFactory {}
-
 	Factories.PathDropDownFactory {}
 	Factories.DropDownFactory {}
 	Factories.TabbedRadioButtonsFactory {}

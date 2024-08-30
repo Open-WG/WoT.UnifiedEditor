@@ -1,0 +1,197 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> FireBig_Glow1 </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> TintlColor
+						<Vector4> 1.000000 0.352941 0.000000 1.000000 </Vector4>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset
+						<Vector4> 0.030000 0.160000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> 0.020000 0.190000 0.300000 0.300000 </Vector4>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 5.000000 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 0.000000 0.000000 1.000000 0.000000 </Vector4>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Noise01_01.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Distortion03.dds </Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup> 1
+				<material>
+					<identifier> FireSmall2 </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> TintlColor
+						<Vector4> 1.000000 1.000000 1.000000 0.000000 </Vector4>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset
+						<Vector4> 0.050000 0.180000 0.700000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> 0.050000 0.210000 0.200000 0.500000 </Vector4>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 60.000000 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 0.000000 2.500000 1.600000 0.150000 </Vector4>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> alphaAdditiveEnable
+						<Bool> true </Bool>
+					</property>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/FireCutout01.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Distortion02.dds </Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup> 2
+				<material>
+					<identifier> Fire_Slow </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> TintlColor
+						<Vector4> 1.000000 0.509804 0.509804 1.000000 </Vector4>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset
+						<Vector4> 0.150000 0.240000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> -0.050000 0.250000 0.600000 0.600000 </Vector4>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 30.000000 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> FreshnelColor
+						<Vector4> 1.000000 0.984314 0.925490 1.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 0.000000 1.500000 1.000000 0.000000 </Vector4>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> alphaAdditiveEnable
+						<Bool> true </Bool>
+					</property>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/FireCutout03_01.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Distortion01.dds </Texture>
+					</property>
+					<property> selfIllumLight
+						<Vector4> 1.000000 0.607843 0.266667 0.000000 </Vector4>
+					</property>
+				</material>
+			</primitiveGroup>
+			<primitiveGroup> 3
+				<material>
+					<identifier> Fire_Fast </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> TintlColor
+						<Vector4> 1.000000 0.454902 0.454902 0.500000 </Vector4>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset
+						<Vector4> 0.150000 0.265000 0.600000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> 0.050000 0.180000 0.500000 0.250000 </Vector4>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 0.000000 0.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> FreshnelColor
+						<Vector4> 1.000000 0.611765 0.258824 1.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 0.000000 2.000000 1.200000 0.000000 </Vector4>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> alphaAdditiveEnable
+						<Bool> true </Bool>
+					</property>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/FireCutout02_Long_01.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Distortion02_long.dds </Texture>
+					</property>
+					<property> softFactor
+						<Float> 0.000000 </Float>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -9.239904 2.272749 -8.095768 </min>
+		<max> 11.656177 23.477203 5.351099 </max>
+	</boundingBox>
+</root>

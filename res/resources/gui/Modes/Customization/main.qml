@@ -28,15 +28,6 @@ ControlsEx.Panel {
 		orientation: Qt.Vertical
 		anchors.fill: parent
 
-		QtPropertyUndoHelper
-		{
-			id: undoHelper
-			target: grid
-			property: "currentIndex"
-			changesController: context.changesController
-			active: false
-		}
-
 		GridView {
 			id: grid
 			width:parent.width
@@ -125,10 +116,5 @@ ControlsEx.Panel {
 				model: pgModel
 			}
 		}
-	}
-
-	Component.onCompleted:
-	{
-		undoHelper.active = true
 	}
 }

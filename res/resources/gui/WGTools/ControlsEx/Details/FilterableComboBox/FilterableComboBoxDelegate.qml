@@ -7,7 +7,7 @@ Details.ComboBoxDelegate {
 
 	onClicked: {
 		control.popup.close()
-		control.setActive(index)
+		control.setFilterActive(index)
 	}
 
 	onHoveredChanged: {

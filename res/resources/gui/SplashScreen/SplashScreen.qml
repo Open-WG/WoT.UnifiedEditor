@@ -74,6 +74,7 @@ Rectangle {
 			}
 
 			Row {
+				visible: context.buildTime != ""
 				Text {
 					text: "Built at "
 					color: "#8C8C8C"

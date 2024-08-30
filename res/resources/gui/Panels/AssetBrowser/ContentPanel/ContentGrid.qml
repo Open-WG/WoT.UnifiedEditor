@@ -69,9 +69,6 @@ GridView {
 			anchors.fill: parent
 
 			onPressed: {
-				console.debug("AssetBrowser::ContentPanel::onPressed: "
-					+ new Date().toLocaleTimeString(Qt.locale("de_DE"), "hh:mm:ss.zzz")
-					+ " interval: " + Qt.styleHints.mouseDoubleClickInterval)
 				grid.forceActiveFocus()
 				grid.currentIndex = index
 
@@ -91,7 +88,6 @@ GridView {
 					let menu = grid.contextMenu.createObject(grid)
 					menu.popupEx()
 				}
-				console.debug("AssetBrowser::ContentPanel::onReleased");
 			}
 
 			function sleep(duration) { // In milliseconds

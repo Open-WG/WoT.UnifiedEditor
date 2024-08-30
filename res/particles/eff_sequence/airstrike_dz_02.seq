@@ -1,0 +1,130 @@
+<root>
+	<duration> 16.050001 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Bomber_01 </name>
+		<type> model </type>
+		<resource> content/MilitaryEnvironment/hd_mle_UNI_006_Bomber/normal/lod0/hd_mle_UNI_006_Bomber_01.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.033333 </startTime>
+				<value> -402.340576 468.397888 -715.272766 </value>
+				<inTangent> 164.821594 -188.043808 5.082520 </inTangent>
+				<outTangent> 164.821594 -188.043808 5.082520 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.466667 </startTime>
+				<value> -0.293343 115.581505 -416.835663 </value>
+				<inTangent> 0.015172 -30.817204 104.849701 </inTangent>
+				<outTangent> 0.015172 -30.817204 104.849701 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.483334 </startTime>
+				<value> -0.294479 26.668409 -24.203369 </value>
+				<inTangent> 0.001512 -20.384205 102.854218 </inTangent>
+				<outTangent> 0.001512 -20.384205 102.854218 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.216667 </startTime>
+				<value> 22.686817 63.351547 118.639153 </value>
+				<inTangent> 48.115559 64.443985 56.182926 </inTangent>
+				<outTangent> 48.115559 64.443985 56.182926 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.050001 </startTime>
+				<value> 530.845276 620.129272 501.551605 </value>
+				<inTangent> 109.386597 94.545418 42.501411 </inTangent>
+				<outTangent> 109.386597 94.545418 42.501411 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.033333 </startTime>
+				<value> 0.296301 0.634070 -0.287305 0.653924 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.750000 </startTime>
+				<value> 0.235266 0.427317 -0.116198 0.865187 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.466667 </startTime>
+				<value> 0.142448 0.000072 -0.000010 0.989802 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.483334 </startTime>
+				<value> 0.097669 0.000007 -0.000001 0.995219 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.350000 </startTime>
+				<value> -0.120246 0.046364 0.005622 0.991645 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.216667 </startTime>
+				<value> -0.328961 0.324722 0.121612 0.878379 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.050001 </startTime>
+				<value> -0.274509 0.532571 0.187843 0.778285 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> death_zone_planes </name>
+		<type> sound </type>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.050001 </duration>
+				<value> Bomber_01|root </value>
+			</frame>
+		</track>
+		<track>
+			<name/>
+			<type> sound </type>
+			<frame>
+				<startTime> 1.016667 </startTime>
+				<duration> 15.033334 </duration>
+				<value> ev_2019_secret_event_gameplay_ability_death_zone </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,224 @@
+<root>
+	<item label="Unlock all vehicles" action="$unlockAll"/>
+	<item label="Obtain all items" action="$obtainAll"/>
+	<item label="Obtain vehicle" action="$obtainVehicle" input="true" format="('%s')"/>
+	<item label="Set hangar" action="$hangar.setPath">
+		<param> ('hangar_v3')	</param>
+	</item>
+	<item label="Add money" action="$p.stats.setMoney">
+		<param label="100000000">	(100000000,100000000,100000000,100000000)	</param>
+	</item>
+	<item label="Set herotank" action="$setHero">
+		<param> ('germany:G42_Maus') </param>
+		<param> ('japan:J27_O_I_120') </param>
+		<param> ('uk:GB94_Centurion_Mk5-1_RAAC') </param>
+		<param> ('ussr:R54_KV-5') </param>
+	</item>
+	<item label="[SE20] Set hangar ENV" action="$hangar.setEnvironmentAndVisibilityMask">
+		<param label="1"> ('main_war', 984049) </param>
+		<param label="2"> ('diarama_war', 984050) </param>
+		<param label="3"> ('main_peace', 984052) </param>
+		<param label="4"> ('diarama_peace', 984056) </param>
+	</item>
+	<item label="[SE20] Hangar VO" action="$eventController._hangarSoundController">
+		<param label="VO Phase 1"> .cheatSetPhaseId(0) </param>
+		<param label="VO Phase 2"> .cheatSetPhaseId(1) </param>
+		<param label="VO Phase 3"> .cheatSetPhaseId(2) </param>
+		<param label="VO Phase 4"> .cheatSetPhaseId(3) </param>
+		<param label="VO Phase 5"> .cheatSetPhaseId(4) </param>
+		<param label="VO Phase 6"> .cheatSetPhaseId(5) </param>
+		<param label="VO Phase 7"> .cheatSetPhaseId(6) </param>
+		<param label="Reset Cheat"> .cheatResetPhases() </param>
+		<param label="Stop Sounds"> .cheatStopSounds() </param>
+	</item>
+	<item label="[SE20] Respawn vehicle" action="$p.base.setDevelopmentFeature(0, 'se20_respawn_vehicle', 0, '')"/>
+	<item label="[SE20] Toggle buff" action="$p.base.setDevelopmentFeature">
+		<param label="Invulnerability"> (0, 'toggleBuff', 0, 'invulnerabilityPlayer') </param>
+	</item>
+	<item label="[SE20] Add points of 1st general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_0_event_points', 1) </param>
+		<param label="+10"> ('se20_general_0_event_points', 10) </param>
+		<param label="+100"> ('se20_general_0_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Add points of 2nd general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_1_event_points', 1) </param>
+		<param label="+10"> ('se20_general_1_event_points', 10) </param>
+		<param label="+100"> ('se20_general_1_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Add points of 3rd general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_2_event_points', 1) </param>
+		<param label="+10"> ('se20_general_2_event_points', 10) </param>
+		<param label="+100"> ('se20_general_2_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Add points of 4th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_3_event_points', 1) </param>
+		<param label="+10"> ('se20_general_3_event_points', 10) </param>
+		<param label="+100"> ('se20_general_3_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Add points of 5th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_4_event_points', 1) </param>
+		<param label="+10"> ('se20_general_4_event_points', 10) </param>
+		<param label="+100"> ('se20_general_4_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Add points of 6th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_general_5_event_points', 1) </param>
+		<param label="+10"> ('se20_general_5_event_points', 10) </param>
+		<param label="+100"> ('se20_general_5_event_points', 100) </param>
+	</item>
+	<item label="[SE20] Buy level of 1st general " action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_0_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_0_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy level of 2nd general " action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_1_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_1_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy level of 3rd general " action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_2_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_2_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy level of 4th general " action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_3_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_3_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy level of 5th general " action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_4_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_4_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy level of 6th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="II"> ('se20_bought_general_5_level_1', 1) </param>
+		<param label="III"> ('se20_bought_general_5_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Buy all levels of generals" action="$p.stats.unlockLinkedSetMission">
+		<param label="all levels"> ('se20_general_bundle_level_2', 1) </param>
+	</item>
+	<item label="[SE20] Add event points (front points)" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('se20_front_1_event_points', 1) </param>
+		<param label="+10"> ('se20_front_1_event_points', 10) </param>
+		<param label="+100"> ('se20_front_1_event_points', 100) </param>
+		<param label="+1000"> ('se20_front_1_event_points', 1000) </param>
+	</item>
+	<item label="[SE20] Add energy for 1st general" action="$p.stats.unlockLinkedSetMission">
+		<param label="energy x1 +1"> ('img:se20_energy_general_0_x1:webId', 1) </param>
+		<param label="energy x1 +100"> ('img:se20_energy_general_0_x1:webId', 100) </param>
+		<param label="energy x5 +1"> ('img:se20_energy_general_0_x5:webId', 1) </param>
+		<param label="energy x5 +10"> ('img:se20_energy_general_0_x5:webId', 10) </param>
+		<param label="energy x5 +100"> ('img:se20_energy_general_0_x5:webId', 100) </param>
+		<param label="energy x5 +1000"> ('img:se20_energy_general_0_x5:webId', 1000) </param>
+		<param label="energy x10 +1"> ('img:se20_energy_general_0_x10:webId', 1) </param>
+		<param label="energy x10 +10"> ('img:se20_energy_general_0_x10:webId', 10) </param>
+		<param label="energy x10 +100"> ('img:se20_energy_general_0_x10:webId', 100) </param>
+		<param label="energy x10 +1000"> ('img:se20_energy_general_0_x10:webId', 1000) </param>
+		<param label="energy x15 +1"> ('img:se20_energy_general_0_x15:webId', 1) </param>
+		<param label="energy x15 +10"> ('img:se20_energy_general_0_x15:webId', 10) </param>
+		<param label="energy x15 +100"> ('img:se20_energy_general_0_x15:webId', 100) </param>
+		<param label="energy x15 +1000"> ('img:se20_energy_general_0_x15:webId', 1000) </param>
+	</item>
+	<item label="[SE20] Add energy for 2nd general" action="$p.stats.unlockLinkedSetMission">
+		<param label="energy x1 +1"> ('img:se20_energy_general_1_x1:webId', 1) </param>
+		<param label="energy x1 +100"> ('img:se20_energy_general_1_x1:webId', 100) </param>
+		<param label="energy x5 +1"> ('img:se20_energy_general_1_x5:webId', 1) </param>
+		<param label="energy x5 +10"> ('img:se20_energy_general_1_x5:webId', 10) </param>
+		<param label="energy x5 +100"> ('img:se20_energy_general_1_x5:webId', 100) </param>
+		<param label="energy x5 +1000"> ('img:se20_energy_general_1_x5:webId', 1000) </param>
+		<param label="energy x10 +1"> ('img:se20_energy_general_1_x10:webId', 1) </param>
+		<param label="energy x10 +10"> ('img:se20_energy_general_1_x10:webId', 10) </param>
+		<param label="energy x10 +100"> ('img:se20_energy_general_1_x10:webId', 100) </param>
+		<param label="energy x10 +1000"> ('img:se20_energy_general_1_x10:webId', 1000) </param>
+		<param label="energy x15 +1"> ('img:se20_energy_general_1_x15:webId', 1) </param>
+		<param label="energy x15 +10"> ('img:se20_energy_general_1_x15:webId', 10) </param>
+		<param label="energy x15 +100"> ('img:se20_energy_general_1_x15:webId', 100) </param>
+		<param label="energy x15 +1000"> ('img:se20_energy_general_1_x15:webId', 1000) </param>
+	</item>
+	<item label="[SE20] Add energy for 3rd general" action="$p.stats.unlockLinkedSetMission">
+		<param label="energy x1 +1"> ('img:se20_energy_general_2_x1:webId', 1) </param>
+		<param label="energy x1 +100"> ('img:se20_energy_general_2_x1:webId', 100) </param>
+		<param label="energy x5 +1"> ('img:se20_energy_general_2_x5:webId', 1) </param>
+		<param label="energy x5 +10"> ('img:se20_energy_general_2_x5:webId', 10) </param>
+		<param label="energy x5 +100"> ('img:se20_energy_general_2_x5:webId', 100) </param>
+		<param label="energy x5 +1000"> ('img:se20_energy_general_2_x5:webId', 1000) </param>
+		<param label="energy x10 +1"> ('img:se20_energy_general_2_x10:webId', 1) </param>
+		<param label="energy x10 +10"> ('img:se20_energy_general_2_x10:webId', 10) </param>
+		<param label="energy x10 +100"> ('img:se20_energy_general_2_x10:webId', 100) </param>
+		<param label="energy x10 +1000"> ('img:se20_energy_general_2_x10:webId', 1000) </param>
+		<param label="energy x15 +1"> ('img:se20_energy_general_2_x15:webId', 1) </param>
+		<param label="energy x15 +10"> ('img:se20_energy_general_2_x15:webId', 10) </param>
+		<param label="energy x15 +100"> ('img:se20_energy_general_2_x15:webId', 100) </param>
+		<param label="energy x15 +1000"> ('img:se20_energy_general_2_x15:webId', 1000) </param>
+	</item>
+	<item label="[SE20] Add energy for 4th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="energy x1 +1"> ('img:se20_energy_general_3_x1:webId', 1) </param>
+		<param label="energy x1 +100"> ('img:se20_energy_general_3_x1:webId', 100) </param>
+		<param label="energy x5 +1"> ('img:se20_energy_general_3_x5:webId', 1) </param>
+		<param label="energy x5 +10"> ('img:se20_energy_general_3_x5:webId', 10) </param>
+		<param label="energy x5 +100"> ('img:se20_energy_general_3_x5:webId', 100) </param>
+		<param label="energy x5 +1000"> ('img:se20_energy_general_3_x5:webId', 1000) </param>
+		<param label="energy x10 +1"> ('img:se20_energy_general_3_x10:webId', 1) </param>
+		<param label="energy x10 +10"> ('img:se20_energy_general_3_x10:webId', 10) </param>
+		<param label="energy x10 +100"> ('img:se20_energy_general_3_x10:webId', 100) </param>
+		<param label="energy x10 +1000"> ('img:se20_energy_general_3_x10:webId', 1000) </param>
+		<param label="energy x15 +1"> ('img:se20_energy_general_3_x15:webId', 1) </param>
+		<param label="energy x15 +10"> ('img:se20_energy_general_3_x15:webId', 10) </param>
+		<param label="energy x15 +100"> ('img:se20_energy_general_3_x15:webId', 100) </param>
+		<param label="energy x15 +1000"> ('img:se20_energy_general_3_x15:webId', 1000) </param>
+	</item>
+	<item label="[SE20] Add energy for 5th general" action="$p.stats.unlockLinkedSetMission">
+		<param label="energy x1 +1"> ('img:se20_energy_general_4_x1:webId', 1) </param>
+		<param label="energy x1 +100"> ('img:se20_energy_general_4_x1:webId', 100) </param>
+		<param label="energy x5 +1"> ('img:se20_energy_general_4_x5:webId', 1) </param>
+		<param label="energy x5 +10"> ('img:se20_energy_general_4_x5:webId', 10) </param>
+		<param label="energy x5 +100"> ('img:se20_energy_general_4_x5:webId', 100) </param>
+		<param label="energy x5 +1000"> ('img:se20_energy_general_4_x5:webId', 1000) </param>
+		<param label="energy x10 +1"> ('img:se20_energy_general_4_x10:webId', 1) </param>
+		<param label="energy x10 +10"> ('img:se20_energy_general_4_x10:webId', 10) </param>
+		<param label="energy x10 +100"> ('img:se20_energy_general_4_x10:webId', 100) </param>
+		<param label="energy x10 +1000"> ('img:se20_energy_general_4_x10:webId', 1000) </param>
+		<param label="energy x15 +1"> ('img:se20_energy_general_4_x15:webId', 1) </param>
+		<param label="energy x15 +10"> ('img:se20_energy_general_4_x15:webId', 10) </param>
+		<param label="energy x15 +100"> ('img:se20_energy_general_4_x15:webId', 100) </param>
+		<param label="energy x15 +1000"> ('img:se20_energy_general_4_x15:webId', 1000) </param>
+	</item>
+	<item label="[SE20] Draw energy for 1st general" action="$p.stats.lockLinkedSetMission">
+		<param label="draw energy x1"> ('img:se20_energy_general_0_x1:webId', ) </param>
+		<param label="draw energy x5"> ('img:se20_energy_general_0_x5:webId', ) </param>
+		<param label="draw energy x10"> ('img:se20_energy_general_0_x10:webId', ) </param>
+		<param label="draw energy x10 (premium)"> ('img:se20_energy_general_0_x10_premium:webId', ) </param>
+		<param label="draw energy x15"> ('img:se20_energy_general_0_x15:webId', ) </param>
+	</item>
+	<item label="[SE20] Draw energy for 2nd general" action="$p.stats.lockLinkedSetMission">
+		<param label="draw energy x1"> ('img:se20_energy_general_1_x1:webId', ) </param>
+		<param label="draw energy x5"> ('img:se20_energy_general_1_x5:webId', ) </param>
+		<param label="draw energy x10"> ('img:se20_energy_general_1_x10:webId', ) </param>
+		<param label="draw energy x10 (premium)"> ('img:se20_energy_general_1_x10_premium:webId', ) </param>
+		<param label="draw energy x15"> ('img:se20_energy_general_1_x15:webId', ) </param>
+	</item>
+	<item label="[SE20] Draw energy for 3rd general" action="$p.stats.lockLinkedSetMission">
+		<param label="draw energy x1"> ('img:se20_energy_general_2_x1:webId', ) </param>
+		<param label="draw energy x5"> ('img:se20_energy_general_2_x5:webId', ) </param>
+		<param label="draw energy x10"> ('img:se20_energy_general_2_x10:webId', ) </param>
+		<param label="draw energy x10 (premium)"> ('img:se20_energy_general_2_x10_premium:webId', ) </param>
+		<param label="draw energy x15"> ('img:se20_energy_general_2_x15:webId', ) </param>
+	</item>
+	<item label="[SE20] Draw energy for 4th general" action="$p.stats.lockLinkedSetMission">
+		<param label="draw energy x1"> ('img:se20_energy_general_3_x1:webId', ) </param>
+		<param label="draw energy x5"> ('img:se20_energy_general_3_x5:webId', ) </param>
+		<param label="draw energy x10"> ('img:se20_energy_general_3_x10:webId', ) </param>
+		<param label="draw energy x10 (premium)"> ('img:se20_energy_general_3_x10_premium:webId', ) </param>
+		<param label="draw energy x15"> ('img:se20_energy_general_3_x15:webId', ) </param>
+	</item>
+	<item label="[SE20] Draw energy for 5th general" action="$p.stats.lockLinkedSetMission">
+		<param label="draw energy x1"> ('img:se20_energy_general_4_x1:webId', ) </param>
+		<param label="draw energy x5"> ('img:se20_energy_general_4_x5:webId', ) </param>
+		<param label="draw energy x10"> ('img:se20_energy_general_4_x10:webId', ) </param>
+		<param label="draw energy x10 (premium)"> ('img:se20_energy_general_4_x10_premium:webId', ) </param>
+		<param label="draw energy x15"> ('img:se20_energy_general_4_x15:webId', ) </param>
+	</item>
+	<item label="[SE20] Exchange token for energy x15" action="$p.stats.unlockLinkedSetMission">
+		<param label="+1"> ('img:se20_energy_general_x15_discount:webId', 1) </param>
+		<param label="+10"> ('img:se20_energy_general_x15_discount:webId', 10) </param>
+		<param label="+100"> ('img:se20_energy_general_x15_discount:webId', 100) </param>
+	</item>
+	<item label="[SE20] Draw all exchange tokens for energy x15" action="$p.stats.lockLinkedSetMission">
+		<param label="draw"> ('img:se20_energy_general_x15_discount:webId', ) </param>
+	</item>
+</root>

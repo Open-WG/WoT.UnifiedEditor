@@ -1,0 +1,6 @@
+<root>
+  <rule pattern=".*$">
+  	<root>true</root>
+    <converter>CopyConverter</converter>
+  </rule>
+</root>

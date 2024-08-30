@@ -1,7 +1,6 @@
 <root type="map&lt;string, string&gt;">
 	<item key="aboutDialogId">	"F1"	</item>
 	<item key="activate_frontline_mode_action">	""	</item>
-	<item key="addKeyToSelectionAction">	"K"	</item>
 	<item key="apply_terrain_material">	""	</item>
 	<item key="blc_bottom_dock_area">	""	</item>
 	<item key="blc_left_dock_area">	""	</item>
@@ -37,7 +36,6 @@
 	<item key="decreaseBrushFastAction">	"Ctrl+["	</item>
 	<item key="decreaseBrushOpacityAction">	"-"	</item>
 	<item key="delete_selected_action">	""	</item>
-	<item key="deleteItemAction">	"Delete"	</item>
 	<item key="deletePrimitive">	"Delete"	</item>
 	<item key="deleteShotPoint">	"Delete"	</item>
 	<item key="deselect_all">	"Ctrl+D"	</item>
@@ -68,16 +66,12 @@
 	<item key="move_to">	""	</item>
 	<item key="move_to_selection_action">	"F"	</item>
 	<item key="nextEditor">	"Ctrl+Tab"	</item>
-	<item key="nextKeyAction">	"Right"	</item>
 	<item key="open_asset">	""	</item>
 	<item key="overlayTool">	""	</item>
 	<item key="particleTool">	""	</item>
 	<item key="paste_properties">	"Ctrl+V"	</item>
 	<item key="pauseAnimations">	""	</item>
 	<item key="playAnimations">	""	</item>
-	<item key="playbackToggle">	"Space"	</item>
-	<item key="prevKey">	"Left"	</item>
-	<item key="recordToggle">	"Shift+R"	</item>
 	<item key="redo">	"Ctrl+Y"	</item>
 	<item key="regenerate_all_road_bins_action">	""	</item>
 	<item key="regenerate_decals_bin">	""	</item>
@@ -104,13 +98,9 @@
 	<item key="saveAction">	"Ctrl + J"	</item>
 	<item key="saveAsId">	"Ctrl+Shift+S"	</item>
 	<item key="saveLayout">	""	</item>
-	<item key="scene_browser_collapse_all">	""	</item>
 	<item key="scene_browser_copy_properties">	"Ctrl+C"	</item>
-	<item key="scene_browser_expand_all">	""	</item>
 	<item key="scene_browser_paste_properties">	"Ctrl+V"	</item>
 	<item key="screenShot">	"PrintScreen"	</item>
-	<item key="scrollToBeg">	"Ctrl+Left"	</item>
-	<item key="scrollToEnd">	"Ctrl+Right"	</item>
 	<item key="select_all_selectable_action">	"Ctrl+A"	</item>
 	<item key="sequenceModeTool">	""	</item>
 	<item key="setMoveMode">	"W"	</item>
@@ -132,7 +122,6 @@
 	<item key="spaceeditor_processAllDataid">	"Ctrl+Alt+S"	</item>
 	<item key="spaceSettingsActionId">	""	</item>
 	<item key="stopAnimations">	""	</item>
-	<item key="stopPlaybackAct">	"Return"	</item>
 	<item key="switch_selection_type_id">	"Alt+B"	</item>
 	<item key="switchBrushModeAction">	"f"	</item>
 	<item key="switchFilterPresetAction">	"Shift+f"	</item>
@@ -166,6 +155,4 @@
 	<item key="views_dock_widget_toggle_action(Tool Options)">	""	</item>
 	<item key="views_tool_bar">	""	</item>
 	<item key="zoomFitScreen">	""	</item>
-	<item key="zoomInAction">	"["	</item>
-	<item key="zoomOutAction">	"]"	</item>
 </root>

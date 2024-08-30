@@ -46,7 +46,7 @@ T.TagComboBox {
 		onClicked: {
 			control.contentItem.text = ""
 			control.popup.close()
-			setActive(index)
+			setFilterActive(index)
 			addTag(currentIndex)
 		}
 	}

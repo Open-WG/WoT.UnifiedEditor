@@ -42,13 +42,7 @@ Menu {
 	Menu {
 		id: openMenu
 		title: "Open"
-		enabled: openUnboundId.valid
-			|| openFilmtrackId.valid
-
-		Details.ActionMenuItem {
-			id: openUnboundId
-			source: context.action("openUnboundId")
-		}
+		enabled: openFilmtrackId.valid
 
 		Details.ActionMenuItem {
 			id: openFilmtrackId

@@ -22,25 +22,10 @@
 					<materialKind> 0 </materialKind>
 					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
 					<property> diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/83_main_smoke_01.dds</Texture>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/83_main_smoke_01.dds </Texture>
 					</property>
 					<property> distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke.dds</Texture>
-					</property>
-					<property> doubleSided
-						<Bool> true </Bool>
-					</property>
-					<property> alphaFreshnelEnable
-						<Bool> false </Bool>
-					</property>
-					<property> enableLighting
-						<Bool> true </Bool>
-					</property>
-					<property> alphaAdditiveEnable
-						<Bool> false </Bool>
-					</property>
-					<property> selfIllumLight
-						<Vector4> 0.329412 0.600000 0.819608 0.000000 </Vector4>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_smoke.dds </Texture>
 					</property>
 					<property> TintlColor
 						<Vector4> 0.305882 0.321569 0.333333 1.000000 </Vector4>
@@ -56,6 +41,9 @@
 					</property>
 					<property> alphaFadeAmountFresnel
 						<Vector4> 1.000000 1.100000 1.000000 0.000000 </Vector4>
+					</property>
+					<property> enableLighting
+						<Bool> true </Bool>
 					</property>
 				</material>
 			</primitiveGroup>
@@ -77,7 +65,7 @@
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
 			<useReferenceNode> false </useReferenceNode>
-			<referenceNodesFile />
+			<referenceNodesFile/>
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
@@ -88,7 +76,7 @@
 			<unitScale> 0.100000 </unitScale>
 			<nodeFilter> 1 </nodeFilter>
 			<copyExternalTextures> false </copyExternalTextures>
-			<copyTexturesTo />
+			<copyTexturesTo/>
 			<textureOverwriteOption> 2 </textureOverwriteOption>
 			<debug> false </debug>
 		</settings>

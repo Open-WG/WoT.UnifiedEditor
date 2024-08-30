@@ -2,17 +2,17 @@ import QtQuick 2.11
 import WGTools.Controls.Details 2.0 as Details
 
 Rectangle {
-	readonly property bool readOnly: !control.enabled || control.hasOwnProperty("readOnly") && control.readOnly
+	readonly property bool __readOnly: !control.enabled || (control.hasOwnProperty("readOnly") ? control.readOnly : false)
 
 	implicitWidth: ControlsSettings.longWidth
 	implicitHeight: ControlsSettings.height
 	radius: ControlsSettings.radius
-	color: readOnly ? "transparent" : _palette.color9
+	color: __readOnly ? "transparent" : _palette.color9
 
 	border.width: ControlsSettings.strokeWidth
 	border.color: control.activeFocus
 		? _palette.color1
-		: readOnly
+		: __readOnly
 			? _palette.color7
 			: color
 
