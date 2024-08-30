@@ -29,7 +29,6 @@ MouseArea {
 	}
 
 	onReleased: {
-		let m = menuComponent.createObject(parent)
-		m.popupEx()
+		parent.showPopupMenu()
 	}
 }

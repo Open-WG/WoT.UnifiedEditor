@@ -122,9 +122,25 @@ WGT.Panel {
 						delegate: Details.ElementDelegate {
 							width: elements.cellWidth
 							height: elements.cellHeight
-							onClicked: elements.elementClicked()
+
+							Timer {
+								id:timer
+								interval: 300
+							}
+							// todo: revert connecting to onDoubleClicked.
+							// In some cases two clicked signals are emmited, but not a doubleclicked one.
+							// The timer is used to imitate double click (fix for WOTD-176689).
+							onClicked: {
+								if (timer.running) {
+									context.applySelected()
+									timer.stop()
+								} else {
+									elements.elementClicked()
+									context.makeSelected()
+									timer.restart()
+								}
+							}
 							onRightClicked: context.showElementContextMenu()
-							onDoubleClicked: context.applySelected()
 						}
 					}
 				}

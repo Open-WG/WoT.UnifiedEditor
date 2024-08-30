@@ -22,10 +22,10 @@ Button {
 	}
 
 	enabled: {
-		for (var i=0; i<repeater.count; ++i) {
+		for (var i = 0; i < repeater.count; ++i) {
 			var item = repeater.itemAt(i)
 
-			if (item.checked)
+			if (item.checked || item.hasExtendedFilter())
 				return true
 		}
 
@@ -45,13 +45,12 @@ Button {
 	function removeAllQuickFilters() {
 		let removed = true
 
-		for (var i=0; i<repeater.count; ++i) {
+		for (var i = 0; i < repeater.count; ++i) {
 			var item = repeater.itemAt(i)
 
-			if (!item.checked)
-				continue;
-
-			item.removeFilter(false)
+			if (item.checked)
+				item.removeFilter(false)
+			item.removeExtendedFilter()
 		}
 
 		if (removed)

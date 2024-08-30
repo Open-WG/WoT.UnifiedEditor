@@ -1,106 +1,131 @@
 import QtQuick 2.11
+import QtQml.Models 2.11
+import QtQuick.Layouts 1.11
 import WGTools.Controls 2.0
-import WGTools.Controls.Details 2.0
 import WGTools.Controls.impl 1.0 as Impl
 
-// TODO: This is a prototype. Some implementations can be ugly.
+RowLayout {
+	property var extendedFilterButton: undefined
+	property alias useFilter: mainButton.active
+	property alias checked: mainButton.checked
 
-Button {
-	id: control
-	text: model.display
-	checkable: true
+	property bool pressed: false
 
-	function escapeRegExp(string){
-		return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
-	}
+	id: filter
+	spacing: 0
 
-	function filterRegExp() {
-		let pattern = "(?:^|[\\s]+)" + escapeRegExp(model.filter) + "\\b"
-		return new RegExp(pattern, "i")
-	}
-
-	function addFilter() {
-		if (context.queryEditProxy.text != "") {
-			context.queryEditProxy.text += " "
+	MainFilterButton {
+		id: mainButton
+		onClicked: {
+			let ctrlPressed = Qt.ControlModifier == (Impl.KeyModifiersMonitor.modifiers & Qt.ControlModifier)
+			if (useFilter) {
+				processMainButtonClick(ctrlPressed)
+			} else if (!ctrlPressed) {
+				// in this case the button will be checked but the filter will not be added
+				setCheckedOnly() 
+			}
+			activateExtendedFilter(checked)
 		}
-
-		context.queryEditProxy.text += model.filter
-		context.applyQuery()
+		onPressed: {
+			filter.pressed = true
+		}
 	}
 
-	function removeFilter(apply) {
-		let newQueryFilters = context.queryFilters.replace(filterRegExp(), '')
-
-		context.queryEditProxy.text = context.queryPath
-		context.queryEditProxy.text += "/ "
-		context.queryEditProxy.text += newQueryFilters
-
-		if (apply == true)
-			context.applyQuery()
+	Loader {
+		id: loader
+		onLoaded: {
+			item.menuLoader.setSource(model.menu)
+			extendedFilterButton = item
+		}
 	}
 
-	function removeOtherFilers() {
-		let removed = true
+	Component.onCompleted: {
+		Impl.KeyModifiersMonitor.modifiers
+		if (model.menu != undefined) {
+			loader.setSource("ExtendedFilterButton.qml")
+			mainButton.setLeftRounded()
+		}
+	}
 
-		for (var i=0; i<repeater.count; ++i) {
+	onCheckedChanged: {
+		if (!pressed) {
+			activateExtendedFilter(checked)
+		}
+		pressed = false
+	}
+
+	function processMainButtonClick(ctrlPressed) {
+		if (checked) {
+			if (!ctrlPressed) {
+				removeOtherFilters()
+			}
+			mainButton.addFilter()
+		} else {
+			if (ctrlPressed || checkedButtonsCount() == 0) {
+				mainButton.removeFilter(true)
+			} else {
+				removeOtherFilters()
+			}
+		}
+	}
+
+	function removeOtherFilters() {
+		for (var i = 0; i < repeater.count; ++i) {
 			var item = repeater.itemAt(i)
 
-			if (item == control)
-				continue;
-
-			if (!item.checked)
-				continue;
-
-			item.removeFilter(false)
+			if (item != filter && item.checked) {
+				item.removeFilter(false)
+			}
 		}
-
-		if (removed)
-			context.applyQuery()
+		context.applyQuery()
 	}
 
 	function checkedButtonsCount() {
 		let count = 0
 
-		for (var i=0; i<repeater.count; ++i) {
-			var item = repeater.itemAt(i)
-
-			if (item.checked)
+		for (var i = 0; i < repeater.count; ++i) {
+			if (repeater.itemAt(i).checked)
 				++count
 		}
 
 		return count
 	}
 
-	onClicked: {
-		let checkedCount = 0
-		let ctrlPressed = Qt.ControlModifier == (Impl.KeyModifiersMonitor.modifiers & Qt.ControlModifier)
-
-		if (checked) {
-			if (!ctrlPressed) {
-				removeOtherFilers()
-			}
-			addFilter()
+	function removeFilter(apply) {
+		if (useFilter) {
+			activateExtendedFilter(checked)
+			mainButton.removeFilter(apply)
 		} else {
-			if (ctrlPressed || checkedButtonsCount() == 0) {
-				removeFilter(true)
-			} else {
-				removeOtherFilers()
-			}
+			checked = false
 		}
 	}
 
-	ToolTip.visible: hovered
-	ToolTip.delay: ControlsSettings.tooltipDelay
-	ToolTip.timeout: ControlsSettings.tooltipTimeout
-	ToolTip.text:
-		"Filter: \"" + model.filter + "\"\n" +
-		"Ctrl: multiple selection"
+	function setCheckedOnly() {
+		if (checked || checkedButtonsCount() != 0) {
+			for (var i = 0; i < repeater.count; ++i) {
+				var item = repeater.itemAt(i)
 
-	Component.onCompleted: {
-		Impl.KeyModifiersMonitor.modifiers
+				if (item != filter && item.checked) {
+					item.checked = false
+				}
+			}
+			checked = true
+		}
 	}
 
-	Binding on checked {
-		value: filterRegExp().test(context.queryFilters)
+	function hasExtendedFilter() {
+		return extendedFilterButton ? extendedFilterButton.checked : false
+	}
+
+	function removeExtendedFilter() {
+		if (extendedFilterButton != undefined) {
+			extendedFilterButton.clear()
+		}
+	}
+
+	function activateExtendedFilter(active) {
+		if (extendedFilterButton != undefined) {
+			extendedFilterButton.setActive(active)
+		}
 	}
 }

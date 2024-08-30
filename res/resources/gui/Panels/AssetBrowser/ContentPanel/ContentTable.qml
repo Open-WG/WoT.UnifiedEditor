@@ -124,9 +124,27 @@ Views.TableView {
 			}
 		}
 	}
+	
+	function showPopupMenu() {
+		let menu = contextMenu.createObject(table)
+		menu.popupEx()
+	}
 
 	Keys.onReturnPressed: doubleClicked(null)
 	Keys.onEnterPressed: doubleClicked(null)
+	
+	Keys.onMenuPressed: {
+		// to prevent propogation to other items
+		event.accepted = true
+	}
+	
+	Keys.onReleased: {
+		if(Qt.Key_Menu == event.key && !event.isAutoRepeat)
+		{
+			showPopupMenu()
+			event.accepted = true
+		}
+	}
 
 	Component {
 		id: sectionComponent
@@ -183,6 +201,16 @@ Views.TableView {
 					}
 				} 
 			}	
+		}
+	}
+
+	TableViewColumn {
+		role: "localizationName"
+		title: "Localization name"
+		width: table.viewport.width * 0.1
+
+		delegate: Delegates.Extension {
+			text: model != null ? model.localizationName : ""
 		}
 	}
 

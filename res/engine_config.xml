@@ -152,14 +152,32 @@ customise the behaviour of the BigWorld Client Engine. -->
 	<!-- Displays a dialog box to optionally enter the debugger if
 	a critical error occurs. -->
 	<hasDevelopmentAssertions> true </hasDevelopmentAssertions>
-	<!-- If virtual memory load greater than this threshold => MemoryCriticalController fired up -->
-	<virtualMemoryLoadThreshold> 85.0 </virtualMemoryLoadThreshold>
-	<!-- If page file memory load greater than this threshold => MemoryCriticalController fired up -->
-	<pageFileMemoryLoadThreshold> 99.0 </pageFileMemoryLoadThreshold>
-	<!-- If physical memory load greater than this threshold => MemoryCriticalController fired up -->
-	<physicalMemoryLoadThreshold> 99.0 </physicalMemoryLoadThreshold>
-	<!-- If scaleform memory load greater than this threshold => MemoryCriticalController fired up -->
-	<scaleformMemoryLoadThreshold> 90.0 </scaleformMemoryLoadThreshold>
+	<memoryCriticalThresholds>
+		<x86os86>
+			<virtualMemoryLoadThreshold> 85.0 </virtualMemoryLoadThreshold>
+			<virtualMemoryLoadLeftoverMb> 150.0 </virtualMemoryLoadLeftoverMb>
+			<pageFileMemoryLoadThreshold> 99.0 </pageFileMemoryLoadThreshold>
+			<pageFileMemoryLoadLeftoverMb> 200.0 </pageFileMemoryLoadLeftoverMb>
+			<physicalMemoryLoadThreshold> 99.0 </physicalMemoryLoadThreshold>
+			<physicalMemoryLoadLeftoverMb> 200.0 </physicalMemoryLoadLeftoverMb>
+		</x86os86>
+		<x86os64>
+			<virtualMemoryLoadThreshold> 87.0 </virtualMemoryLoadThreshold>
+			<virtualMemoryLoadLeftoverMb> 250.0 </virtualMemoryLoadLeftoverMb>
+			<pageFileMemoryLoadThreshold> 87.0 </pageFileMemoryLoadThreshold>
+			<pageFileMemoryLoadLeftoverMb> 250.0 </pageFileMemoryLoadLeftoverMb>
+			<physicalMemoryLoadThreshold> 87.0 </physicalMemoryLoadThreshold>
+			<physicalMemoryLoadLeftoverMb> 250.0 </physicalMemoryLoadLeftoverMb>
+		</x86os64>
+		<x64os64>
+			<virtualMemoryLoadThreshold> 94.0 </virtualMemoryLoadThreshold>
+			<virtualMemoryLoadLeftoverMb> 250.0 </virtualMemoryLoadLeftoverMb>
+			<pageFileMemoryLoadThreshold> 99.0 </pageFileMemoryLoadThreshold>
+			<pageFileMemoryLoadLeftoverMb> 250.0 </pageFileMemoryLoadLeftoverMb>
+			<physicalMemoryLoadThreshold> 99.0 </physicalMemoryLoadThreshold>
+			<physicalMemoryLoadLeftoverMb> 250.0 </physicalMemoryLoadLeftoverMb>
+		</x64os64>
+	</memoryCriticalThresholds>
 	<scaleformGC>
 		<!-- Suspend garbage collector -->
 		<suspend> false </suspend>
@@ -521,6 +539,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 				<bank>
 					<name> ev_battle_royale_2019_music.pck </name>
 				</bank>
+				<bank>
+					<name> field_modernization.bnk </name>
+				</bank>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
 				<bank>
@@ -561,6 +582,24 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> dog_tags_hangar.bnk </name>
+				</bank>
+				<bank>
+					<name> mode_selector.bnk </name>
+				</bank>
+				<bank>
+					<name> map_box.bnk </name>
+				</bank>
+				<bank>
+					<name> menu_guide.bnk </name>
+				</bank>
+				<bank>
+					<name> maps_training.pck </name>
+				</bank>
+				<bank>
+					<name> maps_training_hangar.bnk </name>
+				</bank>
+				<bank>
+					<name> ev_marathon_sab.bnk </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -671,6 +710,12 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> shop.bnk </name>
+				</bank>
+				<bank>
+					<name> maps_training.pck </name>
+				</bank>
+				<bank>
+					<name> maps_training_hangar.bnk </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>

@@ -1,60 +1,79 @@
 <root>
 	<navmesh>
+		<!-- Note: radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
+		     Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
+		-->
 		<config>	
 			<girth> CTF_2.5 </girth>
 			<height>	2.500000	</height>
 			<radius>	2.500000	</radius>
+			<halfWidth>	1.250000	</halfWidth>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
-			<gameplayMask>	1.000000	</gameplayMask>
+			<gameplayMask>	7	</gameplayMask>
 		</config>
-
 		<config>	
 			<girth> CTF_3.5 </girth>
 			<height>	2.950000	</height>
 			<radius>	3.500000	</radius>
+			<halfWidth>	1.750000	</halfWidth>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
-			<gameplayMask>	1.000000	</gameplayMask>
+			<gameplayMask>	7	</gameplayMask>
 		</config>
+		<config>	
+			<girth> CTF_4.5 </girth>
+			<height>	3.550000	</height>
+			<radius>	4.500000	</radius>
+			<halfWidth>	2.250000	</halfWidth>
+			<upSlope>	27.000000	</upSlope>
+			<downSlope>	27.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.250000	</waterDepthLimit1>
+			<gameplayMask>	7	</gameplayMask>
+		</config>		
 		<config>
-			<girth> CTF_5.6 </girth>
-			<height>	3.850000	</height>
-			<radius>	5.600000	</radius>
+			<girth> CTF_5.5 </girth>
+			<height>	4.000000	</height>
+			<radius>	5.500000	</radius>
+            <halfWidth>	2.750000	</halfWidth>
 			<upSlope>	25.000000	</upSlope>
 			<downSlope>	25.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
-			<gameplayMask>	1.000000	</gameplayMask>
+			<gameplayMask>	7	</gameplayMask>
 		</config> 
 		<config>	
 			<girth> BTCAMP_4.0 </girth>
 			<height>	1.950000	</height>
 			<radius>	4.000000	</radius>
+			<halfWidth>	2.000000	</halfWidth>            
 			<upSlope>	35.000000	</upSlope>
 			<downSlope>	35.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
-			<gameplayMask>	16384.000000	</gameplayMask>
+			<gameplayMask>	16384	</gameplayMask>
 		</config>
 		<config>
 			<girth> BR_8 </girth>
 			<height>	2.500000	</height>
-			<radius>	3.050000	</radius>
+			<radius>	3.500000	</radius>
+			<halfWidth>	1.750000	</halfWidth>
 			<upSlope>	30.000000	</upSlope>
 			<downSlope>	30.000000	</downSlope>
 			<upClimb>	1.000000	</upClimb>
 			<downClimb>	1.000000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
-			<gameplayMask>	1.000000	</gameplayMask>
+			<gameplayMask>	1	</gameplayMask>
 		</config>
 	</navmesh>
 	<covers>
@@ -164,8 +183,8 @@
 				<to> 1.8 </to>
 			</min>
 			<max> 
-				<from> 2.0 </from>
-				<to> 2.8 </to>
+				<from> 3.35 </from>
+				<to> 4.00 </to>
 			</max>
 		</startFinishHeight>
 		<samplesPerCell> 100 </samplesPerCell>

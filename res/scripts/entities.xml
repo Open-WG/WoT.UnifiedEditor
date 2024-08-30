@@ -34,10 +34,18 @@
 		<StepRepairPoint/>
 		<ProtectionZone/>
 		<HangarPoster/>
+		<HangarBirthdayPoster/>
+		<TeamInfo/>
 		<!-- BR: move into extension -->
+		<!-- AoE abilities -->
+		<AreaOfEffect/>
+		<AttackBomber/>
+		<PersonalDeathZone/>
 		<ClientSelectableRankedObject/>
 		<ClientSelectableHangarsSwitcher/>
+		<ClientSelectableCGFObject/>
 		<StaticDeathZone/>
+		<BasicMine/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -58,6 +66,7 @@
 		<FalloutUnitMgr/>
 		<SpecUnitMgr/>
 		<EventUnitMgr/>
+		<MapBoxUnitMgr/>
 		<VoiceChatMgr/>
 		<MessageFilterManager/>
 		<CenterStatusReader/>
@@ -72,8 +81,6 @@
 		<ClusterDismissal/>
 		<UnitFinder/>
 		<EventBattlesMgr/>
-		<FalloutMgr/>
-		<FalloutMultiteamMgr/>
 		<RankedBattlesMgr/>
 		<SpecBattleMgr/>
 		<ClanRelay/>
@@ -94,5 +101,8 @@
 		<EpicMgr/>
 		<AiArenaMgr/>
 		<BattleRoyaleMgr/>
+		<MapBoxMgr/>
+		<MapsTrainingBattlesMgr/>
+		<BaseBattleMgr/>
 	</ServerOnlyEntities>
 </root>

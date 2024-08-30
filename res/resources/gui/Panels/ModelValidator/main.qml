@@ -6,20 +6,29 @@ import WGTools.Controls.Details 2.0
 import WGTools.ControlsEx 1.0 as ControlsEx
 import WGTools.Misc 1.0 as Misc
 import WGTools.Views 1.0
+import QtQml.Models 2.11
 
 ControlsEx.Panel {
 	id: modelValidator
 	title: "Validator"
 	layoutHint: "bottom"
 	
-	function severityColor(severityName) {
-		switch (severityName)
+	function selectAllNodes(parentIndex) {
+		for(var i = 0; i < context.model.rowCount(parentIndex); i++) {
+			var index = context.model.index(i, 0, parentIndex)
+			treeView.selection.select(index, ItemSelectionModel.Select)
+			selectAllNodes(index)
+		}
+	}
+
+	function severityColor(severity) {
+		switch (severity)
 		{
-			case "high":   return _palette.color14
-			case "medium": return _palette.color15
-			case "normal": return _palette.color16
-			case "none":   return _palette.color2
-			default:       return _palette.color2
+		case 0: return _palette.color2
+		case 1: return _palette.color16
+		case 2: return _palette.color15
+		case 3: return _palette.color14
+		default: return _palette.color2
 		}
 	}
 
@@ -86,20 +95,12 @@ ControlsEx.Panel {
 		spacing: 2
 		visible: (!context.disabled && !context.inProgress && context.model.rowCount() > 0)
 
-		TableView {
-			id: tableView
+		TreeView {
+			id: treeView
 			model: context.model
-			selectionMode: QuickControls.SelectionMode.ExtendedSelection
-
-			Connections {
-				target: tableView.selection
-				onSelectionChanged: {
-					context.model.clearSelection()
-					tableView.selection.forEach( function(rowIndex) {
-						context.model.addRowToSelection(rowIndex)
-					} )
-				}
-			}
+			headerVisible: false
+			selectionMode: QuickControls.SelectionMode.ExtendedSelection 
+			selection: context.selectionModel
 
 			Menu {
 				id: menu
@@ -107,13 +108,13 @@ ControlsEx.Panel {
 				Action {
 					text: "&Copy"
 					shortcut: StandardKey.Copy
-					onTriggered: context.model.copySelected()
+					onTriggered: context.model.copySelected(treeView.selection.selectedIndexes)
 				}
 
 				Action {
 					text: "Select All"
 					shortcut: StandardKey.SelectAll
-					onTriggered: tableView.selection.selectAll()
+					onTriggered: selectAllNodes()
 				}
 			}
 
@@ -121,20 +122,10 @@ ControlsEx.Panel {
 			Layout.fillHeight: true
 			
 			property bool __completed: false
-			
+			 
 			QuickControls.TableViewColumn {
-				title: "Severity"
-				role: "severity"
-			}
-
-			QuickControls.TableViewColumn {
-				title: "Type"
-				role: "type"
-			}
-			
-			QuickControls.TableViewColumn {
-				title: "Text"
-				role: "text"
+				title: ""
+				role: "DisplayRole"
 			}
 
 			itemDelegate: Misc.Text {
@@ -142,9 +133,7 @@ ControlsEx.Panel {
 				elide: Text.ElideRight
 				color: {
 					switch (styleData.column) {
-						case 0: return severityColor(styleData.value)
-						case 1: return _palette.color3
-						case 2: return _palette.color2
+						case 0: return severityColor(context.model.getNodeSeverity(styleData.index))
 					}
 				}
 				readonly property var padding: 5
@@ -170,7 +159,10 @@ ControlsEx.Panel {
 					resizeColumnsToContents()
 			}
 
-			onDoubleClicked: context.model.onDoubleClicked(tableView.currentRow)
+			onDoubleClicked: {
+				treeView.toggleExpanded(treeView.currentIndex)
+				context.model.onDoubleClicked(treeView.currentIndex)
+			}
 
 			Component.onCompleted: {
 				__completed = true

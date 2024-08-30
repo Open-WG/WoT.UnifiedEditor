@@ -83,6 +83,11 @@
 		<converter>XMLConverter</converter>
 		<converterParams>-stripRuleSets strip_metadata</converterParams>
 	</rule>
+	<rule pattern=".*(\.prefab)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
 	<rule pattern=".*(\.ika)$">
 		<root>true</root>
 		<converter>XMLConverter</converter>

@@ -1,0 +1,530 @@
+<!-- edited with XMLSpy v2015 sp2 (x64) (http://www.altova.com) by Game Stream (Game Stream) -->
+<root>
+	<duration>	7.000000	</duration>
+	<sequenceObject>
+		<name>	Root	</name>
+		<type>	model	</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>	ray_vert_01	</name>
+		<type>	particle	</type>
+		<resource>	particles/Environment/hangar/h20_fountain_ray_vert.eff	</resource>
+		<track>
+			<name>	position	</name>
+			<type>	vector3	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	-5.330700 -1.5 -1.413580	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.000000	</startTime>
+				<value>	-5.330700 -0.777915 -1.413580	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.500000	</startTime>
+				<value>	-5.330760 4.722100 -1.413610	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	4.500000	</startTime>
+				<value>	-5.330760 4.722100 -1.413610	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.000000	</startTime>
+				<value>	-5.330700 -1.5 -1.413580	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	rotation	</name>
+			<type>	quaternion	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	-0.000591 -0.009103 0.064820 0.997855	</value>
+				<inTangent>	0.000000 0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	emmision	</name>
+			<type>	float	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	0.516667	</startTime>
+				<value>	0.750000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.500000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.000000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.516670	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.0</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>	ray_vert_02	</name>
+		<type>	particle	</type>
+		<resource>	particles/Environment/hangar/h20_fountain_ray_vert.eff	</resource>
+		<track>
+			<name>	position	</name>
+			<type>	vector3	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	-2.799230 -1.5 -1.619070	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	2.500000	</startTime>
+				<value>	-2.799230 -0.777915 -1.619070	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	3.000000	</startTime>
+				<value>	-2.799270 4.722100 -1.619080	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.000000	</startTime>
+				<value>	-2.799300 4.722100 -1.619090	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.500000	</startTime>
+				<value>	-2.799230 -1.5 -1.619070	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	rotation	</name>
+			<type>	quaternion	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	-0.000157 -0.009120 0.017290 0.999809	</value>
+				<inTangent>	0.000000 0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	emmision	</name>
+			<type>	float	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	2.000000	</startTime>
+				<value>	0.750000	</value>
+				<inTangent>	0.625000	</inTangent>
+				<outTangent>	0.625000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	3.000000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.625000	</inTangent>
+				<outTangent>	0.625000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.500000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	-1.250000	</inTangent>
+				<outTangent>	-1.250000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	7.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	-2.500000	</inTangent>
+				<outTangent>	-2.500000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	12.0</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>	ray_vert_03	</name>
+		<type>	particle	</type>
+		<resource>	particles/Environment/hangar/h20_fountain_ray_vert.eff	</resource>
+		<track>
+			<name>	position	</name>
+			<type>	vector3	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.012829 -1.5 -1.850320	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.000000	</startTime>
+				<value>	0.012829 0.222087 -1.850320	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.500000	</startTime>
+				<value>	0.012751 6.222100 -1.850360	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	4.500000	</startTime>
+				<value>	0.012829 6.222100 -1.850320	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.000000	</startTime>
+				<value>	0.012829 -1.5 -1.850320	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	rotation	</name>
+			<type>	quaternion	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000 -0.009122 0.000000 0.999958	</value>
+				<inTangent>	0.000000 0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	emmision	</name>
+			<type>	float	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	0.500000	</startTime>
+				<value>	0.750000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.500000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.000000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.500000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.0</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>	ray_vert_04	</name>
+		<type>	particle	</type>
+		<resource>	particles/Environment/hangar/h20_fountain_ray_vert.eff	</resource>
+		<track>
+			<name>	position	</name>
+			<type>	vector3	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	2.523200 -1.5 -1.741740	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	2.500000	</startTime>
+				<value>	2.523200 -0.777915 -1.741740	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	3.000000	</startTime>
+				<value>	2.523130 4.722100 -1.741780	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.000000	</startTime>
+				<value>	2.523130 4.722100 -1.741780	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.500000	</startTime>
+				<value>	2.523200 -1.5 -1.741740	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	rotation	</name>
+			<type>	quaternion	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000199 -0.009119 -0.021801 0.999721	</value>
+				<inTangent>	-0.011934 0.547167 1.308070 0.016758	</inTangent>
+				<outTangent>	-0.011934 0.547167 1.308070 0.016758	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	emmision	</name>
+			<type>	float	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	2.000000	</startTime>
+				<value>	0.750000	</value>
+				<inTangent>	0.625000	</inTangent>
+				<outTangent>	0.625000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	3.000000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.625000	</inTangent>
+				<outTangent>	0.625000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	6.500000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	-1.250000	</inTangent>
+				<outTangent>	-1.250000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	7.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	-2.500000	</inTangent>
+				<outTangent>	-2.500000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	12.0</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>	ray_vert_05	</name>
+		<type>	particle	</type>
+		<resource>	particles/Environment/hangar/h20_fountain_ray_vert.eff	</resource>
+		<track>
+			<name>	position	</name>
+			<type>	vector3	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	4.961220 -1.5 -1.912260	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	0.983333	</startTime>
+				<value>	4.961220 -0.777915 -1.912260	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.500000	</startTime>
+				<value>	4.961140 4.722100 -1.912300	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	4.500000	</startTime>
+				<value>	4.961140 4.722100 -1.912300	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.016670	</startTime>
+				<value>	4.961220 -1.5 -1.912260	</value>
+				<inTangent>	0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	rotation	</name>
+			<type>	quaternion	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000 -0.000000 -0.059552 0.998225	</value>
+				<inTangent>	0.000000 0.000000 0.000000 0.000000	</inTangent>
+				<outTangent>	0.000000 0.000000 0.000000 0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>	emmision	</name>
+			<type>	float	</type>
+			<startTime>	0.000000	</startTime>
+			<frame>
+				<startTime>	0.000000	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	0.516667	</startTime>
+				<value>	0.750000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	1.516670	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.000000	</startTime>
+				<value>	2.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>	5.516670	</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.0</startTime>
+				<value>	0.000000	</value>
+				<inTangent>	0.000000	</inTangent>
+				<outTangent>	0.000000	</outTangent>
+				<tangentMode>	0	</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

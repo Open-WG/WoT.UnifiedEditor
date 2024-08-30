@@ -2,6 +2,8 @@ import QtQuick 2.7
 import WGTools.Misc 1.0 as Misc
 
 Item {
+	property alias text: extent.text
+
 	Misc.Text {
 		id: extent
 

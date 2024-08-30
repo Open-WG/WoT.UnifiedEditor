@@ -1,30 +1,69 @@
 import QtQuick 2.11
 import QtQml.Models 2.11
 
-Column {
-	id: view
+Item {
+	id: treeViewRoot
+		
+	property int highlightIndex: -1
+	property bool topSide: true
 
-	property var sourceModelAdapter: null
-	property ItemSelectionModel selectionModel: null
+	property alias sourceModelAdapter: view.sourceModelAdapter
+	property alias selectionModel: view.selectionModel
+	property alias repeater: view.repeater
 
-	property alias repeater: repeater
+	implicitHeight: view.implicitHeight
+	implicitWidth: view.implicitWidth
 
-	spacing: 0
-	clip: true
+	Column {
+		id: view
 
-	Repeater {
-		id: repeater
+		height: treeViewRoot.height
+		width: treeViewRoot.width
 
-		model: DelegateModel {
-			id: delegateModel
-			model: view.sourceModelAdapter
+		property var sourceModelAdapter: null
+		property ItemSelectionModel selectionModel: null
+		property alias repeater: repeater
 
-			delegate: TreeDelegate {
-				width: parent.width
-				selectionModel: view.selectionModel
-				sourceModelAdapter: view.sourceModelAdapter
-				thisDelegateModel: delegateModel
+		spacing: 0
+		clip: true
+
+		Repeater {
+			id: repeater
+
+			model: DelegateModel {
+				id: delegateModel
+				model: view.sourceModelAdapter
+
+				delegate: TreeDelegate {
+					width: parent.width
+					selectionModel: treeViewRoot.selectionModel
+					sourceModelAdapter: treeViewRoot.sourceModelAdapter
+					thisDelegateModel: delegateModel
+					z: repeater.count - index
+				}
 			}
+		}
+	}
+
+	Rectangle {
+		id: indicator
+		color: "white"
+		height: 3
+		width: parent.width
+		visible: highlightIndex != -1
+
+		onVisibleChanged: {
+			if(visible) {
+				if(topSide) {
+					var thisItem = repeater.itemAt(highlightIndex)
+					indicator.y = thisItem.y
+				} else {
+					var sourceIndex = treeViewRoot.sourceModelAdapter.mapToModel(delegateModel.modelIndex(highlightIndex))
+					var childrenCount = rootSequenceTree.getVisibleChildrenCount(sourceIndex)
+					var lastChildItem = repeater.itemAt(highlightIndex + childrenCount)
+					indicator.y = lastChildItem.y + lastChildItem.height - indicator.height
+				}
+			} 
 		}
 	}
 }

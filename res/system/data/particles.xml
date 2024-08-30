@@ -45,6 +45,14 @@
 			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/soul_shimmer.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/holy_settling.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/holy_settling2.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/s31_strv_k_sparkles.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_forward/pfx/tank/customization/s31_strv_k/soul_shimmer.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling2.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_forward/pfx/tank/customization/s31_strv_k/s31_strv_k_sparkles.vfx </fn_effect_bin>	
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -112,5 +120,13 @@
 			<shader>\data\shaders\ps_shimmer.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/soul_shimmer.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/holy_settling.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/holy_settling2.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/tank/customization/s31_strv_k/s31_strv_k_sparkles.eff </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_deferred/pfx/tank/customization/s31_strv_k/soul_shimmer.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_deferred/pfx/tank/customization/s31_strv_k/holy_settling.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_deferred/pfx/tank/customization/s31_strv_k/holy_settling2.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/content_deferred/pfx/tank/customization/s31_strv_k/s31_strv_k_sparkles.vfx </fn_effect_bin>	
 	</deferred>
 </root>

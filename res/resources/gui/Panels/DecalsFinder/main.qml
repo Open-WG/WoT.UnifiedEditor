@@ -77,8 +77,8 @@ ControlsEx.Panel {
 				target: context.model
 				ignoreUnknownSignals: true
 				onSortingChanged: {
-					var role = context.model.model.sortRole
-					var order = context.model.model.sortOrder
+					var role = context.model.sortRole
+					var order = context.model.sortOrder
 					for (var i = 0; i < view.columnCount; i++) {
 						if (context.model.roleByName(view.getColumn(i).role) == role) {
 							view.sortIndicatorColumn = i
@@ -100,7 +100,8 @@ ControlsEx.Panel {
 			Component {
 				id: columnDelegate
 				StyledText.BaseRegular {
-					text: styleData.value
+					text: typeof styleData.value == "number" ?
+						styleData.value.toFixed(2) : styleData.value
 					verticalAlignment: Text.AlignVCenter
 					elide: Text.ElideRight
 					padding: 10

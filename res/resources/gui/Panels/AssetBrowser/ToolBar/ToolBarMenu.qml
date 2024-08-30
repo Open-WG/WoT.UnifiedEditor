@@ -15,11 +15,13 @@ Menu {
 
 	property string viewMode
 	property bool naviVisible
+	property string displayedName
 
 	signal sortingRoleChosen(string role)
 	signal sortingOrderСhosen(int order)
 
 	signal viewModeItemClicked(string viewMode)
+	signal displayedNameClicked(string displayedName)
 	signal naviItemClicked()
 
 	modal: true
@@ -131,5 +133,34 @@ Menu {
 		width: parent.width
 		text: toolBarMenu.naviVisible ? "Hide Navigation Panel" : "Show Navigation Panel"
 		onClicked: toolBarMenu.naviItemClicked()
+	}
+
+	// Displayed name
+	MenuSeparator {
+		visible: toolBarMenu.isGrid()
+		height: visible ? implicitHeight : 0
+	}
+	MenuHeader { 
+		visible: toolBarMenu.isGrid()
+		height: visible ? implicitHeight : 0
+		text: "Displayed name:" 
+	}
+	
+	ButtonGroup { id: displayedNameGroup }
+
+	DisplayedNameMenuItem {
+		id: technicalItem
+		name: "technical"
+		text: "Technical"
+	}
+
+	DisplayedNameMenuItem {
+		id: localizationItem
+		name: "localization"
+		text: "Localization"
+	}
+
+	function isGrid() {
+		return viewMode == "grid"
 	}
 }

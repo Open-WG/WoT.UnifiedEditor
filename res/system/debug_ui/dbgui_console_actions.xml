@@ -73,4 +73,6 @@
 			<item label="GUI debug panel F10" />
 		</item>
 	</item>
+
+	<item label="Switch Mode Selector Toolset" action="from gui.development.ui.mode_selector.mode_selector_toolset import showToolset; showToolset()"/>
 </root>

@@ -6,6 +6,7 @@ Button {
 	id: control
 
 	property var menu
+	property color buttonBackgroundColor: "transparent"
 
 	implicitWidth: 30
 	implicitHeight: 10
@@ -30,6 +31,6 @@ Button {
 		z: -1
 		color: parent.hovered || (menu && menu.visible)
 			? _palette.color6
-			: "transparent"
+			: buttonBackgroundColor
 	}
 }

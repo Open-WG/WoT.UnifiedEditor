@@ -14,6 +14,7 @@ FocusScope {
 	property alias tableView: table
 
 	property string sortingRole: "display"
+	property string displayedName: "technical"
 	property int sortingOrder: Qt.AscendingOrder
 
 	property var tableColumnSize: table.getColumnSize()
@@ -73,6 +74,11 @@ FocusScope {
 				table.forceActiveFocus()
 				break
 		}
+	}
+
+	function setDisplayedName(newDisplayedName) {
+		displayedName = newDisplayedName
+		grid.technicalNameDisplayed = newDisplayedName == "technical"
 	}
 
 	function getViewMode() {

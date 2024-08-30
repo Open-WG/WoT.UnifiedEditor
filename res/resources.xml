@@ -259,14 +259,13 @@
 		</havok_processor>
 	</asset_pipeline>
 	<cgf>
-		<!-- Production components 
+		<!-- Production components -->
 		<script>
-			<module>client.production_component_module_1</module>
-			<module>common.production_component_module_2</module>
+			<module> client.cgf_components.client_selectable_components </module>
+			<module> client.cgf_components.marker_component </module>
 		</script>
-		-->
-		<!-- Test componetns 
-		-->
+
+		<!-- Test components -->
 		<testScript>
 			<module> client.cgf_demo_client.test_client_component </module>
 			<module> client.cgf_demo_client.test_hierarchy_modificator </module>
@@ -277,7 +276,6 @@
 			<module> common.cgf_demo.test_triggers </module>
 			<module> common.cgf_demo.test_bridge </module>
 			<module> common.cgf_demo.test_manager_rule </module>
-
 		</testScript>
 
 		<testPrefabs>

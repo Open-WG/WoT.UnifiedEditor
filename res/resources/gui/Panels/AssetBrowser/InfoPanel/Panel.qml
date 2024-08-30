@@ -216,6 +216,22 @@ Rectangle {
 				text: imageInfo.mipCount
 			}
 
+			Column {
+				id: extendedProperties
+
+				width: parent.width
+				spacing: parent.spacing
+				Repeater {
+					id: repeater
+					model: p.getAssetData("extendedProperties")
+					delegate: InfoRow {
+						width: parent.width
+						title: modelData.propertyName
+						text: modelData.propertyValue
+					}
+				}
+			}
+
 			ConentPanelTable.Tags {
 				width: parent.width
 

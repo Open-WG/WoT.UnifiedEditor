@@ -3,11 +3,12 @@ import "../Common" as Common
 
 Common.DelegateTemplate {
 	readonly property string assetPath: model ? model.fullName : ""
+	property alias text: assetDescription.text
 
 	padding: 5
 	spacing: 5
 
-	Accessible.name: model.display
+	Accessible.name: text
 
 	Connections {
 		target: parent
@@ -18,7 +19,7 @@ Common.DelegateTemplate {
 		source: model ? "image://thumbnail/" + model.fullName : ""
 	}
 	desc: Common.AssetDescription {
-		text: model.display
+		id: assetDescription
 		favorite: model.isFavorite
 		extension: model.extension
 	}

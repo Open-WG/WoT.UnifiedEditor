@@ -45,5 +45,6 @@ PropertyDelegate {
 		height: parent.height
 		valueData: propertyData
 		overridden: propertyData && propertyData.overridden
+		wrapMode: Text.NoWrap
 	}
 }

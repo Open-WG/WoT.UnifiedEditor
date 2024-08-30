@@ -41,6 +41,10 @@ FocusScope {
 		return modelAdapter.isExpanded(styleData.index)
 	}
 
+	function getVisibleChildrenCount(index) {
+		return modelAdapter.getVisibleChildrenCount(index)
+	}
+
 	function zoom(delta) {
 		var pos = context.timelineController.fromSecondsToScale(context.sequenceModel.sequenceDuration / 2)
 		zoomTo(delta, pos)

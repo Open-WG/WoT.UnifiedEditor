@@ -23,6 +23,7 @@ ControlsEx.Panel {
 	property var settings: QtObject {
 		property alias previewSize: toolBar.previewSize
 		property alias viewMode: contentPanel.state
+		property alias displayedName: contentPanel.displayedName
 		property alias orientation: splitView.orientation
 
 		property alias navigationSize: navigationPanelDrawer.size
@@ -147,6 +148,9 @@ ControlsEx.Panel {
 		menu.viewMode: contentPanel.state
 		menu.onViewModeItemClicked: contentPanel.setViewMode(viewMode)
 
+		menu.displayedName: contentPanel.displayedName
+		menu.onDisplayedNameClicked: contentPanel.setDisplayedName(displayedName)
+
 		menu.naviVisible: navigationPanelDrawer.opened
 		menu.onNaviItemClicked: navigationPanelDrawer.toggle()
 
@@ -225,7 +229,8 @@ ControlsEx.Panel {
 						}
 
 						// main action
-						context.openCurrentAsset(false, "")
+						if (context.isCurrentFolder() || context.canOpenCurrentAsset(false))
+							context.openCurrentAsset(false, "")
 					}
 
 					Layout.fillWidth: true

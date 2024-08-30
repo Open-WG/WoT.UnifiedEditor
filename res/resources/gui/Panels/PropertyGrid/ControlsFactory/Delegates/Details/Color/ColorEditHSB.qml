@@ -40,7 +40,7 @@ RowLayout {
 			decimals: 0
 			stepSize: 1
 			from: 0
-			to: [360, 255, 255][index]
+			to: [360, 100, 100][index]
 			label.text: ["H", "S", "B"][index]
 			label.color: _palette.color3
 

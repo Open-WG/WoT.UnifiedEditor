@@ -2,7 +2,7 @@ import QtQuick 2.11
 import Panels.SequenceTimeline.CurveEditor 1.0
 
 Column {
-	id: item
+	id: delegateRoot
 
 	property var sourceModelAdapter: null
 	property var thisDelegateModel: null
@@ -28,7 +28,7 @@ Column {
 
 		SelectionMonitor {
 			id: selection
-			modelIndex: item.sourceModelAdapter.mapToModel(item.thisDelegateModel.modelIndex(index))
+			modelIndex: delegateRoot.sourceModelAdapter.mapToModel(delegateRoot.thisDelegateModel.modelIndex(index))
 		}
 	}
 

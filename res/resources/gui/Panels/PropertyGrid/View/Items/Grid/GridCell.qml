@@ -22,6 +22,7 @@ Common.PGRow {
 	label: Common.PGLabel {
 		enabled: model && model.node.label.visible
 		horizontalAlignment: cell.horizontal ? Text.AlignRight : Text.AlignLeft
+		useGroupDepth: false
 	}
 
 	item: Common.ControlCreator {}

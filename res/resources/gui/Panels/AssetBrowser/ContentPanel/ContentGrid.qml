@@ -13,6 +13,7 @@ GridView {
 	property real iconSizeMax: 196
 	property real iconSizeFactor: 0
 	property var contextMenu
+	property bool technicalNameDisplayed: true
 
 	Accessible.name: "Grid"
 
@@ -36,10 +37,31 @@ GridView {
 		}
 	}
 
+	function showPopupMenu() {
+		let menu = grid.contextMenu.createObject(grid)
+		menu.popupEx()
+	}
+	
+	Keys.onMenuPressed: {
+		// to prevent propogation to other items
+		event.accepted = true
+	}
+
+	Keys.onReleased: {
+		if(Qt.Key_Menu == event.key && !event.isAutoRepeat)
+		{
+			showPopupMenu()
+			event.accepted = true
+		}
+	}
+
 	delegate: Delegates.DelegateLoader {
 		id: loader
 		width: cellWidth
 		height: cellHeight
+		text: {
+			(technicalNameDisplayed || model.localizationName.length == 0) ? model.display : model.localizationName
+		}
 
 		property QtObject styleData: QtObject {
 			readonly property bool hovered: mouseArea.containsMouse
@@ -85,8 +107,7 @@ GridView {
 
 			onReleased: {
 				if (mouse.button == Qt.RightButton && grid.contextMenu) {
-					let menu = grid.contextMenu.createObject(grid)
-					menu.popupEx()
+					showPopupMenu()
 				}
 			}
 

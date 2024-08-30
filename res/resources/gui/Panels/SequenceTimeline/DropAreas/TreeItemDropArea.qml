@@ -1,4 +1,5 @@
 import QtQuick 2.11
+import QtQml.Models 2.11
 
 DropArea {
 	id: da
@@ -8,31 +9,29 @@ DropArea {
 	anchors.bottom: topSide ? undefined : parent.bottom
 	height: parent.height / 2
 
-	property var index: styleData.index
 	property bool topSide: true
 	property bool selectionDroppable: false
 
 	onDropped: {
-		if (selectionDroppable)
-			styleData.context.moveSelectedItems(index, topSide)
+		if (selectionDroppable) {
+			styleData.context.moveSelectedItems(styleData.index, topSide)
+			treeViewRoot.highlightIndex = -1
+		}
 	}
 
 	onEntered: {
-		selectionDroppable = styleData.context.isSelectionDroppable(index);
+		selectionDroppable = styleData.context.isSelectionDroppable(styleData.index)
 
-		if (!selectionDroppable)
-			styleData.context.setForbiddenCursor();
+		if (selectionDroppable) {
+			treeViewRoot.topSide = topSide
+			treeViewRoot.highlightIndex = index
+		} else {
+			styleData.context.setForbiddenCursor()
+		}
 	}
 
-	onExited: styleData.context.resetCursor();
-
-	Rectangle {
-		color: "white"
-		visible: parent.visible && da.containsDrag && da.selectionDroppable
-		anchors.right: parent.right
-		anchors.left: parent.left
-		anchors.top: parent.topSide ? parent.top : undefined
-		anchors.bottom: parent.topSide ? undefined : parent.bottom
-		height: 3
+	onExited: {
+		styleData.context.resetCursor()
+		treeViewRoot.highlightIndex = -1
 	}
 }

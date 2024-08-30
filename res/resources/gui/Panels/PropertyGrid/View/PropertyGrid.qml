@@ -270,6 +270,21 @@ Flickable {
 		}
 	}
 
+	Keys.onMenuPressed: {
+		// to prevent propogation to other items
+		event.accepted = true
+	}
+
+	Keys.onReleased: {
+		if(Qt.Key_Menu == event.key && !event.isAutoRepeat)
+		{
+			if (contextMenuHelper.canShowMenu()) {
+				contextMenuHelper.showMenu(0, 0)
+				event.accepted = true
+			}
+		}
+	}
+
 	ControlsEx.SelectionFrame {
 		id: selectionFrame
 	}

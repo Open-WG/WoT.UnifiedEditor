@@ -122,8 +122,20 @@ Views.TreeView {
 	}
 
 	Keys.onPressed: {
-		if (treeView.selection != undefined && (event.key == Qt.Key_Return || event.key == Qt.Key_Enter)) {
+		// to prevent propogation to other items
+		if(Qt.Key_Menu == event.key) {
+			event.accepted = true
+		}
+		else if (treeView.selection != undefined && (event.key == Qt.Key_Return || event.key == Qt.Key_Enter)) {
 			sceneOutlineContext.onDoubleClicked(treeView.selection.currentIndex)
+		}
+	}
+
+	Keys.onReleased: {
+		if(Qt.Key_Menu == event.key && !event.isAutoRepeat)
+		{
+			sceneOutlineContext.requestMenu()
+			event.accepted = true
 		}
 	}
 

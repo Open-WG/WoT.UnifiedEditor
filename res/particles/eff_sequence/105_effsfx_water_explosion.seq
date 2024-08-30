@@ -53,22 +53,13 @@
 		<name> water_explosion </name>
 		<type> sound </type>
 		<track>
-			<name> attach </name>
-			<type> attach </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<duration> 5.000000 </duration>
-				<value> Root|HP_module_0 </value>
-			</frame>
-		</track>
-		<track>
 			<name> sound </name>
 			<type> sound </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
 				<duration> 4.010000 </duration>
-				<value> amb_map_105_germany_water_explosion </value>
-				<type> one_shot </type>
+				<sequenceSound> amb_map_105_germany_water_explosion </sequenceSound>
+				<type> play_till_end </type>
 				<fade> 0.000000 </fade>
 			</frame>
 		</track>

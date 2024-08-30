@@ -58,7 +58,7 @@ Rectangle {
 				id: filter
 
 				Layout.fillWidth: true
-				Layout.rightMargin: Settings.defaultMargin
+				Layout.rightMargin: comboBox.visible ? Settings.defaultMargin : 0
 				Layout.bottomMargin: Settings.defaultMargin
 
 				property var model: root.sceneBrowserContext ? root.sceneBrowserContext.model : null

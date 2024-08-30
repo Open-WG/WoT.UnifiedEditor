@@ -11,3 +11,6 @@ var tabAnimDuration = 250
 var tabHighlightingDuration = 200
 var tabButtonHighlightingDuration = 100
 var titlebarDragSpace = 50
+
+var realmButtonMargin = 10
+var realmButtonWidthAddition = 10

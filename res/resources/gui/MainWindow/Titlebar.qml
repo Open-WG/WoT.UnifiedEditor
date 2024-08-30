@@ -27,7 +27,7 @@ ColumnLayout {
 		Item {
 			height: parent.height
 			anchors.left: parent.left
-			anchors.right: realm.left
+			anchors.right: realmButton.left
 
 			DropdownButton {
 				id: menuButton
@@ -105,32 +105,44 @@ ColumnLayout {
 				property int hitTest: 2 // HTCAPTION
 			}
 		}
+		
+		DropdownButton {
+			id: realmButton
+			Accessible.name: "Realm Button"
+			buttonBackgroundColor: _palette.color9
+			width: realmText.implicitWidth + Settings.realmButtonWidthAddition
+			enabled: !context.realmFrozen
+			
+			menu: Menu {
+				id: realmMenu
+				y: parent.height
 
-		Rectangle {
-			id: realm
+				Repeater {
+					id: realmMenuRepeater
+					model: context.realmKeys
 
-			height: parent.height
+					delegate: MenuItem {
+						text: modelData
 
-			implicitWidth: realmText.implicitWidth
+						onTriggered: {
+							context.requestChangeRealm(index);
+						}
+					}
+				}
+			
+			}
+
+			Misc.Text {
+				id: realmText
+				text: "Current realm: " + context.currentRealm
+				anchors.horizontalCenter: parent.horizontalCenter
+				anchors.verticalCenter: parent.verticalCenter
+			}
 
 			anchors.right: sysMenu.left
 			anchors.top: parent.top
 			anchors.bottom: parent.bottom
-
-			color: context.editingAllowed ? _palette.color9 : "#FF0000"
-
-			Misc.Text {
-				id: realmText
-
-				anchors.fill: parent
-				verticalAlignment: Text.AlignVCenter
-				horizontalAlignment: Text.AlignHCenter
-
-				text: "Realm: " + context.currentRealm
-
-				leftPadding: 5
-				rightPadding: 5
-			}
+			anchors.rightMargin: Settings.realmButtonMargin
 		}
 
 		Row {

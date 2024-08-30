@@ -13,6 +13,7 @@ Item {
 	readonly property bool iconMode: model && model.node.label.icon.length > 0
 	readonly property var text: model && model.node.label.text.length ? (model.node.label.text) : ""
 	readonly property bool overridden: !!(model && model.node && model.node.overridden)
+	property bool useGroupDepth: true
 
 	implicitWidth: iconLabel.implicitWidth
 	implicitHeight: iconLabel.implicitHeight
@@ -22,7 +23,7 @@ Item {
 
 		readonly property var colorScheme: [ _palette.color2 ]
 
-		x: Math.max(0, Settings.subTitleIndent * (styleData.group.depth - 1))
+		x: useGroupDepth ? Math.max(0, Settings.subTitleIndent * (styleData.group.depth - 1)) : 0
 		y: (parent.height - height) / 2
 		width: parent.width - x
 

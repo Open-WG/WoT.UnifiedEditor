@@ -12,6 +12,7 @@ ColorDelegate {
 	property var propertyRow
 
 	implicitHeight: layout.implicitHeight
+	implicitWidth: layout.implicitWidth
 	propertyData: model ? model.node.property : null
 	enabled: propertyData && !propertyData.readonly
 
