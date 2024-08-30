@@ -1,80 +1,71 @@
 <root>
 	<node>
-		<identifier>	Scene Root	</identifier>
+		<identifier> Scene Root </identifier>
 		<transform>
-			<row0>	1.000000 0.000000 0.000000	</row0>
-			<row1>	0.000000 1.000000 0.000000	</row1>
-			<row2>	0.000000 0.000000 1.000000	</row2>
-			<row3>	0.000000 0.000000 0.000000	</row3>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
 		</transform>
 		<node>
-			<identifier>	hd_hv3_025_Checkpoint_3	</identifier>
+			<identifier> hd_hv3_025_Checkpoint_3 </identifier>
 			<transform>
-				<row0>	1.000000 0.000000 0.000000	</row0>
-				<row1>	0.000000 1.000000 0.000000	</row1>
-				<row2>	0.000000 0.000000 1.000000	</row2>
-				<row3>	0.000000 0.000000 0.000000	</row3>
+				<row0> 1.000000 0.000000 0.000000 </row0>
+				<row1> 0.000000 1.000000 0.000000 </row1>
+				<row2> 0.000000 0.000000 1.000000 </row2>
+				<row3> 0.000000 0.000000 0.000000 </row3>
 			</transform>
 			<node>
-				<identifier>	HP_module_0	</identifier>
+				<identifier> HP_module_0 </identifier>
 				<transform>
-					<row0>	1.000000 0.000000 0.000000	</row0>
-					<row1>	0.000000 1.000000 0.000000	</row1>
-					<row2>	0.000000 0.000000 1.000000	</row2>
-					<row3>	0.000000 0.237954 -0.122987	</row3>
+					<row0> 1.000000 0.000000 0.000000 </row0>
+					<row1> 0.000000 1.000000 0.000000 </row1>
+					<row2> 0.000000 0.000000 1.000000 </row2>
+					<row3> 0.000000 0.237954 -0.122987 </row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>	lod0	</identifier>
+				<identifier> lod0 </identifier>
 				<transform>
-					<row0>	1.000000 0.000000 0.000000	</row0>
-					<row1>	0.000000 1.000000 0.000000	</row1>
-					<row2>	0.000000 0.000000 1.000000	</row2>
-					<row3>	0.000000 0.000000 0.000000	</row3>
+					<row0> 1.000000 0.000000 0.000000 </row0>
+					<row1> 0.000000 1.000000 0.000000 </row1>
+					<row2> 0.000000 0.000000 1.000000 </row2>
+					<row3> 0.000000 0.000000 0.000000 </row3>
 				</transform>
 				<node>
-					<identifier>	s0	</identifier>
+					<identifier> s0 </identifier>
 					<transform>
-						<row0>	1.000000 0.000000 0.000000	</row0>
-						<row1>	0.000000 1.000000 0.000000	</row1>
-						<row2>	0.000000 0.000000 1.000000	</row2>
-						<row3>	0.000000 0.000000 0.000000	</row3>
+						<row0> 1.000000 0.000000 0.000000 </row0>
+						<row1> 0.000000 1.000000 0.000000 </row1>
+						<row2> 0.000000 0.000000 1.000000 </row2>
+						<row3> 0.000000 0.000000 0.000000 </row3>
 					</transform>
 				</node>
 			</node>
 		</node>
 	</node>
 	<renderSet>
-		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
-		<node>	s0	</node>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> s0 </node>
 		<geometry>
-			<vertices>	sShape0.vertices	</vertices>
-			<primitive>	sShape0.indices	</primitive>
-			<primitiveGroup>	0
+			<vertices> sShape0.vertices </vertices>
+			<primitive> sShape0.indices </primitive>
+			<primitiveGroup> 0
 				<material>
-					<identifier>	s_nd0	</identifier>
+					<identifier> s_nd0 </identifier>
 					<fx> shaders/std_effects/PBS_ext.fx </fx>
-					<collisionFlags> 0 </collisionFlags>
+					<collisionFlags> 255 </collisionFlags>
 					<materialKind> 0 </materialKind>
-					<property> alphaReference 
-						<Int> 0 </Int>
-					</property>
-					<property> alphaTestEnable 
-						<Bool> false </Bool>
-					</property>
-					<property> doubleSided 
-						<Bool> false </Bool>
-					</property>
-					<property> diffuseMap 
+					<property> diffuseMap
 						<Texture> content/Hangars/hangar_v3/enviroment/hd_hv3_025_Checkpoint_1_AM.dds </Texture>
 					</property>
-					<property> g_enableAO 
+					<property> g_enableAO
 						<Bool> true </Bool>
 					</property>
-					<property> normalMap 
+					<property> normalMap
 						<Texture> content/Hangars/hangar_v3/enviroment/hd_hv3_025_Checkpoint_1_ANM.dds </Texture>
 					</property>
-					<property> metallicGlossMap 
+					<property> metallicGlossMap
 						<Texture> content/Hangars/hangar_v3/enviroment/hd_hv3_025_Checkpoint_1_GMM.dds </Texture>
 					</property>
 				</material>
@@ -83,43 +74,43 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>	-0.110412 -0.367006 -3.548116	</min>
-		<max>	0.123924 5.169706 2.736415	</max>
+		<min> -0.110412 -0.367006 -3.548116 </min>
+		<max> 0.123924 5.169706 2.736415 </max>
 	</boundingBox>
 	<metaData>
 		<settings>
-			<exportAnimation>	false	</exportAnimation>
-			<exportMode>	0	</exportMode>
-			<boneCount>	80	</boneCount>
-			<transformToOrigin>	false	</transformToOrigin>
-			<allowScale>	false	</allowScale>
-			<bumpMapped>	true	</bumpMapped>
-			<keepExistingMaterials>	false	</keepExistingMaterials>
-			<snapVertices>	false	</snapVertices>
-			<stripRefPrefix>	false	</stripRefPrefix>
-			<useReferenceNode>	false	</useReferenceNode>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 0 </exportMode>
+			<boneCount> 80 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> true </bumpMapped>
+			<keepExistingMaterials> false </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
 			<referenceNodesFile/>
-			<disableVisualChecker>	false	</disableVisualChecker>
-			<useLegacyScaling>	false	</useLegacyScaling>
-			<fixCylindrical>	false	</fixCylindrical>
-			<fixNodeTreeLOD>	false	</fixNodeTreeLOD>
-			<useLegacyOrientation>	false	</useLegacyOrientation>
-			<sceneRootAdded>	false	</sceneRootAdded>
-			<recalculateTangents>	false	</recalculateTangents>
-			<includeMeshes>	true	</includeMeshes>
-			<includeEnvelopesAndBones>	false	</includeEnvelopesAndBones>
-			<includeNodes>	true	</includeNodes>
-			<includeMaterials>	true	</includeMaterials>
-			<includeAnimations>	false	</includeAnimations>
-			<useCharacterMode>	false	</useCharacterMode>
-			<animationName>	anim	</animationName>
-			<includePortals>	false	</includePortals>
-			<worldSpaceOrigin>	false	</worldSpaceOrigin>
-			<unitScale>	0.100000	</unitScale>
-			<localHierarchy>	false	</localHierarchy>
-			<nodeFilter>	1	</nodeFilter>
-			<copyExternalTextures>	true	</copyExternalTextures>
-			<copyTexturesTo>	D:\TNT\GIP\game\res\wot\content\Buildings\hd_bld_EU_101_VHouse_01	</copyTexturesTo>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> true </copyExternalTextures>
+			<copyTexturesTo> D:\TNT\GIP\game\res\wot\content\Buildings\hd_bld_EU_101_VHouse_01 </copyTexturesTo>
 		</settings>
 	</metaData>
 </root>

@@ -19,6 +19,7 @@ TextField {
 
 	leftPadding: indicator.x + indicator.width + spacing
 	rightPadding: clearButton.visible ? clearButton.width + spacing : padding
+	clip: true
 
 	cursorDelegate: control.activeFocus && (indicator.x == control.padding) ? cursorComponent : null
 	Component {id: cursorComponent; Details.CursorDelegate {textInput: control}}

@@ -9,15 +9,29 @@
 		"font.weight": "Normal"
 	},
 
+	"font-italic": {
+		"base": "font-base",
+		"font.family": "Segoe UI",
+		"font.weight": "Normal",
+		"font.italic": true
+	},
+
 	"font-base-link": {
 		"base": "font-base",
 		"font.underline": true
 	},
 
 	"font-bold": {
-		"font.family": "Segoe UI Bold",
+		"font.family": "Segoe UI",
 		"base": "font-base",
 		"font.weight": "Bold"
+	},
+
+	"font-bold-italic": {
+		"base": "font-base",
+		"font.family": "Segoe UI",
+		"font.weight": "Bold",
+		"font.italic": true
 	},
 
 	"font-bold-link": {
@@ -45,6 +59,15 @@
 	"text-bold-green":		{ "base": ["font-bold", "text-base-green" ] },
 	"text-bold-dark":		{ "base": ["font-bold", "text-base-dark"  ] },
 	"text-bold-link":		{ "base": ["font-bold", "text-base-link"  ] },
+
+	"text-italic":			{ "base": ["font-italic", "text-base"] },
+
+	"text-bold-italic":		{ "base": ["font-bold-italic", "text-base"] },
+
+	"text-base-overridden":	{ "base": "font-italic", "color": "color1"  },
+	"text-base-label-overridden":	{ "base": "font-italic", "color": "color2"  },
+
+	"text-bold-overridden":	{ "base": ["font-bold-italic", "text-base"] },
 
 	"_comment": "**************************************************************",
 	"_comment": "* button styles                                              *",

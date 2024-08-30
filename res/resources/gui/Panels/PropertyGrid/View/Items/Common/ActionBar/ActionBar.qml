@@ -3,8 +3,10 @@ import WGTools.Controls.impl 1.0 as Impl
 import "../../../Settings.js" as Settings
 
 Row {
+	id: row
 	property alias actions: repeater.model
 	property var placeholderCount: 0
+	property bool shortcutEnabled: false
 
 	spacing: 5
 
@@ -16,6 +18,7 @@ Row {
 			action: Impl.ActionAdapter {
 				action: modelData
 				sourceScheme: "image://gui/"
+				shortcutEnabled: row.shortcutEnabled
 			}
 		}
 	}

@@ -1,14 +1,6 @@
-import QtQuick 2.7
-import WGTools.Misc 1.0 as Misc
+import QtQuick 2.11
+import WGTools.Views.Details 1.0
 
-Misc.IconLabel {
-	spacing: 5
-
+StandardItemDelegate {
 	icon.source: "image://gui/icon-folder"
-
-	label.horizontalAlignment: styleData.textAlignment
-	label.elide: styleData.elideMode
-	label.text: styleData.value
-	label.color: styleData.textColor
-	label.anchors.verticalCenterOffset: 1
 }

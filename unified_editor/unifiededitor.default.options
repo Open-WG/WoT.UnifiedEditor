@@ -224,10 +224,12 @@
 		<useHangingItemsAutoFix>	false	</useHangingItemsAutoFix>
 		<coordFilter>	World	</coordFilter>
 	</tools>
-	<crashDump>
-		<type> 3 </type>
-		<url> http://cat-st1.wargaming.net </url>
-	</crashDump>
+	<cat_config>
+		<isOnline> true </isOnline>
+		<clientUrl> http://cat-st1.wargaming.net </clientUrl>
+		<fullDump> false </fullDump>
+		<dumpTimeout> 120000 </dumpTimeout>
+	</cat_config>
 	<camera>
 		<rotateSpeedMultiplier>	1.000000	</rotateSpeedMultiplier>
 		<farclip>	500.000000	</farclip>
@@ -392,6 +394,9 @@
 		<plugins_plg_python_remote_debug> false </plugins_plg_python_remote_debug>
 		<plugins_plg_asset_root_viewer> false </plugins_plg_asset_root_viewer>
 	</dynamic_plugins>
+	<visualScriptEditor>
+		<connection> false </connection>
+	</visualScriptEditor>
 	<recent>
 		<path0>spaces/hangar_v3/space.settings</path0>
 	</recent>

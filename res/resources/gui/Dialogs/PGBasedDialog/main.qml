@@ -1,15 +1,44 @@
 import QtQuick 2.11
 import QtQml.Models 2.11
+import QtQml.StateMachine 1.0 as DSM
 import WGTools.Controls 2.0 as Controls
 import WGTools.Controls.Details 2.0 as Details
 import WGTools.PropertyGrid 1.0
 import Panels.PropertyGrid.View 1.0 as View
 
 Rectangle {
+	id: root
 	color: _palette.color8
 
 	Accessible.name: qmlView.title
-	property int minimumHeight : propertyGridView.implicitHeight  + footer.height
+	property int minimumHeight: -1
+
+	Binding on minimumHeight {
+		value: propertyGridView.implicitHeight + footer.height
+		when: populatedState.active
+	}
+
+	// Workaround. Don't be mad at me ;) To fix it properly we have to reconsider PropertyGrid population mechanizm
+	DSM.StateMachine {
+		initialState: populatingState
+		running: true
+
+		DSM.State {
+			id: populatingState
+			onEntered: prevImplicitHeight = propertyGridView.implicitHeight
+
+			property int prevImplicitHeight
+
+			DSM.TimeoutTransition {
+				targetState: populatingState.prevImplicitHeight == propertyGridView.implicitHeight ? populatedState : populatingState
+				timeout: 0
+			}
+		}
+
+		DSM.State {
+			id: populatedState
+		}
+	}
 
 	View.PropertyGrid {
 		id: propertyGridView

@@ -160,6 +160,22 @@ customise the behaviour of the BigWorld Client Engine. -->
 	<physicalMemoryLoadThreshold> 99.0 </physicalMemoryLoadThreshold>
 	<!-- If scaleform memory load greater than this threshold => MemoryCriticalController fired up -->
 	<scaleformMemoryLoadThreshold> 90.0 </scaleformMemoryLoadThreshold>
+	<scaleformGC>
+		<!-- Suspend garbage collector -->
+		<suspend> false </suspend>
+		<!-- Suspend garbage collector during SWF loading -->
+		<suspendDuringLoad> true </suspendDuringLoad>
+		<!-- Number of frames after which collection is forced -->
+		<framesBetweenCollections> 0 </framesBetweenCollections>
+		<!-- Number of roots before garbage collection is executed -->
+		<maxCollectionRoots> 1000 </maxCollectionRoots>
+		<!-- Number of regular calls to GC (excluding ones forced by the user) before GC collects 'old' objects. -->
+		<runsToCollectOld> 10 </runsToCollectOld>
+		<!-- Number of regular calls to GC (excluding ones forced by the user) before GC collects 'young' objects. -->
+		<runsToCollectYoung> 5 </runsToCollectYoung>
+		<!-- Number of regular calls to GC (excluding ones forced by the user) before generations are upgraded by one step ('newborn' -> 'young', 'young' -> 'old'). -->
+		<runsToUpgradeGen> 5 </runsToUpgradeGen>
+	</scaleformGC>
 	<debugKeys>
 		<combination>
 			<key> APPS </key>
@@ -396,16 +412,10 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<WWISE_emergency_profile> WWISE_low_profile </WWISE_emergency_profile>
 		<WWISE_adv_profile>
 			<memoryManager>
-				<defaultPool> 13 </defaultPool>
-				<lowEnginePool> 10 </lowEnginePool>
-				<streamingPool> 2 </streamingPool>
 				<IOPoolSize> 4 </IOPoolSize>
 				<IOGranularity> 16 </IOGranularity>
 			</memoryManager>
 			<memoryManager_64bit>
-				<defaultPool> 24 </defaultPool>
-				<lowEnginePool> 10 </lowEnginePool>
-				<streamingPool> 2 </streamingPool>
 				<IOPoolSize> 4 </IOPoolSize>
 				<IOGranularity> 16 </IOGranularity>
 			</memoryManager_64bit>
@@ -505,9 +515,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> impacts_full.pck </name>
 				</project>
 				<project>
-					<name> inbattle_communication_npc.bnk </name>
-				</project>
-				<project>
 					<name> ev_battle_royale_2019_music.bnk  </name>
 				</project>
 				<project>
@@ -549,13 +556,10 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> tasks.bnk </name>
 				</project>
 				<project>
-					<name> ev_10y_countdown_hangar.bnk </name>
-				</project>
-				<project>
-					<name> ev_10y_countdown_hangar.pck </name>
-				</project>
-				<project>
 					<name> cons_hangar.bnk </name>
+				</project>
+				<project>
+					<name> dog_tags_hangar.bnk </name>
 				</project>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -581,16 +585,10 @@ customise the behaviour of the BigWorld Client Engine. -->
 		</WWISE_adv_profile>
 		<WWISE_low_profile>
 			<memoryManager>
-				<defaultPool> 8 </defaultPool>
-				<lowEnginePool> 6 </lowEnginePool>
-				<streamingPool> 2 </streamingPool>
 				<IOPoolSize> 4 </IOPoolSize>
 				<IOGranularity> 16 </IOGranularity>
 			</memoryManager>
 			<memoryManager_64bit>
-				<defaultPool> 24 </defaultPool>
-				<lowEnginePool> 10 </lowEnginePool>
-				<streamingPool> 2 </streamingPool>
 				<IOPoolSize> 4 </IOPoolSize>
 				<IOGranularity> 16 </IOGranularity>
 			</memoryManager_64bit>
@@ -804,11 +802,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<!-- -1 is disabled, must be between 1024 and 65535 -->
 		<maxFrameRate> 0 </maxFrameRate>
 		<!-- 0 is default -->
-		<acceptLangList>
-		</acceptLangList>
+		<acceptLangList/>
 		<!-- Comma delimited ordered, list of language codes without any whitespace used in "Accept-Language" HTTP header -->
-		<locale>
-		</locale>
+		<locale/>
 		<!-- locale used by the browser, uses same language codes as acceptLangList -->
 		<autoPlayVideo> true </autoPlayVideo>
 		<!-- Enable video auto play. Works only in new CEF versions(61+) -->

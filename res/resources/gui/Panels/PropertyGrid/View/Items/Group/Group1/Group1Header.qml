@@ -6,6 +6,7 @@ import WGTools.Controls.Details 2.0
 
 MouseArea {
 	property alias text: title.text
+	property alias overridden: title.overridden
 	property alias color: bg.color
 	property alias actions: actionBar.actions
 
@@ -13,18 +14,15 @@ MouseArea {
 	hoverEnabled: true
 	onDoubleClicked: styleData.group.toggle()
 
+	HeaderShadow {
+		source: bg
+		anchors.fill: bg
+	}
+
 	Rectangle {
 		id: bg
 		color: _palette.color7
 		anchors.fill: parent
-		anchors.leftMargin: height / 2
-	}
-
-	Rectangle {
-		height: parent.height
-		width: height
-		radius: height / 2
-		color: bg.color
 	}
 
 	GroupTitle {

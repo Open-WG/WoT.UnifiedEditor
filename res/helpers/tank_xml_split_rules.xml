@@ -641,7 +641,6 @@
 					<collisionModelClient/>
 				</hitTester>
 				<gunPosition />
-				<gunShotOffset />
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>
@@ -676,6 +675,7 @@
 						<animateEmblemSlots />
 						<reloadEffect />
 						<effects />
+						<shotOffset />
 						<AODecals>
 							<decal>
 								<transform>

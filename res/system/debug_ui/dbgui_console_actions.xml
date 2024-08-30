@@ -14,4 +14,51 @@
 		<param> ('uk:GB94_Centurion_Mk5-1_RAAC') </param>
 		<param> ('ussr:R54_KV-5') </param>
 	</item>
+
+	<item label="Dog Tags">
+		<item label="In hangar">
+			<item label="Unlock all components" action="$p.dogTags.unlockAllComponentsDev()"/>
+		</item>
+
+		<item label="In battle">
+			<item label="Random victim Dog Tag" action="from avatar_helpers.dog_tags_helpers import DogTagsHelpers; DogTagsHelpers.showRandomVictimDogTag()"/>
+			<item label="Random killer Dog Tag" action="from avatar_helpers.dog_tags_helpers import DogTagsHelpers; DogTagsHelpers.showRandomKillerDogTag()"/>
+		</item>
+	</item>
+	
+	<item label="Shortcuts">
+		<item label="In battle (CAPSLOCK+)...">
+			<item label="Heel self 1" />
+			<item label="Reload gun 2" />
+			<item label="Set self on fire 3" />
+			<item label="Explode self 4" />
+			<item label="Break left track 5" />
+			<item label="Break right track 6" />
+			<item label="Destroy self 7" />
+			<item label="Kill engine 8" />
+			<item label="Damage self ammo bay 9" />
+			<item label="Damage self fuel tank 0" />
+			<item label="Damage self engine -" />
+			<item label=" " />
+			<item label="Navigate to shot point C" />
+			<item label="Toggle client filters F" />	
+			<item label="Cruise control forward G" />
+			<item label="Respawn self K" />
+			<item label="Toggle teleport N" />
+			<item label="Roll self O" />
+			<item label="Capture closest base P" />
+			<item label="Teleport to shot point Q" />
+			<item label="Back self on tracks R" />
+			<item label="Log tkill ratings T" />
+			<item label="Set signal V" />
+			<item label="Toggle pause AI 'PAUSE'" />
+			<item label="Kill all enemies 'BACKSLASH'" />
+			<item label="  " />			
+			<item label="Toggle wide view F1" />
+			<item label="Toggle avatar fly fast F2" />
+			<item label="Toggle avatar fly slow F3" />
+			<item label="Screenshot F9" />
+			<item label="GUI debug panel F10" />
+		</item>
+	</item>
 </root>

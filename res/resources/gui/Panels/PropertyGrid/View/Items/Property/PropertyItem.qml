@@ -42,6 +42,7 @@ Details.PGRow {
 			placeholderCount: model
 				? model.node.actionPlaceholderCount
 				: 0
+			shortcutEnabled: row.activeFocus
 		}
 	}
 }

@@ -31,9 +31,7 @@ QuickStyles.TreeViewStyle {
 	highlightedTextColor: _palette.color1
 
 	branchDelegate: Details.BranchDelegate {}
-	rowDelegate: Details.RowDelegate {
-		active: style.control.activeFocus
-	}
+	rowDelegate: Details.RowDelegate {}
 	headerDelegate: Details.TableViewHeader {
 		view: style.control
 	}

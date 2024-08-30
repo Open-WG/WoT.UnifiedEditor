@@ -1,4 +1,4 @@
-import QtQuick 2.7
+import QtQuick 2.11
 import "../Common" as Common
 
 Common.DelegateTemplate {
@@ -9,10 +9,10 @@ Common.DelegateTemplate {
 
 	Accessible.name: model.display
 
-    Connections {
-        target: parent
-        onSourceChanged: icon.reload()
-    }
+	Connections {
+		target: parent
+		onSourceChanged: icon.reload()
+	}
 
 	icon: Common.AssetIcon {
 		source: model ? "image://thumbnail/" + model.fullName : ""

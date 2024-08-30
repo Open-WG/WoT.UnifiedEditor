@@ -1,4 +1,4 @@
-import QtQuick 2.10
+import QtQuick 2.11
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0 as Details
 

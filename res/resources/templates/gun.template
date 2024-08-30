@@ -2,6 +2,35 @@
 					<maxAmmo> 74 </maxAmmo>
 					<unlocks>
 					</unlocks>
+					<customization>
+						<customizableVehicleAreas>
+							<paint> GUN GUN_2 </paint>
+							<camouflage> GUN </camouflage>
+						</customizableVehicleAreas>
+					</customization>
+					<customizationSlots>
+						<slot>
+							<slotType> paint </slotType>
+							<slotId> 41000 </slotId>
+							<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+							<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+							<applyTo> 4096 </applyTo>
+						</slot>
+						<slot>
+							<slotType> paint </slotType>
+							<slotId> 41001 </slotId>
+							<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+							<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+							<applyTo> 16384 </applyTo>
+						</slot>
+						<slot>
+							<slotType> camouflage </slotType>
+							<slotId> 42000 </slotId>
+							<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+							<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+							<applyTo> 4096 </applyTo>
+						</slot>
+					</customizationSlots>
 					<models>
 						<undamaged> [[GUN_MODEL_NORMAL]] </undamaged>
 						<destroyed> [[GUN_MODEL_DESTROYED]] </destroyed>

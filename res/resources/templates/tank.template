@@ -7,6 +7,7 @@
 		</commander>
 		<driver/>
 	</crew>
+	<supplySlots> 8 8 8 </supplySlots>
 	<!-- km/h -->
 	<speedLimits>
 		<forward> 32 </forward>
@@ -70,6 +71,26 @@
 			<collisionModelClient> [[HULL_MODEL_COLLISION_CLIENT]] </collisionModelClient>
 		</hitTester>
 		<!-- List of <material_kind_name> millimeters </material_kind_name> -->
+		<customization>
+			<customizableVehicleAreas>
+				<paint> HULL </paint>
+				<camouflage> HULL </camouflage>
+			</customizableVehicleAreas>
+		</customization>
+		<customizationSlots>
+			<slot>
+				<slotType> paint </slotType>
+				<slotId> 11000 </slotId>
+				<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+				<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+			</slot>
+			<slot>
+				<slotType> camouflage </slotType>
+				<slotId> 12000 </slotId>
+				<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+				<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+			</slot>
+		</customizationSlots>
 		<armor>
 			<armor_1> 18 </armor_1>
 			<armor_2> 16 </armor_2>
@@ -94,8 +115,6 @@
 			<healthRegenPerSec> 5 </healthRegenPerSec>
 			<healthBurnPerSec> 15 </healthBurnPerSec>
 		</ammoBayHealth>
-		<emblemSlots>
-		</emblemSlots>
 		[[HULL_VARIANTS]]
 	</hull>
 	<chassis>

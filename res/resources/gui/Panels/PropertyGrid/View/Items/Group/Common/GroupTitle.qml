@@ -10,6 +10,7 @@ T.Button {
 
 	property alias expandingAnimationEnabled: rotationBehavior.enabled
 	property bool expanded: true;
+	property bool overridden: false
 
 	implicitWidth: contentItem.implicitWidth + leftPadding + rightPadding
 	implicitHeight: contentItem.implicitHeight + topPadding + bottomPadding
@@ -35,11 +36,14 @@ T.Button {
 
 	contentItem: Misc.Text {
 		leftPadding: control.indicator.visible ? control.indicator.width + control.spacing : 0
-		Style.class: "text-bold"
-		text: control.text
+		Style.class: overridden ? "text-bold-overridden" : "text-bold"
+		text: (!overridden) ? control.text : "*" + control.text
 
 		verticalAlignment: Text.AlignVCenter
 		font.underline: control.visualFocus
+		font.capitalization: Font.AllUppercase
+		font.letterSpacing: 1
+		font.pixelSize: 10
 
 		Behavior on color {
 			enabled: !_palette.themeSwitching

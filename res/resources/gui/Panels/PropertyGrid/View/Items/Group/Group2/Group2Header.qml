@@ -6,27 +6,25 @@ import "../../../Settings.js" as Settings
 MouseArea {
 	id: header
 	property alias text: title.text
+	property alias overridden: title.overridden
 	property alias actions: actionBar.actions
 
 	height: Settings.group2HeaderHeight
 	hoverEnabled: true
 	onDoubleClicked: styleData.group.toggle()
 
-	Rectangle {
-		id: bg
-		width: parent.width - x
-		height: parent.height
-		x: bgRound.x + bgRound.width / 2
-		color: _palette.color7
+	HeaderShadow {
+		source: bg
+		anchors.fill: bg
 	}
 
 	Rectangle {
-		id: bgRound
+		id: bg
+		width: parent.width
 		height: parent.height
-		width: height
-		x: title.x - (width - title.indicator.width) / 2 + title.leftPadding
-		radius: height / 2
-		color: bg.color
+		x: title.x - (parent.height - title.indicator.width) / 2 + title.leftPadding
+		color: _palette.color7
+		radius: Settings.group2Round
 	}
 
 	GroupTitle {

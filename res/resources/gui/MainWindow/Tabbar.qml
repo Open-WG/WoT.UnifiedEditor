@@ -1,5 +1,6 @@
 import QtQuick 2.7
 import QtQuick.Layouts 1.3
+import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
 import WGTools.Utils 1.0
@@ -40,6 +41,7 @@ RowLayout {
 
 	ListView {
 		id: tabsView
+		Accessible.name: "Tabs"
 		implicitWidth: Utils.clamp(layout.parent.width, LocalSettings.minimumTabWidth * count, LocalSettings.tabWidth * count)
 		implicitHeight: contentHeight
 		orientation: ListView.Horizontal
@@ -51,6 +53,11 @@ RowLayout {
 
 		onCurrentIndexChanged: {
 			positionTimer.start()
+		}
+
+		Clickomatic.ClickomaticItem.showChild: function(childName) {
+			var index = model.findChild(childName);
+			tabsView.positionViewAtIndex(index, ListView.Contain);
 		}
 
 		Timer {

@@ -16,8 +16,18 @@ DetailsEx.FilterableComboBoxContent {
 				height: tag.height + ControlsSettings.smallPadding
 				Tag {
 					id: tag
-					text: model[control.textRole]
-					onClose: control.removeTag(model[control.textRole])
+					text: model.display
+					onClose: control.removeTag(model.display)
+
+					Binding on color {
+						when: !model.valid
+						value: tag.enabled ? (tag.hovered ? _palette.color7 : _palette.color8) : "transparent"
+					}
+
+					Binding on textColor {
+						when: !model.valid
+						value: tag.enabled ? _palette.color3 : _palette.color5
+					}
 				}
 			}
 		}

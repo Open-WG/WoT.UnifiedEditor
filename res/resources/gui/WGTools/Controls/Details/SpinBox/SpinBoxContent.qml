@@ -15,7 +15,7 @@ TextInput {
 
 	color: control.dirty
 		? _palette.color1
-		: control.isNonDefault
+		: control.overridden
 			? _palette.color11
 			: _palette.color2
 	selectionColor: _palette.color12

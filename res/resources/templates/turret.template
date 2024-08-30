@@ -13,6 +13,26 @@
 				<collisionModelClient> [[TURRET_MODEL_COLLISION_CLIENT]] </collisionModelClient>
 			</hitTester>
 			<gunPosition> [[TURRET_GUN_POSITION]] </gunPosition>
+			<customization>
+				<customizableVehicleAreas>
+					<paint> TURRET </paint>
+					<camouflage> TURRET </camouflage>
+				</customizableVehicleAreas>
+			</customization>
+			<customizationSlots>
+				<slot>
+					<slotType> paint </slotType>
+					<slotId> 31000 </slotId>
+					<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+					<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+				</slot>
+				<slot>
+					<slotType> camouflage </slotType>
+					<slotId> 32000 </slotId>
+					<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+					<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+				</slot>
+			</customizationSlots>
 			<!-- millimeters -->
 			<armor>
 				<armor_1> 18 </armor_1>
@@ -52,8 +72,6 @@
 				<healthRegenPerSec> 2 </healthRegenPerSec>
 				<healthBurnPerSec> 5 </healthBurnPerSec>
 			</surveyingDeviceHealth>
-			<emblemSlots>
-			</emblemSlots>
 			<guns>
 [[GUNS]]
 			</guns>

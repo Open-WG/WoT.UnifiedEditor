@@ -63,6 +63,31 @@ Item {
 				// 	NumberAnimation { duration: 500; easing.type: Easing.OutCubic}
 				// }
 			}
+
+
+			Canvas {
+			    anchors.fill: parent
+                property var color: model != null && model.state == 1
+			        ? "red"
+			        : model != null && model.state == 2
+			        ? "yellow"
+			        : null
+			    onColorChanged: requestPaint()
+			    onPaint: {
+				    var ctx = getContext("2d")
+				    ctx.reset()
+				    if (!color) {
+					    return;
+				    }
+				    ctx.fillStyle = color
+
+				    var ellipseX = Settings.iconWidth - 8
+				    var ellipseY = Settings.iconWidth - 5
+
+				    ctx.ellipse(ellipseX, ellipseY, 8, 8)
+				    ctx.fill()
+			    }
+		    }
 		}
 
 		Misc.Text {
@@ -70,7 +95,11 @@ Item {
 
 			verticalAlignment: Text.AlignVCenter
 			text: styleData ? styleData.value : ""
-			color: _palette.color1
+			color: model != null && model.state == 1
+			    ? "red"
+			    : model != null && model.state == 2
+			    ? "yellow"
+			    : "white"
 			opacity: model == null || model.enabled
 					? 1.0
 					: 0.5

@@ -17,57 +17,16 @@
 				<fn_influx_effect_deferred> particles/content_deferred/PFX/Tank/destruction/flaming_large_01.vfx </fn_influx_effect_deferred>
 				<local_effect> false </local_effect>
 			</Influx>
-			<Source>
-				<delay_> 0.000000 </delay_>
-				<minimumAge_> 0.000000 </minimumAge_>
-				<name_> Source 1 </name_>
-				<pPositionSrc>
-					<PointVectorGenerator>
-						<nameID_> PointVectorGenerator </nameID_>
-						<position_> 0.000000 0.000000 0.000000 </position_>
-					</PointVectorGenerator>
-				</pPositionSrc>
-				<pVelocitySrc>
-					<PointVectorGenerator>
-						<nameID_> PointVectorGenerator </nameID_>
-						<position_> 0.000000 1.000000 0.000000 </position_>
-					</PointVectorGenerator>
-				</pVelocitySrc>
-				<motionTriggered_> false </motionTriggered_>
-				<timeTriggered_> true </timeTriggered_>
-				<grounded_> false </grounded_>
-				<dropDistance_> 15.000000 </dropDistance_>
-				<rate_> 1.000000 </rate_>
-				<sensitivity_> 0.100000 </sensitivity_>
-				<maxSpeed_> 0.000000 </maxSpeed_>
-				<activePeriod_> 1.000000 </activePeriod_>
-				<sleepPeriod_> -1.000000 </sleepPeriod_>
-				<sleepPeriodMax_> 0.000000 </sleepPeriodMax_>
-				<minimumSize_> 0.100000 </minimumSize_>
-				<maximumSize_> 0.100000 </maximumSize_>
-				<forcedUnitSize_> 1 </forcedUnitSize_>
-				<allowedTimeInSeconds_> 1.000000 </allowedTimeInSeconds_>
-				<initialRotation_> 0.000000 0.000000 </initialRotation_>
-				<randomInitialRotation_> 0.000000 0.000000 </randomInitialRotation_>
-				<initialColour_> 0.500000 0.500000 0.500000 1.000000 </initialColour_>
-				<randomSpin_> false </randomSpin_>
-				<minSpin_> 0.000000 </minSpin_>
-				<maxSpin_> 0.000000 </maxSpin_>
-				<ignoreRotation_> false </ignoreRotation_>
-				<inheritVelocity_> 0.000000 </inheritVelocity_>
-			</Source>
 		</Actions>
 		<Renderer>
-			<SpriteParticleRenderer>
+			<MeshParticleRenderer>
 				<viewDependent_> false </viewDependent_>
 				<local_> false </local_>
-				<textureName_> particles/maps/flash.dds </textureName_>
+				<visualName_> particles/holder_model/holder_model.visual </visualName_>
+				<doubleSided_> false </doubleSided_>
 				<materialFX_> 1 </materialFX_>
-				<frameCount_> 0 </frameCount_>
-				<frameRate_> 0.000000 </frameRate_>
-				<explicitOrientation_> 0.000000 0.000000 0.000000 </explicitOrientation_>
-				<useFog_> true </useFog_>
-			</SpriteParticleRenderer>
+				<sortType_> 1 </sortType_>
+			</MeshParticleRenderer>
 		</Renderer>
 		<capacity> 1 </capacity>
 		<boundingBox>

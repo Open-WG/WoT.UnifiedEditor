@@ -1,4 +1,4 @@
-import QtQuick 2.7
+import QtQuick 2.11
 import QtQml.Models 2.2
 import WGTools.PropertyGrid 1.0 as WGTools
 import WGTools.Clickomatic 1.0 as Clickomatic
@@ -261,8 +261,8 @@ Item {
 		visible: false
 		spacing: Settings.groupItemSpacing
 
-		topPadding: childrenRepeater.firstChild != undefined && !childrenRepeater.firstChild.isGroup() ? childrenTopPadding : 0
-		bottomPadding: childrenRepeater.lastChild != undefined && !childrenRepeater.lastChild.isGroup() ? childrenBottomPadding : 0
+		topPadding: childrenRepeater.firstChild != undefined && !childrenRepeater.firstChild.isGroup() ? root.childrenTopPadding : 0
+		bottomPadding: childrenRepeater.lastChild != undefined && !childrenRepeater.lastChild.isGroup() ? root.childrenBottomPadding : 0
 
 		Repeater {
 			id: childrenRepeater
@@ -365,7 +365,6 @@ Item {
 			}
 
 			Component.onDestruction: {
-				// console.log("onDestruction:", debugId)
 				childLoader.sourceComponent = null
 
 				itemIndex = -1

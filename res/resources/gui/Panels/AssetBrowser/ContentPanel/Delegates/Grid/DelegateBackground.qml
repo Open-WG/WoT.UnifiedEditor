@@ -1,6 +1,4 @@
-import QtQuick 2.7
-import WGTools.Views.Details 1.0 as ViewDetails
+import QtQuick 2.11
+import WGTools.Views.Details 1.0
 
-ViewDetails.RowDelegate {
-	radius: 5
-}
+RoundedRowDelegate {}

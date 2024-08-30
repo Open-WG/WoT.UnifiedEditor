@@ -2,16 +2,18 @@ import QtQuick 2.7
 import QtQuick.Controls 1.4
 import WGTools.Controls 2.0 as Controls2
 import WGTools.ControlsEx 1.0
+import WGTools.Misc 1.0
 import QtQuick.Layouts 1.11
 import WGTools.Models 1.0
 import "Settings.js" as Settings
+import "Details" as Details
 
 Rectangle {
 	id: root
 	property var title: "Scene Browser"
 	property var layoutHint: "left"
 	Accessible.name: "Scene Browser"
-	
+
 	readonly property real minimumWidth: 250
 
 	property var sceneBrowserContext: context
@@ -28,12 +30,12 @@ Rectangle {
 		// custom header
 		Loader {
 			id: header
-			
+
 			readonly property alias viewContext: root.sceneBrowserContext
 			readonly property QtObject panelContext: sceneBrowserContext.headerPanel
 				? sceneBrowserContext.headerPanel.context
 				: null
-			
+
 			sourceComponent: sceneBrowserContext.headerPanel
 				? sceneBrowserContext.headerPanel.component
 				: undefined
@@ -78,17 +80,14 @@ Rectangle {
 				}
 
 				placeholderText: "Filter"
-				
+
 				text: filterText()
 				onTriggered: setFilterText(text)
 			}
 
 			// group by
-			Controls2.ComboBox {
+			Details.DropDown {
 				id: comboBox
-				model: active
-					? sceneBrowserContext.selectableData.labels
-					: null
 				Accessible.name: "Grouping"
 
 				property bool active: sceneBrowserContext.selectableData != undefined
@@ -97,15 +96,11 @@ Rectangle {
 				Layout.leftMargin: Settings.defaultMargin
 				Layout.bottomMargin: Settings.defaultMargin
 
-				currentIndex: active
-					? sceneBrowserContext.selectableData.currentIndex
-					: -1
+				selectableData: active
+					? sceneBrowserContext.selectableData
+					: null
 
-				onCurrentIndexChanged: {
-					if (active) {
-						sceneBrowserContext.selectableData.currentIndex = currentIndex
-					}
-				}
+				filterData: sceneBrowserContext.filterData
 			}
 		}
 
@@ -124,34 +119,23 @@ Rectangle {
 			Layout.rightMargin: Settings.defaultMargin
 
 			// failed search label
-			Controls2.Label {
+			FilterResultPlaceholder {
 				anchors.verticalCenter: parent.verticalCenter
 				width: parent.width
-				horizontalAlignment: Text.AlignHCenter
-				wrapMode: Text.Wrap
-				
-				text: "Your search \"" + filter.text + "\" - nothing found"
-				visible: sceneOutlineView.model &&
-					itemsCounter.value == 0 &&
-					filter.text
-
-				ModelElementsCounter {
-					id: itemsCounter
-					model: sceneOutlineView.model
-					mode: ModelElementsCounter.RootChildren
-				}
+				model: sceneOutlineView.model
+				searchText: filter.text
 			}
 		}
 
 		// custom footer
 		Loader {
 			id: footer
-			
+
 			readonly property alias viewContext: root.sceneBrowserContext
 			readonly property QtObject panelContext: sceneBrowserContext.footerPanel
 				? sceneBrowserContext.footerPanel.context
 				: null
-			
+
 			sourceComponent: sceneBrowserContext.footerPanel
 				? sceneBrowserContext.footerPanel.component
 				: undefined

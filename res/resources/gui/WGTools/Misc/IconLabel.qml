@@ -1,11 +1,13 @@
 import QtQuick 2.7
 import WGTools.Misc 1.0 as Misc
+import WGTools.Style 1.0
 
 Item {
 	id: root
 
 	property alias icon: icon
 	property alias label: label
+	property string labelStyle: "text-base-label"
 	property alias iconNest: iconNest
 
 	property bool mirrorLayout: false
@@ -43,8 +45,9 @@ Item {
 
 	Misc.Text {
 		id: label
-		color: _palette.color2
 		elide: Text.ElideRight
+
+		Style.class: root.labelStyle
 
 		anchors {
 			top:			root.verticalAlignment == Qt.AlignTop		? root.top				: undefined;

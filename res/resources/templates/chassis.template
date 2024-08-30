@@ -47,6 +47,26 @@
 			<wwsoundPC> treads_type_pc </wwsoundPC>
 			<wwsoundNPC> trds_med_npc </wwsoundNPC>
 			<hullPosition> [[CHASSIS_HULL_POSITION]] </hullPosition>
+			<customization>
+				<customizableVehicleAreas>
+					<paint> CHASSIS </paint>
+					<camouflage/>
+				</customizableVehicleAreas>
+			</customization>
+			<customizationSlots>
+				<slot>
+					<slotType> paint </slotType>
+					<slotId> 21000 </slotId>
+					<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+					<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+				</slot>
+				<slot>
+					<slotType> style </slotType>
+					<slotId> 29000 </slotId>
+					<anchorPosition> 0.000000 0.000000 0.000000 </anchorPosition>
+					<anchorDirection> 0.000000 1.000000 0.000000 </anchorDirection>
+				</slot>
+			</customizationSlots>
 			<hitTester>
 				<collisionModelServer> [[CHASSIS_COLLISION_MODEL_SERVER]] </collisionModelServer>
 				<collisionModelClient> [[CHASSIS_COLLISION_MODEL_CLIENT]] </collisionModelClient>

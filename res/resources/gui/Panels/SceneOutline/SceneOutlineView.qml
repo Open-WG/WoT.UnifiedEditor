@@ -74,7 +74,7 @@ Views.TreeView {
 	style: ViewStyles.TreeViewStyle {
 		branchDelegate: ViewDetails.BranchDelegate {}
 		rowDelegate: Delegates.RowDelegate {
-			active: view.activeFocus
+			current: styleData.row == view.__currentRow
 			onHoverChanged: sceneOutlineContext.syncHover(index)
 			onHoverReset: sceneOutlineContext.resetHover()
 		}

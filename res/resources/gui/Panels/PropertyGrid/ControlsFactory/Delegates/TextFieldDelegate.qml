@@ -10,7 +10,7 @@ PropertyDelegate {
 	implicitHeight: control.implicitHeight
 	propertyData: model ? model.node.property : null
 	enabled: true
-	
+
 	function initialize() {
 		if (!control.verifier.valid) {
 			propertyGrid.invalidDelegateCount++;
@@ -44,5 +44,6 @@ PropertyDelegate {
 		width: parent.width
 		height: parent.height
 		valueData: propertyData
+		overridden: propertyData && propertyData.overridden
 	}
 }

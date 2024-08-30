@@ -27,6 +27,7 @@ FactoryManager {
 	Factories.TimelineFactory {}
 	Factories.UnitsSpinBoxFactory {}
 	Factories.SpinBoxFactory {}
+	Factories.CompactNumericFactory {}
 	Factories.NumericFactory {}
 	Factories.RangeFactory {}
 	Factories.ButtonFactory {}

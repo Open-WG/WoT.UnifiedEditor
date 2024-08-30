@@ -6,7 +6,9 @@ Rectangle {
 	id: control
 	signal close
 	property alias text: title.text
-	color: enabled ? (area.containsMouse || removeButton.hovered ? _palette.color3 : _palette.color5) : "transparent"
+	property alias textColor: title.color
+	readonly property bool hovered: area.containsMouse || removeButton.hovered
+	color: enabled ? (hovered ? _palette.color3 : _palette.color5) : "transparent"
 	width: title.x + title.width + removeButton.width + ControlsSettings.smallPadding
 	height: ControlsSettings.iconSize
 	radius: height / 2

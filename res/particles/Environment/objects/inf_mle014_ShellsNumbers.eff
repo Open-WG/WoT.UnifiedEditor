@@ -19,15 +19,14 @@
 			</Influx>
 		</Actions>
 		<Renderer>
-			<TrailParticleRenderer>
+			<MeshParticleRenderer>
 				<viewDependent_> false </viewDependent_>
 				<local_> false </local_>
-				<textureName_> particles/maps/spark_trail.dds </textureName_>
-				<width_> 0.024000 </width_>
-				<skip_> 0 </skip_>
-				<useFog> true </useFog>
-				<steps> 2 </steps>
-			</TrailParticleRenderer>
+				<visualName_> particles/holder_model/holder_model.visual </visualName_>
+				<doubleSided_> false </doubleSided_>
+				<materialFX_> 1 </materialFX_>
+				<sortType_> 1 </sortType_>
+			</MeshParticleRenderer>
 		</Renderer>
 		<capacity> 1 </capacity>
 		<boundingBox>

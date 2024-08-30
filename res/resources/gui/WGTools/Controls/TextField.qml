@@ -10,6 +10,7 @@ T.TextField {
 	property alias placeholder: placeholder
 
 	property bool dirty: false
+	property bool overridden: false
 	property real spacing: ControlsSettings.spacing
 
 	readonly property real availableWidth: width - leftPadding - rightPadding
@@ -34,7 +35,11 @@ T.TextField {
 	selectByMouse: true
 	selectionColor: _palette.color12
 	selectedTextColor: _palette.color1
-	color: (enabled && !readOnly) ? _palette.color1 : _palette.color2
+	color: (enabled && !readOnly)
+		? control.overridden
+			? _palette.color11
+			: _palette.color1
+		: _palette.color2
 
 	font.family: ControlsSettings.fontFamily
 	font.pixelSize: ControlsSettings.textNormalSize

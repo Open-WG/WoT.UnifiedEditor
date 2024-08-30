@@ -3,11 +3,13 @@ module Views.Details
 GraphVertex 1.0 Graph/Vertex.qml
 GraphEdge 1.0 Graph/Edge.qml
 BranchDelegate 1.0 BranchDelegate.qml
+RoundedRowDelegate 1.0 RoundedRowDelegate.qml
 RowDelegate 1.0 RowDelegate.qml
 DraggableRowDelegate 1.0 DraggableRowDelegate.qml
 ScrollHelper 1.0 ScrollHelper.qml
 ScrollBarBackground 1.0 ScrollBarBackground.qml
 ScrollBarHandle 1.0 ScrollBarHandle.qml
+StandardItemDelegate 1.0 StandardItemDelegate.qml
 TableViewHeader 1.0 TableViewHeader.qml
 
 ViewsSettings 1.0 ViewsSettings.js

@@ -1116,21 +1116,15 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.032114 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_013_Bonfire.model </resource>
 		<transform>
-			<row0> -0.895062 0.000000 0.445937 </row0>
-			<row1> 0.000000 0.999998 0.000000 </row1>
-			<row2> -0.445937 0.000000 -0.895062 </row2>
-			<row3> 89.993034 6.248633 97.232773 </row3>
+			<row0> -0.910996 0.000000 -0.412409 </row0>
+			<row1> 0.000000 0.999997 0.000000 </row1>
+			<row2> 0.412409 0.000000 -0.910996 </row2>
+			<row3> 90.020653 6.248628 97.267380 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -1138,6 +1132,7 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 36 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>
@@ -3233,12 +3228,6 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.009519 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
@@ -3247,18 +3236,24 @@
 			<resource> content/Hangars/CharacterAnimations/Sequences/TeaDrinking/StateMachine_TeaDrinkingSoldier.ssm </resource>
 			<autoStart> true </autoStart>
 			<isStateMachine> true </isStateMachine>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
 		</sequence>
 		<transform>
-			<row0> -0.997953 -0.063910 0.000000 </row0>
-			<row1> -0.063910 0.997953 0.000000 </row1>
-			<row2> 0.000000 0.000000 -0.999997 </row2>
-			<row3> 88.533844 6.139984 98.348457 </row3>
+			<row0> -0.997951 -0.063910 0.000000 </row0>
+			<row1> -0.063910 0.997951 0.000000 </row1>
+			<row2> 0.000000 0.000000 -0.999995 </row2>
+			<row3> 88.533661 6.139972 98.348274 </row3>
 		</transform>
-		<castsShadow> true </castsShadow>
+		<castsShadow> false </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 117 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>

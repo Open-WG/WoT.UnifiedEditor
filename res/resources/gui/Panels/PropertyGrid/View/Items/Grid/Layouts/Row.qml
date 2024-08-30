@@ -4,6 +4,7 @@ import WGTools.Controls.Details 2.0
 import WGTools.PropertyGrid 1.0 as PG
 import "Details" as Details
 import "../" as Details
+import "../../Common/ActionBar" as Details
 
 Item {
 	id: item
@@ -37,4 +38,15 @@ Item {
 			}
 		}
 	}
+
+	Details.ActionBar {
+			id: ab
+			x: item.width - width
+			y: (item.height - height) / 2
+			actions: model ? model.node.actions : null
+			placeholderCount: model
+				? model.node.actionPlaceholderCount
+				: 0
+			shortcutEnabled: row.activeFocus
+		}
 }

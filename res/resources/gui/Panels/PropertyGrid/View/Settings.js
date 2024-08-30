@@ -2,7 +2,7 @@
 
 // dimensions
 var borderWidth = 1
-var titleIndent = 5
+var titleIndent = 10
 var subTitleIndent = 10
 var minRowHeight = 24
 var gridLabelWidth = 21
@@ -17,17 +17,17 @@ var groupItemSpacing = 0
 var group0HeaderHeight = 40
 
 // group 1
-var group1HeaderHeight = 30
+var group1HeaderHeight = 26
 var group1ChildrenTopMargin = 6
 var group1ChildrenBottomMargin = 6
 
 // group 2
-var group2HeaderHeight = 30
+var group2Round = 3
+var group2HeaderHeight = 26
 var group2ChildrenTopMargin = 6
 var group2ChildrenBottomMargin = 6
 
 // group 3
-var group3Round = 3
 var group3LeftPadding = 5
 var group3RightPadding = 10
 var group3ChildrenTopMargin = 6

@@ -17,7 +17,7 @@ PropertyDelegate {
 		height: parent.height
 		sourceModel: propertyData ? propertyData.options : null
 		textRole: "display"
-		tagString: propertyData ? propertyData.value : null
+		tagString: propertyData && propertyData.value != undefined ? propertyData.value : ""
 		Accessible.name: "Tag combo box"
 
 		onTagStringModified: propertyData.setValue(tagString)

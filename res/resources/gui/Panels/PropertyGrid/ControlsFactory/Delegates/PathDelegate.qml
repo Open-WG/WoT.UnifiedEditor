@@ -24,5 +24,6 @@ PropertyDelegate {
 		allowedToBeEmpty: propertyData
 			? propertyData.dialog.allowedToBeEmpty  || propertyData.readonly
 			: false
+		overridden: propertyData && propertyData.overridden
 	}
 }

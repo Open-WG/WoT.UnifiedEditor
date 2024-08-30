@@ -34,7 +34,7 @@ PropertyDelegate {
 				spacing: ControlsSettings.spacing
 				valueData: modelData
 				enabled: !modelData.readonly
-				isNonDefault: propertyData && propertyData.hasDefaultValue && !propertyData.isDefault
+				overridden: propertyData && propertyData.overridden
 
 				label.text: propertyData ? propertyData.getElementLabel(index) : ""
 				label.color: _palette.color3

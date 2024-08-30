@@ -39,10 +39,10 @@ TreeView {
 			}
 		}
 	}
-	
+
 	Loader {
 		id: rowLoader
-		
+
 		sourceComponent: root.rowDelegate
 
 		property QtObject styleData: QtObject {
@@ -220,5 +220,13 @@ TreeView {
 		}
 
 		return rows
+	}
+
+	Keys.onPressed: {
+		if (event.key == Qt.Key_Escape && root.selection && root.selection.hasSelection)
+		{
+			root.selection.clear();
+			event.accepted = true;
+		}
 	}
 }

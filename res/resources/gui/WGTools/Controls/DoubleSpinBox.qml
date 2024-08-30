@@ -8,10 +8,11 @@ T.DoubleSpinBox {
 	id: control
 
 	property bool dirty: false
-	property bool isNonDefault: false
+	property bool overridden: false
 	property bool buttonsVisible: hovered && !activeFocus && editable
 
 	property alias label: label
+	property alias labelMouseArea: label.labelMouseArea
 	property alias unitsLabel: unitsLabel
 	property string postfixText: ""
 	property string units: ""
@@ -45,7 +46,7 @@ T.DoubleSpinBox {
 		__indicatorsHeight)
 
 	baselineOffset: contentItem.y + contentItem.baselineOffset
-	spacing: 0
+	spacing: label.concatenate ? 0 : ControlsSettings.spacing
 	padding: ControlsSettings.padding
 	topPadding: ControlsSettings.smallPadding
 	bottomPadding: ControlsSettings.smallPadding
@@ -91,15 +92,15 @@ T.DoubleSpinBox {
 		return Utils.textFromValue(value, locale, decimals) + postfixText
 	}
 
+	Details.SpinBoxLabel {
+		id: label
+	}
+
 	contentItem: Details.SpinBoxContent {}
 	background: Details.SpinBoxBackground {}
 
 	up.indicator: Details.SpinButtonUp {}
 	down.indicator: Details.SpinButtonDown {}
-
-	Details.SpinBoxLabel {
-		id: label
-	}
 
 	Details.SpinBoxUnitsLabel {
 		id: unitsLabel

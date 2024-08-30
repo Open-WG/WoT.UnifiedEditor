@@ -10,6 +10,7 @@ BaseGroup {
 
 	headerDelegate: Group1Header {
 		text: model ? model.node.name : ""
+		overridden: model ? model.node.overridden : false
 		actions: model ? model.node.actions : null
 	}
 

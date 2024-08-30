@@ -6,7 +6,7 @@ T.SpinBox {
 	id: control
 
 	property bool dirty: false
-	property bool isNonDefault: false
+	property bool overridden: false
 	property bool buttonsVisible: hovered && !activeFocus
 
 	property alias label: label
@@ -35,7 +35,7 @@ T.SpinBox {
 	implicitWidth: Math.max(
 		background ? background.implicitWidth : 0,
 		contentItem.implicitWidth + leftPadding + rightPadding)
-	
+
 	implicitHeight: Math.max(
 		background ? background.implicitHeight : 0,
 		contentItem.implicitHeight + topPadding + bottomPadding,
@@ -81,7 +81,7 @@ T.SpinBox {
 
 	up.indicator: Details.SpinButtonUp {}
 	down.indicator: Details.SpinButtonDown {}
-	
+
 	Details.SpinBoxLabel {
 		id: label
 	}

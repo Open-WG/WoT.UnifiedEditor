@@ -25,9 +25,7 @@ QuickStyles.TableViewStyle {
 	highlightedTextColor: _palette.color1
 	textColor: _palette.color1
 
-	rowDelegate: Details.RowDelegate {
-		active: style.control.activeFocus
-	}
+	rowDelegate: Details.RowDelegate {}
 	headerDelegate: Details.TableViewHeader {
 		view: style.control
 	}

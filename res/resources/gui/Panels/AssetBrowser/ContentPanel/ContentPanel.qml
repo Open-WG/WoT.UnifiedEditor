@@ -18,7 +18,7 @@ FocusScope {
 
 	property var tableColumnSize: table.getColumnSize()
 	onTableColumnSizeChanged: {
-		table.setColumnSize(tableColumnSize > 0 ? tableColumnSize : 0)
+		table.setColumnSize(tableColumnSize == null ? "" : tableColumnSize)
 	}
 
 	// appearance

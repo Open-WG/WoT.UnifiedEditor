@@ -92,7 +92,7 @@ Flickable {
 	}
 
 	implicitWidth: rootGroup.implicitWidth + leftMargin + rightMargin
-	implicitHeight: contentHeight
+	implicitHeight: rootGroup.implicitHeight
 
 	contentWidth: width - leftMargin - rightMargin
 	contentHeight: rootGroup.height
