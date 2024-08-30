@@ -85,6 +85,7 @@
 				<repairCost />
 				<healthRegenPerSec />
 				<healthBurnPerSec />
+				<invulnerable />
 				<chanceToHit />
 			</ammoBayHealth>
 			<variants>
@@ -114,6 +115,7 @@
 				<battle />
 			</fakeTurrets>
 			<healthBurnPerSec /> <!--legacy??-->
+			<invulnerable />
 		</hull>
 		<chassis>
 			<_CHASSIS_NAME_>
@@ -147,6 +149,7 @@
 				<repairCost />
 				<healthRegenPerSec />
 				<healthBurnPerSec />
+				<invulnerable />
 				<trackPairParams>
 					<_ANYTHING_ />
 				</trackPairParams>
@@ -186,6 +189,7 @@
 					<repairCost />
 					<healthRegenPerSec />
 					<healthBurnPerSec />
+					<invulnerable />
 				</turretRotatorHealth>
 				<circularVisionRadius />
 				<surveyingDeviceHealth>
@@ -195,7 +199,9 @@
 					<repairCost />
 					<healthRegenPerSec />
 					<healthBurnPerSec />
+					<invulnerable />
 				</surveyingDeviceHealth>
+				<invulnerable />
 				<!-- legacy begin -->
 				<stickers>
 					<lodDist />
@@ -218,6 +224,7 @@
 							<whileGunDamaged />
 						</shotDispersionFactors>
 						<reloadTime />
+						<forcedReloadTime />
 						<chargeTime />
 						<multiGunEffects />
 						<dualGun>
@@ -262,9 +269,36 @@
 							<count />
 							<rate />
 						</burst>
+						<autoShoot>
+							<shotDispersionPerSec />
+							<maxShotDispersion />
+						</autoShoot>
+						<spin>
+							<startFactor />
+							<isSpinUpShootingEnable />
+							<spinUpTimeout />
+							<spinDownTimeout />
+						</spin>
+						<temperatureMechanics>
+							<heatingPerShot />
+							<heatingPerSec />
+							<coolingDelay />
+							<coolingPerSec />
+							<coolingOverheatPerSec />
+
+							<thermalStateHysteresis />
+							<temperatureSegmentSize />
+
+							<thermalStates>
+								<_ANYTHING_ />
+							</thermalStates>
+						</temperatureMechanics>
 						<shots>
 							<_ANYTHING_ />
 						</shots>
+						<shootImpulse>
+							<_ANYTHING_ />
+						</shootImpulse>
 					</_GUN_NAME_>
 				</guns>
 			</_TURRET_NAME_>
@@ -357,6 +391,10 @@
 		<useHullZSize />
 		<useHullZOffset />
 		<isRotationStill />
+		<rocketAcceleration>
+			<_ANYTHING_ />
+		</rocketAcceleration>
+		<armorMaxHealth/>
 	</tank_game_balance>
 
 	<!--  Appearance tank properties -->
@@ -375,6 +413,7 @@
 			<volumeFactor />
 		</horns>
 		<hull>
+			<prefab />
 			<models>
 				<undamaged />
 				<destroyed />
@@ -516,6 +555,7 @@
 		</hull>
 		<chassis>
 			<_CHASSIS_NAME_>
+				<prefab />
 				<models>
 					<undamaged />
 					<destroyed />
@@ -737,6 +777,7 @@
 		</chassis>
 		<turrets0>
 			<_TURRET_NAME_>
+				<prefab />
 				<models>
 					<undamaged />
 					<destroyed />
@@ -756,8 +797,12 @@
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>
+				<multiGunState>
+					<_ANYTHING_ />
+				</multiGunState>
 				<guns>
 					<_GUN_NAME_>
+						<prefab />
 						<models>
 							<undamaged />
 							<destroyed />
@@ -806,6 +851,9 @@
 							<returnTime />
 							<recoilEffect />
 						</recoil>
+						<spinEffect>
+							<spinEffect />
+						</spinEffect>
 						<drivenJoints>
 							<_ANYTHING_ />
 						</drivenJoints>
@@ -885,6 +933,7 @@
 			</_TURRET_NAME_>
 		</turrets0>
 	</tank_appearance>
+
 	<!-- Camouflage parameters for specific tank -->
 	<tank_camouflage outFolderName="camouflages">
 		<customizationNation />

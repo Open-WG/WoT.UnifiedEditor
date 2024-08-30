@@ -47,11 +47,6 @@
 			<!-- Note: overridable when sharing the gun type. -->
 			<!-- Time that takes to reduce cone of shot dispersion by factor of 3; seconds -->
 			<aimingTime> 1.5 </aimingTime>
-			<burst>
-				<count> 4 </count>
-				<!-- Shots per minute -->
-				<rate> 300 </rate>
-			</burst>
 			<weight> 71 </weight>
 			<maxHealth> 30 </maxHealth>
 			<maxRegenHealth> 14 </maxRegenHealth>
