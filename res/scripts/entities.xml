@@ -25,6 +25,7 @@
 		<ClientSelectableCameraVehicle/>
 		<ClientSelectableWebLinksOpener/>
 		<ClientSelectableEasterEgg/>
+		<EmptyEntity/>
 		<HeroTank/>
 		<PlatoonTank/>
 		<PlatoonLighting/>
@@ -43,9 +44,11 @@
 		<PersonalDeathZone/>
 		<ClientSelectableRankedObject/>
 		<ClientSelectableHangarsSwitcher/>
-		<ClientSelectableCGFObject/>
 		<StaticDeathZone/>
 		<BasicMine/>
+		<ApplicationPoint/>
+		<NewYearVisualObject/>
+		<NewYearJukeboxObject/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -63,7 +66,6 @@
 		<Prebattle/>
 		<UnitMgr/>
 		<SquadUnitMgr/>
-		<FalloutUnitMgr/>
 		<SpecUnitMgr/>
 		<EventUnitMgr/>
 		<MapBoxUnitMgr/>
@@ -105,5 +107,8 @@
 		<MapBoxMgr/>
 		<MapsTrainingBattlesMgr/>
 		<BaseBattleMgr/>
+		<AccountsInvitationsWhiteList/>
+		<Comp7Mgr/>
+		<Comp7UnitMgr/>
 	</ServerOnlyEntities>
 </root>

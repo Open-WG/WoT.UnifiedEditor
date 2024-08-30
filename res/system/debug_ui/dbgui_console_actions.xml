@@ -4,6 +4,7 @@
 	<item label="Obtain vehicle" action="$obtainVehicle" input="true" format="('%s')"/>
 	<item label="Set hangar" action="$hangar.setPath">
 		<param> ('hangar_v3')	</param>
+		<param> ('h33_comp7')	</param>
 	</item>
 	<item label="Add money" action="$p.stats.setMoney">
 		<param label="100000000">	(100000000,100000000,100000000,100000000)	</param>
@@ -54,6 +55,33 @@
 			<item label="Reset Reroll" action="$p.stats.resetRerollTimeout()"/>
 			<item label="Set Epic Reward Tokens" action="$p.stats.setEpicRewardTokens" input="true" format="(%s)"/>
 	</item>
+
+	<item label="PersonalReserves">
+		<item label="Add reserves" action="$boosters.addBooster">
+			<param label="xp">(121000, 10)</param>
+			<param label="xp - expiration">(122240, 10)</param>
+			<param label="xp - premium">(121001, 10)</param>
+			<param label="credits">(121002, 10)</param>
+			<param label="credits - expiration">(122241, 10)</param>
+			<param label="credits - premium">(121003, 10)</param>
+			<param label="crew+fxp">(121004, 10)</param>
+			<param label="crew+fxp - expiration">(122242, 10)</param>
+			<param label="crew+fxp - premium">(121005, 10)</param>
+			<param label="frontline xp">(111001, 10)</param>
+		</item>
+		<item label="Clear reserves" action="$boosters.clearBoosters()" />
+		<item label="Activate clan reserves" action="$boosters.activateClanBooster">
+			<param label="credits">(1)</param>
+			<param label="credits_2.0">(13)</param>
+			<param label="xp">(2)</param>
+			<param label="xp_2.0">(15)</param>
+			<param label="free_xp">(4)</param>
+			<param label="free_xp_2.0">(14)</param>
+			<param label="crew_xp">(3)</param>
+			<param label="crew_xp_2.0">(16)</param>
+		</item>
+		<item label="Clear clan reserves" action="$boosters.deactivateClanBoosters()" />
+	</item>
 	
 	<item label="Shortcuts">
 		<item label="In battle (CAPSLOCK+)...">
@@ -92,4 +120,111 @@
 	</item>
 
 	<item label="Switch Mode Selector Toolset" action="from gui.development.ui.mode_selector.mode_selector_toolset import showToolset; showToolset()"/>
+
+	<item label="Change Window Size">
+		<item label="Sizes" action="from gui.shared.utils.monitor_settings import g_monitorSettings as m; m.changeWindowSize">
+			<param label="1024x768     Ctrl+1">(1024, 768)</param>
+			<param label="1280x768     Ctrl+2">(1280, 768)</param>
+			<param label="1366x768     Ctrl+3">(1366, 768)</param>
+			<param label="1600x900     Ctrl+4">(1600, 900)</param>
+			<param label="1920x1080   Ctrl+5">(1920, 1080)</param>
+			<param label="2200x1200   Ctrl+6">(2200, 1200)</param>
+			<param label="2560x1440   Ctrl+7">(2560, 1440)</param>
+		</item>
+		<item label="Init hot keys Change Window Size manager" action="from development.as_tools.change_window_size_manager import g_change_manager as m; m.">
+			<param label="start">start()</param>
+			<param label="stop">stop()</param>
+		</item>
+	</item>
+
+	<item label="Frontline">
+			<item label="Frontline Notifications" action="$p.showFrontlineSysMessage">
+				<param label="resetSkillsSuccess">(0)</param>
+				<param label="financeGold">(1)</param>
+				<param label="financeCredits">(2)</param>
+				<param label="resetAllSuccess">(3)</param>
+				<param label="notAvailable">(4)</param>
+				<param label="againAvailable">(5)</param>
+				<param label="sellBlanks">(6)</param>
+				<param label="buyBlanks">(7)</param>
+				<param label="victoryMessage">(8)</param>
+			</item>
+			<item label="Reserves">
+				<item label="unlock reserves" action="$p.unlockFrontlineReserves()"/>
+			</item>
+	</item>
+	<item label="New Year">
+		<item label="Show Levelup View" action="$showNYLevelUp">
+			<param label="Level 1"> (1) </param>
+			<param label="Level 2"> (2) </param>
+			<param label="Level 3"> (3) </param>
+			<param label="Level 4"> (4) </param>
+			<param label="Level 5"> (5) </param>
+			<param label="Level 6"> (6) </param>
+			<param label="Level 7"> (7) </param>
+			<param label="Level 8"> (8) </param>
+			<param label="Level 9"> (9) </param>
+			<param label="Level 10"> (10) </param>
+		</item>
+	</item>
+
+	<item label="UI Logging">
+		<item label="SF logger test dialog" action="from gui.development.ui import showSFUILoggerDemoView; showSFUILoggerDemoView()"/>
+		<item label="GF logger test dialog" action="from gui.development.ui import showGFUILoggerDemoView; showGFUILoggerDemoView()"/>
+	</item>
+
+	<item label="WGCG Mock" action="from gui.development.ui import showWgcgMockView; showWgcgMockView()"/>
+
+	<item label="Items">
+		<item label="+1 recertification form" action="$p.inventory.addGoodie(goodieID=13461, amount=1)"/>
+			<!-- game\res\wot\scripts\server_xml\goodies.xml <recertificationForm_13461> -->
+		<item label="Add Equipment Item" action="$p.addEquipment" input="true" format="('%s')"/>
+		<item label="Remove Equipment Item" action="$p.removeEquipment" input="true" format="('%s')"/>
+	</item>
+
+
+	<item label="Competitive 7x7">
+		<item label="Show Meta view" action="from gui.development import showComp7MetaRootView; showComp7MetaRootView()"/>
+		<item label="Show NoVehicles screen" action="from gui.development import showComp7NoVehiclesScreen; showComp7NoVehiclesScreen()"/>
+		<item label="Show Intro screen" action="from gui.development import showComp7IntroScreen; showComp7IntroScreen()"/>
+		<item label="Show Ranks Rewards screen" action="from gui.development import showComp7RanksRewardsScreen; showComp7RanksRewardsScreen">
+			<param label="Any">()</param>
+			<param label="Debutant C">('comp7_ranks_bronze_2')</param>
+			<param label="Debutant B">('comp7_ranks_bronze_3')</param>
+			<param label="Debutant A">('comp7_ranks_bronze_4')</param>
+			<param label="Iron D">('comp7_ranks_silver_1')</param>
+			<param label="Iron C">('comp7_ranks_silver_2')</param>
+			<param label="Iron B">('comp7_ranks_silver_3')</param>
+			<param label="Iron A">('comp7_ranks_silver_4')</param>
+			<param label="Bronze D">('comp7_ranks_gold_1')</param>
+			<param label="Bronze C">('comp7_ranks_gold_2')</param>
+			<param label="Bronze B">('comp7_ranks_gold_3')</param>
+			<param label="Bronze A">('comp7_ranks_gold_4')</param>
+			<param label="Silver D">('comp7_ranks_platinum_1')</param>
+			<param label="Silver C">('comp7_ranks_platinum_2')</param>
+			<param label="Silver B">('comp7_ranks_platinum_3')</param>
+			<param label="Silver A">('comp7_ranks_platinum_4')</param>
+			<param label="Gold D">('comp7_ranks_diamond_1')</param>
+			<param label="Gold C">('comp7_ranks_diamond_2')</param>
+			<param label="Gold B">('comp7_ranks_diamond_3')</param>
+			<param label="Gold A">('comp7_ranks_diamond_4')</param>
+			<param label="Champion">('comp7_ranks_maestro_1')</param>
+			<param label="Legend">('comp7_ranks_elite_1')</param>
+		</item>
+		<item label="Show Wins Rewards screen" action="from gui.development import showComp7WinsRewardsScreen; showComp7WinsRewardsScreen">
+			<param label="Any">()</param>
+			<param label="25">('comp7_wins_25')</param>
+			<param label="50">('comp7_wins_50')</param>
+			<param label="75">('comp7_wins_75')</param>
+			<param label="100">('comp7_wins_100')</param>
+			<param label="125">('comp7_wins_125')</param>
+			<param label="150">('comp7_wins_150')</param>
+			<param label="175">('comp7_wins_175')</param>
+			<param label="200">('comp7_wins_200')</param>
+		</item>
+		<item label="Show First Rank Rewards screen" action="from gui.development import showComp7FirstRankRewardsScreen; showComp7FirstRankRewardsScreen()"/>
+	</item>
+	<item label="Tools">
+			<item label="GameFace viewer" action="$gfViewer" />
+	</item>
 </root>

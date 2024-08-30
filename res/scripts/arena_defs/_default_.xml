@@ -8,6 +8,7 @@
 	<maxTeamsInArena> 2 </maxTeamsInArena>
 	<minTeamsInArena> 2 </minTeamsInArena>
 	<runDelay> 30 </runDelay>
+	<runDelayDev> 3 </runDelayDev>
 	<roundLength> 900 </roundLength>
 	<winnerIfTimeout> 0 </winnerIfTimeout>
 	<winnerIfExtermination>	0	</winnerIfExtermination>
@@ -166,6 +167,23 @@
 			<maxPlayersInTeam> 1 </maxPlayersInTeam>
 			<runDelay> 20 </runDelay>
 		</MAPS_TRAINING>
+		<COMP7>
+			<runDelay> 60 </runDelay>
+			<runDelayDev> 45 </runDelayDev>
+			<maxPlayersInTeam> 7 </maxPlayersInTeam>
+		</COMP7>
+		<BATTLE_ROYALE_SOLO>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_SOLO>
+		<BATTLE_ROYALE_SQUAD>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_SQUAD>
+		<BATTLE_ROYALE_TRN_SOLO>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_TRN_SOLO>
+		<BATTLE_ROYALE_TRN_SQUAD>
+			<runDelayDev> 15 </runDelayDev>
+		</BATTLE_ROYALE_TRN_SQUAD>
 	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf>
@@ -237,17 +255,14 @@
 				<columnWidth> 50 </columnWidth>
 				<frontEdgeExtendColumns> 1 </frontEdgeExtendColumns>
 				<frontDropPerColumn> 35 </frontDropPerColumn>
-
 				<!-- percentage of vehicles that are tested for outliers -->
 				<outlierFraction> 0.2 </outlierFraction>
 				<!-- distance for counting as outliers -->
 				<outlierVerticalDistance> 300 </outlierVerticalDistance>
-
 				<!-- distance behind frontline until one is an intruder -->
 				<intrusionVerticalTolerance> -10000 </intrusionVerticalTolerance>
 				<intrusionCheckExtendBounds> 150 </intrusionCheckExtendBounds>
 			</frontLinesAlgorithm>
-
 			<sectorSettings>
 				<transitionTime> 60	</transitionTime>
 				<maxStayTime> 30 </maxStayTime>
@@ -275,13 +290,10 @@
 			<epicSectorSettings>
 				<!-- Game time added whenever attackers capture a base. Space-separated list, one value per zone.-->
 				<addGameTimePerCapture> 120. 120. </addGameTimePerCapture>
-
 				<!-- Game time additionally added when all bases are captured.-->
 				<addGameTimeAllCaptured> 120. </addGameTimeAllCaptured>
-
 				<!-- Minimum front line distance from far ends of map. -->
 				<frontLineInit> 400. </frontLineInit>
-
 				<!-- Front line bound during sector transition
 					C??????????D   transitionFrontLineBoundForward into next sector
 					?          ?
@@ -302,7 +314,6 @@
 				<defenderMotivationFactors> 0.875 0.5625 0.375 </defenderMotivationFactors>
 				<overtimeMaxFrontlineOffset> -600. </overtimeMaxFrontlineOffset>
 			</epicSectorSettings>
-
 			<winnerIfTimeout>	2	</winnerIfTimeout>
 			<winnerIfExtermination>	2 </winnerIfExtermination>
 			<playerGroupLimit> 12   </playerGroupLimit>
@@ -313,8 +324,10 @@
 			<battleEndWarningAppearTime> 300 </battleEndWarningAppearTime>
 			<battleEndWarningDuration> 15 </battleEndWarningDuration>
 			<battleEndingSoonTime> 60 </battleEndingSoonTime>
-			<capturePointsLimit> -1 </capturePointsLimit> <!-- -1 = no capture points battle results limit -->
-			<defencePointsLimit> -1 </defencePointsLimit> <!-- -1 = no defence points battle results limits -->
+			<capturePointsLimit> -1 </capturePointsLimit>
+			<!-- -1 = no capture points battle results limit -->
+			<defencePointsLimit> -1 </defencePointsLimit>
+			<!-- -1 = no defence points battle results limits -->
 			<recoveryMechanic>
 				<recoveryCounter> 15 </recoveryCounter>
 				<recoveryBlockingCounter> 30 </recoveryBlockingCounter>
@@ -345,6 +358,12 @@
 			<battleEndWarningDuration> 5 </battleEndWarningDuration>
 			<battleEndingSoonTime> 60 </battleEndingSoonTime>
 		</maps_training>
+		<comp7>
+			<roundLength> 600 </roundLength>
+			<battleEndWarningAppearTime> 120 </battleEndWarningAppearTime>
+			<battleEndWarningDuration> 5 </battleEndWarningDuration>
+			<battleEndingSoonTime> 60 </battleEndingSoonTime>
+		</comp7>
 	</gameplayTypes>
 	<extraSoundRemapping>
 		<bootcamp>
@@ -399,6 +418,461 @@
 				</loadBanks>
 			</soundRemapping>
 		</stronghold>
+		<comp7>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>comp_7.bnk</name>
+					</bank>
+					<bank>
+						<name>comp_7.pck</name>
+					</bank>
+				</loadBanks>
+			</soundRemapping>
+		</comp7>
+		<fep_new_year>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>newyear_loading_screen.bnk</name>
+					</bank>
+					<bank>
+						<name>newyear_loading_screen.pck</name>
+					</bank>
+					<bank>
+						<name>ev_fep_new_year.bnk</name>
+					</bank>
+					<bank>
+						<name>ev_fep_new_year.pck</name>
+					</bank>
+				</loadBanks>
+				<events>
+					<!-- common new year remapping -->
+					<event>
+						<name>music_mannerheim_loading_screen</name>
+						<mod>music_mannerheim_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_ensk_loading_screen</name>
+						<mod>music_ensk_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_japort_loading_screen</name>
+						<mod>music_japort_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_karelia_loading_screen</name>
+						<mod>music_karelia_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_airfield_loading_screen</name>
+						<mod>music_airfield_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_fjords_loading_screen</name>
+						<mod>music_fjords_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_sand_river_loading_screen</name>
+						<mod>music_sand_river_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_liveoaks_loading_screen</name>
+						<mod>music_liveoaks_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_prokhorovka_loading_screen</name>
+						<mod>music_prokhorovka_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_poland_loading_screen</name>
+						<mod>music_poland_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_steppes_loading_screen</name>
+						<mod>music_steppes_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_malinovka_loading_screen</name>
+						<mod>music_malinovka_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_westfield_loading_screen</name>
+						<mod>music_westfield_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_perl_river_loading_screen</name>
+						<mod>music_perl_river_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_redshire_loading_screen</name>
+						<mod>music_redshire_loading_screen_newyear</mod>
+					</event>
+					<!-- gun effects sounds remapping -->
+					<!-- main -->
+					<event>
+						<name>wpn_main_PC</name>
+						<mod>wpn_main_PC</mod>
+						<modAUX>ev_fep_ny_shot_main_PC</modAUX>
+					</event>
+					<event>
+						<name>wpn_main_dual_PC</name>
+						<mod>wpn_main_dual_PC</mod>
+						<modAUX>ev_fep_ny_shot_main_PC</modAUX>
+					</event>
+					<event>
+						<name>wpn_main_NPC</name>
+						<mod>wpn_main_NPC</mod>
+						<modAUX>ev_fep_ny_shot_main_NPC</modAUX>
+					</event>
+					<event>
+						<name>wpn_main_dual_NPC</name>
+						<mod>wpn_main_dual_NPC</mod>
+						<modAUX>ev_fep_ny_shot_main_NPC</modAUX>
+					</event>
+					<!-- large -->
+					<event>
+						<name>wpn_large_PC</name>
+						<mod>wpn_large_PC</mod>
+						<modAUX>ev_fep_ny_shot_large_PC</modAUX>
+					</event>
+					<event>
+						<name>wpn_large_dual_PC</name>
+						<mod>wpn_large_dual_PC</mod>
+						<modAUX>ev_fep_ny_shot_large_PC</modAUX>
+					</event>
+					<event>
+						<name>wpn_large_NPC</name>
+						<mod>wpn_large_NPC</mod>
+						<modAUX>ev_fep_ny_shot_large_NPC</modAUX>
+					</event>
+					<event>
+						<name>wpn_large_dual_NPC</name>
+						<mod>wpn_large_dual_NPC</mod>
+						<modAUX>ev_fep_ny_shot_large_NPC</modAUX>
+					</event>
+					<!-- shot effects sounds remapping -->
+					<!-- main AP -->
+					<event>
+						<name>imp_ff_fep_main_AP_NPC_PC</name>
+						<mod>imp_ff_NPC_PC</mod>
+						<modAUX>ev_fep_ny_ff_hit_main_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_ricochet_AP_NPC_PC</name>
+						<mod>imp_main_ricochet_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_ricochet_AP_PC_NPC</name>
+						<mod>imp_main_ricochet_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_ricochet_AP_NPC_NPC</name>
+						<mod>imp_main_ricochet_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_AP_NPC_PC</name>
+						<mod>imp_main_not_pierce_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_AP_PC_NPC</name>
+						<mod>imp_main_not_pierce_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_AP_NPC_NPC</name>
+						<mod>imp_main_not_pierce_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_AP_NPC_PC</name>
+						<mod>imp_main_pierce_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_AP_PC_NPC</name>
+						<mod>imp_main_pierce_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_AP_NPC_NPC</name>
+						<mod>imp_main_pierce_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_AP_NPC_PC</name>
+						<mod>imp_main_critical_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_AP_PC_NPC</name>
+						<mod>imp_main_critical_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_AP_NPC_NPC</name>
+						<mod>imp_main_critical_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_ap_NPC</modAUX>
+					</event>
+					<!-- main HE -->
+					<event>
+						<name>imp_ff_fep_main_HE_NPC_PC</name>
+						<mod>imp_ff_NPC_PC</mod>
+						<modAUX>ev_fep_ny_ff_hit_main_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_HE_NPC_PC</name>
+						<mod>imp_main_not_pierce_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_HE_PC_NPC</name>
+						<mod>imp_main_not_pierce_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_not_pierce_HE_NPC_NPC</name>
+						<mod>imp_main_not_pierce_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_HE_NPC_PC</name>
+						<mod>imp_main_pierce_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_HE_PC_NPC</name>
+						<mod>imp_main_pierce_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_pierce_HE_NPC_NPC</name>
+						<mod>imp_main_pierce_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_HE_NPC_PC</name>
+						<mod>imp_main_critical_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_HE_PC_NPC</name>
+						<mod>imp_main_critical_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_critical_HE_NPC_NPC</name>
+						<mod>imp_main_critical_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_main_splash_HE_NPC_PC</name>
+						<mod>imp_main_splash_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_main_he_NPC</modAUX>
+					</event>
+					<!-- large AP -->
+					<event>
+						<name>imp_ff_fep_large_AP_NPC_PC</name>
+						<mod>imp_ff_NPC_PC</mod>
+						<modAUX>ev_fep_ny_ff_hit_large_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_ricochet_AP_NPC_PC</name>
+						<mod>imp_large_ricochet_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_ricochet_AP_PC_NPC</name>
+						<mod>imp_large_ricochet_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_ricochet_AP_NPC_NPC</name>
+						<mod>imp_large_ricochet_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_AP_NPC_PC</name>
+						<mod>imp_large_not_pierce_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_AP_PC_NPC</name>
+						<mod>imp_large_not_pierce_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_AP_NPC_NPC</name>
+						<mod>imp_large_not_pierce_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_AP_NPC_PC</name>
+						<mod>imp_large_pierce_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_AP_PC_NPC</name>
+						<mod>imp_large_pierce_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_AP_NPC_NPC</name>
+						<mod>imp_large_pierce_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_AP_NPC_PC</name>
+						<mod>imp_large_critical_AP_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_AP_PC_NPC</name>
+						<mod>imp_large_critical_AP_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_AP_NPC_NPC</name>
+						<mod>imp_large_critical_AP_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_ap_NPC</modAUX>
+					</event>
+					<!-- large HE -->
+					<event>
+						<name>imp_ff_fep_large_HE_NPC_PC</name>
+						<mod>imp_ff_NPC_PC</mod>
+						<modAUX>ev_fep_ny_ff_hit_large_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_HE_NPC_PC</name>
+						<mod>imp_large_not_pierce_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_HE_PC_NPC</name>
+						<mod>imp_large_not_pierce_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_not_pierce_HE_NPC_NPC</name>
+						<mod>imp_large_not_pierce_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_shellFall_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_HE_NPC_PC</name>
+						<mod>imp_large_pierce_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_HE_PC_NPC</name>
+						<mod>imp_large_pierce_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_pierce_HE_NPC_NPC</name>
+						<mod>imp_large_pierce_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_HE_NPC_PC</name>
+						<mod>imp_large_critical_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_PC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_HE_PC_NPC</name>
+						<mod>imp_large_critical_HE_PC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_critical_HE_NPC_NPC</name>
+						<mod>imp_large_critical_HE_NPC_NPC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_NPC</modAUX>
+					</event>
+					<event>
+						<name>imp_large_splash_HE_NPC_PC</name>
+						<mod>imp_large_splash_HE_NPC_PC</mod>
+						<modAUX>ev_fep_ny_armorhit_large_he_NPC</modAUX>
+					</event>
+				</events>
+			</soundRemapping>
+		</fep_new_year>
+		<newYear>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>newyear_loading_screen.bnk</name>
+					</bank>
+					<bank>
+						<name>newyear_loading_screen.pck</name>
+					</bank>
+				</loadBanks>
+				<events>
+					<event>
+						<name>music_mannerheim_loading_screen</name>
+						<mod>music_mannerheim_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_ensk_loading_screen</name>
+						<mod>music_ensk_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_japort_loading_screen</name>
+						<mod>music_japort_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_karelia_loading_screen</name>
+						<mod>music_karelia_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_airfield_loading_screen</name>
+						<mod>music_airfield_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_fjords_loading_screen</name>
+						<mod>music_fjords_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_sand_river_loading_screen</name>
+						<mod>music_sand_river_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_liveoaks_loading_screen</name>
+						<mod>music_liveoaks_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_prokhorovka_loading_screen</name>
+						<mod>music_prokhorovka_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_poland_loading_screen</name>
+						<mod>music_poland_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_steppes_loading_screen</name>
+						<mod>music_steppes_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_malinovka_loading_screen</name>
+						<mod>music_malinovka_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_westfield_loading_screen</name>
+						<mod>music_westfield_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_perl_river_loading_screen</name>
+						<mod>music_perl_river_loading_screen_newyear</mod>
+					</event>
+					<event>
+						<name>music_redshire_loading_screen</name>
+						<mod>music_redshire_loading_screen_newyear</mod>
+					</event>
+				</events>
+			</soundRemapping>
+		</newYear>
 		<!--
 		<[game_mode_name]>
 			<soundRemapping>

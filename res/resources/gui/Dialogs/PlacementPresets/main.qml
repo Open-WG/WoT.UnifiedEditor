@@ -89,7 +89,7 @@ Rectangle {
 			Layout.leftMargin: 5
 			Layout.rightMargin: 5
 
-			text: "Random Rotation (Yaw, Picth and Roll degrees)"
+			text: "Random Rotation (Yaw, Pitch and Roll degrees)"
 		}
 
 		RowLayout {

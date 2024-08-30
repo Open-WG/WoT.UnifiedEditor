@@ -1,5 +1,5 @@
 <root>
-	<version> 14 </version>
+	<version> 15 </version>
 	<property>
 		<label> Apply Overlay </label>
 		<value> Apply Overlay Checker.Apply Overlay </value>
@@ -41,10 +41,6 @@
 	<property>
 		<value> Content Checker </value>
 		<type> bool </type>
-	</property>
-	<property>
-		<value> Decor Type </value>
-		<type> enum_BW__DecorSettings__DecorLevel </type>
 	</property>
 	<property>
 		<label> Frozen </label>
@@ -153,6 +149,41 @@
 		<value> ZScale </value>
 		<type> float </type>
 	</property>
+	<group>
+		<name> Decor </name>
+		<children>
+			<property>
+				<label> Minimum </label>
+				<value> decorTypeFwd.Minimum </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Low </label>
+				<value> decorTypeFwd.Low </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Medium </label>
+				<value> decorTypeDef.Medium </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> High </label>
+				<value> decorTypeDef.High </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Maximum </label>
+				<value> decorTypeDef.Maximum </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Ultra </label>
+				<value> decorTypeDef.Ultra </value>
+				<type> bool </type>
+			</property>
+		</children>
+	</group>
 	<group>
 		<name> ArtilleryAimingPoint UDO </name>
 		<children>
@@ -3194,6 +3225,26 @@
 					<property>
 						<label> Visible for Observer </label>
 						<value> visibilityInGame.Visible for Observer </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS </label>
+						<value> visibilityInGame.RTS </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS 1 vs 1 </label>
+						<value> visibilityInGame.RTS 1 vs 1 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS Boot Camp </label>
+						<value> visibilityInGame.RTS Boot Camp </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Comp7 </label>
+						<value> visibilityInGame.Comp7 </value>
 						<type> bool </type>
 					</property>
 				</children>

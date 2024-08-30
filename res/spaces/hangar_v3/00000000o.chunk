@@ -8438,4 +8438,20 @@
 	<terrain>
 		<resource> 00000000o.cdata/terrain2 </resource>
 	</terrain>
+	<ComplexObject>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.500000 6.195000 1.700000 </row3>
+		</transform>
+		<instanceUUID> b50229b2-4886-4fa4-9b9b-c7a91e2ba39f </instanceUUID>
+		<resource> content/HangarPrefabs/hangar_v3/Tank_hangar_v3.prefab </resource>
+	</ComplexObject>
 </root>

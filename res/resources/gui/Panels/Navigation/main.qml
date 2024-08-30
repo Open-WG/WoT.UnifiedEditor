@@ -2,7 +2,7 @@ import QtQuick 2.11
 import QtQuick.Layouts 1.4
 import QtQuick.Controls 1.4
 import QtQml.Models 2.2
-import WGTools.AnimSequences 1.0
+import WGTools.NavigationPanel 1.0
 import WGTools.ControlsEx 1.0 as ControlsEx
 import WGTools.Controls 2.0 as Controls
 import WGTools.Controls.impl 1.0 as Impl
@@ -66,29 +66,14 @@ ControlsEx.Panel {
 				spacing: 10
 				anchors.fill: parent
 
-				Controls.Button {
-					text: "Add Group"
-					icon.source: "image://gui/add"
-					onClicked: context.addGroup()
-					focusPolicy: Qt.StrongFocus
+				Repeater {
+					model: context.buttonsActions
+					delegate: Controls.Button {
+						focusPolicy: Qt.StrongFocus
+						action: Impl.ActionAdapter { action: modelData }
 
-					Layout.fillWidth: true
-				}
-				Controls.Button {
-					text: "Import locations.xml"
-					icon.source: "image://gui/import"
-					onClicked: context.importGroups()
-					focusPolicy: Qt.StrongFocus
-
-					Layout.fillWidth: true
-				}
-
-				Controls.Button {
-					focusPolicy: Qt.StrongFocus
-					action: Impl.ActionAdapter { action: context.makeScreenshotsAction }
-					icon.source: "image://gui/navigation-point"
-
-					Layout.fillWidth: true
+						Layout.fillWidth: true
+					}
 				}
 				
 				SceneOutline.SceneBrowserView {

@@ -1,0 +1,24 @@
+<root>
+	<render>
+		<scenery>
+			<drawDecorModels>
+				<drawDecorModelsUltra> true </drawDecorModelsUltra>
+			</drawDecorModels>
+		</scenery>
+		<contextSuffix/>
+		<drawHavok>
+			<Static> true </Static>
+			<Terrain> true </Terrain>
+			<Dynamic> true </Dynamic>
+			<Outland> true </Outland>
+			<OnlyCameraCollide> true </OnlyCameraCollide>
+			<NoProjectileCollide> true </NoProjectileCollide>
+		</drawHavok>
+	</render>
+	<currentEditor/>
+	<currentMode> DefaultMode </currentMode>
+	<animationPlaybackState> playing </animationPlaybackState>
+	<recent>
+		<lastActiveEditorPath> spaces/hangar_v3/space.settings </lastActiveEditorPath>
+	</recent>
+</root>

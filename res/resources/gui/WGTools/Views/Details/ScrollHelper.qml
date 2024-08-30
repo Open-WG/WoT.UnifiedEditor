@@ -198,7 +198,7 @@ Item {
 		if(__listView.count == 0){
 			return;
 		}
-		if(!isTreeView){
+		if(!isTreeView && selection){
 			selection.deselect(__currentRow)
 		}
 		var firstVisibleRow = getBoundaryVisibleRow(false)
@@ -223,11 +223,13 @@ Item {
 				__currentRow = boundaryVisibleRow
 			}
 		}
-		if(isTreeView){
-			selection.select(currentIndex, ItemSelectionModel.ClearAndSelect)
-		}
-		else{
-			selection.select(__currentRow)
+		if(selection) {
+			if(isTreeView){
+				selection.select(currentIndex, ItemSelectionModel.ClearAndSelect)
+			}
+			else{
+				selection.select(__currentRow)
+			}
 		}
 	}
 

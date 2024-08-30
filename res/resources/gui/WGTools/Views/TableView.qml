@@ -50,7 +50,7 @@ TableView {
 		}
 	}
 
-	Loader{
+	Loader {
 		id: headerLoader
 
 		sourceComponent: table.headerDelegate

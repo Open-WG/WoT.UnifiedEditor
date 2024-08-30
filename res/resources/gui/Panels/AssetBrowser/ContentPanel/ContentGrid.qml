@@ -200,37 +200,37 @@ GridView {
 		var boundaryVisibleRow = Math.min(isDown ? lastVisibleRow : firstVisibleRow, rows)
 		var isRowInViewport = false
 		
-		if(firstVisibleRow <= selectedItemRow && lastVisibleRow >= selectedItemRow){
+		if (firstVisibleRow <= selectedItemRow && lastVisibleRow >= selectedItemRow) {
 			isRowInViewport = true
 		}
-		else{
+		else {
 			isRowInViewport = false
 		}
-		if(rowsViewport <= 1){
+		if (rowsViewport <= 1) {
 			goToIndex = currentIndex + columnsShift
 		}
-		else{
-			if(!isRowInViewport || boundaryVisibleRow == selectedItemRow){
+		else {
+			if (!isRowInViewport || boundaryVisibleRow == selectedItemRow) {
 				positionViewAtIndex(currentIndex , isDown ? GridView.Beginning : GridView.End)
 				boundaryVisibleRow = isDown ? getBoundaryVisibleRow(false) : getBoundaryVisibleRow(true)
 			}
-			if(boundaryVisibleRow != selectedItemRow){
+			if (boundaryVisibleRow != selectedItemRow){
 				goToIndex = currentIndex%columns + boundaryVisibleRow*columns
 				positionViewAtIndex(goToIndex , GridView.Contain)
 			}
-			else{
+			else {
 				goToIndex = currentIndex + columnsShift
 			}
 		}
 		
-		if(goToIndex < count && goToIndex >= 0){
+		if (goToIndex < count && goToIndex >= 0) {
 			currentIndex = goToIndex
 		}
-		else{
-			if(isDown){
-				currentIndex = count-1
+		else {
+			if (isDown) {
+				currentIndex = count - 1
 			}
-			else{
+			else {
 				currentIndex = 0
 			}
 		}

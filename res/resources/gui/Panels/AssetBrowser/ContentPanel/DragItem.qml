@@ -2,7 +2,7 @@ import QtQuick 2.7
 import QtGraphicalEffects 1.0
 import WGTools.Resources 1.0 as WGTResources
 
-OpacityMask  {
+OpacityMask {
 	id: dragItem
 
 	property bool active: false
@@ -70,4 +70,3 @@ OpacityMask  {
 		anchors.fill: parent
 	}
 }
-

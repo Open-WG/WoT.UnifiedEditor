@@ -38,7 +38,7 @@ Rectangle {
 
 	Controls.Button {
 		id: applay
-		text: "Applay"
+		text: "Apply"
 		anchors.margins: 5
 		anchors.bottom: parent.bottom
 		anchors.left: parent.left

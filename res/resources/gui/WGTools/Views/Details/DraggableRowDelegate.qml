@@ -43,7 +43,7 @@ Item {
 		onPressed: {
 
 			if (__checkDragEnabled(__getIndex())) {
-
+				dragAvatar.source = null
 				dragAvatar.source = __dragPrototype
 
 				__viewMouseArea.onReleased.connect(handleRelease)
@@ -74,6 +74,7 @@ Item {
 			var mimeData = __mimeData(__getIndex())
 			if (mimeData) {
 				dragAvatar.__rawMimeData = mimeData
+				dragAvatar.Drag.mimeData = __mimeDataToDict(mimeData)
 				__viewMouseArea.drag.target = dragAvatar
 			}
 		}
@@ -117,7 +118,7 @@ Item {
 			width: highlightWidth
 		}
 		opacity: highlightOpacity
-		visible: topDropArea.containsDrag || centerDropArea.containsDrag || bottomDropArea.containsDrag
+		visible: centerDropArea.containsDrag 
 	}
 
 	Rectangle {
@@ -267,9 +268,11 @@ Item {
 		}
 
 		onSourceChanged: {
-			dragAvatar.grabToImage(function(result) {
-				dragAvatar.Drag.imageSource = result.url
-			})
+			if (source != null) {
+				dragAvatar.grabToImage(function(result) {
+					dragAvatar.Drag.imageSource = result.url
+				})
+			}
 		}
 	}
 
@@ -342,6 +345,10 @@ Item {
 	}
 
 	function __destroyMimeData(mimeData) {
-		return Impl.TreeViewDragHelper.destroyMimeData(mimeData);
+		return Impl.TreeViewDragHelper.destroyMimeData(mimeData)
+	}
+
+	function __mimeDataToDict(mimeData) {
+		return Impl.TreeViewDragHelper.mimeDataToDict(mimeData)
 	}
 }

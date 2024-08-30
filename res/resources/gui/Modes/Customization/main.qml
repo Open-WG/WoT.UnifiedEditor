@@ -86,12 +86,12 @@ WGT.Panel {
 
 					RowLayout {
 						Layout.fillWidth: true
+						visible: breadcrumbsView.count > 0
 
 						WGT.BreadcrumbsView {
 							id: breadcrumbsView
 							model: context.elementsQuickFilters ? context.elementsQuickFilters.model : null
 							selection: context.elementsQuickFilters ? context.elementsQuickFilters.selection : null
-							visible: count > 0
 
 							Layout.fillWidth: true
 						}
@@ -123,28 +123,57 @@ WGT.Panel {
 							width: elements.cellWidth
 							height: elements.cellHeight
 
-							Timer {
-								id:timer
-								interval: 300
-							}
-							// todo: revert connecting to onDoubleClicked.
-							// In some cases two clicked signals are emmited, but not a doubleclicked one.
-							// The timer is used to imitate double click (fix for WOTD-176689).
-							onClicked: {
-								if (timer.running) {
-									context.applySelected()
-									timer.stop()
-								} else {
-									elements.elementClicked()
-									context.makeSelected()
-									timer.restart()
+							MouseArea {
+								id: mouseArea
+
+								hoverEnabled: true
+								acceptedButtons: Qt.LeftButton | Qt.RightButton
+								anchors.fill: parent
+
+								Timer {
+									id: timer
+									interval: 300
+								}
+
+								onPressed: {
+									var payload = context.dragPayload(index)
+									if (payload != "") {
+										dragItem.source = parent
+										dragItem.active = Qt.binding(function() { return drag.active; })
+										dragItem.payload = payload
+										drag.target = dragItem
+									}
+								}
+
+								// todo: revert connecting to onDoubleClicked.
+								// In some cases two clicked signals are emmited, but not a doubleclicked one.
+								// The timer is used to imitate double click (fix for WOTD-176689).
+								onReleased: {
+									if (!mouseArea.containsMouse) {
+										return
+									}
+									if (mouse.button == Qt.RightButton) {
+										elements.selector.pressed(index)
+										context.showElementContextMenu()
+									} else if (timer.running) {
+										context.applySelected()
+										timer.stop()
+									} else {
+										elements.selector.pressed(index)
+										elements.elementClicked()
+										context.makeSelected()
+										timer.restart()
+									}
 								}
 							}
-							onRightClicked: context.showElementContextMenu()
 						}
 					}
 				}
 			}
+		}
+
+		DragItem {
+			id: dragItem
 		}
 		
 		//Property Grid View

@@ -6,7 +6,8 @@ import "../Bars/Details"
 Item {
 	id: key
 
-	readonly property alias barColor: bar.color
+	readonly property alias barColor: bar.baseColor
+	property bool croppedResource
 
 	implicitHeight: bar.implicitHeight
 
@@ -41,7 +42,7 @@ Item {
 		opacity: 0
 
 		border.width: 2
-		border.color: Qt.lighter(bar.color, 1.7)
+		border.color: Qt.lighter(bar.baseColor, 1.7)
 
 		anchors.fill: bar
 	}
@@ -53,6 +54,7 @@ Item {
 		PropertyChanges {
 			target: bar
 			sizeOffset: 4
+			color: key.croppedResource ? Qt.darker(bar.baseColor, 3) : bar.baseColor
 		}
 
 		PropertyChanges {

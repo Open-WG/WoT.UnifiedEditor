@@ -1,0 +1,3328 @@
+<root>
+	<version> 15 </version>
+	<property>
+		<label> Apply Overlay </label>
+		<value> Apply Overlay Checker.Apply Overlay </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> Artillery ID </value>
+		<type> unsigned_int </type>
+	</property>
+	<property>
+		<value> Artillery colour </value>
+		<type> Vector4 </type>
+	</property>
+	<property>
+		<value> Audio event </value>
+		<type> string </type>
+	</property>
+	<property>
+		<value> Casts Local Shadow </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> Casts Shadow </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> Chunk </value>
+		<type> string </type>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<value> Client Id </value>
+		<type> string </type>
+	</property>
+	<property>
+		<value> Color </value>
+		<type> int </type>
+	</property>
+	<property>
+		<value> Content Checker </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<label> Frozen </label>
+		<value> edFrozen </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> GUID </value>
+		<type> string </type>
+	</property>
+	<property>
+		<value> Group Name </value>
+		<type> string </type>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<label> Hidden </label>
+		<value> edHidden </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<label> Name </label>
+		<value> _objectName </value>
+		<type> string </type>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<value> Path </value>
+		<type> string </type>
+		<visible> true </visible>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<value> Position </value>
+		<type> Matrix </type>
+	</property>
+	<property>
+		<value> WithinBorder </value>
+		<type> bool </type>
+		<visible> true </visible>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<value> Rotation </value>
+		<type> Matrix </type>
+	</property>
+	<property>
+		<value> Scale </value>
+		<type> Matrix </type>
+	</property>
+	<property>
+		<value> Server Id </value>
+		<type> unsigned_int </type>
+	</property>
+	<property>
+		<value> Show trajectory </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> Texture </value>
+		<type> string </type>
+	</property>
+	<property>
+		<value> Texture Memory </value>
+		<type> int </type>
+	</property>
+	<property>
+		<value> Tiling </value>
+		<type> float </type>
+	</property>
+	<property>
+		<value> Treat as Dynamic Object </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> Tris </value>
+		<type> int </type>
+	</property>
+	<property>
+		<label> Type </label>
+		<value> _typeName </value>
+		<type> string </type>
+		<groupBy> true </groupBy>
+	</property>
+	<property>
+		<value> Uniform scale </value>
+		<type> bool </type>
+	</property>
+	<property>
+		<value> User Tag </value>
+		<type> string </type>
+	</property>
+	<property>
+		<value> Vertex Memory </value>
+		<type> int </type>
+	</property>
+	<property>
+		<value> XScale </value>
+		<type> float </type>
+	</property>
+	<property>
+		<value> YScale </value>
+		<type> float </type>
+	</property>
+	<property>
+		<value> ZScale </value>
+		<type> float </type>
+	</property>
+	<group>
+		<name> Decor </name>
+		<children>
+			<property>
+				<label> Minimum </label>
+				<value> decorTypeFwd.Minimum </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Low </label>
+				<value> decorTypeFwd.Low </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Medium </label>
+				<value> decorTypeDef.Medium </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> High </label>
+				<value> decorTypeDef.High </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Maximum </label>
+				<value> decorTypeDef.Maximum </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Ultra </label>
+				<value> decorTypeDef.Ultra </value>
+				<type> bool </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> ArtilleryAimingPoint UDO </name>
+		<children>
+			<property>
+				<value> Delay From </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Delay To </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Duration From </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Gravity </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Max Distance </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Piercing Power 100 </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Piercing Power 500 </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Pitch </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Pitch Range </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Shots Number From </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Shots Number To </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Speed </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Yaw </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Yaw Range </value>
+				<type> float </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Audio </name>
+		<children>
+			<property>
+				<value> Sound Distance </value>
+				<type> float </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Control Point </name>
+		<children>
+			<property>
+				<value> Base ID </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Flag Model </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Flag Scale </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> FlagStaff Model </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Max Points Per Second </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Orient By Wind Direction </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Over Terrain Height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Owner Stops Capturing </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Points Per Second </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Radius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Radius Color </value>
+				<type> Vector4 </type>
+			</property>
+			<property>
+				<value> Radius Model </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Team </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> WWise event name </value>
+				<type> string </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Entity Properties </name>
+		<children>
+			<property>
+				<label> explosionRadius </label>
+				<value> Entity Properties.explosionRadius </value>
+				<type> Vector2 </type>
+			</property>
+			<property>
+				<label> triggerRadius </label>
+				<value> Entity Properties.triggerRadius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> Type </label>
+				<value> Entity Properties.Type </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> accelerationTime </label>
+				<value> Entity Properties.accelerationTime </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> animSpeedMax </label>
+				<value> Entity Properties.animSpeedMax </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> animSpeedMin </label>
+				<value> Entity Properties.animSpeedMin </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightAngleMax </label>
+				<value> Entity Properties.flightAngleMax </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightAngleMin </label>
+				<value> Entity Properties.flightAngleMin </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightHeight </label>
+				<value> Entity Properties.flightHeight </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightOffsetFromOrigin </label>
+				<value> Entity Properties.flightOffsetFromOrigin </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightRadius </label>
+				<value> Entity Properties.flightRadius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> flightSound </label>
+				<value> Entity Properties.flightSound </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> initSpeedRandom </label>
+				<value> Entity Properties.initSpeedRandom </value>
+				<type> Vector2 </type>
+			</property>
+			<property>
+				<label> lifeTime </label>
+				<value> Entity Properties.lifeTime </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> modelCount </label>
+				<value> Entity Properties.modelCount </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<label> modelName </label>
+				<value> Entity Properties.modelName </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> modelName2 </label>
+				<value> Entity Properties.modelName2 </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> respawnTime </label>
+				<value> Entity Properties.respawnTime </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> spawnHeight </label>
+				<value> Entity Properties.spawnHeight </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> spawnRadius </label>
+				<value> Entity Properties.spawnRadius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> speed </label>
+				<value> Entity Properties.speed </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> speedRandom </label>
+				<value> Entity Properties.speedRandom </value>
+				<type> Vector2 </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Environment </name>
+		<children>
+			<property>
+				<value> Environment Name </value>
+				<type> string </type>
+			</property>
+			<group>
+				<name> Camera Effects Properties </name>
+				<children>
+					<property>
+						<label> SelectId </label>
+						<value> Camera Effects Properties.SelectId </value>
+						<type> int </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> DOF </name>
+				<children>
+					<group>
+						<name> DOF </name>
+						<children>
+							<property>
+								<label> Blur radius </label>
+								<value> DOF.DOF.Blur radius </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> DOF.DOF.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Far distance </label>
+								<value> DOF.DOF.Far distance </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Far start </label>
+								<value> DOF.DOF.Far start </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Near distance </label>
+								<value> DOF.DOF.Near distance </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Near start </label>
+								<value> DOF.DOF.Near start </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Dynamic Dirt </name>
+				<children>
+					<group>
+						<name> Dynamic Dirt </name>
+						<children>
+							<property>
+								<label> Dirt Color </label>
+								<value> Dynamic Dirt.Dynamic Dirt.Dirt Color </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Dirt Config </label>
+								<value> Dynamic Dirt.Dynamic Dirt.Dirt Config </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Dirt Normal Map </label>
+								<value> Dynamic Dirt.Dynamic Dirt.Dirt Normal Map </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Dynamic Dirt.Dynamic Dirt.Enabled </value>
+								<type> bool </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Fog </name>
+				<children>
+					<group>
+						<name> Fog </name>
+						<children>
+							<property>
+								<label> Deferred </label>
+								<value> Fog.Fog.Deferred </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Fog.Fog.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Fog Color </label>
+								<value> Fog.Fog.Fog Color Deferred </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Fog Density </label>
+								<value> Fog.Fog.Fog Density Deferred </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Fog Height Falloff </label>
+								<value> Fog.Fog.Fog Height Falloff Deferred </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Fog Zero Level </label>
+								<value> Fog.Fog.Fog Zero Level Deferred </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Forward </label>
+								<value> Fog.Fog.Forward </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Near Fog Distance </label>
+								<value> Fog.Fog.Near Fog Distance Deferred </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sky high </label>
+								<value> Fog.Fog.Sky high </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sky low </label>
+								<value> Fog.Fog.Sky low </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Color </label>
+								<value> Fog.Fog.Sun Color </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Sun Scatter Power </label>
+								<value> Fog.Fog.Sun Scatter Power </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Scatter Start </label>
+								<value> Fog.Fog.Sun Scatter Start </value>
+								<type> float </type>
+							</property>
+							<group>
+								<name> Bottom (-Z) </name>
+								<children>
+									<property>
+										<label> in </label>
+										<value> Fog.Fog.Bottom_negative_Z.in </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> out </label>
+										<value> Fog.Fog.Bottom_negative_Z.out </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> Fog_minimap </name>
+								<children>
+									<property>
+										<label> height </label>
+										<value> Fog.Fog.Fog_minimap.height </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> path </label>
+										<value> Fog.Fog.Fog_minimap.path </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> width </label>
+										<value> Fog.Fog.Fog_minimap.width </value>
+										<type> float </type>
+									</property>
+									<group>
+										<name> bottom </name>
+										<children>
+											<property>
+												<label> in </label>
+												<value> Fog.Fog.Fog_minimap.bottom.in </value>
+												<type> float </type>
+											</property>
+											<property>
+												<label> out </label>
+												<value> Fog.Fog.Fog_minimap.bottom.out </value>
+												<type> float </type>
+											</property>
+										</children>
+									</group>
+									<group>
+										<name> left </name>
+										<children>
+											<property>
+												<label> in </label>
+												<value> Fog.Fog.Fog_minimap.left.in </value>
+												<type> float </type>
+											</property>
+											<property>
+												<label> out </label>
+												<value> Fog.Fog.Fog_minimap.left.out </value>
+												<type> float </type>
+											</property>
+										</children>
+									</group>
+									<group>
+										<name> right </name>
+										<children>
+											<property>
+												<label> in </label>
+												<value> Fog.Fog.Fog_minimap.right.in </value>
+												<type> float </type>
+											</property>
+											<property>
+												<label> out </label>
+												<value> Fog.Fog.Fog_minimap.right.out </value>
+												<type> float </type>
+											</property>
+										</children>
+									</group>
+									<group>
+										<name> top </name>
+										<children>
+											<property>
+												<label> in </label>
+												<value> Fog.Fog.Fog_minimap.top.in </value>
+												<type> float </type>
+											</property>
+											<property>
+												<label> out </label>
+												<value> Fog.Fog.Fog_minimap.top.out </value>
+												<type> float </type>
+											</property>
+										</children>
+									</group>
+								</children>
+							</group>
+							<group>
+								<name> Left (-X) </name>
+								<children>
+									<property>
+										<label> in </label>
+										<value> Fog.Fog.Left_negative_X.in </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> out </label>
+										<value> Fog.Fog.Left_negative_X.out </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> Right (+X) </name>
+								<children>
+									<property>
+										<label> in </label>
+										<value> Fog.Fog.Right_positive_X.in </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> out </label>
+										<value> Fog.Fog.Right_positive_X.out </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> Top (+Z) </name>
+								<children>
+									<property>
+										<label> in </label>
+										<value> Fog.Fog.Top_positive_Z.in </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> out </label>
+										<value> Fog.Fog.Top_positive_Z.out </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> God Rays </name>
+				<children>
+					<group>
+						<name> God Rays </name>
+						<children>
+							<property>
+								<label> Attenuation power </label>
+								<value> God Rays.God Rays.Attenuation power </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Color </label>
+								<value> God Rays.God Rays.Color </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Color Luminance </label>
+								<value> God Rays.God Rays.Color Luminance </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Decay </label>
+								<value> God Rays.God Rays.Decay </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> God Rays.God Rays.Enabled </value>
+								<type> bool </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> HDR Lighting </name>
+				<children>
+					<group>
+						<name> HDR Lighting </name>
+						<children>
+							<property>
+								<label> Adaptation Speed </label>
+								<value> HDR Lighting.HDR Lighting.Adaptation Speed </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Contrast </label>
+								<value> HDR Lighting.HDR Lighting.Contrast (exponent s-curve) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> EV+ </label>
+								<value> HDR Lighting.HDR Lighting.EV+ </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> EV- </label>
+								<value> HDR Lighting.HDR Lighting.EV- </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Key value </label>
+								<value> HDR Lighting.HDR Lighting.Key value </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Shutter speed </label>
+								<value> HDR Lighting.HDR Lighting.Shutter speed </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Tonemapper Type </label>
+								<value> HDR Lighting.HDR Lighting.Tonemapper Type </value>
+								<type> enum_BW__HDRSettings__ToneMappings__ToneMappingTypes </type>
+							</property>
+							<property>
+								<label> White Clip (%) </label>
+								<value> HDR Lighting.HDR Lighting.White Clip (%) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> f-number+ </label>
+								<value> HDR Lighting.HDR Lighting.f-number+ </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> f-number- </label>
+								<value> HDR Lighting.HDR Lighting.f-number- </value>
+								<type> float </type>
+							</property>
+							<group>
+								<name> Bloom </name>
+								<children>
+									<property>
+										<label> Amount </label>
+										<value> HDR Lighting.HDR Lighting.Bloom.Amount </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> Dirt amount </label>
+										<value> HDR Lighting.HDR Lighting.Bloom.Dirt amount </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> Enabled </label>
+										<value> HDR Lighting.HDR Lighting.Bloom.Enabled </value>
+										<type> bool </type>
+									</property>
+									<property>
+										<label> Threshold </label>
+										<value> HDR Lighting.HDR Lighting.Bloom.Threshold </value>
+										<type> float </type>
+									</property>
+									<property>
+										<label> Tint Color </label>
+										<value> HDR Lighting.HDR Lighting.Bloom.Tint Color </value>
+										<type> Vector3 </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> Color Correction </name>
+								<children>
+									<property>
+										<label> Lookup Texture </label>
+										<value> HDR Lighting.HDR Lighting.Color Correction.Lookup Texture </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> Film grain </name>
+								<children>
+									<property>
+										<label> Enabled </label>
+										<value> HDR Lighting.HDR Lighting.Film grain.Enabled </value>
+										<type> bool </type>
+									</property>
+									<property>
+										<label> Intensity </label>
+										<value> HDR Lighting.HDR Lighting.Film grain.Intensity </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+						</children>
+					</group>
+					<group>
+						<name> PBS </name>
+						<children>
+							<property>
+								<label> Flakes Density Threshold </label>
+								<value> HDR Lighting.PBS.Flakes Density Threshold </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> SH Multiplier (Forward) </label>
+								<value> HDR Lighting.PBS.SH Multiplier (Forward) </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Lens Flare </name>
+				<children>
+					<group>
+						<name> Lens Flare </name>
+						<children>
+							<property>
+								<label> Brightness </label>
+								<value> Lens Flare.Lens Flare.Brightness </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Chromatic Distortion </label>
+								<value> Lens Flare.Lens Flare.Chromatic Distortion </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Color Texture </label>
+								<value> Lens Flare.Lens Flare.Color Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Color Texture Scale </label>
+								<value> Lens Flare.Lens Flare.Color Texture Scale </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Dirt Texture </label>
+								<value> Lens Flare.Lens Flare.Dirt Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Lens Flare.Lens Flare.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Ghost Dispersion </label>
+								<value> Lens Flare.Lens Flare.Ghost Dispersion </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Glare Enabled </label>
+								<value> Lens Flare.Lens Flare.Glare Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Glare Intensity </label>
+								<value> Lens Flare.Lens Flare.Glare Intensity </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Glare Size </label>
+								<value> Lens Flare.Lens Flare.Glare Size </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Halo Enabled </label>
+								<value> Lens Flare.Lens Flare.Halo Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Halo Width </label>
+								<value> Lens Flare.Lens Flare.Halo Width </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Intensity </label>
+								<value> Lens Flare.Lens Flare.Intensity </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Object Enabled </label>
+								<value> Lens Flare.Lens Flare.Object Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Star Intensity </label>
+								<value> Lens Flare.Lens Flare.Star Intensity </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Star Texture </label>
+								<value> Lens Flare.Lens Flare.Star Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Sun Flare Intensity </label>
+								<value> Lens Flare.Lens Flare.Sun Flare Intensity </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Size </label>
+								<value> Lens Flare.Lens Flare.Sun Size </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Texture </label>
+								<value> Lens Flare.Lens Flare.Sun Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Sun Tint Color </label>
+								<value> Lens Flare.Lens Flare.Sun Tint Color </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Threshold </label>
+								<value> Lens Flare.Lens Flare.Threshold </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> SSAO </name>
+				<children>
+					<group>
+						<name> SSAO </name>
+						<children>
+							<property>
+								<label> Ambient </label>
+								<value> SSAO.SSAO.Terrain Ambient </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Amplify </label>
+								<value> SSAO.SSAO.Amplify </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Baked AO </label>
+								<value> SSAO.SSAO.SpeedTree Baked AO </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Baked AO Gamma </label>
+								<value> SSAO.SSAO.Terrain Baked AO Gamma </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> SSAO.SSAO.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Fade </label>
+								<value> SSAO.SSAO.Fade </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Local lights </label>
+								<value> SSAO.SSAO.Local lights </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Radius </label>
+								<value> SSAO.SSAO.Radius </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Shadows </name>
+				<children>
+					<group>
+						<name> Cloud Shadows </name>
+						<children>
+							<property>
+								<label> Angle </label>
+								<value> Shadows.Cloud Shadows.Angle 0 </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Cloud Texture </label>
+								<value> Shadows.Cloud Shadows.Cloud Texture 0 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Shadows.Cloud Shadows.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Offset </label>
+								<value> Shadows.Cloud Shadows.Offset 0 </value>
+								<type> Vector2 </type>
+							</property>
+							<property>
+								<label> Shadow Factor </label>
+								<value> Shadows.Cloud Shadows.Shadow Factor 0 </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Angle Offset </label>
+								<value> Shadows.Cloud Shadows.Sun Angle Offset </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Tiling </label>
+								<value> Shadows.Cloud Shadows.Tiling 0 </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Use Two Layers </label>
+								<value> Shadows.Cloud Shadows.Use Two Layers </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Wind Direction (Angle) </label>
+								<value> Shadows.Cloud Shadows.Wind Direction 0 </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wind Strength </label>
+								<value> Shadows.Cloud Shadows.Wind Strength 0 </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> Screen Space Shadows </name>
+						<children>
+							<property>
+								<label> Amplify </label>
+								<value> Shadows.Screen Space Shadows.Amplify </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Shadows.Screen Space Shadows.Enabled </value>
+								<type> bool </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> Shadows </name>
+						<children>
+							<property>
+								<label> Dynamic max view distance </label>
+								<value> Shadows.Shadows.Dynamic max view distance </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Sky </name>
+				<children>
+					<property>
+						<label> Sky Lum Multiplier </label>
+						<value> Sky.Sky Lum Multiplier </value>
+						<type> float </type>
+					</property>
+					<group>
+						<name> Sky </name>
+						<children>
+							<property>
+								<label> Animation Height </label>
+								<value> Sky.Sky.Animation Height </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Direction </label>
+								<value> Sky.Sky.Direction </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Elevation </label>
+								<value> Sky.Sky.Elevation </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Elevation (Forward) </label>
+								<value> Sky.Sky.Elevation (Forward) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Enabled </label>
+								<value> Sky.Sky.Enabled </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Flip Second Layer </label>
+								<value> Sky.Sky.Flip Second Layer </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Flip U-Coordinate </label>
+								<value> Sky.Sky.Flip U-Coordinate </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Frequency </label>
+								<value> Sky.Sky.Frequency </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Height Texture Scaling </label>
+								<value> Sky.Sky.Height Texture Scaling </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Rotate Angle </label>
+								<value> Sky.Sky.Rotate Angle </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Rotate Angle (Forward) </label>
+								<value> Sky.Sky.Rotate Angle (Forward) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Second Layer Rotation </label>
+								<value> Sky.Sky.Second Layer Rotation </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sky Texture (Deferred) </label>
+								<value> Sky.Sky.Sky Texture (Deferred) </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Sky Texture (Forward) </label>
+								<value> Sky.Sky.Sky Texture (Forward) </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Skybox Rotation </label>
+								<value> Sky.Sky.Skybox Rotation </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Speed </label>
+								<value> Sky.Sky.Speed </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Tone Map Burn Value Forward </label>
+								<value> Sky.Sky.Tone Map Burn Value Forward </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Tone Map Exposure Forward </label>
+								<value> Sky.Sky.Tone Map Exposure Forward </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Sun </name>
+				<children>
+					<property>
+						<label> Sun Lum Multiplier </label>
+						<value> Sun.Sun Lum Multiplier </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Sunlight Lum Multiplier </label>
+						<value> Sun.Sunlight Lum Multiplier </value>
+						<type> float </type>
+					</property>
+					<group>
+						<name> Sun </name>
+						<children>
+							<property>
+								<label> Ambient Color </label>
+								<value> Sun.Sun.Ambient Color </value>
+								<type> Vector3 </type>
+							</property>
+							<property>
+								<label> Azimuth angle </label>
+								<value> Sun.Sun.Azimuth angle </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Draw Sun and Moon </label>
+								<value> Sun.Sun.Draw Sun and Moon </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Sun Color </label>
+								<value> Sun.Sun.Sun Color </value>
+								<type> Vector3 </type>
+							</property>
+							<property>
+								<label> Sun Light Color </label>
+								<value> Sun.Sun.Sun Light Color </value>
+								<type> Vector3 </type>
+							</property>
+							<property>
+								<label> Sun Scale </label>
+								<value> Sun.Sun.Sun Scale </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Sun Texture </label>
+								<value> Sun.Sun.Sun Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Zenith angle </label>
+								<value> Sun.Sun.Zenith angle </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Weather </name>
+				<children>
+					<group>
+						<name> Weather </name>
+						<children>
+							<property>
+								<label> Gustiness </label>
+								<value> Weather.Weather.Gustiness </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wind Direction (Angle) </label>
+								<value> Weather.Weather.Wind Direction (Angle) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wind Strength </label>
+								<value> Weather.Weather.Wind Strength </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> Wetness </name>
+				<children>
+					<group>
+						<name> Wetness </name>
+						<children>
+							<property>
+								<label> Water Color </label>
+								<value> Wetness.Wetness.Water Color </value>
+								<type> Vector4 </type>
+							</property>
+							<property>
+								<label> Wave Animation Speed (FPS) </label>
+								<value> Wetness.Wetness.Wave Animation Speed (FPS) </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wave Mask Speed </label>
+								<value> Wetness.Wetness.Wave Mask Speed </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wave Mask Texture </label>
+								<value> Wetness.Wetness.Wave Mask Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Wave Mask UV Scale </label>
+								<value> Wetness.Wetness.Wave Mask UV Scale </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wave Speed </label>
+								<value> Wetness.Wetness.Wave Speed </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wave Strength </label>
+								<value> Wetness.Wetness.Wave Strength </value>
+								<type> float </type>
+							</property>
+							<property>
+								<label> Wave Texture </label>
+								<value> Wetness.Wetness.Wave Texture </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> Wave Texture Frame Count </label>
+								<value> Wetness.Wetness.Wave Texture Frame Count </value>
+								<type> int </type>
+							</property>
+							<property>
+								<label> Wave UV Scale </label>
+								<value> Wetness.Wetness.Wave UV Scale </value>
+								<type> float </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Environment Probe </name>
+		<children>
+			<property>
+				<value> Always show range </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Auto generate </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Box size </value>
+				<type> Matrix </type>
+			</property>
+			<property>
+				<value> Box transition distance </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Cubemap size </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Label text </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> PMREM Mask Texture </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> PMREM Texture </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Priority </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Probe Id </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Probe type </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Probe volume </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Reflection (PMREM) size </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Show range </value>
+				<type> bool </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Impassable Zone </name>
+		<children>
+			<property>
+				<value> Curvature </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Tessellation Step </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Wall Height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Width </value>
+				<type> float </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> MarkerPoint UDO </name>
+		<children>
+			<property>
+				<value> Animation Name </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Animation Speed </value>
+				<type> float </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Model </name>
+		<children>
+			<property>
+				<value> Animation Resource Path </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Auto Start </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Clip </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Current State </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Destructible State </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Ignores Objects Far Plane </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> LODS </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Primitives </value>
+				<type> int </type>
+			</property>
+			<property>
+				<value> Projection Area Coeffs </value>
+				<type> class_std__vector_float_class_std__allocator_float___ </type>
+			</property>
+			<property>
+				<value> Shadow Proxy </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Should be included in megalod </value>
+				<type> enum_BW__MegalodFlag </type>
+			</property>
+			<group>
+				<name> Animation Properties </name>
+				<children>
+					<property>
+						<label> Delay </label>
+						<value> Animation Properties.delay </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Loop </label>
+						<value> Animation Properties.loop </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Loop count (-1 = infinity) </label>
+						<value> Animation Properties.loopCount </value>
+						<type> int </type>
+					</property>
+					<property>
+						<label> Speed </label>
+						<value> Animation Properties.speed </value>
+						<type> float </type>
+					</property>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Omni Light </name>
+		<children>
+			<property>
+				<value> Casts Shadows </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Duration </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Enable </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Inner Radius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Lod Shift </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Multiplier (lumens) </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Outer Radius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Time scale </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Units </value>
+				<type> enum_BW__EditorChunkLight_class_BW__ChunkOmniLight___EUnits </type>
+			</property>
+			<property>
+				<value> Use color temperature </value>
+				<type> bool </type>
+			</property>
+			<group>
+				<name> Frames </name>
+				<children>
+					<group>
+						<name> 0 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.0.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 1 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.1.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 10 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.10.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 11 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.11.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 12 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.12.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 13 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.13.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 14 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.14.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 15 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.15.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 16 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.16.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 17 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.17.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 18 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.18.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 19 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.19.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 2 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.2.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 20 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.20.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 3 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.3.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 4 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.4.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 5 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.5.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 6 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.6.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 7 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.7.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 8 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.8.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+					<group>
+						<name> 9 </name>
+						<children>
+							<property>
+								<label> frame </label>
+								<value> Frames.9.frame </value>
+								<type> Vector2 </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Road Point </name>
+		<children>
+			<property>
+				<value> All points sphere radius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Alpha </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Road Id </value>
+				<type> string </type>
+			</property>
+			<group>
+				<name> Road </name>
+				<children>
+					<property>
+						<label> Amplitude </label>
+						<value> Road.Amplitude </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Animate path thickness </label>
+						<value> Road.Animate path thickness </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Decal delta height </label>
+						<value> Road.Decal delta height </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Decals count </label>
+						<value> Road.Decals count </value>
+						<type> uinteger </type>
+					</property>
+					<property>
+						<label> Decals delta height </label>
+						<value> Road.Decals delta height </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Decals overlapping </label>
+						<value> Road.Decals overlapping </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Draw animated spline </label>
+						<value> Road.Draw animated spline </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Draw error triangles </label>
+						<value> Road.Draw error triangles </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Flip texture Horizontally </label>
+						<value> Road.Flip texture Horizontally </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Flip texture Vertically </label>
+						<value> Road.Flip texture Vertically </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Min road bend angle </label>
+						<value> Road.Min road bend angle </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Min road drop angle </label>
+						<value> Road.Min road drop angle </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Min road torsion angle </label>
+						<value> Road.Min road torsion angle </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Offset </label>
+						<value> Road.Offset </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Priority </label>
+						<value> Road.Priority </value>
+						<type> unsigned_int </type>
+					</property>
+					<property>
+						<label> Road alpha </label>
+						<value> Road.Road alpha </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Road width </label>
+						<value> Road.Road width </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Spline precision step </label>
+						<value> Road.Spline precision step </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Spline tessellation step </label>
+						<value> Road.Spline tessellation step </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Texture AM </label>
+						<value> Road.Texture AM </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Texture GMM </label>
+						<value> Road.Texture GMM </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Texture NM </label>
+						<value> Road.Texture NM </value>
+						<type> string </type>
+					</property>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> SHGrid Volume </name>
+		<children>
+			<property>
+				<value> Always show probes </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Best fit search radius </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Distance to wall </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Elevation </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Enabled </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Grid type </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Probe count </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Probe distance </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Snap to walls </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Use best fit </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Vertical Fade </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Vertical offset </value>
+				<type> float </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Space Settings </name>
+		<children>
+			<property>
+				<value> Temp. or events space </value>
+				<type> bool </type>
+			</property>
+			<group>
+				<name> Atlases Settings </name>
+				<children>
+					<property>
+						<label> Atlas Height </label>
+						<value> Atlases Settings.Atlas Height </value>
+						<type> unsigned_int </type>
+					</property>
+					<property>
+						<label> Atlas Type </label>
+						<value> Atlases Settings.Atlas Type </value>
+						<type> enum_BW__AtlasesController__AtlasType </type>
+					</property>
+					<property>
+						<label> Atlas Width </label>
+						<value> Atlases Settings.Atlas Width </value>
+						<type> unsigned_int </type>
+					</property>
+					<property>
+						<label> Display Atlas </label>
+						<value> Atlases Settings.Display Atlas </value>
+						<type> enum_BW__AtlasesController__DisplayType </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Cube Map Generator </name>
+				<children>
+					<property>
+						<label> HDR Shot Resolution </label>
+						<value> Cube Map Generator.HDR Shot Resolution </value>
+						<type> int </type>
+					</property>
+					<property>
+						<label> Reflection (PMREM) Resolution </label>
+						<value> Cube Map Generator.Reflection (PMREM) Resolution </value>
+						<type> int </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Far Plane </name>
+				<children>
+					<property>
+						<label> High </label>
+						<value> Far Plane.High </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Low </label>
+						<value> Far Plane.Low </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Max </label>
+						<value> Far Plane.Max </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Ultra </label>
+						<value> Far Plane.Ultra </value>
+						<type> float </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Havok </name>
+				<children>
+					<property>
+						<label> Havok Enabled </label>
+						<value> Havok.Havok Enabled </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Simulation Radius </label>
+						<value> Havok.Simulation Radius </value>
+						<type> float </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Lighting Generator </name>
+				<children>
+					<property>
+						<label> Ground Probes </label>
+						<value> Lighting Generator.Ground Probes </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> SH Grid </label>
+						<value> Lighting Generator.SH Grid </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Water Probes </label>
+						<value> Lighting Generator.Water Probes </value>
+						<type> bool </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Lighting Generator (Developer Debugging) </name>
+				<children>
+					<property>
+						<label> Client commandline </label>
+						<value> Lighting Generator (Developer Debugging).Client commandline </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Ground Probes </label>
+						<value> Lighting Generator (Developer Debugging).Ground Probes </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> SH Grid </label>
+						<value> Lighting Generator (Developer Debugging).SH Grid </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Water Probes </label>
+						<value> Lighting Generator (Developer Debugging).Water Probes </value>
+						<type> bool </type>
+					</property>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Static Decal </name>
+		<children>
+			<property>
+				<value> Accuracy type </value>
+				<type> unsigned_int </type>
+			</property>
+			<group>
+				<name> General Settings </name>
+				<children>
+					<group>
+						<name> Influence </name>
+						<children>
+							<property>
+								<label> Dynamic Objects </label>
+								<value> General Settings.Dynamic Objects </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Flora </label>
+								<value> General Settings.Flora </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Static Objects </label>
+								<value> General Settings.Static Objects </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Terrain </label>
+								<value> General Settings.Terrain </value>
+								<type> bool </type>
+							</property>
+							<property>
+								<label> Tree </label>
+								<value> General Settings.Tree </value>
+								<type> bool </type>
+							</property>
+						</children>
+					</group>
+					<property>
+						<label> Albedo Map </label>
+						<value> General Settings.Albedo Map </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Fade Parameter for VT </label>
+						<value> General Settings.Fade Parameter for VT </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Gloss metal height map </label>
+						<value> General Settings.Gloss metal height map </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Invert Fade Distance </label>
+						<value> General Settings.Invert Fade Distance </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<value> Material type </value>
+						<type> enum_BW__deferred_decal__Render__EMaterialType </type>
+					</property>
+					<property>
+						<label> Normal Map </label>
+						<value> General Settings.Normal Map </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Offsets </label>
+						<value> General Settings.Offsets </value>
+						<type> Vector4 </type>
+					</property>
+					<property>
+						<label> Other map </label>
+						<value> General Settings.Other Map 1 </value>
+						<type> string </type>
+					</property>
+					<property>
+						<label> Priority </label>
+						<value> General Settings.Priority </value>
+						<type> unsigned_int </type>
+					</property>
+					<property>
+						<label> UV Wrapping </label>
+						<value> General Settings.UV Wrapping </value>
+						<type> Vector2 </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Parallax Settings </name>
+				<children>
+					<property>
+						<label> Amplitude </label>
+						<value> Parallax Settings.Amplitude </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Blend Mode </label>
+						<value> Parallax Settings.Blend Mode </value>
+						<type> float </type>
+					</property>
+					<property>
+						<label> Offset </label>
+						<value> Parallax Settings.Offset </value>
+						<type> float </type>
+					</property>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Terrain </name>
+		<children>
+			<property>
+				<value> Auto-fix with Terrain Height tool </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Blend Global Threshold </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Blend Height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Blend Map Caching </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Blend Map Size </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Blending Mode </value>
+				<type> enum_BW__Terrain__TerrainRenderer2__BlendMode </type>
+			</property>
+			<property>
+				<value> Capture additional height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Compression </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Disabled Blend Height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Fix Range </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Global LoD Factor </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Height Map Size </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Hole Map Size </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> LoD Global Distance </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> LoD Macro Start </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Macro LoD Factor </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Normal Map Caching </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Normal Map Size </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Resolution </value>
+				<type> uinteger </type>
+			</property>
+			<property>
+				<value> Shadow Map Size </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<value> Size </value>
+				<type> int </type>
+			</property>
+			<group>
+				<name> SpaceTileTextures_Workaround </name>
+				<children>
+					<group>
+						<name> Space Tile Textures </name>
+						<children>
+							<group>
+								<name> 0 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.0.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.0.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.0.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.0.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 1 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.1.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.1.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.1.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.1.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 10 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.10.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.10.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.10.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.10.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 11 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.11.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.11.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.11.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.11.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 12 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.12.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.12.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.12.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.12.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 13 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.13.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.13.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.13.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.13.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 14 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.14.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.14.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.14.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.14.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 15 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.15.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.15.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.15.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.15.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 2 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.2.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.2.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.2.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.2.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 3 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.3.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.3.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.3.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.3.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 4 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.4.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.4.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.4.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.4.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 5 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.5.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.5.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.5.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.5.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 6 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.6.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.6.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.6.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.6.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 7 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.7.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.7.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.7.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.7.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 8 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.8.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.8.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.8.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.8.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 9 </name>
+								<children>
+									<property>
+										<label> Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.9.Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Albedo </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.9.Macro Albedo </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Macro Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.9.Macro Normal </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal </label>
+										<value> SpaceTileTextures_Workaround.Space Tile Textures.9.NormalTerrain2.5 </value>
+										<type> string </type>
+									</property>
+								</children>
+							</group>
+						</children>
+					</group>
+				</children>
+			</group>
+			<group>
+				<name> TerrainSettings </name>
+				<children>
+					<group>
+						<name> Cascades </name>
+						<children>
+							<group>
+								<name> 0 </name>
+								<children>
+									<property>
+										<label> Extent Max </label>
+										<value> TerrainSettings.Cascades.0.Extent Max </value>
+										<type> Vector3 </type>
+									</property>
+									<property>
+										<label> Extent Min </label>
+										<value> TerrainSettings.Cascades.0.Extent Min </value>
+										<type> Vector3 </type>
+									</property>
+									<property>
+										<label> Height Map </label>
+										<value> TerrainSettings.Cascades.0.Height Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal Map </label>
+										<value> TerrainSettings.Cascades.0.Normal Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Tile Map </label>
+										<value> TerrainSettings.Cascades.0.Tile Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Tile Scale </label>
+										<value> TerrainSettings.Cascades.0.Tile Scale </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+							<group>
+								<name> 1 </name>
+								<children>
+									<property>
+										<label> Extent Max </label>
+										<value> TerrainSettings.Cascades.1.Extent Max </value>
+										<type> Vector3 </type>
+									</property>
+									<property>
+										<label> Extent Min </label>
+										<value> TerrainSettings.Cascades.1.Extent Min </value>
+										<type> Vector3 </type>
+									</property>
+									<property>
+										<label> Height Map </label>
+										<value> TerrainSettings.Cascades.1.Height Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Normal Map </label>
+										<value> TerrainSettings.Cascades.1.Normal Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Tile Map </label>
+										<value> TerrainSettings.Cascades.1.Tile Map </value>
+										<type> string </type>
+									</property>
+									<property>
+										<label> Tile Scale </label>
+										<value> TerrainSettings.Cascades.1.Tile Scale </value>
+										<type> float </type>
+									</property>
+								</children>
+							</group>
+						</children>
+					</group>
+					<group>
+						<name> Tiles </name>
+						<children>
+							<property>
+								<label> 0 </label>
+								<value> TerrainSettings.Tiles.0 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 1 </label>
+								<value> TerrainSettings.Tiles.1 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 2 </label>
+								<value> TerrainSettings.Tiles.2 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 3 </label>
+								<value> TerrainSettings.Tiles.3 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 4 </label>
+								<value> TerrainSettings.Tiles.4 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 5 </label>
+								<value> TerrainSettings.Tiles.5 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 6 </label>
+								<value> TerrainSettings.Tiles.6 </value>
+								<type> string </type>
+							</property>
+							<property>
+								<label> 7 </label>
+								<value> TerrainSettings.Tiles.7 </value>
+								<type> string </type>
+							</property>
+						</children>
+					</group>
+				</children>
+			</group>
+		</children>
+	</group>
+	<group>
+		<name> Tree </name>
+		<children>
+			<property>
+				<value> Local offset </value>
+				<type> Vector3 </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> UDO Properties </name>
+		<children>
+			<property>
+				<label> Type </label>
+				<value> UDO Properties.Type </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> order </label>
+				<value> UDO Properties.order </value>
+				<type> unsigned_int </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Water </name>
+		<children>
+			<property>
+				<value> +X </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> +X +Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> +X -Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> +Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> -X </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> -X +Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> -X -Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> -Z </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Amplitudes texture </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> Animation FPS </label>
+				<value> Animation FPS 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Camera collision offset </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Contrast </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Enable Amplitude Map </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Enable Flow Map </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Enable Foam </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Enable Wave 2 </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<label> Flow map speed </label>
+				<value> Flow map speed 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Flow map texture </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> Flow map vector length </label>
+				<value> Flow map vector length 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> Frame count </label>
+				<value> Frame count 1 </value>
+				<type> unsigned_int </type>
+			</property>
+			<property>
+				<label> Height multiplier </label>
+				<value> Height multiplier 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Height texture 1 </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Height texture 2 </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Impurity color </value>
+				<type> Vector4 </type>
+			</property>
+			<property>
+				<value> Impurity color multiplier </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Impurity depth </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> Initial texture height </label>
+				<value> Initial texture height 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> Initial texture size </label>
+				<value> Initial texture size 1 </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Minimal Opacity </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Normal texture 1 </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Normal texture 2 </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Ramp depth </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Ramp texture </value>
+				<type> string </type>
+			</property>
+			<property>
+				<value> Reflection intensity </value>
+				<type> float </type>
+			</property>
+			<property>
+				<label> Scroll </label>
+				<value> Scroll 1 </value>
+				<type> Vector2 </type>
+			</property>
+			<property>
+				<value> Scroll Dir </value>
+				<type> Vector2 </type>
+			</property>
+			<property>
+				<value> Scroll Foam </value>
+				<type> Vector2 </type>
+			</property>
+			<property>
+				<value> Soft edge depth </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Visualization color </value>
+				<type> Vector4 </type>
+			</property>
+			<property>
+				<value> Visualize Camera Offset </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Wetness Underwater power </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Wetness height </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Wetness intensity </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> Wetness power </value>
+				<type> float </type>
+			</property>
+			<property>
+				<value> X coord </value>
+				<type> bool </type>
+			</property>
+			<property>
+				<value> Z coord </value>
+				<type> bool </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> metaData </name>
+		<children>
+			<property>
+				<label> Created By </label>
+				<value> metaData.Created By </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> Created On </label>
+				<value> metaData.Created On </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> Modified By </label>
+				<value> metaData.Modified By </value>
+				<type> string </type>
+			</property>
+			<property>
+				<label> Modified On </label>
+				<value> metaData.Modified On </value>
+				<type> string </type>
+			</property>
+		</children>
+	</group>
+	<group>
+		<name> Visibility </name>
+		<children>
+			<group>
+				<name> Battle </name>
+				<children>
+					<property>
+						<label> Capture The Flag </label>
+						<value> visibilityInGame.Capture The Flag </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Domination </label>
+						<value> visibilityInGame.Domination </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Assault </label>
+						<value> visibilityInGame.Assault </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Nations </label>
+						<value> visibilityInGame.Nations </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Capture The Flag 2 </label>
+						<value> visibilityInGame.Capture The Flag 2 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Domination 2 </label>
+						<value> visibilityInGame.Domination 2 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Assault 2 </label>
+						<value> visibilityInGame.Assault 2 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Fallout Bomb </label>
+						<value> visibilityInGame.Fallout Bomb </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Fallout 2 Flag </label>
+						<value> visibilityInGame.Fallout 2 Flag </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Fallout 3 </label>
+						<value> visibilityInGame.Fallout 3 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Fallout 4 </label>
+						<value> visibilityInGame.Fallout 4 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Capture The Flag 30 vs 30 </label>
+						<value> visibilityInGame.Capture The Flag 30 vs 30 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Domination 30 vs 30 </label>
+						<value> visibilityInGame.Domination 30 vs 30 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Sandbox </label>
+						<value> visibilityInGame.Sandbox </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Bootcamp </label>
+						<value> visibilityInGame.Bootcamp </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Epic </label>
+						<value> visibilityInGame.Epic </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Maps Training </label>
+						<value> visibilityInGame.Maps Training </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Visible for Observer </label>
+						<value> visibilityInGame.Visible for Observer </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS </label>
+						<value> visibilityInGame.RTS </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS 1 vs 1 </label>
+						<value> visibilityInGame.RTS 1 vs 1 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RTS Boot Camp </label>
+						<value> visibilityInGame.RTS Boot Camp </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Comp7 </label>
+						<value> visibilityInGame.Comp7 </value>
+						<type> bool </type>
+					</property>
+				</children>
+			</group>
+			<group>
+				<name> Hangar </name>
+				<children>
+					<property>
+						<label> 1 </label>
+						<value> visibilityInGame.1 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 2 </label>
+						<value> visibilityInGame.2 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 3 </label>
+						<value> visibilityInGame.3 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 4 </label>
+						<value> visibilityInGame.4 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 5 </label>
+						<value> visibilityInGame.5 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 6 </label>
+						<value> visibilityInGame.6 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> 7 </label>
+						<value> visibilityInGame.7 </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> R_ON </label>
+						<value> visibilityInGame.R_ON </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> R_GAP </label>
+						<value> visibilityInGame.R_GAP </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> R_OFF </label>
+						<value> visibilityInGame.R_OFF </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> NA </label>
+						<value> visibilityInGame.NA </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> ASIA </label>
+						<value> visibilityInGame.ASIA </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> EU </label>
+						<value> visibilityInGame.EU </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> RU </label>
+						<value> visibilityInGame.RU </value>
+						<type> bool </type>
+					</property>
+				</children>
+			</group>
+		</children>
+	</group>
+</root>

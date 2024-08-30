@@ -1,3 +1,4 @@
+<!-- edited with XMLSpy v2015 sp2 (x64) (http://www.altova.com) by Andrey Kulik (Game Stream) -->
 <engine_config.xml>
 	<!-- This file contains a variety of options to control and
 customise the behaviour of the BigWorld Client Engine. -->
@@ -615,6 +616,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> Personal_missions.bnk </name>
 				</bank>
 				<bank>
+					<name> personal_reserves.bnk </name>
+				</bank>
+				<bank>
 					<name> customization.bnk </name>
 				</bank>
 				<bank>
@@ -660,10 +664,22 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> cn_wot_plus.bnk </name>
 				</bank>
 				<bank>
-					<name> dragon_boat_2022.bnk </name>
+					<name> resources_well.bnk </name>
 				</bank>
 				<bank>
-					<name> dragon_boat_2022.pck </name>
+					<name> account_dashboard.bnk </name>
+				</bank>
+				<bank>
+					<name> comp_7.bnk </name>
+				</bank>
+				<bank>
+					<name> comp_7.pck </name>
+				</bank>
+				<bank>
+					<name> ev_fep_hangar.bnk </name>
+				</bank>
+				<bank>
+					<name> ev_fep_hangar.pck </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -768,6 +784,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> Personal_missions.bnk </name>
+				</bank>
+				<bank>
+					<name> personal_reserves.bnk </name>
 				</bank>
 				<bank>
 					<name> customization.bnk </name>

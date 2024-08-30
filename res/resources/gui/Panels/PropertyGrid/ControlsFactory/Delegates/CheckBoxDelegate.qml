@@ -28,6 +28,7 @@ PropertyDelegate {
 		id: control
 		text: textProvider.text
 		valueData: propertyData
+		tooltip: textProvider.tooltip
 
 		LayoutMirroring.enabled: positioner.layoutHints.mirroring
 	}

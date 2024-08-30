@@ -1,0 +1,25 @@
+﻿2022-12-01_18:44:41.512 | INFO    | 0x000083F4 | InprocessEventProcessor initialized
+2022-12-01_18:44:41.512 | INFO    | 0x000083F4 | Event Handling working in "inprocess only" mode
+2022-12-01_18:44:41.512 | INFO    | 0x000083F4 | Self crash handling enabled. Reports folder path="P:\temp\lite_ue_1.19\asset_pipeline\Reports". Reports url="http://cat.wargaming.net"
+2022-12-01_18:44:41.512 | INFO    | 0x00009690 | Initializing selfcrashandling... 
+2022-12-01_18:44:41.512 | INFO    | 0x000083F4 | Monitor started, product version="03.08.00.3538", file version="03.08.00.3538", pid=60592, hw_id="f8010810-ec0b-4bc2-a4f0-5451034a8bf9", instance_id="f984d38b-d570-4113-8176-1cef8bebc4db" OS name="Windows 10 (10.0.19042)" platform="x64" (native) 
+2022-12-01_18:44:41.513 | INFO    | 0x00009690 | Selfcrashandling initialization finished
+2022-12-01_18:44:41.513 | INFO    | 0x000083F4 | Superuser app id="wot_Jit_compiler"
+2022-12-01_18:44:41.513 | INFO    | 0x000083F4 | Starting IPC server
+2022-12-01_18:44:41.514 | INFO    | 0x00008828 | Report processor thread: started
+2022-12-01_18:44:41.514 | INFO    | 0x000083F4 | IPC server successfully started
+2022-12-01_18:44:41.514 | INFO    | 0x000083F4 | Waiting for clients to connect...
+2022-12-01_18:44:41.514 | INFO    | 0x0000FE44 | New connection request from pid="17496", clid="1", exe="jit_compiler.exe" . Establishing connection... 
+2022-12-01_18:44:41.515 | INFO    | 0x0000B6A4 | Monitor log cleanup was triggered, log files max count: 5. Removed log files: ["monitor_20221201_1834250455.log"]
+2022-12-01_18:44:41.515 | INFO    | 0x0000FE44 | Client pid="17496", clid="1", exe="jit_compiler.exe"  connected
+2022-12-01_18:44:41.525 | INFO    | 0x0000FE44 | Client connected, application ID="wot_Jit_compiler", version="June 2017 - 2017.1.0" 
+2022-12-01_18:44:41.525 | INFO    | 0x0000B6A4 | Looking for unprocessed reports in folder="P:\temp\lite_ue_1.19\asset_pipeline\Reports"
+2022-12-01_18:44:41.526 | INFO    | 0x0000B6A4 | Looking for unprocessed reports in folder="P:\temp\lite_ue_1.19\asset_pipeline\Reports"
+2022-12-01_18:44:42.855 | INFO    | 0x0000C068 | Statistic event="client_connected" event_id="7465832053200" was successfully sent to the url="http://cat.wargaming.net".
+2022-12-01_18:44:42.920 | INFO    | 0x00008808 | Config for client(clid="1") was successfully updated from the server(url="http://cat-st1.wargaming.net/")
+2022-12-01_18:44:44.927 | INFO    | 0x0000C068 | Statistic event="client_connected" event_id="7465842831400" was successfully sent to the url="http://cat-st1.wargaming.net/".
+2022-12-01_18:44:46.936 | INFO    | 0x0000C068 | Statistic event="monitor_online" event_id="7465843030600" was successfully sent to the url="http://cat-st1.wargaming.net/".
+2022-12-01_18:46:11.510 | INFO    | 0x00009690 | Client pid="17496", clid="1" disconnected
+2022-12-01_18:46:11.511 | INFO    | 0x00009690 | Queuing shutting down...
+2022-12-01_18:46:11.511 | INFO    | 0x000083F4 | Server stopped
+2022-12-01_18:46:11.532 | INFO    | 0x000083F4 | Normal exit

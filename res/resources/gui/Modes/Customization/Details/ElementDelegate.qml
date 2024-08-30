@@ -13,8 +13,6 @@ Button {
 	contentItem: ElementDelegateContent {}
 	background: ElementDelegateBackground {}
 
-	onPressed: control.GridView.view.selector.pressed(index)
-
 	ToolTip.text: model.namePreview ? model.namePreview : model.texture
 	ToolTip.visible: hovered && ToolTip.text.length
 	ToolTip.delay: ControlsSettings.tooltipDelay
@@ -24,15 +22,5 @@ Button {
 		id: elementSelection
 		row: index
 		selectionModel: control.GridView.view.selection
-	}
-
-	MouseArea {
-		width: parent.width
-		height: parent.height
-		acceptedButtons: Qt.RightButton
-		hoverEnabled: false
-
-		onPressed: control.GridView.view.selector.pressed(index)
-		onClicked: control.rightClicked()
 	}
 }

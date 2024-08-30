@@ -1,7 +1,7 @@
 <root>
 	<graphicsSettingsVersion> 5 </graphicsSettingsVersion>
 	<graphicsSettingsVersionMinor> 0 </graphicsSettingsVersionMinor>
-	<graphicsSettingsVersionMaintainance> 1 </graphicsSettingsVersionMaintainance>
+	<graphicsSettingsVersionMaintainance> 2 </graphicsSettingsVersionMaintainance>
 	<graphicsSettingsStatus> 3 </graphicsSettingsStatus>
 	<entry>
 		<label> COLOR_GRADING_TECHNIQUE </label>
@@ -97,6 +97,10 @@
 	</entry>
 	<entry>
 		<label> TEXTURE_QUALITY </label>
+		<activeOption> 0 </activeOption>
+	</entry>
+	<entry>
+		<label> TRACK_PHYSICS_QUALITY </label>
 		<activeOption> 0 </activeOption>
 	</entry>
 	<entry>

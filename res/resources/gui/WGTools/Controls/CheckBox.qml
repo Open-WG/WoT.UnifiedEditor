@@ -4,6 +4,8 @@ import WGTools.Controls.Details 2.0 as Details
 import WGTools.Controls.impl 1.0
 
 T.CheckBox {
+	property string tooltip: ""
+
 	id: control
 	Accessible.name: text || "Checkbox"
 
@@ -35,4 +37,17 @@ T.CheckBox {
 	Details.ColorBehavior on icon.color {}
 	Details.BackgroundBB {}
 	Details.ContentItemBB {}
+
+	ToolTip.text: tooltip
+	ToolTip.delay: ControlsSettings.tooltipDelay
+	ToolTip.timeout: ControlsSettings.tooltipTimeout
+	ToolTip.visible: ToolTip.text && mouseArea.containsMouse
+	MouseArea {
+		id: mouseArea
+		hoverEnabled: true
+		x: control.x + control.contentItem.leftPadding
+		width: control.width - control.indicator.width
+		anchors.verticalCenter: control.verticalCenter
+		height: control.height
+	}
 }

@@ -106,6 +106,7 @@ BaseKeyItem {
 					property var timelineViewID: styleData.timelineViewID
 
 					state: _selected ? "selected" : ""
+					croppedResource: itemData.resourceCropped
 
 					anchors.fill: parent
 
@@ -151,12 +152,8 @@ BaseKeyItem {
 						}
 					}
 
-					Label {
-						id: keyLabel
-						text: itemData.value
-						elide: Text.ElideLeft
-						clip: true
-						color: Qt.lighter(key.barColor, 1.5)
+					Item {
+						id: labels
 
 						anchors {
 							verticalCenter: parent.verticalCenter
@@ -168,12 +165,42 @@ BaseKeyItem {
 							rightMargin: 5
 						}
 
-						font {
-							bold: key._selected
-							pixelSize: 11
-						}
+						Label {
+							id: keyLabel
+							text: itemData.value
+							elide: Text.ElideLeft
+							clip: true
+							color: Qt.lighter(key.barColor, 1.5)
 
-						// BB{}
+							anchors {
+								verticalCenter: parent.verticalCenter
+
+								left: parent.left
+								right: croppedLabel.left
+							}
+
+							font {
+								bold: key._selected
+								pixelSize: 11
+							}
+						}
+					
+						Label {
+							id: croppedLabel
+							text: key.croppedResource ? " [cropped]" : ""
+							color: Qt.lighter(key.barColor, 1.5)
+							leftPadding: key.croppedResource ? 20 : 0 // add some space between labels
+
+							anchors {
+								verticalCenter: parent.verticalCenter
+								right: parent.right
+							}
+
+							font {
+								bold: key._selected
+								pixelSize: 12
+							}
+						}
 					}
 
 					Item {

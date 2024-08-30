@@ -37,7 +37,7 @@ Item {
 			}
 
 			Image {
-				source: (model && model.decoration)
+				source: (model && model.decoration && model.decoration != "<unnamed type>")
 					? "image://gui/" + model.decoration
 					: ""
 

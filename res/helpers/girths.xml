@@ -59,7 +59,7 @@
 			<girth> BTCAMP_4.0 </girth>
 			<height>	1.950000	</height>
 			<radius>	4.000000	</radius>
-			<halfWidth>	2.000000	</halfWidth>            
+			<halfWidth>	1.500000	</halfWidth>            
 			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
 			<upSlope>	35.000000	</upSlope>
@@ -71,8 +71,8 @@
 		<config>
 			<girth> BR_8 </girth>
 			<height>	2.500000	</height>
-			<radius>	3.500000	</radius>
-			<halfWidth>	1.750000	</halfWidth>
+			<radius>	3.050000	</radius>
+			<halfWidth>	1.50000	</halfWidth>
 			<narrowInnerThreshold>	0.000000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	0.000000	</narrowOuterThreshold>
 			<upSlope>	30.000000	</upSlope>
@@ -92,18 +92,23 @@
 			<coverValidationHeightStep> 0.25 </coverValidationHeightStep>
 			<coverValidationSubSampleNumDirections> 3 </coverValidationSubSampleNumDirections>
 			<coverValidationSubSampleNumDistances> 3 </coverValidationSubSampleNumDistances>
-			<shootingSampleRadius> 20.0 </shootingSampleRadius>
 			<minCoverAngle> 20.0 </minCoverAngle>
-			<minShootingWindow> 5.0 </minShootingWindow>
-			<shootingPointDirectionLimits> 
-				<min> 0.0 </min>
-				<max> 360.0 </max>
-			</shootingPointDirectionLimits>
-			<shootingPointMinSampleAngle> 5.0 </shootingPointMinSampleAngle>
-			<shootingPointDistance> 20.0 </shootingPointDistance>
-			<shootingPointMinDirectionDelta> 20.0 </shootingPointMinDirectionDelta>
-			<shootingPointLimitDistanceByCoverRadius> false </shootingPointLimitDistanceByCoverRadius>
-			<shootingPointAtOrigin> false </shootingPointAtOrigin>
+			<shootingPoints>
+				<defaults>
+					<directionLimits> 
+						<min> 0.0 </min>
+						<max> 360.0 </max>
+					</directionLimits>
+					<distance> 20.0 </distance>
+					<limitDistanceByCoverRadius> false </limitDistanceByCoverRadius>
+					<minDirectionDelta> 20.0 </minDirectionDelta>
+					<pointAtOrigin> false </pointAtOrigin>
+					<sampleRadius> 20.0 </sampleRadius>
+					<minShootingWindow> 5.0 </minShootingWindow>
+					<minSampleAngle> 5.0 </minSampleAngle>
+				</defaults>
+				<rule/>
+			</shootingPoints>
 			<initialSamples> 20 </initialSamples>
 			<coverRayCastParams> 
 				<param>
@@ -124,6 +129,7 @@
 			<antiSpgRayCastFlatRadius> 150.0 </antiSpgRayCastFlatRadius>
 			<maxSampleHeightDifference> </maxSampleHeightDifference>
 			<minSpacingMulSq> 1.0 </minSpacingMulSq>
+			<minCoversToGenerate> 1 </minCoversToGenerate>
 			<agentDependent>
 				<default>
 					<shootingHeight>	2.000000	</shootingHeight>
@@ -178,13 +184,17 @@
 					<negative> true </negative>
 				</param>
 			</coverRayCastParams>
-			<shootingPointDirectionLimits>
-				<min> 170.0 </min>
-				<max> 190.0 </max>
-			</shootingPointDirectionLimits>
-			<shootingPointMinSampleAngle> 2.0 </shootingPointMinSampleAngle>
-			<shootingPointDistance> 15.0 </shootingPointDistance>
-			<shootingPointAtOrigin> true </shootingPointAtOrigin>
+			<shootingPoints>
+				<rule>
+					<directionLimits>
+						<min> 170.0 </min>
+						<max> 190.0 </max>
+					</directionLimits>
+					<distance> 15.0 </distance>
+					<pointAtOrigin> true </pointAtOrigin>
+					<minSampleAngle> 2.0 </minSampleAngle>
+				</rule>
+			</shootingPoints>
 		</Flora>
 		<Destructible>
 			<coverRayCastParams> 
@@ -206,23 +216,73 @@
 					<negative> false </negative>
 				</param>
 			</coverRayCastParams>
-			<shootingPointDirectionLimits>
-				<min> -10.0 </min>
-				<max> 10.0 </max>
-			</shootingPointDirectionLimits>
-			<shootingPointMinSampleAngle> 2.0 </shootingPointMinSampleAngle>
-			<shootingPointLimitDistanceByCoverRadius> true </shootingPointLimitDistanceByCoverRadius>
-			<shootingPointDistance> 150.0 </shootingPointDistance>
+			<shootingPoints>
+				<rule>
+					<directionLimits>
+						<min> -10.0 </min>
+						<max> 10.0 </max>
+					</directionLimits>
+					<distance> 150.0 </distance>
+					<limitDistanceByCoverRadius> true </limitDistanceByCoverRadius>
+					<minSampleAngle> 2.0 </minSampleAngle>
+				</rule>
+				<rule>
+					<directionLimits>
+						<min>-90</min>
+						<max>-25</max>
+					</directionLimits>
+					<distance> 25.0 </distance>
+					<limitDistanceByCoverRadius> true </limitDistanceByCoverRadius>
+				</rule>
+				<rule>
+					<directionLimits>
+						<min>25</min>
+						<max>90</max>
+					</directionLimits>
+					<distance> 25.0 </distance>
+					<limitDistanceByCoverRadius> true </limitDistanceByCoverRadius>
+				</rule>
+			</shootingPoints>
 			<minSpacingMulSq> 9.0 </minSpacingMulSq>
 		</Slope>
 		<Low>
-			<shootingPointDistance> 0.0 </shootingPointDistance>
-			<shootingPointAtOrigin> true </shootingPointAtOrigin>
-			<minShootingWindow> 2.0 </minShootingWindow>
 			<coverValidationEnabled> false </coverValidationEnabled>
+			<shootingPoints>
+				<rule>
+					<distance> 0.0 </distance>
+					<pointAtOrigin> true </pointAtOrigin>
+					<minShootingWindow> 2.0 </minShootingWindow>
+				</rule>
+			</shootingPoints>
 		</Low>
 	</covers>
+	<recon>
+		<active>
+			<coverTypes> static,slope </coverTypes>
+			<maxNavmeshQueryNodes> 1024 </maxNavmeshQueryNodes>
+			<minCoversDistance> 30 </minCoversDistance>
+			<minCoversPathLength> 30 </minCoversPathLength>
+			<maxCoversPathLength> 100 </maxCoversPathLength>
+			<pathSymmetryMaxLengthDiffRatio> 0.2 </pathSymmetryMaxLengthDiffRatio>
+			<pathSymmetryMaxAverageDiff> 5.0 </pathSymmetryMaxAverageDiff>
+			<pathSymmetrySamplingStep> 0.5 </pathSymmetrySamplingStep>
+			<minReconDistanceMargin> 50 </minReconDistanceMargin>
+			<visibilitySampling>
+				<pathSegmentLength> 1 </pathSegmentLength>
+				<raycastRadius> 100 </raycastRadius>
+				<maxDescentAngleDegrees> 10 </maxDescentAngleDegrees>
+				<initialSamples> 20 </initialSamples>
+				<minSampleAngleDegrees> 2 </minSampleAngleDegrees>
+			</visibilitySampling>
+			<similarityFilter>
+				<pointDistThreshold> 30 </pointDistThreshold>
+				<arcOverlapRatioThreshold> 0.8 </arcOverlapRatioThreshold>
+				<maxResultsPerCluster> 4 </maxResultsPerCluster>
+			</similarityFilter>
+		</active>
+	</recon>
 	<visibilityGrid>
+		<saveDebugData> false </saveDebugData>
 		<gridSourceWidth> 50 </gridSourceWidth>
 		<gridSourceHeight> 50 </gridSourceHeight>
 		<gridTargetWidth> 50 </gridTargetWidth>
@@ -238,10 +298,53 @@
 			</max>
 		</startFinishHeight>
 		<samplesPerCell> 100 </samplesPerCell>
+		<searchRadiusFactor> 0.5 </searchRadiusFactor>
+		<searchRadiusStepFactor> 0.5 </searchRadiusStepFactor>
 	</visibilityGrid>
+	<stealthGrid>
+		<type> average </type>
+		<gridCellWidth> 20 </gridCellWidth>
+		<gridCellHeight> 20 </gridCellHeight>
+		<!-- Any number of specific traces can be defined per x/z sample. Average result will be written into the grid. -->
+		<!-- Weight argument is optional (default is 1.0). If specified, it is applied as a multiplier to the amount of such traces within each given cell, -->
+		<!-- thus affecting both final value and generation speed. Valid weight must be > 0.0 and <= 1.0. -->
+		<traceHeights>
+			<trace>
+				<eye> 1.65 </eye> <!-- T-100 LT, Manticore -->
+				<target> 2.8 </target> <!-- T110E5, Super Conqueror -->
+			</trace>
+			<trace>
+				<eye> 2.2 </eye> <!-- AMX 13-105 -->
+				<target> 2.2 </target> <!-- Obj. 140, Progetto 65 -->
+			</trace>
+			<trace>
+				<eye> 1.65 </eye> <!-- T-100 LT, Manticore -->
+				<target> 3.8 </target> <!-- Type 5 Heavy -->
+				<weight> 0.5 </weight>
+			</trace>
+			<trace>
+				<eye> 3.8 </eye> <!-- Type 5 Heavy -->
+				<target> 2.5 </target> <!-- TVP T50/51 -->
+				<weight> 0.2 </weight>
+			</trace>
+		</traceHeights>
+		<samplesPerCell> 100 </samplesPerCell>
+		<exposureMap>
+			<type> average </type>
+			<resolutionMultiplier> 5 </resolutionMultiplier>
+			<exposureVisionRadius> 470 </exposureVisionRadius>
+			<coverageVisionRadius> 445 </coverageVisionRadius>
+			<minBaseInvisibility> 0.1 </minBaseInvisibility>
+			<maxBaseInvisibility> 0.5 </maxBaseInvisibility>
+		</exposureMap>
+	</stealthGrid>
+	<navHeightMap>
+		<gridCellWidth> 4 </gridCellWidth>
+		<gridCellHeight> 4 </gridCellHeight>
+	</navHeightMap>
 	<zones>
 		<center_generator>
-			<navmeshGirth> CTF_2.5 </navmeshGirth>
+			<navmeshGirth> CTF_5.5 </navmeshGirth>
 			<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			<gridStepX> 20 </gridStepX>
 			<gridStepY> 20 </gridStepY>
@@ -253,7 +356,7 @@
 		<link_generator>
 			<common>
 				<maxNavmeshQueryNodes> 10000 </maxNavmeshQueryNodes>
-				<navmeshGirth> CTF_2.5 </navmeshGirth>
+				<navmeshGirth> CTF_5.5 </navmeshGirth>
 				<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			</common>
 			<move>

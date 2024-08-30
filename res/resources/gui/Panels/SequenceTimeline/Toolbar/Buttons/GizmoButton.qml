@@ -6,7 +6,7 @@ TimelineToolButton {
 	text: "Gizmo"
 	ToolTip.text: "Show gizmo for model to move"
 
-	enabled: true
+	enabled: context.sequenceOpened
 	checkable: true
 	iconImage: Constants.iconGizmo
 	iconColor: "transparent"

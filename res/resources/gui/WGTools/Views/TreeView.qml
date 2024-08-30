@@ -65,7 +65,7 @@ TreeView {
 		}
 	}
 
-	Loader{
+	Loader {
 		id: headerLoader
 
 		sourceComponent: root.headerDelegate
