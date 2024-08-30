@@ -206,6 +206,9 @@
 							<maxPitch />
 						</pitchLimits>
 						<turretYawLimits />
+						<staticPitch />
+						<staticTurretYaw />
+						<rotationSpeed />
 						<hullPitchAimingFirst />
 						<extraPitchLimits>
 							<back />
@@ -267,6 +270,7 @@
 					<pitchMin />
 					<pitchMax />
 				</wheelsCorrectionAngles>
+				<isEnabled />
 			</pitch>
 			<yawDisabled />
 		</hull_aiming>
@@ -296,6 +300,7 @@
 		<useHullZ/>
 		<useHullZSize />
 		<useHullZOffset />
+		<isRotationStill />
 	</tank_game_balance>
 
 	<!--  Appearance tank properties -->
@@ -339,12 +344,16 @@
 			<turretPositions>
 				<turret />
 			</turretPositions>
+			<turretPitches>
+				<turret />
+			</turretPitches>
 			<turretHardPoints>
 				<_ANYTHING_ />
 			</turretHardPoints>
 			<hitTester>
 				<collisionModelServer/>
 				<collisionModelClient/>
+				<crashed/>
 			</hitTester>
 			<emblemSlots>
 				<clan>
@@ -516,6 +525,7 @@
 						<hitTester>
 							<collisionModelServer />
 							<collisionModelClient />
+							<crashed />
 						</hitTester>
 						<hardPoint />
 						<armor>
@@ -610,6 +620,7 @@
 				<hitTester>
 					<collisionModelServer/>
 					<collisionModelClient/>
+					<crashed/>
 				</hitTester>
 				<topRightCarryingPoint />
 				<maxClimbAngle />
@@ -652,8 +663,10 @@
 				<hitTester>
 					<collisionModelServer/>
 					<collisionModelClient/>
+					<crashed/>
 				</hitTester>
 				<gunPosition />
+				<gunJointPitch />
 				<gunShotOffset />
 				<multiGun>
 					<_ANYTHING_ />
@@ -671,6 +684,7 @@
 						<hitTester>
 							<collisionModelServer/>
 							<collisionModelClient/>
+							<crashed/>
 						</hitTester>
 						<emblemSlots>
 							<insigniaOnGun>

@@ -68,8 +68,9 @@
 				</slot>
 			</customizationSlots>
 			<hitTester>
-				<collisionModelServer> [[CHASSIS_COLLISION_MODEL_SERVER]] </collisionModelServer>
-				<collisionModelClient> [[CHASSIS_COLLISION_MODEL_CLIENT]] </collisionModelClient>
+				<collisionModelServer> [[CHASSIS_MODEL_COLLISION_SERVER]] </collisionModelServer>
+				<collisionModelClient> [[CHASSIS_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+				<crashed> [[CHASSIS_MODEL_COLLISION_CRASH]] </crashed>
 			</hitTester>
 			<!-- List of <material_kind_name> millimeters </material_kind_name> -->
 			<armor>

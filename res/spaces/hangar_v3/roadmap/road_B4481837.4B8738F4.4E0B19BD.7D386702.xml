@@ -1,4 +1,4 @@
-<road_B4481837.4B8738F4.4E0B19BD.7D386702.xml>
+<root>
 	<decalSettings>
 		<textureAM> maps/decals_pbs/PBS_One_Track_new_AM.dds </textureAM>
 		<textureNM> maps/decals_pbs/PBS_One_Track_new_NM.dds </textureNM>
@@ -10,6 +10,8 @@
 		<parallaxAmplitude> 0.100000 </parallaxAmplitude>
 		<parallaxOffset> 0.430000 </parallaxOffset>
 		<priority> 1 </priority>
+		<flipTextureHorz> false </flipTextureHorz>
+		<flipTextureVert> false </flipTextureVert>
 	</decalSettings>
 	<editorOnly>
 		<hidden> false </hidden>
@@ -17,24 +19,44 @@
 	</editorOnly>
 	<tesselatePoints>
 		<tesselatePoint>
-			<position> -2.421 6.077 -6.084 </position>
+			<position> -2.421 6.123 -6.084 </position>
 			<alpha> 0.456000 </alpha>
+			<editorOnly>
+				<hidden> false </hidden>
+				<frozen> false </frozen>
+			</editorOnly>
 		</tesselatePoint>
 		<tesselatePoint>
-			<position> -3.175 6.071 -3.775 </position>
+			<position> -3.175 6.139 -3.775 </position>
 			<alpha> 0.310000 </alpha>
+			<editorOnly>
+				<hidden> false </hidden>
+				<frozen> false </frozen>
+			</editorOnly>
 		</tesselatePoint>
 		<tesselatePoint>
-			<position> -2.271 6.136 -0.514 </position>
+			<position> -2.271 6.146 -0.514 </position>
 			<alpha> 0.409000 </alpha>
+			<editorOnly>
+				<hidden> false </hidden>
+				<frozen> false </frozen>
+			</editorOnly>
 		</tesselatePoint>
 		<tesselatePoint>
-			<position> -0.449 6.180 2.037 </position>
+			<position> -0.449 6.164 2.037 </position>
 			<alpha> 0.618000 </alpha>
+			<editorOnly>
+				<hidden> false </hidden>
+				<frozen> false </frozen>
+			</editorOnly>
 		</tesselatePoint>
 		<tesselatePoint>
-			<position> -2.258 6.183 5.465 </position>
+			<position> -2.258 6.188 5.465 </position>
 			<alpha> 0.009000 </alpha>
+			<editorOnly>
+				<hidden> false </hidden>
+				<frozen> false </frozen>
+			</editorOnly>
 		</tesselatePoint>
 	</tesselatePoints>
 	<pathSettings>
@@ -45,4 +67,4 @@
 		<roadWidth> 1.898000 </roadWidth>
 		<tesselationStep> 1.151000 </tesselationStep>
 	</pathSettings>
-</road_B4481837.4B8738F4.4E0B19BD.7D386702.xml>
+</root>

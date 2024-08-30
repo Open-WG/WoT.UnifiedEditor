@@ -9,6 +9,8 @@ import WGTools.DialogsQml 1.0 as Dialogs
 import WGTools.Views.Details 1.0 as Views
 import WGTools.ControlsEx 1.0
 import "../../Panels/SceneOutline" as SceneOutline
+import WGTools.PropertyGrid 1.0
+import Panels.PropertyGrid.View 1.0 as View
 
 Rectangle
 {
@@ -21,44 +23,51 @@ Rectangle
 	implicitHeight: 570
 
 
-	ColumnLayout {
+	SplitView {
+		id: papaRow
 		anchors.fill: parent
 
-		Column{
+		ColumnLayout{
 			Layout.margins: 5
 			spacing: 10
-			height: controlButtons.implicitHeight
-			Layout.fillWidth: true
-
-			RowLayout {
-				id: controlButtons
-				spacing: 10
-				width: parent.width
-				Controls.Button {
-					Layout.fillWidth: true
-					text: "Add Point"
-					icon.source : "image://gui/add"
-					onClicked: context.managerController.addPoint()
-				}
-				Controls.Button {
-					Layout.fillWidth: true
-					text: "Settings"
-					icon.source : "image://gui/menu"
-					onClicked: context.managerController.settings()
-				}
-				Controls.Button {
-					Layout.fillWidth: true
-					text: "Make screenshots"
-					icon.source : "image://gui/navigation-point"
-					onClicked: context.managerController.makeScreenshots()
-				}
+			Layout.preferredWidth: papaRow.width * (1/3)
+			Layout.fillHeight: true
+			
+			Controls.Button {
+				Layout.fillWidth: true
+				text: "Add Point"
+				icon.source : "image://gui/add"
+				onClicked: context.managerController.addPoint()
 			}
+			Controls.Button {
+				Layout.fillWidth: true
+				text: "Make screenshots"
+				icon.source : "image://gui/navigation-point"
+				onClicked: context.managerController.makeScreenshots()
+			}
+
+			SceneOutline.SceneBrowserView {
+				Layout.fillHeight: true
+				Layout.fillWidth: true
+				sceneBrowserContext: context.sceneBrowserData
+			}
+			
 		}
 
-		SceneOutline.SceneBrowserView {
+		View.PropertyGrid {
+			id: propertyGridView
+			Layout.preferredWidth: papaRow.width * (2/3)
 			Layout.fillHeight: true
-			Layout.fillWidth: true
-			sceneBrowserContext: context.sceneBrowserData
+
+			model: PropertyGridModel {
+				id: pgModel
+				source: context.managerController.settingsObject
+			}
+
+			selection: ItemSelectionModel {
+				model: pgModel
+			}
+
 		}
 	}
 }

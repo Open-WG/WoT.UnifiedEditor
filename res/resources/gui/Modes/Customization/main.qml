@@ -3,8 +3,10 @@ import QtQuick.Layouts 1.11
 import QtQuick.Controls 1.4
 import QtQml.StateMachine 1.0 as DSM
 import WGTools.Controls.Details 2.0
+import WGTools.Controls 2.0 as WGT
 import WGTools.ControlsEx 1.0 as WGT
 import WGTools.Breadcrumbs 1.0 as WGT
+
 import WGTools.Misc 1.0
 import "Details" as Details
 
@@ -31,6 +33,7 @@ WGT.Panel {
 			height: verticalLayout.height * 2/3
 			Layout.fillWidth: true
 
+			//Customization items groups
 			Item {
 				visible: context.groupsEnabled
 				width: horizontalLayout.width * 1/3
@@ -60,6 +63,7 @@ WGT.Panel {
 				}
 			}
 
+			//Customization items view
 			Item {
 				Layout.fillWidth: true
 				Layout.fillHeight: true
@@ -80,12 +84,17 @@ WGT.Panel {
 						Layout.fillWidth: true
 					}
 
-					WGT.BreadcrumbsView {
-						model: context.elementsQuickFilters ? context.elementsQuickFilters.model : null
-						selection: context.elementsQuickFilters ? context.elementsQuickFilters.selection : null
-						visible: count > 0
-
+					RowLayout {
 						Layout.fillWidth: true
+
+						WGT.BreadcrumbsView {
+							id: breadcrumbsView
+							model: context.elementsQuickFilters ? context.elementsQuickFilters.model : null
+							selection: context.elementsQuickFilters ? context.elementsQuickFilters.selection : null
+							visible: count > 0
+
+							Layout.fillWidth: true
+						}
 					}
 
 					Details.Elements {
@@ -115,12 +124,14 @@ WGT.Panel {
 							height: elements.cellHeight
 							onClicked: elements.elementClicked()
 							onRightClicked: context.showElementContextMenu()
+							onDoubleClicked: context.applySelected()
 						}
 					}
 				}
 			}
 		}
-
+		
+		//Property Grid View
 		Item {
 			Layout.fillWidth: true
 			Layout.fillHeight: true

@@ -11,6 +11,7 @@
 			<hitTester>
 				<collisionModelServer> [[TURRET_MODEL_COLLISION_SERVER]] </collisionModelServer>
 				<collisionModelClient> [[TURRET_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+				<crashed> [[TURRET_MODEL_COLLISION_CRASH]] </crashed>
 			</hitTester>
 			<gunPosition> [[TURRET_GUN_POSITION]] </gunPosition>
 			<customization>

@@ -1,89 +1,86 @@
 <root>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 1.000000 0.000000 0.000000 </row0>
+				<row1> 0.000000 1.000000 0.000000 </row1>
+				<row2> 0.000000 0.000000 1.000000 </row2>
+				<row3> 0.000000 -0.752052 0.000000 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model </resource>
+		<transform>
+			<row0> 2.900702 -0.000008 -0.099180 </row0>
+			<row1> 0.000007 2.902401 -0.000010 </row1>
+			<row2> 0.099180 0.000010 2.900702 </row2>
+			<row3> 80.232437 54.357033 88.782333 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<reflectionVisible> false </reflectionVisible>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 0 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 1.000000 0.000000 0.000000 </row0>
+				<row1> 0.000000 1.000000 0.000000 </row1>
+				<row2> 0.000000 0.000000 1.000000 </row2>
+				<row3> 0.000000 1.780293 0.000000 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model </resource>
+		<transform>
+			<row0> -1.057197 0.000008 2.703013 </row0>
+			<row1> 0.000004 2.902406 -0.000008 </row1>
+			<row2> -2.703013 0.000002 -1.057197 </row2>
+			<row3> 14.089005 35.190136 93.136139 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<reflectionVisible> false </reflectionVisible>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 1 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 1.000000 0.000000 0.000000 </row0>
+				<row1> 0.000000 1.000000 0.000000 </row1>
+				<row2> 0.000000 0.000000 1.000000 </row2>
+				<row3> 0.000000 1.805138 0.000000 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model </resource>
+		<transform>
+			<row0> -1.057197 0.000008 2.703011 </row0>
+			<row1> 0.000004 2.902404 -0.000008 </row1>
+			<row2> -2.703011 0.000002 -1.057197 </row2>
+			<row3> 50.046188 49.284286 61.600204 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<reflectionVisible> false </reflectionVisible>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 2 </serverId>
+	</model>
 	<terrain>
-		<resource>	0001fffdo.cdata/terrain2	</resource>
+		<resource> 0001fffdo.cdata/terrain2 </resource>
 	</terrain>
-	<worldNavmesh>
-		<resource>	0001fffdo.cdata/worldNavmesh	</resource>
-	</worldNavmesh>
-	<model>
-		<editorOnly>
-			<hidden>	false	</hidden>
-			<frozen>	false	</frozen>
-			<terrainBinding>
-				<row0>	1.000000 0.000000 0.000000	</row0>
-				<row1>	0.000000 1.000000 0.000000	</row1>
-				<row2>	0.000000 0.000000 1.000000	</row2>
-				<row3>	0.000000 -0.752052 0.000000	</row3>
-			</terrainBinding>
-		</editorOnly>
-		<visibilityMask>	4294967295	</visibilityMask>
-		<metaData/>
-		<resource>	content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model	</resource>
-		<transform>
-			<row0>	2.900702 -0.000008 -0.099180	</row0>
-			<row1>	0.000007 2.902401 -0.000010	</row1>
-			<row2>	0.099180 0.000010 2.900702	</row2>
-			<row3>	80.232437 54.357033 88.782333	</row3>
-		</transform>
-		<castsShadow>	true	</castsShadow>
-		<alwaysDynamic>	false	</alwaysDynamic>
-		<ignoresObjectsFarplane>	false	</ignoresObjectsFarplane>
-		<reflectionVisible>	false	</reflectionVisible>
-		<destructibleState>	undamaged	</destructibleState>
-		<serverId>	0	</serverId>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden>	false	</hidden>
-			<frozen>	false	</frozen>
-			<terrainBinding>
-				<row0>	1.000000 0.000000 0.000000	</row0>
-				<row1>	0.000000 1.000000 0.000000	</row1>
-				<row2>	0.000000 0.000000 1.000000	</row2>
-				<row3>	0.000000 1.780293 0.000000	</row3>
-			</terrainBinding>
-		</editorOnly>
-		<visibilityMask>	4294967295	</visibilityMask>
-		<metaData/>
-		<resource>	content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model	</resource>
-		<transform>
-			<row0>	-1.057197 0.000008 2.703013	</row0>
-			<row1>	0.000004 2.902406 -0.000008	</row1>
-			<row2>	-2.703013 0.000002 -1.057197	</row2>
-			<row3>	14.089005 35.190136 93.136139	</row3>
-		</transform>
-		<castsShadow>	true	</castsShadow>
-		<alwaysDynamic>	false	</alwaysDynamic>
-		<ignoresObjectsFarplane>	false	</ignoresObjectsFarplane>
-		<reflectionVisible>	false	</reflectionVisible>
-		<destructibleState>	undamaged	</destructibleState>
-		<serverId>	1	</serverId>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden>	false	</hidden>
-			<frozen>	false	</frozen>
-			<terrainBinding>
-				<row0>	1.000000 0.000000 0.000000	</row0>
-				<row1>	0.000000 1.000000 0.000000	</row1>
-				<row2>	0.000000 0.000000 1.000000	</row2>
-				<row3>	0.000000 1.805138 0.000000	</row3>
-			</terrainBinding>
-		</editorOnly>
-		<visibilityMask>	4294967295	</visibilityMask>
-		<metaData/>
-		<resource>	content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model	</resource>
-		<transform>
-			<row0>	-1.057197 0.000008 2.703011	</row0>
-			<row1>	0.000004 2.902404 -0.000008	</row1>
-			<row2>	-2.703011 0.000002 -1.057197	</row2>
-			<row3>	50.046188 49.284286 61.600204	</row3>
-		</transform>
-		<castsShadow>	true	</castsShadow>
-		<alwaysDynamic>	false	</alwaysDynamic>
-		<ignoresObjectsFarplane>	false	</ignoresObjectsFarplane>
-		<reflectionVisible>	false	</reflectionVisible>
-		<destructibleState>	undamaged	</destructibleState>
-		<serverId>	2	</serverId>
-	</model>
 </root>

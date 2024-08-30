@@ -3,25 +3,27 @@
 	<sequenceObject>
 		<name> Root </name>
 		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
 		<name> Model Object 0 </name>
 		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
 		<resource> particles/mesh_particles/environment/hd_env_UNI_016_Flag/hd_env_UNI_016_Flag.model </resource>
 		<track>
 			<name> position </name>
 			<type> vector3 </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 0.000000 -0.000001 1.000000 </value>
+				<value> 0.000000 0.900000 1.000000 </value>
 				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
 			</frame>
 			<frame>
 				<startTime> 2.000000 </startTime>
-				<value> 0.000000 -0.000001 1.000000 </value>
+				<value> 0.000000 0.900000 1.000000 </value>
 				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
 				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -32,7 +34,7 @@
 			<type> quaternion </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 0.707107 0.000000 0.000000 0.707107 </value>
+				<value> 0.000000 0.707107 0.707107 -0.000000 </value>
 				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -43,7 +45,7 @@
 			<type> vector3 </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 90.000000 0.000000 0.000000 </value>
+				<value> -90.000000 180.000000 0.000000 </value>
 				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
@@ -66,6 +68,7 @@
 	<sequenceObject>
 		<name> Model Object 1 </name>
 		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
 		<resource> particles/content_deferred/GFX_models/gameplay/br_mine_filed/Mines_Sign.model </resource>
 		<track>
 			<name> position </name>

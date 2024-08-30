@@ -500,18 +500,6 @@
 		<alwaysDynamic> false </alwaysDynamic>
 		<serverId> 21 </serverId>
 	</speedtree>
-	<terrain>
-		<resource> fffefffeo.cdata/terrain2 </resource>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-	</terrain>
-	<worldNavmesh>
-		<resource> fffefffeo.cdata/worldNavmesh </resource>
-	</worldNavmesh>
 	<particles>
 		<editorOnly>
 			<hidden> false </hidden>
@@ -527,11 +515,14 @@
 		<metaData/>
 		<resource> particles/Environment/hangar/hangar_v3_godsmoke.eff </resource>
 		<transform>
-			<row0> 0.451135 -0.000000 -0.892451 </row0>
-			<row1> -0.000000 0.999997 -0.000000 </row1>
+			<row0> 0.451135 0.000000 -0.892451 </row0>
+			<row1> 0.000000 0.999997 0.000000 </row1>
 			<row2> 0.892451 0.000000 0.451135 </row2>
 			<row3> 69.763077 9.396222 90.900421 </row3>
 		</transform>
 		<reflectionVisible> false </reflectionVisible>
 	</particles>
+	<terrain>
+		<resource> fffefffeo.cdata/terrain2 </resource>
+	</terrain>
 </root>

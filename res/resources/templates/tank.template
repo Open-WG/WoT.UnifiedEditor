@@ -69,6 +69,7 @@
 		<hitTester>
 			<collisionModelServer> [[HULL_MODEL_COLLISION_SERVER]] </collisionModelServer>
 			<collisionModelClient> [[HULL_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+			<crashed> [[HULL_MODEL_COLLISION_CRASH]] </crashed>
 		</hitTester>
 		<!-- List of <material_kind_name> millimeters </material_kind_name> -->
 		<customization>

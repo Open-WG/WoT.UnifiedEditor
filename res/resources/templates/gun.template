@@ -39,6 +39,7 @@
 					<hitTester>
 						<collisionModelServer> [[GUN_MODEL_COLLISION_SERVER]] </collisionModelServer>
 						<collisionModelClient> [[GUN_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+						<crashed> [[GUN_MODEL_COLLISION_CRASH]] </crashed>
 					</hitTester>
 					<armor>
 						<gun> 10 </gun>

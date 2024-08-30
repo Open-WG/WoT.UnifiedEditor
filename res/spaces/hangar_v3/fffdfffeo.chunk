@@ -3,12 +3,6 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -3.624864 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
@@ -17,7 +11,7 @@
 			<row0> 1.676384 0.000004 2.369334 </row0>
 			<row1> 0.000005 2.902416 -0.000008 </row1>
 			<row2> -2.369334 0.000009 1.676384 </row2>
-			<row3> 84.077667 7.685727 3.195633 </row3>
+			<row3> 84.077637 7.685726 3.195633 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -25,26 +19,21 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 0 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.648213 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/ha_hv3_PlanePine_set.model </resource>
 		<transform>
-			<row0> 2.756445 -0.000002 0.908886 </row0>
+			<row0> 2.756444 -0.000002 0.908886 </row0>
 			<row1> 0.000005 2.902425 -0.000008 </row1>
-			<row2> -0.908886 0.000010 2.756445 </row2>
-			<row3> 93.057541 14.685152 39.627731 </row3>
+			<row2> -0.908886 0.000010 2.756444 </row2>
+			<row3> 93.057510 10.743011 39.627731 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -52,6 +41,7 @@
 		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 1 </serverId>
+		<megalodFlag> 0 </megalodFlag>
 	</model>
 	<model>
 		<editorOnly>
@@ -125,7 +115,4 @@
 	<terrain>
 		<resource> fffdfffeo.cdata/terrain2 </resource>
 	</terrain>
-	<worldNavmesh>
-		<resource> fffdfffeo.cdata/worldNavmesh </resource>
-	</worldNavmesh>
 </root>
