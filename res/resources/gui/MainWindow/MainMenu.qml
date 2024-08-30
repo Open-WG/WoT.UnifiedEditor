@@ -248,6 +248,8 @@ Menu {
 			id: crash
 			title: "Crash"
 
+			Component.onCompleted: parent.visible = !context.isLite
+
 			Details.ActionMenuItem {
 				source: context.action("crashAssertActionId")
 			}
