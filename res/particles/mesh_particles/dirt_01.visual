@@ -18,8 +18,8 @@
 				<material>
 					<identifier> m_dirt </identifier>
 					<fx> shaders/wg_particles/pbs_mesh_particles.fx </fx>
-					<collisionFlags> 0 </collisionFlags>
 					<materialKind> 0 </materialKind>
+					<collisionFlags> 0 </collisionFlags>
 					<property> diffuseMap
 						<Texture> particles/mesh_particles/tex/stone_am.dds </Texture>
 					</property>
@@ -40,6 +40,7 @@
 		<min> -0.105232 -0.054673 -0.120920 </min>
 		<max> 0.105232 0.054673 0.120920 </max>
 	</boundingBox>
+	<customBsp> true </customBsp>
 	<metaData>
 		<settings>
 			<exportAnimation> false </exportAnimation>
@@ -47,7 +48,7 @@
 			<boneCount> 17 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
 			<allowScale> true </allowScale>
-			<bumpMapped> false </bumpMapped>
+			<bumpMapped> true </bumpMapped>
 			<keepExistingMaterials> true </keepExistingMaterials>
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
@@ -57,15 +58,23 @@
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
 			<fixNodeTreeLOD> false </fixNodeTreeLOD>
-			<useLegacyOrientation> false </useLegacyOrientation>
+			<useLegacyOrientation> true </useLegacyOrientation>
 			<sceneRootAdded> false </sceneRootAdded>
 			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
 			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
 			<nodeFilter> 1 </nodeFilter>
 			<copyExternalTextures> false </copyExternalTextures>
 			<copyTexturesTo/>
-			<textureOverwriteOption> 2 </textureOverwriteOption>
-			<debug> false </debug>
 		</settings>
 	</metaData>
 </root>

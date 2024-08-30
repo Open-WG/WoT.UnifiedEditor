@@ -3344,7 +3344,7 @@
 					</pixie>
 					<destructionSound>
 						<startKey> base </startKey>
-						<wwsound> obj_treefall_down_small</wwsound>
+						<wwsound> obj_treefall_down_small </wwsound>
 					</destructionSound>
 				</effects>
 			</variant1>
@@ -5925,6 +5925,29 @@
 				</effects>
 			</variant1>
 		</hd_env_AS_005_WoodDryer_end>
+		<hd_env_UNI_110_KeelBlock_03>
+			<variant1>
+				<stages>
+					<base> 4.0 </base>
+				</stages>
+				<effects>
+					<pixie>
+						<startKey> base </startKey>
+						<file> particles/environment/objects/hd_env_uni_110_keelblock_03.eff </file>
+						<force> 1 </force>
+					</pixie>
+					<destructionSound>
+						<startKey> base </startKey>
+						<wwsound> obj_generative </wwsound>
+						<params>
+							<wood_2> 24 </wood_2>
+							<debrisAmount> 8 </debrisAmount>
+							<weight> 4800 </weight>
+						</params>
+					</destructionSound>
+				</effects>
+			</variant1>
+		</hd_env_UNI_110_KeelBlock_03>
 		<hd_env_AS_005_WoodDryer_end_hit>
 			<variant1>
 				<stages>
@@ -7922,7 +7945,7 @@
 					</destructionSound>
 				</effects>
 			</variant1>
-		</inf_gaf_19_02_StoneFence_01_02>		
+		</inf_gaf_19_02_StoneFence_01_02>
 		<inf_gaf_19_02_StoneFence_01_03>
 			<variant1>
 				<stages>
@@ -7968,7 +7991,7 @@
 					</destructionSound>
 				</effects>
 			</variant1>
-		</inf_gaf_19_02_StoneFence_01_04>		
+		</inf_gaf_19_02_StoneFence_01_04>
 		<inf_gaf_19_02_StoneFence_02>
 			<variant1>
 				<stages>
@@ -8014,7 +8037,7 @@
 					</destructionSound>
 				</effects>
 			</variant1>
-		</inf_gaf_19_02_StoneFence_02_01>		
+		</inf_gaf_19_02_StoneFence_02_01>
 		<inf_gaf_19_02_StoneFence_03>
 			<variant1>
 				<stages>
@@ -32510,6 +32533,32 @@
 				</effects>
 			</variant1>
 		</inf_fuel_mle008_Canisters1_01_hit>
+		<hd_mle_ASJP_007_Searchlight>
+			<variant1>
+				<stages>
+					<base> 4.0 </base>
+				</stages>
+				<effects>
+					<pixie>
+						<startKey> base </startKey>
+						<file> particles/Environment/objects/hd_mle_ASJP_007_Searchlight.eff </file>
+						<force> 1 </force>
+					</pixie>
+					<destructionSound>
+						<startKey> base </startKey>
+						<wwsound> obj_generative </wwsound>
+						<params>
+							<metal_2> 38.000000 </metal_2>
+							<glass> 17.000000 </glass>
+							<debrisAmount> 46.000000 </debrisAmount>
+							<weight> 5140.000000 </weight>
+							<metal_1> 40.000000 </metal_1>
+							<stone_1> 18.000000 </stone_1>
+						</params>
+					</destructionSound>
+				</effects>
+			</variant1>
+		</hd_mle_ASJP_007_Searchlight>
 		<!-- Lifetime-эффекты -->
 		<inf_fuel_mle008_Canisters1_04>
 			<variant1>

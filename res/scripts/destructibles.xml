@@ -13965,7 +13965,7 @@
 		</entry>
 		<entry>
 			<filename> content/Railway/hd_rw_UNI_607_AmericanLocomotive/normal/lod0/hd_rw_UNI_607_AmericanLocomotive_01.model </filename>
-			<health> 10 </health>
+			<health> 35 </health>
 			<decayEffect> inf_rwAM_003_AmericanFreightCar </decayEffect>
 			<effect> inf_rwAM_003_AmericanFreightCar </effect>
 			<effectHP> HP_module0 </effectHP>
@@ -13976,7 +13976,7 @@
 		</entry>
 		<entry>
 			<filename> content/Railway/hd_rw_UNI_607_AmericanLocomotive/normal/lod0/hd_rw_UNI_607_AmericanLocomotive_02.model </filename>
-			<health> 10 </health>
+			<health> 35 </health>
 			<decayEffect> inf_rwAM_003_AmericanFreightCar </decayEffect>
 			<effect> inf_rwAM_003_AmericanFreightCar </effect>
 			<effectHP> HP_module0 </effectHP>
@@ -13987,7 +13987,7 @@
 		</entry>
 		<entry>
 			<filename> content/Railway/hd_rw_UNI_607_AmericanLocomotive/normal/lod0/hd_rw_UNI_607_AmericanLocomotive_03.model </filename>
-			<health> 10 </health>
+			<health> 35 </health>
 			<decayEffect> inf_rwAM_003_AmericanFreightCar </decayEffect>
 			<effect> inf_rwAM_003_AmericanFreightCar </effect>
 			<effectHP> HP_module0 </effectHP>
@@ -18295,8 +18295,8 @@
 			<filename> content/MilitaryEnvironment/hd_mle_ASJP_007_Searchlight/normal/lod0/hd_mle_ASJP_007_Searchlight.model </filename>
 			<health> 10 </health>
 			<decayEffect> none </decayEffect>
-			<effect> inf_env418_OldGMercedes1 </effect>
-			<hitEffect> inf_env418_OldGMercedes1 </hitEffect>
+			<effect> hd_mle_ASJP_007_Searchlight </effect>
+			<hitEffect> hd_mle_ASJP_007_Searchlight </hitEffect>
 			<effectHP> HP_module0 </effectHP>
 			<effectScale> 1.000000 </effectScale>
 			<matName> n_metal0 </matName>
@@ -18371,12 +18371,12 @@
 			<filename> content/Environment/hd_env_UNI_110_KeelBlock/normal/lod0/hd_env_UNI_110_KeelBlock_03.model </filename>
 			<health> 1 </health>
 			<decayEffect> none </decayEffect>
-			<effect> hd_env_AS_005_WoodDryer_end </effect>
+			<effect> hd_env_UNI_110_KeelBlock_03 </effect>
 			<effectHP> HP_module0 </effectHP>
 			<effectScale> 1.000000 </effectScale>
 			<matName> n_wood0 </matName>
 			<lifetimeEffect> none </lifetimeEffect>
-			<hitEffect> hd_env_AS_005_WoodDryer_end_hit </hitEffect>
+			<hitEffect> hd_env_UNI_110_KeelBlock_03 </hitEffect>
 		</entry>
 		<entry>
 			<filename> content/MilitaryEnvironment/hd_mle_SU_004_GazMM/normal/lod0/hd_mle_SU_004_GazMM_01.model </filename>
@@ -18658,6 +18658,72 @@
 			<effect> inf_gaf_19_02_StoneFence_01_04 </effect>
 			<effectHP> HP_module0 </effectHP>
 			<effectScale> 1 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_02.model </filename>
+			<health> 10 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_03.model </filename>
+			<health> 1 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_05.model </filename>
+			<health> 1 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_06.model </filename>
+			<health> 1 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_07.model </filename>
+			<health> 1 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
+			<matName> n_stone0 </matName>
+			<lifetimeEffect> none </lifetimeEffect>
+		</entry>
+		<entry>
+			<filename> content/Environment/hd_env_EU_091_CrashWallPieces/normal/lod0/hd_env_EU_091_CrashWallPieces_08.model </filename>
+			<health> 1 </health>
+			<decayEffect> none </decayEffect>
+			<effect> hd_bld_SU_206_Cellar </effect>
+			<hitEffect> hd_bld_SU_206_Cellar </hitEffect>
+			<effectHP> HP_module0 </effectHP>
+			<effectScale> 1.000000 </effectScale>
 			<matName> n_stone0 </matName>
 			<lifetimeEffect> none </lifetimeEffect>
 		</entry>

@@ -27,6 +27,10 @@
 		<item label="Give next attendance reward" action="$wotPlusController.giveAttendanceRewardDev()" />
 	</item>
 
+	<item label="Prestige system">
+		<item label="Update vehicle points" action="$cvi.intCD; $p.stats.updateVehiclePrestige(cvi.intCD, " input="true" format="%s)" />
+	</item>
+
 	<item label="Set herotank" action="$setHero">
 		<param>('germany:G42_Maus')</param>
 		<param>('japan:J27_O_I_120')</param>
@@ -153,25 +157,10 @@
 		<item label="Init hot keys Change Window Size manager" action="from development.as_tools.change_window_size_manager import g_change_manager as m; m.">
 			<param label="start">start()</param>
 			<param label="stop">stop()</param>
+			<param label="Take screenShot or Ctrl+s">takeScreenShot()</param>
+			<param label="Open screenShot folder or Ctrl+f">openFolder()</param>
 		</item>
-	</item>
-
-	<item label="Frontline">
-			<item label="Frontline Notifications" action="$p.showFrontlineSysMessage">
-				<param label="resetSkillsSuccess">(0)</param>
-				<param label="financeGold">(1)</param>
-				<param label="financeCredits">(2)</param>
-				<param label="resetAllSuccess">(3)</param>
-				<param label="notAvailable">(4)</param>
-				<param label="againAvailable">(5)</param>
-				<param label="sellBlanks">(6)</param>
-				<param label="buyBlanks">(7)</param>
-				<param label="victoryMessage">(8)</param>
-			</item>
-			<item label="Reserves">
-				<item label="unlock reserves" action="$p.unlockFrontlineReserves()"/>
-			</item>
-			<item label="Reset screen shown " action="$p.resetScreenShown" input="true" format="('%s')"/>
+		<item label="Input folder name for screenShot" action="from development.as_tools.change_window_size_manager import g_change_manager as m; m.setFolderName" input="true" format="('%s')"/>
 	</item>
 
 	<item label="UI Logging">
@@ -194,51 +183,56 @@
 		<item label="Show NoVehicles screen" action="from gui.development import showComp7NoVehiclesScreen; showComp7NoVehiclesScreen()"/>
 		<item label="Show Intro screen" action="from gui.development import showComp7IntroScreen; showComp7IntroScreen()"/>
 		<item label="Show What's New screen" action="from gui.development import showComp7WhatsNewScreen; showComp7WhatsNewScreen()"/>
+		<item label="Show Season Statistics screen" action="from gui.development import showComp7SeasonStatisticsScreen; showComp7SeasonStatisticsScreen()"/>
 		<item label="Show Ranks Rewards screen" action="from gui.development import showComp7RanksRewardsScreen; showComp7RanksRewardsScreen">
 			<param label="Any">()</param>
-			<param label="Iron E">('comp7_3_1_ranks_65')</param>
-			<param label="Iron D">('comp7_3_1_ranks_64')</param>
-			<param label="Iron C">('comp7_3_1_ranks_63')</param>
-			<param label="Iron B">('comp7_3_1_ranks_62')</param>
-			<param label="Iron A">('comp7_3_1_ranks_61')</param>
-			<param label="Bronze E">('comp7_3_1_ranks_55')</param>
-			<param label="Bronze D">('comp7_3_1_ranks_54')</param>
-			<param label="Bronze C">('comp7_3_1_ranks_53')</param>
-			<param label="Bronze B">('comp7_3_1_ranks_52')</param>
-			<param label="Bronze A">('comp7_3_1_ranks_51')</param>
-			<param label="Silver E">('comp7_3_1_ranks_45')</param>
-			<param label="Silver D">('comp7_3_1_ranks_44')</param>
-			<param label="Silver C">('comp7_3_1_ranks_43')</param>
-			<param label="Silver B">('comp7_3_1_ranks_42')</param>
-			<param label="Silver A">('comp7_3_1_ranks_41')</param>
-			<param label="Gold E">('comp7_3_1_ranks_35')</param>
-			<param label="Gold D">('comp7_3_1_ranks_34')</param>
-			<param label="Gold C">('comp7_3_1_ranks_33')</param>
-			<param label="Gold B">('comp7_3_1_ranks_32')</param>
-			<param label="Gold A">('comp7_3_1_ranks_31')</param>
-			<param label="Champion A">('comp7_3_1_ranks_21')</param>
-			<param label="Legend A">('comp7_3_1_ranks_11')</param>
+			<param label="Iron E">('comp7_3_2_ranks_65')</param>
+			<param label="Iron D">('comp7_3_2_ranks_64')</param>
+			<param label="Iron C">('comp7_3_2_ranks_63')</param>
+			<param label="Iron B">('comp7_3_2_ranks_62')</param>
+			<param label="Iron A">('comp7_3_2_ranks_61')</param>
+			<param label="Bronze E">('comp7_3_2_ranks_55')</param>
+			<param label="Bronze D">('comp7_3_2_ranks_54')</param>
+			<param label="Bronze C">('comp7_3_2_ranks_53')</param>
+			<param label="Bronze B">('comp7_3_2_ranks_52')</param>
+			<param label="Bronze A">('comp7_3_2_ranks_51')</param>
+			<param label="Silver E">('comp7_3_2_ranks_45')</param>
+			<param label="Silver D">('comp7_3_2_ranks_44')</param>
+			<param label="Silver C">('comp7_3_2_ranks_43')</param>
+			<param label="Silver B">('comp7_3_2_ranks_42')</param>
+			<param label="Silver A">('comp7_3_2_ranks_41')</param>
+			<param label="Gold E">('comp7_3_2_ranks_35')</param>
+			<param label="Gold D">('comp7_3_2_ranks_34')</param>
+			<param label="Gold C">('comp7_3_2_ranks_33')</param>
+			<param label="Gold B">('comp7_3_2_ranks_32')</param>
+			<param label="Gold A">('comp7_3_2_ranks_31')</param>
+			<param label="Champion A">('comp7_3_2_ranks_21')</param>
+			<param label="Legend A">('comp7_3_2_ranks_11')</param>
 		</item>
 		<item label="Show Tokens Rewards screen" action="from gui.development import showComp7TokensRewardsScreen; showComp7TokensRewardsScreen">
 			<param label="Any">()</param>
-			<param label="2">('comp7_3_1_token_rewards_2')</param>
-			<param label="4">('comp7_3_1_token_rewards_4')</param>
-			<param label="6">('comp7_3_1_token_rewards_6')</param>
-			<param label="8">('comp7_3_1_token_rewards_8')</param>
+			<param label="1">('comp7_3_2_token_rewards_1')</param>
+			<param label="3">('comp7_3_2_token_rewards_3')</param>
+			<param label="5">('comp7_3_2_token_rewards_5')</param>
+			<param label="6">('comp7_3_2_token_rewards_6')</param>
 		</item>
 		<item label="Show Qualification Rewards screen" action="from gui.development import showComp7QualificationRewardsScreen; showComp7QualificationRewardsScreen">
-			<param label="Iron">(['comp7_3_1_ranks_65'])</param>
-			<param label="Bronze">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55'])</param>
-			<param label="Silver">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55', 'comp7_3_1_ranks_45'])</param>
-			<param label="Gold">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55', 'comp7_3_1_ranks_45', 'comp7_3_1_ranks_35'])</param>
+			<param label="Iron">(['comp7_3_2_ranks_65'])</param>
+			<param label="Bronze">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55'])</param>
+			<param label="Silver">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55', 'comp7_3_2_ranks_45'])</param>
+			<param label="Gold">(['comp7_3_2_ranks_65', 'comp7_3_2_ranks_55', 'comp7_3_2_ranks_45', 'comp7_3_2_ranks_35'])</param>
 		</item>
 	</item>
 	<item label="Crew">
-			<item label="earn all skills" action="$earnAllSkills"/>
+		<item label="earn all skills" action="$earnAllSkills"/>
+		<item label="Add all unique tankmen" action="$p.inventory.addAllUniqueTankmen()"/>
+		<item label="Empty barracks" action="$p.inventory.emptyBarracks()"/>
 	</item>
 
 	<item label="Game Loading">
 		<item label="Show debug window" action="from gui.development.ui import showGameLoadingDebugView; showGameLoadingDebugView()"/>
 	</item>
+
+	<item label="ReInit battle hints" action="$reInitBattleHintsData"/>
 
 </root>

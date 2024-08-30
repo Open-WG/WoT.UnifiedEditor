@@ -16,6 +16,16 @@ Rectangle {
 
     readonly property int totalTime: 60
     property int timeout: context.remainingTime()
+    property bool isVisible: context.isVisible
+
+    onIsVisibleChanged: {
+        if(isVisible) {
+            root.timeout = context.remainingTime()
+            timer.restart()
+        } else {
+            timer.stop()
+        }
+    }
 
     Column {
         anchors.centerIn: parent
@@ -57,6 +67,7 @@ Rectangle {
     }
 
     Timer {
+        id: timer
         interval: 1000
         running: true
         onTriggered: {

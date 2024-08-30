@@ -1,0 +1,15 @@
+<engine_config.xml xmlns:xmlref="http://bwt/xmlref">
+    <xmlref:merge>
+        <xmlref:content>
+            <xmlref:include href="engine_config.xml"/>
+        </xmlref:content>
+        <xmlref:content>
+			<preferences> preferences_ct.xml </preferences>
+			<cat_config>
+				<isOnline> true </isOnline>
+				<fullDump> false </fullDump>
+				<dxdiag> false </dxdiag>
+			</cat_config>
+        </xmlref:content>
+    </xmlref:merge>
+</engine_config.xml>

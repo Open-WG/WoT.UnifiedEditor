@@ -1,0 +1,459 @@
+<root>
+	<storages>
+		<application>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> metrics_version </name>
+					<type> string </type>
+				</info>
+			</StorageTypeInfo>
+		</application>
+		<active_session>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> mode_name </name>
+					<type> string </type>
+				</info>
+			</StorageTypeInfo>
+		</active_session>
+		<user>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> userid </name>
+					<type> uint64 </type>
+				</info>
+				<info>
+					<name> ue_version </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> svn_revision </name>
+					<type> int64 </type>
+				</info>
+				<info>
+					<name> svn_branch </name>
+					<type> string </type>
+				</info>
+			</StorageTypeInfo>
+		</user>
+		<system>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> window_version </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> cpu_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> cpu_cores_num </name>
+					<type> int </type>
+				</info>
+				<info>
+					<name> cpu_logical_cores_num </name>
+					<type> int </type>
+				</info>
+				<info>
+					<name> cpu_frequency </name>
+					<type> int </type>
+				</info>
+				<info>
+					<name> physical_memory_amount </name>
+					<type> int </type>
+				</info>
+				<info>
+					<name> gpu_memory </name>
+					<type> int </type>
+				</info>
+				<info>
+					<name> cpu_vendor </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> gpu_vendor </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> windows_bitness </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> pc_formfactor </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> gpu_name </name>
+					<type> string </type>
+				</info>
+			</StorageTypeInfo>
+		</system>
+		<fps>
+			<pushType> update </pushType>
+			<commitByChange> false </commitByChange>
+			<commitFrequencyInSeconds> 5 </commitFrequencyInSeconds>
+			<StorageTypeInfo>
+				<info>
+					<name> fps </name>
+					<type> float </type>
+				</info>
+			</StorageTypeInfo>
+		</fps>
+		<logs>
+			<maxCount> 50 </maxCount>
+			<pushType> insert </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> priority </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> message </name>
+					<type> string </type>
+				</info>
+			</StorageTypeInfo>
+		</logs>
+		<crash>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> editor </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> mode </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> asset </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> count </name>
+					<type> int </type>
+				</info>
+			</StorageTypeInfo>
+		</crash>
+		<ue_total_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</ue_total_time>
+		<ue_active_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</ue_active_time>
+		<ue_focus_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</ue_focus_time>
+		<ue_init_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</ue_init_time>
+		<editor_total_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</editor_total_time>
+		<editor_active_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</editor_active_time>
+		<editor_focus_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</editor_focus_time>
+		<editor_init_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</editor_init_time>
+		<mode_total_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> mode_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</mode_total_time>
+		<mode_active_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> mode_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</mode_active_time>
+		<mode_focus_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> mode_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</mode_focus_time>
+		<mode_init_time>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> mode_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</mode_init_time>
+	</storages>
+	<publisher> StatsD </publisher>
+	<publishers>
+		<StatsD>
+			<prefix> WGTools </prefix>
+			<host> carbon-stg.wgtest.net </host>
+			<port> 2004 </port>
+			<keys>
+				<description>
+					<commitByChange> true </commitByChange>
+					<commitFrequencyInSeconds> 0 </commitFrequencyInSeconds>
+					<values>
+						<!-- EDITOR -->
+						<!-- ELI_FR_23 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/logs/logs.priority/logs.message </key>
+						<!-- ELI_FR_2 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/session_total/ue_total_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/session_active/ue_active_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/session_focus/ue_focus_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/initialize/ue_init_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/info/crash_count/crash.count </key>
+						<!-- MODE -->
+						<!-- ELI_FR_3 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/editor_total_time.editor_name/resource/editor_total_time.resource/info/session_total/editor_total_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/editor_active_time.editor_name/resource/editor_active_time.resource/info/session_active/editor_active_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/editor_focus_time.editor_name/resource/editor_focus_time.resource/info/session_focus/editor_focus_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/editor_init_time.editor_name/resource/editor_init_time.resource/info/initialize/editor_init_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/crash.editor/resource/crash.asset/info/crash_count/crash.count </key>
+						<!-- TOOL -->
+						<!-- ELI_FR_4 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/mode_total_time.editor_name/resource/mode_total_time.resource/tools/mode_total_time.mode_name/info/session_total/mode_total_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/mode_active_time.editor_name/resource/mode_active_time.resource/tools/mode_active_time.mode_name/info/session_active/mode_active_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/mode_focus_time.editor_name/resource/mode_focus_time.resource/tools/mode_focus_time.mode_name/info/session_focus/mode_focus_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/mode_init_time.editor_name/resource/mode_init_time.resource/tools/mode_init_time.mode_name/info/initialize/mode_init_time.seconds </key>
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/crash.editor/resource/crash.asset/tools/crash.mode/info/crash_count/crash.count </key>
+						<!-- ELI_FR_22 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/modes/active_session.editor_name/tools/active_session.mode_name/fps/fps.fps </key>
+						<!-- SVN -->
+						<!-- ELI_FR_24 -->
+						<key> users/user.userid/editor/application.name/application.metrics_version/user.svn_branch/svn/revision/user.svn_revision </key>
+						<!-- SYSTEM CPU -->
+						<!-- ELI_FR_19 -->
+						<key> users/user.userid/system/cpu/name/system.cpu_name </key>
+						<!-- ELI_FR_18 -->
+						<key> users/user.userid/system/cpu/vendor/system.cpu_vendor </key>
+						<!-- ELI_FR_20 -->
+						<key> users/user.userid/system/cpu/cores/system.cpu_cores_num </key>
+						<!-- ELI_FR_21 -->
+						<key> users/user.userid/system/cpu/frequency/system.cpu_frequency </key>
+						<!-- SYSTEM - GPU-->
+						<!-- ELI_FR_17 -->
+						<key> users/user.userid/system/gpu/name/system.gpu_name </key>
+						<!-- ELI_FR_16 -->
+						<key> users/user.userid/system/gpu/vendor/system.gpu_vendor </key>
+						<!-- ELI_FR_15 -->
+						<key> users/user.userid/system/gpu/memory/system.gpu_memory </key>
+						<!-- SYSTEM - PC-->
+						<!-- ELI_FR_14 -->
+						<key> users/user.userid/system/pc/memory/system.physical_memory_amount </key>
+						<!-- ELI_FR_13 -->
+						<key> users/user.userid/system/pc/windows/version/system.window_version </key>
+						<!-- ELI_FR_12 -->
+						<key> users/user.userid/system/pc/windows/bitness/system.windows_bitness </key>
+						<!-- ELI_FR_11 -->
+						<key> users/user.userid/system/pc/formfactor/system.pc_formfactor </key>
+					</values>
+				</description>
+			</keys>
+		</StatsD>
+	</publishers>
+</root>

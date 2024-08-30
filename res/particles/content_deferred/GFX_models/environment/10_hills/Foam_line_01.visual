@@ -1,4 +1,4 @@
-<Foam_line_01.visual>
+<root>
 	<node>
 		<identifier> Scene Root </identifier>
 		<transform>
@@ -24,26 +24,21 @@
 					<property> TintlColor
 						<Vector4> 0.992157 0.886275 0.733333 1.000000 </Vector4>
 					</property>
-					<property> diffuseUVSpeedAlphaOffset
-						<Vector4> -0.000000 -0.000000 0.000000 0.000000 </Vector4>
-					</property>
 					<property> distortion_UV_Speed_Amount
-						<Vector4> -0.010000 -0.036000 0.060000 0.070000 </Vector4>
+						<Vector4> -0.080000 0.020000 0.060000 0.120000 </Vector4>
 					</property>
 					<property> lightMultipliers
 						<Vector4> 4.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> selfIllumLight
 						<Vector4> 1.000000 1.000000 1.000000 0.000000 </Vector4>
+						<Vector3> 1.000000 1.000000 1.000000 </Vector3>
 					</property>
 					<property> alphaFadeAmountFresnel
 						<Vector4> 1.000000 4.000000 2.000000 0.150000 </Vector4>
 					</property>
-					<property> softFactor
-						<Float> 1.000000 </Float>
-					</property>
 					<property> doubleSided
-						<Bool> false </Bool>
+						<Bool> true </Bool>
 					</property>
 					<property> enableLighting
 						<Bool> true </Bool>
@@ -51,14 +46,11 @@
 					<property> alphaFreshnelEnable
 						<Bool> true </Bool>
 					</property>
-					<property> alphaAdditiveEnable
-						<Bool> false </Bool>
-					</property>
 					<property> diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Foam_line_01.dds</Texture>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Foam_line_01.dds </Texture>
 					</property>
 					<property> distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke_1.dds</Texture>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_smoke_1.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>
@@ -80,7 +72,7 @@
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
 			<useReferenceNode> false </useReferenceNode>
-			<referenceNodesFile />
+			<referenceNodesFile/>
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
@@ -101,7 +93,7 @@
 			<localHierarchy> false </localHierarchy>
 			<nodeFilter> 0 </nodeFilter>
 			<copyExternalTextures> true </copyExternalTextures>
-			<copyTexturesTo />
+			<copyTexturesTo/>
 		</settings>
 	</metaData>
-</Foam_line_01.visual>
+</root>

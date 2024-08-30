@@ -1,4 +1,4 @@
-<Foam_line_02.visual>
+<root>
 	<node>
 		<identifier> Scene Root </identifier>
 		<transform>
@@ -24,20 +24,15 @@
 					<property> TintlColor
 						<Vector4> 0.992157 0.847059 0.717647 1.000000 </Vector4>
 					</property>
-					<property> diffuseUVSpeedAlphaOffset
-						<Vector4> -0.000000 -0.000000 0.000000 0.000000 </Vector4>
-					</property>
 					<property> distortion_UV_Speed_Amount
-						<Vector4> -0.040000 -0.014000 0.060000 0.120000 </Vector4>
+						<Vector4> -0.080000 -0.014000 0.060000 0.120000 </Vector4>
 					</property>
 					<property> lightMultipliers
 						<Vector4> 3.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> selfIllumLight
 						<Vector4> 1.500000 1.500000 1.500000 0.000000 </Vector4>
-					</property>
-					<property> doubleSided
-						<Bool> false </Bool>
+						<Vector3> 1.500000 1.500000 1.500000 </Vector3>
 					</property>
 					<property> enableLighting
 						<Bool> true </Bool>
@@ -45,14 +40,11 @@
 					<property> alphaFreshnelEnable
 						<Bool> true </Bool>
 					</property>
-					<property> alphaAdditiveEnable
-						<Bool> false </Bool>
-					</property>
 					<property> diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Foam_line_02.dds</Texture>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Foam_line_02.dds </Texture>
 					</property>
 					<property> distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke_1.dds</Texture>
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_smoke_1.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>
@@ -74,7 +66,7 @@
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
 			<useReferenceNode> false </useReferenceNode>
-			<referenceNodesFile />
+			<referenceNodesFile/>
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
@@ -95,7 +87,7 @@
 			<localHierarchy> false </localHierarchy>
 			<nodeFilter> 0 </nodeFilter>
 			<copyExternalTextures> true </copyExternalTextures>
-			<copyTexturesTo />
+			<copyTexturesTo/>
 		</settings>
 	</metaData>
-</Foam_line_02.visual>
+</root>

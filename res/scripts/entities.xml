@@ -48,6 +48,7 @@
 		<BasicMine/>
 		<ApplicationPoint/>
 		<NetworkEntity/>
+		<Comp7Lighting/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -89,6 +90,7 @@
 		<RankedMatchmaker/>
 		<RandomBattleMatchmaker/>
 		<SingletonLock/>
+		<ChannelsManagerGameParamsHandler/>
 		<StrongholdBattleMgr/>
 		<StrongholdUnitMgr/>
 		<StrongholdUnitQueue/>
@@ -108,5 +110,6 @@
 		<Comp7Mgr/>
 		<Comp7UnitMgr/>
 		<WinbackMgr/>
+		<NoviceStage2Mgr/>
 	</ServerOnlyEntities>
 </root>

@@ -48,11 +48,16 @@ Menu {
 	Menu {
 		id: openMenu
 		title: "Open"
-		enabled: openFilmtrackId.valid
+		enabled: openFilmtrackId.valid || openReplayId.valid
 
 		Details.ActionMenuItem {
 			id: openFilmtrackId
 			source: context.action("openFilmtrackId")
+		}
+
+		Details.ActionMenuItem {
+			id: openReplayId
+			source: context.action("openReplayId")
 		}
 	}
 

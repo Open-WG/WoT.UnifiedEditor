@@ -1,0 +1,111 @@
+<root>
+	<params>
+		<param>
+			<name> engine_start_trigger </name>
+			<type> trigger </type>
+		</param>
+		<param>
+			<name> generatorArea </name>
+			<type> bool </type>
+		</param>
+	</params>
+	<node>
+		<name> idle </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz04_T50_51_Waf_3DSt/empty.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> Sleep Node </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> bool </type>
+					<name> generatorArea </name>
+					<checked> true </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -392.000000 148.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> Antenna_On </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz04_T50_51_Waf_3DSt/empty.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> Antenna_close </to>
+			<blendDuration> 1.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+				<condition>
+					<type> bool </type>
+					<name> generatorArea </name>
+					<checked> false </checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -393.000000 -243.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> Sleep Node </name>
+		<type> sleep </type>
+		<time> 1.000000 1.000000 </time>
+		<transition>
+			<to> Antenna_open_seq </to>
+			<blendDuration> 1.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -253.000000 23.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> Antenna_open_seq </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz04_T50_51_Waf_3DSt/Turret_Antenna_open.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> Antenna_On </to>
+			<blendDuration> 4.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -24.000000 -107.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> Antenna_close </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/Cz04_T50_51_Waf_3DSt/Turret_Antenna_close.seq </resource>
+		<isLoop> false </isLoop>
+		<loop> 1 </loop>
+		<transition>
+			<to> idle </to>
+			<blendDuration> 4.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 1.000000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -530.000000 -53.000000 0.000000 </uiPosition>
+	</node>
+</root>

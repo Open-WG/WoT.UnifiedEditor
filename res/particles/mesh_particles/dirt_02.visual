@@ -16,21 +16,21 @@
 			<primitive> indices </primitive>
 			<primitiveGroup> 0
 				<material>
-					<identifier> Material #144 </identifier>
+					<identifier> Material_144 </identifier>
 					<fx> shaders/wg_particles/pbs_mesh_particles.fx </fx>
-					<collisionFlags> 0 </collisionFlags>
 					<materialKind> 0 </materialKind>
+					<collisionFlags> 0 </collisionFlags>
 					<property> diffuseMap
 						<Texture> particles/mesh_particles/tex/stone_am.dds </Texture>
-					</property>
-					<property> pbsMap
-						<Texture> particles/mesh_particles/tex/stone_gmm.dds </Texture>
 					</property>
 					<property> g_lighting_params
 						<Vector4> 1.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> g_meshParticlesZWriteEnable
 						<Bool> true </Bool>
+					</property>
+					<property> pbsMap
+						<Texture> particles/mesh_particles/tex/stone_gmm.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>
@@ -40,6 +40,7 @@
 		<min> -0.090989 -0.032835 -0.104678 </min>
 		<max> 0.090989 0.032835 0.104678 </max>
 	</boundingBox>
+	<customBsp> true </customBsp>
 	<metaData>
 		<settings>
 			<exportAnimation> false </exportAnimation>
@@ -47,7 +48,7 @@
 			<boneCount> 17 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
 			<allowScale> false </allowScale>
-			<bumpMapped> false </bumpMapped>
+			<bumpMapped> true </bumpMapped>
 			<keepExistingMaterials> true </keepExistingMaterials>
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
@@ -56,16 +57,24 @@
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
-			<fixNodeTreeLOD> true </fixNodeTreeLOD>
-			<useLegacyOrientation> false </useLegacyOrientation>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<useLegacyOrientation> true </useLegacyOrientation>
 			<sceneRootAdded> false </sceneRootAdded>
 			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
 			<unitScale> 0.100000 </unitScale>
-			<nodeFilter> 1 </nodeFilter>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 0 </nodeFilter>
 			<copyExternalTextures> false </copyExternalTextures>
 			<copyTexturesTo/>
-			<textureOverwriteOption> 2 </textureOverwriteOption>
-			<debug> false </debug>
 		</settings>
 	</metaData>
 </root>

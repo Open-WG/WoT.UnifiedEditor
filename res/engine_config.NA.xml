@@ -1,0 +1,15 @@
+<engine_config.xml xmlns:xmlref="http://bwt/xmlref">
+    <xmlref:merge>
+        <xmlref:content>
+            <xmlref:include href="engine_config.xml"/>
+        </xmlref:content>
+        <xmlref:content>
+			<cat_config>
+				<isOnline> true </isOnline>
+				<clientUrl> http://cat.wargaming.net </clientUrl>
+				<fullDump> false </fullDump>
+				<dxdiag> false </dxdiag>
+			</cat_config>
+        </xmlref:content>
+    </xmlref:merge>
+</engine_config.xml>

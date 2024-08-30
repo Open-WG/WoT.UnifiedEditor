@@ -3,6 +3,10 @@
 	<sequenceObject>
 		<name> Root </name>
 		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource/>
 		<track>
 			<name> position </name>
@@ -26,6 +30,10 @@
 	<sequenceObject>
 		<name> Dust1 </name>
 		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> particles/Environment/interior/251_br_falling_dust_02.eff </resource>
 		<track>
 			<name> position </name>
@@ -39,7 +47,7 @@
 			</frame>
 		</track>
 		<track>
-			<name> emmision </name>
+			<name> emission </name>
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
@@ -116,6 +124,10 @@
 	<sequenceObject>
 		<name> DEBUG </name>
 		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> content/Interface/CheckPoint/angle_marker.model </resource>
 		<track>
 			<name> position </name>
@@ -125,17 +137,6 @@
 				<value> 0.000000 -0.000229 9.388062 </value>
 				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
 				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
-				<tangentMode> 0 </tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name> rotation </name>
-			<type> quaternion </type>
-			<frame>
-				<startTime> 0.000000 </startTime>
-				<value> 0.000000 1.000000 -0.000000 -0.000000 </value>
-				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
-				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>
 			</frame>
 		</track>
@@ -173,6 +174,10 @@
 	<sequenceObject>
 		<name> Dust2 </name>
 		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> particles/Environment/interior/251_br_falling_dust_02.eff </resource>
 		<track>
 			<name> position </name>
@@ -186,7 +191,7 @@
 			</frame>
 		</track>
 		<track>
-			<name> emmision </name>
+			<name> emission </name>
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
@@ -235,6 +240,10 @@
 	<sequenceObject>
 		<name> Dust3 </name>
 		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> particles/Environment/interior/251_br_falling_dust_02.eff </resource>
 		<track>
 			<name> position </name>
@@ -248,7 +257,7 @@
 			</frame>
 		</track>
 		<track>
-			<name> emmision </name>
+			<name> emission </name>
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
@@ -295,8 +304,12 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name> Dust2 </name>
+		<name> Dust4 </name>
 		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> particles/Environment/interior/251_br_falling_dust_02.eff </resource>
 		<track>
 			<name> position </name>
@@ -310,7 +323,7 @@
 			</frame>
 		</track>
 		<track>
-			<name> emmision </name>
+			<name> emission </name>
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>

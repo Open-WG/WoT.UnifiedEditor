@@ -46,6 +46,9 @@
 	<entity_def>
 		<rule>//ServerOnlyEntities</rule>
 	</entity_def>
+	<arena_def_list>
+		<rule>//map[$CORRECT_SPACES and translate(isDevelopment/text(), 'TRUE ', 'true')='true']</rule>
+	</arena_def_list>
 	<sequence_editor>
 		<rule>//rotationEuler</rule>
 		<rule>//editorOnly</rule>

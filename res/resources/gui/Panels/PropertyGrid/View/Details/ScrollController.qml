@@ -1,5 +1,6 @@
 import QtQuick 2.11
 import QtQml.StateMachine 1.11 as SM
+import WGTools.Utils 1.0
 
 SM.StateMachine {
 	id: machine
@@ -9,7 +10,6 @@ SM.StateMachine {
 
 	readonly property bool inited: flickable != null && model != null
 	property real position: 0
-	property real contentHeight : 0
 
 	initialState: inited ? initializedState : uninitializedState
 	running: true
@@ -30,7 +30,8 @@ SM.StateMachine {
 		SM.State {
 			id: filledState
 			onEntered: {
-				machine.flickable.contentY = machine.contentHeight * machine.position
+				var maxPosition = Utils.clamp(machine.flickable.contentHeight - machine.flickable.height, 0, machine.flickable.contentHeight)
+				machine.flickable.contentY = Utils.clamp(machine.position, 0, maxPosition)
 			}
 
 			SM.SignalTransition {
@@ -42,11 +43,8 @@ SM.StateMachine {
 		SM.State {
 			id: resettingState
 			onEntered: {
-				if (machine.flickable.contentHeight) {
-					machine.contentHeight = machine.flickable.contentHeight
-					machine.position = machine.flickable.contentY / machine.contentHeight
-				} else {
-					machine.position = 0
+				if (machine.position < machine.flickable.contentHeight) {
+					machine.position = machine.flickable.contentY
 				}
 			}
 

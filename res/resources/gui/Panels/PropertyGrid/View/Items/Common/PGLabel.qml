@@ -32,7 +32,7 @@ Item {
 
 		labelStyle: !overridden ? "text-base-label" : "text-base-label-overridden"
 
-		label.visible: !iconMode
+		label.visible: true
 		label.elide: Text.ElideRight
 		label.text: !overridden ? root.text : ("*" + root.text)
 		label.horizontalAlignment: root.horizontalAlignment

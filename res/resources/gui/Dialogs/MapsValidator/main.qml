@@ -11,8 +11,6 @@ import WGTools.DialogsQml 1.0 as Dialogs
 import WGTools.Views.Details 1.0 as Views
 
 Rectangle {
-	id: dlg
-	
 	property var title: "Maps Validator"
 
 	implicitWidth: 800
@@ -26,41 +24,159 @@ Rectangle {
 		width: parent.width
 		orientation: Qt.Horizontal
 
-		ListView {
-			id: mapsList
+		Item {
 			width: 350
-			clip: true
-			model: context.validatableMaps
 
-			delegate: Controls.CheckDelegate {
-				width: parent.width
-				text: model.name
-				checked: model.checked
-				highlighted: ListView.isCurrentItem
-
-				onClicked: {
-					mapsList.currentIndex = index
-					forceActiveFocus(Qt.MouseFocusReason)
+			Rectangle {
+				id: mapListButtons
+				color: _palette.color7
+				implicitHeight: 30
+				anchors {
+					top: parent.top
+					left: parent.left
+					right: parent.right
 				}
 
-				onCheckedChanged: {
-					model.checked = checked
+				Controls.Button {
+					id: selectAllMaps
+					text: "Select All"
+					implicitWidth: ControlsSettings.width
+					anchors.topMargin: 5
+					anchors.top: parent.top
+					anchors.leftMargin: 5
+					anchors.left: parent.left
+					
+					onClicked: context.selectAllMaps(true)
+				}
+
+				Controls.Button {
+					id: deselectAllMaps
+					text: "Deselect All"
+					implicitWidth: ControlsSettings.width
+					anchors.topMargin: 5
+					anchors.top: parent.top
+					anchors.leftMargin: 5
+					anchors.left: selectAllMaps.right
+					
+					onClicked: context.selectAllMaps(false)
 				}
 			}
 
-			Controls.ScrollBar.vertical: Controls.ScrollBar {}
+			ListView {
+				id: mapsList
+				anchors {
+					top: mapListButtons.bottom
+					left: parent.left
+					right: parent.right
+					bottom: parent.bottom
+				}
+				width: 350
+				clip: true
+				model: context.mapListModel
+
+				delegate: Controls.CheckDelegate {
+					width: parent.width
+					text: model.name
+					checked: model.checked
+					highlighted: ListView.isCurrentItem
+
+					onClicked: {
+						mapsList.currentIndex = index
+						forceActiveFocus(Qt.MouseFocusReason)
+					}
+
+					onCheckedChanged: {
+						model.checked = checked
+					}
+				}
+
+				Controls.ScrollBar.vertical: Controls.ScrollBar {}
+			}
 		}
 
-		View.PropertyGrid {
-			id: propertyGrid
+		QtControls.SplitView {
+			orientation: Qt.Vertical
 
-			model: PropertyGridModel {
-				id: pgModel
-				source: context.validateSettings
+			Item {
+				height: 350
+
+				Rectangle {
+					id: scenarioListButtons
+					color: _palette.color7
+					implicitHeight: 30
+					anchors {
+						top: parent.top
+						left: parent.left
+						right: parent.right
+					}
+
+					Controls.Button {
+						id: selectAllScenarios
+						text: "Select All"
+						implicitWidth: ControlsSettings.width
+						anchors.topMargin: 5
+						anchors.top: parent.top
+						anchors.leftMargin: 5
+						anchors.left: parent.left
+						
+						onClicked: context.selectAllScenarios(true)
+					}
+
+					Controls.Button {
+						id: deselectAllScenarios
+						text: "Deselect All"
+						implicitWidth: ControlsSettings.width
+						anchors.topMargin: 5
+						anchors.top: parent.top
+						anchors.leftMargin: 5
+						anchors.left: selectAllScenarios.right
+						
+						onClicked: context.selectAllScenarios(false)
+					}
+				}
+
+				ListView {
+					id: scenarioList
+					clip: true
+					model: context.scenarioListModel
+					anchors {
+						top: scenarioListButtons.bottom
+						left: parent.left
+						right: parent.right
+						bottom: parent.bottom
+					}
+
+					delegate: Controls.CheckDelegate {
+						width: parent.width
+						text: model.name
+						checked: model.checked
+						highlighted: ListView.isCurrentItem
+
+						onClicked: {
+							scenarioList.currentIndex = index
+							forceActiveFocus(Qt.MouseFocusReason)
+						}
+
+						onCheckedChanged: {
+							model.checked = checked
+						}
+					}
+
+					Controls.ScrollBar.vertical: Controls.ScrollBar {}
+				}
 			}
 
-			selection: ItemSelectionModel {
-				model: pgModel
+			View.PropertyGrid {
+				id: propertyGrid
+
+				model: PropertyGridModel {
+					id: validationSettings
+					source: context.validationSettings
+				}
+
+				selection: ItemSelectionModel {
+					model: validationSettings
+				}
 			}
 		}
 	}
@@ -68,48 +184,16 @@ Rectangle {
 	Rectangle {
 		id: footer
 		color: _palette.color7
-		implicitHeight: 55
+		implicitHeight: 30
 		width: parent.width
 		anchors.bottom: parent.bottom
-
-		Rectangle {
-			id: separator
-			color: _palette.color9
-			width: parent.width
-			height: 1
-		}
-
-		Controls.Button {
-			id: selectAll
-			text: "Select All"
-			implicitWidth: ControlsSettings.width
-			anchors.topMargin: 5
-			anchors.top: parent.top
-			anchors.leftMargin: 5
-			anchors.left: parent.left
-			
-			onClicked: context.selectAll(true)
-		}
-
-		Controls.Button {
-			id: deselectAll
-			text: "Deselect All"
-			implicitWidth: ControlsSettings.width
-			anchors.topMargin: 5
-			anchors.top: parent.top
-			anchors.leftMargin: 5
-			anchors.left: selectAll.right
-			
-			onClicked: context.selectAll(false)
-		}
 
 		Controls.Button {
 			id: validate
 			text: "Validate!"
 			implicitWidth: ControlsSettings.width * 2 + 5
-			anchors.topMargin: 5
-			anchors.top: selectAll.bottom
-			anchors.leftMargin: 5
+			anchors.margins: 5
+			anchors.bottom: parent.bottom
 			anchors.left: parent.left
 			
 			onClicked: context.validate()

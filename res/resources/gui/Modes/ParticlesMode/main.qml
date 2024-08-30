@@ -19,7 +19,7 @@ ControlsEx.Panel {
 	layoutHint: "right"
 
 	ColumnLayout {
-		spacing: 20
+		spacing: 7
 		anchors.fill: parent
 
 		PropertyGrid {
@@ -59,6 +59,20 @@ ControlsEx.Panel {
 			sequence: StandardKey.Delete
 			onActivated: {
 				treeView.model.removeItems(treeView.selection.selectedRows())
+			}
+		}
+
+		Rectangle {
+			Layout.fillWidth: true
+			height: 1
+			color: "gray"
+		}
+		
+		Controls.Button {
+			Layout.leftMargin: 4
+			text: "Add Influx Group"
+			onClicked: {
+				treeView.model.addInfluxGroup()
 			}
 		}
 
@@ -118,12 +132,47 @@ ControlsEx.Panel {
 			itemDelegate: Item {
 				implicitWidth: row.implicitWidth
 
+				readonly property var _lodCountColor: _palette.color2
+				readonly property var _emitterLifetimeColor: "#04b25b"
+				readonly property var _particlesLifetimeColor: "#00b6fe"
+				readonly property var _particleCountColor: "#ffae00"
+
+				property bool _modelActive: model && model.active
+				property bool _showEmitterLifetime: model && typeof model.emitterLifetime !== 'undefined'
+				property bool _showLodDistance: model && typeof model.lodDistance !== 'undefined'
+				property bool _showParticleCount: model && typeof model.particleCount !== 'undefined'
+				property bool _showParticleLifetime: model && typeof model.particleLifetime !== 'undefined'
+
+				function formatToolTip(model) {
+					if (model === null) return "";
+					function formatRow(label, value, color) {
+						return "<font color=\"" + _palette.color1 + "\">" + label + ": </font> " +
+							   "<font color=\"" + color + "\">" + value + "</font>"
+					}
+					let rows = []
+					if (typeof model.emitterLifetime !== 'undefined') {
+						rows.push(formatRow("Emitter Lifetime", model.emitterLifetime, _emitterLifetimeColor))
+					}
+					if (typeof model.lodDistance !== 'undefined') {
+						rows.push(formatRow("LOD Distance", model.lodDistance, _lodCountColor))
+					}
+					if (typeof model.particleCount !== 'undefined') {
+						rows.push(formatRow("Particle Count", model.particleCount, _particleCountColor))
+					}
+					if (typeof model.particleLifetime !== 'undefined') {
+						rows.push(formatRow("Particles Lifetime", model.particleLifetime, _particlesLifetimeColor))
+					}
+					return rows.join(" <br/> ")
+				}
+
 				MouseArea {
+					id: itemMouseArea
 					Accessible.ignored: true
 					width: parent.width
 					height: parent.height
 					acceptedButtons: Qt.RightButton
 					propagateComposedEvents: true
+					hoverEnabled: true
 					onClicked: {
 						if (!treeView.selection.isSelected(styleData.index)) {
 							// Force selection of the item before invoking the menu.
@@ -136,7 +185,11 @@ ControlsEx.Panel {
 
 				RowLayout {
 					id: row
-					anchors.fill: parent
+
+					anchors.bottom: parent.bottom
+					anchors.top: parent.top
+					
+					spacing: 2
 
 					Controls.CheckBox {
 						id: checkBox
@@ -155,17 +208,87 @@ ControlsEx.Panel {
 						}
 					}
 
-					Misc.IconLabel {
-						id: iconLabel
-						spacing: 4
-						label.text: styleData.value
-						label.font.bold: model && model.emphasized
-						label.color: model && model.active
-							? _palette.color1
-							: _palette.color3
-						icon.source: model && model.decoration ? "image://gui/" + model.decoration : ""
+					Image {
+						fillMode: Image.PreserveAspectFit
+						sourceSize.width: width
+						sourceSize.height: height
+						source: model && model.decoration ? "image://gui/" + model.decoration : ""
+					}
 
+					Misc.Text {
+						visible: _showEmitterLifetime
+						text: _showEmitterLifetime ? model.emitterLifetime : ""
+						color: _modelActive ? _emitterLifetimeColor : _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showEmitterLifetime
+						text: "|"
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showLodDistance
+						text: _showLodDistance ? model.lodDistance : ""
+						color: _modelActive ? _lodCountColor : _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showLodDistance
+						text: "|"
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showParticleCount
+						text: _showParticleCount ? model.particleCount : ""
+						color: _modelActive ? _particleCountColor : _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showParticleCount
+						text: "|"
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showParticleLifetime
+						text: _showParticleLifetime ? model.particleLifetime : ""
+						color: _modelActive ? _particlesLifetimeColor : _palette.color3
+					}
+
+					Misc.Text {
+						visible: _showParticleLifetime
+						text: "|"
+						color: _palette.color3
+					}
+
+					Misc.Text {
+						text: styleData.value
+						font.bold: model && model.emphasized
+						color: _modelActive ? _palette.color1 : _palette.color3
+					}
+
+					Item {
 						Layout.fillWidth: true
+					}
+
+					Controls.Button {
+						id: minusButton
+						icon.source: "image://gui/icon-remove"
+						visible: model && model.removable
+						onClicked: {
+							treeView.model.removeInfluxGroup(styleData.index)
+						}
+					}
+				}
+
+				Controls.ToolTip {
+					visible: itemMouseArea.containsMouse && text !== ""
+					delay: 500
+					text: formatToolTip(model)
+					background: Rectangle {
+						color: _palette.color5
 					}
 				}
 

@@ -1,0 +1,20 @@
+<scripts_config.xml xmlns:xmlref="http://bwt/xmlref">
+	<xmlref:merge>
+		<xmlref:content>
+			<xmlref:include href="scripts_config.xml"/>
+		</xmlref:content>
+		<xmlref:content>
+			<login>
+				<host>
+					<name>WOT Sandbox1</name>
+					<short_name>SB1</short_name>
+					<url>login-sandbox.p1.worldoftanks.eu:20014</url>
+					<url_token>login2-sandbox.p1.worldoftanks.eu:20014</url_token>
+					<public_key_path>loginapp_wot.pubkey</public_key_path>
+					<periphery_id> 0 </periphery_id>
+				</host>
+			</login>
+			<csisUrl></csisUrl>
+		</xmlref:content>
+	</xmlref:merge>
+</scripts_config.xml>

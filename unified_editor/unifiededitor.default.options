@@ -133,6 +133,8 @@
 		<blendsBuildInterval>	100	</blendsBuildInterval>
 	</terrain2>
 	<settings>
+		<resolutions>	1024*768;1152*864;1280*1024;1366*768;1400*1050;1440*1080;1600*900;1600*1024;1600*1200;1920*1080;1920*1200;1920*1440;2048*1536;2560*1440;2560*1600;3840*2160;	</resolutions>
+		<centeringViewport>	false	</centeringViewport>
 		<background>	1	</background>
 		<distance>	20	</distance>
 		<centreModel>	false	</centreModel>
@@ -412,6 +414,12 @@
 				</assetFileName>
 				<assetFileExtesion> group </assetFileExtesion>
 			</Group>
+			<StateMachine>
+				<factoryName> class dnd::itemcreatorsequence </factoryName>
+				<assetFilePath/>
+				<assetFileName/>
+				<assetFileExtesion> ssm </assetFileExtesion>
+			</StateMachine>
 		</Filter>
 	</DragAndDrop>
 	<isStandalone>true</isStandalone>
@@ -497,6 +505,64 @@
 	<visualScriptEditor>
 		<connection> false </connection>
 	</visualScriptEditor>
+	<createMenu>
+		<items> create_road;create_null_model;create_spot_light;create_omni_light;create_null_effect; </items>
+		<create_road>
+			<id> create_road </id>
+			<description> Road </description>
+			<icon> system/debug_ui/item_icons/16x16/roads </icon>
+			<defaultShortcut>
+			</defaultShortcut>
+			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
+			<name> Create Road </name>
+			<resource> resources/road/road.xml </resource>
+			<isEnabled> true </isEnabled>
+		</create_road>
+		<create_null_model>
+			<id> create_null_model </id>
+			<description> Null Model </description>
+			<icon> icon_model </icon>
+			<defaultShortcut>
+			</defaultShortcut>
+			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
+			<name> Create Null Model </name>
+			<resource> content/environment/env_null_model/null_model.model </resource>
+			<isEnabled> true </isEnabled>
+		</create_null_model>
+		<create_spot_light>
+			<id> create_spot_light </id>
+			<description> Spot Light </description>
+			<icon> system/debug_ui/item_icons/16x16/Spotlight </icon>
+			<defaultShortcut>
+			</defaultShortcut>
+			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
+			<name> Create Spot Light </name>
+			<resource> helpers/lights/spot.xml </resource>
+			<isEnabled> true </isEnabled>
+		</create_spot_light>
+		<create_omni_light>
+			<id> create_omni_light </id>
+			<description> Omni Light </description>
+			<icon> system/debug_ui/item_icons/16x16/Omni </icon>
+			<defaultShortcut>
+			</defaultShortcut>
+			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
+			<name> Create Omni Light </name>
+			<resource> helpers/lights/omni.xml </resource>
+			<isEnabled> true </isEnabled>
+		</create_omni_light>
+		<create_null_effect>
+			<id> create_null_effect </id>
+			<description> Null Effect </description>
+			<icon> system/debug_ui/item_icons/16x16/Particle </icon>
+			<defaultShortcut>
+			</defaultShortcut>
+			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
+			<name> Create Null Effect </name>
+			<resource> particles/null.eff </resource>
+			<isEnabled> true </isEnabled>
+		</create_null_effect>
+	</createMenu>
 	<recent>
 		<path0>spaces/hangar_v3/space.settings</path0>
 	</recent>

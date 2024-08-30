@@ -1,0 +1,83 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> mt_screen </identifier>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<materialKind> 0 </materialKind>
+					<collisionFlags> 0 </collisionFlags>
+					<property> diffuseMap
+						<Texture> particles/Tank/customization/Ch48_BZ_75_BXI_3DSt/tx_shredder_screen.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_fire_2.dds </Texture>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 6.000000 0.100000 0.100000 0.000000 </Vector4>
+					</property>
+					<property> softFactor
+						<Float> 0.000000 </Float>
+					</property>
+					<property> TintlColor
+						<Vector4> 1.000000 1.000000 1.000000 1.000000 </Vector4>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.093655 0.693471 -0.087583 </min>
+		<max> 0.092508 0.697746 0.088171 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 41 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> false </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> false </copyExternalTextures>
+			<copyTexturesTo> D:\TNT\GIP\game\res\wot\content\Buildings\hd_bld_EU_101_VHouse_01 </copyTexturesTo>
+		</settings>
+	</metaData>
+</root>

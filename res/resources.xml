@@ -264,6 +264,7 @@
 			<module> client.cgf_components.on_click_components </module>
 			<module> client.cgf_components.arena_camera_manager </module>
 			<module> client.cgf_components.hangar_camera_manager </module>
+			<module> client.gui.hangar_cameras.hangar_camera_flyby </module>
 			<module> client.cgf_components.hangar_rules </module>
 			<module> client.points_of_interest.registrars </module>
 			<module> client.vehicle_systems.components.debris_crashed_tracks </module>
@@ -284,6 +285,7 @@
 			<module> cell.cgf_cell.shooting_obstacle </module>
 			<module> cell.cgf_cell.cgf_vehicle </module>
 			<module> cell.cgf_cell.cgf_loggers </module>
+			<module> editor.cgf_editor.entity_follower </module>
 		</script>
 
 		<!-- Test components
@@ -340,8 +342,8 @@
 			<path> content/CGFPrefabs/Onboarding/14_plane_crash.prefab </path>
 			<path> content/CGFPrefabs/Onboarding/14_09a_Planes_out_crash.prefab </path>
 			<path> content/CGFPrefabs/Onboarding/108_walls_ruins.prefab </path>
-			
-			<path> content/TestPrefabs/1003_cgf_test/TestStateSwitcher.prefab </path>		
-		</prefabs> 
+			<path> particles/Tank/rocket_accelerator/Ch54_BZ_72_1_Rocket.prefab </path>
+			<path> particles/Tank/rocket_accelerator/Cz35_T56_G_Rocket.prefab </path>
+		</prefabs>
 	</cgf>
 </resources.xml>

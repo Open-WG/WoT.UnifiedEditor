@@ -3,7 +3,7 @@
   <rule pattern=".*/(\.bwthumbs)/.*$">
     <noConversion>true</noConversion>
   </rule>
-  <rule pattern="vehicles/[^/]+/[^/]+/collision/.*$">
+  <rule pattern=".*vehicles/[^/]+/[^/]+/collision/.*$">
     <noConversion>true</noConversion>
   </rule>
   <rule pattern=".*(asset_rules\.xml)$" continueMatching="true">
@@ -371,32 +371,5 @@
   <ruleDirectory>resources/screenshots</ruleDirectory>
   <ruleDirectory>resources/scripts</ruleDirectory>
   <ruleDirectory>resources/ual</ruleDirectory>
-  <!-- extensions path -->
-  <ruleDirectory>event_platform/gui</ruleDirectory>
-  <ruleDirectory>event_platform/text</ruleDirectory>
-  <ruleDirectory>example_ext/gui</ruleDirectory>
-  <ruleDirectory>example_ext/text</ruleDirectory>
-  <ruleDirectory>example_ext/scripts/item_defs/vehicles</ruleDirectory>
-  <ruleDirectory>example_ext/system/debug_ui</ruleDirectory>
-  <ruleDirectory>battle_royale/gui</ruleDirectory>
-  <ruleDirectory>battle_royale/text</ruleDirectory>
-  <ruleDirectory>fun_random/gui</ruleDirectory>
-  <ruleDirectory>fun_random/text</ruleDirectory>
-  <ruleDirectory>battle_modifiers/gui</ruleDirectory>
-  <ruleDirectory>battle_modifiers/text</ruleDirectory>
-  <ruleDirectory>frontline/gui</ruleDirectory>
-  <ruleDirectory>frontline/text</ruleDirectory>
-  <ruleDirectory>content_exclude/gui</ruleDirectory>
-  <ruleDirectory>content_exclude/text</ruleDirectory>
-  <ruleDirectory>prime_gaming_content/gui</ruleDirectory>
-  <ruleDirectory>prime_gaming_content/text</ruleDirectory>
-  <ruleDirectory>event_lootboxes/gui</ruleDirectory>
-  <ruleDirectory>event_lootboxes/text</ruleDirectory>
-  <ruleDirectory>battle_royale_progression/gui</ruleDirectory>
-  <ruleDirectory>battle_royale_progression/text</ruleDirectory>
-  <ruleDirectory>story_mode/gui</ruleDirectory>
-  <ruleDirectory>story_mode/text</ruleDirectory>
-  <ruleDirectory>story_mode/system/debug_ui</ruleDirectory>
-  <ruleDirectory>story_mode/scripts/item_defs/vehicles</ruleDirectory>
 </root>
 

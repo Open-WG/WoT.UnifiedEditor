@@ -2343,6 +2343,13 @@
 				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"/>
 			</selector>
 		</template>
+		<template name="4WheeledTrailSideSoft">
+			<selector type="union">
+				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"/>
+				<selector type="template" name="WheelEffectsoft" parameters="_Node:_Node2;_Wheel:_W2"/>
+				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"/>
+			</selector>
+		</template>
 		<template name="6WheeledTrailSide">
 			<selector type="union">
 				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"/>
@@ -2381,6 +2388,28 @@
 					</selector>
 					<!-- Left side -->
 					<selector type="template" name="4WheeledTrailSide" parameters="_Node1:_LNode1;
+						_Node2:_LNode2;
+						_W1:_LW1;
+						_W2:_LW2;
+						_matkind:matkindL
+						">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="4WheeledEffectsSoftSet">
+			<selector type="union">
+				<selector type="union">
+					<!-- Right side -->
+					<selector type="template" name="4WheeledTrailSideSoft" parameters="_Node1:_RNode1;
+						_Node2:_RNode2;
+						_W1:_RW1;
+						_W2:_RW2;
+						_matkind:matkindR
+						">
+					</selector>
+					<!-- Left side -->
+					<selector type="template" name="4WheeledTrailSideSoft" parameters="_Node1:_LNode1;
 						_Node2:_LNode2;
 						_W1:_LW1;
 						_W2:_LW2;
@@ -2494,6 +2523,44 @@
 					</selector>
 					<selector key="-1" type="union"/>
 					<selector key="1" type="template" name="4WheeledEffectsSet" parameters="_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_02_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_02_Rear;
+						_RW1:WD_R1;
+						_RW2:WD_R0;
+						_LW1:WD_L1;
+						_LW2:WD_L0">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters="_RNode:HP_Wheel_R_02_Front;
+						_RW:WD_R0;
+						_LNode:HP_Wheel_L_02_Front;
+						_LW:WD_L0"> 
+					</selector>
+					<selector key="-1" type="union"/>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters="_RNode:HP_Wheel_R_01_Rear;
+						_RW:WD_R1;
+						_LNode:HP_Wheel_L_01_Rear;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="4WheelsEffectSoft">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="4WheeledEffectsSoftSet" parameters="_RNode1:HP_Wheel_R_02_Front;
+						_RNode2:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_02_Front;
+						_LNode2:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:WD_R0;
+						_LW1:WD_L1;
+						_LW2:WD_L0">
+					</selector>
+					<selector key="-1" type="union"/>
+					<selector key="1" type="template" name="4WheeledEffectsSoftSet" parameters="_RNode1:HP_Wheel_R_01_Rear;
 						_RNode2:HP_Wheel_R_02_Rear;
 						_LNode1:HP_Wheel_L_01_Rear;
 						_LNode2:HP_Wheel_L_02_Rear;
@@ -2756,6 +2823,11 @@
 				<selector type="template" name="4WheelsEffect" constantsGroup="medium"/>
 			</selector>
 		</medium4WheelsMud>
+		<medium4WheelsMudSoft>
+			<selector type="union">
+				<selector type="template" name="4WheelsEffectSoft" constantsGroup="medium"/>
+			</selector>
+		</medium4WheelsMudSoft>
 		<medium6WheelsMud>
 			<selector type="union">
 				<selector type="template" name="6WheelsEffect" constantsGroup="medium"/>

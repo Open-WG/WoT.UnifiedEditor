@@ -12,11 +12,11 @@ ListModel {
 	ListElement {display: "Textures"; filter: "$asset_type=texture"}
 	ListElement {display: "Tiles"; filter: "#Terrain_tiles"}
 	ListElement {display: "Lighting"; filter: "#SH-Grid #Lights #EnvironmentLights"}
-	ListElement {display: "Effects"; filter: "#Effects"}
+	ListElement {display: "Effects"; filter: "$asset_type=particle"}
 	ListElement {display: "Water"; filter: "#Water"}
 	ListElement {display: "Outland"; filter: "#Outland"}
 	ListElement {display: "Decor"; filter: "#Decor"}
-	ListElement {display: "Sequences"; filter: ".seq"}
+	ListElement {display: "Sequences"; filter: "$asset_type=sequence"}
 	ListElement {display: "SSM"; filter: "$asset_type=ssm"}
 	ListElement {display: "FBX"; filter: "$asset_type=fbx"}
 	ListElement {display: "Sound"; filter: "#Sound"}

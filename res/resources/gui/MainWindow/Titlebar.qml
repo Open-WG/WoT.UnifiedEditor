@@ -25,7 +25,7 @@ ColumnLayout {
 		Item {
 			height: parent.height
 			anchors.left: parent.left
-			anchors.right: realmButton.left
+			anchors.right: prefixText.left
 
 			DropdownButton {
 				id: menuButton
@@ -102,6 +102,15 @@ ColumnLayout {
 
 				property int hitTest: 2 // HTCAPTION
 			}
+		}
+
+		Misc.Text {
+			id: prefixText
+			text: context.currentPrefix
+			anchors.right: realmButton.left
+			anchors.verticalCenter: parent.verticalCenter
+			anchors.rightMargin: 10
+			font.bold: true
 		}
 		
 		DropdownButton {

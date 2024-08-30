@@ -14,7 +14,7 @@ Rectangle {
 	property int minimumHeight: 0
 
 	Binding on minimumHeight {
-		value: propertyGridView.implicitHeight + footer.height
+		value: propertyGridView.implicitHeight + footer.height > context.maxHeight ? context.maxHeight : propertyGridView.implicitHeight + footer.height
 		when: populatedState.active
 	}
 
