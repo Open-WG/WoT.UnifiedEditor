@@ -788,24 +788,25 @@ customise the behaviour of the BigWorld Client Engine. -->
 	</logging>
 	<webBrowser>
 		<processExe> cef_browser_process </processExe>
-		<userAgent> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 WOWS/1.0 </userAgent>
 		<cachePath> profile/cef_cache </cachePath>
 		<resourcePath> cef </resourcePath>
-		<hardwareAcceleration> false </hardwareAcceleration>
-		<!-- Disable CEF HW Acceleration. More info [WWSD-57732] -->
+		<hardwareAcceleration> true </hardwareAcceleration>
+		<!-- Enable CEF HW Acceleration with using shared texture feature for d3d11 devices -->
 		<logFile> cef.log </logFile>
-		<logVerbosity> warning </logVerbosity>
+		<logVerbosity> disable </logVerbosity>
 		<!-- "verbose", "info", "warning", "error", "disable" -->
 		<enableFlash> true </enableFlash>
-		<ignoreCertErrors>false</ignoreCertErrors>
+		<ignoreCertErrors> false </ignoreCertErrors>
 		<!-- Should SSL certificate errors be ignored (dev build only) -->
 		<debugPort> -1 </debugPort>
 		<!-- -1 is disabled, must be between 1024 and 65535 -->
-		<maxFrameRate> 0 </maxFrameRate>
+		<maxFrameRate> 60 </maxFrameRate>
 		<!-- 0 is default -->
-		<acceptLangList/>
+		<acceptLangList>
+		</acceptLangList>
 		<!-- Comma delimited ordered, list of language codes without any whitespace used in "Accept-Language" HTTP header -->
-		<locale/>
+		<locale>
+		</locale>
 		<!-- locale used by the browser, uses same language codes as acceptLangList -->
 		<autoPlayVideo> true </autoPlayVideo>
 		<!-- Enable video auto play. Works only in new CEF versions(61+) -->

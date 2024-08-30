@@ -47,7 +47,7 @@ MouseArea {
 	QtObject {
 		id: p
 
-		readonly property T.Slider control: controller.parent
+		readonly property Control control: controller.parent
 		readonly property bool istransient: control && (buttonPressed || keyPressed || wheelAccrued)
 
 		property bool buttonPressed: false

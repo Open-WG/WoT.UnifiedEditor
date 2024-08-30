@@ -71,6 +71,10 @@ Menu {
 	}
 
 	Details.MenuItem {
+		wgtAction: context.actions.menu.clone_prefabs
+	}
+
+	Details.MenuItem {
 		wgtAction: context.actions.menu.copy_absolute_paths
 	}
 

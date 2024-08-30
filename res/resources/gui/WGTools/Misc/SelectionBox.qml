@@ -5,6 +5,7 @@ MouseArea {
 
 	signal selectionFinished(real x, real y, real width, real height,
 		var modifiers)
+	signal selectionFailed()
 
 	acceptedButtons: Qt.LeftButton
 	propagateComposedEvents: true
@@ -73,6 +74,8 @@ MouseArea {
 				selectionFinished(box.x, box.y, box.width, box.height,
 					__modifiers)
 			}
+			else
+				selectionFailed()
 
 			box.width = 0
 			box.height = 0

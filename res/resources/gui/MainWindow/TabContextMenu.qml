@@ -78,11 +78,11 @@ Menu {
 	}
 
 	Details.ActionMenuItem {
-		source: context.model.action("save_selection_as_prefab_action", index)
+		source: context.model.action("save_selection_as_group_action")
 	}
 
 	Details.ActionMenuItem {
-		source: context.model.action("restore_prefab_position_action", index)
+		source: context.model.action("restore_group_position_action")
 	}
 
 	Details.ActionMenuItem {

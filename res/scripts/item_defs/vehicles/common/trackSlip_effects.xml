@@ -2219,7 +2219,7 @@
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
-					<selector key="0.4" type="matkind" variable="_matkind">
+					<selector key="0.74" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
@@ -2249,7 +2249,7 @@
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
-					<selector key="0.4" type="matkind" variable="_matkind">
+					<selector key="0.72" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
@@ -2279,7 +2279,7 @@
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
-					<selector key="0.4" type="matkind" variable="_matkind">
+					<selector key="0.76" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>

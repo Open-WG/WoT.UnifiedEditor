@@ -33,12 +33,13 @@ Loader {
 		anchors.fill: parent
 		z: 200
 
+		property bool selectionHandled: false
+
 		function handleSelection(mouse) {
 			var thisModelIndex = sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(loader._index))
-			var ctrlPressed = mouse.modifiers & Qt.ControlModifier
 			var flag = ItemSelectionModel.ClearAndSelect
 
-			if (ctrlPressed) {
+			if (mouse.modifiers & Qt.ControlModifier) {
 				flag = ItemSelectionModel.Toggle
 
 				//check type of the current selection
@@ -52,11 +53,8 @@ Loader {
 				}
 			}
 
-			if (!selectionModel.isSelected(thisModelIndex) || ctrlPressed)
-			{
-				selectionModel.select(thisModelIndex, flag)
-				selectionModel.setCurrentIndex(thisModelIndex, ItemSelectionModel.NoUpdate)
-			}
+			selectionModel.select(thisModelIndex, flag)
+			selectionModel.setCurrentIndex(thisModelIndex, ItemSelectionModel.NoUpdate)
 		}
 
 		onWheel: {
@@ -65,17 +63,23 @@ Loader {
 
 		onPressed: {
 			forceActiveFocus()
+			selectionHandled = false
 
-			if (mouse.button == Qt.RightButton) {
-				var thisModelIndex = sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(loader._index))
-				if (!selectionModel.isSelected(thisModelIndex)) {
-					handleSelection(mouse)
-				}
+			var currentIndex = sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(loader._index))
+			if (!selectionModel.isSelected(currentIndex)) {
+				handleSelection(mouse)
+				selectionHandled = true
+			}
 
-				if (itemData.label != "Root") {
-					itemPopup.popupEx()
-				}
-			} else {
+			if (mouse.button == Qt.RightButton && itemData.label != "Root") {
+				itemPopup.popupEx()
+			}
+
+			mouse.accepted = false
+		}
+
+		onClicked: {
+			if (!selectionHandled) {
 				handleSelection(mouse)
 			}
 

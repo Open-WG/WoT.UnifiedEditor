@@ -90,7 +90,7 @@ Instantiator {
 					checkable: model.action.checkable
 					checked: model.action.checked
 					enabled: model.action.enabled
-					onTriggered: model.action.execute()
+					onTriggered: Qt.callLater(function(){model.action.execute()})
 				}
 			}
 

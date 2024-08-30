@@ -15,7 +15,6 @@ FactoryManager {
 	Factories.ColorGradientFactory {}
 	Factories.ImageFactory {}
 	Factories.ImagePathFactory {}		// TODO: improve performance
-	Factories.TagFactory {}
 	Factories.PathFactory {}
 	Factories.TextAreaFactory {}
 	Factories.TextFieldFactory {}
@@ -35,5 +34,7 @@ FactoryManager {
 	Factories.LodBarFactory {}
 	Factories.NormalizedPlaybackFactory {}
 	Factories.FogMinimapFactory {}
+	Factories.DragItemFactory {}
+	Factories.TagFactory {}
 	Factories.FallbackFactory {}
 }

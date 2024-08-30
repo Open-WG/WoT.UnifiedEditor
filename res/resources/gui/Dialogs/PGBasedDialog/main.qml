@@ -11,7 +11,7 @@ Rectangle {
 	color: _palette.color8
 
 	Accessible.name: qmlView.title
-	property int minimumHeight: -1
+	property int minimumHeight: 0
 
 	Binding on minimumHeight {
 		value: propertyGridView.implicitHeight + footer.height

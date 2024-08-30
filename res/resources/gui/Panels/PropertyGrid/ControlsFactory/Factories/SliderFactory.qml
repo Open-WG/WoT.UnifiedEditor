@@ -6,7 +6,7 @@ ItemFactory {
 	choiceCriteria:
 	{
 		'propertyTypes': Constants.numericTypes,
-		'allMeta': ["!Meta::NoSlider", "Meta::NoSpinBox", {'anyMeta': ["Meta::MinMax", "Meta::MinMaxEditBounds"]}]
+		'allMeta': ["!Meta::NoSlider", "Meta::NoSpinBox", {'anyMeta': ["Meta::MinMax"]}]
 	}
 
 	component: Qt.createComponent("../Delegates/SliderDelegate.qml")

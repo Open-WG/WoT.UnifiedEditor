@@ -13,22 +13,39 @@ import "Delegates" as Delegates
 import "Settings.js" as LocalSettings
 
 Views.TreeView {
-	id: view
+	id: treeView
 
 	property var sceneOutlineContext: context
-	property bool useExtraColumns: (sceneOutlineContext.columnsModel != undefined && sceneOutlineContext.columnsModel != null)
+	property bool useExtraColumns: (sceneOutlineContext != undefined && sceneOutlineContext.columnsModel != undefined && sceneOutlineContext.columnsModel != null)
+	property bool sortable: false
 
 	headerVisible: useExtraColumns
-	sortIndicatorVisible: true
+	sortIndicatorVisible: sortable
 	accesibleNameRole: nameColumn.role
 	__wheelAreaScrollSpeed: ControlsSettings.mouseWheelScrollVelocity2
 
+	property var columnsSortingObject: sceneOutlineContext.columnsSortingObject
+
+	rowDelegate: ViewDetails.DraggableRowDelegate {
+		view: treeView
+		reorderEnabled: true
+	}
+
+	onModelChanged: {
+		sortable = (model && typeof model.sortByRole === "function")
+		updateSortIndicators()
+	}
+
 	onSortIndicatorColumnChanged: {
-		sort()
+		if (sortable) {
+			sort()
+		}
 	}
 
 	onSortIndicatorOrderChanged: {
-		sort()
+		if (sortable) {
+			sort()
+		}
 	}
 
 	Shortcut {
@@ -39,7 +56,7 @@ Views.TreeView {
 	}
 
 	function sort() {
-		var roleName = view.getColumn(sortIndicatorColumn).role
+		var roleName = treeView.getColumn(sortIndicatorColumn).role
 		model.sortByRole(roleName, sortIndicatorOrder)
 	}
 
@@ -49,7 +66,7 @@ Views.TreeView {
 		}
 		var role = model.sortRole
 		var order = model.sortOrder
-		for (var i = 0; i < view.columnCount; i++) {
+		for (var i = 0; i < treeView.columnCount; i++) {
 			var column = getColumn(i)
 			if (column != null && model.roleByName(column.role) == role) {
 				sortIndicatorColumn = i
@@ -57,10 +74,6 @@ Views.TreeView {
 				return
 			}
 		}
-	}
-
-	onModelChanged: {
-	 	updateSortIndicators()
 	}
 
 	Connections {
@@ -74,7 +87,7 @@ Views.TreeView {
 	style: ViewStyles.TreeViewStyle {
 		branchDelegate: ViewDetails.BranchDelegate {}
 		rowDelegate: Delegates.RowDelegate {
-			current: styleData.row == view.__currentRow
+			active: styleData.row == treeView.__currentRow
 			onHoverChanged: sceneOutlineContext.syncHover(index)
 			onHoverReset: sceneOutlineContext.resetHover()
 		}
@@ -95,13 +108,13 @@ Views.TreeView {
 	}
 
 	Component.onCompleted: {
-		sceneOutlineContext.onShowItem.connect(function(index){
-			view.expandAllParents(index)
-			view.positionViewAtIndex(index, ListView.Center)
+		sceneOutlineContext.onShowItem.connect(function(index) {
+			treeView.expandAllParents(index)
+			treeView.positionViewAtIndex(index, ListView.Center)
 		})
 
-		sceneOutlineContext.expandAllRequested.connect(function() { view.expandAll() })
-		sceneOutlineContext.collapseAllRequested.connect(function() { view.collapseAll() })
+		sceneOutlineContext.expandAllRequested.connect(function() { treeView.expandAll() })
+		sceneOutlineContext.collapseAllRequested.connect(function() { treeView.collapseAll() })
 	}
 
 	onHeaderMenuRequested: {
@@ -109,22 +122,22 @@ Views.TreeView {
 	}
 
 	Keys.onPressed: {
-		if (view.selection != undefined && (event.key == Qt.Key_Return || event.key == Qt.Key_Enter)) {
-			sceneOutlineContext.onDoubleClicked(view.selection.currentIndex);
+		if (treeView.selection != undefined && (event.key == Qt.Key_Return || event.key == Qt.Key_Enter)) {
+			sceneOutlineContext.onDoubleClicked(treeView.selection.currentIndex)
 		}
 	}
 
 	onDoubleClicked: {
 		if (index.valid) {
-			view.toggleExpanded(index);
-			sceneOutlineContext.onDoubleClicked(index);
+			treeView.toggleExpanded(index);
+			sceneOutlineContext.onDoubleClicked(index)
 		}
 	}
 
 	Connections {
-		target: view.selection
+		target: treeView.selection
 		onSelectionChanged: {
-			var indexes = view.selection.selectedIndexes
+			var indexes = treeView.selection.selectedIndexes
 			if (indexes.length == 1) {
 				lookAtIndex(indexes[0])
 			}
@@ -133,10 +146,10 @@ Views.TreeView {
 
 	 function lookAtIndex(index) {
 		if (index.valid) {
-			view.expandAllParents(index)
-			view.positionViewAtIndex(index, ListView.Contain)
+			treeView.expandAllParents(index)
+			treeView.positionViewAtIndex(index, ListView.Visible)
 		} else {
-			view.positionViewAtBeginning()
+			treeView.positionViewAtBeginning()
 		}
 	}
 
@@ -148,13 +161,13 @@ Views.TreeView {
 		role: "display"
 
 		delegate: Delegates.BaseDelegate {
-		 	ActiveFocus.when: view.activeFocus && styleData.index == view.currentIndex
+		 	ActiveFocus.when: treeView.activeFocus && styleData.row != -1 && styleData.index == treeView.currentIndex
 
 			// clickomatic --------------------------------
 			Accessible.name: accesibleNameGenerator.value
 			Clickomatic.TableAccesibleNameGenerator {
 				id: accesibleNameGenerator
-				role: view.accesibleNameRole
+				role: treeView.accesibleNameRole
 				modelIndex: styleData.index
 			}
 			// --------------------------------------------
@@ -183,7 +196,7 @@ Views.TreeView {
 				interval: 0
 				onTriggered: {
 					if (model != undefined && model.expanded) {
-						view.expand(styleData.index)
+						treeView.expand(styleData.index)
 					}
 				}
 			}
@@ -198,21 +211,25 @@ Views.TreeView {
 
 	Component {
 		id: mouseAreaComponent
+
 		MouseArea {
 			Accessible.ignored: true
 			width: parent.width
 			height: parent.height
 			acceptedButtons: Qt.RightButton
 			propagateComposedEvents: true
+			onPressed: view.forceActiveFocus()
 			onReleased: {
 				// select
-				if (view.selection) {
-					var pos = mapToItem(view, mouseX, mouseY)
-					let index = view.indexAt(pos.x, pos.y)
+				if (treeView.selection) {
+					var pos = mapToItem(treeView, mouseX, mouseY)
+					let index = treeView.indexAt(pos.x, pos.y)
 					if (index.valid) {
-						if (!view.selection.isSelected(index)) {
-							view.selection.select(index, ItemSelectionModel.SelectCurrent)
+						if (!treeView.selection.isSelected(index)) {
+							treeView.selection.select(index, ItemSelectionModel.SelectCurrent)
 						}
+						view.selection.setCurrentIndex(index, ItemSelectionModel.NoUpdate)
+
 						sceneOutlineContext.requestMenu()
 					}
 				}
@@ -305,25 +322,25 @@ Views.TreeView {
 			? sceneOutlineContext.selectedColumnsModel
 			: null
 
-		onObjectAdded: {
+		onObjectAdded : {
 			var obj = columnComponent.createObject(null, {
 				"columnModel": object.columnModel,
-				"title": object.columnModel.fullName,
-				"role": object.columnModel.columnString,
-				"width": object.columnModel.columnWidth})
+				"title" : object.columnModel.fullName,
+				"role" : object.columnModel.columnString,
+				"width" : object.columnModel.columnWidth})
 
 			object.source = obj
-			view.insertColumn(index + 1, obj)
+			treeView.insertColumn(index + 1, obj)
 			updateColumnsTimer.start()
 		}
 		onObjectRemoved: {
-			view.removeColumn(index + 1)
+			treeView.removeColumn(index + 1)
 			updateColumnsTimer.start()
 		}
 
-		delegate: QtObject {
-			property QtObject source: null
-			property var columnModel: model
+		delegate : QtObject {
+			property QtObject source : null
+			property var columnModel : model
 		}
 
 		function findObject(columnName) {
@@ -333,7 +350,6 @@ Views.TreeView {
 					return object
 				}
 			}
-
 			return null
 		}
 	}
@@ -352,11 +368,11 @@ Views.TreeView {
 	// Columns and instantiator model can move items, to need to sync them after structure has been changed
 	Timer {
 		id: updateColumnsTimer
-		interval: 0
-		onTriggered: {
-			view.getColumn(0).__index = 0
-			for (var i = 1; i < view.columnCount; i++) {
-				var c = view.getColumn(i)
+		interval : 0
+		onTriggered : {
+			treeView.getColumn(0).__index = 0
+			for (var i = 1; i < treeView.columnCount; i++) {
+				var c = treeView.getColumn(i)
 				var o = extraColumnsInstantiator.objectAt(i - 1)
 				if (c != null && o != null) {
 					c.__index = i

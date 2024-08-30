@@ -63,8 +63,8 @@ OpacityMask  {
 		verticalRadius: height
 
 		gradient: Gradient {
-			GradientStop { position: 0.0; color: "#60FFFFFF" }
-			GradientStop { position: 1.0; color: "#00000000" }
+			GradientStop { position: 0.0; color: "#80000000" }
+			GradientStop { position: 1.0; color: "#10000000" }
 		}
 
 		anchors.fill: parent

@@ -1,0 +1,15 @@
+<root>
+    <Init>
+        <preInitGroup> <!-- this group is called just before Init -->
+            <before> true </before>
+        </preInitGroup>
+    </Init>
+    <Simulation>
+        <NetworkFilter>
+            <before> true </before>
+        </NetworkFilter>
+        <Sensor/>
+    </Simulation>
+    <PostHierarchy/>
+    <Finalize/>
+</root>

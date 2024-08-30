@@ -74,13 +74,13 @@ Control {
 		}
 
 		Repeater {
-			model: control.filterData.length ? 1 : 0
+			model: (control.filterData != null && control.filterData.length) ? 1 : 0
 
 			Controls2.MenuSeparator { }
 		}
 
 		Repeater {
-			model: control.filterData.length ? 1 : 0
+			model: (control.filterData != null && control.filterData.length) ? 1 : 0
 
 			Controls2.MenuHeader {
 				text: "Filter by:"

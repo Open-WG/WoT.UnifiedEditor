@@ -257,6 +257,7 @@
 			<file> shaders/std_effects/PBS_glass.fx </file>
 			<file> shaders/std_effects/PBS_tank.fx </file>
 			<file> shaders/std_effects/PBS_tank_crash.fx </file>
+			<file> shaders/std_effects/PBS_tank_preview.fx </file>
 			<file> shaders/std_effects/PBS_tank_skinned.fx </file>
 			<file> shaders/std_effects/PBS_tank_skinned_ao.fx </file>
 			<file> shaders/std_effects/PBS_tank_tracks.fx </file>
@@ -269,10 +270,16 @@
 			<Creator> class draganddrop::itemcreatorroad </Creator>
 			<Creator> class draganddrop::itemcreatordecal </Creator>
 			<Creator> class draganddrop::itemcreatortank </Creator>
-			<Creator> class draganddrop::itemcreatorprefab </Creator>
+			<Creator> class draganddrop::itemcreatorgroup </Creator>
 			<Creator> class draganddrop::itemcreatorsequence </Creator>
 		</Factory>
 		<Filter>
+			<Wire>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
+				<assetFilePath> / </assetFilePath>
+				<assetFileName/>
+				<assetFileExtesion> wire </assetFileExtesion>
+			</Wire>
 			<Water>
 				<factoryName> class draganddrop::itemcreatordefault </factoryName>
 				<assetFilePath> helpers/misc/ </assetFilePath>
@@ -358,7 +365,7 @@
 				<assetFileExtesion> xml </assetFileExtesion>
 			</Tank>
 			<Prefab>
-				<factoryName> class draganddrop::itemcreatorprefab </factoryName>
+				<factoryName> class draganddrop::itemcreatordefault </factoryName>
 				<assetFilePath/>
 				<assetFileName/>
 				<assetFileExtesion> prefab </assetFileExtesion>
@@ -381,6 +388,14 @@
 				<assetFileName/>
 				<assetFileExtesion> seq </assetFileExtesion>
 			</AnimationSequence>
+			<Group>
+				<factoryName> class draganddrop::itemcreatorgroup </factoryName>
+				<assetFilePath>
+				</assetFilePath>
+				<assetFileName>
+				</assetFileName>
+				<assetFileExtesion> group </assetFileExtesion>
+			</Group>
 		</Filter>
 	</DragAndDrop>
 	<isStandalone>true</isStandalone>

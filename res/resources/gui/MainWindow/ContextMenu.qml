@@ -18,7 +18,9 @@ Menu {
 	}
 
 	onClosed: {
-		context.onClosed()
+		// executing action using callLater and for preventing unregisterAllActions 
+		// in CreateGroupActionBase::exec should use callLater here too
+		Qt.callLater(function(){context.onClosed()})
 	}
 
 	onAboutToShow: {

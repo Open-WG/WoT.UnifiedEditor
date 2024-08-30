@@ -6,7 +6,7 @@ ItemFactory {
 	choiceCriteria:
 	{
 		'propertyTypes': Constants.numericTypes,
-		'anyMeta': [{'allMeta': ["Meta::NoSlider", "!Meta::NoSpinBox"]}, {'allMeta': ["!Meta::MinMax", "!Meta::MinMaxEditBounds", "!Meta::NoSlider", "!Meta::NoSpinBox"]}]
+		'anyMeta': [{'allMeta': ["Meta::NoSlider", "!Meta::NoSpinBox"]}, {'allMeta': ["!Meta::MinMax", "!Meta::NoSlider", "!Meta::NoSpinBox"]}]
 	}
 
 	component: Qt.createComponent("../Delegates/SpinBoxDelegate.qml")

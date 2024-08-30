@@ -83,6 +83,16 @@
 		<converter>XMLConverter</converter>
 		<converterParams>-stripRuleSets strip_metadata</converterParams>
 	</rule>
+	<rule pattern=".*(\.ika)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
+	<rule pattern=".*(\.ikb)$">
+		<root>true</root>
+		<converter>XMLConverter</converter>
+		<converterParams>-stripRuleSets strip_metadata</converterParams>
+	</rule>
 	<rule pattern=".*(\.seq)$">
 		<root>true</root>
 		<converter>XMLConverter</converter>
@@ -246,8 +256,8 @@
 	</rule>
 
 	<!--destination rules-->
-	<rule pattern=".*(\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm))$" continueMatching="true">
-		<sourcePattern>\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm)$</sourcePattern>
+	<rule pattern=".*(\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm|ika|ikb))$" continueMatching="true">
+		<sourcePattern>\.(xml|mfm|def|font|ppchain|texformat|texanim|gui|model|seq|ssm|ika|ikb)$</sourcePattern>
 		<sourceFormat>.\1</sourceFormat>
 	</rule>
 	<rule pattern="^system/data/texture_detail_levels.xml$">
@@ -352,7 +362,6 @@
 	<ruleDirectory>text</ruleDirectory>
 	<ruleDirectory>text_en</ruleDirectory>
 	<ruleDirectory>vehicles</ruleDirectory>
-	<ruleDirectory>vibroeffects</ruleDirectory>
 	<ruleDirectory>system/maps</ruleDirectory>
 	<ruleDirectory>system/debug_ui</ruleDirectory>
 	<!-- tools resources -->

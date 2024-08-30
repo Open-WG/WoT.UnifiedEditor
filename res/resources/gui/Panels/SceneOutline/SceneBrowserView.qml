@@ -17,6 +17,7 @@ Rectangle {
 	readonly property real minimumWidth: 250
 
 	property var sceneBrowserContext: context
+	property alias view: sceneOutlineView
 
 	implicitWidth: 400
 	implicitHeight: 400
@@ -32,11 +33,11 @@ Rectangle {
 			id: header
 
 			readonly property alias viewContext: root.sceneBrowserContext
-			readonly property QtObject panelContext: sceneBrowserContext.headerPanel
+			readonly property QtObject panelContext: sceneBrowserContext != undefined && sceneBrowserContext.headerPanel
 				? sceneBrowserContext.headerPanel.context
 				: null
 
-			sourceComponent: sceneBrowserContext.headerPanel
+			sourceComponent: (sceneBrowserContext != null && sceneBrowserContext.headerPanel)
 				? sceneBrowserContext.headerPanel.component
 				: undefined
 
@@ -54,18 +55,19 @@ Rectangle {
 			// works with TokenFilterProxyModel (model.filterTokens)
 			// and with FilterProxyModel with predicates (model.predicate.text)
 			SearchField {
-
 				id: filter
+
 				Layout.fillWidth: true
 				Layout.rightMargin: Settings.defaultMargin
 				Layout.bottomMargin: Settings.defaultMargin
 
-				property var model: root.sceneBrowserContext.model
-				readonly property bool isPredicateProxy: sceneBrowserContext.filterPredicate != null
-				visible: isPredicateProxy || model.filterTokens != undefined
+				property var model: root.sceneBrowserContext ? root.sceneBrowserContext.model : null
+				readonly property bool isPredicateProxy: sceneBrowserContext != undefined && sceneBrowserContext.filterPredicate != null
+				readonly property bool selfVisible: isPredicateProxy || (model != null && model.filterTokens != undefined)
+				visible: selfVisible
 
 				function filterText() {
-					if (!visible) return ""
+					if (!selfVisible) return ""
 					return isPredicateProxy
 						? sceneBrowserContext.filterPredicate.text
 						: model.filterTokens
@@ -90,17 +92,14 @@ Rectangle {
 				id: comboBox
 				Accessible.name: "Grouping"
 
-				property bool active: sceneBrowserContext.selectableData != undefined
+				property bool active: sceneBrowserContext != undefined && sceneBrowserContext.selectableData != undefined
 
+				selectableData: active ? sceneBrowserContext.selectableData : null
+				filterData: sceneBrowserContext != undefined ? sceneBrowserContext.filterData : null
 				visible: active
+
 				Layout.leftMargin: Settings.defaultMargin
 				Layout.bottomMargin: Settings.defaultMargin
-
-				selectableData: active
-					? sceneBrowserContext.selectableData
-					: null
-
-				filterData: sceneBrowserContext.filterData
 			}
 		}
 
@@ -108,8 +107,8 @@ Rectangle {
 		SceneOutlineView {
 			id: sceneOutlineView
 			sceneOutlineContext: sceneBrowserContext
-			model: sceneBrowserContext.model
-			selection: sceneBrowserContext.selectionModel
+			model: sceneBrowserContext ? sceneBrowserContext.model : null
+			selection: sceneBrowserContext ? sceneBrowserContext.selectionModel : null
 			selectionMode: SelectionMode.ExtendedSelection
 			focus: true
 
@@ -132,11 +131,11 @@ Rectangle {
 			id: footer
 
 			readonly property alias viewContext: root.sceneBrowserContext
-			readonly property QtObject panelContext: sceneBrowserContext.footerPanel
+			readonly property QtObject panelContext: sceneBrowserContext && sceneBrowserContext.footerPanel
 				? sceneBrowserContext.footerPanel.context
 				: null
 
-			sourceComponent: sceneBrowserContext.footerPanel
+			sourceComponent: sceneBrowserContext && sceneBrowserContext.footerPanel
 				? sceneBrowserContext.footerPanel.component
 				: undefined
 

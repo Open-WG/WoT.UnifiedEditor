@@ -184,7 +184,7 @@ Item {
 		for (var i=0; i<childrenRepeater.count; ++i) {
 			var delegateItem = childrenRepeater.itemAt(i)
 			if (delegateItem && delegateItem.item) {
-				if (delegateItem.isGroup()) {
+				if (typeof delegateItem.item["getLabelsImplicitWidth"] === "function") {
 					var group = delegateItem.item
 					result = Math.max(result, group.getLabelsImplicitWidth())
 				} else {
