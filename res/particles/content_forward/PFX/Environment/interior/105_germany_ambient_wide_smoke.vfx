@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -141,7 +141,7 @@
 				<time> 0.000000 </time>
 				<value_RGBA> 192.000000 195.000000 211.000000 0.000000 </value_RGBA>
 				<time> 0.238000 </time>
-				<value_RGBA> 185.000000 191.000000 203.000000 0.607843 </value_RGBA>
+				<value_RGBA> 185.000000 191.000000 203.000000 0.298039 </value_RGBA>
 				<time> 1.000000 </time>
 				<value_RGBA> 173.000000 183.000000 195.000000 0.000000 </value_RGBA>
 			</tl_Color_key>

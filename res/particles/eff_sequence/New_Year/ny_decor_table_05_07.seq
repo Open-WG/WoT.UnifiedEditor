@@ -1,0 +1,270 @@
+<root>
+	<duration> 0.083333 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_1 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.393469 1.689045 -0.218613 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_2 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.450729 1.697948 1.805664 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_3 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.446516 1.683389 3.594009 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_4 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.050000 </startTime>
+				<value> -0.450047 1.671749 2.826416 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_5 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.083333 </startTime>
+				<value> -0.220497 1.687706 -0.197796 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_6 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.514008 1.700145 -1.570880 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> steam_cup_7 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_steam_cup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.419485 1.693310 -1.148831 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> mixing_substance_01 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_mixing_substance_01.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.143020 2.251540 -1.056819 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> mixing_substance_02 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_mixing_substance_01.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.226467 2.223345 -3.456511 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> mixing_substance_03 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_mixing_substance_01.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.164464 2.160245 3.139648 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glitter </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_glitter.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.179396 1.707225 2.185313 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.382683 0.000000 0.923880 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 45.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> table_stars </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_stars.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000001 1.715678 -0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> bubbles_01 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_bubbles.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.165574 1.757347 -2.382520 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> bubbles_02 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_decor_table_bubbles.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.058058 1.764661 1.055507 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

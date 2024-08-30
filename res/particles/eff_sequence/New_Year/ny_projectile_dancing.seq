@@ -1,0 +1,215 @@
+<root>
+	<duration> 20.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Light_stream1 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/New_Year/volume_decor_lights_g4_rotate_blue_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 175.000000 0.000000 0.000000 </value>
+				<inTangent> 4.225352 0.000000 0.000000 </inTangent>
+				<outTangent> 4.225352 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.733334 </startTime>
+				<value> 195.000000 0.000000 0.000000 </value>
+				<inTangent> 0.213942 0.000000 -0.949367 </inTangent>
+				<outTangent> 0.213942 0.000000 -0.949367 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> 175.000000 0.000000 -10.000000 </value>
+				<inTangent> -2.866476 0.000000 0.986117 </inTangent>
+				<outTangent> -2.866476 0.000000 0.986117 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.166667 </startTime>
+				<value> 165.000000 0.000000 10.000000 </value>
+				<inTangent> 0.066740 0.000000 0.901002 </inTangent>
+				<outTangent> 0.066740 0.000000 0.901002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 20.000000 </startTime>
+				<value> 175.000000 0.000000 0.000000 </value>
+				<inTangent> 2.068965 -0.000000 -2.068965 </inTangent>
+				<outTangent> 2.068965 -0.000000 -2.068965 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 10.000000 50.000000 10.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Light_stream2 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/New_Year/volume_decor_lights_g4_rotate_blue_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 9.520943 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 165.000000 0.000000 10.000000 </value>
+				<inTangent> 0.012069 0.000000 -3.387266 </inTangent>
+				<outTangent> 0.012069 0.000000 -3.387266 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.833333 </startTime>
+				<value> 165.058334 0.000000 -6.371786 </value>
+				<inTangent> 0.974379 0.000000 -0.274139 </inTangent>
+				<outTangent> 0.974379 0.000000 -0.274139 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.966667 </startTime>
+				<value> 175.000000 0.000000 8.201692 </value>
+				<inTangent> 0.896523 0.000000 0.859168 </inTangent>
+				<outTangent> 0.896523 0.000000 0.859168 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.100000 </startTime>
+				<value> 174.262634 0.000000 2.449003 </value>
+				<inTangent> -1.016988 0.000000 0.210183 </inTangent>
+				<outTangent> -1.016988 0.000000 0.210183 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 20.000000 </startTime>
+				<value> 165.000000 0.000000 10.000000 </value>
+				<inTangent> -1.890334 -0.000000 1.541020 </inTangent>
+				<outTangent> -1.890334 -0.000000 1.541020 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 5.000000 40.000000 5.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Light_stream3 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/New_Year/volume_decor_lights_g4_rotate_blue_2.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -7.935982 0.000000 -3.298706 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 166.519104 0.000000 5.043748 </value>
+				<inTangent> 0.557398 0.000000 -1.378827 </inTangent>
+				<outTangent> 0.557398 0.000000 -1.378827 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.800000 </startTime>
+				<value> 169.752014 0.000000 -2.953451 </value>
+				<inTangent> -0.422482 0.000000 0.292239 </inTangent>
+				<outTangent> -0.422482 0.000000 0.292239 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.833334 </startTime>
+				<value> 165.498184 0.000000 3.001910 </value>
+				<inTangent> -0.809460 0.000000 1.368364 </inTangent>
+				<outTangent> -0.809460 0.000000 1.368364 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 14.333334 </startTime>
+				<value> 164.307114 0.000000 7.255739 </value>
+				<inTangent> 0.088042 0.000000 0.190381 </inTangent>
+				<outTangent> 0.088042 0.000000 0.190381 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 19.966667 </startTime>
+				<value> 166.518997 0.000000 5.043750 </value>
+				<inTangent> 0.392642 -0.000000 -0.392661 </inTangent>
+				<outTangent> 0.392642 -0.000000 -0.392661 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 2.000000 40.000000 2.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

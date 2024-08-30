@@ -1,0 +1,94 @@
+<root>
+	<duration> 2.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_wall1 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/ny_snowwall.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.448015 -2.036337 10.887334 </value>
+				<inTangent> 1.684046 1.392889 1.985611 </inTangent>
+				<outTangent> 4.693122 4.116538 -10.913566 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.866667 </startTime>
+				<value> 4.515388 1.531330 1.428909 </value>
+				<inTangent> 4.693122 4.116538 -10.913566 </inTangent>
+				<outTangent> -0.586843 3.381289 -8.237900 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 3.850300 5.363456 -7.907376 </value>
+				<inTangent> -0.586843 3.381289 -8.237900 </inTangent>
+				<outTangent> 5.217530 3.343930 -1.780978 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.200000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_wall_2 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/ny_snowwall.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.991369 -1.721965 -9.456322 </value>
+				<inTangent> -7.348434 0.957485 5.734062 </inTangent>
+				<outTangent> 3.761174 3.403321 9.371354 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.866667 </startTime>
+				<value> 4.251054 1.227580 -1.334480 </value>
+				<inTangent> 3.761174 3.403321 9.371354 </inTangent>
+				<outTangent> -0.698695 3.296426 9.887856 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 3.459200 4.963528 9.871755 </value>
+				<inTangent> -0.698695 3.296426 9.887856 </inTangent>
+				<outTangent> -6.273733 8.280866 -2.504414 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.200000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,799 @@
+<root>
+	<duration> 16.789539 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car1 </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_01.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> -149.308212 -16.849037 -21.726057 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> -149.308212 -16.849037 -21.726057 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> 1.786553 -0.000013 -1.092343 </outTangent>
+				<tangentMode> 66305 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.216667 </startTime>
+				<value> -102.161263 -16.849197 -62.417603 </value>
+				<inTangent> 3.861192 -0.000013 -3.332514 </inTangent>
+				<outTangent> 5.238631 -0.000001 -3.737186 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> -0.000000 0.898719 0.000000 0.438525 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> -0.000000 0.898719 0.000000 0.438525 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.006195 </startTime>
+				<value> -0.000000 0.898719 0.000000 0.438525 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> -0.000027 127.980392 -0.000038 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> -0.000027 127.980392 -0.000038 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.006195 </startTime>
+				<value> -0.000027 127.980392 -0.000038 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.833333 </startTime>
+				<duration> 8.183334 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car1_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 0.833333 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 8.883334 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 9.283326 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 10.239538 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train_smoke </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/h30_train_smoke.eff </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.783333 </startTime>
+				<duration> 15.416668 </duration>
+				<value> train1_car1|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 256 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.966667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 0.434783 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.233333 </startTime>
+				<value> 0.115942 </value>
+				<inTangent> 0.434783 </inTangent>
+				<outTangent> -0.015156 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.883334 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.015156 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.266667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car2 </name>
+		<type> model </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_02.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.789539 </duration>
+				<value> train1_car1|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.232079 -0.000002 -10.955393 </value>
+				<inTangent> -0.000002 0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000002 0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -0.016226 0.000000 0.999868 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000976 -0.000000 0.000019 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> 0.000000 -0.004048 -0.000000 0.999992 </value>
+				<inTangent> 0.000000 0.000976 -0.000000 0.000005 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000014 -1.859394 0.000010 </value>
+				<inTangent> 0.000001 0.111828 -0.000002 </inTangent>
+				<outTangent> 0.000001 0.111828 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> 0.000028 -0.463860 -0.000010 </value>
+				<inTangent> 0.000001 0.111828 -0.000002 </inTangent>
+				<outTangent> 0.000001 0.111828 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<duration> 9.233334 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car2_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 10.433326 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 13.422863 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car3 </name>
+		<type> model </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_03.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.789539 </duration>
+				<value> train1_car2|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.162712 -0.000001 -8.056519 </value>
+				<inTangent> 0.000000 0.000000 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000000 -0.012879 -0.000000 0.999917 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.001409 -0.000000 0.000019 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000000 0.004705 -0.000000 0.999989 </value>
+				<inTangent> 0.000000 0.001409 -0.000000 -0.000010 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000015 -1.475889 -0.000007 </value>
+				<inTangent> 0.000000 0.161475 -0.000002 </inTangent>
+				<outTangent> 0.000000 0.161475 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000009 0.539212 -0.000031 </value>
+				<inTangent> 0.000000 0.161475 -0.000002 </inTangent>
+				<outTangent> 0.000000 0.161475 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.166667 </startTime>
+				<duration> 10.383333 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car3_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 1.166667 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 11.333340 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 11.733334 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 14.422867 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car4 </name>
+		<type> model </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_05.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.789539 </duration>
+				<value> train1_car3|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.069977 -0.000003 -9.908945 </value>
+				<inTangent> 0.018660 -0.000001 -2.642385 </inTangent>
+				<outTangent> 0.018660 -0.000001 -2.642385 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -0.017603 -0.000000 0.999845 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000000 0.001973 0.000000 0.000038 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000000 0.007023 0.000000 0.999975 </value>
+				<inTangent> -0.000000 0.001973 0.000000 -0.000014 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -2.017252 -0.000000 </value>
+				<inTangent> -0.000000 0.226138 0.000000 </inTangent>
+				<outTangent> -0.000000 0.226138 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000001 0.804804 0.000003 </value>
+				<inTangent> -0.000000 0.226138 0.000000 </inTangent>
+				<outTangent> -0.000000 0.226138 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.333333 </startTime>
+				<duration> 11.150001 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car5_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 1.333333 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 12.216674 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 12.616668 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 15.739534 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car5 </name>
+		<type> model </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_04.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.789539 </duration>
+				<value> train1_car4|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.118370 -0.000002 -8.711555 </value>
+				<inTangent> 0.000001 -0.000000 0.000001 </inTangent>
+				<outTangent> 0.000001 -0.000000 0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000000 -0.014345 -0.000000 0.999897 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000000 0.000607 -0.000000 0.000005 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000000 -0.006768 -0.000000 0.999977 </value>
+				<inTangent> -0.000000 0.000607 -0.000000 0.000005 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000019 -1.643926 -0.000005 </value>
+				<inTangent> -0.000000 0.069586 -0.000002 </inTangent>
+				<outTangent> -0.000000 0.069586 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000022 -0.775540 -0.000026 </value>
+				<inTangent> -0.000000 0.069586 -0.000002 </inTangent>
+				<outTangent> -0.000000 0.069586 -0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<duration> 13.433334 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car4_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 14.650001 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 15.049994 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 15.889538 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train1_car6 </name>
+		<type> model </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> content/Hangars/h_newyear/customization/Illumination/MegaIllumination/normal/lod0/NY21_MegaIllumination_06.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.789539 </duration>
+				<value> train1_car5|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.090889 -0.000002 -8.085741 </value>
+				<inTangent> 0.000001 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000001 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -0.014013 0.000000 0.999902 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000000 0.001247 -0.000000 0.000014 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000000 0.001547 -0.000000 0.999999 </value>
+				<inTangent> -0.000000 0.001247 -0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -1.605789 0.000000 </value>
+				<inTangent> -0.000001 0.142879 -0.000001 </inTangent>
+				<outTangent> -0.000001 0.142879 -0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.479342 </startTime>
+				<value> -0.000012 0.177244 -0.000018 </value>
+				<inTangent> -0.000001 0.142879 -0.000001 </inTangent>
+				<outTangent> -0.000001 0.142879 -0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 1.666667 </startTime>
+				<duration> 14.116667 </duration>
+				<value> particles/eff_sequence/New_Year/ny_train_car6_effects.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 1.666667 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 4.006203 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 15.450003 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 15.850000 </startTime>
+				<value> false </value>
+			</frame>
+			<frame>
+				<startTime> 16.789536 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> train_appear </name>
+		<type> particle </type>
+		<enabledInEditor> false </enabledInEditor>
+		<resource> particles/Environment/hangar/ny_snowwall.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -142.544647 -15.000000 -27.075359 </value>
+				<inTangent> -21.525908 0.000000 16.714056 </inTangent>
+				<outTangent> -21.525908 0.000000 16.714056 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.016667 </startTime>
+				<value> -164.429321 -15.000000 -10.082733 </value>
+				<inTangent> -22.151335 0.000000 15.077135 </inTangent>
+				<outTangent> -22.151335 0.000000 15.077135 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.200000 </startTime>
+				<value> -191.381821 -15.000000 5.821518 </value>
+				<inTangent> -12.003784 -0.000060 5.748009 </inTangent>
+				<outTangent> -12.003784 -0.000060 5.748009 </outTangent>
+				<tangentMode> 66307 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.333333 </startTime>
+				<value> -174.770691 -15.000000 -3.274658 </value>
+				<inTangent> 20.397274 0.000000 -13.724877 </inTangent>
+				<outTangent> 20.397274 0.000000 -13.724877 </outTangent>
+				<tangentMode> 3 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> -144.276749 -15.000000 -25.935658 </value>
+				<inTangent> 26.137669 -0.000000 -19.423717 </inTangent>
+				<outTangent> 26.137669 -0.000000 -19.423717 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 8.571428 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.316667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 7.500000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.583333 </startTime>
+				<value> 2.000000 </value>
+				<inTangent> 7.500000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.016666 </startTime>
+				<value> 2.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -11.999977 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.183333 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -11.999977 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.150002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 1 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Sound Object 0 </name>
+		<type> sound </type>
+		<enabledInEditor> true </enabledInEditor>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 15.983335 </duration>
+				<value> train1_car1|root </value>
+			</frame>
+		</track>
+		<track>
+			<name> Sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 16.000000 </duration>
+				<sequenceSound> hangar_newyear_ambient_train_appear </sequenceSound>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

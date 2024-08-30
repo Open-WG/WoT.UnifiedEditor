@@ -2126,9 +2126,24 @@
 			<wwsound> ambient_trees_green_bush_few_foliage_01 </wwsound>
 		</model>
 		<model>
-			<modelName> vegetation/Broadleaves/Maple/Maple_33m.srt </modelName>
-			<offset> 0.000000 25.000000 0.000000 </offset>
-			<wwsound> ambient_trees_green_comb_big_02 </wwsound>
+			<modelName> vegetation/Broadleaves/Maple_Autumn/Maple_Autumn_24m.srt </modelName>
+			<offset> 0.000000 20.000000 0.000000 </offset>
+			<wwsound> ambient_trees_without_foliage_tree_big_01 </wwsound>
+		</model>
+		<model>
+			<modelName> vegetation/Broadleaves/Shrubs/Bush_Wild_Dry_Frost/Bush_Wild_Dry_Frost_5m_Big.srt </modelName>
+			<offset> 0.000000 1.000000 0.000000 </offset>
+			<wwsound> ambient_bush_yellow_dry_small_01 </wwsound>
+		</model>
+		<model>
+			<modelName> vegetation/Broadleaves/Shrubs/Bush_Wild_Autumn_Frost/Bush_Wild_Autumn_Frost_7m.srt </modelName>
+			<offset> 0.000000 1.000000 0.000000 </offset>
+			<wwsound> ambient_bush_yellow_dry_big_01 </wwsound>
+		</model>
+		<model>
+			<modelName> vegetation/Broadleaves/DryTree_Frost_Light/DryTree_Frost_Light_Bush_var1.srt </modelName>
+			<offset> 0.000000 0.000000 0.000000 </offset>
+			<wwsound> ambient_bush_yellow_dry_small_01 </wwsound>
 		</model>
 	</lightSounds>
 	<birds>

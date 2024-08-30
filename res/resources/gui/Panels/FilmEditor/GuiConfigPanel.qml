@@ -7,7 +7,7 @@ import WGTools.ControlsEx 1.0 as ControlsEx
 
 ControlsEx.Panel {
 	property var title: "Filmmaker GUI Configuration"
-	property var layoutHint: "right"
+	property var layoutHint: "left"
 	color: _palette.color8
 
 	implicitWidth: 400

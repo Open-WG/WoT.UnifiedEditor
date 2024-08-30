@@ -1,0 +1,129 @@
+<root>
+	<duration> 1.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Smoke_exhaust </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/Tank/customization/GB83_FV4005_3DSt_MD_21_XXII/Smoke_exhaust.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.444931 2.268894 -4.162888 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.766667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 15.000014 </inTangent>
+				<outTangent> 15.000014 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.800000 </startTime>
+				<value> 1.500000 </value>
+				<inTangent> 15.000014 </inTangent>
+				<outTangent> 15.000014 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.500000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> particleSize </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.766667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 15.000014 </inTangent>
+				<outTangent> 15.000014 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.800000 </startTime>
+				<value> 1.700000 </value>
+				<inTangent> 15.000014 </inTangent>
+				<outTangent> 15.000014 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.700000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> startSpeed </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.766667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.066558 </inTangent>
+				<outTangent> -0.066558 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.800000 </startTime>
+				<value> 1.400000 </value>
+				<inTangent> 3.000004 </inTangent>
+				<outTangent> 3.000004 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.400000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

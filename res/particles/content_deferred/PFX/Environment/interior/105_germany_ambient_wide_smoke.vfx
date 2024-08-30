@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -140,8 +140,8 @@
 			<tl_Color_key>
 				<time> 0.000000 </time>
 				<value_RGBA> 108.000000 117.000000 159.000000 0.000000 </value_RGBA>
-				<time> 0.238000 </time>
-				<value_RGBA> 92.000000 108.000000 145.000000 0.164706 </value_RGBA>
+				<time> 0.241000 </time>
+				<value_RGBA> 92.000000 108.000000 145.000000 0.101961 </value_RGBA>
 				<time> 1.000000 </time>
 				<value_RGBA> 85.000000 103.000000 125.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
@@ -221,8 +221,8 @@
 			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
 			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
-			<lighting_params.f_diffuse_light_multiplier> 0.800000 </lighting_params.f_diffuse_light_multiplier>
-			<lighting_params.f_indirect_light_multiplier> 0.500000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
 			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
 			<lighting_params.f_constant_scattered_light_ammount> 0.200000 </lighting_params.f_constant_scattered_light_ammount>
 			<lighting_params.f_self_shadow_power> 3.000000 </lighting_params.f_self_shadow_power>

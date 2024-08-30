@@ -1,0 +1,53 @@
+<root>
+	<duration> 2.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Particle Object 0 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h23_slot_glow_point3.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.830595 2.000000 4.628444 </value>
+				<inTangent> -0.811822 -0.000422 -24.706299 </inTangent>
+				<outTangent> -0.394980 0.000000 -12.020467 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.719374 </startTime>
+				<value> 1.546457 2.000000 -4.018762 </value>
+				<inTangent> -0.394980 -0.000000 -12.020467 </inTangent>
+				<outTangent> -12.002960 0.000000 -0.759346 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.970122 </startTime>
+				<value> -1.463268 2.000000 -4.209167 </value>
+				<inTangent> -12.002960 -0.000000 -0.759346 </inTangent>
+				<outTangent> -0.933253 0.000000 11.990693 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.669724 </startTime>
+				<value> -2.116173 2.000000 4.179541 </value>
+				<inTangent> -0.933253 -0.000000 11.990693 </inTangent>
+				<outTangent> 11.949908 0.000000 1.359176 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 1.830595 2.000000 4.628444 </value>
+				<inTangent> 11.949908 -0.000000 1.359176 </inTangent>
+				<outTangent> 23.680595 0.000549 2.693420 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

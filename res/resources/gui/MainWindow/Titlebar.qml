@@ -160,7 +160,7 @@ ColumnLayout {
 			WindowButton {
 				id: maxButton
 				Accessible.name: "Maximize"
-				source: (_mainWindowHandle.visibility === Window.Windowed
+				source: (typeof _mainWindowHandle !== 'undefined' && _mainWindowHandle.visibility === Window.Windowed
 					? "image://gui/icon-sys-maximize?color="
 					: "image://gui/icon-sys-restore?color=") + encodeURIComponent(_palette.color2)
 

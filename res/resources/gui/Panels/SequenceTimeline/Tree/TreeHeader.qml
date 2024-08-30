@@ -31,6 +31,7 @@ Item {
 				? context.sequenceModel.sequenceName
 				: "No Sequence Opened"
 
+			elide: Text.ElideRight
 			Layout.fillWidth: true
 		}
 	}

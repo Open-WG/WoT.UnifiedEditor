@@ -95,82 +95,12 @@ Menu {
 
 		MenuSeparator { }
 
-		Menu {
-			id: tlc
-			title: "Top left corner"
-
-			Details.ActionMenuItem {
-				id: tlc_top_dock_area
-				source: context.action("tlc_top_dock_area")
-				checked: source.checked && !tlc_left_dock_area.checked
-			}
-
-			Details.ActionMenuItem {
-				id: tlc_left_dock_area
-				source: context.action("tlc_left_dock_area")
-				checked: source.checked && !tlc_top_dock_area.checked
-			}
-		}
-
-		Menu {
-			id: trc
-			title: "Top right corner"
-
-			Details.ActionMenuItem {
-				id: trc_top_dock_area
-				source: context.action("trc_top_dock_area")
-				checked: source.checked && !trc_right_dock_area.checked
-			}
-
-			Details.ActionMenuItem {
-				id: trc_right_dock_area
-				source: context.action("trc_right_dock_area")
-				checked: source.checked && !trc_top_dock_area.checked
-			}
-		}
-
-		Menu {
-			id: blc
-			title: "Bottom left corner"
-
-			Details.ActionMenuItem {
-				id: blc_bottom_dock_area
-				source: context.action("blc_bottom_dock_area")
-				checked: source.checked && !blc_left_dock_area.checked
-			}
-
-			Details.ActionMenuItem {
-				id: blc_left_dock_area
-				source: context.action("blc_left_dock_area")
-				checked: source.checked && !blc_bottom_dock_area.checked
-			}
-		}
-
-		Menu {
-			id: brc
-			title: "Bottom right corner"
-
-			Details.ActionMenuItem {
-				id: brc_bottom_dock_area
-				source: context.action("brc_bottom_dock_area")
-				checked: source.checked && !brc_right_dock_area.checked
-			}
-
-			Details.ActionMenuItem {
-				id: brc_right_dock_area
-				source: context.action("brc_right_dock_area")
-				checked: source.checked && !brc_bottom_dock_area.checked
-			}
-		}
-
-		MenuSeparator { }
-
-		Details.ActionMenuItem {
-			source: context.action("resetLayout")
-		}
-
 		Details.ActionMenuItem {
 			source: context.action("saveLayout")
+		}
+
+		Details.ActionMenuItem {
+			source: context.action("restoreLayout")
 		}
 	}
 

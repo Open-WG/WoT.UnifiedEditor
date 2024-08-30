@@ -1,0 +1,99 @@
+QFrame {
+    border: 0px;
+}
+
+QDialogButtonBox {
+    qproperty-centerButtons: true;
+}
+
+QToolTip {
+    border: 0px;
+}
+
+QMenuBar {
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+QMenu {
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+QToolBar {
+    background: palette(base);
+    padding: 0px;
+    border: none;
+}
+
+/*
+ * Default style sheet on Windows Platforms
+ */
+
+ads--CDockContainerWidget QSplitter::handle:horizontal {
+    width: 4px;
+}
+
+ads--CDockContainerWidget QSplitter::handle:vertical {
+    height: 4px;
+}
+
+ads--CDockAreaTitleBar {
+    min-height: 26px;
+}
+
+ads--CDockAreaWidget {
+    background: palette(window);
+}
+
+ads--CDockContainerWidget ads--CDockSplitter::handle {
+	background: palette(base);
+}
+
+ads--CDockWidgetTab[activeTab="true"] {
+    border-color: LightSkyBlue;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+ads--CDockWidgetTab[activeTab="false"]:hover {
+    border-color: palette(button);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+ads--CDockWidgetTab #dockWidgetTabLabel {
+    padding: 3px;
+}
+
+ads--CDockWidgetTab[activeTab="true"] #dockWidgetTabLabel {
+    color: LightSkyBlue;
+}
+
+ads--CDockWidgetTab #tabCloseButton:hover {
+    background: palette(button);
+    border: 0px;
+}
+
+ads--CDockAreaWidget #tabsMenuButton {
+    background: none;
+}
+
+ads--CDockAreaWidget #tabsMenuButton:hover {
+    background: palette(button);
+    border: 0px;
+}
+
+ads--CDockAreaWidget #tabsMenuButton:pressed {
+    background: palette(button);
+    border: 0px;
+}
+
+ads--CDockAreaWidget #tabsMenuButton::menu-indicator {
+    image: none;
+}
+
+#tabCloseButton {
+	margin-top: 2px;
+	qproperty-icon: url(../resources/images/icon-sys-close.png);
+}

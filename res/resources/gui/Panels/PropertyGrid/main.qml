@@ -7,14 +7,17 @@ import WGTools.ControlsEx 1.0 as ControlsEx
 import WGTools.Models 1.0
 import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.PropertyGrid 1.0
+import WGTools.Resources 1.0 as WGTResources
+import WGTools.Misc 1.0 as Misc
 import "View" as View
+import "View/Settings.js" as Settings
 
 ControlsEx.Panel {
-	title: context.title
-	layoutHint: "right"
-
 	implicitWidth: 400
 	implicitHeight: 400
+
+	title: "Property Grid"
+	layoutHint: "right"
 
 	DSM.StateMachine {
 		id: splitterSyncer
@@ -158,6 +161,20 @@ ControlsEx.Panel {
 				}
 			}
 		}
+
+		RowLayout {
+			id: header
+			visible: pgModelSize.value > 0
+
+			Layout.margins: Settings.headerMargins
+
+			Misc.Text {
+				text: context.headerTitle
+				elide: Text.ElideRight
+				Layout.fillWidth: true
+			}
+		}
+
 
 		View.PropertyGrid {
 			id: propertyGrid

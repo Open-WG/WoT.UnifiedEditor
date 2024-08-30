@@ -10,6 +10,7 @@ Item {
 	id: root
 	implicitWidth: layout.implicitWidth
 	readonly property var itemModel: model
+	readonly property bool modified: itemModel && itemModel.modified ? itemModel.modified : false
 
 	RowLayout {
 		id: layout
@@ -94,7 +95,7 @@ Item {
 			id: textArea
 
 			verticalAlignment: Text.AlignVCenter
-			text: styleData ? styleData.value : ""
+			text: styleData ? root.modified ? styleData.value + "*" : styleData.value : ""
 			color: model != null && model.state == 1
 			    ? "red"
 			    : model != null && model.state == 2
@@ -104,6 +105,9 @@ Item {
 					? 1.0
 					: 0.5
 			elide: Text.ElideRight
+
+			font.italic: root.modified
+			font.bold: root.modified
 
 			Layout.fillWidth: true
 			Layout.fillHeight: true

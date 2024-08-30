@@ -5,7 +5,8 @@ import WGTools.ControlsEx 1.0 as ControlsEx
 
 ControlsEx.Panel {
 	id: root
-	title: "Atlas Editor"
+
+	Accessible.name: "Atlas Editor"
 	layoutHint: "center"
 
 	implicitWidth: 1000

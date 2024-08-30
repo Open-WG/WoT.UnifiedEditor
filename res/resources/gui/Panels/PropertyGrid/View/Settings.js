@@ -8,6 +8,9 @@ var minRowHeight = 24
 var gridLabelWidth = 21
 var gridSpacing = 9
 
+var headerMargins = 8
+var headerIconSize = 16
+
 // all groups
 var groupHeaderHeight = 25
 var groupImplicitWidth = 200

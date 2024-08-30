@@ -1,0 +1,105 @@
+<root>
+	<duration> 0.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow1 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.089664 1.710985 3.945985 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow2 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.004291 1.705832 2.079541 </value>
+				<inTangent> -0.006531 -0.046317 -0.000001 </inTangent>
+				<outTangent> -0.006531 -0.046317 -0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow3 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.024534 1.730656 0.317758 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow4 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.026740 1.731021 -0.263946 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow5 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.018282 1.715251 -2.154706 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow6 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_glow1.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.157461 1.718084 -3.958551 </value>
+				<inTangent> -0.006531 -0.046317 -0.000001 </inTangent>
+				<outTangent> -0.006531 -0.046317 -0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

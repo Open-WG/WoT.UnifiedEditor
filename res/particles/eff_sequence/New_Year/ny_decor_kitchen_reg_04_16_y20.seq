@@ -1,0 +1,94 @@
+<root>
+	<duration> 0.250000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> fire </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/new_year_cust_kitchen_firepechka_02.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -1.844727 0.012740 2.286115 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.293411 0.000000 0.955986 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 34.124512 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> smoke_small_02 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_smoke_small.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -1.779350 0.924128 2.672556 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> smoke_small_03 </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/h07_new_year_decor_smoke_small.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -1.953373 0.902514 2.162122 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Sound Object 4 </name>
+		<type> sound </type>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 0.250000 </duration>
+				<value> hangar_newyear_decoration_fire </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

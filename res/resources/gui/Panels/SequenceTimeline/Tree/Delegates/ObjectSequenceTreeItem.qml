@@ -33,6 +33,7 @@ BaseSequenceTreeItem {
 		ActivatedTreeItemButton {
 			Accessible.name: "disable"
 
+			activated: itemData.seqObjActivated
 			enabled: (itemData.label != "Root") && (!context.hasOwnProperty("soloItem") || !context.soloItem.valid)
 			activatedIcon: itemData.isSound() ? Constants.soundEnabled : Constants.openedEye
 			inactivatedIcon: itemData.isSound() ? Constants.soundDisabled : Constants.closedEye

@@ -1,0 +1,136 @@
+<root>
+	<duration> 3.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> birds_appear1 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_megatablefull_05_appear.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -12.660590 10.924990 -16.589821 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.500000 </inTangent>
+				<outTangent> -0.500000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.250000 </inTangent>
+				<outTangent> -0.250000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> bears_left_appear </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_megatablefull_01_appear.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 41.051392 -11.734670 -99.411407 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.666667 </inTangent>
+				<outTangent> -0.666667 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.250000 </inTangent>
+				<outTangent> -0.250000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> bears_right_appear </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_megatablefull_01_appear.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -122.064957 42.737118 59.608498 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

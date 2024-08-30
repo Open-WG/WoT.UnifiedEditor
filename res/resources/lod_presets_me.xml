@@ -6,6 +6,8 @@
 		<lod2> 60.0 </lod2>
 		<lod3> 80.0 </lod3>
 		<lod4> infinity </lod4>
+		<range> 1.5 </range>
+		<tip> (&lt;1.5m) </tip>
 	</preset>
 	<preset>
 		<name> Props Medium </name>
@@ -14,6 +16,8 @@
 		<lod2> 100.0 </lod2>
 		<lod3> 150.0 </lod3>
 		<lod4> infinity </lod4>
+		<range> 2.5 </range>
+		<tip> (1.5 - 2.5m) </tip>
 	</preset>
 	<preset>
 		<name> Buildings Small / Props Huge </name>
@@ -22,6 +26,8 @@
 		<lod2> 150.0 </lod2>
 		<lod3> 250.0 </lod3>
 		<lod4> infinity </lod4>
+		<range> 5 </range>
+		<tip> (Buildings 2.5 - 5m / Props &gt;2.5m) </tip>
 	</preset>
 	<preset>
 		<name> Buildings Medium </name>
@@ -30,6 +36,8 @@
 		<lod2> 225 </lod2>
 		<lod3> 375 </lod3>
 		<lod4> infinity </lod4>
+		<range> 25 </range>
+		<tip> (Buildings 5 - 25m) </tip>
 	</preset>
 	<preset>
 		<name> Buildings Huge </name>
@@ -38,6 +46,8 @@
 		<lod2> 225.0 </lod2>
 		<lod3> 375.0 </lod3>
 		<lod4> infinity </lod4>
+		<range> infinity </range>
+		<tip> (Buildings &gt;25m) </tip>
 	</preset>
 	<preset>
 		<name> Building Unique </name>

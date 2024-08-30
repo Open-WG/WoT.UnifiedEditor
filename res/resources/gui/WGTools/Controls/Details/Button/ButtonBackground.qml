@@ -22,8 +22,6 @@ Rectangle {
 		return ret
 	}
 
-	implicitWidth: implicitHeight
-	implicitHeight: ControlsSettings.height
 	radius: ControlsSettings.radius
 	color: __color
 

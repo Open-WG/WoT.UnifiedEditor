@@ -1259,16 +1259,6 @@
 			<touchdownEffect> tree_Maple_25m_touchdown </touchdownEffect>
 		</entry>
 		<entry>
-			<filename> vegetation/Broadleaves/Maple/Maple_33m.srt </filename>
-			<health> 120 </health>
-			<density> 0.5 </density>
-			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
-			<lifetimeEffect> none </lifetimeEffect>
-			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
-			<fractureEffect> tree_Maple_33m_fall </fractureEffect>
-			<touchdownEffect> tree_Maple_33m_touchdown </touchdownEffect>
-		</entry>
-		<entry>
 			<filename> vegetation/Broadleaves/Maple/Maple_32m.srt </filename>
 			<health> 120 </health>
 			<density> 0.5 </density>
@@ -1595,6 +1585,7 @@
 			<filename> vegetation/Broadleaves/SalixCaprea/SalixCaprea_02.srt </filename>
 			<health> 3 </health>
 			<density> 0.5 </density>
+			<!-- масса, длина, угол пружины, жесткость, сопротивление пружины, сопротивление воздуха, углубление в землю -->
 			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
 			<lifetimeEffect> none </lifetimeEffect>
 			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
@@ -2043,6 +2034,7 @@
 			<filename> vegetation/Broadleaves/Shrubs/Bush_Wild_Dry/Bush_Wild_Dry_Sparse_3m.srt </filename>
 			<health> 3 </health>
 			<density> 0.25 </density>
+			<!-- масса, длина, угол пружины, жесткость, сопротивление пружины, сопротивление воздуха, углубление в землю -->
 			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
 			<lifetimeEffect> none </lifetimeEffect>
 			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
@@ -2315,16 +2307,6 @@
 			<health> 3 </health>
 			<density> 0.5 </density>
 			<!-- масса, длина, угол пружины, жесткость, сопротивление пружины, сопротивление воздуха, углубление в землю -->
-			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
-			<lifetimeEffect> none </lifetimeEffect>
-			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
-			<fractureEffect> none </fractureEffect>
-			<touchdownEffect> none </touchdownEffect>
-		</entry>
-		<entry>
-			<filename> vegetation/Broadleaves/Shrubs/Bush_Wild_Fall/Bush_Wild_Fall_2m.srt </filename>
-			<health> 3 </health>
-			<density> 0.5 </density>
 			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
 			<lifetimeEffect> none </lifetimeEffect>
 			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
@@ -4117,16 +4099,6 @@
 			<health> 300 </health>
 			<density> 0.5 </density>
 			<!-- масса, длина, угол пружины, жесткость, сопротивление пружины, сопротивление воздуха, углубление в землю -->
-			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
-			<lifetimeEffect> none </lifetimeEffect>
-			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
-			<fractureEffect> tree_Olive_03_fall </fractureEffect>
-			<touchdownEffect> tree_Olive_03_touchdown </touchdownEffect>
-		</entry>
-		<entry>
-			<filename> vegetation/Broadleaves/Live_Oak/Live_Oak_03.srt </filename>
-			<health> 300 </health>
-			<density> 0.5 </density>
 			<physicParams> 800 10 0.26 20000 4000 20 0.15 </physicParams>
 			<lifetimeEffect> none </lifetimeEffect>
 			<lifetimeEffectChance> 0.0 </lifetimeEffectChance>
@@ -17396,7 +17368,7 @@
 			<matName> n_wood0 </matName>
 			<effectScale> 1.000000 </effectScale>
 			<lifetimeEffect> none </lifetimeEffect>
-		</entry>
+		</entry>		
 	</fragiles>
 	<!-- Модульные разрушашаемые объекты.
 	     Каждому модулю дожны быть заданы эффекты разрушения:

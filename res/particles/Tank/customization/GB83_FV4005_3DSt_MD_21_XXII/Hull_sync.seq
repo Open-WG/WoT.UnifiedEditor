@@ -1,0 +1,143 @@
+<root>
+	<duration> 1.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Smoke_exhaust </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/Tank/customization/GB83_FV4005_3DSt_MD_21_XXII/Smoke_exhaust.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.444931 2.268894 -4.162888 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.001321 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.366667 </startTime>
+				<value> 1.000484 </value>
+				<inTangent> 0.001321 </inTangent>
+				<outTangent> 1.722428 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.633333 </startTime>
+				<value> 1.459799 </value>
+				<inTangent> 1.722428 </inTangent>
+				<outTangent> -1.210191 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.016062 </value>
+				<inTangent> -1.210191 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> particleSize </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.452163 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.907504 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.366667 </startTime>
+				<value> 0.784915 </value>
+				<inTangent> 0.907504 </inTangent>
+				<outTangent> 3.186344 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.633333 </startTime>
+				<value> 1.634607 </value>
+				<inTangent> 3.186344 </inTangent>
+				<outTangent> -2.999888 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.900000 </startTime>
+				<value> 0.834637 </value>
+				<inTangent> -2.999888 </inTangent>
+				<outTangent> -3.267818 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.507855 </value>
+				<inTangent> -3.267818 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> startSpeed </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.460237 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.926891 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.366667 </startTime>
+				<value> 0.800097 </value>
+				<inTangent> 0.926891 </inTangent>
+				<outTangent> 14.006608 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.633333 </startTime>
+				<value> 4.535193 </value>
+				<inTangent> 14.006608 </inTangent>
+				<outTangent> -12.366649 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.900000 </startTime>
+				<value> 1.237422 </value>
+				<inTangent> -12.366649 </inTangent>
+				<outTangent> -7.306275 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.506794 </value>
+				<inTangent> -7.306275 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

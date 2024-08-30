@@ -856,4 +856,12 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<autoPlayVideo> true </autoPlayVideo>
 		<!-- Enable video auto play. Works only in new CEF versions(61+) -->
 	</webBrowser>
+	<gameface>
+		<taskSystem>
+			<!-- Number of threads for resources and layout works are computed as -->
+			<!-- threadsCount = min(maxThreads, int(cpuCores / cpuCoresThreshold) + 1) -->
+			<maxThreads>2</maxThreads>
+			<cpuCoresThreshold>5</cpuCoresThreshold>
+		</taskSystem>
+	</gameface>
 </engine_config.xml>
