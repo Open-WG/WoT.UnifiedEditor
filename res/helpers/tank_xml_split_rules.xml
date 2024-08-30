@@ -28,6 +28,7 @@
 				<_ANYTHING_ />
 			</radioman>
 		</crew>
+		<supplySlots/>
 		<speedLimits>
 			<forward />
 			<backward />
@@ -39,6 +40,14 @@
 			<camouflageNetBonus />
 			<firePenalty />
 		</invisibility>
+		<optDevsOverrides>
+			<camouflageNet>
+				<invisibilityBonus/>
+			</camouflageNet>
+			<additionalInvisibilityDevice>
+				<invisibilityBonus/>
+			</additionalInvisibilityDevice>
+		</optDevsOverrides>
 		<repairCost />
 		<xpFactor />
 		<freeXpFactor />
@@ -49,6 +58,10 @@
 		<camouflage>
 			<priceFactor />
 		</camouflage>
+		<damageByStaticsChances>
+			<module />
+			<tankman />
+		</damageByStaticsChances>
 		<hull>
 			<armor>
 				<_ANYTHING_ />
@@ -641,6 +654,7 @@
 					<collisionModelClient/>
 				</hitTester>
 				<gunPosition />
+				<gunShotOffset />
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>

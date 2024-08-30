@@ -1,0 +1,116 @@
+<root>
+	<duration> 3.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> grade1 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/ny_talisman_gift_gradeup.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -2.027348 1.504041 1.381650 </value>
+				<inTangent> -2.359355 -1.440683 4.508645 </inTangent>
+				<outTangent> -2.359355 -1.440683 4.508645 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.170704 </startTime>
+				<value> -2.430099 1.258111 2.151294 </value>
+				<inTangent> -3.044276 0.067025 1.622789 </inTangent>
+				<outTangent> -3.044276 0.067025 1.622789 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.485488 </startTime>
+				<value> -3.603991 1.753811 1.753701 </value>
+				<inTangent> -3.026490 -0.407402 -2.456905 </inTangent>
+				<outTangent> -3.026490 -0.407402 -2.456905 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.783066 </startTime>
+				<value> -4.295498 1.042738 0.667320 </value>
+				<inTangent> -1.109674 -0.000332 -4.029675 </inTangent>
+				<outTangent> -1.109674 -0.000332 -4.029675 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.948494 </startTime>
+				<value> -4.278221 1.437924 -0.061987 </value>
+				<inTangent> 2.057293 1.390999 -2.952683 </inTangent>
+				<outTangent> 2.057293 1.390999 -2.952683 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.462735 </startTime>
+				<value> -2.216038 1.640086 -0.831682 </value>
+				<inTangent> 2.068883 -0.828170 -4.833794 </inTangent>
+				<outTangent> 2.068883 -0.828170 -4.833794 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.638440 </startTime>
+				<value> -2.193615 1.279984 -2.267337 </value>
+				<inTangent> -1.004949 -1.461783 -3.221023 </inTangent>
+				<outTangent> -1.004949 -1.461783 -3.221023 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.978434 </startTime>
+				<value> -2.920357 0.982796 -1.679562 </value>
+				<inTangent> -3.834722 -0.417945 3.030518 </inTangent>
+				<outTangent> -3.834722 -0.417945 3.030518 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.113401 </startTime>
+				<value> -3.666985 0.987953 -1.094851 </value>
+				<inTangent> -5.651397 -0.184114 -0.374493 </inTangent>
+				<outTangent> -5.651397 -0.184114 -0.374493 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.246380 </startTime>
+				<value> -4.434389 0.933905 -1.770549 </value>
+				<inTangent> 2.805398 0.869450 -5.776428 </inTangent>
+				<outTangent> 2.805398 0.869450 -5.776428 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.434767 </startTime>
+				<value> -2.290234 1.338058 -2.989717 </value>
+				<inTangent> 3.172593 2.074086 -1.530715 </inTangent>
+				<outTangent> 3.172593 2.074086 -1.530715 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.750026 </startTime>
+				<value> -3.878027 1.969470 -1.914625 </value>
+				<inTangent> -0.723815 1.909278 2.870729 </inTangent>
+				<outTangent> -0.723815 1.909278 2.870729 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> -2.980909 2.423353 -1.331868 </value>
+				<inTangent> 3.588844 1.815721 2.331270 </inTangent>
+				<outTangent> 3.588844 1.815721 2.331270 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events>
+		<event>
+		<name> ev_animation_complete </name>
+		<time> 3.0 </time>
+		</event>
+	</events>
+</root>

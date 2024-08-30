@@ -1,0 +1,48 @@
+<root>
+	<duration> 1.500000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Garland1 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/ny_garland_wide1m.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -5.231258 0.647546 -0.016373 </value>
+				<inTangent> -0.212671 -1.728353 -1.742846 </inTangent>
+				<outTangent> 5.011757 -1.728353 0.004581 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.300000 </startTime>
+				<value> -3.206509 0.236578 -0.014523 </value>
+				<inTangent> 8.219295 -1.074897 0.007512 </inTangent>
+				<outTangent> 8.219295 -1.074897 0.007512 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.750000 </startTime>
+				<value> 1.033446 0.042089 -0.010647 </value>
+				<inTangent> 10.023520 0.815030 0.009161 </inTangent>
+				<outTangent> 10.023520 0.815030 0.009161 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 7.298135 1.094443 -0.004925 </value>
+				<inTangent> 5.011757 1.750946 0.004581 </inTangent>
+				<outTangent> 5.011757 1.273172 0.004581 </outTangent>
+				<tangentMode> 66307 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

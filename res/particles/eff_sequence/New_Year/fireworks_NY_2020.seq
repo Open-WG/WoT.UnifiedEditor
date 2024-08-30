@@ -1,0 +1,1316 @@
+<root>
+	<duration> 72.816696 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_blue </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_blue.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.116670 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395342 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.833340 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395342 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.916700 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952382 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.966700 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952382 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 40.150002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395482 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 40.866600 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395482 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 44.766701 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952382 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 45.816700 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952382 </inTangent>
+				<outTangent> -0.952378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_blue </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_blue.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.083340 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.714296 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.666670 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.714296 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.433368 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.276651 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.216667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.276651 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 35.599998 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395281 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 36.316700 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395281 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 49.250000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952382 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 50.299999 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952382 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.400002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.428578 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.099998 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.428578 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 66.066704 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.090994 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 66.983299 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.090994 </inTangent>
+				<outTangent> -1.090994 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_blue </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_blue.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.966670 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.935471 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.483340 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.935471 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.766667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.428572 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 11.466667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.428572 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 40.150002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395482 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 40.866600 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395482 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 44.766701 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952382 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 45.816700 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952382 </inTangent>
+				<outTangent> -0.952378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_red </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_red.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.383330 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.818182 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.933330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.818182 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.933330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -2.307657 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.366670 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.307657 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 17.549999 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.666666 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 18.150000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.666666 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 22.833300 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -2.142706 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 23.299999 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.142706 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.433300 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395281 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.150002 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395281 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 66.050003 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952385 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 67.099998 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952385 </inTangent>
+				<outTangent> -0.952378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_red </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_red.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.616670 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.764727 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.183330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.764727 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.083330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.764696 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.650000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.764696 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 22.266701 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.764917 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 22.833300 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.764917 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 27.266701 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.579033 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 27.900000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.579033 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_red </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_red.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.033330 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 2.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.533330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 2.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.583331 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.935472 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.100000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.935472 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 26.950001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 2.142706 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 27.416700 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 2.142706 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 31.966700 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -2.069103 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 32.450001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.069103 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.433300 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.395281 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.150002 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.395281 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 66.050003 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.952385 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 67.099998 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.952385 </inTangent>
+				<outTangent> -0.952378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> ball_bright_white </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_ball_bright_white.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.750070 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 0.845094 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.933370 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.845094 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.816700 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.618544 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 17.433399 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.618544 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 62.533298 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 2.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 63.033298 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 2.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 69.400040 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.674173 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 70.883339 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.674173 </inTangent>
+				<outTangent> -0.674173 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> bigfcknball_RGB </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_bigfcknball_RGB.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 37.383335 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 38.383335 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 42.583336 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 43.583336 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.000000 </inTangent>
+				<outTangent> -1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> asgards_flamerain </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_asgards_flamerain.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000002 21.535101 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.433330 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 42.383301 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 2.222219 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 42.833302 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 2.222219 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 47.983299 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -2.727031 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 48.349998 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.727031 </inTangent>
+				<outTangent> -2.727290 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> palm_flamerain </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_palm_flamerain.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000002 10.535100 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.433330 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 28.183365 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.034552 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 29.149967 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.034552 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 32.150002 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 33.150002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> sparkball_flamerain </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_sparkball_flamerain.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000002 21.535101 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 25.433300 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 26.433300 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 30.433300 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 31.433300 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 46.650070 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 2.093222 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 47.366669 </startTime>
+				<value> 1.500000 </value>
+				<inTangent> 2.093222 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 58.833336 </startTime>
+				<value> 1.500000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -1.428572 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.883335 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.428572 </inTangent>
+				<outTangent> -0.952378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> whistling </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_whistling.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 20.000000 0.000000 -0.000046 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 45.283298 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 5.452473 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 45.466702 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 5.452473 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 49.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -6.666599 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 49.150002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -6.666599 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.216702 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 6.002427 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.383301 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 6.002427 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 63.750000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -5.998856 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 63.916698 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -5.998856 </inTangent>
+				<outTangent> -6.000090 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> whistling </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_whistling.eff </resource>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 47.666698 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 6.002290 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 47.833302 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 6.002290 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 51.166698 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -6.666599 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 51.316700 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -6.666599 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 57.983299 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 5.998719 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 58.150002 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 5.998719 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 61.216702 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -6.002427 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 61.383301 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -6.002427 </inTangent>
+				<outTangent> -5.999950 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> whistling </name>
+		<type> particle </type>
+		<resource> particles/Environment/hangar/fireworks_whistling.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -20.000000 0.000000 -0.000046 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 49.916698 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 7.501832 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 50.049999 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 7.501832 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 53.433300 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -6.666599 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 53.583302 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -6.666599 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 55.683300 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> 5.998856 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 55.849998 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 5.998856 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.166698 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -6.002290 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 59.333302 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -6.002290 </inTangent>
+				<outTangent> -5.999950 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> fireworks_sound </name>
+		<type> sound </type>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 72.316704 </duration>
+				<value> Root| </value>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 36.366699 </duration>
+				<value> hangar_newyear_fireworks_sparkball_fastsmall </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 51.900002 </startTime>
+				<duration> 5.416672 </duration>
+				<value> hangar_newyear_fireworks_sparkball_fastsmall </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 64.716698 </startTime>
+				<duration> 8.099998 </duration>
+				<value> hangar_newyear_fireworks_sparkball_fastsmall </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 20.483299 </startTime>
+				<duration> 13.666702 </duration>
+				<value> hangar_newyear_fireworks_flame_rocket </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 40.049999 </startTime>
+				<duration> 9.700001 </duration>
+				<value> hangar_newyear_fireworks_flame_rocket </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 52.166698 </startTime>
+				<duration> 9.799999 </duration>
+				<value> hangar_newyear_fireworks_flame_rocket </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 10.883300 </startTime>
+				<duration> 6.199990 </duration>
+				<value> hangar_newyear_fireworks_ball_small </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 30.166700 </startTime>
+				<duration> 4.783339 </duration>
+				<value> hangar_newyear_fireworks_ball_small </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 47.500000 </startTime>
+				<duration> 3.816669 </duration>
+				<value> hangar_newyear_fireworks_ball_small </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 60.266701 </startTime>
+				<duration> 8.133339 </duration>
+				<value> hangar_newyear_fireworks_ball_small </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 15.500000 </startTime>
+				<duration> 10.283300 </duration>
+				<value> hangar_newyear_fireworks_ball_medium </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 60.483299 </startTime>
+				<duration> 6.649986 </duration>
+				<value> hangar_newyear_fireworks_ball_medium </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 18.100000 </startTime>
+				<duration> 10.783300 </duration>
+				<value> hangar_newyear_fireworks_ball_big </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 36.700001 </startTime>
+				<duration> 5.799999 </duration>
+				<value> hangar_newyear_fireworks_ball_big </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 46.183300 </startTime>
+				<duration> 4.016670 </duration>
+				<value> hangar_newyear_fireworks_ball_big </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 59.966702 </startTime>
+				<duration> 2.000000 </duration>
+				<value> hangar_newyear_fireworks_ball_big </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 65.833298 </startTime>
+				<duration> 5.716667 </duration>
+				<value> hangar_newyear_fireworks_ball_big </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 13.966700 </startTime>
+				<duration> 2.766670 </duration>
+				<value> hangar_newyear_fireworks_whistling </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 54.016701 </startTime>
+				<duration> 10.650002 </duration>
+				<value> hangar_newyear_fireworks_whistling </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+		<track>
+			<name> sound </name>
+			<type> sound </type>
+			<frame>
+				<startTime> 17.216700 </startTime>
+				<duration> 3.683331 </duration>
+				<value> hangar_newyear_fireworks_flamerain_asgard </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 24.866699 </startTime>
+				<duration> 4.716671 </duration>
+				<value> hangar_newyear_fireworks_flamerain_palm_01 </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 31.950001 </startTime>
+				<duration> 4.633339 </duration>
+				<value> hangar_newyear_fireworks_flamerain_asgard </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 38.116699 </startTime>
+				<duration> 2.799999 </duration>
+				<value> hangar_newyear_fireworks_flamerain_asgard </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 42.533298 </startTime>
+				<duration> 2.500000 </duration>
+				<value> hangar_newyear_fireworks_flamerain_palm_02 </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 46.849998 </startTime>
+				<duration> 3.833340 </duration>
+				<value> hangar_newyear_fireworks_flamerain_palm_01 </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 55.099998 </startTime>
+				<duration> 4.616661 </duration>
+				<value> hangar_newyear_fireworks_flamerain_palm_02 </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+			<frame>
+				<startTime> 62.849998 </startTime>
+				<duration> 3.283333 </duration>
+				<value> hangar_newyear_fireworks_flamerain_palm_02 </value>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

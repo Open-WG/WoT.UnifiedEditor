@@ -37,4 +37,12 @@ Menu {
 		onTriggered: propertyData.setValue("")
 		enabled: delegateRoot.__enabled
 	}
+
+	MenuSeparator {
+	}
+
+	MenuItem {
+		text: "System Menu"
+		onTriggered: context.openSystemMenu(propertyData.value)
+	}
 }

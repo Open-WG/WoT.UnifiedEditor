@@ -1,0 +1,1027 @@
+<root>
+	<duration> 23.000002 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_roof_left </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_snow_roof.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -2.720954 3.305487 -6.764769 </value>
+				<inTangent> 0.311596 0.054799 -1.393052 </inTangent>
+				<outTangent> 3.660489 3.848562 0.065837 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.750000 </startTime>
+				<value> 0.024413 6.191909 -6.715391 </value>
+				<inTangent> 3.660489 3.848562 0.065837 </inTangent>
+				<outTangent> 3.660472 -3.852645 0.065844 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 2.769767 3.302425 -6.666008 </value>
+				<inTangent> 3.660472 -3.852645 0.065844 </inTangent>
+				<outTangent> 0.024529 0.022390 1.139444 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.666667 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.666667 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_roof_right </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_snow_roof.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> -2.720954 3.305487 6.699906 </value>
+				<inTangent> 0.311596 0.054799 -1.393052 </inTangent>
+				<outTangent> 3.743683 3.936031 0.067334 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.233333 </startTime>
+				<value> 0.024413 6.191909 6.749284 </value>
+				<inTangent> 3.743683 3.936031 0.067334 </inTangent>
+				<outTangent> 3.580895 -3.768891 0.064413 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 2.769767 3.302425 6.798667 </value>
+				<inTangent> 3.580895 -3.768891 0.064413 </inTangent>
+				<outTangent> 0.024529 0.022390 1.139444 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.666667 </inTangent>
+				<outTangent> 0.666667 </outTangent>
+				<tangentMode> 512 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_roof_front_left </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_snow_roof.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 4.287848 3.305477 -2.205183 </value>
+				<inTangent> -0.713643 0.000001 -0.032609 </inTangent>
+				<outTangent> -1.991560 0.000003 -0.091003 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.716667 </startTime>
+				<value> 2.860563 3.305479 -2.270402 </value>
+				<inTangent> -1.991560 0.000003 -0.091003 </inTangent>
+				<outTangent> 0.061362 -0.003901 -5.568457 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 2.908630 3.302423 -6.632358 </value>
+				<inTangent> 0.061362 -0.003901 -5.568457 </inTangent>
+				<outTangent> 0.439695 -0.000001 0.271489 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.333333 </inTangent>
+				<outTangent> 0.333333 </outTangent>
+				<tangentMode> 512 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_roof_front_right </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_snow_roof.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 2.860563 3.305479 6.582419 </value>
+				<inTangent> -0.713643 0.000001 -0.032610 </inTangent>
+				<outTangent> 0.023845 -0.003821 -5.287985 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.300000 </startTime>
+				<value> 2.879639 3.302422 2.352030 </value>
+				<inTangent> 0.023845 -0.003821 -5.287985 </inTangent>
+				<outTangent> 1.917875 0.000000 -0.124981 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 4.222152 3.302422 2.264543 </value>
+				<inTangent> 1.917875 -0.000000 -0.124981 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.222222 </inTangent>
+				<outTangent> 0.222222 </outTangent>
+				<tangentMode> 512 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.000000 </inTangent>
+				<outTangent> -2.000000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_01 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 2.740072 2.111665 -5.873738 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> -0.000001 -0.000002 -0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.983334 </startTime>
+				<value> 2.740070 2.111660 -5.873740 </value>
+				<inTangent> -0.000001 -0.000002 -0.000001 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.983334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000002 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.000001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.500000 </inTangent>
+				<outTangent> -0.500000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_02 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 3.983334 </startTime>
+				<value> 2.741553 2.111648 -4.710854 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000001 0.000001 0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 2.741550 2.111650 -4.710850 </value>
+				<inTangent> -0.000001 0.000001 0.000001 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 2.983334 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.983334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.999999 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.237561 </inTangent>
+				<outTangent> 0.010994 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.500000 </inTangent>
+				<outTangent> -0.500000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_03 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 6.983334 </startTime>
+				<value> 2.738342 2.111622 -3.522418 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000001 -0.000001 -0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> 2.738340 2.111620 -3.522420 </value>
+				<inTangent> -0.000001 -0.000001 -0.000001 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 5.983332 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.999998 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.983334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.999998 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.033332 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.237561 </inTangent>
+				<outTangent> 0.010994 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.033332 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000008 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.508472 </inTangent>
+				<outTangent> -0.508472 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_04 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> 2.727467 2.111605 -2.346080 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000001 -0.000002 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.033334 </startTime>
+				<value> 2.727470 2.111600 -2.346080 </value>
+				<inTangent> 0.000001 -0.000002 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 9.033334 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.033330 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.237561 </inTangent>
+				<outTangent> 0.010994 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.033337 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 18.016682 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.504199 </inTangent>
+				<outTangent> -0.504199 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_05 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 4.285420 3.736871 -0.629146 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.000000 </startTime>
+				<value> 4.285420 3.736870 -0.629146 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 12.000001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.999996 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.237561 </inTangent>
+				<outTangent> 0.010994 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 19.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 21.000015 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.249998 </inTangent>
+				<outTangent> -0.249998 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 23.000002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_left_06 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 15.966663 </startTime>
+				<value> 4.268802 4.575054 -0.004625 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -0.000001 -0.000001 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 19.000004 </startTime>
+				<value> 4.268800 4.575050 -0.004625 </value>
+				<inTangent> -0.000001 -0.000001 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 14.966665 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 1.000002 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.966663 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000002 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 19.000004 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.237561 </inTangent>
+				<outTangent> 0.010994 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 22.000019 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_right_01 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 2.753660 2.111639 5.906281 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> -0.000000 0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.983333 </startTime>
+				<value> 2.753660 2.111640 5.906280 </value>
+				<inTangent> -0.000000 0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.983333 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000003 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.016667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.495868 </inTangent>
+				<outTangent> -0.495868 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_right_02 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 2.740728 2.111630 4.704588 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> 0.000001 -0.000000 0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 2.740730 2.111630 4.704590 </value>
+				<inTangent> 0.000001 -0.000000 0.000001 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.016668 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.016666 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.500000 </inTangent>
+				<outTangent> -0.500000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_right_03 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 2.736357 2.111605 3.526574 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> 0.000001 -0.000002 -0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> 2.736360 2.111600 3.526570 </value>
+				<inTangent> 0.000001 -0.000002 -0.000001 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 5.999999 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.999999 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.999999 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.016664 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.016666 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.499999 </inTangent>
+				<outTangent> -0.499999 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_right_04 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> 2.740251 2.111613 2.336756 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> -0.000000 -0.000001 0.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 2.740250 2.111610 2.336760 </value>
+				<inTangent> -0.000000 -0.000001 0.000001 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 9.033334 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.033334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.016666 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 18.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.504202 </inTangent>
+				<outTangent> -0.504202 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_garland_yellow_right_05 </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_glow02_yellow.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 4.286253 3.728814 0.630921 </value>
+				<inTangent> -0.002120 0.000017 1.174789 </inTangent>
+				<outTangent> -0.000001 -0.000001 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.016668 </startTime>
+				<value> 4.286250 3.728810 0.630921 </value>
+				<inTangent> -0.000001 -0.000001 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 12.000001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 1.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.016668 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.308364 </inTangent>
+				<outTangent> -0.008455 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 19.033335 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 21.000002 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.508474 </inTangent>
+				<outTangent> -0.508474 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_H_FWD_4 </name>
+		<type> model </type>
+		<resource> particles/content_deferred/GFX_models/environment/New_Year/tent_glow.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 1.000000 </duration>
+				<value> Root| </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -1.941776 2.522696 0.000437 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.999999 7.477474 23.058350 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>		
+	<events/>
+</root>

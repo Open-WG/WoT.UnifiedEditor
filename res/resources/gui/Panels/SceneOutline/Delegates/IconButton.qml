@@ -44,7 +44,10 @@ Item {
 			Accessible.ignored: true
 
 			onClicked: {
-				model.action.invoke(sceneBrowserContext.assetSelection);
+				let shiftPressed = (mouse.modifiers & Qt.ShiftModifier) == Qt.ShiftModifier
+				let ctrlPressed = (mouse.modifiers & Qt.ControlModifier) == Qt.ControlModifier
+				
+				model.action.invoke(sceneBrowserContext.assetSelection, shiftPressed && ctrlPressed);
 			}
 		}
 

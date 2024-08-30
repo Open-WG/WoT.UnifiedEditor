@@ -1,0 +1,152 @@
+<root>
+	<duration> 7.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> snow_roof </name>
+		<type> particle </type>
+		<enabledInEditor> true </enabledInEditor>
+		<resource> particles/Environment/hangar/new_year_cust_tent_snow_roof.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 2.936197 4.042555 -6.552914 </value>
+				<inTangent> -0.017442 -0.000002 2.877578 </inTangent>
+				<outTangent> -0.022937 -0.026882 1.914378 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.200000 </startTime>
+				<value> 2.862798 3.956532 -0.426904 </value>
+				<inTangent> -0.022937 -0.026882 1.914378 </inTangent>
+				<outTangent> -0.317890 -0.165163 1.873511 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.616667 </startTime>
+				<value> 2.730344 3.887714 0.353725 </value>
+				<inTangent> -0.317890 -0.165163 1.873511 </inTangent>
+				<outTangent> 0.084770 1.681801 0.952772 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.916667 </startTime>
+				<value> 2.840545 6.074057 1.592329 </value>
+				<inTangent> 0.084770 1.681801 0.952772 </inTangent>
+				<outTangent> -0.116901 -0.044816 1.880840 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 2.597000 5.980690 5.510746 </value>
+				<inTangent> -0.116901 -0.044816 1.880840 </inTangent>
+				<outTangent> -0.116901 -0.044816 1.880840 </outTangent>
+				<tangentMode> 1 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emmision </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.200000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -1.200000 </inTangent>
+				<outTangent> -1.200000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.616667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.200000 </inTangent>
+				<outTangent> -1.200000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.916667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.240000 </inTangent>
+				<outTangent> 0.240000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.480000 </inTangent>
+				<outTangent> 0.480000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow_H_FWD_6 </name>
+		<type> model </type>
+		<resource> particles/content_deferred/GFX_models/environment/New_Year/tent_glow.model </resource>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 1.000000 </duration>
+				<value> Root| </value>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -1.941776 2.522696 0.000437 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.999999 7.477474 23.058350 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>		
+	<events/>
+</root>

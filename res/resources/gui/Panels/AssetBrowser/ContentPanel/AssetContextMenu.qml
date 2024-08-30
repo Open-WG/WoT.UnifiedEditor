@@ -37,6 +37,10 @@ Menu {
 		wgtAction: context.actions.menu.reveal_in_explorer
 	}
 
+	Details.MenuItem {
+		wgtAction: context.actions.menu.system_menu
+	}
+
 	MenuSeparator {}
 
 	Details.MenuItem {

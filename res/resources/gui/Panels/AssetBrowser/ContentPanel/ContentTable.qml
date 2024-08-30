@@ -47,12 +47,12 @@ Views.TableView {
 
 	// State Machine to set minimum size for "Name" column
 	SM.StateMachine {
-		initialState: abRoot.settings.tableViewState == "custom" ? customState : relatveState
+		initialState: abRoot.settings.tableViewState == "custom" ? customState : relativeState
 		running: true
 
 		SM.State {
-			id: relatveState
-			initialState: relatveInitingState
+			id: relativeState
+			initialState: relativeInitingState
 
 			property bool muted: false
 
@@ -63,25 +63,25 @@ Views.TableView {
 			}
 
 			onEntered: {
-				abRoot.settings.tableViewState = "relatve"
+				abRoot.settings.tableViewState = "relative"
 				update()
 			}
 
 			SM.State {
-				id: relatveInitingState
+				id: relativeInitingState
 				SM.TimeoutTransition {
-					targetState: relatveInitedState
+					targetState: relativeInitedState
 					timeout: 0
 				}
 			}
 
 			SM.State {
-				id: relatveInitedState
+				id: relativeInitedState
 
 				SM.SignalTransition {
 					targetState: customState
 					signal: nameColumn.widthChanged
-					guard: !relatveState.muted
+					guard: !relativeState.muted
 				}
 
 				SM.SignalTransition {
@@ -91,9 +91,9 @@ Views.TableView {
 			}
 
 			Connections {
-				enabled: relatveState.active
+				enabled: relativeState.active
 				target: table.viewport
-				onWidthChanged: relatveState.update()
+				onWidthChanged: relativeState.update()
 			}
 		}
 
@@ -230,7 +230,7 @@ Views.TableView {
 			if (table.__columns[i].role) {
 				var w = parseInt(list[j++])
 
-				if (w == 0)
+				if (w <= 0)
 					continue
 
 				if (table.__columns[i].width == w)

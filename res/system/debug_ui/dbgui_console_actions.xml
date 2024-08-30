@@ -14,6 +14,11 @@
 		<param> ('uk:GB94_Centurion_Mk5-1_RAAC') </param>
 		<param> ('ussr:R54_KV-5') </param>
 	</item>
+	<item label="[Event Platform] markers" action="$p.">
+		<param label="add marker to avatar position"> addOrRemoveMarkerTo(0) </param>
+		<param label="add marker to avatar"> addOrRemoveMarkerTo(2) </param>
+		<param label="remove all marker"> addOrRemoveMarkerTo(1) </param>
+	</item>
 
 	<item label="Dog Tags">
 		<item label="In hangar">
