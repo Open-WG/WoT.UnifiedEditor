@@ -10954,19 +10954,6 @@
 		</transform>
 		<clientOnly> true </clientOnly>
 		<properties>
-			<cameraShift> 0.000000 0.000000 0.000000 </cameraShift>
-			<cameraPivot> 0.000000 1.000000 0.000000 </cameraPivot>
-			<cameraYaw> 2.300000 </cameraYaw>
-			<cameraPitch> 0.100000 </cameraPitch>
-			<cameraUpcomingDuration> 2.000000 </cameraUpcomingDuration>
-			<cameraBackwardDuration> 2.000000 </cameraBackwardDuration>
-			<cameraObjectAspect> 0.500000 </cameraObjectAspect>
-			<cameraMaxDistance> 10.000000 </cameraMaxDistance>
-			<enableYawLimits> 0 </enableYawLimits>
-			<yawLimitMin> 0.000000 </yawLimitMin>
-			<yawLimitMax> 5.000000 </yawLimitMax>
-			<pitchLimitMin> -1.400000 </pitchLimitMin>
-			<pitchLimitMax> -0.100000 </pitchLimitMax>
 			<vehicleTurretYaw> 0.000000 </vehicleTurretYaw>
 			<vehicleGunPitch> 0.000000 </vehicleGunPitch>
 		</properties>
@@ -12028,4 +12015,91 @@
 	<terrain>
 		<resource> 0000ffffo.cdata/terrain2 </resource>
 	</terrain>
+	<ComplexObject>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 13.215075 6.167755 99.045906 </row3>
+		</transform>
+		<instanceUUID> 5b969a6e-52d5-4687-933b-0259d1f719da </instanceUUID>
+		<version> 3 </version>
+		<GameObjects>
+			<GameObject>
+				<name> Rules </name>
+				<UUID> 6ab5b2fb-b3ea-4119-ab07-adc459d67215 </UUID>
+				<flags> 0 </flags>
+			</GameObject>
+		</GameObjects>
+		<components>
+			<ComponentPool>
+				<type> Transform </type>
+				<version> 1 </version>
+				<component>
+					<objectIndex> 0 </objectIndex>
+					<flags> 3 </flags>
+					<config>
+						<property>
+							<name> Position </name>
+							<value> 0 0 0 </value>
+						</property>
+						<property>
+							<name> Scale </name>
+							<value> 1 1 1 </value>
+						</property>
+						<property>
+							<name> Rotation </name>
+							<value> 0 0 0 </value>
+						</property>
+					</config>
+				</component>
+			</ComponentPool>
+			<ComponentPool>
+				<type> CameraRule </type>
+				<version> 1 </version>
+				<component>
+					<objectIndex> 0 </objectIndex>
+					<flags> 3 </flags>
+				</component>
+			</ComponentPool>
+		</components>
+	</ComplexObject>
+	<ComplexObject>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> -0.042922 0.000000 0.999078 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> -0.999078 0.000000 -0.042922 </row2>
+			<row3> 23.540001 6.189990 82.415100 </row3>
+		</transform>
+		<instanceUUID> b0a1b554-e8d5-48f6-89d2-47766b75534f </instanceUUID>
+		<resource> content/HangarPrefabs/hangar_v3/HeroTank_hangar_v3.prefab </resource>
+	</ComplexObject>
+	<ComplexObject>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 1.109985 206.300003 99.148003 </row3>
+		</transform>
+		<instanceUUID> 81091c0e-d5e9-44bc-adae-c91602596ceb </instanceUUID>
+		<resource> content/HangarPrefabs/hangar_v3/Customization_hangar_v3.prefab </resource>
+	</ComplexObject>
 </root>

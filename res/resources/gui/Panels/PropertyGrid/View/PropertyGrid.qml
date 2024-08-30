@@ -3,7 +3,6 @@ import QtQml.StateMachine 1.0 as DSM
 import WGTools.Controls 2.0
 import WGTools.ControlsEx 1.0 as ControlsEx
 import WGTools.Controls.Details 2.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Utils 1.0
 import "Settings.js" as Settings
 import "Details" as Details
@@ -133,17 +132,6 @@ Flickable {
 
 		return false
 	}
-
-	// clickomatic -----------------------------------
-	Clickomatic.ClickomaticItem.showChild: function(child) {
-		rootGroup.showChild(child)
-	}
-
-	function scrollToChild(child) {
-		var rect = contentItem.mapFromItem(child, 0, 0, child.width, child.height)
-		contentY = Math.min(rect.y, Math.max(contentY, (rect.y + rect.height) - height))
-	}
-	// -----------------------------------------------
 
 	onFlickStarted: {
 		postFlickingTimer.restart()

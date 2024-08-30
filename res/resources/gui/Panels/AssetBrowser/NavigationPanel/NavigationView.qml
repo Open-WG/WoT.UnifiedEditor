@@ -5,7 +5,6 @@ import WGTools.Views 1.0 as Views
 import WGTools.Views.Styles 1.0 as ViewStyles
 import WGTools.Misc 1.0 as Misc
 import WGTools.Controls.impl 1.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 import "Delegates" as Delegates
 
 Views.TreeView {
@@ -13,7 +12,6 @@ Views.TreeView {
 	activeFocusOnTab: true
 	alternatingRowColors: false
 	headerVisible: false
-	accesibleNameRole: nameColumn.role
 
 	style: ViewStyles.TreeViewStyle {
 		backgroundColor: _palette.color8
@@ -54,15 +52,6 @@ Views.TreeView {
 				value: styleData.index == view.currentIndex
 				delayed: true
 			}
-			
-			// clickomatic --------------------------------
-			Accessible.name: accesibleNameGenerator.value
-			Clickomatic.TableAccesibleNameGenerator {
-				id: accesibleNameGenerator
-				role: view.accesibleNameRole
-				modelIndex: styleData.index
-			}
-			// --------------------------------------------
 		}
 	}
 }

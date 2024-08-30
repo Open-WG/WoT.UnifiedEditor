@@ -81,6 +81,19 @@
 			<downClimb>	1.000000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
 		</config>
+		<config>
+			<girth> BR_3.5 </girth>
+			<height>	3.100000	</height>
+			<radius>	3.500000	</radius>
+			<halfWidth>	1.750000	</halfWidth>
+			<narrowInnerThreshold>	3.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	3.500000	</narrowOuterThreshold>
+			<upSlope>	30.000000	</upSlope>
+			<downSlope>	30.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
+		</config>
 	</navmesh>
 	<covers>
 		<Default>
@@ -162,7 +175,12 @@
 				</agent>
 				<agent>
 					<girth> BR_8 </girth>
-					<shootingHeight>	2.000000	</shootingHeight>
+					<shootingHeight>	2.360000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> BR_3.5 </girth>
+					<shootingHeight>	2.360000	</shootingHeight>
 					<lowCoverHeight>	1.3	</lowCoverHeight>
 				</agent>
 			</agentDependent>

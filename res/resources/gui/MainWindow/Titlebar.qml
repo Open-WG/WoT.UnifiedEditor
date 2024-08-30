@@ -3,7 +3,6 @@ import QtQuick.Window 2.2
 import QtQuick.Layouts 1.3
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Misc 1.0 as Misc
 import WGTools.Utils 1.0
 import "Settings.js" as Settings
@@ -18,7 +17,6 @@ ColumnLayout {
 		color: _palette.color9
 
 		Accessible.name: "Titlebar"
-		Clickomatic.ClickomaticItem.norecord: true
 
 		TabContextMenu {
 			id: contextMenu

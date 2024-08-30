@@ -3,12 +3,10 @@ import QtQuick.Controls 1.4
 import WGTools.Views.Details 1.0 as Details
 import WGTools.Views.Styles 1.0 as Styles
 import WGTools.Controls.Details 2.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 
 TreeView {
 	id: root
 
-	property alias accesibleNameRole: accesibleNameParser.roleName
 	property var __internalScrollHelper: Details.ScrollHelper {parent: root}
 	readonly property real rowHeight: rowLoader.item ? rowLoader.item.height : 0
 	readonly property real headerHeight: headerLoader.item ? headerLoader.item.height: 0
@@ -90,27 +88,6 @@ TreeView {
 		}
 
 	}
-
-	// clickomatic -----------------------------------
-
-	Component.onCompleted: {
-		children[0].Accessible.ignored = true
-	}
-
-	property var __internalAccesibleNameParser: Clickomatic.TableAccesibleNameParser {
-		id: accesibleNameParser
-		model: root.model
-	}
-
-	Clickomatic.ClickomaticItem.showChild: function(name) {
-		var index = accesibleNameParser.findIndex(name)
-
-		if (index.valid) {
-			expandAllParents(index)
-			positionViewAtIndex(index, ListView.Contain)
-		}
-	}
-	// -----------------------------------------------
 
 	function collapseAll() {
 		if (model == null) {

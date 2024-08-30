@@ -1,0 +1,106 @@
+<root>
+	<params>
+		<param>
+			<name> shot </name>
+			<type> trigger </type>
+		</param>
+		<param>
+			<name> moving </name>
+			<type> trigger </type>
+		</param>
+		<param>
+			<name> idle </name>
+			<type> trigger </type>
+		</param>
+	</params>
+	<node>
+		<name> idle_animation </name>
+		<type> animation </type>
+		<resource> vehicles/chinese/Ch25_121_mod_1971B/_skins/Ch25_121_mod_1971B_MC_3DSt/normal/lod0/Gun_01_idle.fbx </resource>
+		<clipName/>
+		<isLoop> true </isLoop>
+		<transition>
+			<to> moving_animation </to>
+			<blendDuration> 1.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> moving </name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> shooting_animation </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> shot </name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -841.000000 -255.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> moving_animation </name>
+		<type> animation </type>
+		<resource> vehicles/chinese/Ch25_121_mod_1971B/_skins/Ch25_121_mod_1971B_MC_3DSt/normal/lod0/Gun_01_move.fbx </resource>
+		<clipName/>
+		<isLoop> true </isLoop>
+		<transition>
+			<to> idle_animation </to>
+			<blendDuration> 0.500000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> idle </name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> shooting_animation </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> shot </name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -493.000000 -329.500000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> shooting_animation </name>
+		<type> animation </type>
+		<resource> vehicles/chinese/Ch25_121_mod_1971B/_skins/Ch25_121_mod_1971B_MC_3DSt/normal/lod0/Gun_01_shoot.fbx </resource>
+		<clipName/>
+		<isLoop> false </isLoop>
+		<transition>
+			<to> idle_animation </to>
+			<blendDuration> 0.250000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> exit_time </type>
+					<exitOffset> 0.500000 </exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> moving_animation </to>
+			<blendDuration> 0.500000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> moving </name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -492.500000 -181.500000 0.000000 </uiPosition>
+	</node>
+</root>

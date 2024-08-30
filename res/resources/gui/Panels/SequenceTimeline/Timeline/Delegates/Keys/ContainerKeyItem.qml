@@ -3,7 +3,6 @@ import QtQml.Models 2.2
 import QtGraphicalEffects 1.0
 
 import WGTools.AnimSequences 1.0 as Sequences
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
 import WGTools.Misc 1.0 as Misc
@@ -11,7 +10,6 @@ import WGTools.Debug 1.0
 
 import Panels.SequenceTimeline 1.0
 import Panels.SequenceTimeline.Menus 1.0
-import Panels.SequenceTimeline.Clickomatic 1.0
 import Panels.SequenceTimeline.Comments 1.0
 
 BaseKeyItem {
@@ -40,17 +38,6 @@ BaseKeyItem {
 				z: 0
 
 				anchors.verticalCenter: parent.verticalCenter
-
-				// clickomatic
-				Accessible.name: accessNameGenerator.accessibleName
-				Clickomatic.ClickomaticItem.acceptsDrop: false;
-
-				AccessibleNameGenerator {
-					id: accessNameGenerator
-					model: styleData.model.model
-					modelIndex: keyHolder.modelIndex
-					basename: "Containerkey"
-				}
 
 				// position and width
 				function getKeyPosition() {
@@ -305,7 +292,6 @@ BaseKeyItem {
 					MouseArea {
 						id: leftDurSizer
 						Accessible.name: "Left sizer"
-						Clickomatic.ClickomaticItem.acceptsDrop: false;
 
 						property var dragging: false
 
@@ -363,7 +349,6 @@ BaseKeyItem {
 					MouseArea {
 						id: rightDurSizer
 						Accessible.name: "Right sizer"
-						Clickomatic.ClickomaticItem.acceptsDrop: false;
 
 						property var dragging: false
 

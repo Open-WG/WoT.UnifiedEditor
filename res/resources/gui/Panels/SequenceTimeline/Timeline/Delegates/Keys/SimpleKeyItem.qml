@@ -2,7 +2,6 @@ import QtQuick 2.11
 import QtQml.Models 2.2
 
 import WGTools.AnimSequences 1.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 
 import Panels.SequenceTimeline 1.0
 import "../Bars"

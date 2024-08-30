@@ -9,7 +9,6 @@ Views.TreeView {
 	backgroundVisible: false
 	sortIndicatorVisible: true
 	alternatingRowColors: false
-	accesibleNameRole: "display"
 	rowDelegate: Details.RowDelegate {}
 
 	onDoubleClicked: {
@@ -30,7 +29,7 @@ Views.TreeView {
 	}
 
 	TableViewColumn {
-		role: view.accesibleNameRole
+		role: "display"
 		resizable: true
 		delegate: Details.ItemDelegate {
 			Component.onCompleted: view.expand(styleData.index)

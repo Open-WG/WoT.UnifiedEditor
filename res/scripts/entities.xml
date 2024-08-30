@@ -47,6 +47,7 @@
 		<StaticDeathZone/>
 		<BasicMine/>
 		<ApplicationPoint/>
+		<NetworkEntity/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -76,7 +77,6 @@
 		<EntitiesQueue/>
 		<GameStatsCollector/>
 		<YYChatMgr/>
-		<TutorialQueue/>
 		<UnitAssembler/>
 		<ClusterDismissal/>
 		<UnitFinder/>
@@ -88,7 +88,6 @@
 		<AccountSurrogate/>
 		<RankedMatchmaker/>
 		<RandomBattleMatchmaker/>
-		<SandboxMgr/>
 		<SingletonLock/>
 		<StrongholdBattleMgr/>
 		<StrongholdUnitMgr/>
@@ -108,5 +107,6 @@
 		<AccountsInvitationsWhiteList/>
 		<Comp7Mgr/>
 		<Comp7UnitMgr/>
+		<WinbackMgr/>
 	</ServerOnlyEntities>
 </root>

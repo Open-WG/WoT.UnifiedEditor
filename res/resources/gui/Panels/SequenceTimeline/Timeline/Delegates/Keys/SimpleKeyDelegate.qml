@@ -2,11 +2,9 @@ import QtQuick 2.11
 import QtQml.Models 2.2
 
 import WGTools.AnimSequences 1.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 
 import Panels.SequenceTimeline 1.0
 import Panels.SequenceTimeline.Menus 1.0
-import Panels.SequenceTimeline.Clickomatic 1.0
 import Panels.SequenceTimeline.Comments 1.0
 
 Item {
@@ -87,9 +85,6 @@ Item {
 	 */
 	MouseArea {
 		id: mouseAreaID
-
-		Accessible.name: accessNameGenerator.accessibleName
-		Clickomatic.ClickomaticItem.acceptsDrop: false
 
 		property bool dragging: false
 		property bool needToApplyChanges: false
@@ -173,13 +168,6 @@ Item {
 		Connections {
 			target: popupLoader.item
 			onClosed: popupLoader.sourceComponent = null
-		}
-
-		AccessibleNameGenerator {
-			id: accessNameGenerator
-			model: styleData.model.model
-			modelIndex: keyHolder.modelIndex
-			basename: "Simplekey"
 		}
 
 		MultiKeyHelper {

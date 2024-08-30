@@ -2,7 +2,6 @@ import QtQuick 2.7
 import QtGraphicalEffects 1.0
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Resources 1.0 as WGTResources
 import "Delegates/Grid" as Delegates
 
@@ -154,11 +153,6 @@ GridView {
 			readonly property bool hovered: true
 			readonly property bool selected: false
 		}
-	}
-
-	Clickomatic.ClickomaticItem.showChild: function(childName) {
-		var index = grid.model.indexOf(childName)
-		grid.positionViewAtIndex(index, GridView.Contain)
 	}
 
 	ScrollBar.vertical: ScrollBar {

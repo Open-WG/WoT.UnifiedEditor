@@ -2,10 +2,8 @@ import QtQuick 2.7
 import QtQml.Models 2.2
 
 import WGTools.AnimSequences 1.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 
 import Panels.SequenceTimeline 1.0
-import Panels.SequenceTimeline.Clickomatic 1.0
 import Panels.SequenceTimeline.Menus 1.0
 
 Item {
@@ -218,16 +216,6 @@ Item {
 			preventStealing: true
 
 			anchors.fill: parent
-
-			Accessible.name: accessNameGenerator.accessibleName
-			Clickomatic.ClickomaticItem.acceptsDrop: false
-			
-			AccessibleNameGenerator {
-				id: accessNameGenerator
-				model: root.model
-				modelIndex: root.modelIndex
-				basename: "CurveKey" + itemData.curveComponentColor
-			}
 
 			function handleSelection(mouse) {
 				var ctrlPressed = mouse.modifiers & Qt.ControlModifier

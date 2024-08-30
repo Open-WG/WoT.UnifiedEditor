@@ -5,7 +5,6 @@ import QtQml.StateMachine 1.0 as DSM
 import WGTools.Controls 2.0
 import WGTools.ControlsEx 1.0 as ControlsEx
 import WGTools.Models 1.0
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.PropertyGrid 1.0
 import WGTools.Resources 1.0 as WGTResources
 import WGTools.Misc 1.0 as Misc
@@ -93,12 +92,6 @@ ControlsEx.Panel {
 			}
 		}
 	}
-
-	// clickomatic -----------------------------------
-	Clickomatic.ClickomaticItem.showChild: function(child) {
-		propertyGrid.showChild(child)
-	}
-	// -----------------------------------------------
 
 	// models
 	PropertyGridModel {

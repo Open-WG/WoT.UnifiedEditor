@@ -46,7 +46,7 @@
 				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
 				<ps_element_not_render> 0 </ps_element_not_render>
 				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
-				<ps_element_off> 0 </ps_element_off>
+				<ps_element_off> 1 </ps_element_off>
 				<ps_emitter_off> 0 </ps_emitter_off>
 				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
 				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -82,7 +82,7 @@
 			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
-			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_fire_smoke> 0.800000 </f_fire_smoke>
 			<f_wind_weight> 0.000000 </f_wind_weight>
 			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
@@ -126,11 +126,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 62.000000 67.000000 1.000000 </value_RGBA>
-				<time> 0.820755 </time>
-				<value_RGBA> 91.000000 60.000000 60.000000 1.000000 </value_RGBA>
+				<value_RGBA> 54.000000 44.000000 15.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 54.000000 44.000000 15.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 59.000000 72.000000 0.000000 </value_RGBA>
+				<value_RGBA> 54.000000 44.000000 15.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -194,7 +194,7 @@
 			<particle.i_frame_div_V> 1 </particle.i_frame_div_V>
 			<particle.f_fps> 18.000000 </particle.f_fps>
 			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
-			<particle.f_K_gravity> 0.460000 </particle.f_K_gravity>
+			<particle.f_K_gravity> 0.860000 </particle.f_K_gravity>
 			<particle.f_K_gravity_max> 0.860000 </particle.f_K_gravity_max>
 			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
 			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
@@ -259,7 +259,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -331,11 +331,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 62.000000 67.000000 1.000000 </value_RGBA>
-				<time> 0.820755 </time>
-				<value_RGBA> 91.000000 60.000000 60.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 59.000000 72.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -387,8 +387,8 @@
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
 			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
 			<particle.ui_particle_Type> 2 </particle.ui_particle_Type>
-			<particle.f_particle_size> 1.000000 </particle.f_particle_size>
-			<particle.f_particle_size_max> 2.000000 </particle.f_particle_size_max>
+			<particle.f_particle_size> 1.500000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 3.000000 </particle.f_particle_size_max>
 			<particle.f_part_speed_module> 1.500000 </particle.f_part_speed_module>
 			<particle.f_part_speed_module_max> 4.000000 </particle.f_part_speed_module_max>
 			<particle.UV_set.left> 0.000000 </particle.UV_set.left>
@@ -464,7 +464,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -536,11 +536,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 30.000000 51.000000 1.000000 </value_RGBA>
-				<time> 0.827830 </time>
-				<value_RGBA> 91.000000 27.000000 53.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 27.000000 55.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -669,7 +669,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -741,11 +741,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 114.000000 124.000000 131.000000 1.000000 </value_RGBA>
-				<time> 0.837264 </time>
-				<value_RGBA> 145.000000 158.000000 176.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 136.000000 150.000000 159.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -879,7 +879,7 @@
 				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
 				<ps_element_not_render> 0 </ps_element_not_render>
 				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
-				<ps_element_off> 0 </ps_element_off>
+				<ps_element_off> 1 </ps_element_off>
 				<ps_emitter_off> 0 </ps_emitter_off>
 				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
 				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
@@ -889,7 +889,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -915,7 +915,7 @@
 			<f_strt_angle_speed_max> 0.000000 </f_strt_angle_speed_max>
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
-			<f_fire_smoke> 1.000000 </f_fire_smoke>
+			<f_fire_smoke> 0.800000 </f_fire_smoke>
 			<f_wind_weight> 0.000000 </f_wind_weight>
 			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
@@ -959,11 +959,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 62.000000 67.000000 1.000000 </value_RGBA>
-				<time> 0.820755 </time>
-				<value_RGBA> 91.000000 60.000000 60.000000 1.000000 </value_RGBA>
+				<value_RGBA> 54.000000 44.000000 15.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 54.000000 44.000000 15.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 59.000000 72.000000 0.000000 </value_RGBA>
+				<value_RGBA> 54.000000 44.000000 15.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -1027,7 +1027,7 @@
 			<particle.i_frame_div_V> 1 </particle.i_frame_div_V>
 			<particle.f_fps> 18.000000 </particle.f_fps>
 			<particle.f_dir_length> 0.000000 </particle.f_dir_length>
-			<particle.f_K_gravity> 0.460000 </particle.f_K_gravity>
+			<particle.f_K_gravity> 0.860000 </particle.f_K_gravity>
 			<particle.f_K_gravity_max> 0.860000 </particle.f_K_gravity_max>
 			<particle.f_YAW_min> 0.000000 </particle.f_YAW_min>
 			<particle.f_YAW_max> 0.000000 </particle.f_YAW_max>
@@ -1092,7 +1092,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1164,11 +1164,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 62.000000 67.000000 1.000000 </value_RGBA>
-				<time> 0.820755 </time>
-				<value_RGBA> 91.000000 60.000000 60.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 59.000000 72.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -1297,7 +1297,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1369,11 +1369,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 30.000000 51.000000 1.000000 </value_RGBA>
-				<time> 0.827830 </time>
-				<value_RGBA> 91.000000 27.000000 53.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 27.000000 55.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -1502,7 +1502,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1574,11 +1574,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 114.000000 124.000000 131.000000 1.000000 </value_RGBA>
-				<time> 0.837264 </time>
-				<value_RGBA> 145.000000 158.000000 176.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 136.000000 150.000000 159.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -1722,7 +1722,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1794,11 +1794,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 62.000000 67.000000 1.000000 </value_RGBA>
-				<time> 0.820755 </time>
-				<value_RGBA> 91.000000 60.000000 60.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 59.000000 72.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -1927,7 +1927,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1999,11 +1999,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 111.000000 30.000000 51.000000 1.000000 </value_RGBA>
-				<time> 0.827830 </time>
-				<value_RGBA> 91.000000 27.000000 53.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 98.000000 27.000000 55.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>
@@ -2132,7 +2132,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 1 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -2204,11 +2204,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 114.000000 124.000000 131.000000 1.000000 </value_RGBA>
-				<time> 0.837264 </time>
-				<value_RGBA> 145.000000 158.000000 176.000000 1.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
+				<time> 0.821000 </time>
+				<value_RGBA> 65.000000 104.000000 33.000000 1.000000 </value_RGBA>
 				<time> 1.000000 </time>
-				<value_RGBA> 136.000000 150.000000 159.000000 0.000000 </value_RGBA>
+				<value_RGBA> 65.000000 104.000000 33.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
 			<tl_color_op_key>
 				<time> 0.000000 </time>

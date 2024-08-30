@@ -1,7 +1,6 @@
 import QtQuick 2.11
 import QtQml.Models 2.2
 import WGTools.PropertyGrid 1.0 as WGTools
-import WGTools.Clickomatic 1.0 as Clickomatic
 import "../../../Settings.js" as Settings
 import "../../Property" as Details
 import "../../Grid" as Details
@@ -201,31 +200,6 @@ Item {
 
 		return result
 	}
-
-	// clickomatic -----------------------------------
-	Clickomatic.ClickomaticItem.showChild: function(name) {
-		expand(false)
-
-		var child = findChild(name)
-		if (child) {
-			propertyGrid.scrollToChild(child)
-		}
-	}
-
-	function findChild(name) {
-		for (var i=0; i<childrenRepeater.count; ++i) {
-			var item = childrenRepeater.itemAt(i)
-			if (item) {
-				item = item.item
-				if (item && item.Accessible.name == name) {
-					return item
-				}
-			}
-		}
-
-		return null
-	}
-	// -----------------------------------------------
 
 	Loader {
 		id: backgroundLoader

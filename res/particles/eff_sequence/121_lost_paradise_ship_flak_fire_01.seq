@@ -1,0 +1,139 @@
+<root>
+	<duration> 50.000004 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> gun_01 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> -2.054794 3.655849 0.000000 </inTangent>
+				<outTangent> -2.054794 3.655849 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.866667 </startTime>
+				<value> -10.000000 17.791801 0.000000 </value>
+				<inTangent> -4.974763 2.699582 0.000000 </inTangent>
+				<outTangent> -4.974763 2.699582 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.133334 </startTime>
+				<value> -20.000000 20.000000 0.000000 </value>
+				<inTangent> -3.947366 0.414340 0.000000 </inTangent>
+				<outTangent> -3.947366 0.414340 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 17.066668 </startTime>
+				<value> -20.000000 10.000000 0.000000 </value>
+				<inTangent> -0.417827 0.169424 0.000000 </inTangent>
+				<outTangent> -0.417827 0.169424 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 29.033335 </startTime>
+				<value> -30.000000 25.000000 0.000000 </value>
+				<inTangent> -0.042827 0.467389 0.000000 </inTangent>
+				<outTangent> -0.042827 0.467389 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 41.033337 </startTime>
+				<value> -21.000000 21.175554 0.000000 </value>
+				<inTangent> 0.430762 -0.503714 0.000000 </inTangent>
+				<outTangent> 0.430762 -0.503714 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 50.000004 </startTime>
+				<value> -20.000000 15.000000 0.000000 </value>
+				<inTangent> 0.111524 -0.688724 -0.000000 </inTangent>
+				<outTangent> 0.111524 -0.688724 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 11.000001 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 17.000000 </startTime>
+				<duration> 2.500002 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 23.000002 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 29.000002 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 35.000000 </startTime>
+				<duration> 2.500004 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 41.000004 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 47.100002 </startTime>
+				<duration> 2.500000 </duration>
+				<value> particles/eff_sequence/121_effsfx_Flakvierling38_fire.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

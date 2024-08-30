@@ -1,5 +1,4 @@
 import QtQuick 2.11
-import WGTools.Clickomatic 1.0 as Clickomatic
 import Panels.SequenceTimeline 1.0
 
 Item {
@@ -67,7 +66,6 @@ Item {
 			id: rightHandleMA
 
 			Accessible.name: "Right Handle"
-			Clickomatic.ClickomaticItem.acceptsDrop: false;
 
 			property var dragging: false
 			property var applyChanges: false
@@ -161,7 +159,6 @@ Item {
 			id: leftHandleMA
 
 			Accessible.name: "Left handle"
-			Clickomatic.ClickomaticItem.acceptsDrop: false;
 
 			property var dragging: false
 			property var applyChanges: false

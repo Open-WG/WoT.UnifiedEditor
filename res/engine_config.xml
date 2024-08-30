@@ -1,4 +1,4 @@
-<!-- edited with XMLSpy v2015 sp2 (x64) (http://www.altova.com) by Andrey Kulik (Game Stream) -->
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Wargaming Limited (Wargaming Group Limited) -->
 <engine_config.xml>
 	<!-- This file contains a variety of options to control and
 customise the behaviour of the BigWorld Client Engine. -->
@@ -353,8 +353,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<isOnline> false </isOnline>
 		<!-- Sets server to send crash dumps for client -->
 		<clientUrl> http://cat-st1.wargaming.net </clientUrl>
-		<!-- Sets server to send crash dumps for bots -->
-		<botsUrl> http://cat-st1.wargaming.net </botsUrl>
 		<!-- Enables getting full dump when application crashes -->
 		<fullDump> true </fullDump>
 		<!-- Enables collecting personal data -->
@@ -584,6 +582,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> music_interactive_part_11.pck </name>
 				</bank>
 				<bank>
+					<name> music_interactive_part_12.pck </name>
+				</bank>
+				<bank>
 					<name> wheel_vehicle_GUI.pck </name>
 				</bank>
 				<bank>
@@ -637,7 +638,7 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> researches.bnk </name>
 				</bank>
 				<bank>
-					<name> tasks_holiday.bnk </name>
+					<name> tasks.bnk </name>
 				</bank>
 				<bank>
 					<name> cons_hangar.bnk </name>
@@ -680,6 +681,15 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> ev_fep_hangar.pck </name>
+				</bank>
+				<bank>
+					<name> ev_lootboxes.bnk </name>
+				</bank>
+				<bank>
+					<name> tournaments.bnk </name>
+				</bank>
+				<bank>
+					<name> achievements.bnk</name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>

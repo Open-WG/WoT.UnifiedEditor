@@ -1,7 +1,6 @@
 import QtQuick 2.11
 import QtQuick.Controls 1.4 as QuickControls
 import QtQml.Models 2.11
-import WGTools.Clickomatic 1.0 as Clickomatic
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
 import WGTools.Controls.impl 1.0
@@ -21,7 +20,6 @@ Views.TreeView {
 
 	headerVisible: useExtraColumns
 	sortIndicatorVisible: sortable
-	accesibleNameRole: nameColumn.role
 	__wheelAreaScrollSpeed: ControlsSettings.mouseWheelScrollVelocity2
 
 	property var columnsSortingObject: sceneOutlineContext.columnsSortingObject
@@ -177,15 +175,6 @@ Views.TreeView {
 				value: treeView.activeFocus && styleData.row != -1 && styleData.index == treeView.currentIndex
 				delayed: true
 			}
-
-			// clickomatic --------------------------------
-			Accessible.name: accesibleNameGenerator.value
-			Clickomatic.TableAccesibleNameGenerator {
-				id: accesibleNameGenerator
-				role: treeView.accesibleNameRole
-				modelIndex: styleData.index
-			}
-			// --------------------------------------------
 
 			Component.onCompleted: {
 				expandTimer.start()

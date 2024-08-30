@@ -23,9 +23,10 @@
 		<rule>//physics/detailed/*[not(name()='engines') and not(name()='chassis')]</rule>
 		<rule>//physics/detailed/engines/*[not(smplEnginePower) and not(name()='smplFwMaxSpeed')]</rule>
 		<rule>//physics/detailed/engines/*/*[not(name()='smplEnginePower') and not(name()='smplFwMaxSpeed')]</rule>
-		<rule>//physics/detailed/chassis/*[not(grounds) and not(axleCount) and not(axleSteeringLockAngles) and not(wheelRiseSpeed)]</rule>
-		<rule>//physics/detailed/chassis/*/*[not(name()='grounds') and not(name()='axleCount') and not(name()='axleSteeringLockAngles') and not(name()='wheelRiseSpeed')]</rule>
+		<rule>//physics/detailed/chassis/*[not(grounds) and not(axleCount) and not(axleSteeringAngles) and not(axleSteeringLockAngles) and not(wheelRiseSpeed) and not(isWheeledOnSpotRotation) and not(burnout)]</rule>
+		<rule>//physics/detailed/chassis/*/*[not(name()='grounds') and not(name()='axleCount') and not(name()='axleSteeringAngles') and not(name()='axleSteeringLockAngles') and not(name()='wheelRiseSpeed') and not(name()='isWheeledOnSpotRotation') and not(name()='burnout')]</rule>
 		<rule>//physics/detailed/chassis/*/grounds/*/*[not(name()='rollingFriction')]</rule>
+		<rule>//physics/detailed/chassis/*/burnout/*</rule>
 	</default_vehicles>
 	<tank_components>
 		<rule>//hysteresisHealth</rule>
