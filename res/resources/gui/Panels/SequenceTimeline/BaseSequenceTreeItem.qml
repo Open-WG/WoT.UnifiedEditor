@@ -15,6 +15,15 @@ Rectangle {
 		? styleData.selectionModel.isSelected(styleData.index)
 		: false
 
+	property bool _renamingActive : false
+
+	on_SelectedChanged: {
+		if (_selected === false)
+			_renamingActive = false
+	}
+
+	focus: _selected
+
 	color: _selected ? Constants.selectionColor : (index % 2 ? Constants.seqTreeEvenItemColor : Constants.seqTreeOddItemColor)
 	height: Constants.seqTreeItemHeight
 
@@ -37,7 +46,7 @@ Rectangle {
 			propagateComposedEvents: true
 
 			onPressed: mouse.accepted = false
-			onReleased: mouse.accepted = false
+			onReleased: mouse.accepted = true
 			onWheel: wheel.accepted = false
 			onEntered: selectionFrame.border.color = Constants.selectionColor
 			onExited: selectionFrame.border.color = "transparent"
@@ -49,7 +58,43 @@ Rectangle {
 		ignoreUnknownSignals: false
 		onSelectionChanged : {
 			itemRoot._selected = styleData.selectionModel.isSelected(styleData.index)
+
+			if (itemRoot._selected)
+			{
+				itemRoot.forceActiveFocus()
+			}
 		}
+	}
+
+	Connections {
+		target: styleData.context
+		ignoreUnknownSignals: false
+		onRenamingNodeChanged: {
+			if (itemData.canBeRenamed)
+			{
+				itemRoot.forceActiveFocus()
+				itemRoot._renamingActive = true
+			}
+		}
+		enabled: _selected
+	} 
+
+	// Ensure that we get escape key press events first.
+	Keys.onShortcutOverride: event.accepted = (//event.key === Qt.Key_F2 || 
+		event.key === Qt.Key_Escape)
+	// Keys.onPressed: {
+	// 	if (event.key == Qt.Key_F2) {
+	// 		if (itemData.canBeRenamed)
+	// 		{
+	// 			itemRoot._renamingActive = true
+	// 		}
+	// 		event.accepted = true
+	// 	}
+	// }
+	Keys.onEscapePressed: {
+		itemRoot._renamingActive = false
+
+		event.accepted = true
 	}
 
 	Loader {
@@ -61,9 +106,10 @@ Rectangle {
 		height: Constants.seqTreeItemHeight
 
 		clip: true
+		focus: true
 
 		sourceComponent: Item {
-			id: rectCopmponent
+			id: rectComponent
 
 			Controls.Button {
 				id: expandButton
@@ -72,7 +118,7 @@ Rectangle {
 				width: 25
 				height: Constants.seqTreeItemHeight
 				visible: (itemData.isExpandable && hasChildren) 
-					|| (itemData.keyType == SequenceItemTypes.CurveKey && itemData.curveContainer != null)
+				 	|| (itemData.keyType == SequenceItemTypes.CurveKey && itemData.curveContainer != null)
 				rotation: getRotation()
 
 				focusPolicy: Qt.NoFocus
@@ -96,21 +142,18 @@ Rectangle {
 				onClicked: {
 					if (isCurveTrack())
 						styleData.curveEditorEnabled = !styleData.curveEditorEnabled
-					else {
+					else
 						if (styleData.expanded)
 							styleData.view.collapse(styleData.index)
 						else
 							styleData.view.expand(styleData.index)
-					}
 				}
 
 				function getRotation() {
-					if (isCurveTrack()) {
+					if (isCurveTrack())
 						return styleData.curveEditorEnabled ? 90 : 0
-					}
-					else {
+					else
 						return styleData.expanded ? 90 : 0
-					}
 				}
 
 				function isCurveTrack() {
@@ -139,12 +182,13 @@ Rectangle {
 
 			Misc.Text {
 				id: entryLabel
+
+				enabled: !itemRoot._renamingActive
+				visible: !itemRoot._renamingActive
 				Accessible.name: "Text"
 
 				color: "white"
-				text: itemData.label == "Root"
-					? styleData.context.playbackController.attachedResourceName
-					: itemData.label
+				text: itemData.label == "Root" ? styleData.context.playbackController.attachedResourceName : itemData.label
 				
 				font.pixelSize: Constants.fontSize
 				font.family: Constants.proximaRg
@@ -153,6 +197,56 @@ Rectangle {
 				anchors.left : iconFrame.right
 				anchors.horizontalCenter: expandButton.horizontalCenter
 				anchors.verticalCenter: expandButton.verticalCenter
+
+				onTextChanged: textRenamingArea.text = text
+			}
+
+			//Controls.TextArea {
+			TextInput{
+				id: textRenamingArea
+				
+				visible: itemRoot._renamingActive
+				//placeholderText: entryLabel.text
+				text: entryLabel.text
+				color: "white"
+				height: Constants.seqTreeItemHeight - selectionFrame.border.width * 2
+				
+				font.pixelSize: Constants.fontSize
+				font.family: Constants.proximaRg
+				font.bold: true
+
+				anchors.left : entryLabel.left
+				anchors.top : entryLabel.top
+
+				onVisibleChanged: {
+					text = entryLabel.text
+					selectAll()
+					forceActiveFocus()
+				}
+
+				onEditingFinished: {
+					if (itemData && itemRoot._renamingActive && itemData.nameIsValid(text))
+					{
+						itemData.setObjectName(text)
+
+						itemRoot._renamingActive = false;
+					}
+					else
+						color = "red"
+				}
+
+				Behavior on color {
+					SequentialAnimation {
+						loops: 1
+						ColorAnimation { from: "white"; to: "red"; duration: 300 }
+						ColorAnimation { from: "red"; to: "white";  duration: 300 }
+
+						onRunningChanged: {
+							if (running == false)
+								itemRoot._renamingActive = false;
+						}
+					}
+				}
 			}
 		}
 	}

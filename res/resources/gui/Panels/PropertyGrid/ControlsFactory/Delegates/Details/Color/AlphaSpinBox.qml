@@ -48,6 +48,8 @@ SpinBox {
 				ticks.visible: false
 				labels.visible: false
 				valueData: control.valueData
+				from: 0.0
+				to: 100.0
 
 				Connections {
 					target: slider.controller

@@ -812,7 +812,7 @@
 				<time> 1.000000 </time>
 				<value> 0.992000 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 0.000000 0.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -837,7 +837,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 1 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>
@@ -4764,7 +4764,7 @@
 				<time> 1.000000 </time>
 				<value> 0.992000 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 0.000000 0.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 0.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -4789,7 +4789,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 1 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>

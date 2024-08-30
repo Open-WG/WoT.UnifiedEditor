@@ -27,7 +27,7 @@ ControlsEx.Panel {
 		width: animation.width;
 		height: animation.height;
 		color: _palette.color7
-		visible: context.inProgress
+		visible: !context.disabled && context.inProgress
 
 		AnimatedImage {
 			id: animation;
@@ -47,17 +47,44 @@ ControlsEx.Panel {
 		anchors.horizontalCenter: parent.horizontalCenter
 	}
 
+	Rectangle {
+		width: image.width
+		height: image.height
+		color: _palette.color8
+		visible: context.disabled
+
+		Image {
+			id: image
+
+			width: sourceSize.width * 0.75
+			height: sourceSize.width * 0.75
+
+			source: "image://gui/no-select-2"
+		}
+
+		Text {
+			text: "Validation is disabled, because current realm is not 'DEV'"
+			anchors.top: image.bottom
+			anchors.topMargin: 5
+			anchors.horizontalCenter: parent.horizontalCenter
+			color: _palette.color2
+		}
+
+		anchors.verticalCenter: parent.verticalCenter
+		anchors.horizontalCenter: parent.horizontalCenter
+	}
+
 	Image {
 		anchors.fill: parent
 		source: "image://gui/model-validate-success"
 		fillMode: Image.PreserveAspectFit 
-		visible: (!context.inProgress && context.model.rowCount() == 0)
+		visible: (!context.disabled && !context.inProgress && context.model.rowCount() == 0)
 	}
 
 	ColumnLayout {
 		anchors.fill: parent 
 		spacing: 2
-		visible: (!context.inProgress && context.model.rowCount() > 0)
+		visible: (!context.disabled && !context.inProgress && context.model.rowCount() > 0)
 
 		TableView {
 			id: tableView
@@ -142,6 +169,8 @@ ControlsEx.Panel {
 				if (__completed)
 					resizeColumnsToContents()
 			}
+
+			onDoubleClicked: context.model.onDoubleClicked(tableView.currentRow)
 
 			Component.onCompleted: {
 				__completed = true

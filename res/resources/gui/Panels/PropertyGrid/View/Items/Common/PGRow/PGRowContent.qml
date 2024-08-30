@@ -21,7 +21,7 @@ Item {
 		visible: control.label && control.label.enabled
 
 		Binding { target: control.label; property: "parent"; value: labelContainer }
-		Binding { target: control.label; property: "width"; value: labelContainer.width }
+		Binding { target: control.label; property: "width"; value: labelContainer.width; delayed: true }
 		Binding { target: control.label; property: "height"; value: labelContainer.height }
 	}
 
@@ -40,7 +40,7 @@ Item {
 		y: parent.height - height
 
 		Binding { target: control.item; property: "parent"; value: controlContainer }
-		Binding { target: control.item; property: "width"; value: controlContainer.width }
+		Binding { target: control.item; property: "width"; value: controlContainer.width; delayed: true }
 		Binding { target: control.item; property: "height"; value: controlContainer.height }
 	}
 }

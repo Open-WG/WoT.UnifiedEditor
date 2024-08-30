@@ -18,9 +18,7 @@
 		<rule>//physics/detailed/engines/*/*[not(name()='smplEnginePower') and not(name()='smplFwMaxSpeed')]</rule>
 		<rule>//physics/detailed/chassis/*[not(grounds) and not(axleCount) and not(axleSteeringLockAngles) and not(wheelRiseSpeed)]</rule>
 		<rule>//physics/detailed/chassis/*/*[not(name()='grounds') and not(name()='axleCount') and not(name()='axleSteeringLockAngles') and not(name()='wheelRiseSpeed')]</rule>
-		<rule>//physics/detailed/chassis/*/grounds/*[not(medium)]</rule>
-		<rule>//physics/detailed/chassis/*/grounds/*/*[not(name()='medium')]</rule>
-		<rule>//physics/detailed/chassis/*/grounds/*/*/*[not(name()='rollingFriction')]</rule>
+		<rule>//physics/detailed/chassis/*/grounds/*/*[not(name()='rollingFriction')]</rule>
 	</default_vehicles>
 	<tank_components>
 		<rule>//hysteresisHealth</rule>

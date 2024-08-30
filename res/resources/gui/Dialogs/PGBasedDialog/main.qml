@@ -9,7 +9,7 @@ Rectangle {
 	color: _palette.color8
 
 	Accessible.name: qmlView.title
-	property int minimumHeight : propertyGridView.implicitHeight + footer.height
+	property int minimumHeight : propertyGridView.implicitHeight  + footer.height
 
 	View.PropertyGrid {
 		id: propertyGridView
@@ -52,7 +52,7 @@ Rectangle {
 			Controls.Button {
 				implicitWidth: ControlsSettings.width
 				text: "Ok"
-				enabled: !context.hasOwnProperty("acceptable") || context.acceptable
+				enabled: (!context.hasOwnProperty("acceptable") || context.acceptable) && (propertyGridView.invalidDelegateCount == 0)
 				onClicked: context.accept()
 			}
 

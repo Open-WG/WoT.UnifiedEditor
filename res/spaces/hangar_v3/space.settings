@@ -1,4 +1,4 @@
-<space.settings>
+<root>
 	<chunkSize> 100.000000 </chunkSize>
 	<flora> spaces/hangar_v3/flora.xml </flora>
 	<bounds>
@@ -53,8 +53,10 @@
 				<tile> maps/landscape/00_AllTerrain3_tiles/Forest_Ground_AM.dds </tile>
 			</tiles>
 		</outland>
-		<tessZoomThreshold> 0.050000 </tessZoomThreshold>
-		<tessZoomScale> 0.300000 </tessZoomScale>
+		<tessZoomUpperThreshold> 0.000000 </tessZoomUpperThreshold>
+		<tessZoomLowerThreshold> -0.030000 </tessZoomLowerThreshold>
+		<tessZoomUpperScale> 0.300000 </tessZoomUpperScale>
+		<tessZoomLowerScale> 0.200000 </tessZoomLowerScale>
 		<blendMacroInfluence> 1.000000 </blendMacroInfluence>
 		<blendGlobalThreshold> 0.100000 </blendGlobalThreshold>
 		<blendHeight> 0.300000 </blendHeight>
@@ -190,21 +192,22 @@
 			<tanks> 0 </tanks>
 		</geometry>
 	</streaming>
+	<navmeshGenerator> navgen </navmeshGenerator>
 	<hangarSettings>
 		<customizationHangarSettings>
 			<v_start_pos> 1.110000 206.300003 -0.852000 </v_start_pos>
 			<v_start_angles> 0.000000 0.000000 0.000000 </v_start_angles>
 			<shadow_forward_y_offset> -0.020000 </shadow_forward_y_offset>
 			<shadow_deferred_y_offset> 0.000000 </shadow_deferred_y_offset>
+			<havokSceneBounds>
+				<minHeight> -2 </minHeight>
+				<maxHeight> 3 </maxHeight>
+			</havokSceneBounds>
 			<cam_start_dist> 9.000000 </cam_start_dist>
 			<cam_dist_constr> 1.000000 9.000000 </cam_dist_constr>
 			<cam_start_angles> 210.000000 -16.000000 </cam_start_angles>
 			<cam_pivot_pos> 0.000000 1.000000 0.000000 </cam_pivot_pos>
 			<cam_start_target_pos> 1.110000 206.300003 -0.852000 </cam_start_target_pos>
-			<havokSceneBounds>
-				<minHeight> -2 </minHeight>
-				<maxHeight> 3 </maxHeight>
-			</havokSceneBounds>
 			<cam_fluency> 0.150000 </cam_fluency>
 		</customizationHangarSettings>
 		<v_start_pos> 1.000000 6.195000 1.000000 </v_start_pos>
@@ -214,6 +217,8 @@
 		<vehicle_turret_yaw> 0.000000 </vehicle_turret_yaw>
 		<shadow_forward_y_offset> -0.010000 </shadow_forward_y_offset>
 		<shadow_deferred_y_offset> 0.050000 </shadow_deferred_y_offset>
+		<cam_yaw_constr> -180.000000 180.000000 </cam_yaw_constr>
+		<cam_pitch_constr> -80.000000 0.000000 </cam_pitch_constr>
 		<cam_sens> 0.005000 </cam_sens>
 		<cam_dist_sens> 0.003000 </cam_dist_sens>
 		<cam_fluency> 0.100000 </cam_fluency>
@@ -221,10 +226,8 @@
 		<cam_pivot_pos> 0.000000 1.000000 0.000000 </cam_pivot_pos>
 		<cam_start_dist> 10.000000 </cam_start_dist>
 		<cam_dist_constr> 4.000000 12.000000 </cam_dist_constr>
-		<cam_min_dist_vehicle_hull_length_k> 0.600000 </cam_min_dist_vehicle_hull_length_k>
 		<cam_start_angles> 162.000000 -6.000000 </cam_start_angles>
-		<cam_yaw_constr> -180.000000 180.000000 </cam_yaw_constr>
-		<cam_pitch_constr> -80.000000 0.000000 </cam_pitch_constr>
+		<cam_min_dist_vehicle_hull_length_k> 0.600000 </cam_min_dist_vehicle_hull_length_k>
 		<cam_capsule_scale> 2.000000 2.000000 2.000000 </cam_capsule_scale>
 		<cam_capsule_gun_scale> 1.000000 1.000000 1.100000 </cam_capsule_gun_scale>
 		<cam_idle_pitch_constr> -0.500000 -0.080000 </cam_idle_pitch_constr>
@@ -244,4 +247,5 @@
 		<preview_cam_pivot_pos> 0.000000 1.000000 0.000000 </preview_cam_pivot_pos>
 		<preview_cam_start_target_pos> 1.000000 6.195000 1.000000 </preview_cam_start_target_pos>
 	</hangarSettings>
-</space.settings>
+	<nearPlane> 0.250000 </nearPlane>
+</root>

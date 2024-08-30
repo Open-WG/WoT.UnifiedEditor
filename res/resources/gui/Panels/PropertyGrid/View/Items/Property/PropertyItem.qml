@@ -37,9 +37,10 @@ Details.PGRow {
 		Details.ActionBar {
 			id: ab
 			x: layout.width - width
-			actions: model ? model.node.property.actions.list : null
+			y: (parent.height - height) / 2
+			actions: model ? model.node.actions : null
 			placeholderCount: model
-				? model.node.property.actionPlaceholderCount
+				? model.node.actionPlaceholderCount
 				: 0
 		}
 	}

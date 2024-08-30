@@ -41,4 +41,16 @@
 		<!-- sound -->
 		<hardness_rtpc>0.2</hardness_rtpc>
 	</effect>
+	<effect>
+		<name> dirt </name>
+		<hardness_map> 0.02 0.2 </hardness_map>
+		<!-- sound -->
+		<hardness_rtpc>0.1</hardness_rtpc>
+	</effect>
+	<effect>
+		<name> oil </name>
+		<hardness_map> 0.02 0.2 </hardness_map>
+		<!-- sound -->
+		<hardness_rtpc>0</hardness_rtpc>
+	</effect>
 </root>

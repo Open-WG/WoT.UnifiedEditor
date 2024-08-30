@@ -2387,8 +2387,8 @@
 				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
 			</dw_ext_mode>
 			<i_RT_shader_num> -1 </i_RT_shader_num>
-			<emitter.f_life_min> 2.800000 </emitter.f_life_min>
-			<emitter.f_life_max> 2.800000 </emitter.f_life_max>
+			<emitter.f_life_min> 2.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 2.200000 </emitter.f_life_max>
 			<emitter.f_delay_min> 0.100000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.100000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
@@ -6052,8 +6052,8 @@
 				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
 			</dw_ext_mode>
 			<i_RT_shader_num> -1 </i_RT_shader_num>
-			<emitter.f_life_min> 2.800000 </emitter.f_life_min>
-			<emitter.f_life_max> 2.800000 </emitter.f_life_max>
+			<emitter.f_life_min> 2.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 2.200000 </emitter.f_life_max>
 			<emitter.f_delay_min> 0.100000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.100000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
@@ -7084,8 +7084,8 @@
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
 			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
 		</i_lod_mask>
-		<f_near_clip> 60.000000 </f_near_clip>
-		<f_far_clip> 120.000000 </f_far_clip>
+		<f_near_clip> 120.000000 </f_near_clip>
+		<f_far_clip> 500.000000 </f_far_clip>
 		<f_Skip_time> 0.000000 </f_Skip_time>
 		<buffer/>
 		<dw_mode>

@@ -4,4 +4,9 @@
 	<shadow_empty_texture_name>	system/maps/aid_null.dds	</shadow_empty_texture_name>
 	<igrPremHangarPath> spaces/hangar_v3 </igrPremHangarPath>
 	<igrPremHangarPathCN> spaces/hangar_v3 </igrPremHangarPathCN>
+	<hangar_space_switch_items>
+		<item name="BATTLE_ROYALE" space="h31_battle_royale_2020" waitingMessage="battleRoyale/hangarLoading" waitingBackground="gui/maps/icons/lobby/brWaitingBg.png"/>
+		<item name="FESTIVAL" space="h20_wot_bday" waitingMessage="festival/hangarLoading"/>
+		<item name="DEFAULT" space="hangar_v3"/>
+	</hangar_space_switch_items>
 </hangars.xml>

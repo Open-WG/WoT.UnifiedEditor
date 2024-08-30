@@ -6,8 +6,6 @@ import WGTools.Controls.impl 1.0 as Impl
 
 T.Menu {
 	id: control
-
-	Accessible.name: "Menu"
 			
 	implicitWidth: Math.max(
 		background ? background.implicitWidth : 0,

@@ -2,6 +2,7 @@ import QtQuick 2.11
 import WGTools.Controls 2.0
 
 ListView {
+	Accessible.name: "Menu"
 	implicitHeight: contentHeight
 	snapMode: ListView.SnapToItem
 	boundsBehavior: Flickable.StopAtBounds

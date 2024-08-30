@@ -1,4 +1,3 @@
-<!-- edited with XMLSpy v2015 sp2 (x64) (http://www.altova.com) by Alexander Yatsukevich (Game Stream) -->
 <root>
 	<kind>
 		<id> 1 </id>
@@ -409,7 +408,6 @@
 		<id> 101 </id>
 		<desc> grass </desc>
 		<help> Grass </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> ground </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Grass_Sugarcane_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Grass_Flowers_02_AM </terrain>
@@ -437,12 +435,12 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Green_21_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Grass_Flowers_03_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Burned_Grass_02_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Grass_Tussock_11_AM </terrain>
 	</kind>
 	<kind>
 		<id> 102 </id>
 		<desc> moss </desc>
 		<help> Moss </help>
-		<ground_strength> soft </ground_strength>
 		<effect_material> ground </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Moss_02_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/ForestFloor-07_AM </terrain>
@@ -455,7 +453,6 @@
 		<id> 103 </id>
 		<desc> sand </desc>
 		<help> Sand </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> sand </effect_material>
 		<terrain> maps/landscape/00_Allterrain3_tiles/Sand_Grass_00379_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Gravel_Damaged_Dirty_Fine_02_AM </terrain>
@@ -497,12 +494,14 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Gravel_Sandy_Fine_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Sand_Dunes_15_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/ClayDryCracked_light_05_00372_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Sand_Desert_02_3_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/SandDesert_04_00344_yellow_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Sulfur_01_AM </terrain>
 	</kind>
 	<kind>
 		<id> 104 </id>
 		<desc> forest_ground </desc>
 		<help> Forest ground </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> ground </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Forest_Ground_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Dry_AM </terrain>
@@ -518,7 +517,6 @@
 		<id> 105 </id>
 		<desc> ground </desc>
 		<help> Ground </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> ground </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/SoilPlowed_00487_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_Ground_10_2_AM </terrain>
@@ -557,18 +555,15 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Tundra_Leafs_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_Dark_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Sand_Stony_Fine_11_AM </terrain>
-		<terrain> maps/landscape/00_AllTerrain3_tiles/Mud_Soil_02_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Farmland_02_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/GreatWall_Leafs_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Ground_wet_light_02_AM </terrain>
-		<terrain> maps/landscape/00_AllTerrain3_tiles/Burned_soil_Dark_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Soil_Damaged_Burned_01_AM </terrain>
 	</kind>
 	<kind>
 		<id> 106 </id>
 		<desc> block </desc>
 		<help> Block </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> ground </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_Highway_sidewalk_01_AM </terrain>
 	</kind>
@@ -576,7 +571,6 @@
 		<id> 107 </id>
 		<desc> rock </desc>
 		<help> Rock </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> stone </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Rock_1_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Rock_4_AM </terrain>
@@ -594,19 +588,19 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/GreatWall_rock14_debris_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/AsphaltDamaged_0057_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Rock_4_Grey_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Pavment_066_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Asphalt_04_AM </terrain>
 	</kind>
 	<kind>
 		<id> 108 </id>
 		<desc> wood </desc>
 		<help> Wood </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> wood </effect_material>
 	</kind>
 	<kind>
 		<id> 109 </id>
 		<desc> firm_road </desc>
 		<help> Firm Road </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> sand </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Paving_Fine_Big_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Paving_Fine_Big_01_v2_AM </terrain>
@@ -616,7 +610,6 @@
 		<id> 110 </id>
 		<desc> snow </desc>
 		<help> Snow </help>
-		<ground_strength> medium </ground_strength>
 		<effect_material> snow </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/SnowBigClods_01_00316_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Snow_05_AM </terrain>
@@ -641,12 +634,12 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/SnowDebrisGrass_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/SnowDunesSmall_36_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Snow_35_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Ice3_AM </terrain>
 	</kind>
 	<kind>
 		<id> 111 </id>
 		<desc> stone </desc>
 		<help> Stone </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> stone </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_rock14_debris_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_rock14_debris_dark_AM </terrain>
@@ -712,21 +705,38 @@
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Asphalt_Stony_Fine_01_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Asphalt_AM </terrain>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_Railroad_Rocks_1m_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/PBS_CobbleStone_03_AM </terrain>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Com_ConcretePlates_02_AM </terrain>
+        <terrain> maps/landscape/00_AllTerrain3_tiles/Paving_Directed_201_AM </terrain>
 	</kind>
 	<kind>
 		<id> 112 </id>
 		<desc> metal </desc>
 		<help> Metal </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> metal </effect_material>
 	</kind>
 	<kind>
 		<id> 113 </id>
 		<desc> sand_road </desc>
 		<help> Sand Road </help>
-		<ground_strength> firm </ground_strength>
 		<effect_material> sand </effect_material>
 		<terrain> maps/landscape/00_AllTerrain3_tiles/Gravel_Sandy_Fine_16_AM </terrain>
+	</kind>
+	<kind>
+		<id> 114 </id>
+		<desc> dirt </desc>
+		<help> Dirt </help>
+		<ground_strength> soft </ground_strength>
+		<effect_material> dirt </effect_material>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Mud_Soil_02_AM </terrain>
+	</kind>
+	<kind>
+		<id> 115 </id>
+		<desc> oil </desc>
+		<help> Oil </help>
+		<ground_strength> soft </ground_strength>
+		<effect_material> oil </effect_material>
+		<terrain> maps/landscape/00_AllTerrain3_tiles/Burned_soil_Dark_01_AM </terrain>
 	</kind>
 	<kind>
 		<id> 254 </id>

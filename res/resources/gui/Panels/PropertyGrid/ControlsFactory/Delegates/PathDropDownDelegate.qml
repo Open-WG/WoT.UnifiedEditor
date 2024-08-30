@@ -25,7 +25,7 @@ PropertyDelegate {
 		popup.contentItem: Details.PathDropDownPopupContent {}
 	}
 
-	CustomDropArea {
+	PathDropArea {
 		parent: delegateRoot.propertyRow
 		enabled: delegateRoot.enabled
 		target: control

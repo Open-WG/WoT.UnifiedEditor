@@ -1,11 +1,13 @@
 import QtQuick 2.10
 import "../Common"
+import "../../Common/ActionBar"
 import "../../../Settings.js" as Settings
 import WGTools.Controls.Details 2.0
 
 MouseArea {
 	property alias text: title.text
 	property alias color: bg.color
+	property alias actions: actionBar.actions
 
 	height: Settings.group1HeaderHeight
 	hoverEnabled: true
@@ -13,14 +15,16 @@ MouseArea {
 
 	Rectangle {
 		id: bg
-		color: _palette.color8
+		color: _palette.color7
 		anchors.fill: parent
+		anchors.leftMargin: height / 2
 	}
 
 	Rectangle {
-		implicitHeight: ControlsSettings.strokeWidth
-		width: parent.width
-		color: _palette.color5
+		height: parent.height
+		width: height
+		radius: height / 2
+		color: bg.color
 	}
 
 	GroupTitle {
@@ -47,8 +51,14 @@ MouseArea {
 		opacity: title.opacity
 
 		anchors.left: title.right
+		anchors.right: actionBar.left
+		anchors.verticalCenter: parent.verticalCenter
+	}
+
+	ActionBar {
+		id: actionBar
+		anchors.verticalCenter: parent.verticalCenter
 		anchors.right: parent.right
 		anchors.rightMargin: 10
-		anchors.verticalCenter: parent.verticalCenter
 	}
 }

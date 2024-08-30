@@ -387,6 +387,11 @@
 			<row3> -0.017837 -1.370210 12.417826 </row3>
 		</defaultCameraViewMatrix>
 	</tankEditor>
+	<dynamic_plugins>
+		<plugins_plg_python_reloader> false </plugins_plg_python_reloader>
+		<plugins_plg_python_remote_debug> false </plugins_plg_python_remote_debug>
+		<plugins_plg_asset_root_viewer> false </plugins_plg_asset_root_viewer>
+	</dynamic_plugins>
 	<recent>
 		<path0>spaces/hangar_v3/space.settings</path0>
 	</recent>

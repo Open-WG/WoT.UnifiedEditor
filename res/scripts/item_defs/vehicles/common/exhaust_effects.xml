@@ -35,14 +35,24 @@
 
 	<templates>
 		<template name = "GearUp">
-			<selector type = "discrete" variable = "_gearUp">
-				<selector key = "1" type = "effect" ttl="0.05" name = "particles/Tank/exhaust/{0}/rpm02_Load04.eff"/>
+			<selector type = "discrete" variable = "Nitro">
+				<selector key = "0" type = "discrete" variable = "_gearUp">
+					<selector key = "1" type = "effect" ttl="0.05" name = "particles/Tank/exhaust/{0}/rpm02_Load04.eff"/>
+				</selector>
+				<selector key = "1" type = "discrete" variable = "_gearUp">
+					<selector key = "1" type = "effect" ttl="0.05" name = "particles/Environment/scenarios/br_nitro_gearup.eff"/>
+				</selector>
 			</selector>
 		</template>
 
 		<template name = "EngineStart">
-			<selector type = "discrete" variable = "_engineStart">
-				<selector key = "1" type = "effect" ttl="5.2" name = "particles/Tank/exhaust/{0}/start.eff"/>
+			<selector type = "discrete" variable = "Nitro">
+				<selector key = "0" type = "discrete" variable = "_engineStart">
+					<selector key = "1" type = "effect" ttl="5.2" name = "particles/Tank/exhaust/{0}/start.eff"/>
+				</selector>
+				<selector key = "1" type = "discrete" variable = "_engineStart">
+					<selector key = "1" type = "effect" ttl="5.2" name = "particles/Environment/scenarios/br_nitro_start.eff"/>
+				</selector>
 			</selector>
 		</template>
 
@@ -72,9 +82,15 @@
 		</template>
 
 		<template name="ExhaustLoad">
-			<selector type = "range" variable = "_engine_load">
-				<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
-				<selector key = "2" type = "template" name = "PhysicLoad"/>
+			<selector type = "discrete" variable = "Nitro">
+				<selector key = "0" type = "range" variable = "_engine_load">
+					<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
+					<selector key = "2" type = "template" name = "PhysicLoad"/>
+				</selector>
+				<selector key = "1" type = "range" variable = "_engine_load">
+					<selector key = "1" type = "effect" name = "particles/Environment/scenarios/br_nitro_idle.eff"/>
+					<selector key = "2" type = "effect" name = "particles/Environment/scenarios/br_nitro_load.eff"/>
+				</selector>
 			</selector>
 		</template>
 		<template name = "Exhaust">
@@ -100,16 +116,28 @@
 		Strv exhaust
 		-->
 		<template name="STRVLoad">
-			<selector type = "range" variable = "engineState"> 
-				<selector key = "0.0" type = "discrete" variable = "siegeProgress">
-					<selector key = "0" type = "range" variable = "_engine_load">
-						<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
-						<selector key = "2" type = "template" name = "PhysicLoad"/>
+			<selector type = "discrete" variable = "Nitro">
+				<selector key="0" type = "range" variable = "engineState">
+					<selector key = "0.0" type = "discrete" variable = "siegeProgress">
+						<selector key = "0" type = "range" variable = "_engine_load">
+							<selector key = "1" type = "effect" name = "particles/Tank/exhaust/{0}/rpm01_Load01.eff"/>
+							<selector key = "2" type = "template" name = "PhysicLoad"/>
+						</selector>
+						<selector key = "1" type = "effect" name = "particles/Tank/exhaust/strv_change_exhaust.eff"/>
 					</selector>
-					<selector key = "1" type = "effect" name = "particles/Tank/exhaust/strv_change_exhaust.eff"/>
+					<selector key = "1.0" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
+					<selector key = "3.5" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
 				</selector>
-				<selector key = "1.0" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
-				<selector key = "3.5" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
+				<selector key = "1" type = "range" variable = "engineState">
+					<selector key = "0" type = "discrete" variable = "siegeProgress">
+						<selector key = "0" type = "range" variable = "_engine_load">
+							<selector key = "1" type = "effect" name = "particles/Environment/scenarios/br_nitro_idle.eff"/>
+							<selector key = "2" type = "effect" name = "particles/Environment/scenarios/br_nitro_load.eff"/>
+						</selector>
+						<selector key = "1" type = "effect" name = "particles/Tank/exhaust/strv_change_exhaust.eff"/>
+					</selector>
+					<selector key = "2" type = "effect" name = "particles/Tank/exhaust/strv_engine_crit.eff"/>
+				</selector>
 			</selector>
 		</template>
 		<template name = "ExhaustSTRV">

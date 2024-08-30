@@ -1,0 +1,91 @@
+		<[[GUN_TAG_NAME]]>
+			<userString> [[GUN_TAG_NAME]] </userString>
+			<description> TODO: gun [[GUN_TAG_NAME]] description </description>
+			<tags />
+			<level>2</level>
+			<price> 2750.0 </price>
+			<!-- Note: overridable when sharing the gun type. -->
+			<models>
+				<undamaged> [[GUN_MODEL_NORMAL]] </undamaged>
+				<destroyed> [[GUN_MODEL_DESTROYED]] </destroyed>
+				<exploded> [[GUN_MODEL_CRIT]] </exploded>
+			</models>
+			<!-- impulse applied to vehicle during shot -->
+			<impulse>0.12</impulse>
+			<recoil>
+				<lodDist> MEDIUM </lodDist>
+				<!-- metres -->
+				<amplitude> 0.14 </amplitude>
+				<!-- sec -->
+				<backoffTime> 0.1 </backoffTime>
+				<!-- sec -->
+				<returnTime> 0.1 </returnTime>
+			</recoil>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- In common/gun_effects.xml -->
+			<effects>shot_small</effects>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- In common/gun_effects.xml -->
+			<groundWave> </groundWave>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- degrees -->
+			<pitchLimits>
+				<minPitch> 0.0 -20.0 1.0 -20.0 </minPitch>
+				<maxPitch> 0.0 5.0 1.0 5.0 </maxPitch>
+			</pitchLimits>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- degrees -->
+			<turretYawLimits> -180 180 </turretYawLimits>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- vertical rotation, degrees/sec -->
+			<rotationSpeed> 50.0 </rotationSpeed>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- seconds -->
+			<reloadTime> 1.4 </reloadTime>
+			<!-- Note: overridable when sharing the gun type. -->
+			<maxAmmo> 600 </maxAmmo>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- Time that takes to reduce cone of shot dispersion by factor of 3; seconds -->
+			<aimingTime> 1.5 </aimingTime>
+			<burst>
+				<count> 4 </count>
+				<!-- Shots per minute -->
+				<rate> 300 </rate>
+			</burst>
+			<weight> 71 </weight>
+			<maxHealth> 30 </maxHealth>
+			<maxRegenHealth> 14 </maxRegenHealth>
+			<hysteresisHealth> 6 </hysteresisHealth>
+			<!-- per 1 HP-->
+			<repairCost>2</repairCost>
+			<healthRegenPerSec> 1.0 </healthRegenPerSec>
+			<healthBurnPerSec> 0 </healthBurnPerSec>
+			<!-- Note: overridable when sharing the gun type. -->
+			<invisibilityFactorAtShot> 0.33 </invisibilityFactorAtShot>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- Radius of cone of shot dispersion at 100m, metres -->
+			<shotDispersionRadius> 0.47 </shotDispersionRadius>
+			<!-- Note: overridable when sharing the gun type. -->
+			<!-- Factors applied to shotDispersionRadius -->
+			<shotDispersionFactors>
+				<!-- per 1 deg/sec -->
+				<turretRotation> 0.08 </turretRotation>
+				<afterShot> 1.0 </afterShot>
+				<whileGunDamaged> 2.0 </whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<!-- References to shells described in shells.xml. -->
+				<Development_Shell>
+					<!-- in [0, 1] -->
+					<defaultPortion> 1.0 </defaultPortion>
+					<!-- m/s -->
+					<speed> 900 </speed>
+					<!-- m/s^2 -->
+					<gravity> 9.81 </gravity>
+					<!-- metres -->
+					<maxDistance> 390 </maxDistance>
+					<!-- (at 100m, at 500m); in millimeters of armor -->
+					<piercingPower> 32 13 </piercingPower>
+				</Development_Shell>
+			</shots>
+		</[[GUN_TAG_NAME]]>

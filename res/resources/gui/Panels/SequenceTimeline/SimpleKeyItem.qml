@@ -173,7 +173,7 @@ BaseKeyItem {
 						if (ctrlPressed) {
 							flag = ItemSelectionModel.Toggle
 
-							//check tyoe of the current selection
+							//check type of the current selection
 							// we do not want to have keys and objects/tracks in the same selection
 							if (selectionModel.hasSelection) {
 								var selectedInd = styleData.selectionModel.selectedIndexes[0]

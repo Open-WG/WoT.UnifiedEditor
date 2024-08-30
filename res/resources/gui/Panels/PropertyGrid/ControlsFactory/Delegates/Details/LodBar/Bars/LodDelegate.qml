@@ -4,6 +4,7 @@ FocusScope {
 	id: control
 	clip: true
 
+	property bool readOnly: false
 	property real padding: 5
 	readonly property alias hovered: background.containsMouse;
 	readonly property alias editing: contentItem.editing
@@ -15,8 +16,10 @@ FocusScope {
 	LodDelegateBackground {
 		id: background
 		onClicked: {
-			control.forceActiveFocus(Qt.MouseFocusReason)
-			contentItem.editing = true
+			if (!control.readOnly) {
+				control.forceActiveFocus(Qt.MouseFocusReason)
+				contentItem.editing = true
+			}
 		}
 	}
 

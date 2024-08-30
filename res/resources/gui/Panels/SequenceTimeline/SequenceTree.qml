@@ -9,6 +9,7 @@ import QtQuick.Controls 1.4 as Controls14
 
 import WGTools.AnimSequences 1.0 as Sequences
 import WGTools.Utils.QMLCursor 1.0 as QMLCursor
+import WGTools.Debug 1.0
 
 import "Constants.js" as Constants
 import "Menus"
@@ -19,6 +20,7 @@ FocusScope {
 
 	signal moveKey(var index, real newStartTime)
 	signal zoomShortcutActivated(real delta)
+	signal zoomToTimeCursorShortcutActivated(real delta)
 
 	property real treeColumnWidth: 0
 	property real spacing: 0
@@ -26,27 +28,21 @@ FocusScope {
 	readonly property alias adapter: modelAdapter
 	property alias model: modelAdapter.model
 	property alias timelineViewID: timelineView
+
 	property var rootContext: null
 	property var selectionModel: null
 	property var timelineController: null
-
 	property var containerTopZValue: 0
 
 	property Component rowDelegate
 
 	implicitHeight: 300
 
-	function isExpanded(index) {
-		return modelAdapter.isExpanded(styleData.index)
-	}
+	function isExpanded(index) { return modelAdapter.isExpanded(styleData.index) }
 
-	function expand(index) {
-		modelAdapter.expand(index)
-	}
+	function expand(index) { modelAdapter.expand(index) }
 
-	function collapse(index) {
-		modelAdapter.collapse(index)
-	}
+	function collapse(index) { modelAdapter.collapse(index) }
 
 	Sequences.SequenceModelAdapter {
 		id: modelAdapter
@@ -56,6 +52,8 @@ FocusScope {
 		color: _palette.color8
 		anchors.fill: parent
 	}
+
+	BB{c: "green"; visible: Constants.gDebugMode }
 
 	Column {
 		id: rowsLayout
@@ -71,8 +69,10 @@ FocusScope {
 				height: model.item.height
 				sourceComponent: rootSequenceTree.rowDelegate
 
+				// per each delegate in repeater
 				property QtObject styleData: QtObject {
 					readonly property bool alternative: index % 2
+					property bool rowSelected: false
 				}
 			}
 		}
@@ -93,25 +93,31 @@ FocusScope {
 	Flickable {
 		id: flickable
 
-		enabled: rootContext
-			? rootContext.sequenceOpened && rootContext.modelSelected
-			: false
+		enabled: rootContext ? rootContext.sequenceOpened && rootContext.modelSelected : false
 
 		contentWidth: width
 		contentHeight: columnsLayout.height
 		focus: true
-
-		anchors.fill: parent
-		anchors.leftMargin: rootSequenceTree.spacing
 		interactive: true
 		flickableDirection: Flickable.VerticalFlick
 		maximumFlickVelocity: 400
+
+		anchors.fill: parent
+		anchors.leftMargin: rootSequenceTree.spacing
 
 		function resetSelectionBox() {
 			selectionBox.width = 0
 			selectionBox.height = 0
 			selectionBox.x = 0
 			selectionBox.y = 0
+		}
+
+		function getCursorPos() {
+			if (rootContext.playbackController)
+				return Math.round(rootContext.timelineController.fromSecondsToScale(
+					rootContext.playbackController.sample))
+
+			return 0
 		}
 
 		ScrollBar.vertical: ScrollBar { 
@@ -167,7 +173,12 @@ FocusScope {
 			}
 
 			onWheel: {
-				wheel.accepted = false
+				if (wheel.modifiers == Qt.ControlModifier)
+					timelineView.scaleController.zoom(wheel.angleDelta.y, wheel.x)
+				else if (wheel.modifiers == Qt.AltModifier)
+					timelineView.scaleController.zoom(wheel.angleDelta.x, flickable.getCursorPos())
+				else 
+					wheel.accepted = false
 			}
 		}
 
@@ -192,14 +203,24 @@ FocusScope {
 			preventStealing: true
 
 			onWheel: {
-				timelineView.scaleController.zoom(wheel.angleDelta.y / 2, wheel.x)
+				if (wheel.modifiers == Qt.ControlModifier)
+					timelineView.scaleController.zoom(wheel.angleDelta.y, wheel.x)
+				else if (wheel.modifiers == Qt.AltModifier)
+					timelineView.scaleController.zoom(wheel.angleDelta.x, flickable.getCursorPos())
+				else 
+					wheel.accepted = false
 			}
 
 			Connections {
 				target: rootSequenceTree
 				onZoomShortcutActivated: {
-					var pos = flickableMA.containsMouse ? flickableMA.mouseX : flickableMA.width / 2
+					var pos = rootContext.timelineController.fromSecondsToScale(
+						rootContext.sequenceModel.sequenceDuration / 2)
+
 					timelineView.scaleController.zoom(delta, pos)
+				}
+				onZoomToTimeCursorShortcutActivated: {
+					timelineView.scaleController.zoom(delta, flickable.getCursorPos())
 				}
 			}
 
@@ -208,9 +229,7 @@ FocusScope {
 				model: rootSequenceTree.selectionModel
 			}
 
-			onClicked: {
-				forceActiveFocus()
-			}
+			onClicked: { forceActiveFocus() }
 
 			onPressed: {
 				moving = true
@@ -315,8 +334,17 @@ FocusScope {
 				id: leavesRepeater
 
 				onItemAdded: {
-					if (item.visible)
+					if (item.visible){
 						rowsModel.insert(index, {"item": item})
+						
+						if(context.selectionModel.hasSelection) {
+							var modelIndex = delegateModel.modelIndex(index)
+							var parInd = modelAdapter.getRealParentModIndex(modelIndex);
+
+							if (context.selectionModel.isSelected(parInd))
+								rowsRepeater.itemAt(index).styleData.rowSelected = true
+						}
+					}
 				}
 
 				onItemRemoved: {
@@ -342,7 +370,6 @@ FocusScope {
 			//Fake item to correct scrolling over the Add Sequence Object Button
 			Item {
 				height: Constants.seqTreeItemHeight
-
 				width: 1
 			}
 		}
@@ -358,6 +385,8 @@ FocusScope {
 
 			visible: false
 		}
+
+		BB{c: "blue"; visible: Constants.gDebugMode}
 	}
 
 	TimelineButton {
@@ -399,6 +428,23 @@ FocusScope {
 		model: context.seqObjectFactory && context.seqObjectFactory.availableObjects
 
 		Component.onCompleted: y = Qt.binding(function() { return addObjButton.y - popup.height })
+	}
+
+	Connections {
+		target: context.selectionModel
+		onSelectionChanged:{
+			var selectedRowIndexes = modelAdapter.selectionToFlatIntIndexes(selected)
+			var deselectedRowIndexes = modelAdapter.selectionToFlatIntIndexes(deselected)
+
+			for (var i=0; i < deselectedRowIndexes.length; i++)
+			{
+				rowsRepeater.itemAt(deselectedRowIndexes[i]).styleData.rowSelected = false
+			}
+			for (var i=0; i < selectedRowIndexes.length; i++)
+			{
+				rowsRepeater.itemAt(selectedRowIndexes[i]).styleData.rowSelected = true
+			}
+		}
 	}
 
 	Connections {

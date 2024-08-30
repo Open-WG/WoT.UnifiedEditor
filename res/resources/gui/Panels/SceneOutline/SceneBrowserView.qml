@@ -1,6 +1,9 @@
 import QtQuick 2.7
 import QtQuick.Controls 1.4
 import WGTools.Controls 2.0 as Controls2
+import WGTools.ControlsEx 1.0
+import QtQuick.Layouts 1.11
+import WGTools.Models 1.0
 import "Settings.js" as Settings
 
 Rectangle {
@@ -18,105 +21,144 @@ Rectangle {
 
 	color: _palette.color8
 
-	Loader {
-		id: header
-		
-		readonly property alias viewContext: root.sceneBrowserContext
-		readonly property QtObject panelContext: sceneBrowserContext.headerPanel
-			? sceneBrowserContext.headerPanel.context
-			: null
-		
-		sourceComponent: sceneBrowserContext.headerPanel
-			? sceneBrowserContext.headerPanel.component
-			: undefined
+	ColumnLayout {
+		anchors.fill: parent
+		spacing: 0
 
-		anchors.top: parent.top
-		anchors.left: parent.left
-		anchors.right: groupByLoader.left
-		anchors.leftMargin: Settings.defaultMargin
-		anchors.rightMargin: Settings.defaultMargin
-		height: item ? item.implicitHeight : 0
-	}
+		// custom header
+		Loader {
+			id: header
+			
+			readonly property alias viewContext: root.sceneBrowserContext
+			readonly property QtObject panelContext: sceneBrowserContext.headerPanel
+				? sceneBrowserContext.headerPanel.context
+				: null
+			
+			sourceComponent: sceneBrowserContext.headerPanel
+				? sceneBrowserContext.headerPanel.component
+				: undefined
 
-	SceneOutlineView {
-		id: sceneOutlineView
-		sceneOutlineContext: sceneBrowserContext
-		model: sceneBrowserContext.model
-		selection: sceneBrowserContext.selectionModel
-		selectionMode: SelectionMode.ExtendedSelection
-		focus: true
+			Layout.fillWidth: true
+			Layout.leftMargin: Settings.defaultMargin
+			Layout.rightMargin: Settings.defaultMargin
+		}
 
-		anchors.top: header.bottom
-		anchors.left: parent.left
-		anchors.right: parent.right
-		anchors.bottom: footer.top
-		anchors.topMargin: Settings.defaultMargin
-		anchors.bottomMargin: Settings.defaultMargin
-	}
+		RowLayout {
+			Layout.fillWidth: true
+			Layout.leftMargin: Settings.defaultMargin
+			Layout.rightMargin: Settings.defaultMargin
 
-	Loader {
-		id: footer
-		
-		readonly property alias viewContext: root.sceneBrowserContext
-		readonly property QtObject panelContext: sceneBrowserContext.footerPanel
-			? sceneBrowserContext.footerPanel.context
-			: null
-		
-		sourceComponent: sceneBrowserContext.footerPanel
-			? sceneBrowserContext.footerPanel.component
-			: undefined
+			// seach field
+			// works with TokenFilterProxyModel (model.filterTokens)
+			// and with FilterProxyModel with predicates (model.predicate.text)
+			SearchField {
 
-		anchors.left: parent.left
-		anchors.right: parent.right
-		anchors.bottom: parent.bottom
-		anchors.margins: Settings.defaultMargin
-		height: item ? item.implicitHeight : 0
-	}
+				id: filter
+				Layout.fillWidth: true
+				Layout.rightMargin: Settings.defaultMargin
+				Layout.bottomMargin: Settings.defaultMargin
 
-	// group by
-	Component {
-		id: groupByComponent
+				property var model: root.sceneBrowserContext.model
+				readonly property bool isPredicateProxy: sceneBrowserContext.filterPredicate != null
+				visible: isPredicateProxy || model.filterTokens != undefined
 
-		Controls2.ComboBox {
-			id: comboBox
-			model: sceneBrowserContext.grouper.labels
-			Accessible.name: "Grouping"
+				function filterText() {
+					if (!visible) return ""
+					return isPredicateProxy
+						? sceneBrowserContext.filterPredicate.text
+						: model.filterTokens
+				}
 
-			onActivated: {
-				if (currentIndex != -1) {
-					sceneBrowserContext.grouper.groupBy = currentText
+				function setFilterText(text) {
+					if (isPredicateProxy) {
+						sceneBrowserContext.filterPredicate.text = text
+					} else {
+						model.filterTokens = text
+					}
+				}
+
+				placeholderText: "Filter"
+				
+				text: filterText()
+				onTriggered: setFilterText(text)
+			}
+
+			// group by
+			Controls2.ComboBox {
+				id: comboBox
+				model: active
+					? sceneBrowserContext.selectableData.labels
+					: null
+				Accessible.name: "Grouping"
+
+				property bool active: sceneBrowserContext.selectableData != undefined
+
+				visible: active
+				Layout.leftMargin: Settings.defaultMargin
+				Layout.bottomMargin: Settings.defaultMargin
+
+				currentIndex: active
+					? sceneBrowserContext.selectableData.currentIndex
+					: -1
+
+				onCurrentIndexChanged: {
+					if (active) {
+						sceneBrowserContext.selectableData.currentIndex = currentIndex
+					}
 				}
 			}
+		}
 
-			Connections {
-				target: sceneBrowserContext.grouper
-				onGroupByChanged: updateCurrentIndex()
-			}
+		// scene
+		SceneOutlineView {
+			id: sceneOutlineView
+			sceneOutlineContext: sceneBrowserContext
+			model: sceneBrowserContext.model
+			selection: sceneBrowserContext.selectionModel
+			selectionMode: SelectionMode.ExtendedSelection
+			focus: true
 
-			Component.onCompleted: {
-				updateCurrentIndex()
-			}
+			Layout.fillWidth: true
+			Layout.fillHeight: true
+			Layout.leftMargin: Settings.defaultMargin
+			Layout.rightMargin: Settings.defaultMargin
 
-			function updateCurrentIndex() {
-				var id = comboBox.find(sceneBrowserContext.grouper.groupBy)
-					if (id != -1) {
-						currentIndex = id
-					}
+			// failed search label
+			Controls2.Label {
+				anchors.verticalCenter: parent.verticalCenter
+				width: parent.width
+				horizontalAlignment: Text.AlignHCenter
+				wrapMode: Text.Wrap
+				
+				text: "Your search \"" + filter.text + "\" - nothing found"
+				visible: sceneOutlineView.model &&
+					itemsCounter.value == 0 &&
+					filter.text
+
+				ModelElementsCounter {
+					id: itemsCounter
+					model: sceneOutlineView.model
+					mode: ModelElementsCounter.RootChildren
+				}
 			}
 		}
-	}
 
-	Loader {
-		id: groupByLoader
+		// custom footer
+		Loader {
+			id: footer
+			
+			readonly property alias viewContext: root.sceneBrowserContext
+			readonly property QtObject panelContext: sceneBrowserContext.footerPanel
+				? sceneBrowserContext.footerPanel.context
+				: null
+			
+			sourceComponent: sceneBrowserContext.footerPanel
+				? sceneBrowserContext.footerPanel.component
+				: undefined
 
-		sourceComponent: (sceneBrowserContext.grouper != undefined && sceneBrowserContext.grouper != null)
-		 	? groupByComponent
-		 	: undefined
-
-		anchors.bottom: header.bottom
-		anchors.right: parent.right
-		anchors.margins: 4
-		height: 23
-		width: item ? 110 : 0
+			Layout.fillWidth: true
+			Layout.leftMargin: Settings.defaultMargin
+			Layout.rightMargin: Settings.defaultMargin
+		}
 	}
 }

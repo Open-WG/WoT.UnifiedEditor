@@ -11,6 +11,7 @@
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<gameplayMask>	1.000000	</gameplayMask>
 		</config>
+
 		<config>	
 			<girth> CTF_3.5 </girth>
 			<height>	2.950000	</height>
@@ -22,7 +23,7 @@
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 			<gameplayMask>	1.000000	</gameplayMask>
 		</config>
-		<config>	
+		<config>
 			<girth> CTF_5.6 </girth>
 			<height>	3.850000	</height>
 			<radius>	5.600000	</radius>
@@ -44,61 +45,17 @@
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<gameplayMask>	16384.000000	</gameplayMask>
 		</config>
-        <config>	
-            <girth> SE2_3.4 </girth>
-            <height>	2.550000	</height>
-            <radius>	3.400000	</radius>
-            <upSlope>	30.000000	</upSlope>
-            <downSlope>	30.000000	</downSlope>
-            <upClimb>	1.100000	</upClimb>
-            <downClimb>	1.100000	</downClimb>
-            <waterDepthLimit1>	0.650000	</waterDepthLimit1>
-            <gameplayMask>	7.000000	</gameplayMask>
-        </config>
-        <config>	
-            <girth> SE2_3.4_Normandy </girth>
-            <height>	2.550000	</height>
-            <radius>	3.400000	</radius>
-            <upSlope>	25.000000	</upSlope>
-            <downSlope>	25.000000	</downSlope>
-            <upClimb>	1.100000	</upClimb>
-            <downClimb>	1.100000	</downClimb>
-            <waterDepthLimit1>	0.650000	</waterDepthLimit1>
-            <gameplayMask>	7.000000	</gameplayMask>
-        </config>
-        <config>	
-            <girth> SE2_3.8 </girth>
-            <height>	2.750000	</height>
-            <radius>	3.800000	</radius>
-            <upSlope>	30.000000	</upSlope>
-            <downSlope>	30.000000	</downSlope>
-            <upClimb>	1.100000	</upClimb>
-            <downClimb>	1.100000	</downClimb>
-            <waterDepthLimit1>	0.650000	</waterDepthLimit1>
-            <gameplayMask>	7.000000	</gameplayMask>
-        </config>
-        <config>	
-            <girth> SE2_3.8_Normandy </girth>
-            <height>	2.750000	</height>
-            <radius>	3.800000	</radius>
-            <upSlope>	25.000000	</upSlope>
-            <downSlope>	25.000000	</downSlope>
-            <upClimb>	1.100000	</upClimb>
-            <downClimb>	1.100000	</downClimb>
-            <waterDepthLimit1>	0.650000	</waterDepthLimit1>
-            <gameplayMask>	7.000000	</gameplayMask>
-        </config>
-        <config>	
-            <girth> SE2_4.9 </girth>
-            <height>	3.400000	</height>
-            <radius>	4.900000	</radius>
-            <upSlope>	25.000000	</upSlope>
-            <downSlope>	25.000000	</downSlope>
-            <upClimb>	1.100000	</upClimb>
-            <downClimb>	1.100000	</downClimb>
-            <waterDepthLimit1>	0.650000	</waterDepthLimit1>
-            <gameplayMask>	7.000000	</gameplayMask>
-        </config>
+		<config>
+			<girth> BR_8 </girth>
+			<height>	2.500000	</height>
+			<radius>	3.050000	</radius>
+			<upSlope>	30.000000	</upSlope>
+			<downSlope>	30.000000	</downSlope>
+			<upClimb>	1.000000	</upClimb>
+			<downClimb>	1.000000	</downClimb>
+			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
+			<gameplayMask>	1.000000	</gameplayMask>
+		</config>
 	</navmesh>
 	<covers>
 		<Default>
@@ -204,23 +161,56 @@
 		<startFinishHeight>
 			<min> 
 				<from> 1.3 </from>
-				<to> 2.2 </to>
+				<to> 1.8 </to>
 			</min>
 			<max> 
-				<from> 4.6 </from>
-				<to> 3.1 </to>
+				<from> 2.0 </from>
+				<to> 2.8 </to>
 			</max>
 		</startFinishHeight>
 		<samplesPerCell> 100 </samplesPerCell>
 	</visibilityGrid>
 	<zones>
-		<link_generator>
-			<maxPathLengthThroughThirdZone> 200 </maxPathLengthThroughThirdZone>
-			<pathSamplingDistance> 50 </pathSamplingDistance>
-			<pathSubSamplingDistance> 1 </pathSubSamplingDistance>
-			<linkDistanceFromPrimaryZoneBorder> 30 </linkDistanceFromPrimaryZoneBorder>
-			<maxNavmeshQueryNodes> 10000 </maxNavmeshQueryNodes>
+		<center_generator>
 			<navmeshGirth> CTF_2.5 </navmeshGirth>
+			<navmeshSnapRadius> 10 </navmeshSnapRadius>
+			<gridStepX> 20 </gridStepX>
+			<gridStepY> 20 </gridStepY>
+			<objectVisibilityMask> 7 </objectVisibilityMask>
+			<minDesirabilityAreaThreshold> 30 </minDesirabilityAreaThreshold>
+			<maxDesirabilityAreaThreshold> 90 </maxDesirabilityAreaThreshold>
+			<minDesirability> 35 </minDesirability>
+			<maxDesirability> 100 </maxDesirability>
+		</center_generator>
+		<link_generator>
+			<common>
+				<maxNavmeshQueryNodes> 10000 </maxNavmeshQueryNodes>
+				<navmeshGirth> CTF_2.5 </navmeshGirth>
+				<navmeshSnapRadius> 10 </navmeshSnapRadius>
+			</common>
+			<move>
+				<maxPathLengthThroughThirdZone> 200 </maxPathLengthThroughThirdZone>
+				<pathSamplingDistance> 50 </pathSamplingDistance>
+				<pathSubSamplingDistance> 1 </pathSubSamplingDistance>
+				<linkDistanceFromPrimaryZoneBorder> 30 </linkDistanceFromPrimaryZoneBorder>
+				<exposureIntergrationStep> 10 </exposureIntergrationStep>
+				<minDesirabilityExposureThreshold> 150 </minDesirabilityExposureThreshold>
+				<maxDesirabilityExposureThreshold> 25 </maxDesirabilityExposureThreshold>
+				<minDesirability> 20 </minDesirability>
+				<maxDesirability> 100 </maxDesirability>
+			</move>
+			<shoot>
+				<minDistance> 200 </minDistance>
+				<minCellControlPowerRatio> 0.1 </minCellControlPowerRatio>
+				<exposureThresholdRatio> 0.5 </exposureThresholdRatio>
+				<minDesirabilityExposureThreshold> 0.05 </minDesirabilityExposureThreshold>
+				<maxDesirabilityExposureThreshold> 0.4 </maxDesirabilityExposureThreshold>
+				<minDesirability> 10 </minDesirability>
+				<maxDesirability> 100 </maxDesirability>
+			</shoot>
 		</link_generator>
+		<paths>
+			<maxAdditionalPathOverBestRoute> 100 </maxAdditionalPathOverBestRoute>
+		</paths>
 	</zones>
 </root>

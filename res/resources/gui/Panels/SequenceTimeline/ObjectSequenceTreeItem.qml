@@ -13,13 +13,13 @@ BaseSequenceTreeItem {
 	id: objRoot
 
 	TimelineButton {
-		id: button
+		id: addTrackButton
 		Accessible.name: "+"
 		width: 25
 		height: parent.height
 
 		enabled: itemData.availableTracksModel.hasItems
-
+		hasHoveredState: false
 		flat: true
 
 		anchors.right: parent.right
@@ -33,6 +33,28 @@ BaseSequenceTreeItem {
 				popup.close()
 			else
 				popup.openEx()
+		}
+	}
+
+	TimelineButton {
+		id: disableObjectButton
+		Accessible.name: "disable"
+		width: 25
+		height: parent.height
+
+		enabled: itemData.label != "Root"
+		hasHoveredState: false
+		flat: true
+
+		anchors.right: addTrackButton.left
+		anchors.rightMargin: 0
+		padding: 2
+		
+		iconImage: itemData.seqObjEnabled ? Constants.openedEye : Constants.closedEye
+
+		onClicked: {
+			
+			itemData.seqObjEnabled = !itemData.seqObjEnabled
 		}
 	}
 

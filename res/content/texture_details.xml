@@ -5,13 +5,13 @@
 		<category> content </category>
 	</rule>
 
-	<rule pattern=".*atlas_blend.*\.png$">
+	<rule pattern=".*_blend.*\.png$">
 		<format>DXT5</format> 
 		<allowSplit>false</allowSplit>
 		<noResize> true </noResize>
 		<editableTags>ME;UE</editableTags>
 	</rule>
-	<rule pattern=".*atlas_blend.*\.dds$">
+	<rule pattern=".*_blend.*\.dds$">
 		<allowSplit>false</allowSplit>
 		<noResize> true </noResize>
 	</rule>

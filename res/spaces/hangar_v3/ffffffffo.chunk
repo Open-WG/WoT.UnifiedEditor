@@ -444,23 +444,21 @@
 				<row0> 1.000000 0.000000 0.000000 </row0>
 				<row1> 0.000000 1.000000 0.000000 </row1>
 				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -2.980931 0.000000 </row3>
+				<row3> 0.000000 -2.977777 0.000000 </row3>
 			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 89 </serverId>
 		<metaData/>
 		<spt> vegetation/Broadleaves/Shrubs/Bush_Wild/Bush_Wild_2m.srt </spt>
-		<seed> 0 </seed>
 		<transform>
 			<row0> -1.182191 0.000000 -1.458520 </row0>
 			<row1> 0.000000 1.877461 0.000000 </row1>
 			<row2> 1.458520 0.000000 -1.182191 </row2>
-			<row3> 84.620956 3.439616 78.982155 </row3>
+			<row3> 84.620949 3.439616 78.982147 </row3>
 		</transform>
-		<reflectionVisible> false </reflectionVisible>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
-		<serverId> 89 </serverId>
 	</speedtree>
 	<speedtree>
 		<editorOnly>
@@ -2027,23 +2025,23 @@
 				<row0> 1.000000 0.000000 0.000000 </row0>
 				<row1> 0.000000 1.000000 0.000000 </row1>
 				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.033637 0.000000 </row3>
+				<row3> 0.000000 -0.039437 0.000000 </row3>
 			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<decorative> 5 </decorative>
 		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
 		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
 		<transform>
 			<row0> -0.614590 -0.015734 0.007458 </row0>
 			<row1> -0.015736 0.614636 0.000001 </row1>
 			<row2> -0.007456 -0.000190 -0.614792 </row2>
-			<row3> 92.626526 6.191245 77.432060 </row3>
+			<row3> 92.626511 6.191244 77.432045 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 	</model>
 	<model>
@@ -3270,23 +3268,24 @@
 				<row0> 1.000000 0.000000 0.000000 </row0>
 				<row1> 0.000000 1.000000 0.000000 </row1>
 				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.040928 0.000000 </row3>
+				<row3> 0.000000 -0.042149 0.000000 </row3>
 			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 116 </serverId>
 		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
 		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_036_Log.model </resource>
 		<transform>
 			<row0> 0.964535 0.000000 0.930356 </row0>
 			<row1> 0.034427 1.339189 -0.035693 </row1>
 			<row2> -0.929718 0.049590 0.963874 </row2>
-			<row3> 87.810631 5.900384 94.871971 </row3>
+			<row3> 87.810616 5.900383 94.871956 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
-		<serverId> 116 </serverId>
 	</model>
 	<model>
 		<editorOnly>
@@ -3449,6 +3448,609 @@
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 119 </serverId>
 	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 5 </decorative>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
+		<transform>
+			<row0> -0.307294 -0.015734 0.532303 </row0>
+			<row1> -0.008031 0.614635 0.013532 </row1>
+			<row2> -0.532475 -0.000190 -0.307399 </row2>
+			<row3> 98.583588 6.195642 83.972389 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 5 </decorative>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
+		<transform>
+			<row0> -0.307294 -0.015734 0.532303 </row0>
+			<row1> -0.008031 0.614635 0.013532 </row1>
+			<row2> -0.532475 -0.000190 -0.307399 </row2>
+			<row3> 98.583588 6.195641 83.972397 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 1.000000 0.000000 0.000000 </row0>
+				<row1> 0.000000 1.000000 0.000000 </row1>
+				<row2> 0.000000 0.000000 1.000000 </row2>
+				<row3> 0.000000 -0.036537 0.000000 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 5 </decorative>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
+		<transform>
+			<row0> -0.307294 -0.015734 0.532302 </row0>
+			<row1> -0.008031 0.614635 0.013532 </row1>
+			<row2> -0.532475 -0.000190 -0.307399 </row2>
+			<row3> 90.791824 5.947117 82.646858 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<decorative> 5 </decorative>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
+		<transform>
+			<row0> -0.414811 -0.015734 -0.453548 </row0>
+			<row1> -0.010479 0.614635 -0.011739 </row1>
+			<row2> 0.453700 -0.000190 -0.414944 </row2>
+			<row3> 96.817192 6.240838 87.600853 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 137 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_036_Log.model </resource>
+		<transform>
+			<row0> -0.492900 -0.094359 1.242586 </row0>
+			<row1> -0.023451 1.336719 0.092204 </row1>
+			<row2> -1.245942 0.012169 -0.493306 </row2>
+			<row3> 95.246109 6.231800 87.868446 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 157 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
+		<transform>
+			<row0> -0.039713 -0.012419 0.262589 </row0>
+			<row1> -0.007907 0.265505 0.011361 </row1>
+			<row2> -0.262763 -0.006112 -0.040028 </row2>
+			<row3> 96.527084 6.213840 78.632233 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 158 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
+		<transform>
+			<row0> 0.071351 0.006905 0.256019 </row0>
+			<row1> -0.012145 0.265561 -0.003777 </row1>
+			<row2> -0.255823 -0.010682 0.071585 </row2>
+			<row3> 95.002159 6.211174 83.524834 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 159 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
+		<transform>
+			<row0> 0.071351 0.006905 0.256019 </row0>
+			<row1> -0.012145 0.265561 -0.003777 </row1>
+			<row2> -0.255823 -0.010682 0.071585 </row2>
+			<row3> 95.002151 6.211172 83.524826 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 160 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
+		<transform>
+			<row0> -0.039713 -0.012419 0.262589 </row0>
+			<row1> -0.007907 0.265505 0.011361 </row1>
+			<row2> -0.262763 -0.006112 -0.040028 </row2>
+			<row3> 96.527084 6.213839 78.632240 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<serverId> 161 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_040_SmallRocks.model </resource>
+		<transform>
+			<row0> -0.039713 -0.012419 0.262589 </row0>
+			<row1> -0.007907 0.265505 0.011361 </row1>
+			<row2> -0.262763 -0.006112 -0.040028 </row2>
+			<row3> 98.238693 6.264771 85.727615 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983872 </visibilityMask>
+		<serverId> 162 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01.model </resource>
+		<transform>
+			<row0> 0.368569 0.018481 0.929392 </row0>
+			<row1> -0.006812 0.999809 -0.017179 </row1>
+			<row2> -0.929551 0.000000 0.368632 </row2>
+			<row3> 94.815781 6.222072 84.934563 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_Idle03_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 165 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01.model </resource>
+		<transform>
+			<row0> 0.874596 0.018480 -0.484426 </row0>
+			<row1> -0.016166 0.999799 0.008954 </row1>
+			<row2> 0.484509 0.000000 0.874746 </row2>
+			<row3> 98.758759 6.231462 86.838837 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_Idle02_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 167 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01.model </resource>
+		<transform>
+			<row0> -0.265193 -0.000000 -0.964164 </row0>
+			<row1> -0.000000 0.999974 0.000000 </row1>
+			<row2> 0.964164 0.000000 -0.265193 </row2>
+			<row3> 95.994263 6.227866 87.133186 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_pairIdle01_a_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 173 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01_Tecnitian.model </resource>
+		<transform>
+			<row0> 0.866013 0.000000 0.499993 </row0>
+			<row1> 0.000000 0.999989 0.000000 </row1>
+			<row2> -0.499993 0.000000 0.866013 </row2>
+			<row3> 94.379898 6.221300 86.931046 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_Idle05_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01_grey.model </resource>
+		<transform>
+			<row0> 0.541574 0.000000 -0.840619 </row0>
+			<row1> 0.000000 0.999978 0.000000 </row1>
+			<row2> 0.840619 0.000000 0.541574 </row2>
+			<row3> 99.056831 6.239636 84.713882 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_Idle04_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 180 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01_grey.model </resource>
+		<transform>
+			<row0> 0.681120 0.000000 0.732149 </row0>
+			<row1> 0.000000 0.999986 0.000000 </row1>
+			<row2> -0.732149 0.000000 0.681120 </row2>
+			<row3> 95.228172 6.232960 86.716507 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_pairIdle01_b_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 172 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 174 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01_Tecnitian.model </resource>
+		<transform>
+			<row0> 0.889355 0.028019 -0.456308 </row0>
+			<row1> -0.031488 0.999486 0.000000 </row1>
+			<row2> 0.456082 0.014369 0.889797 </row2>
+			<row3> 98.289757 6.216146 88.021080 </row3>
+		</transform>
+		<sequence>
+			<resource> content/Hangars/CharacterAnimations/Ranked_Battles/sequences/standingCalm_Idle01_anim.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 132 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_01.model </resource>
+		<transform>
+			<row0> 0.999996 0.000000 -0.000000 </row0>
+			<row1> -0.000000 0.999996 0.000000 </row1>
+			<row2> 0.000000 0.000000 0.999996 </row2>
+			<row3> 96.886932 6.264712 86.896591 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 163 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_03.model </resource>
+		<transform>
+			<row0> 0.999998 0.000000 0.000000 </row0>
+			<row1> 0.000000 0.999998 0.000000 </row1>
+			<row2> 0.000000 0.000000 0.999998 </row2>
+			<row3> 96.812981 6.381413 83.121819 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 164 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_04.model </resource>
+		<transform>
+			<row0> 0.975005 0.000000 0.222176 </row0>
+			<row1> 0.000001 1.000000 0.000000 </row1>
+			<row2> -0.222176 0.000000 0.975005 </row2>
+			<row3> 98.693550 6.243125 83.208717 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<serverId> 134 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<transform>
+			<row0> -0.999994 0.000000 0.000000 </row0>
+			<row1> 0.000000 0.999995 0.000000 </row1>
+			<row2> 0.000000 0.000000 -0.999994 </row2>
+			<row3> 96.810066 7.610476 86.474945 </row3>
+		</transform>
+		<sequence>
+			<resource> particles/eff_sequence/ranked_battles_camera.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983744 </visibilityMask>
+		<serverId> 135 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_mle_UNI_001_SdKfz.model </resource>
+		<transform>
+			<row0> 0.512331 0.022075 0.940954 </row0>
+			<row1> -0.031943 1.071118 -0.007737 </row1>
+			<row2> -0.940670 -0.024349 0.512747 </row2>
+			<row3> 99.327255 6.255478 84.685616 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983744 </visibilityMask>
+		<serverId> 181 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_043_RB_Board.model </resource>
+		<transform>
+			<row0> -0.999999 0.000000 -0.001047 </row0>
+			<row1> 0.000000 0.999999 0.000000 </row1>
+			<row2> 0.001047 0.000000 -0.999999 </row2>
+			<row3> 96.789352 6.643557 82.874985 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_02_no_collision.model </resource>
+		<transform>
+			<row0> 0.999997 0.000000 0.000000 </row0>
+			<row1> 0.000000 0.999997 0.000000 </row1>
+			<row2> 0.000000 0.000000 0.999997 </row2>
+			<row3> 96.786636 6.246679 80.108498 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 133 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983488 </visibilityMask>
+		<serverId> 182 </serverId>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_02_no_collision.model </resource>
+		<transform>
+			<row0> 0.999997 0.000000 0.000000 </row0>
+			<row1> 0.000000 0.999997 0.000000 </row1>
+			<row2> 0.000000 0.000000 0.999997 </row2>
+			<row3> 96.786636 6.246677 80.142982 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
 	<particles>
 		<editorOnly>
 			<hidden> false </hidden>
@@ -3541,12 +4143,6 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 0.196399 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
@@ -3555,9 +4151,8 @@
 			<row0> 1.000000 0.000000 0.000000 </row0>
 			<row1> 0.000000 1.000000 0.000000 </row1>
 			<row2> 0.000000 0.000000 1.000000 </row2>
-			<row3> 95.399986 6.399999 78.099983 </row3>
+			<row3> 95.399971 6.399998 78.099968 </row3>
 		</transform>
-		<reflectionVisible> false </reflectionVisible>
 	</particles>
 	<particles>
 		<editorOnly>
@@ -3898,20 +4493,6 @@
 		<colorTemperature> 1000.000000 </colorTemperature>
 	</omniLight>
 	<spotLight>
-		<colour> 197.389572 235.796555 255.000000 </colour>
-		<position> 99.372253 15.472321 93.765594 </position>
-		<direction> 0.295081 -0.652154 0.698299 </direction>
-		<innerRadius> 3.597573 </innerRadius>
-		<outerRadius> 16.896765 </outerRadius>
-		<lodShift> 200.000000 </lodShift>
-		<multiplier> 88.503967 </multiplier>
-		<coneAngle> 0.785398 </coneAngle>
-		<castShadows> true </castShadows>
-		<drawType> 0 </drawType>
-		<useColorTemperature> false </useColorTemperature>
-		<colorTemperature> 1000.000000 </colorTemperature>
-	</spotLight>
-	<spotLight>
 		<colour> 255.000000 159.630005 81.600037 </colour>
 		<position> 84.534828 6.934640 89.519196 </position>
 		<direction> 0.637468 0.111058 0.762428 </direction>
@@ -3952,6 +4533,78 @@
 		<drawType> 0 </drawType>
 		<useColorTemperature> false </useColorTemperature>
 		<colorTemperature> 1000.000000 </colorTemperature>
+	</spotLight>
+	<spotLight>
+		<colour> 255.000000 208.000122 139.000000 </colour>
+		<position> 96.744888 7.801921 86.205284 </position>
+		<direction> 0.000000 -0.003665 -0.999991 </direction>
+		<innerRadius> 1.998484 </innerRadius>
+		<outerRadius> 3.865893 </outerRadius>
+		<lodShift> 200.000000 </lodShift>
+		<multiplier> 31.830988 </multiplier>
+		<coneAngle> 0.452652 </coneAngle>
+		<castShadows> false </castShadows>
+		<shadowsType> 2 </shadowsType>
+		<shadowsQuality> 0 </shadowsQuality>
+		<shadowBias> 0.000100 </shadowBias>
+		<drawType> 0 </drawType>
+		<enabled> true </enabled>
+		<useColorTemperature> false </useColorTemperature>
+		<colorTemperature> 1000.000000 </colorTemperature>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+	</spotLight>
+	<spotLight>
+		<colour> 255.000000 208.000137 139.000000 </colour>
+		<position> 99.495575 8.850120 85.177574 </position>
+		<direction> -0.293813 -0.473478 -0.830356 </direction>
+		<innerRadius> 2.399381 </innerRadius>
+		<outerRadius> 3.471156 </outerRadius>
+		<lodShift> 200.000000 </lodShift>
+		<multiplier> 7.957747 </multiplier>
+		<coneAngle> 1.043362 </coneAngle>
+		<castShadows> false </castShadows>
+		<shadowsType> 2 </shadowsType>
+		<shadowsQuality> 0 </shadowsQuality>
+		<shadowBias> 0.000100 </shadowBias>
+		<drawType> 0 </drawType>
+		<enabled> true </enabled>
+		<useColorTemperature> false </useColorTemperature>
+		<colorTemperature> 1000.000000 </colorTemperature>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+	</spotLight>
+	<spotLight>
+		<colour> 255.000000 208.000092 139.000000 </colour>
+		<position> 93.421669 9.006195 83.259361 </position>
+		<direction> 0.684288 -0.429697 0.589160 </direction>
+		<innerRadius> 2.399381 </innerRadius>
+		<outerRadius> 3.471156 </outerRadius>
+		<lodShift> 200.000000 </lodShift>
+		<multiplier> 146.024658 </multiplier>
+		<coneAngle> 0.715521 </coneAngle>
+		<castShadows> false </castShadows>
+		<shadowsType> 2 </shadowsType>
+		<shadowsQuality> 0 </shadowsQuality>
+		<shadowBias> 0.000100 </shadowBias>
+		<drawType> 0 </drawType>
+		<enabled> true </enabled>
+		<useColorTemperature> false </useColorTemperature>
+		<colorTemperature> 1000.000000 </colorTemperature>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
 	</spotLight>
 	<speedtree>
 		<editorOnly>
@@ -4308,6 +4961,78 @@
 		<parallax_mode> 1.000000 </parallax_mode>
 		<parallax_amplitude> 0.010000 </parallax_amplitude>
 	</staticDecal>
+	<staticDecal>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 0.997792 -0.066415 -0.000012 </row0>
+				<row1> 0.066005 0.991619 0.111060 </row1>
+				<row2> -0.007364 -0.110815 0.993814 </row2>
+				<row3> -0.545978 -1.956329 -0.805127 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 0.606024 -0.010738 -0.501604 </row0>
+			<row1> 2.332984 -0.359090 2.826338 </row1>
+			<row2> -0.051092 -0.699879 -0.046746 </row2>
+			<row3> 98.544777 6.297566 82.571518 </row3>
+		</transform>
+		<diffTex> maps/decals_pbs/PBS_One_Track_new_AM.dds </diffTex>
+		<bumpTex> maps/decals_pbs/PBS_One_Track_new_NM.dds </bumpTex>
+		<hmTex> maps/decals_pbs/PBS_One_Track_new_GMM.dds </hmTex>
+		<addTex/>
+		<priority> 15 </priority>
+		<type> 1 </type>
+		<influence> 2 </influence>
+		<offsets> 0.000000 0.000000 0.000000 0.000000 </offsets>
+		<uvWrapping> 1.000000 1.000000 </uvWrapping>
+		<accurate> 0 </accurate>
+		<tilesFade> 1.000000 </tilesFade>
+		<invertDistanceFadeFlag> false </invertDistanceFadeFlag>
+		<isHidden> false </isHidden>
+		<parallax_offset> 0.490000 </parallax_offset>
+		<parallax_mode> 0.000000 </parallax_mode>
+		<parallax_amplitude> 0.100000 </parallax_amplitude>
+	</staticDecal>
+	<staticDecal>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<terrainBinding>
+				<row0> 0.998394 -0.056635 -0.001351 </row0>
+				<row1> 0.056550 0.994912 0.083383 </row1>
+				<row2> -0.003378 -0.083325 0.996517 </row2>
+				<row3> -0.418052 -1.672293 -0.589848 </row3>
+			</terrainBinding>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 0.543758 -0.009635 -0.450067 </row0>
+			<row1> 2.347768 0.136871 2.833583 </row1>
+			<row2> 0.009281 -0.702745 0.026256 </row2>
+			<row3> 99.576920 6.111683 82.548004 </row3>
+		</transform>
+		<diffTex> maps/decals_pbs/PBS_One_Track_new_AM.dds </diffTex>
+		<bumpTex> maps/decals_pbs/PBS_One_Track_new_NM.dds </bumpTex>
+		<hmTex> maps/decals_pbs/PBS_One_Track_new_GMM.dds </hmTex>
+		<addTex/>
+		<priority> 15 </priority>
+		<type> 1 </type>
+		<influence> 2 </influence>
+		<offsets> 0.000000 0.000000 0.000000 0.000000 </offsets>
+		<uvWrapping> 1.000000 1.000000 </uvWrapping>
+		<accurate> 0 </accurate>
+		<tilesFade> 1.000000 </tilesFade>
+		<invertDistanceFadeFlag> false </invertDistanceFadeFlag>
+		<isHidden> false </isHidden>
+		<parallax_offset> 0.490000 </parallax_offset>
+		<parallax_mode> 0.000000 </parallax_mode>
+		<parallax_amplitude> 0.100000 </parallax_amplitude>
+	</staticDecal>
 	<model>
 		<editorOnly>
 			<hidden> false </hidden>
@@ -4366,27 +5091,21 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<terrainBinding>
-				<row0> 1.000000 0.000000 0.000000 </row0>
-				<row1> 0.000000 1.000000 0.000000 </row1>
-				<row2> 0.000000 0.000000 1.000000 </row2>
-				<row3> 0.000000 -0.011582 0.000000 </row3>
-			</terrainBinding>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
 		<decorative> 5 </decorative>
 		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
 		<resource> content/Decor/dec_001_BranchesCommon/normal/lod0/dec_001_BranchesCommon_01.model </resource>
 		<transform>
 			<row0> 0.509975 0.004167 0.343414 </row0>
 			<row1> -0.002640 0.614821 -0.003539 </row1>
 			<row2> -0.343429 0.001461 0.509980 </row2>
-			<row3> 99.000145 6.200386 91.107628 </row3>
+			<row3> 99.000130 6.150168 91.107613 </row3>
 		</transform>
 		<castsShadow> true </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<reflectionVisible> false </reflectionVisible>
 		<destructibleState> undamaged </destructibleState>
 	</model>
 	<speedtree>
@@ -6359,4 +7078,77 @@
 		<useColorTemperature> false </useColorTemperature>
 		<colorTemperature> 1000.000000 </colorTemperature>
 	</spotLight>
+	<entity>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983488 </visibilityMask>
+		<metaData/>
+		<guid> 56FAA031.4577345D.FC761ABF.2063B26A </guid>
+		<type> ClientSelectableRankedObject </type>
+		<transform>
+			<row0> 0.999998 0.000000 0.000000 </row0>
+			<row1> 0.000000 0.999998 0.000000 </row1>
+			<row2> 0.000000 0.000000 0.999998 </row2>
+			<row3> 96.797188 6.246686 80.143074 </row3>
+		</transform>
+		<clientOnly> true </clientOnly>
+		<properties>
+			<modelName> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_RB_MC_02.model </modelName>
+			<mouseOverSoundName> highlight </mouseOverSoundName>
+			<isOver3DSound> 0 </isOver3DSound>
+			<clickSoundName> tank_selection </clickSoundName>
+			<isClick3DSound> 0 </isClick3DSound>
+		</properties>
+	</entity>
+	<entity>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983744 </visibilityMask>
+		<metaData/>
+		<guid> 463FF11E.499409CA.E1B42A96.4CAA70C3 </guid>
+		<type> ClientSelectableRankedObject </type>
+		<transform>
+			<row0> -0.999999 0.000000 -0.001047 </row0>
+			<row1> 0.000000 0.999999 0.000000 </row1>
+			<row2> 0.001047 0.000000 -0.999999 </row2>
+			<row3> 96.789368 6.643556 82.874954 </row3>
+		</transform>
+		<clientOnly> true </clientOnly>
+		<properties>
+			<modelName> content/Hangars/hangar_v3/enviroment/normal/lod0/hd_hv3_043_RB_Board_outline.model </modelName>
+			<mouseOverSoundName> highlight </mouseOverSoundName>
+			<isOver3DSound> 0 </isOver3DSound>
+			<clickSoundName> tank_selection </clickSoundName>
+			<isClick3DSound> 0 </isClick3DSound>
+			<edgeMode> 0 </edgeMode>
+		</properties>
+	</entity>
+	<entity>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4293983360 </visibilityMask>
+		<metaData/>
+		<guid> CBFCC64E.42282667.F7CD93A1.3FAF8839 </guid>
+		<type> ClientSelectableRankedObject </type>
+		<transform>
+			<row0> -0.999995 0.000000 -0.002793 </row0>
+			<row1> 0.000000 0.999999 0.000000 </row1>
+			<row2> 0.002793 0.000000 -0.999995 </row2>
+			<row3> 97.075409 6.251284 80.739037 </row3>
+		</transform>
+		<clientOnly> true </clientOnly>
+		<properties>
+			<modelName> content/Hangars/hangar_v3/enviroment/normal/lod0/car_selection.model </modelName>
+			<mouseOverSoundName> highlight </mouseOverSoundName>
+			<isOver3DSound> 0 </isOver3DSound>
+			<clickSoundName> tank_selection </clickSoundName>
+			<isClick3DSound> 0 </isClick3DSound>
+		</properties>
+	</entity>
 </root>

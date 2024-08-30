@@ -168,31 +168,41 @@ ControlsEx.Panel {
 						Layout.fillWidth: true
 					}
 				}
+
+				Timer {
+					id: expandTimer
+					interval: 0
+					onTriggered: {
+						if (model && model.expanded) {
+							treeView.expand(styleData.index)
+						}
+					}
+				}
+
+				Component.onCompleted: {
+					expandTimer.start()
+				}
+
+				Connections {
+					target: styleData
+					ignoreUnknownSignals: true
+
+					onIsExpandedChanged: {
+						if (model) {
+							model.expanded = styleData.isExpanded
+						}
+					}
+
+					onValueChanged: {
+						expandTimer.start()
+					}
+				}
 			}
 
 			Views.TableViewColumn {
 				horizontalAlignment: Text.AlignLeft
 				title: "Name"
 				role: "display"
-			}
-
-			// auto expand functionality
-			Timer {
-				id: autoExpandTimer
-				interval: 0
-				onTriggered: treeView.expandAll()
-			}
-
-			Component.onCompleted: autoExpandTimer.restart()
-
-			Connections {
-				target: treeView
-				onModelChanged: autoExpandTimer.restart()
-			}
-
-			Connections {
-				target: treeView.model
-				onModelReset: autoExpandTimer.restart()
 			}
 		}
 	}

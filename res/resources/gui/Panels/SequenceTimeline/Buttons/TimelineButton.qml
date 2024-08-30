@@ -14,7 +14,10 @@ Button {
 	property alias iconImageSize: icon.sourceSize
 	property alias borderVisible: timelineBackground.borderVisible
 	property alias borderRadius: timelineBackground.borderRadius
-	
+
+	// hasHoveredState helps to fix the bug with ColorOverlay::getColor() 
+	// it returns wrong color for a button without hovered state
+	property var hasHoveredState: true
 	property var textColor: Constants.defaultButtonTextColor
 
 	hoverEnabled: true
@@ -38,7 +41,7 @@ Button {
 
 			fillMode: Image.Pad
 
-			opacity: enabled ? 1 : 0.25
+			opacity: root.enabled ? 1 : 0.25
 
 			ColorOverlay {
 				visible: flat
@@ -49,13 +52,13 @@ Button {
 				color: getColor()
 
 				function getColor() {
-					if (!enabled) {
+					if (!root.enabled) {
 						return Constants.defaultFlatButtonDisabledColor
 					}
 					else if (root.pressed) {
 						return Constants.defaultFlatButtonPressedColor
 					}
-					else if (root.hovered) {
+					else if (root.hasHoveredState && root.hovered) {
 						return Constants.defaultFlatButtonHoveredColor
 					}
 					return Qt.rgba(1, 1, 1, 0)
@@ -71,7 +74,7 @@ Button {
 			visible: root.text != ""
 
 			text: !visible ? "" : root.text
-			color: enabled ? textColor : Constants.defaultButtonDisabledTextColor
+			color: root.enabled ? textColor : Constants.defaultButtonDisabledTextColor
 
 			font.pixelSize: 12
 			font.family: Constants.proximaRg

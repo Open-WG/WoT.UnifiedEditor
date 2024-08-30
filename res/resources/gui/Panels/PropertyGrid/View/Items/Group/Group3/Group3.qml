@@ -1,5 +1,6 @@
 import QtQuick 2.7
 import "../Common"
+import "../Group2"
 import "../Group4"
 import "../../../Settings.js" as Settings
 
@@ -9,8 +10,9 @@ BaseGroup {
 	childrenSpacing: Settings.groupItemSpacing
 	flexibleHeader: false
 
-	headerDelegate: Group3Header {
+	headerDelegate: Group2Header {
 		text: model ? model.node.name : ""
+		actions: model ? model.node.actions : null
 	}
 
 	groupDelegate: Group4 {}

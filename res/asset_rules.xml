@@ -188,6 +188,9 @@
 		<root>true</root>
 		<converter>CopyConverter</converter>
 	</rule>
+	<rule pattern="[a-zA-Z0-9_]*/?scripts/(base|cell|dbmgr|development|server_common|service|service_defs|db|server_data|server_xml|editor)/.*$">
+		<noConversion>true</noConversion>
+	</rule>
 	<rule pattern=".*(\.py)$">
 		<root>true</root>
 		<converter>PythonConverter</converter>

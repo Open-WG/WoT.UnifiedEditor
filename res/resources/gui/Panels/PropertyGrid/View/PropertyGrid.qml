@@ -20,6 +20,7 @@ Flickable {
 	readonly property alias currentIndex: selectionProcessor.currentIndex
 
 	property bool multiselection: true
+	property int invalidDelegateCount: 0
 	property alias multiTypeSelection: rootGroup.startFromZero
 
 	readonly property alias splitterSharedData: splitterSharedData
@@ -70,9 +71,9 @@ Flickable {
 
 	Action {
 		id: collapseAction
-		readonly property bool expanded: 'sourceModel' in model && model.sourceModel && model.sourceModel.isExpandedRecursively
+		readonly property bool expanded: 'sourceModel' in model && model.sourceModel && model.sourceModel.expanded
 		text: expanded ? "Collapse &all" : "Expand &all"
-		onTriggered: model.isExpandedRecursively = !expanded
+		onTriggered: model.expanded = !expanded
 	}
 
 	property Component contextMenu: Menu {

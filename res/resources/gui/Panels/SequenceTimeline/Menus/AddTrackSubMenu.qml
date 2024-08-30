@@ -76,7 +76,8 @@ Instantiator {
 			readonly property Component __component: Component {
 				id: menuItemComponent
 				MenuItem {
-					width: parent.width
+					width: parent ? parent.width : implicitWidth
+					implicitWidth: 20
 					visible: model.popupData.visible
 
 					contentItem: RowLayout {

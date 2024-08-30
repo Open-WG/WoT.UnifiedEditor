@@ -152,6 +152,14 @@ customise the behaviour of the BigWorld Client Engine. -->
 	<!-- Displays a dialog box to optionally enter the debugger if
 	a critical error occurs. -->
 	<hasDevelopmentAssertions> true </hasDevelopmentAssertions>
+	<!-- If virtual memory load greater than this threshold => MemoryCriticalController fired up -->
+	<virtualMemoryLoadThreshold> 85.0 </virtualMemoryLoadThreshold>
+	<!-- If page file memory load greater than this threshold => MemoryCriticalController fired up -->
+	<pageFileMemoryLoadThreshold> 99.0 </pageFileMemoryLoadThreshold>
+	<!-- If physical memory load greater than this threshold => MemoryCriticalController fired up -->
+	<physicalMemoryLoadThreshold> 99.0 </physicalMemoryLoadThreshold>
+	<!-- If scaleform memory load greater than this threshold => MemoryCriticalController fired up -->
+	<scaleformMemoryLoadThreshold> 90.0 </scaleformMemoryLoadThreshold>
 	<debugKeys>
 		<combination>
 			<key> APPS </key>
@@ -274,16 +282,28 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<PS_PERFORMANCE_LOD_OFFSET> 0 </PS_PERFORMANCE_LOD_OFFSET>
 		<PS_PERFORMANCE_LOD_MULT> 1.2 </PS_PERFORMANCE_LOD_MULT>
 	</ParticleSystem>
-	<debug>
-		<!-- Enables getting full dump when application crashes -->
-		<fullDump> true </fullDump>
+	<!-- This section is used to control and customise the behaviour of the
+	CAT (Crash Analysis Tool). These parameters might be overriden using either cat_config.xml
+	placed near engine_config.xml with the same parameter names, or direct command line keys. -->
+	<cat_config>
+		<!-- Enables sending crash info to the server. Client url has also to be set to enable sending. -->
+		<isOnline> false </isOnline>
 		<!-- Sets server to send crash dumps for client -->
-		<clientUrl>
-		</clientUrl>
+		<clientUrl> http://cat-st1.wargaming.net </clientUrl>
 		<!-- Sets server to send crash dumps for bots -->
 		<botsUrl> http://cat-st1.wargaming.net </botsUrl>
+		<!-- Enables getting full dump when application crashes -->
+		<fullDump> true </fullDump>
+		<!-- Enables collecting personal data -->
+		<collectPersonalData> true </collectPersonalData>
 		<!-- Enables generation of DxDiag output for collecting when application crashes -->
 		<dxdiag> true </dxdiag>
+		<!-- Sets dump collecting timeout. 0 is inf. -->
+		<dumpTimeout> 600000 </dumpTimeout>
+		<!-- Sets archive size threshold when the user alert appears. -->
+		<reportArchiveSizeThresholdKb> 1024 </reportArchiveSizeThresholdKb>
+	</cat_config>
+	<debug>
 		<!-- if set to anything greater than zero, the client
 		will run for the specified number of frames and quit -->
 		<framesCount> 0 </framesCount>
@@ -358,6 +378,19 @@ customise the behaviour of the BigWorld Client Engine. -->
 			Memory limit warning in MB
 		-->
 		<highPriorityBankThread> true </highPriorityBankThread>
+		<playbackPools>
+			<pool>
+				<event>
+					obj_generative
+				</event>
+				<limit>
+					15
+				</limit>
+				<maxDistance>
+					100
+				</maxDistance>
+			</pool>
+		</playbackPools>
 		<!-- WWISE soundbanks -->
 		<WWISE_active_profile> WWISE_adv_profile </WWISE_active_profile>
 		<WWISE_emergency_profile> WWISE_low_profile </WWISE_emergency_profile>
@@ -387,6 +420,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<voice_soundbanks>
 				<project>
 					<name> voiceover.bnk </name>
+				</project>
+				<project>
+					<name> inbattle_communication_pc.bnk </name>
 				</project>
 			</voice_soundbanks>
 			<SFX_soundbanks_loadonce>
@@ -463,10 +499,19 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> wheel_vehicle_GUI.pck </name>
 				</project>
 				<project>
-					<name> weekend_brawl.pck </name>
+					<name> plugin_media.bnk </name>
 				</project>
 				<project>
-					<name> plugin_media.bnk </name>
+					<name> impacts_full.pck </name>
+				</project>
+				<project>
+					<name> inbattle_communication_npc.bnk </name>
+				</project>
+				<project>
+					<name> ev_battle_royale_2019_music.bnk  </name>
+				</project>
+				<project>
+					<name> ev_battle_royale_2019_music.pck </name>
 				</project>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
@@ -501,9 +546,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 					<name> researches.bnk </name>
 				</project>
 				<project>
-					<name> weekend_brawl.bnk </name>
-				</project>
-				<project>
 					<name> tasks.bnk </name>
 				</project>
 				<project>
@@ -511,6 +553,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</project>
 				<project>
 					<name> ev_10y_countdown_hangar.pck </name>
+				</project>
+				<project>
+					<name> cons_hangar.bnk </name>
 				</project>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -560,6 +605,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<voice_soundbanks>
 				<project>
 					<name> voiceover.bnk </name>
+				</project>
+				<project>
+					<name> inbattle_communication_pc.bnk </name>
 				</project>
 			</voice_soundbanks>
 			<SFX_soundbanks_loadonce>

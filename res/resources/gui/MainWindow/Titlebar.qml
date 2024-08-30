@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.3
 import WGTools.Controls 2.0
 import WGTools.Controls.Details 2.0
 import WGTools.Clickomatic 1.0 as Clickomatic
+import WGTools.Misc 1.0 as Misc
 import WGTools.Utils 1.0
 import "Settings.js" as Settings
 
@@ -26,7 +27,7 @@ ColumnLayout {
 		Item {
 			height: parent.height
 			anchors.left: parent.left
-			anchors.right: sysMenu.left
+			anchors.right: realm.left
 
 			DropdownButton {
 				id: menuButton
@@ -38,7 +39,7 @@ ColumnLayout {
 				icon.source: Qt.application.state == Qt.ApplicationActive
 					? "image://gui/unifiededitor_16x16"
 					: "image://gui/icon-system-menu-disabled"
-					
+
 				icon.width: 16
 				icon.height: 16
 
@@ -52,7 +53,7 @@ ColumnLayout {
 				ToolTip.delay: ControlsSettings.tooltipDelay
 				ToolTip.timeout: ControlsSettings.tooltipTimeout
 			}
-		
+
 			Tabbar {
 				id: tabs
 				model: context.model
@@ -63,7 +64,7 @@ ColumnLayout {
 				Binding on currentIndex {
 					value: context.model.activateTabIndex
 				}
-			
+
 				delegate: Tab {
 					height: parent.height
 					width: Math.min(Settings.tabWidth, tabs.implicitWidth / tabs.count)
@@ -105,6 +106,33 @@ ColumnLayout {
 			}
 		}
 
+		Rectangle {
+			id: realm
+
+			height: parent.height
+
+			implicitWidth: realmText.implicitWidth
+
+			anchors.right: sysMenu.left
+			anchors.top: parent.top
+			anchors.bottom: parent.bottom
+
+			color: context.editingAllowed ? _palette.color9 : "#FF0000"
+
+			Misc.Text {
+				id: realmText
+
+				anchors.fill: parent
+				verticalAlignment: Text.AlignVCenter
+				horizontalAlignment: Text.AlignHCenter
+
+				text: "Realm: " + context.currentRealm
+
+				leftPadding: 5
+				rightPadding: 5
+			}
+		}
+
 		Row {
 			id: sysMenu
 			height: parent.height
@@ -112,12 +140,14 @@ ColumnLayout {
 
 			WindowButton {
 				id: minButton
+				Accessible.name: "Minimize"
 				source: "image://gui/icon-sys-minimize?color=" + encodeURIComponent(_palette.color2)
 				onClicked: _mainWindow.showMinimized()
 			}
 
 			WindowButton {
 				id: maxButton
+				Accessible.name: "Maximize"
 				source: (_mainWindowHandle.visibility === Window.Windowed
 					? "image://gui/icon-sys-maximize?color="
 					: "image://gui/icon-sys-restore?color=") + encodeURIComponent(_palette.color2)
@@ -133,6 +163,7 @@ ColumnLayout {
 
 			WindowButton {
 				id: closeButton
+				Accessible.name: "Close"
 				source: "image://gui/icon-sys-close?color=" + encodeURIComponent(_palette.color2)
 				onClicked: _mainWindow.close()
 			}

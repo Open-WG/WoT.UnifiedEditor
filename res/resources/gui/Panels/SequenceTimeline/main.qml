@@ -13,7 +13,7 @@ import "Helpers.js" as Helpers
 import "Constants.js" as Constants
 
 ControlsEx.Panel {
-	id: modelValidator
+	id: animationSequence
 	title: "Sequence Timeline"
 	Accessible.name: title
 	layoutHint: "bottom"
@@ -96,13 +96,12 @@ ControlsEx.Panel {
 			}
 		}
 
-		///////////////////////////////////////////////////////////////////
-
 		SequenceTree {
 			id: sequenceTree
 			treeColumnWidth: root.separatorPos
 			spacing: root.separatorWidth
 			clip: true
+			focus: true
 
 			timelineController: context.timelineController
 			rootContext: context
@@ -110,7 +109,8 @@ ControlsEx.Panel {
 			selectionModel: context.selectionModel
 
 			rowDelegate: Rectangle {
-				color: styleData.alternative ? Constants.seqTreeEvenItemColor : Constants.seqTreeOddItemColor 
+				color: styleData.rowSelected ? _palette.color12 : // selected/highlighted color
+				styleData.alternative ? Constants.seqTreeEvenItemColor : Constants.seqTreeOddItemColor 
 			}
 
 			anchors {
@@ -133,7 +133,7 @@ ControlsEx.Panel {
 
 			x: root.separatorPos
 			width: root.separatorWidth
-			color: "black"
+			color: Constants.splitterColor
 		}
 
 		MouseArea {
@@ -155,12 +155,14 @@ ControlsEx.Panel {
 		}
 
 		Item {
+			id: timelineArea
 			anchors.left: splitterRect.right
 			anchors.bottom: parent.bottom
 			anchors.right: parent.right
 			anchors.top: eventRowLayout.top
 
 			clip: true
+			focus: context.insertingNodes
 
 			TimelineCursorExt {
 				visible: context.sequenceOpened
@@ -170,6 +172,49 @@ ControlsEx.Panel {
 
 				anchors.top: parent.top
 				anchors.bottom: parent.bottom
+			}
+
+			TimelineCursorToInsert {
+				visible: context.insertingNodes
+
+				timelineController: context.timelineController
+				playbackController: context.playbackController
+				mouseCursorPosX: insertArea.mouseX
+
+				anchors.top: parent.top
+				anchors.bottom: parent.bottom
+			}
+
+			MouseArea {
+				id: insertArea
+
+				property var timelineController: context.timelineController
+
+				anchors.top: parent.top
+				anchors.left: parent.left
+
+				width : context.insertingNodes ? parent.width : 1
+				height : context.insertingNodes ? parent.height : 1
+
+				enabled: context.insertingNodes
+				hoverEnabled: true
+
+				onReleased: {
+					context.insertingNodes = false
+
+					var frame = timelineController.fromScreenToScaleClipped(mouse.x)
+					var newVal = timelineController.fromFramesToSeconds(frame)
+
+					context.pasteCopiedNodesFromTheBuffer(newVal)
+				}
+			}
+
+			// Ensure that we get escape key press events first.
+			Keys.onShortcutOverride: event.accepted = (event.key === Qt.Key_Escape)
+			Keys.onEscapePressed: {
+				context.insertingNodes = false
+
+				event.accepted = true
 			}
 		}
 
@@ -182,6 +227,7 @@ ControlsEx.Panel {
 
 			onTriggered: Helpers.focusSequence(context)
 		}
+
 		Component.onCompleted: {
 			focusTimer.running = true
 		}

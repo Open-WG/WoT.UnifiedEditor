@@ -1,6 +1,7 @@
 import QtQuick 2.11
 import QtQuick.Templates 2.4 as T
 import WGTools.Dialogs 1.0 as Dialogs
+import WGTools.Controls.impl 1.0
 
 T.Button {
 	id: control
@@ -12,6 +13,11 @@ T.Button {
 
 	onClicked: {
 		dialog.activate(delegateRoot.rgb, delegateRoot.alphaChannel ? true : false)
+	}
+
+	RawDrag.hideDragRelease: true
+	RawDrag.onDrag: {
+		delegateRoot.propertyData.drag()
 	}
 
 	Dialogs.ColorDialog {

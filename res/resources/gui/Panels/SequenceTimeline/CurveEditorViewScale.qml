@@ -7,7 +7,7 @@ import "Constants.js" as Constants
 Rectangle {
 	id: root
 
-	property alias controller: curveEditorContorller
+	property alias controller: curveEditorController
 	property var timelineController: null
 	property var context: null
 
@@ -27,7 +27,7 @@ Rectangle {
 	}
 
 	CurveEditorController {
-		id: curveEditorContorller
+		id: curveEditorController
 		controlSize: root.height
 	}
 
@@ -64,7 +64,7 @@ Rectangle {
 
 		onPositionChanged: {
 			if (moving) {
-				curveEditorContorller.move(prevClickY - mouse.y)
+				curveEditorController.move(prevClickY - mouse.y)
 				prevClickY = mouse.y
 
 				styleData.context.timelineController.move(mouse.x - prevClickX)
@@ -74,12 +74,11 @@ Rectangle {
 
 		onWheel: {
 			if (wheel.modifiers == Qt.ShiftModifier)
-				curveEditorContorller.zoom(wheel.angleDelta.y, root.height - wheel.y)
+				curveEditorController.zoom(wheel.angleDelta.y, root.height - wheel.y)
 			else if (wheel.modifiers == Qt.ControlModifier)
 				timelineController.zoom(wheel.angleDelta.y, wheel.x)
 			else {
-				curveEditorContorller.zoom(wheel.angleDelta.y, root.height - wheel.y)
-				timelineController.zoom(wheel.angleDelta.y, wheel.x)
+				wheel.accepted = false
 			}
 		}
 	}
@@ -87,7 +86,7 @@ Rectangle {
 	Repeater {
 		id: repeater
 
-		model: curveEditorContorller.scaleModel
+		model: curveEditorController.scaleModel
 
 		readonly property var origin: root.height
 		property var zeroFramePos: root.getFirstFramePos()

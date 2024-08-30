@@ -17,12 +17,23 @@ import WGTools.Misc 1.0
 ControlsEx.Panel {
 	id: panel
 
-	property var itemSpasing: 5
+	property var itemWidth: 100
+	property var itemHeight: 120
+	property var itemSpacing: 4
+	property var highlightRadius: 4
 
 	title: context.title
 	layoutHint: "right"
 
 	Accessible.name: title
+
+	Connections {
+		target: context
+		onScrollTo: {
+			grid.currentIndex = index
+			grid.positionViewAtIndex(grid.currentIndex, GridView.Contain)  
+		}
+	}
 
 	C1.SplitView {
 		orientation: Qt.Vertical
@@ -30,17 +41,18 @@ ControlsEx.Panel {
 
 		GridView {
 			id: grid
-			width:parent.width
-			height:parent.height * 2 / 3
+			width: parent.width
+			height: parent.height * 2 / 3
 
 			clip: true
+			focus: true
 
-			cellWidth: 100
-			cellHeight: cellWidth * 1.2
+			cellWidth: itemWidth
+			cellHeight: itemHeight
 
 			highlight: Rectangle {
 				color:  _palette.color3
-				radius: 5
+				radius: highlightRadius
 			}
 
 			delegate: delegate
@@ -48,35 +60,56 @@ ControlsEx.Panel {
 			model: context.model
 			Controls.ScrollBar.vertical: Controls.ScrollBar {}
 
-			onCurrentIndexChanged: context.model.selectionChanged(grid.currentIndex)
+			onCurrentIndexChanged: {
+				context.model.selectionChanged(currentIndex)
+			}
 		}
 
 		Component {
 			id: delegate
 
-			QtControls.Button {
-				id: control
-				width: grid.cellWidth - itemSpasing
-				height: grid.cellHeight - itemSpasing
-				topPadding: image.height
-				focusPolicy: Qt.ClickFocus
+			MouseArea {
+				width: grid.cellWidth - itemSpacing
+				height: grid.cellHeight - itemSpacing
 
-				onActiveFocusChanged: if (activeFocus) {
+                hoverEnabled: true
+                property bool hovered: false
+
+                onPositionChanged: hovered = containsMouse
+			    onExited: hovered = false
+
+                Controls.ToolTip.text: model.namePreview ? model.namePreview : model.texture
+	            Controls.ToolTip.visible: hovered
+				acceptedButtons: Qt.LeftButton | Qt.RightButton
+
+				onPressed: {
 					grid.currentIndex = index
 				}
 
 				onClicked : {
-					grid.currentIndex = index
+					if (mouse.button == Qt.RightButton) {
+						context.itemContextMenu(mapToGlobal(mouse.x, mouse.y), index)
+					}
 				}
 
-				Component.onCompleted: context.model.selectionChanged(grid.currentIndex)
-
-				background: Image {
+				Image {
 					id: image
-					width: parent.width
+
+					x: highlightRadius / 2
+					y: highlightRadius / 2
+					width: parent.width - highlightRadius
 					height: width
 
-					source: model.texture ? "image://gui/" + model.texture : ""
+					source: model.texture
+						? model.palette.length != 0 
+							? "image://camouflagePreview/" + model.texture +
+							"?imageIndex=" + model.display +
+							"&R=" + encodeURIComponent(model.palette[0]) +
+							"&G=" + encodeURIComponent(model.palette[1]) + 
+							"&B=" + encodeURIComponent(model.palette[2]) + 
+							"&A=" + encodeURIComponent(model.palette[3])
+							: "image://gui/" + model.texture
+						: ""
 					fillMode: Image.PreserveAspectFit
 					verticalAlignment: Image.AlignVCenter
 					horizontalAlignment: Image.AlignHCenter
@@ -85,8 +118,11 @@ ControlsEx.Panel {
 					asynchronous: true
 				}
 
-				contentItem : Text {
-					id: label
+				Text {
+					anchors.top: image.bottom
+					anchors.topMargin: 2
+					width: image.width
+
 					text: model.display
 					horizontalAlignment:Text.AlignHCenter
 					clip: true
@@ -113,8 +149,14 @@ ControlsEx.Panel {
 			}
 
 			selection: ItemSelectionModel {
+				id: pgSelectionModel
 				model: pgModel
 			}
+		}
+
+		PropertySelectionAdapter {
+			assetSelection: context.assetSelection
+			selectionModel: pgSelectionModel
 		}
 	}
 }

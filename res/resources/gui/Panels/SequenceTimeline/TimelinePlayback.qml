@@ -298,8 +298,10 @@ Item {
 			onScrollToTheEnd: lastFrameButton.clicked()
 			onPreviousKey: prevFrameButton.clicked()
 			onNextKey: nextFrameButton.clicked()
-			onZoomOut: sequenceTree.zoomShortcutActivated(-120)
 			onZoomIn: sequenceTree.zoomShortcutActivated(120)
+			onZoomOut: sequenceTree.zoomShortcutActivated(-120)
+			onZoomInToTimeCursor: sequenceTree.zoomToTimeCursorShortcutActivated(120)
+			onZoomOutFromTimeCursor: sequenceTree.zoomToTimeCursorShortcutActivated(-120)
 		}
 	}
 }

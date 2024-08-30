@@ -8,6 +8,8 @@
 
 		<engineConfigXML>	engine_config.xml	</engineConfigXML>
 		<!-- Global engine settings -->
+		<catConfigXML>	cat_config.xml	</catConfigXML>
+		<!-- Cat config settings. This file should be in the svn-ignore list -->
 		<scriptsConfigXML>	scripts_config.xml	</scriptsConfigXML>
 		<!-- Config file to be passed to the scripts -->
 		<notFoundBmp>	system/maps/notfound.dds		</notFoundBmp>
@@ -248,6 +250,7 @@
 	</shaderPaths>
 	<gameplay>
 		<areaBorderModel>	system/models/fx_area_border.model </areaBorderModel>
+		<projDecalDefaultGM>system/maps/projection_decal_default_GM.dds</projDecalDefaultGM>
 		<areaBorderModelSmall>	system/models/fx_area_border_small.model </areaBorderModelSmall>
 	</gameplay>
 	<asset_pipeline>

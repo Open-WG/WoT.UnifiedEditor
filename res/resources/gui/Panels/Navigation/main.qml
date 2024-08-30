@@ -53,16 +53,6 @@ Rectangle
 					onClicked: context.managerController.makeScreenshots()
 				}
 			}
-
-
-			SearchField {
-				id: filterTextField
-				width: parent.width
-				placeholderText: "Filter"
-				text: context.sceneBrowserData.model.filterTokens
-
-				onTriggered: context.sceneBrowserData.model.filterTokens = text
-			}
 		}
 
 		SceneOutline.SceneBrowserView {

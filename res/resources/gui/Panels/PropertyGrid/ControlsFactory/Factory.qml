@@ -30,7 +30,8 @@ FactoryManager {
 	Factories.NumericFactory {}
 	Factories.RangeFactory {}
 	Factories.ButtonFactory {}
-	Factories.LodsSettingsFactory {}
+	Factories.LodCameraFactory {}
+	Factories.LodBarFactory {}
 	Factories.NormalizedPlaybackFactory {}
 	Factories.FogMinimapFactory {}
 	Factories.FallbackFactory {}

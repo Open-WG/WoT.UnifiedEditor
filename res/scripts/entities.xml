@@ -21,31 +21,22 @@
 		<DetachedTurret/>
 		<BootcampAccount/>
 		<DebugDrawEntity/>
-		<!-- ExampleDestructible/ -->
 		<ClientSelectableCameraObject/>
 		<ClientSelectableCameraVehicle/>
-		<HeroTank/>
+		<ClientSelectableWebLinksOpener/>
 		<ClientSelectableEasterEgg/>
+		<HeroTank/>
 		<SectorBase/>
 		<Sector/>
 		<DestructibleEntity/>
 		<StepRepairPoint/>
 		<ProtectionZone/>
 		<HangarPoster/>
-		<ClientSelectableWebLinksOpener/>
-		<CustomizableSE20SceneObject/>
-  	  	<CameraAnchorObject/>
+		<!-- BR: move into extension -->
 		<GameObjectEntity/>
-		<ItemPickup/>
-		<EventControlPoint/>
-		<SE20HangarVehicle/>
-		<SE20ClientSelectableObject/>
-		<AnimatedScene/>
-		<ActionEffects/>
-		<AttackBomber/>
-		<DeathZone/>
-		<PersonalDeathZonesHelper/>
-		<SE20HeroTank/>
+		<ClientSelectableRankedObject/>
+		<ClientSelectableHangarsSwitcher/>
+		<ClientSelectableAdventCalendarObject/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -66,7 +57,6 @@
 		<FalloutUnitMgr/>
 		<SpecUnitMgr/>
 		<EventUnitMgr/>
-		<BobUnitMgr/>
 		<VoiceChatMgr/>
 		<MessageFilterManager/>
 		<CenterStatusReader/>
@@ -101,6 +91,7 @@
 		<BootcampQueue/>
 		<EntityGetter/>
 		<EpicMgr/>
-		<BobMgr/>
+		<AiArenaMgr/>
+		<BattleRoyaleMgr/>
 	</ServerOnlyEntities>
 </root>

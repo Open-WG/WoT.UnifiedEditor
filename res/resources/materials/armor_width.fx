@@ -158,7 +158,7 @@ float4 ps_2_0(VS2PS_LightOnlyForward i, bool vFace : SV_IsFrontFace, uniform boo
 }
 
 //--------------------------------------------------------------------------------------------------
-WG_COLOR_CHANNEL_TECHNIQUE("sorted", false, false)
+TECHNIQUE_COLOR_TRANSPARENT
 {
 	pass P0
 	{

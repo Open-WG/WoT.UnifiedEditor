@@ -58,6 +58,7 @@ Row {
 				width: parent.width
 				height: parent.height
 
+				readOnly: lodbar.readOnly
 				onEditingChanged: {
 					if (editing) {
 						repeater.currentIndex = index

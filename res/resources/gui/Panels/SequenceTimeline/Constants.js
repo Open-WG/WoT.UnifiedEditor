@@ -1,5 +1,7 @@
 .pragma library
 
+var gDebugMode = false
+
 //Scale model
 var majorStrokeHeight = 20
 var strokeHeight = 20
@@ -15,7 +17,7 @@ var toolbarButtonBackgroundColor = "#666666"
 var toolbarPressedButtonBackgroundColor = "#515151"
 var toolbarHoveredButtonBackgroundColor = "#848484"
 
-var scaleBackgoundColor = "#666666"
+var scaleBackgroundColor = "#666666"
 var scaleBackgroundRecordingColor = Qt.rgba(1, 0, 0, 0.2)
 
 var labelBorderColor = "#1a1a1a"
@@ -45,7 +47,7 @@ var defaultFlatButtonDisabledColor = "#8c8c8c"
 var defaultButtonTextColor = "#ffffff"
 var defaultButtonDisabledTextColor = "#d4d4d4"
 
-var addPopupTrackBackgoundColor = "#666666"
+var addPopupTrackBackgroundColor = "#666666"
 
 var playbackButtonBackgroundColor = "#666666"
 var playbackPressedButtonBackgroundColor = "#515151"
@@ -61,6 +63,8 @@ var transitionBackgroundColor = "#595959"
 var transitionTextColor = "white"
 
 var popupBackgroundColor = "#4a4a4a"
+
+var splitterColor = "black"
 
 //font
 var fontSize = 12
@@ -116,7 +120,7 @@ var curveValueDisplayWidth = 60
 var curveValueDisplayTopBotPadding = 4
 
 //offsets
-var addPopupTrackVOffest = 3
+var addPopupTrackVOffset = 3
 var seqSaveLoadItemsMargin = 10
 
 var popupDefaultTopPadding = 5
@@ -152,6 +156,9 @@ var iconVisibility = "image://gui/animation_sequence/tracks/visibility"
 var iconFocus = "image://gui/animation_sequence/focus"
 var iconFeedback = "image://gui/animation_sequence/feedback"
 var iconCheckmark = "image://gui/animation_sequence/checkmark"
+var openedEye = "image://gui/model_asset/eye"
+var closedEye = "image://gui/model_asset/close_eye"
+
 //images
 var imageCursor = "image://gui/animation_sequence/playback/cursor"
 var noSequenceTransition = "image://gui/animation_sequence/transitions/no_sequence"

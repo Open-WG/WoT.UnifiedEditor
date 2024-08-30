@@ -10,6 +10,7 @@ BaseGroup {
 
 	headerDelegate: Group1Header {
 		text: model ? model.node.name : ""
+		actions: model ? model.node.actions : null
 	}
 
 	groupDelegate: Group2 {}

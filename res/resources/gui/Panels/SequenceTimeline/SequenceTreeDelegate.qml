@@ -17,52 +17,49 @@ Column {
 	property var selectionModel: null
 	property var viewOwner: null
 
-	function placeKey() {
-		maKeyPlacer.maTryPlaceKey()
-	}
+	function placeKey() { maKeyPlacer.maTryPlaceKey() }
 
 	function selectItems(selModel, box, selection) {
-		if (secondLoader.item)
+		if (timeLineTrackLoader.item)
 		{
-			secondLoader.item.selectKeys(selModel, box, selection)
+			timeLineTrackLoader.item.selectKeys(selModel, box, selection)
 			if (curveEditorLoader.visible)
 				curveEditorLoader.item.selectKeys(selModel, box, selection)
 		}
 	}
 
 	Rectangle {
+		id: treeItemSeparator
 		width: parent.width
-		height: Constants.seqObjSeparatorHeight
-
+		height: Constants.seqObjSeparatorHeight // 3
 		visible: index != 0 && !!itemData && itemData.itemType == SequenceItemTypes.Object
-
-		color: Constants.seqObjSeparatorColor
+		color: Constants.seqObjSeparatorColor // gray
 	}
 
 	Row {
 		id: firstRow
 
 		Loader {
-			id: firstLoader
+			id: treeItemLoader
 			width: treeColumnWidth
 			readonly property int _index: index
 			//visible: isVisible()
 			signal testSign(var type)
 
+			focus: true
+
 			property QtObject styleData: QtObject {
 				readonly property var view: rootSequenceTree
-				readonly property var index: sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(firstLoader._index))
+				readonly property var index: sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(treeItemLoader._index))
 				readonly property var selectionModel: rootSequenceTree.selectionModel
 				readonly property bool expanded: isExpanded
 				readonly property var context : rootSequenceTree.rootContext
-				property var addTrackSignHolder: firstLoader
+				property var addTrackSignHolder: treeItemLoader
 
 				property var curveEditorEnabled: false
 			}
 
-			onTestSign: {
-				itemAddTrack = type
-			}
+			onTestSign: { itemAddTrack = type }
 
 			function treeItemChooser() {
 				switch (itemData.itemType)
@@ -77,10 +74,7 @@ Column {
 				}
 			}
 
-			Component.onCompleted: {
-				firstLoader.setSource(treeItemChooser(),
-									styleData);
-			}
+			Component.onCompleted: { treeItemLoader.setSource(treeItemChooser(), styleData); }
 
 			SeqTreeItemContextMenu {
 				id: itemPopup
@@ -101,13 +95,13 @@ Column {
 				acceptedButtons: Qt.LeftButton | Qt.RightButton
 
 				function handleSelection(mouse) {
-					var thisModelIndex = sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(firstLoader._index));
+					var thisModelIndex = sourceModelAdapter.mapToModel(thisDelegateModel.modelIndex(treeItemLoader._index));
 					var ctrlPressed = mouse.modifiers & Qt.ControlModifier
 
 					var flag = ItemSelectionModel.ClearAndSelect
 					if (ctrlPressed) {
 						flag = ItemSelectionModel.Toggle
-						//check tyoe of the current selection
+						//check type of the current selection
 						// we do not want to have keys and objects/tracks in the same selection
 						if (selectionModel.hasSelection) {
 							var selectedInd = rootSequenceTree.selectionModel.selectedIndexes[0]
@@ -121,9 +115,7 @@ Column {
 					selectionModel.select(thisModelIndex, flag)
 				}
 
-				onWheel: {
-					wheel.accepted = false
-				}
+				onWheel: { wheel.accepted = false }
 
 				onPressed: {
 					forceActiveFocus()
@@ -144,31 +136,24 @@ Column {
 
 				// Connections {
 				// 	target: popupLoader.item
-
-				// 	onClosed: {
-				// 		popupLoader.sourceComponent = null
-				// 	}
+				// 	onClosed: {	popupLoader.sourceComponent = null }
 				// }
 
-				onReleased: {
-				}
-
 				onDoubleClicked: {
+					rootSequenceTree.expand(treeItemLoader.styleData.index);
+					context.zoomToExtents(treeItemLoader.styleData.index);
+
 					forceActiveFocus()
 					mouse.accepted = false
-				}
-
-				onClicked: {
 				}
 			}
 		}
 
 		Loader {
-			id: secondLoader
+			id: timeLineTrackLoader
 			Accessible.name: "Track"
 
-			width: viewOwner.contentWidth
-				- rootSequenceTree.treeColumnWidth - rootSequenceTree.spacing
+			width: viewOwner.contentWidth - rootSequenceTree.treeColumnWidth - rootSequenceTree.spacing
 			source: keyItemChooser()
 
 			property QtObject styleData: QtObject {
@@ -206,7 +191,7 @@ Column {
 
 				onPressed: {
 					if (mouse.button == Qt.RightButton) {
-						var point = mapToItem(secondLoader, mouse.x, mouse.y)
+						var point = mapToItem(timeLineTrackLoader, mouse.x, mouse.y)
 						trackPopupMenu.x = point.x
 						trackPopupMenu.y = point.y
 						trackPopupMenu.open()
@@ -215,9 +200,7 @@ Column {
 					mouse.accepted = false
 				}
 
-				onDoubleClicked: {
-					maTryPlaceKey()
-				}
+				onDoubleClicked: { maTryPlaceKey() }
 
 				function maTryPlaceKey() {
 					if (!containsMouse) {
@@ -253,8 +236,8 @@ Column {
 
 			width: treeColumnWidth
 
-			active: firstLoader.styleData.curveEditorEnabled
-			visible : firstLoader.styleData.curveEditorEnabled
+			active: treeItemLoader.styleData.curveEditorEnabled
+			visible : treeItemLoader.styleData.curveEditorEnabled
 
 			source: "CurveEditorValueDisplay.qml"
 
@@ -293,13 +276,11 @@ Column {
 		Loader {
 			id: curveEditorLoader
 
-			width: viewOwner.contentWidth
-				- rootSequenceTree.treeColumnWidth - rootSequenceTree.spacing
+			width: viewOwner.contentWidth - rootSequenceTree.treeColumnWidth - rootSequenceTree.spacing
 			height: curveEditorDisplay.height
 
-			active: firstLoader.styleData.curveEditorEnabled
-			visible : firstLoader.styleData.curveEditorEnabled
-
+			active: treeItemLoader.styleData.curveEditorEnabled
+			visible : treeItemLoader.styleData.curveEditorEnabled
 
 			source: "CurveEditorView.qml"
 

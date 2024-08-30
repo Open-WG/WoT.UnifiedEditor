@@ -46,7 +46,7 @@ float4 ps_2_0(VS2PS_LightOnlyForward i) : COLOR0
 }
 
 //--------------------------------------------------------------------------------------------------
-WG_COLOR_CHANNEL_TECHNIQUE("sorted", false, false)
+TECHNIQUE_COLOR_TRANSPARENT
 {
 	pass P0
 	{

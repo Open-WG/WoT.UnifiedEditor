@@ -8,6 +8,6 @@ Item {
 	}
 
 	Sliders {
-		visible: !bars.editing && !bars.animating
+		visible: !bars.editing && !bars.animating && !lodbar.readOnly
 	}
 }

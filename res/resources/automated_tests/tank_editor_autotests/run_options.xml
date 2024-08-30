@@ -1,0 +1,8 @@
+<root>
+	<tank> scripts/item_defs/vehicles/ussr/R23_T-43.xml </tank>
+	<tests>
+		<saveTest> true </saveTest>
+		<tankAssetleakTest> true </tankAssetleakTest>
+		<customization2DLeakTest> true </customization2DLeakTest>
+	</tests>
+</root>

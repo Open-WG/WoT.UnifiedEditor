@@ -1,5 +1,5 @@
 <root>
-	<version> 10 </version>
+	<version> 11 </version>
 	<property>
 		<label> Apply Overlay </label>
 		<value> Apply Overlay Checker.Apply Overlay </value>
@@ -87,7 +87,7 @@
 	</property>
 	<property>
 		<value> WithinBorder </value>
-		<type> string </type>
+		<type> bool </type>
 		<visible> true </visible>
 		<groupBy> true </groupBy>
 	</property>
@@ -3462,15 +3462,15 @@
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 8 </value>
+						<value> R_ON </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 9 </value>
+						<value> R_GAP </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 10 </value>
+						<value> R_OFF </value>
 						<type> bool </type>
 					</property>
 					<property>

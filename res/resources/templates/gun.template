@@ -1,0 +1,17 @@
+				<[[GUN_TAG_NAME]]> shared
+					<maxAmmo> 74 </maxAmmo>
+					<unlocks>
+					</unlocks>
+					<models>
+						<undamaged> [[GUN_MODEL_NORMAL]] </undamaged>
+						<destroyed> [[GUN_MODEL_DESTROYED]] </destroyed>
+						<exploded> [[GUN_MODEL_CRIT]] </exploded>
+					</models>
+					<hitTester>
+						<collisionModelServer> [[GUN_MODEL_COLLISION_SERVER]] </collisionModelServer>
+						<collisionModelClient> [[GUN_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+					</hitTester>
+					<armor>
+						<gun> 10 </gun>
+					</armor>
+				</[[GUN_TAG_NAME]]>

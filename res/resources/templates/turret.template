@@ -1,0 +1,60 @@
+		<[[TURRET_TAG_NAME]]>
+			<userString> [[TURRET_TAG_NAME]] </userString>
+			<tags> </tags>
+			<level> 1 </level>
+			<price> 120.0 </price>
+			<models>
+				<undamaged> [[TURRET_MODEL_NORMAL]] </undamaged>
+				<destroyed> [[TURRET_MODEL_DESTROYED]] </destroyed>
+				<exploded> [[TURRET_MODEL_CRIT]] </exploded>
+			</models>
+			<hitTester>
+				<collisionModelServer> [[TURRET_MODEL_COLLISION_SERVER]] </collisionModelServer>
+				<collisionModelClient> [[TURRET_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+			</hitTester>
+			<gunPosition> [[TURRET_GUN_POSITION]] </gunPosition>
+			<!-- millimeters -->
+			<armor>
+				<armor_1> 18 </armor_1>
+				<armor_2> 16 </armor_2>
+				<armor_3> 16 </armor_3>
+				<armor_4> 16 </armor_4>
+				<armor_5> 16 </armor_5>
+				<armor_6> 16 </armor_6>
+				<armor_7> 8 </armor_7>
+				<armor_8> 0 </armor_8>
+			</armor>
+			<!-- "front side back"; the default is "armor_1 armor_3 armor_2" -->
+			<primaryArmor> armor_1 armor_3 armor_4 </primaryArmor>
+			<armorHomogenization> 1 </armorHomogenization>
+			<!-- Weight without armor, kg -->
+			<weight> 170 </weight>
+			<maxHealth> 30 </maxHealth>
+			<!-- horizontal rotation, degrees/second -->
+			<rotationSpeed> 50 </rotationSpeed>
+			<turretRotatorHealth>
+				<maxHealth> 50 </maxHealth>
+				<maxRegenHealth> 25 </maxRegenHealth>
+				<hysteresisHealth> 16 </hysteresisHealth>
+				<!-- per 1 HP-->
+				<repairCost> 1.0 </repairCost>
+				<healthRegenPerSec> 2 </healthRegenPerSec>
+				<healthBurnPerSec> 5 </healthBurnPerSec>
+			</turretRotatorHealth>
+			<wwturretRotatorSoundManual> tur_mech_trav </wwturretRotatorSoundManual>
+			<circularVisionRadius> 270 </circularVisionRadius>
+			<surveyingDeviceHealth>
+				<maxHealth> 40 </maxHealth>
+				<maxRegenHealth> 19 </maxRegenHealth>
+				<hysteresisHealth> 8 </hysteresisHealth>
+				<!-- per 1 HP-->
+				<repairCost> 1.0 </repairCost>
+				<healthRegenPerSec> 2 </healthRegenPerSec>
+				<healthBurnPerSec> 5 </healthBurnPerSec>
+			</surveyingDeviceHealth>
+			<emblemSlots>
+			</emblemSlots>
+			<guns>
+[[GUNS]]
+			</guns>
+		</[[TURRET_TAG_NAME]]>

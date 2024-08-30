@@ -1,0 +1,136 @@
+<root>
+	<crew>
+		<commander>
+			gunner
+			radioman
+			loader
+		</commander>
+		<driver/>
+	</crew>
+	<!-- km/h -->
+	<speedLimits>
+		<forward> 32 </forward>
+		<backward> 7 </backward>
+	</speedLimits>
+	<!-- in [0, 1] -->
+	<invisibility>
+		<moving> 0.198 </moving>
+		<still> 0.263 </still>
+		<camouflageBonus> 0.03 </camouflageBonus>
+		<camouflageNetBonus> 0.1 </camouflageNetBonus>
+		<firePenalty> 0.395 </firePenalty>
+	</invisibility>
+	<!-- per 1 HP of hull + turret -->
+	<repairCost> 0 </repairCost>
+	<!-- multiplier for XP gained in a battle -->
+	<xpFactor> 1 </xpFactor>
+	<freeXpFactor> 0.05 </freeXpFactor>
+	<crewXpFactor> 1.0 </crewXpFactor>
+	<creditsFactor> 0.69 </creditsFactor>
+	<healthBurnPerSec> 5 </healthBurnPerSec>
+	<effects>
+		<!-- In common/vehicle_effects.xml. See also common/vehicle.xml/defaultVehicleEffects. -->
+		<collision/>
+		<damagedStateGroup> small </damagedStateGroup>
+	</effects>
+	<camouflage>
+		<tiling> 1 1 0 0 </tiling>
+		<priceFactor> 0.4 </priceFactor>
+		<exclusionMask/>
+	</camouflage>
+	<emblems>
+		<default> 15501 </default>
+		<lodDist> MEDIUM </lodDist>
+		<alpha> 1.0 </alpha>
+	</emblems>
+	<hull>
+		<models>
+			<undamaged> [[HULL_MODEL_NORMAL]] </undamaged>
+			<destroyed> [[HULL_MODEL_DESTROYED]] </destroyed>
+			<exploded> [[HULL_MODEL_CRIT]] </exploded>
+		</models>
+		<swinging>
+			<lodDist> FAR </lodDist>
+			<!-- inertion, elasticity, friction0, friction1, deviation, gravity -->
+			<pitchParams> 0.34 38.0 0.36 1.0 0.05 0.34</pitchParams>
+			<!-- zOffset, inertion, elasticity, friction0, friction1, deviation, gravity -->
+			<rollParams> 1.0 0.34 38.0 0.36 1.0 0.06 0.40</rollParams>
+			<sensitivityToImpulse>0.94</sensitivityToImpulse>
+		</swinging>
+		<exhaust>
+			<pixie> gas_small </pixie>
+			<nodes> [[HULL_EXHAUST_HARDPOINTS]] </nodes>
+		</exhaust>
+		<turretPositions>
+			<turret> [[HULL_TURRET_POSITION]] </turret>
+		</turretPositions>
+		[[HULL_TURRET_HARD_POINT]]
+		<hitTester>
+			<collisionModelServer> [[HULL_MODEL_COLLISION_SERVER]] </collisionModelServer>
+			<collisionModelClient> [[HULL_MODEL_COLLISION_CLIENT]] </collisionModelClient>
+		</hitTester>
+		<!-- List of <material_kind_name> millimeters </material_kind_name> -->
+		<armor>
+			<armor_1> 18 </armor_1>
+			<armor_2> 16 </armor_2>
+			<armor_3> 16 </armor_3>
+			<armor_4> 16 </armor_4>
+			<armor_5> 16 </armor_5>
+			<armor_6> 8 </armor_6>
+			<armor_7> 8 </armor_7>
+			<armor_8> 8 </armor_8>
+		</armor>
+		<!-- "front side back"; the default is "armor_1 armor_3 armor_2" -->
+		<primaryArmor> armor_1 armor_3 armor_4 </primaryArmor>
+		<armorHomogenization> 1 </armorHomogenization>
+		<!-- kg -->
+		<weight> 2750 </weight>
+		<maxHealth> 60 </maxHealth>
+		<ammoBayHealth>
+			<maxHealth> 70 </maxHealth>
+			<maxRegenHealth> 60 </maxRegenHealth>
+			<!-- per 1 HP-->
+			<repairCost> 1.0 </repairCost>
+			<healthRegenPerSec> 5 </healthRegenPerSec>
+			<healthBurnPerSec> 15 </healthBurnPerSec>
+		</ammoBayHealth>
+		<emblemSlots>
+		</emblemSlots>
+		[[HULL_VARIANTS]]
+	</hull>
+	<chassis>
+[[CHASSIS]]
+	</chassis>
+	<turrets0>
+[[TURRETS]]
+	</turrets0>	
+	<engines>
+		<Development_Engine>
+			shared
+			<unlocks>
+				<engine>
+					Development_Engine
+					<cost> 30.0 </cost>
+				</engine>
+			</unlocks>
+		</Development_Engine>
+	</engines>
+	<fuelTanks>
+		<Small> shared </Small>
+	</fuelTanks>
+	<radios>
+		<Development_Radio>
+			shared
+			<unlocks>
+				<radio>
+					Development_Radio
+					<cost> 30.0 </cost>
+				</radio>
+			</unlocks>
+		</Development_Radio>
+	</radios>
+	<clientAdjustmentFactors/>
+	<physics>
+[[PHYSICS]]
+	</physics>
+</root>

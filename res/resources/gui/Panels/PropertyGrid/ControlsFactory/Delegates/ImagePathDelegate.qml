@@ -38,7 +38,7 @@ ImagePathDelegate {
 		}
 	}
 
-	CustomDropArea {
+	PathDropArea {
 		parent: delegateRoot.propertyRow
 		enabled: delegateRoot.__enabled
 		target: control

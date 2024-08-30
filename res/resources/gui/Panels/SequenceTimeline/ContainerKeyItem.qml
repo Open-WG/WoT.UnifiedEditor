@@ -14,8 +14,7 @@ BaseKeyItem {
 	id: root
 
 	function selectKeys(selModel, box, selection) {
-		Helpers.selectKeys(selModel, box, keyRepeater, styleData.timelineViewID,
-			selection)
+		Helpers.selectKeys(selModel, box, keyRepeater, styleData.timelineViewID, selection)
 	}
 
 	Repeater {
@@ -44,16 +43,14 @@ BaseKeyItem {
 
 				function getKeyPosition() {
 					return Math.round(
-							styleData.timelineController.fromSecondsToScale(
-								itemData.position))
+							styleData.timelineController.fromSecondsToScale(itemData.position))
 				}
 
 				function getKeyWidth() {
 					var width = Math.round(
-							styleData.timelineController.fromSecondsToScale(
-								itemData.position + itemData.duration) - keyHolder.x)
+							styleData.timelineController.fromSecondsToScale(itemData.position + itemData.duration) - keyHolder.x)
 
-					return width > 2 ? width : 2
+					return width > 2 ? width : 20
 				}
 
 				function recalculateLabelPosition() {
@@ -95,9 +92,7 @@ BaseKeyItem {
 				Component {
 					id: popupContainerKey
 
-					ContainerKeyContextMenu {
-						visible: true
-					}
+					ContainerKeyContextMenu { visible: true }
 				}
 
 				Rectangle {
@@ -109,7 +104,18 @@ BaseKeyItem {
 						? styleData.selectionModel.isSelected(keyHolder.modelIndex)
 						: false
 
+					function baseColor(itemData) {
+						return itemData.specialStyle == Sequences.SpecialStyleTypes.PlayTillEndStyle ?
+							"aquamarine" : itemData.specialStyle == Sequences.SpecialStyleTypes.OneShotStyle ?
+							"lightcoral" : Constants.seqContainerKeyColor
+					}
+
 					color: Constants.seqContainerKeyColor
+					gradient: Gradient {
+						GradientStop { position: 0.0; color: Constants.seqContainerKeyColor }
+						GradientStop { position: 0.5; color: Constants.seqContainerKeyColor }
+						GradientStop { position: 1.0; color: key.baseColor(itemData)}
+					}
 					opacity: 0.7
 
 					anchors.fill: parent
@@ -207,7 +213,7 @@ BaseKeyItem {
 							if (ctrlPressed) {
 								flag = ItemSelectionModel.Toggle
 
-								//check tyoe of the current selection
+								//check type of the current selection
 								// we do not want to have keys and objects/tracks in the same selection
 								if (selectionModel.hasSelection) {
 									var selectedInd = styleData.selectionModel.selectedIndexes[0]

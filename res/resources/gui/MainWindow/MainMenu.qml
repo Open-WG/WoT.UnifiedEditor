@@ -17,6 +17,7 @@ Menu {
 			|| modifySpaceDialogId.valid
 			|| createStateMachineID.valid
 			|| createFilmtrackID.valid
+			|| createTankID.valid
 
 		Details.ActionMenuItem {
 			id: createAtlasDialogId
@@ -36,6 +37,11 @@ Menu {
 		Details.ActionMenuItem {
 			id: createFilmtrackID
 			source: context.action("createFilmtrackID")
+		}
+
+		Details.ActionMenuItem {
+			id: createTankID
+			source: context.action("createTankID")
 		}
 	}
 
@@ -215,7 +221,7 @@ Menu {
 		}
 
 		Details.ActionMenuItem {
-			source: context.action("releaseNotesDialodId")
+			source: context.action("releaseNotes")
 			visible: !context.isLite
 		}
 
@@ -240,6 +246,10 @@ Menu {
 
 		Details.ActionMenuItem {
 			source: context.action("reloadQMLActionId")
+		}
+
+		Details.ActionMenuItem {
+			source: context.action("showDynamicPluginsPanel")
 		}
 
 		Menu {

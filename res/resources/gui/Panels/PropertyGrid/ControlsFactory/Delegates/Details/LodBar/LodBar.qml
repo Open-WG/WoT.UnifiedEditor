@@ -5,6 +5,7 @@ Item {
 
 	property var model: null
 	property real range: 0
+	property bool readOnly: false
 
 	Accessible.name: "Lod bar"
 

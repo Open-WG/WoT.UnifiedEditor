@@ -115,6 +115,11 @@ ControlsEx.Panel {
 		model: pgFilterModel
 	}
 	
+	PropertySelectionAdapter {
+		assetSelection: context.assetSelection
+		selectionModel: pgSelectionModel
+	}
+
 	ModelElementsCounter {
 		id: pgModelSize
 		model: pgModel

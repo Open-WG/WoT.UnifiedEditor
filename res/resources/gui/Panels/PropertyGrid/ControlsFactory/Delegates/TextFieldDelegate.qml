@@ -10,6 +10,34 @@ PropertyDelegate {
 	implicitHeight: control.implicitHeight
 	propertyData: model ? model.node.property : null
 	enabled: true
+	
+	function initialize() {
+		if (!control.verifier.valid) {
+			propertyGrid.invalidDelegateCount++;
+		}
+
+		verifierConnection.enabled = true;
+	}
+
+	function finalize() {
+		verifierConnection.enabled = false;
+
+		if (!control.verifier.valid) {
+			propertyGrid.invalidDelegateCount--;
+		}
+	}
+
+	Connections {
+		id: verifierConnection
+		target: control.verifier
+		onValidChanged: {
+			if (control.verifier.valid) {
+				propertyGrid.invalidDelegateCount--;
+			} else {
+				propertyGrid.invalidDelegateCount++;
+			}
+		}
+	}
 
 	Details.TextField {
 		id: control

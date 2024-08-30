@@ -18,7 +18,7 @@ Item {
 	Rectangle {
 		id: scale
 		color: context.playbackController.state == Sequences.PlaybackController.Recording
-			? Constants.scaleBackgroundRecordingColor : Constants.scaleBackgoundColor
+			? Constants.scaleBackgroundRecordingColor : Constants.scaleBackgroundColor
 		
 		anchors.fill: parent
 		border.width: 1
@@ -166,14 +166,11 @@ Item {
 				setNewSample(mouse.x)
 			}
 
-			onReleased: {
-				isReleased = true
-			}
+			onReleased: { isReleased = true }
 
 			onPositionChanged: {
-				if (!isReleased) {
+				if (!isReleased) 
 					setNewSample(mouse.x)
-				}
 			}
 		}
 	}

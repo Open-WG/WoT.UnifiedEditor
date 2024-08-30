@@ -11,6 +11,7 @@ BaseGroup {
 
 	headerDelegate: Group2Header {
 		text: model ? model.node.name : ""
+		actions: model ? model.node.actions : null
 	}
 
 	groupDelegate: Group3 {}
