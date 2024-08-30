@@ -50,7 +50,10 @@ Views.TreeView {
 		title: "Name"
 		role: "display"
 		delegate: Delegates.ItemDelegate {
-			ActiveFocus.when: styleData.index == view.currentIndex
+			Binding on ActiveFocus.when {
+				value: styleData.index == view.currentIndex
+				delayed: true
+			}
 			
 			// clickomatic --------------------------------
 			Accessible.name: accesibleNameGenerator.value

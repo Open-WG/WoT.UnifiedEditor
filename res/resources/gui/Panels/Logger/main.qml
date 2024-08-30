@@ -174,8 +174,11 @@ ControlsEx.Panel {
 				text: ""
 				tooltip: model ? model.priorityName : ""
 				implicitWidth: 70
-
-				Impl.ActiveFocus.when: styleData.index == tableView.currentIndex
+				
+				Binding on Impl.ActiveFocus.when {
+					value: styleData.index == tableView.currentIndex
+					delayed: true
+				}
 
 				Image {
 					anchors.centerIn: parent

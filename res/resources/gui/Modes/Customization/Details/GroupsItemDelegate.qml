@@ -4,5 +4,9 @@ import WGTools.Controls.impl 1.0
 
 StandardItemDelegate {
 	icon.source: "image://gui/icon-folder"
-	ActiveFocus.when: styleData.index == view.currentIndex
+	
+	Binding on ActiveFocus.when {
+		value: styleData.index == view.currentIndex
+		delayed: true
+	}
 }

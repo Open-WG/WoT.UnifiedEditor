@@ -66,6 +66,13 @@ Rectangle {
 					gameplaySettings: context.gameplaySettingsObject
 				}
 
+				MapItems {
+					anchors.fill: parent
+
+					settings: context.mapItemsSettings
+					changesController: context.changesController
+				}
+
 				Controls.Button {
 					icon.source: "image://gui/icon-refresh"
 					hoverEnabled: true

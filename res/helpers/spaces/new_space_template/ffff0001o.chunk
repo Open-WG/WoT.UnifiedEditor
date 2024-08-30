@@ -1,8 +1,14 @@
-<ffff0001o.chunk>
+<root>
 	<terrain>
-		<resource>	ffff0001o.cdata/terrain2	</resource>
+		<resource> ffff0001o.cdata/terrain2 </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
 	</terrain>
 	<worldNavmesh>
-		<resource>	ffff0001o.cdata/worldNavmesh	</resource>
+		<resource> ffff0001o.cdata/worldNavmesh </resource>
 	</worldNavmesh>
-</ffff0001o.chunk>
+</root>

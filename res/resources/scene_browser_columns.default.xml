@@ -1,5 +1,5 @@
 <root>
-	<version> 13 </version>
+	<version> 14 </version>
 	<property>
 		<label> Apply Overlay </label>
 		<value> Apply Overlay Checker.Apply Overlay </value>
@@ -3107,67 +3107,93 @@
 				<name> Battle </name>
 				<children>
 					<property>
-						<value> Capture the Flag </value>
+						<label> Capture The Flag </label>
+						<value> visibilityInGame.Capture The Flag </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Domination </value>
+						<label> Domination </label>
+						<value> visibilityInGame.Domination </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Assault </value>
+						<label> Assault </label>
+						<value> visibilityInGame.Assault </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Nations </value>
+						<label> Nations </label>
+						<value> visibilityInGame.Nations </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Capture the Flag 2 </value>
+						<label> Capture The Flag 2 </label>
+						<value> visibilityInGame.Capture The Flag 2 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Domination 2 </value>
+						<label> Domination 2 </label>
+						<value> visibilityInGame.Domination 2 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Assault 2 </value>
+						<label> Assault 2 </label>
+						<value> visibilityInGame.Assault 2 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Fallout Bomb </value>
+						<label> Fallout Bomb </label>
+						<value> visibilityInGame.Fallout Bomb </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Fallout 2 Flag </value>
+						<label> Fallout 2 Flag </label>
+						<value> visibilityInGame.Fallout 2 Flag </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Fallout 3 </value>
+						<label> Fallout 3 </label>
+						<value> visibilityInGame.Fallout 3 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Fallout 4 </value>
+						<label> Fallout 4 </label>
+						<value> visibilityInGame.Fallout 4 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Capture the Flag 30 vs 30 </value>
+						<label> Capture The Flag 30 vs 30 </label>
+						<value> visibilityInGame.Capture The Flag 30 vs 30 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Domination 30 vs 30 </value>
+						<label> Domination 30 vs 30 </label>
+						<value> visibilityInGame.Domination 30 vs 30 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Sandbox </value>
+						<label> Sandbox </label>
+						<value> visibilityInGame.Sandbox </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Bootcamp </value>
+						<label> Bootcamp </label>
+						<value> visibilityInGame.Bootcamp </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> Visible for Observer </value>
+						<label> Epic </label>
+						<value> visibilityInGame.Epic </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Maps Training </label>
+						<value> visibilityInGame.Maps Training </value>
+						<type> bool </type>
+					</property>
+					<property>
+						<label> Visible for Observer </label>
+						<value> visibilityInGame.Visible for Observer </value>
 						<type> bool </type>
 					</property>
 				</children>
@@ -3176,59 +3202,73 @@
 				<name> Hangar </name>
 				<children>
 					<property>
-						<value> 1 </value>
+						<label> 1 </label>
+						<value> visibilityInGame.1 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 2 </value>
+						<label> 2 </label>
+						<value> visibilityInGame.2 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 3 </value>
+						<label> 3 </label>
+						<value> visibilityInGame.3 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 4 </value>
+						<label> 4 </label>
+						<value> visibilityInGame.4 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 5 </value>
+						<label> 5 </label>
+						<value> visibilityInGame.5 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 6 </value>
+						<label> 6 </label>
+						<value> visibilityInGame.6 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> 7 </value>
+						<label> 7 </label>
+						<value> visibilityInGame.7 </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> R_ON </value>
+						<label> R_ON </label>
+						<value> visibilityInGame.R_ON </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> R_GAP </value>
+						<label> R_GAP </label>
+						<value> visibilityInGame.R_GAP </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> R_OFF </value>
+						<label> R_OFF </label>
+						<value> visibilityInGame.R_OFF </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> NA </value>
+						<label> NA </label>
+						<value> visibilityInGame.NA </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> ASIA </value>
+						<label> ASIA </label>
+						<value> visibilityInGame.ASIA </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> EU </value>
+						<label> EU </label>
+						<value> visibilityInGame.EU </value>
 						<type> bool </type>
 					</property>
 					<property>
-						<value> RU </value>
+						<label> RU </label>
+						<value> visibilityInGame.RU </value>
 						<type> bool </type>
 					</property>
 				</children>

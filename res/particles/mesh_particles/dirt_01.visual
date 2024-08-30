@@ -16,21 +16,21 @@
 			<primitive> indices </primitive>
 			<primitiveGroup> 0
 				<material>
-					<identifier> Material #143 </identifier>
+					<identifier> m_dirt </identifier>
 					<fx> shaders/wg_particles/pbs_mesh_particles.fx </fx>
 					<collisionFlags> 0 </collisionFlags>
 					<materialKind> 0 </materialKind>
 					<property> diffuseMap
 						<Texture> particles/mesh_particles/tex/stone_am.dds </Texture>
 					</property>
-					<property> pbsMap
-						<Texture> particles/mesh_particles/tex/stone_gmm.dds </Texture>
+					<property> g_lighting_params
+						<Vector4> 1.000000 0.000000 0.000000 0.000000 </Vector4>
 					</property>
 					<property> g_meshParticlesZWriteEnable
 						<Bool> true </Bool>
 					</property>
-					<property> g_lighting_params
-						<Vector4> 1.000000 0.000000 0.000000 0.000000 </Vector4>
+					<property> pbsMap
+						<Texture> particles/mesh_particles/tex/stone_gmm.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>
@@ -46,7 +46,7 @@
 			<exportMode> 1 </exportMode>
 			<boneCount> 17 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
-			<allowScale> false </allowScale>
+			<allowScale> true </allowScale>
 			<bumpMapped> false </bumpMapped>
 			<keepExistingMaterials> true </keepExistingMaterials>
 			<snapVertices> false </snapVertices>
@@ -56,7 +56,7 @@
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
-			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
 			<useLegacyOrientation> false </useLegacyOrientation>
 			<sceneRootAdded> false </sceneRootAdded>
 			<recalculateTangents> false </recalculateTangents>

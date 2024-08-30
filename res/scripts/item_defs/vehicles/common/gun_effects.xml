@@ -1,5 +1,5 @@
 <root>
-	<!--automatic gun (12-25 mm)-->
+	<!--auto (7-30 mm)-->
 	<shot_auto>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -143,7 +143,7 @@
 			</shotSound>
 		</effects>
 	</shot_Gochkins_auto>
-	<!--small gun (20-45 mm)-->
+	<!--small (20-49 mm)-->
 	<shot_small>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -246,7 +246,7 @@
 			</shotSound>
 		</effects>
 	</shot_small_mb>
-	<!--medium gun (50-75 mm) -->
+	<!--medium (50-84 mm) -->
 	<shot_KwK_L46>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -530,7 +530,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_medium_mb>
-	<!--main gun (85-99 mm)-->
+	<!--main (85-99 mm)-->
 	<shot_main>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -763,7 +763,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_main_mb>
-	<!--main dualgun 85-99mm) _dualgun1 - is a single shot for one of dual guns-->
+	<!--main dualgun _dualgun1 - is a single shot for one of dual guns-->
 	<shot_dualgun1_main_mb_L>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -1696,7 +1696,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_main_R>
-	<!--mainext gun (100-104 mm)-->
+	<!--mainext (100-104 mm)-->
 	<shot_mainext>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -1929,7 +1929,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_mainext_mb>
-	<!-- mainext dualgun (100-104mm) _dualgun1 - is a single shot for one of dual guns -->
+	<!-- mainext dualgun _dualgun1 - is a single shot for one of dual guns -->
 	<shot_dualgun1_mainext_mb_L>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -2862,7 +2862,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_mainext_R>
-	<!--large gun (105-125 mm)-->
+	<!--large (105-125 mm)-->
 	<shot_large>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -3095,7 +3095,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_large_mb>
-	<!--large dualgun (105-125mm) _dualgun1 - is a single shot for one of dual guns-->
+	<!--large dualgun _dualgun1 - is a single shot for one of dual guns-->
 	<shot_dualgun1_large_mb_L>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4028,7 +4028,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_dualgun_large_R>
-	<!-- largeext gun (126-139 mm) -->
+	<!--largeext (126-139 mm)-->
 	<shot_largeext>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4377,7 +4377,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_ch41>
-	<!--huge gun (140-170 mm)-->
+	<!--huge (140-169 mm)-->
 	<shot_huge>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>
@@ -4610,7 +4610,7 @@
 			</groundWave>
 		</relatedEffects>
 	</shot_huge_mb>
-	<!--superhuge gun (170+ mm)-->
+	<!--superhuge (170+ mm)-->
 	<shot_huge2>
 		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
 		<timeline>

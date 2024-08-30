@@ -92,18 +92,4 @@
 	</item>
 
 	<item label="Switch Mode Selector Toolset" action="from gui.development.ui.mode_selector.mode_selector_toolset import showToolset; showToolset()"/>
-	<item label="New Year">
-		<item label="Show Levelup View" action="$showNYLevelUp">
-			<param label="Level 1"> (1) </param>
-			<param label="Level 2"> (2) </param>
-			<param label="Level 3"> (3) </param>
-			<param label="Level 4"> (4) </param>
-			<param label="Level 5"> (5) </param>
-			<param label="Level 6"> (6) </param>
-			<param label="Level 7"> (7) </param>
-			<param label="Level 8"> (8) </param>
-			<param label="Level 9"> (9) </param>
-			<param label="Level 10"> (10) </param>
-		</item>
-	</item>
 </root>

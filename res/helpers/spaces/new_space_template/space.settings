@@ -1,11 +1,11 @@
-<space.settings>
+<root>
 	<chunkSize> 100.000000 </chunkSize>
 	<flora> helpers/spaces/new_space_template/flora.xml </flora>
 	<bounds>
-		<minX> -2 </minX>
-		<maxX> 1 </maxX>
-		<minY> -2 </minY>
-		<maxY> 1 </maxY>
+		<minX> -16 </minX>
+		<maxX> 15 </maxX>
+		<minY> -16 </minY>
+		<maxY> 15 </maxY>
 	</bounds>
 	<navmeshGenerator> navgen </navmeshGenerator>
 	<farPlane>
@@ -18,7 +18,6 @@
 	<chunkSize> 100.000000 </chunkSize>
 	<terrain>
 		<version> 250 </version>
-		<heightMapEditorSize> 256 </heightMapEditorSize>
 		<heightMapSize> 64 </heightMapSize>
 		<normalMapSize> 128 </normalMapSize>
 		<normalMapCaching> true </normalMapCaching>
@@ -37,15 +36,13 @@
 				<distance2> 250.000000 </distance2>
 				<distance3> 700.000000 </distance3>
 				<distance4> 1100.000000 </distance4>
-				<distance5> 1700.000000 </distance5>
-				<distance6> 2000.000000 </distance6>
 			</lodDistances>
 		</lodInfo>
 		<outland>
 			<cascade>
 				<extent>
-					<min> -1600.000000 -50.000000 -1600.000000 </min>
-					<max> 1600.000000 250.000000 1600.000000 </max>
+					<min> -4800.000000 -50.000000 -4800.000000 </min>
+					<max> 4800.000000 250.000000 4800.000000 </max>
 				</extent>
 				<heightMap> helpers/spaces/new_space_template/outland/height_map_cascade_0.png </heightMap>
 				<normalMap> helpers/spaces/new_space_template/outland/normal_map_cascade_0.dds </normalMap>
@@ -73,10 +70,14 @@
 				<tile> maps/landscape/00_All_Outland_Tiles/Forest_flat_05.dds </tile>
 			</tiles>
 		</outland>
-		<tessZoomThreshold> 0.050000 </tessZoomThreshold>
-		<tessZoomScale> 0.300000 </tessZoomScale>
+		<tessZoomUpperThreshold> 0.000000 </tessZoomUpperThreshold>
+		<tessZoomLowerThreshold> -0.030000 </tessZoomLowerThreshold>
+		<tessZoomUpperScale> 0.300000 </tessZoomUpperScale>
+		<tessZoomLowerScale> 0.200000 </tessZoomLowerScale>
 		<blendMacroInfluence> 1.000000 </blendMacroInfluence>
 		<blendGlobalThreshold> 0.300000 </blendGlobalThreshold>
+		<blendHeight> 0.300000 </blendHeight>
+		<disabledBlendHeight> 0.050000 </disabledBlendHeight>
 		<VTLodParams> 6.544000 0.250000 0.500000 1.000000 </VTLodParams>
 		<detailNormal>
 			<normalMap> maps/landscape/detail/sand_NM.dds </normalMap>
@@ -166,4 +167,7 @@
 		<enabled> true </enabled>
 		<simRadius> 100.000000 </simRadius>
 	</havok>
-</space.settings>
+	<enableClusteredShading> false </enableClusteredShading>
+	<isSHGridQualityOverridden> false </isSHGridQualityOverridden>
+	<overrideSHGridQuality> 0 </overrideSHGridQuality>
+</root>

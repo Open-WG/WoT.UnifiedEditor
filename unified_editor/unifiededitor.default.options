@@ -28,15 +28,26 @@
 		<editorObjectsScreenPercentLOD>	0.800000	</editorObjectsScreenPercentLOD>
 		<virtualTextureEnabled>	true	</virtualTextureEnabled>
 		<gameObjects>	true
-			<drawEntities>	true	</drawEntities>
-			<drawContentCheckers>	false	</drawContentCheckers>
-			<drawUserDataObjects>	true
-				<drawSpawnPointPositionNumbers>	false	</drawSpawnPointPositionNumbers>
-				<drawBenchmarkTrajectories>	false	</drawBenchmarkTrajectories>
-				<drawTessellatedBenchmarkTrajectories>	false	</drawTessellatedBenchmarkTrajectories>
-			</drawUserDataObjects>
-			<drawArtilleryTracers>	false	</drawArtilleryTracers>
 			<drawArenaBorder>	true	</drawArenaBorder>
+			<drawArtilleryTracers>	false	</drawArtilleryTracers>
+			<drawContentCheckers>	false	</drawContentCheckers>
+			<drawEntities>	true
+				<specialEntities>	true	</specialEntities>
+			</drawEntities>
+			<drawFLSpawnsInterface>	false	</drawFLSpawnsInterface>
+			<drawHoudiniObjects>	true	</drawHoudiniObjects>
+			<drawImpassableZones>	true	</drawImpassableZones>
+			<drawTeamSpawnPoints>	true	</drawTeamSpawnPoints>
+			<drawUserDataObjects>	true
+				<drawAIObjects>	false	</drawAIObjects>
+				<drawBenchmarkLocations>	false	</drawBenchmarkLocations>
+				<drawBenchmarkTrajectories>	false	</drawBenchmarkTrajectories>
+				<drawOtherUdos>	true	</drawOtherUdos>
+				<drawSpawnObjects>	true	</drawSpawnObjects>
+				<drawSpawnPointPositionNumbers>	false	</drawSpawnPointPositionNumbers>
+				<drawTessellatedBenchmarkTrajectories>	false	</drawTessellatedBenchmarkTrajectories>
+				<drawTriggers>	false	</drawTriggers>
+			</drawUserDataObjects>
 		</gameObjects>
 		<scenery>	true
 			<drawWater> true </drawWater>
@@ -72,6 +83,11 @@
 			<Roads>	false	</Roads>
 			<Destroyed>	false	</Destroyed>
 		</drawBSP>
+		<drawBSPDiff> false
+			<BSPTransparency>	1.000000	</BSPTransparency>
+			<ModelTransparency>	1.000000	</ModelTransparency>
+			<IntersectionTransparency>	1.000000	</IntersectionTransparency>
+		</drawBSPDiff>
 		<proxys>	true
 			<particleProxyLarge>	true	</particleProxyLarge>
 			<particleProxys>	true	</particleProxys>
@@ -410,6 +426,52 @@
 			<row2> -0.852305 -0.201422 -0.482706 </row2>
 			<row3> -0.017837 -1.370210 12.417826 </row3>
 		</defaultCameraViewMatrix>
+		<tags>
+			<formfactor_square>
+				<icon> formfactor_square.svg </icon>
+				<filterName> Formfactor Square </filterName>
+			</formfactor_square>
+			<formfactor_rect1x2>
+				<icon> formfactor_rect1x2.svg </icon>
+				<filterName> Formfactor 1:2 </filterName>
+			</formfactor_rect1x2>
+			<formfactor_rect1x3>
+				<icon> formfactor_rect1x3.svg </icon>
+				<filterName> Formfactor 1:3 </filterName>
+			</formfactor_rect1x3>
+			<formfactor_rect1x4>
+				<icon> formfactor_rect1x4.svg </icon>
+				<filterName> Formfactor 1:4 </filterName>
+			</formfactor_rect1x4>
+			<formfactor_rect1x6>
+				<icon> formfactor_rect1x6.svg </icon>
+				<filterName> Formfactor 1:6 </filterName>
+			</formfactor_rect1x6>
+			<cover>
+				<icon> cover.svg </icon>
+				<filterName> Formfactor Cover</filterName>
+			</cover>
+			<mimic>
+				<icon> mimic.svg </icon>
+				<filterName> Formfactor Mimic </filterName>
+			</mimic>
+			<safe>
+				<icon> safe.svg </icon>
+				<filterName> Formfactor Safe </filterName>
+			</safe>
+			<front>
+				<icon> front.svg </icon>
+				<filterName> Formfactor Front </filterName>
+			</front>
+			<left>
+				<icon> left.svg </icon>
+				<filterName> Formfactor Left </filterName>
+			</left>
+			<right>
+				<icon> right.svg </icon>
+				<filterName> Formfactor Right </filterName>
+			</right>
+		</tags>
 	</tankEditor>
 	<dynamic_plugins>
 		<plugins_plg_python_reloader> false </plugins_plg_python_reloader>

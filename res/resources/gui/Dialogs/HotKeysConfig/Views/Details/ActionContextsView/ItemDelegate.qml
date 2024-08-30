@@ -14,7 +14,11 @@ ItemDelegate {
 	icon.source: model ? "image://gui/context/" + model.display : ""
 	icon.color: "transparent"
 
-	ActiveFocus.when: styleData.index == view.currentIndex
+	Binding on ActiveFocus.when {
+		value: styleData.index == view.currentIndex
+		delayed: true
+	}
+ 
 	Binding {target: delegate.contentItem; property: "opacity"; value: 1}
 
 	// clickomatic --------------------------------

@@ -173,7 +173,10 @@ Views.TreeView {
 		role: "display"
 
 		delegate: Delegates.BaseDelegate {
-		 	ActiveFocus.when: treeView.activeFocus && styleData.row != -1 && styleData.index == treeView.currentIndex
+			Binding on ActiveFocus.when {
+				value: treeView.activeFocus && styleData.row != -1 && styleData.index == treeView.currentIndex
+				delayed: true
+			}
 
 			// clickomatic --------------------------------
 			Accessible.name: accesibleNameGenerator.value

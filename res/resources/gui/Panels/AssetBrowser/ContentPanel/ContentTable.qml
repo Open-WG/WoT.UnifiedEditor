@@ -189,7 +189,10 @@ Views.TableView {
 		delegate: Delegates.Display {
 			id: loader
 
-			ActiveFocus.when: styleData.row == table.currentRow && table.currentRow != -1
+			Binding on ActiveFocus.when {
+				value: styleData.row == table.currentRow && table.currentRow != -1
+				delayed: true
+			}
 			ActiveFocus.onActivated: dragItem.dataSource = item
 			
 			Connections {

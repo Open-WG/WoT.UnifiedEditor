@@ -1,5 +1,5 @@
 import QtQuick 2.7
-import QtQuick.Controls 2.4
+import QtQuick.Controls 2.2
 import WGTools.Controls 2.0 as Controls
 import WGTools.Controls.Controllers 1.0
 import WGTools.Resources 1.0 as WGTResources
@@ -17,11 +17,8 @@ Flickable {
 	implicitWidth: control.implicitWidth
 	implicitHeight: control.implicitHeight
 
-	Controls.TextArea {
+	TextArea.flickable: Controls.TextArea {
 		id: control
-
-		width: parent.width
-		height: parent.height
 
 		property var valueData
 		readonly property bool undefinedState: valueData == undefined || valueData.value == undefined;
@@ -66,8 +63,6 @@ Flickable {
 				}
 			}
 		}
-
-		background: {}
 
 		Misc.QmlEventFilter {
 			target: control

@@ -47,7 +47,11 @@ Rectangle {
 				hoverEnabled: true
 				anchors.fill: parent
 				onClicked: categories.currentIndex = index
-				ActiveFocus.when: index == categories.currentIndex
+
+				Binding on ActiveFocus.when {
+					value: index == categories.currentIndex
+					delayed: true
+				}
 			}
 
 			RowLayout {

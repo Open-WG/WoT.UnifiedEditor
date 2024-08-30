@@ -1,4 +1,21 @@
 <root>
+<!--
+	Defines lod presets for UE Model Editor:
+
+	<name> - name of the preset.
+
+	<lodN> - lod N extent.
+
+	<tip> - tip that will show with preset name. May be unused.
+
+	<range> - max model dimension for which this preset should be applied. May be unused.
+		If unused and there are more than 2 presets of the same type, auto lod preset calculation always will choose the same preset for the model of this type.
+
+	<type> - type of the model for which this preset shiuld be applied. May be unused.
+		Can take values "Props", "Buildings", "Props and Buildings" or "Tank".
+		If unused, auto lod preset calculation will never choose this preset.
+		
+ -->
 	<preset>
 		<name> Props Small </name>
 		<lod0> 20.0 </lod0>
@@ -8,6 +25,7 @@
 		<lod4> infinity </lod4>
 		<range> 1.5 </range>
 		<tip> (&lt;1.5m) </tip>
+		<type> Props </type>
 	</preset>
 	<preset>
 		<name> Props Medium </name>
@@ -18,6 +36,7 @@
 		<lod4> infinity </lod4>
 		<range> 2.5 </range>
 		<tip> (1.5 - 2.5m) </tip>
+		<type> Props </type>
 	</preset>
 	<preset>
 		<name> Buildings Small / Props Huge </name>
@@ -28,6 +47,7 @@
 		<lod4> infinity </lod4>
 		<range> 5 </range>
 		<tip> (Buildings 2.5 - 5m / Props &gt;2.5m) </tip>
+		<type> Props and Buildings </type>
 	</preset>
 	<preset>
 		<name> Buildings Medium </name>
@@ -38,6 +58,7 @@
 		<lod4> infinity </lod4>
 		<range> 25 </range>
 		<tip> (Buildings 5 - 25m) </tip>
+		<type> Buildings </type>
 	</preset>
 	<preset>
 		<name> Buildings Huge </name>
@@ -48,6 +69,7 @@
 		<lod4> infinity </lod4>
 		<range> infinity </range>
 		<tip> (Buildings &gt;25m) </tip>
+		<type> Buildings </type>
 	</preset>
 	<preset>
 		<name> Building Unique </name>
@@ -64,5 +86,6 @@
 		<lod2> 96.0 </lod2>
 		<lod3> 192.0 </lod3>
 		<lod4> infinity </lod4>
+		<type> Tank </type>
 	</preset>
 </root>

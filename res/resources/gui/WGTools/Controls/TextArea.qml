@@ -9,12 +9,14 @@ T.TextArea {
 	property bool dirty: false
 
 	implicitWidth: Math.max(
+		contentWidth + leftPadding + rightPadding,
 		background ? background.implicitWidth : 0,
-		Math.max(placeholder.implicitWidth, contentWidth) + leftPadding + rightPadding)
+		placeholder.implicitWidth + leftPadding + rightPadding)
 
 	implicitHeight: Math.max(
+		contentHeight + topPadding + bottomPadding,
 		background ? background.implicitHeight : 0,
-		Math.max(placeholder.implicitHeight, contentHeight) + topPadding + bottomPadding)
+		placeholder.implicitWidth + topPadding + bottomPadding + 140) // TODO: avoid magic numbers. What is number 140 for?
 
 	padding: ControlsSettings.padding
 	topPadding: ControlsSettings.smallPadding
