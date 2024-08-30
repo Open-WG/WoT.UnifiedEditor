@@ -2264,6 +2264,36 @@
 				</selector>
 			</selector>
 		</template>
+		<template name="WheelEffectsoft">
+			<selector type="discrete" variable="_Wheel:contact">
+				<selector key="1" type="range" variable="RPM">
+					<selector key="0.0" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_soft_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/>
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/>
+						</selector>
+						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+					</selector>
+					<selector key="0.72" type="matkind" variable="_matkind">
+						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="ground" type="effect" name="particles/Tank/movement/ground/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="snow" type="effect" name="particles/Tank/movement/snow/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheeltrail_soft_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="water" type="discrete" variable="isUnderWater">
+							<selector key="0" type="effect" name="particles/Tank/movement/water/wheeltrail_water_{0}_spd1.eff" effectHP="_Node"/>
+							<selector key="1" type="effect" name="particles/Tank/movement/water/wheeltrail_underwater_{0}_spd1.eff" effectHP="_Node"/>
+						</selector>
+						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+					</selector>
+				</selector>
+			</selector>
+		</template>
 		<template name="WheelEffectfinish">
 			<selector type="discrete" variable="_Wheel:contact">
 				<selector key="1" type="range" variable="RPM">
@@ -2321,6 +2351,14 @@
 				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"/>
 			</selector>
 		</template>
+		<template name="6WheeledTrailSideSoft">
+			<selector type="union">
+				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"/>
+				<selector type="template" name="WheelEffectsoft" parameters="_Node:_Node2;_Wheel:_W2"/>
+				<selector type="template" name="WheelEffectsoft" parameters="_Node:_Node3;_Wheel:_W3"/>
+				<selector type="effect" name="particles/Tank/movement/forcefields/Forcefield_{0}_track_spd1.eff" effectHP="_Node1"/>
+			</selector>
+		</template>
 		<template name="8WheeledTrailSide">
 			<selector type="union">
 				<selector type="template" name="WheelEffectdust" parameters="_Node:_Node1;_Wheel:_W1"/>
@@ -2367,6 +2405,32 @@
 					</selector>
 					<!-- Left side -->
 					<selector type="template" name="6WheeledTrailSide" parameters="_Node1:_LNode1;
+						_Node2:_LNode2;
+						_Node3:_LNode3;
+						_W1:_LW1;
+						_W2:_LW2;
+						_W3:_LW3;
+						_matkind:matkindL
+						">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="6WheeledEffectsSoftSet">
+			<selector type="union">
+				<selector type="union">
+					<!-- Right side -->
+					<selector type="template" name="6WheeledTrailSideSoft" parameters="_Node1:_RNode1;
+						_Node2:_RNode2;
+						_Node3:_RNode3;
+						_W1:_RW1;
+						_W2:_RW2;
+						_W3:_RW3;
+						_matkind:matkindR
+						">
+					</selector>
+					<!-- Left side -->
+					<selector type="template" name="6WheeledTrailSideSoft" parameters="_Node1:_LNode1;
 						_Node2:_LNode2;
 						_Node3:_LNode3;
 						_W1:_LW1;
@@ -2472,6 +2536,52 @@
 					</selector>
 					<selector key="-1" type="union"/>
 					<selector key="1" type="template" name="6WheeledEffectsSet" parameters="_RNode1:HP_Wheel_R_01_Rear;
+						_RNode2:HP_Wheel_R_02_Rear;
+						_RNode3:HP_Wheel_R_03_Rear;
+						_LNode1:HP_Wheel_L_01_Rear;
+						_LNode2:HP_Wheel_L_02_Rear;
+						_LNode3:HP_Wheel_L_03_Rear;
+						_RW1:WD_R1;
+						_RW2:W_R0;
+						_RW3:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L0;
+						_LW3:WD_L0">
+					</selector>
+				</selector>
+				<selector type="range" variable="commonSlip">
+					<selector key="-200" type="template" name="WheeledSlipEffectsSet" parameters="_RNode:HP_Wheel_R_03_Front;
+						_RW:WD_R0;
+						_LNode:HP_Wheel_L_03_Front;
+						_LW:WD_L0">
+					</selector>
+					<selector key="-1" type="union"/>
+					<selector key="1" type="template" name="WheeledSlipEffectsSet" parameters="_RNode:HP_Wheel_R_01_Rear;
+						_RW:WD_R1;
+						_LNode:HP_Wheel_L_01_Rear;
+						_LW:WD_L1">
+					</selector>
+				</selector>
+			</selector>
+		</template>
+		<template name="6WheelsEffectSoft">
+			<selector type="union">
+				<selector type="range" variable="speed">
+					<selector key="-200" type="template" name="6WheeledEffectsSoftSet" parameters="_RNode1:HP_Wheel_R_03_Front;
+						_RNode2:HP_Wheel_R_02_Front;
+						_RNode3:HP_Wheel_R_01_Front;
+						_LNode1:HP_Wheel_L_03_Front;
+						_LNode2:HP_Wheel_L_02_Front;
+						_LNode3:HP_Wheel_L_01_Front;
+						_RW1:WD_R1;
+						_RW2:W_R0;
+						_RW3:WD_R0;
+						_LW1:WD_L1;
+						_LW2:W_L0;
+						_LW3:WD_L0">
+					</selector>
+					<selector key="-1" type="union"/>
+					<selector key="1" type="template" name="6WheeledEffectsSoftSet" parameters="_RNode1:HP_Wheel_R_01_Rear;
 						_RNode2:HP_Wheel_R_02_Rear;
 						_RNode3:HP_Wheel_R_03_Rear;
 						_LNode1:HP_Wheel_L_01_Rear;
@@ -2651,6 +2761,11 @@
 				<selector type="template" name="6WheelsEffect" constantsGroup="medium"/>
 			</selector>
 		</medium6WheelsMud>
+		<medium6WheelsMudSoft>
+			<selector type="union">
+				<selector type="template" name="6WheelsEffectSoft" constantsGroup="medium"/>
+			</selector>
+		</medium6WheelsMudSoft>
 		<medium6WheelsMudGendron>
 			<selector type="union">
 				<selector type="template" name="6WheelsEffectGendron" constantsGroup="medium"/>

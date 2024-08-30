@@ -224,7 +224,6 @@
 							<whileGunDamaged />
 						</shotDispersionFactors>
 						<reloadTime />
-						<forcedReloadTime />
 						<chargeTime />
 						<multiGunEffects />
 						<dualGun>
@@ -238,6 +237,10 @@
 							<preChargeIndication />
 							<chargeCancelTime />
 						</dualGun>
+						<dualAccuracy>
+							<afterShotDispersionRadius />
+							<coolingDelay />
+						</dualAccuracy>
 						<aimingTime />
 						<pitchLimits>
 							<minPitch />
@@ -269,30 +272,6 @@
 							<count />
 							<rate />
 						</burst>
-						<autoShoot>
-							<shotDispersionPerSec />
-							<maxShotDispersion />
-						</autoShoot>
-						<spin>
-							<startFactor />
-							<isSpinUpShootingEnable />
-							<spinUpTimeout />
-							<spinDownTimeout />
-						</spin>
-						<temperatureMechanics>
-							<heatingPerShot />
-							<heatingPerSec />
-							<coolingDelay />
-							<coolingPerSec />
-							<coolingOverheatPerSec />
-
-							<thermalStateHysteresis />
-							<temperatureSegmentSize />
-
-							<thermalStates>
-								<_ANYTHING_ />
-							</thermalStates>
-						</temperatureMechanics>
 						<shots>
 							<_ANYTHING_ />
 						</shots>
@@ -797,9 +776,6 @@
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>
-				<multiGunState>
-					<_ANYTHING_ />
-				</multiGunState>
 				<guns>
 					<_GUN_NAME_>
 						<prefab />
@@ -851,9 +827,6 @@
 							<returnTime />
 							<recoilEffect />
 						</recoil>
-						<spinEffect>
-							<spinEffect />
-						</spinEffect>
 						<drivenJoints>
 							<_ANYTHING_ />
 						</drivenJoints>
@@ -933,7 +906,6 @@
 			</_TURRET_NAME_>
 		</turrets0>
 	</tank_appearance>
-
 	<!-- Camouflage parameters for specific tank -->
 	<tank_camouflage outFolderName="camouflages">
 		<customizationNation />

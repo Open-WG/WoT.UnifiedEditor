@@ -17,7 +17,7 @@ Rectangle {
 
 	implicitWidth: 800
 	implicitHeight: 600
-	color: _palette.color7
+	color: _palette.color8
 
 	Accessible.name: title
 

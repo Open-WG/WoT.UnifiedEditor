@@ -955,26 +955,26 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<processExe> cef_browser_process </processExe>
 		<cachePath> profile/cef_cache </cachePath>
 		<resourcePath> cef </resourcePath>
-		<hardwareAcceleration> true </hardwareAcceleration>
 		<!-- Enable CEF HW Acceleration with using shared texture feature for d3d11 devices -->
+		<hardwareAcceleration> true </hardwareAcceleration>
 		<logFile> cef.log </logFile>
-		<logVerbosity> disable </logVerbosity>
 		<!-- "verbose", "info", "warning", "error", "disable" -->
+		<logVerbosity> disable </logVerbosity>
 		<enableFlash> true </enableFlash>
-		<ignoreCertErrors> false </ignoreCertErrors>
 		<!-- Should SSL certificate errors be ignored (dev build only) -->
-		<debugPort> -1 </debugPort>
+		<ignoreCertErrors> false </ignoreCertErrors>
 		<!-- -1 is disabled, must be between 1024 and 65535 -->
-		<maxFrameRate> 60 </maxFrameRate>
+		<debugPort> -1 </debugPort>
 		<!-- 0 is default -->
+		<maxFrameRate> 60 </maxFrameRate>
+		<!-- Comma delimited ordered, list of language codes without any whitespace used in "Accept-Language" HTTP header -->
 		<acceptLangList>
 		</acceptLangList>
-		<!-- Comma delimited ordered, list of language codes without any whitespace used in "Accept-Language" HTTP header -->
+		<!-- locale used by the browser, uses same language codes as acceptLangList -->
 		<locale>
 		</locale>
-		<!-- locale used by the browser, uses same language codes as acceptLangList -->
-		<autoPlayVideo> true </autoPlayVideo>
 		<!-- Enable video auto play. Works only in new CEF versions(61+) -->
+		<autoPlayVideo> true </autoPlayVideo>
 	</webBrowser>
 	<gameface>
 		<taskSystem>

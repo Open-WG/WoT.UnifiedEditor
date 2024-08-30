@@ -24,6 +24,7 @@
 		<item label="Set WoT+ State Available" action="$wotPlusController.setWotPlusStateDev(0)" />
 		<item label="Set WoT+ State Active" action="$wotPlusController.setWotPlusStateDev(1)" />
 		<item label="Set WoT+ State Canceled" action="$wotPlusController.setWotPlusStateDev(2)" />
+		<item label="Give next attendance reward" action="$wotPlusController.giveAttendanceRewardDev()" />
 	</item>
 
 	<item label="Set herotank" action="$setHero">
@@ -192,38 +193,45 @@
 		<item label="Show Meta view" action="from gui.development import showComp7MetaRootView; showComp7MetaRootView()"/>
 		<item label="Show NoVehicles screen" action="from gui.development import showComp7NoVehiclesScreen; showComp7NoVehiclesScreen()"/>
 		<item label="Show Intro screen" action="from gui.development import showComp7IntroScreen; showComp7IntroScreen()"/>
+		<item label="Show What's New screen" action="from gui.development import showComp7WhatsNewScreen; showComp7WhatsNewScreen()"/>
 		<item label="Show Ranks Rewards screen" action="from gui.development import showComp7RanksRewardsScreen; showComp7RanksRewardsScreen">
 			<param label="Any">()</param>
-			<param label="Debutant C">('comp7_2023_1_ranks_bronze_2')</param>
-			<param label="Debutant B">('comp7_2023_1_ranks_bronze_3')</param>
-			<param label="Debutant A">('comp7_2023_1_ranks_bronze_4')</param>
-			<param label="Iron D">('comp7_2023_1_ranks_silver_1')</param>
-			<param label="Iron C">('comp7_2023_1_ranks_silver_2')</param>
-			<param label="Iron B">('comp7_2023_1_ranks_silver_3')</param>
-			<param label="Iron A">('comp7_2023_1_ranks_silver_4')</param>
-			<param label="Bronze D">('comp7_2023_1_ranks_gold_1')</param>
-			<param label="Bronze C">('comp7_2023_1_ranks_gold_2')</param>
-			<param label="Bronze B">('comp7_2023_1_ranks_gold_3')</param>
-			<param label="Bronze A">('comp7_2023_1_ranks_gold_4')</param>
-			<param label="Silver D">('comp7_2023_1_ranks_platinum_1')</param>
-			<param label="Silver C">('comp7_2023_1_ranks_platinum_2')</param>
-			<param label="Silver B">('comp7_2023_1_ranks_platinum_3')</param>
-			<param label="Silver A">('comp7_2023_1_ranks_platinum_4')</param>
-			<param label="Gold D">('comp7_2023_1_ranks_diamond_1')</param>
-			<param label="Gold C">('comp7_2023_1_ranks_diamond_2')</param>
-			<param label="Gold B">('comp7_2023_1_ranks_diamond_3')</param>
-			<param label="Gold A">('comp7_2023_1_ranks_diamond_4')</param>
-			<param label="Champion">('comp7_2023_1_ranks_maestro_1')</param>
-			<param label="Legend">('comp7_2023_1_ranks_elite_1')</param>
+			<param label="Iron E">('comp7_3_1_ranks_65')</param>
+			<param label="Iron D">('comp7_3_1_ranks_64')</param>
+			<param label="Iron C">('comp7_3_1_ranks_63')</param>
+			<param label="Iron B">('comp7_3_1_ranks_62')</param>
+			<param label="Iron A">('comp7_3_1_ranks_61')</param>
+			<param label="Bronze E">('comp7_3_1_ranks_55')</param>
+			<param label="Bronze D">('comp7_3_1_ranks_54')</param>
+			<param label="Bronze C">('comp7_3_1_ranks_53')</param>
+			<param label="Bronze B">('comp7_3_1_ranks_52')</param>
+			<param label="Bronze A">('comp7_3_1_ranks_51')</param>
+			<param label="Silver E">('comp7_3_1_ranks_45')</param>
+			<param label="Silver D">('comp7_3_1_ranks_44')</param>
+			<param label="Silver C">('comp7_3_1_ranks_43')</param>
+			<param label="Silver B">('comp7_3_1_ranks_42')</param>
+			<param label="Silver A">('comp7_3_1_ranks_41')</param>
+			<param label="Gold E">('comp7_3_1_ranks_35')</param>
+			<param label="Gold D">('comp7_3_1_ranks_34')</param>
+			<param label="Gold C">('comp7_3_1_ranks_33')</param>
+			<param label="Gold B">('comp7_3_1_ranks_32')</param>
+			<param label="Gold A">('comp7_3_1_ranks_31')</param>
+			<param label="Champion A">('comp7_3_1_ranks_21')</param>
+			<param label="Legend A">('comp7_3_1_ranks_11')</param>
 		</item>
 		<item label="Show Tokens Rewards screen" action="from gui.development import showComp7TokensRewardsScreen; showComp7TokensRewardsScreen">
 			<param label="Any">()</param>
-			<param label="2">('comp7_2023_1_token_rewards_2')</param>
-			<param label="4">('comp7_2023_1_token_rewards_4')</param>
-			<param label="6">('comp7_2023_1_token_rewards_6')</param>
-			<param label="8">('comp7_2023_1_token_rewards_8')</param>
+			<param label="2">('comp7_3_1_token_rewards_2')</param>
+			<param label="4">('comp7_3_1_token_rewards_4')</param>
+			<param label="6">('comp7_3_1_token_rewards_6')</param>
+			<param label="8">('comp7_3_1_token_rewards_8')</param>
 		</item>
-		<item label="Show First Rank Rewards screen" action="from gui.development import showComp7FirstRankRewardsScreen; showComp7FirstRankRewardsScreen()"/>
+		<item label="Show Qualification Rewards screen" action="from gui.development import showComp7QualificationRewardsScreen; showComp7QualificationRewardsScreen">
+			<param label="Iron">(['comp7_3_1_ranks_65'])</param>
+			<param label="Bronze">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55'])</param>
+			<param label="Silver">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55', 'comp7_3_1_ranks_45'])</param>
+			<param label="Gold">(['comp7_3_1_ranks_65', 'comp7_3_1_ranks_55', 'comp7_3_1_ranks_45', 'comp7_3_1_ranks_35'])</param>
+		</item>
 	</item>
 	<item label="Crew">
 			<item label="earn all skills" action="$earnAllSkills"/>

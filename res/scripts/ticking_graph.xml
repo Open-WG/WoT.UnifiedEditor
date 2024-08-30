@@ -5,13 +5,19 @@
         </preInitGroup>
     </Init>
     <Simulation>
+        <PreSimulation>
+            <before> true </before>
+        </PreSimulation>
+
         <NetworkFilter>
             <before> true </before>
         </NetworkFilter>
+
         <Sensor/>
     </Simulation>
     <PostHierarchy>
-		<postHierarchyUpdate/>
+        <postHierarchyUpdate/>
+        <postHierarchyUpdateFinish/>
     </PostHierarchy>
     <Finalize/>
 </root>

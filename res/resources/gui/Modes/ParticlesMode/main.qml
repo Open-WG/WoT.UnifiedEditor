@@ -51,7 +51,7 @@ ControlsEx.Panel {
 		Shortcut {
 			sequence: StandardKey.Paste
 			onActivated: {
-				treeView.model.pasteIntoItem(treeView.currentIndex)
+				treeView.model.pasteIntoItems(treeView.selection.selectedRows())
 			}
 		}
 

@@ -1,0 +1,98 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> smoke_01:___Default1 </identifier>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<fx> shaders/custom/volumetric_effect_vtx.fx </fx>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/smoke_28d_4.dds </Texture>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/vel_smoke.dds </Texture>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> enableLighting
+						<Bool> true </Bool>
+					</property>
+					<property> softFactor
+						<Float> 13.000000 </Float>
+					</property>
+					<property> selfIllumLight
+						<Vector4> 1.000000 1.000000 1.000000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> 0.021000 -0.005320 0.025000 0.062100 </Vector4>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 0.800000 0.500000 0.010000 0.000000 </Vector4>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 1.000000 0.000000 1.500000 1.000000 </Vector4>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.370099 -0.013668 -0.427556 </min>
+		<max> 0.369435 1.308813 0.425031 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 17 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> true </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> true </copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>
