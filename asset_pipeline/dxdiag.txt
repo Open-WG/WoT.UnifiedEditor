@@ -1,7 +1,7 @@
 ------------------
 System Information
 ------------------
-      Time of this report: 3/31/2022, 19:29:12
+      Time of this report: 5/30/2022, 16:11:51
              Machine name: LT1-WW-075
                Machine Id: {03156444-C9CA-43E4-A01E-6E6A2A32D448}
          Operating System: Windows 10 Enterprise 64-bit (10.0, Build 19042) (19041.vb_release.191206-1406)
@@ -12,11 +12,11 @@ System Information
                 Processor: AMD Ryzen 9 5900X 12-Core Processor             (24 CPUs), ~3.7GHz
                    Memory: 65536MB RAM
       Available OS Memory: 65480MB RAM
-                Page File: 37165MB used, 38041MB available
+                Page File: 35978MB used, 39228MB available
               Windows Dir: C:\Windows
           DirectX Version: DirectX 12
       DX Setup Parameters: Not found
-         User DPI Setting: 96 DPI (100 percent)
+         User DPI Setting: 120 DPI (125 percent)
        System DPI Setting: 144 DPI (150 percent)
           DWM DPI Scaling: UnKnown
                  Miracast: Available, no HDCP
@@ -148,13 +148,13 @@ Display Pixel Format: DISPLAYCONFIG_PIXELFORMAT_32BPP
         DDraw Status: Enabled
           D3D Status: Enabled
           AGP Status: Enabled
-       MPO MaxPlanes: 4
-            MPO Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
-         MPO Stretch: 10.000X - 0.500X
-     MPO Media Hints: resizing, colorspace Conversion 
-         MPO Formats: NV12,YUY2,R16G16B16A16_FLOAT,R10G10B10A2_UNORM,R8G8B8A8_UNORM,B8G8R8A8_UNORM
-    PanelFitter Caps: RGB,YUV,BILINEAR,HIGH_FILTER,STRETCH_YUV,STRETCH_RGB,IMMEDIATE,HDR (MPO3)
- PanelFitter Stretch: 10.000X - 0.500X
+       MPO MaxPlanes: 1
+            MPO Caps: Not Supported
+         MPO Stretch: Not Supported
+     MPO Media Hints: Not Supported
+         MPO Formats: Not Supported
+    PanelFitter Caps: Not Supported
+ PanelFitter Stretch: Not Supported
 
            Card name: NVIDIA GeForce RTX 3070 Ti
         Manufacturer: NVIDIA
@@ -359,9 +359,9 @@ Sound Capture Devices
   Default Sound Capture: Yes
   Default Voice Capture: Yes
             Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.19041.1202 (English)
+         Driver Version: 10.0.19041.1682 (English)
       Driver Attributes: Final Retail
-          Date and Size: 26.08.2021 3:00:00, 209920 bytes
+          Date and Size: 21.04.2022 3:00:00, 205312 bytes
               Cap Flags: 0x1
            Format Flags: 0xFFFFF
 
@@ -522,19 +522,19 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 277.3 GB
+ Free Space: 246.8 GB
 Total Space: 475.5 GB
 File System: NTFS
       Model: Samsung SSD 970 EVO Plus 500GB
 
       Drive: P:
- Free Space: 98.8 GB
+ Free Space: 51.7 GB
 Total Space: 800.0 GB
 File System: NTFS
       Model: Samsung SSD 870 QVO 2TB
 
       Drive: W:
- Free Space: 5.5 GB
+ Free Space: 555.1 GB
 Total Space: 1107.7 GB
 File System: NTFS
       Model: Samsung SSD 870 QVO 2TB
@@ -550,15 +550,15 @@ Device ID: PCI\VEN_1022&DEV_1487&SUBSYS_A0CF1458&REV_00\4&1FDE7688&0&0441
 
      Name: PCI Express Root Port
 Device ID: PCI\VEN_1022&DEV_1483&SUBSYS_14531022&REV_00\3&11583659&0&19
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI Express Root Port
 Device ID: PCI\VEN_1022&DEV_1483&SUBSYS_14531022&REV_00\3&11583659&0&0A
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI Express Root Port
 Device ID: PCI\VEN_1022&DEV_1483&SUBSYS_14531022&REV_00\3&11583659&0&09
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI standard host CPU bridge
 Device ID: PCI\VEN_1022&DEV_1447&SUBSYS_00000000&REV_00\3&11583659&0&C7
@@ -582,7 +582,7 @@ Device ID: PCI\VEN_1022&DEV_1442&SUBSYS_00000000&REV_00\3&11583659&0&C2
 
      Name: PCI Express Downstream Switch Port
 Device ID: PCI\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\5&8FCB7C3&0&48020A
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI standard host CPU bridge
 Device ID: PCI\VEN_1022&DEV_1445&SUBSYS_00000000&REV_00\3&11583659&0&C5
@@ -792,7 +792,7 @@ Device ID: PCI\VEN_1022&DEV_149C&SUBSYS_50071458&REV_00\4&1FDE7688&0&0341
 
      Name: PCI Express Downstream Switch Port
 Device ID: PCI\VEN_1022&DEV_43EA&SUBSYS_33081B21&REV_00\5&8FCB7C3&0&40020A
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI standard host CPU bridge
 Device ID: PCI\VEN_1022&DEV_1440&SUBSYS_00000000&REV_00\3&11583659&0&C0
@@ -859,11 +859,11 @@ Device ID: PCI\VEN_10DE&DEV_228B&SUBSYS_40901458&REV_A1\4&2283F625&0&0119
 
      Name: PCI Express Root Port
 Device ID: PCI\VEN_1022&DEV_1484&SUBSYS_14841022&REV_00\3&11583659&0&41
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI Express Root Port
 Device ID: PCI\VEN_1022&DEV_1484&SUBSYS_14841022&REV_00\3&11583659&0&39
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI standard ISA bridge
 Device ID: PCI\VEN_1022&DEV_790E&SUBSYS_50011458&REV_51\3&11583659&0&A3
@@ -887,7 +887,7 @@ Device ID: PCI\VEN_1022&DEV_1441&SUBSYS_00000000&REV_00\3&11583659&0&C1
 
      Name: PCI Express Upstream Switch Port
 Device ID: PCI\VEN_1022&DEV_43E9&SUBSYS_02011B21&REV_00\4&5F22ECF&0&020A
-   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1387 (English), 12/28/2021 22:37:30, 469840 bytes
+   Driver: C:\Windows\system32\DRIVERS\pci.sys, 10.00.19041.1682 (English), 5/24/2022 14:01:38, 477040 bytes
 
      Name: PCI standard host CPU bridge
 Device ID: PCI\VEN_1022&DEV_1444&SUBSYS_00000000&REV_00\3&11583659&0&C4
@@ -902,7 +902,7 @@ WMAudio Decoder DMO,0x00800800,1,1,WMADMOD.DLL,10.00.19041.1288
 WMAPro over S/PDIF DMO,0x00600800,1,1,WMADMOD.DLL,10.00.19041.1288
 WMSpeech Decoder DMO,0x00600800,1,1,WMSPDMOD.DLL,10.00.19041.0001
 MP3 Decoder DMO,0x00600800,1,1,mp3dmod.dll,10.00.19041.0001
-Mpeg4s Decoder DMO,0x00800001,1,1,mp4sdecd.dll,10.00.19041.0450
+Mpeg4s Decoder DMO,0x00800001,1,1,mp4sdecd.dll,10.00.19041.1706
 WMV Screen decoder DMO,0x00600800,1,1,wmvsdecd.dll,10.00.19041.0001
 WMVideo Decoder DMO,0x00800001,1,1,wmvdecod.dll,10.00.19041.1110
 Mpeg43 Decoder DMO,0x00800001,1,1,mp43decd.dll,10.00.19041.1165
@@ -913,7 +913,7 @@ WM ASF Reader,0x00400000,0,0,qasf.dll,12.00.19041.0001
 AVI Splitter,0x00600000,1,1,quartz.dll,10.00.19041.0746
 VGA 16 Color Ditherer,0x00400000,1,1,quartz.dll,10.00.19041.0746
 SBE2MediaTypeProfile,0x00200000,0,0,sbe.dll,10.00.19041.0001
-Microsoft DTV-DVD Video Decoder,0x005fffff,2,4,msmpeg2vdec.dll,10.00.19041.1566
+Microsoft DTV-DVD Video Decoder,0x005fffff,2,4,msmpeg2vdec.dll,10.00.19041.1682
 AC3 Parser Filter,0x00600000,1,1,mpg2splt.ax,10.00.19041.0329
 StreamBufferSink,0x00200000,0,0,sbe.dll,10.00.19041.0001
 MJPEG Decompressor,0x00600000,1,1,quartz.dll,10.00.19041.0746
@@ -997,9 +997,9 @@ Stereo Mix (Realtek(R) Audio),0x00200000,0,0,qcap.dll,10.00.19041.0001
 Microphone (Realtek(R) Audio),0x00200000,0,0,qcap.dll,10.00.19041.0001
 
 PBDA CP Filters:
-PBDA DTFilter,0x00600000,1,1,CPFilters.dll,10.00.19041.1566
-PBDA ETFilter,0x00200000,0,0,CPFilters.dll,10.00.19041.1566
-PBDA PTFilter,0x00200000,0,0,CPFilters.dll,10.00.19041.1566
+PBDA DTFilter,0x00600000,1,1,CPFilters.dll,10.00.19041.1682
+PBDA ETFilter,0x00200000,0,0,CPFilters.dll,10.00.19041.1682
+PBDA PTFilter,0x00200000,0,0,CPFilters.dll,10.00.19041.1682
 
 Midi Renderers:
 Default MidiOut Device,0x00800000,1,0,quartz.dll,10.00.19041.0746
@@ -1120,11 +1120,11 @@ WMMEDIASUBTYPE_WMSP1, WMSpeech Decoder DMO, CLSID_CWMSPDecMediaObject
 Media Foundation File Versions
 ---------------------------
 
-  mfcore.dll, 10.00.19041.1586
+  mfcore.dll, 10.00.19041.1706
   mfreadwrite.dll, 10.00.19041.0746
   mfcaptureengine.dll, 10.00.19041.0906
   mfsensorgroup.dll, 10.00.19041.1503
-  windows.media.dll, 10.00.19041.1566
+  windows.media.dll, 10.00.19041.1682
   frameserver.dll, 10.00.19041.1503
   frameserverclient.dll, 10.00.19041.1503
 
@@ -1140,18 +1140,18 @@ Media Foundation Transforms
 
 Video Decoders:
   NVIDIA MJPEG Video Decoder MFT, {70F36578-2741-454F-B494-E8563DDD1CB4}, 0x4, 8, nvDecMFTMjpegx.dll, 30.00.0015.1123
-  Microsoft MPEG Video Decoder MFT, {2D709E52-123F-49B5-9CBC-9AF5CDE28FB9}, 0x1, msmpeg2vdec.dll, 10.00.19041.1566
+  Microsoft MPEG Video Decoder MFT, {2D709E52-123F-49B5-9CBC-9AF5CDE28FB9}, 0x1, msmpeg2vdec.dll, 10.00.19041.1682
   DV Decoder MFT, {404A6DE5-D4D6-4260-9BC7-5A6CBD882432}, 0x1, mfdvdec.dll, 10.00.19041.0001
-  Mpeg4s Decoder MFT, CLSID_CMpeg4sDecMFT, 0x1, mp4sdecd.dll, 10.00.19041.0450
-  Microsoft H264 Video Decoder MFT, CLSID_CMSH264DecoderMFT, 0x1, msmpeg2vdec.dll, 10.00.19041.1566
+  Mpeg4s Decoder MFT, CLSID_CMpeg4sDecMFT, 0x1, mp4sdecd.dll, 10.00.19041.1706
+  Microsoft H264 Video Decoder MFT, CLSID_CMSH264DecoderMFT, 0x1, msmpeg2vdec.dll, 10.00.19041.1682
   WMV Screen decoder MFT, CLSID_CMSSCDecMediaObject, 0x1, wmvsdecd.dll, 10.00.19041.0001
   WMVideo Decoder MFT, CLSID_CWMVDecMediaObject, 0x1, wmvdecod.dll, 10.00.19041.1110
   MJPEG Decoder MFT, {CB17E772-E1CC-4633-8450-5617AF577905}, 0x1, mfmjpegdec.dll, 10.00.19041.1348
   Mpeg43 Decoder MFT, CLSID_CMpeg43DecMediaObject, 0x1, mp43decd.dll, 10.00.19041.1165
   Mpeg4 Decoder MFT, CLSID_CMpeg4DecMediaObject, 0x1, mpg4decd.dll, 10.00.19041.1165
   WebpImageExtension
-  VP9VideoExtensionDecoder
   HEIFImageExtension
+  VP9VideoExtensionDecoder
 Video Encoders:
   NVIDIA H.264 Encoder MFT, {60F44560-5A20-4857-BFEF-D29773CB8040}, 0x4, 8, nvEncMFTH264x.dll, 30.00.0015.1123
   NVIDIA HEVC Encoder MFT, {966F107C-8EA2-425D-B822-E4A71BEF01D7}, 0x4, 8, nvEncMFThevcx.dll, 30.00.0015.1123
@@ -1160,8 +1160,8 @@ Video Encoders:
   H263 Encoder MFT, {BC47FCFE-98A0-4F27-BB07-698AF24F2B38}, 0x1, mfh263enc.dll, 10.00.19041.0001
   WMVideo9 Encoder MFT, CLSID_CWMV9EncMediaObject, 0x1, wmvencod.dll, 10.00.19041.0001
   Microsoft MPEG-2 Video Encoder MFT, {E6335F02-80B7-4DC4-ADFA-DFE7210D20D5}, 0x2, msmpeg2enc.dll, 10.00.19041.0001
-  VP9VideoExtensionEncoder
   HEIFImageExtension
+  VP9VideoExtensionEncoder
 Video Effects:
   Frame Rate Converter, CLSID_CFrameRateConvertDmo, 0x1, mfvdsp.dll, 10.00.19041.0746
   Resizer MFT, CLSID_CResizerDMO, 0x1, vidreszr.dll, 10.00.19041.0867
@@ -1169,29 +1169,29 @@ Video Effects:
   Color Control, CLSID_CColorControlDmo, 0x1, mfvdsp.dll, 10.00.19041.0746
   Color Converter MFT, CLSID_CColorConvertDMO, 0x1, colorcnv.dll, 10.00.19041.1110
 Video Processor:
-  Microsoft Video Processor MFT, {88753B26-5B24-49BD-B2E7-0C445C78C982}, 0x1, msvproc.dll, 10.00.19041.1566
+  Microsoft Video Processor MFT, {88753B26-5B24-49BD-B2E7-0C445C78C982}, 0x1, msvproc.dll, 10.00.19041.1682
 Audio Decoders:
-  Microsoft Dolby Digital Plus Decoder MFT, {177C0AFE-900B-48D4-9E4C-57ADD250B3D4}, 0x1, DolbyDecMFT.dll, 10.00.19041.1586
+  Microsoft Dolby Digital Plus Decoder MFT, {177C0AFE-900B-48D4-9E4C-57ADD250B3D4}, 0x1, DolbyDecMFT.dll, 10.00.19041.1706
   MS AMRNB Decoder MFT, {265011AE-5481-4F77-A295-ABB6FFE8D63E}, 0x1, MSAMRNBDecoder.dll, 10.00.19041.0001
   WMAudio Decoder MFT, CLSID_CWMADecMediaObject, 0x1, WMADMOD.DLL, 10.00.19041.1288
-  Microsoft AAC Audio Decoder MFT, CLSID_CMSAACDecMFT, 0x1, MSAudDecMFT.dll, 10.00.19041.1165
-  A-law Wrapper MFT, {36CB6E0C-78C1-42B2-9943-846262F31786}, 0x1, mfcore.dll, 10.00.19041.1586
-  GSM ACM Wrapper MFT, {4A76B469-7B66-4DD4-BA2D-DDF244C766DC}, 0x1, mfcore.dll, 10.00.19041.1586
+  Microsoft AAC Audio Decoder MFT, CLSID_CMSAACDecMFT, 0x1, MSAudDecMFT.dll, 10.00.19041.1682
+  A-law Wrapper MFT, {36CB6E0C-78C1-42B2-9943-846262F31786}, 0x1, mfcore.dll, 10.00.19041.1706
+  GSM ACM Wrapper MFT, {4A76B469-7B66-4DD4-BA2D-DDF244C766DC}, 0x1, mfcore.dll, 10.00.19041.1706
   WMAPro over S/PDIF MFT, CLSID_CWMAudioSpdTxDMO, 0x1, WMADMOD.DLL, 10.00.19041.1288
   Microsoft Opus Audio Decoder MFT, {63E17C10-2D43-4C42-8FE3-8D8B63E46A6A}, 0x1, MSOpusDecoder.dll, 10.00.19041.0746
   Microsoft FLAC Audio Decoder MFT, {6B0B3E6B-A2C5-4514-8055-AFE8A95242D9}, 0x1, MSFlacDecoder.dll, 10.00.19041.1566
-  Microsoft MPEG Audio Decoder MFT, {70707B39-B2CA-4015-ABEA-F8447D22D88B}, 0x1, MSAudDecMFT.dll, 10.00.19041.1165
+  Microsoft MPEG Audio Decoder MFT, {70707B39-B2CA-4015-ABEA-F8447D22D88B}, 0x1, MSAudDecMFT.dll, 10.00.19041.1682
   WMSpeech Decoder DMO, CLSID_CWMSPDecMediaObject, 0x1, WMSPDMOD.DLL, 10.00.19041.0001
-  G711 Wrapper MFT, {92B66080-5E2D-449E-90C4-C41F268E5514}, 0x1, mfcore.dll, 10.00.19041.1586
-  IMA ADPCM ACM Wrapper MFT, {A16E1BFF-A80D-48AD-AECD-A35C005685FE}, 0x1, mfcore.dll, 10.00.19041.1586
+  G711 Wrapper MFT, {92B66080-5E2D-449E-90C4-C41F268E5514}, 0x1, mfcore.dll, 10.00.19041.1706
+  IMA ADPCM ACM Wrapper MFT, {A16E1BFF-A80D-48AD-AECD-A35C005685FE}, 0x1, mfcore.dll, 10.00.19041.1706
   MP3 Decoder MFT, CLSID_CMP3DecMediaObject, 0x1, mp3dmod.dll, 10.00.19041.0001
   Microsoft ALAC Audio Decoder MFT, {C0CD7D12-31FC-4BBC-B363-7322EE3E1879}, 0x1, MSAlacDecoder.dll, 10.00.19041.0746
-  ADPCM ACM Wrapper MFT, {CA34FE0A-5722-43AD-AF23-05F7650257DD}, 0x1, mfcore.dll, 10.00.19041.1586
+  ADPCM ACM Wrapper MFT, {CA34FE0A-5722-43AD-AF23-05F7650257DD}, 0x1, mfcore.dll, 10.00.19041.1706
   Dolby TrueHD IEC-61937 converter MFT, {CF5EEEDF-0E92-4B3B-A161-BD0FFE545E4B}, 0x1, mfaudiocnv.dll, 10.00.19041.0746
   DTS IEC-61937 converter MFT, {D035E24C-C877-42D7-A795-2A8A339B472F}, 0x1, mfaudiocnv.dll, 10.00.19041.0746
 Audio Encoders:
   LPCM DVD-Audio MFT, {068A8476-9229-4CC0-9D49-2FC699DCD30A}, 0x1, mfaudiocnv.dll, 10.00.19041.0746
-  MP3 Encoder ACM Wrapper MFT, {11103421-354C-4CCA-A7A3-1AFF9A5B6701}, 0x1, mfcore.dll, 10.00.19041.1586
+  MP3 Encoder ACM Wrapper MFT, {11103421-354C-4CCA-A7A3-1AFF9A5B6701}, 0x1, mfcore.dll, 10.00.19041.1706
   Microsoft FLAC Audio Encoder MFT, {128509E9-C44E-45DC-95E9-C255B8F466A6}, 0x1, MSFlacEncoder.dll, 10.00.19041.0746
   WM Speech Encoder DMO, CLSID_CWMSPEncMediaObject2, 0x1, WMSPDMOE.DLL, 10.00.19041.0508
   MS AMRNB Encoder MFT, {2FAE8AFE-04A3-423A-A814-85DB454712B0}, 0x1, MSAMRNBEncoder.dll, 10.00.19041.0001
@@ -1204,9 +1204,9 @@ Audio Effects:
   AEC, CLSID_CWMAudioAEC, 0x1, mfwmaaec.dll, 10.00.19041.0001
   Resampler MFT, CLSID_CResamplerMediaObject, 0x1, resampledmo.dll, 10.00.19041.0001
 Multiplexers:
-  Microsoft MPEG2 Multiplexer MFT, {AB300F71-01AB-46D2-AB6C-64906CB03258}, 0x2, mfmpeg2srcsnk.dll, 10.00.19041.1566
+  Microsoft MPEG2 Multiplexer MFT, {AB300F71-01AB-46D2-AB6C-64906CB03258}, 0x2, mfmpeg2srcsnk.dll, 10.00.19041.1682
 Others:
-  Microsoft H264 Video Remux (MPEG2TSToMP4) MFT, {05A47EBB-8BF0-4CBF-AD2F-3B71D75866F5}, 0x1, msmpeg2vdec.dll, 10.00.19041.1566
+  Microsoft H264 Video Remux (MPEG2TSToMP4) MFT, {05A47EBB-8BF0-4CBF-AD2F-3B71D75866F5}, 0x1, msmpeg2vdec.dll, 10.00.19041.1682
 
 
 --------------------------------------------
@@ -1473,29 +1473,10 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
-Fault bucket 1639694850262251630, type 5
-Event Name: RADAR_PRE_LEAK_64
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: Telegram.exe
-P2: 3.6.1.0
-P3: 10.0.19042.2.0.0
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-
-+++ WER1 +++:
 Fault bucket 125730739576, type 5
 Event Name: PerfWatsonVS12Data
 Response: Not available
-Cab Id: 1286163161446979795
+Cab Id: 2188368461409265185
 
 Problem signature:
 P1: PerfWatsonTcdb
@@ -1510,34 +1491,53 @@ P9:
 P10: 
 
 
-+++ WER2 +++:
-Fault bucket 2036815897170353201, type 5
-Event Name: RADAR_PRE_LEAK_64
++++ WER1 +++:
+Fault bucket 1878686206052985871, type 4
+Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: mspdbsrv.exe
-P2: 14.25.28614.0
-P3: 10.0.19042.2.0.0
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
+P9: 
+P10: 
+
+
++++ WER2 +++:
+Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
 P9: 
 P10: 
 
 
 +++ WER3 +++:
-Fault bucket 2253245669469096479, type 5
+Fault bucket 1489551414725531149, type 5
 Event Name: RADAR_PRE_LEAK_64
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: opera.exe
-P2: 84.0.4316.52
+P1: chrome.exe
+P2: 102.0.5005.61
 P3: 10.0.19042.2.0.0
 P4: 
 P5: 
@@ -1549,10 +1549,48 @@ P10:
 
 
 +++ WER4 +++:
+Fault bucket 1878686206052985871, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
+P9: 
+P10: 
+
+
++++ WER5 +++:
+Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
+P9: 
+P10: 
+
+
++++ WER6 +++:
 Fault bucket 125730739576, type 5
 Event Name: PerfWatsonVS12Data
 Response: Not available
-Cab Id: 1740108919129009342
+Cab Id: 1176838810811449481
 
 Problem signature:
 P1: PerfWatsonTcdb
@@ -1560,44 +1598,6 @@ P2: 0
 P3: 0
 P4: 0
 P5: 0
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-
-+++ WER5 +++:
-Fault bucket 2169863311179635687, type 5
-Event Name: RADAR_PRE_LEAK_64
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: chrome.exe
-P2: 99.0.4844.84
-P3: 10.0.19042.2.0.0
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-
-+++ WER6 +++:
-Fault bucket 1834610256747206661, type 5
-Event Name: RADAR_PRE_LEAK_64
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: analyzer.exe
-P2: 2.3.0.47112
-P3: 10.0.19042.2.0.0
-P4: 
-P5: 
 P6: 
 P7: 
 P8: 
@@ -1606,39 +1606,39 @@ P10:
 
 
 +++ WER7 +++:
-Fault bucket 125730739576, type 5
-Event Name: PerfWatsonVS12Data
+Fault bucket 1878686206052985871, type 4
+Event Name: APPCRASH
 Response: Not available
-Cab Id: 2201624198037973965
+Cab Id: 0
 
 Problem signature:
-P1: PerfWatsonTcdb
-P2: 0
-P3: 0
-P4: 0
-P5: 0
-P6: 
-P7: 
-P8: 
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
 P9: 
 P10: 
 
 
 +++ WER8 +++:
-Fault bucket 125730739576, type 5
-Event Name: PerfWatsonVS12Data
+Fault bucket , type 0
+Event Name: APPCRASH
 Response: Not available
-Cab Id: 1451944218330601568
+Cab Id: 0
 
 Problem signature:
-P1: PerfWatsonTcdb
-P2: 0
-P3: 0
-P4: 0
-P5: 0
-P6: 
-P7: 
-P8: 
+P1: QtWebEngineProcess.exe
+P2: 6.2.4.0
+P3: 62607492
+P4: Qt6WebEngineCore.dll
+P5: 6.2.4.0
+P6: 6260735a
+P7: c0000005
+P8: 0000000001ab7834
 P9: 
 P10: 
 
@@ -1647,7 +1647,7 @@ P10:
 Fault bucket 125730739576, type 5
 Event Name: PerfWatsonVS12Data
 Response: Not available
-Cab Id: 1838525344604804316
+Cab Id: 1937338778587529738
 
 Problem signature:
 P1: PerfWatsonTcdb

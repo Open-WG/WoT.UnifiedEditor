@@ -1,0 +1,121 @@
+<root>
+	<duration> 6.700000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model 0 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/h36_dragon_boat_2022/latern_glow.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.003265 0.000000 -0.008362 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.086535 0.822540 1.074667 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> lambert2 </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 0.686275 0.117647 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 8.571428 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 5.217391 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.766667 </startTime>
+				<value> 1.000000 0.686275 0.117647 5.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 5.217391 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -4.285714 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.700000 </startTime>
+				<value> 1.000000 0.686275 0.117647 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -4.285716 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 3.529411 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.266667 </startTime>
+				<value> 1.000000 0.686275 0.117647 3.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 3.529411 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -3.571428 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.966667 </startTime>
+				<value> 1.000000 0.686275 0.117647 0.500000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -3.571428 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 5.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.666667 </startTime>
+				<value> 1.000000 0.686275 0.117647 4.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 5.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -5.000001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.266667 </startTime>
+				<value> 1.000000 0.686275 0.117647 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -5.000001 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -0.857143 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.200000 </startTime>
+				<value> 1.000000 0.686275 0.117647 0.200000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -0.857143 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 6.449997 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.866667 </startTime>
+				<value> 1.000000 0.686275 0.117647 4.500000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 6.449997 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -4.200001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.700000 </startTime>
+				<value> 1.000000 0.686275 0.117647 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -4.200001 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 -4.200001 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

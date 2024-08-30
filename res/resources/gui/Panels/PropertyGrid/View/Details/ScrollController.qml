@@ -9,6 +9,7 @@ SM.StateMachine {
 
 	readonly property bool inited: flickable != null && model != null
 	property real position: 0
+	property real contentHeight : 0
 
 	initialState: inited ? initializedState : uninitializedState
 	running: true
@@ -29,7 +30,7 @@ SM.StateMachine {
 		SM.State {
 			id: filledState
 			onEntered: {
-				machine.flickable.contentY = machine.flickable.contentHeight * machine.position
+				machine.flickable.contentY = machine.contentHeight * machine.position
 			}
 
 			SM.SignalTransition {
@@ -42,7 +43,8 @@ SM.StateMachine {
 			id: resettingState
 			onEntered: {
 				if (machine.flickable.contentHeight) {
-					machine.position = machine.flickable.contentY / machine.flickable.contentHeight
+					machine.contentHeight = machine.flickable.contentHeight
+					machine.position = machine.flickable.contentY / machine.contentHeight
 				} else {
 					machine.position = 0
 				}

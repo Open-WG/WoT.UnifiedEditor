@@ -3,14 +3,14 @@
 		<dw_mode_lodeffect_mutable> 0 </dw_mode_lodeffect_mutable>
 	</dw_mode_lod_effect>
 	<lod>
-		<s_effect_name> Lod_0_60 </s_effect_name>
+		<s_effect_name> Lod_0_400 </s_effect_name>
 		<i_lod_mask>
 			<ps_particle_lod_default> 1 </ps_particle_lod_default>
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
 			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
 		</i_lod_mask>
 		<f_near_clip> 0.000000 </f_near_clip>
-		<f_far_clip> 1000.000000 </f_far_clip>
+		<f_far_clip> 400.000000 </f_far_clip>
 		<f_Skip_time> 0.000000 </f_Skip_time>
 		<buffer/>
 		<dw_mode>
@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -70,8 +70,8 @@
 			<emitter.f_life_max> 100.000000 </emitter.f_life_max>
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
-			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
-			<f_rate> 18.000000 </f_rate>
+			<emitter.fa_start_pos> 0.000000 -0.400000 0.000000 </emitter.fa_start_pos>
+			<f_rate> 12.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.132000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.200000 </f_Y_dim_volume>
@@ -266,7 +266,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -281,7 +281,7 @@
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 -0.500000 0.000000 </emitter.fa_start_pos>
-			<f_rate> 6.000000 </f_rate>
+			<f_rate> 4.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.132000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.200000 </f_Y_dim_volume>
@@ -476,7 +476,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -491,7 +491,7 @@
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 1.000000 0.000000 </emitter.fa_start_pos>
-			<f_rate> 80.000000 </f_rate>
+			<f_rate> 40.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.132000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.200000 </f_Y_dim_volume>
@@ -613,7 +613,7 @@
 				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
 			</particle.dw_mode>
 			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
-			<particle.base.f_life_min> 0.300000 </particle.base.f_life_min>
+			<particle.base.f_life_min> 0.400000 </particle.base.f_life_min>
 			<particle.base.f_life_max> 0.600000 </particle.base.f_life_max>
 			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
@@ -621,8 +621,8 @@
 			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
 			<particle.f_particle_size> 2.000000 </particle.f_particle_size>
 			<particle.f_particle_size_max> 3.000000 </particle.f_particle_size_max>
-			<particle.f_part_speed_module> -47.000000 </particle.f_part_speed_module>
-			<particle.f_part_speed_module_max> -60.000000 </particle.f_part_speed_module_max>
+			<particle.f_part_speed_module> -35.000000 </particle.f_part_speed_module>
+			<particle.f_part_speed_module_max> -50.000000 </particle.f_part_speed_module_max>
 			<particle.UV_set.left> 0.250000 </particle.UV_set.left>
 			<particle.UV_set.up> 0.500000 </particle.UV_set.up>
 			<particle.UV_set.right> 0.500000 </particle.UV_set.right>
@@ -696,7 +696,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -914,7 +914,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -929,7 +929,7 @@
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.000000 </emitter.fa_start_pos>
-			<f_rate> 10.000000 </f_rate>
+			<f_rate> 8.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.132000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.200000 </f_Y_dim_volume>
@@ -950,13 +950,13 @@
 			<m_sortType> 0 </m_sortType>
 			<tl_size_key>
 				<time> 0.000000 </time>
-				<value> 0.755223 </value>
-				<time> 0.307420 </time>
-				<value> 0.843767 </value>
-				<time> 0.683746 </time>
-				<value> 1.239610 </value>
+				<value> 1.001890 </value>
+				<time> 0.568905 </time>
+				<value> 0.921609 </value>
+				<time> 0.794170 </time>
+				<value> 0.748205 </value>
 				<time> 1.000000 </time>
-				<value> 2.354210 </value>
+				<value> 0.292217 </value>
 			</tl_size_key>
 			<tl_rate_key/>
 			<tl_gravity_key>
@@ -1045,8 +1045,8 @@
 				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
 			</particle.dw_mode>
 			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
-			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
-			<particle.base.f_life_max> 1.000000 </particle.base.f_life_max>
+			<particle.base.f_life_min> 0.500000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 0.800000 </particle.base.f_life_max>
 			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
 			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>

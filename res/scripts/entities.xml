@@ -39,10 +39,9 @@
 		<!-- AoE abilities -->
 		<AreaOfEffect/>
 		<AttackBomber/>
+		<AttackArtilleryFort/>
 		<PersonalDeathZone/>
 		<ClientSelectableRankedObject/>
-		<ClientSelectableRTSObject/>
-		<ClientSelectableRTSLeaderboard/>
 		<ClientSelectableHangarsSwitcher/>
 		<ClientSelectableCGFObject/>
 		<StaticDeathZone/>
@@ -68,7 +67,6 @@
 		<SpecUnitMgr/>
 		<EventUnitMgr/>
 		<MapBoxUnitMgr/>
-		<RtsUnitMgr/>
 		<VoiceChatMgr/>
 		<MessageFilterManager/>
 		<CenterStatusReader/>
@@ -84,10 +82,8 @@
 		<UnitFinder/>
 		<EventBattlesMgr/>
 		<RankedBattlesMgr/>
-		<Rts1vs7BattlesMgr/>
-		<Rts1vs1BattlesMgr/>
-		<RtsBootcampBattlesMgr/>
 		<SpecBattleMgr/>
+		<ExternalDataUpdater/>
 		<ClanRelay/>
 		<AccountSurrogate/>
 		<RankedMatchmaker/>

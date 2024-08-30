@@ -603,9 +603,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
 				<bank>
-					<name>r4_hangar.bnk</name>
-				</bank>
-				<bank>
 					<name> fort_area.bnk </name>
 				</bank>
 				<bank>
@@ -661,6 +658,12 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> cn_wot_plus.bnk </name>
+				</bank>
+				<bank>
+					<name> dragon_boat_2022.bnk </name>
+				</bank>
+				<bank>
+					<name> dragon_boat_2022.pck </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -857,11 +860,14 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<enabled> true </enabled>
 			<!--if name is not set, then default as false-->
 			<!--possible values: TRACE,DEBUG,INFO,NOTICE,WARNING,ERROR,CRITICAL,HACK,ASSET, if not set, then ALL will be included -->
-			<!--<severity> INFO </severity>
+			<!-- <severity> TRACE </severity> -->
+			<severity> DEBUG </severity>
+			<severity> INFO </severity>
+			<severity> NOTICE </severity>
 			<severity> WARNING </severity>
 			<severity> ERROR </severity>
 			<severity> CRITICAL </severity>
-			<severity> HACK </severity>-->
+			<severity> HACK </severity>
 			<!--category> Chunk</category>only one category is allowed, if not set, then all categories will be included.-->
 			<source> SCRIPT </source>
 			<source> UI </source>
@@ -880,6 +886,12 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<file>
 			ui.log
 			<enabled> true </enabled>
+			<severity> TRACE </severity>
+			<severity> DEBUG </severity>
+			<severity> INFO </severity>
+			<severity> WARNING </severity>
+			<severity> ERROR </severity>
+			<severity> CRITICAL </severity>
 			<source> UI </source>
 			<openMode> a </openMode>
 			<maxSizeKB> 2048 </maxSizeKB>

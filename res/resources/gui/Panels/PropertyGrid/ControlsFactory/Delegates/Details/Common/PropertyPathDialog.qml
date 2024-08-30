@@ -16,6 +16,7 @@ Dialogs.FileDialog {
 	window.nameFilters: pathPropertyData ? pathPropertyData.dialog.filters : []
 	window.selectExisting: pathPropertyData ? pathPropertyData.dialog.selectExisting : true
 	window.selectFolder: pathPropertyData ? pathPropertyData.dialog.selectFolder : false
+	window.anyDir: anyDir
 
 	PG.PropertyValueVerifier {
 		id: verifier

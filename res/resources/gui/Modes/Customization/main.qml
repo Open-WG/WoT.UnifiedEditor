@@ -79,7 +79,7 @@ WGT.Panel {
 						id: elementsToolBar
 						textFilter: context.elementsTextFilter
 						toolBarActions: context.elementsToolBarActions
-						placeholderText: "Enter a filter string (ID, Name, Texture Name)"
+						placeholderText: "Enter a filter string (ID, Name, Texture Name, Tags)"
 
 						Layout.fillWidth: true
 					}

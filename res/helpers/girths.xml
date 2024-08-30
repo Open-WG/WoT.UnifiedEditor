@@ -241,7 +241,7 @@
 	</visibilityGrid>
 	<zones>
 		<center_generator>
-			<navmeshGirth> CTF_5.5 </navmeshGirth>
+			<navmeshGirth> CTF_2.5 </navmeshGirth>
 			<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			<gridStepX> 20 </gridStepX>
 			<gridStepY> 20 </gridStepY>
@@ -253,7 +253,7 @@
 		<link_generator>
 			<common>
 				<maxNavmeshQueryNodes> 10000 </maxNavmeshQueryNodes>
-				<navmeshGirth> CTF_5.5 </navmeshGirth>
+				<navmeshGirth> CTF_2.5 </navmeshGirth>
 				<navmeshSnapRadius> 10 </navmeshSnapRadius>
 			</common>
 			<move>

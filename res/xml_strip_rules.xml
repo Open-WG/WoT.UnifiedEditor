@@ -2,6 +2,9 @@
 	<strip_metadata>
 		<rule>//metaData</rule>
 	</strip_metadata>
+	<strip_editorOnly>
+		<rule>//editorOnly</rule>
+	</strip_editorOnly>
 	<default_vehicles>
 		<create>
 			<path>//chassis//(hysteresisHealth div healthRegenPerSec)</path>

@@ -17,7 +17,7 @@ Item {
 		onVisibleChanged: {
 			if (visible) {
 				if (!anyDir && !WGTResources.Resources.isCurrentBranch(initialFolder)) {
-					folder = WGTResources.Resources.fileNameToUrl(WGTResources.Resources.getCurrentBranch())
+					folder = WGTResources.Resources.fileNameToUrl(WGTResources.Resources.getCurrentBranchRoot())
 				} else {
 					folder = WGTResources.Resources.fileNameToUrl(initialFolder)
 				}

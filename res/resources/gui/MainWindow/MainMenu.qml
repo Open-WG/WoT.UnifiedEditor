@@ -72,6 +72,7 @@ Menu {
 		}
 
 		onAboutToShow: {
+			context.recentsModel.updateData();
 			implicitWidth = calculateImplicitWidth();
 		}
 	}
@@ -107,29 +108,39 @@ Menu {
 	MenuSeparator { }
 
 	Menu {
-		id: utilitiesMenu
-		title: "Space tools"
+		id: toolsMenu
+		title: "Tools"
 
-		onAboutToShow: {
-			implicitWidth = calculateImplicitWidth()
+		Menu {
+			id: spaceToolsMenu
+			title: "Space tools"
+
+			onAboutToShow: {
+				implicitWidth = calculateImplicitWidth()
+			}
+
+			Details.ActionMenuItem {
+				source: context.action("moctDialogId")
+				visible: !context.isLite
+			}
+
+			Details.ActionMenuItem {
+				source: context.action("mapsValidatorDialogId")
+				visible: !context.isLite
+			}
+
+			MenuSeparator {
+				visible: !context.isLite
+			}
+
+			Details.ActionMenuItem {
+				source: context.action("regenerateDecalsBinInAllSpaces")
+			}
 		}
 
 		Details.ActionMenuItem {
-			source: context.action("moctDialogId")
+			source: context.action("tankAssetsProcessorId")
 			visible: !context.isLite
-		}
-
-		Details.ActionMenuItem {
-			source: context.action("mapsValidatorDialogId")
-			visible: !context.isLite
-		}
-
-		MenuSeparator {
-			visible: !context.isLite
-		}
-
-		Details.ActionMenuItem {
-			source: context.action("regenerateDecalsBinInAllSpaces")
 		}
 	}
 
