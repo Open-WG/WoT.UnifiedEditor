@@ -3,14 +3,14 @@
 		<dw_mode_lodeffect_mutable> 0 </dw_mode_lodeffect_mutable>
 	</dw_mode_lod_effect>
 	<lod>
-		<s_effect_name> Lod_0_400 </s_effect_name>
+		<s_effect_name> Lod_min_02 </s_effect_name>
 		<i_lod_mask>
-			<ps_particle_lod_default> 1 </ps_particle_lod_default>
+			<ps_particle_lod_default> 0 </ps_particle_lod_default>
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
-			<ps_particle_lod_last_available> 0 </ps_particle_lod_last_available>
+			<ps_particle_lod_last_available> 1 </ps_particle_lod_last_available>
 		</i_lod_mask>
 		<f_near_clip> 0.000000 </f_near_clip>
-		<f_far_clip> 400.000000 </f_far_clip>
+		<f_far_clip> 10000.000000 </f_far_clip>
 		<f_Skip_time> 0.000000 </f_Skip_time>
 		<buffer/>
 		<dw_mode>
@@ -160,8 +160,8 @@
 			<m_supportedQualityMask> 0 </m_supportedQualityMask>
 			<m_supportedPassMask> 1021 </m_supportedPassMask>
 			<m_supportedSniperPassMask> 1021 </m_supportedSniperPassMask>
-			<f_fadeInOffsetFrom> 5.000000 </f_fadeInOffsetFrom>
-			<f_fadeInOffsetTo> 10.000000 </f_fadeInOffsetTo>
+			<f_fadeInOffsetFrom> 20.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 40.000000 </f_fadeInOffsetTo>
 			<f_dir_length_max> 0.000000 </f_dir_length_max>
 			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
 			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>

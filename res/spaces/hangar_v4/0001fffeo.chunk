@@ -1,0 +1,625 @@
+<root>
+	<model>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_039_SteelBoiler/normal/lod0/hv4_039_SteelBoiler_02.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 0.027009 0.000000 0.805848 </row0>
+			<row1> 0.000000 0.806301 0.000000 </row1>
+			<row2> -0.805848 0.000000 0.027009 </row2>
+			<row3> 69.044327 -1.543278 87.336685 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 7 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_039_SteelBoiler/normal/lod0/hv4_039_SteelBoiler_01.model </resource>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 69.293457 0.000002 80.443115 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<sequence>
+			<resource> particles/eff_sequence/h_v4_steel_boiler.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<inverseKinematics>
+			<avatar/>
+			<binding/>
+			<collisionFlags> 0 </collisionFlags>
+			<balancerPower> 0.100000 0.050000 </balancerPower>
+			<rootSmoothing> 0.200000 </rootSmoothing>
+			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
+			<maxIterations> 50 </maxIterations>
+			<maxDistanceError> 0.000100 </maxDistanceError>
+			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
+		</inverseKinematics>
+		<decorative> 448 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<groupName> group_32 </groupName>
+			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_038_SteelFoundry/normal/lod0/hv4_038_SteelFoundry_Observation_01.model </resource>
+		<transform>
+			<row0> -0.011405 0.000004 0.999936 </row0>
+			<row1> -0.000004 0.726495 -0.000003 </row1>
+			<row2> -0.999936 -0.000006 -0.011405 </row2>
+			<row3> 11.455093 -0.050701 76.877060 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<groupName> group_32 </groupName>
+			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_038_SteelFoundry/normal/lod0/hv4_038_SteelFoundry_Observation_02.model </resource>
+		<transform>
+			<row0> -0.011405 0.000004 0.999936 </row0>
+			<row1> -0.000004 0.726495 -0.000003 </row1>
+			<row2> -0.999936 -0.000006 -0.011405 </row2>
+			<row3> 11.455032 -0.050703 76.877075 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.657585 -0.119920 9.519470 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_103_AssemblyConstructor/normal/lod0/hv4_103_AssemblyConstructor_01.model </resource>
+		<transform>
+			<row0> -0.000001 0.000000 -1.544803 </row0>
+			<row1> 0.000000 1.544803 0.000000 </row1>
+			<row2> 1.544803 0.000000 -0.000001 </row2>
+			<row3> 26.318970 -0.265871 73.507317 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 2 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_02.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.658150 13.832994 57.809708 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 0 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<groupName> group_55 </groupName>
+			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
+		<transform>
+			<row0> 2.711812 0.534349 3.624908 </row0>
+			<row1> 0.891983 -4.443753 -0.012242 </row1>
+			<row2> 2.452885 0.497619 -1.908369 </row2>
+			<row3> 6.804794 12.696617 83.184845 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.657585 -0.119920 82.833656 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 8 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_02.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.658150 13.832994 8.634689 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 5 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+			<groupName> group_55 </groupName>
+			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_054_Projectors/normal/lod0/hv4_054_Projectors_03.model </resource>
+		<transform>
+			<row0> 0.311867 -1.971070 -0.132755 </row0>
+			<row1> -1.958545 -0.326075 0.240373 </row1>
+			<row2> -0.258541 0.092522 -1.981060 </row2>
+			<row3> 7.344910 12.782791 82.835121 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_038_SteelFoundry/normal/lod0/hv4_038_SteelFoundry_Wall_01.model </resource>
+		<transform>
+			<row0> 0.000006 0.006094 1.625413 </row0>
+			<row1> 0.000000 -1.625419 0.006094 </row1>
+			<row2> 1.625424 0.000000 -0.000006 </row2>
+			<row3> 98.548431 16.636648 59.744247 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.657585 -0.119920 58.383835 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 16 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_038_SteelFoundry/normal/lod0/hv4_038_SteelFoundry_Wall_02.model </resource>
+		<transform>
+			<row0> 0.000000 0.000000 1.009827 </row0>
+			<row1> 0.000000 -1.009828 0.000000 </row1>
+			<row2> 1.009827 0.000000 0.000000 </row2>
+			<row3> 99.223907 30.078539 47.116791 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_038_SteelFoundry/normal/lod0/hv4_038_SteelFoundry_Partition_01.model </resource>
+		<transform>
+			<row0> 0.000000 0.000000 -1.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 1.000000 0.000000 0.000000 </row2>
+			<row3> 65.202667 0.000149 64.570282 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.657585 -0.119920 33.963593 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 19 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_02.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.658150 13.832994 82.388641 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 15 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_blue.model </resource>
+		<transform>
+			<row0> 2.010154 -0.401373 1.969675 </row0>
+			<row1> 0.000000 2.769632 0.564385 </row1>
+			<row2> -1.387920 -0.277130 1.359971 </row2>
+			<row3> 7.560440 14.845264 71.044464 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 40.110992 26.170000 58.199997 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 1 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 40.110992 26.170000 9.330002 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 13 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_02.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 9.658150 13.832994 33.225296 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 17 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 40.110992 26.170000 82.680000 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 11 </serverId>
+	</model>
+	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 40.110992 26.170000 33.759995 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 12 </serverId>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -1.500000 0.000000 -0.000001 </row0>
+			<row1> 0.000000 1.500000 0.000000 </row1>
+			<row2> 0.000001 0.000000 -1.500000 </row2>
+			<row3> 0.474602 15.548242 97.103546 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 56 </decorative>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> content/Hangars/hangar_v4/Environment/hv4_039_SteelBoiler/normal/lod0/hv4_039_SteelBoiler_01.model </resource>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 69.292999 0.000002 25.442993 </row3>
+		</transform>
+		<inverseKinematics>
+			<avatar/>
+			<binding/>
+			<collisionFlags> 0 </collisionFlags>
+			<balancerPower> 0.100000 0.050000 </balancerPower>
+			<rootSmoothing> 0.200000 </rootSmoothing>
+			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
+			<maxIterations> 50 </maxIterations>
+			<maxDistanceError> 0.000100 </maxDistanceError>
+			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
+		</inverseKinematics>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+	</model>
+	<spotLight>
+		<colour> 255.000000 136.000000 71.000000 </colour>
+		<position> 67.853165 8.430585 98.737892 </position>
+		<direction> 0.045683 0.314830 -0.948048 </direction>
+		<innerRadius> 4.904546 </innerRadius>
+		<outerRadius> 30.922976 </outerRadius>
+		<lodShift> 1000.000000 </lodShift>
+		<multiplier> 11936.620117 </multiplier>
+		<coneAngle> 1.221489 </coneAngle>
+		<castShadows> false </castShadows>
+		<shadowsType> 0 </shadowsType>
+		<shadowsQuality> 0 </shadowsQuality>
+		<shadowBias> 0.000100 </shadowBias>
+		<drawType> 0 </drawType>
+		<enabled> true </enabled>
+		<disableOnGenLights> true </disableOnGenLights>
+		<useColorTemperature> false </useColorTemperature>
+		<colorTemperature> 1000.000000 </colorTemperature>
+		<isVolumetric> false </isVolumetric>
+		<volumetricIntensity> 0.300000 </volumetricIntensity>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 384 </decorative>
+		<metaData/>
+	</spotLight>
+	<spotLight>
+		<colour> 188.000000 241.000305 255.000000 </colour>
+		<position> 56.251587 22.211901 48.370605 </position>
+		<direction> 0.184336 -0.463987 0.866451 </direction>
+		<innerRadius> 5.719175 </innerRadius>
+		<outerRadius> 45.675957 </outerRadius>
+		<lodShift> 1000.000000 </lodShift>
+		<multiplier> 15915.494141 </multiplier>
+		<coneAngle> 0.626761 </coneAngle>
+		<castShadows> false </castShadows>
+		<shadowsType> 0 </shadowsType>
+		<shadowsQuality> 0 </shadowsQuality>
+		<shadowBias> 0.000100 </shadowBias>
+		<drawType> 0 </drawType>
+		<enabled> true </enabled>
+		<disableOnGenLights> true </disableOnGenLights>
+		<useColorTemperature> false </useColorTemperature>
+		<colorTemperature> 1000.000000 </colorTemperature>
+		<isVolumetric> false </isVolumetric>
+		<volumetricIntensity> 0.300000 </volumetricIntensity>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<decorative> 384 </decorative>
+		<metaData/>
+	</spotLight>
+	<terrain>
+		<resource> 0001fffeo.cdata/terrain2 </resource>
+	</terrain>
+</root>

@@ -1,7 +1,15 @@
 <root>
 	<navmesh>
-		<!--Note: radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
-		Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
+		<!--
+			Notes:
+
+			1) radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
+			   Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
+
+			2) flags parameter is a bit mask. Default is 0. Other supported flags:
+			   1 - disable navmesh obstacles;
+			   2 - disable hierarchical pathfinding data generation.
+			   E.g. you should use <flags> 3 <flags> for ability-only navmeshes.
 		-->
 		<config>
 			<girth> CTF_2.5 </girth>
@@ -16,6 +24,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.500000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> CTF_3.5 </girth>
@@ -30,6 +39,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.950000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> CTF_4.5 </girth>
@@ -44,6 +54,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.250000	</waterDepthLimit1>
 			<waterDepthLimit2>	4.550000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> CTF_5.5 </girth>
@@ -58,6 +69,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
 			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> WT_3.5 </girth>
@@ -72,6 +84,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.950000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> WT_4.0 </girth>
@@ -86,6 +99,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 			<waterDepthLimit2>	4.550000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> WT_5.0 </girth>
@@ -100,6 +114,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
 			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> Onboarding_4.0 </girth>
@@ -114,6 +129,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	4.070000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> Onboarding_5.0 </girth>
@@ -128,6 +144,22 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	4.700000	</waterDepthLimit2>
+			<flags> 0 </flags>
+		</config>
+		<config>
+			<girth> Onboarding_5.5 </girth>
+			<height>	4.000000	</height>
+			<radius>	5.500000	</radius>
+			<halfWidth>	2.750000	</halfWidth>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
+			<upSlope>	25.000000	</upSlope>
+			<downSlope>	30.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
+			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> Onboarding_ability </girth>
@@ -142,6 +174,22 @@
 			<downClimb>	2.000000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	7.00000	</waterDepthLimit2>
+			<flags> 3 </flags>
+		</config>
+		<config>
+			<girth> SCC_Ability </girth>
+			<height>	3.000000	</height>
+			<radius>	1.000000	</radius>
+			<halfWidth>	0.400000	</halfWidth>
+			<narrowInnerThreshold>	1.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	1.000000	</narrowOuterThreshold>
+			<upSlope>	90.000000	</upSlope>
+			<downSlope>	90.000000	</downSlope>
+			<upClimb>	4.900000	</upClimb>
+			<downClimb>	4.900000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	7.00000	</waterDepthLimit2>
+			<flags> 3 </flags>
 		</config>
 		<config>
 			<girth> BR_8 </girth>
@@ -156,6 +204,7 @@
 			<downClimb>	1.000000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.500000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> BR_3.5 </girth>
@@ -170,6 +219,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 			<waterDepthLimit2>	4.100000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> HELL_2.0 </girth>
@@ -184,6 +234,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.400000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> HELL_3.0 </girth>
@@ -198,6 +249,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	3.400000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> HELL_4.0 </girth>
@@ -212,6 +264,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	6.900000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> HELL_5.5 </girth>
@@ -226,6 +279,7 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 		<config>
 			<girth> HELLBOSS_11.5 </girth>
@@ -240,6 +294,7 @@
 			<downClimb>	2.5000000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
 			<waterDepthLimit2>	7.200000	</waterDepthLimit2>
+			<flags> 0 </flags>
 		</config>
 	</navmesh>
 	<hierarchical_pathfinding>

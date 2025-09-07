@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -272,7 +272,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -488,7 +488,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -704,7 +704,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -918,7 +918,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1149,7 +1149,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1164,7 +1164,7 @@
 			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.500000 </emitter.fa_start_pos>
-			<f_rate> 1.000000 </f_rate>
+			<f_rate> 2.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.050000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.010000 </f_Y_dim_volume>

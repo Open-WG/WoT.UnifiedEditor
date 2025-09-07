@@ -19,7 +19,7 @@
 				<material>
 					<identifier> raysFlash </identifier>
 					<fx> shaders/custom/vector_animation_2.fx </fx>
-					<collisionFlags> 0 </collisionFlags>
+					<collisionFlags> 255 </collisionFlags>
 					<materialKind> 0 </materialKind>
 					<property> diffuseMap
 						<Texture> particles/content_deferred/GFX_models/GFX_textures/Rays_01.dds </Texture>
@@ -52,7 +52,7 @@
 					<identifier> rays </identifier>
 					<fx> shaders/custom/vector_animation_2.fx </fx>
 					<materialKind> 0 </materialKind>
-					<collisionFlags> 0 </collisionFlags>
+					<collisionFlags> 255 </collisionFlags>
 					<property> destBlend
 						<Int> 2 </Int>
 					</property>
@@ -87,7 +87,7 @@
 					<identifier> Light_Wide </identifier>
 					<fx> shaders/custom/vector_animation_2.fx </fx>
 					<materialKind> 0 </materialKind>
-					<collisionFlags> 0 </collisionFlags>
+					<collisionFlags> 255 </collisionFlags>
 					<property> diffuseMap
 						<Texture> particles/content_deferred/GFX_models/GFX_textures/HeadLight_02.dds </Texture>
 					</property>
@@ -101,13 +101,13 @@
 						<Vector4> 1.000000 1.000000 0.010000 0.000000 </Vector4>
 					</property>
 					<property> lightMultipliers
-						<Vector4> 4.000000 1.000000 0.100000 0.000000 </Vector4>
-					</property>
-					<property> enableLighting
-						<Bool> true </Bool>
+						<Vector4> 10.000000 0.200000 0.100000 0.000000 </Vector4>
 					</property>
 					<property> diffuseUVSpeedAlphaOffset
-						<Vector4> 0.000000 0.000000 2.000000 0.000000 </Vector4>
+						<Vector4> 0.000000 0.000000 1.400000 0.000000 </Vector4>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
 					</property>
 				</material>
 			</primitiveGroup>

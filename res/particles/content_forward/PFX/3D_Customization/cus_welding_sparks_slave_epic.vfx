@@ -592,7 +592,7 @@
 			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
 			<particle_ex.f_soft_factor> 0.300000 </particle_ex.f_soft_factor>
 			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
-			<particle_ex.deffered_color_mult> 3.000000 </particle_ex.deffered_color_mult>
+			<particle_ex.deffered_color_mult> 0.500000 </particle_ex.deffered_color_mult>
 			<particle.dw_mode>
 				<ps_particle_use_frames> 0 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
@@ -646,7 +646,7 @@
 			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
 			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
 			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
-			<lighting_params.f_self_illum> 31.500000 </lighting_params.f_self_illum>
+			<lighting_params.f_self_illum> 15.000000 </lighting_params.f_self_illum>
 			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
 			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
 		</emitter>
@@ -800,7 +800,7 @@
 			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
 			<particle_ex.f_soft_factor> 0.050000 </particle_ex.f_soft_factor>
 			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
-			<particle_ex.deffered_color_mult> 3.000000 </particle_ex.deffered_color_mult>
+			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>

@@ -1,4 +1,3 @@
-<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Wargaming Limited (Wargaming Group Limited) -->
 <engine_config.xml>
 	<!-- This file contains a variety of options to control and
 	customise the behaviour of the BigWorld Client Engine. -->
@@ -88,7 +87,7 @@
 			<!-- Minimum DRR scale, which autoscaler can set. -->
 		</DRRAutoscaler>
 		<DRRAutodetect>
-			<DRRScale> 0.80
+			<DRRScale> 0.60
 				<GPUScore> 300 </GPUScore>
 			</DRRScale>
 		</DRRAutodetect>
@@ -646,6 +645,9 @@
 					<name> Personal_missions.bnk </name>
 				</bank>
 				<bank>
+					<name> personal_missions_voiceover.bnk </name>
+				</bank>
+				<bank>
 					<name> personal_reserves.bnk </name>
 				</bank>
 				<bank>
@@ -739,6 +741,15 @@
 				</bank>
 				<bank>
 					<name> wdr.pck </name>
+				</bank>
+				<bank>
+					<name> hangar_personal_missions.bnk </name>
+				</bank>
+				<bank>
+					<name> about_vehicle.bnk </name>
+				</bank>
+				<bank>
+					<name> hangar_personal_missions.bnk </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -1028,8 +1039,10 @@
 	<gameface>
 		<taskSystem>
 			<!-- Number of threads for resources and layout works are computed as -->
-			<!-- threadsCount = min(maxThreads, int(cpuCores / cpuCoresThreshold) + 1) -->
+			<!-- threadsCount = min(maxThreads, max(minThreads, int(cpuCores / cpuCoresThreshold) + 1)) -->
 			<maxThreads>2</maxThreads>
+			<!-- Do not set fewer than 2 threads - it may cause video decoding issues. See WOTD-277499 -->
+			<minThreads>2</minThreads>
 			<cpuCoresThreshold>5</cpuCoresThreshold>
 		</taskSystem>
 	</gameface>

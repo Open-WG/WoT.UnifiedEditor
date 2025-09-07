@@ -1,0 +1,157 @@
+<root>
+	<duration> 0.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model 0 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/volume_lights.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.008027 0.429789 -0.290593 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 40.284847 2.487746 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.250000 0.250000 0.300000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> 01 - Default </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.941176 0.749020 0.509804 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> 01 - Default </identifier>
+			<property> lightMultipliers </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 150.000000 0.030000 0.700000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Light 0 </name>
+		<type> light </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<lightType> spotlight </lightType>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.002829 0.395381 -0.333576 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> outerRadius </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.750000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> innerRadius </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.200000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> multiplier </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 17.507044 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> color </name>
+			<type> vector4 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 0.768627 0.552941 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 61.795898 -176.877350 -176.775879 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

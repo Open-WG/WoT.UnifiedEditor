@@ -136,7 +136,6 @@
 					<_ANYTHING_ />
 				</armor>
 				<weight />
-				<maxLoad />
 				<terrainResistance />
 				<brakeForce />
 				<rotationIsAroundCenter />
@@ -286,34 +285,49 @@
 							<maxShotDispersion />
 							<groupSize />
 						</autoShoot>
-						<spin>
-							<startFactor />
-							<isSpinUpShootingEnable />
-							<spinUpTimeout />
-							<spinDownTimeout />
-						</spin>
-						<temperatureMechanics>
-							<heatingPerShot />
-							<heatingPerSec />
-							<coolingDelay />
-							<coolingPerSec />
-							<coolingOverheatPerSec />
-
-							<thermalStateHysteresis />
-							<temperatureSegmentSize />
-
-							<thermalStates>
-								<_ANYTHING_ />
-							</thermalStates>
-						</temperatureMechanics>
+						<controllableReload>
+							<allowToReloadAfterShot />
+						</controllableReload>
 						<shots>
 							<_ANYTHING_ />
 						</shots>
 						<shootImpulse>
 							<_ANYTHING_ />
 						</shootImpulse>
+						<secondaryGun/>
+						<mechanics>
+							<_ANYTHING_ />
+						</mechanics>
 					</_GUN_NAME_>
 				</guns>
+				<secondaryGuns>
+					<_GUN_NAME_>
+						<notInShop />
+						<reloadTime />
+						<aimingTime />
+						<shotDispersionRadius />
+						<shotDispersionFactors>
+							<turretRotation />
+							<afterShot />
+							<whileGunDamaged />
+						</shotDispersionFactors>
+						<invisibilityFactorAtShot />
+						<clip>
+							<count />
+							<rate />
+						</clip>
+						<burst>
+							<count />
+							<rate />
+						</burst>
+						<shots>
+							<_ANYTHING_ />
+						</shots>
+						<mechanics>
+							<_ANYTHING_ />
+						</mechanics>
+					</_GUN_NAME_>
+				</secondaryGuns>
 			</_TURRET_NAME_>
 		</turrets0>
 		<physics>
@@ -409,6 +423,12 @@
 			<_ANYTHING_ />
 		</rocketAcceleration>
 		<armorMaxHealth/>
+		<mechanics>
+			<_ANYTHING_ />
+		</mechanics>
+		<powerMode>
+			<_ANYTHING_ />
+		</powerMode>
 	</tank_game_balance>
 
 	<!--  Appearance tank properties -->
@@ -416,9 +436,9 @@
 		<effects>
 			<_ANYTHING_ />
 		</effects>
-		<effectsPrefab>
+		<prefabs>
 			<_ANYTHING_ />
-		</effectsPrefab>
+		</prefabs>
 		<emblems>
 			<default />
 			<lodDist />
@@ -838,9 +858,6 @@
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>
-				<multiGunState>
-					<_ANYTHING_ />
-				</multiGunState>
 				<guns>
 					<_GUN_NAME_>
 						<slotPrefabs>
@@ -883,6 +900,9 @@
 						<reloadEffect />
 						<effects />
 						<shotOffset />
+						<multiGunState>
+							<_ANYTHING_ />
+						</multiGunState>
 						<AODecals>
 							<decal>
 								<transform>
@@ -909,6 +929,17 @@
 						<edgeByVisualModel />
 					</_GUN_NAME_>
 				</guns>
+				<secondaryGuns>
+					<_GUN_NAME_>
+						<prefabs>
+							<_ANYTHING_ />
+						</prefabs>
+						<shotOffset />
+						<multiGunState>
+							<_ANYTHING_ />
+						</multiGunState>
+					</_GUN_NAME_>
+				</secondaryGuns>
 				<emblemSlots>
 					<player>
 						<rayStart />

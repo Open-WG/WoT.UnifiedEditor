@@ -77,6 +77,14 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -131,19 +139,6 @@
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_end.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_start.eff </fn_effect_bin>
-
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_30_shells.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/fep_qfg/fep_qfg_shot_30_shells.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_30_shells_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/fep_qfg/fep_qfg_shot_30_shells_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_60_shells.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/fep_qfg/fep_qfg_shot_60_shells.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_60_shells_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/fep_qfg/fep_qfg_shot_60_shells_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_90_overheat.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/fep_qfg/fep_qfg_shot_90_overheat.vfx </fn_effect_bin>
-		<preloadVisual>particles/Tank/fep_qfg/guns/shell.visual</preloadVisual>
-		
 		<fn_effect_bin>	particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -286,44 +281,45 @@
 		<fn_effect_bin>	particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx </fn_effect_bin>
 		<fn_effect_bin>	particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_ground.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_ground_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_sand.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_sand_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_snow.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_snow_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_stone.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_stone_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50_water.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50_water_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_ground.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_ground_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_sand.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_sand_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_snow.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_snow_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_stone.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_stone_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50_water.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50_water_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_20.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_20_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_20_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx </fn_effect_bin>
+		<fn_effect_bin>	particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/Tank/destruction/bc_25t_extendedammo_explosion.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/destruction/bc_25t_extendedammo_explosion.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/idle_liquidfuel_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/idle_liquidfuel_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/idle_liquidfuel_small_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/idle_liquidfuel_small_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/start_liquidfuel_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/start_liquidfuel_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_empty_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/stop_liquidfuel_empty_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_switch_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/stop_liquidfuel_switch_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/fail_liquidfuel_switch_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/fail_liquidfuel_switch_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/exhaust/cs67_turbo.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo_start.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/exhaust/cs67_turbo_start.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo_stop.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_forward/PFX/Tank/exhaust/cs67_turbo_stop.vfx </fn_effect_bin>	
+		<preloadVisual> particles/Tank/mechanics/ion_engine_arc.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_arc_sparks.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_dots.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_flame.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_glow.visual</preloadVisual>	
+		<preloadVisual> particles/Tank/mechanics/ion_engine_glow_side.visual</preloadVisual>		
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -423,6 +419,15 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>	particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -481,19 +486,7 @@
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_end.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_start.eff </fn_effect_bin>
-
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_30_shells.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/fep_qfg/fep_qfg_shot_30_shells.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_30_shells_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/fep_qfg/fep_qfg_shot_30_shells_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_60_shells.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/fep_qfg/fep_qfg_shot_60_shells.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_60_shells_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/fep_qfg/fep_qfg_shot_60_shells_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/fep_qfg/guns/fep_qfg_shot_90_overheat.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/fep_qfg/fep_qfg_shot_90_overheat.vfx </fn_effect_bin>
-		<preloadVisual>particles/Tank/fep_qfg/guns/shell.visual</preloadVisual>
-
+		
 		<fn_effect_bin>	particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -645,59 +638,79 @@
 		<fn_effect_bin>	particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx </fn_effect_bin>
-
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_ground.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_ground_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_sand.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_sand_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_snow.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_snow_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_stone.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50mb_stone_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50_water.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/gw_50_water_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_20_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_end.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/Tank/auto_shoot/shots/shot_50mb_start.eff </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_ground.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_ground_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_sand.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_sand_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_snow.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_snow_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_stone.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_stone_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_water.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_water_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_20.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_20_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_ForceField.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_ForceField_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_20_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50_start.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx </fn_effect_bin>
-		<fn_effect_bin>	particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx </fn_effect_bin>
 		
+		<fn_effect_bin>	particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_def.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_97_WT_Electriccontainer/cus_97_wt_electriccontainer_close.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_beginning.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_beginning.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_on.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_on.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_fire.eff </fn_effect_bin>
+		<fn_effect_bin> particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_fire.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_engine.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_engine.vfx </fn_effect_bin>
+		
+		<fn_effect_bin>	particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.vfx </fn_effect_bin>
+
+		<preloadVisual> particles/gpu_mesh/mesh/metal_sheet_medium_02.visual </preloadVisual>
+		<fn_effect_bin>	particles/Tank/destruction/bc_25t_extendedammo_explosion.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/destruction/bc_25t_extendedammo_explosion.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/idle_liquidfuel_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/idle_liquidfuel_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/idle_liquidfuel_small_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/idle_liquidfuel_small_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/start_liquidfuel_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/start_liquidfuel_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_empty_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/stop_liquidfuel_empty_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_switch_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/stop_liquidfuel_switch_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/fail_liquidfuel_switch_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/fail_liquidfuel_switch_bz79.vfx </fn_effect_bin>
+
+		<fn_effect_bin>	particles/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.vfx </fn_effect_bin>
 		<fn_effect_bin>	particles/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.vfx </fn_effect_bin>
-		
+
 		<fn_effect_bin>	particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.vfx </fn_effect_bin>
-		
+
 		<fn_effect_bin>	particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.vfx </fn_effect_bin>
-		
+
 		<fn_effect_bin>	particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.eff </fn_effect_bin>
 		<fn_effect_bin>	particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.vfx </fn_effect_bin>
+
+		<preloadVisual> particles/Tank/mechanics/ion_engine_arc.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_arc_sparks.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_dots.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_flame.visual</preloadVisual>
+		<preloadVisual> particles/Tank/mechanics/ion_engine_glow.visual</preloadVisual>	
+		<preloadVisual> particles/Tank/mechanics/ion_engine_glow_side.visual</preloadVisual>		
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/exhaust/cs67_turbo.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo_start.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_start.vfx </fn_effect_bin>	
+		<fn_effect_bin>	particles/Tank/exhaust/cs67_turbo_stop.eff </fn_effect_bin>
+		<fn_effect_bin>	particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_stop.vfx </fn_effect_bin>	
 		
 	</deferred>
 </root>

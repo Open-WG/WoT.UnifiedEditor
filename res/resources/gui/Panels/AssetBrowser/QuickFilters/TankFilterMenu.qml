@@ -66,6 +66,7 @@ Menu {
 			ListElement {icon: "image://gui/level_08_icon"; filter: "$tank_level=8"}
 			ListElement {icon: "image://gui/level_09_icon"; filter: "$tank_level=9"}
 			ListElement {icon: "image://gui/level_10_icon"; filter: "$tank_level=10"}
+			ListElement {icon: "image://gui/level_11_icon"; filter: "$tank_level=11"}
 		}
 	}
 	MenuSeparator {}

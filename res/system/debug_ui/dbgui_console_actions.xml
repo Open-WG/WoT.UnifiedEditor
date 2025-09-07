@@ -3,8 +3,9 @@
 	<item label="Obtain all items" action="$obtainAll"/>
 	<item label="Obtain vehicle" action="$obtainVehicle" input="true" format="('%s')"/>
 	<item label="Set hangar" action="$hangar.setPath">
-		<param>('hangar_v3')</param>
+		<param>('hangar_v4')</param>
 		<param>('h33_comp7')</param>
+		<param>('hangar_personal_missions')</param>
 	</item>
 
 	<item label="Set money" action="$p.stats.setMoney">
@@ -60,6 +61,7 @@
 		<param>('japan:J27_O_I_120')</param>
 		<param>('uk:GB94_Centurion_Mk5-1_RAAC')</param>
 		<param>('ussr:R54_KV-5')</param>
+		<param>('Reset')</param>>
 	</item>
 
 	<item label="[Event Platform] markers" action="$p.">
@@ -86,7 +88,7 @@
 	</item>
 
 	<item label="Daily Quests">
-			<item label="Complete Quest" action="$p.stats.completeDailyQuest">
+			<item label="Complete regular quest" action="$p.stats.completeDailyQuest">
 				<param label="easy">("easy")</param>
 				<param label="medium">("medium")</param>
 				<param label="hard">("hard")</param>
@@ -99,7 +101,24 @@
 				<param label="bonus">("bonus")</param>
 			</item>
 			<item label="Reset Reroll" action="$p.stats.resetRerollTimeout()"/>
+			<item label="Complete premium quest" action="$p.stats.completePremiumDaily()"/>
 			<item label="Set Epic Reward Tokens" action="$p.stats.setEpicRewardTokens" input="true" format="(%s)"/>
+	</item>
+
+	<item label="Weekly Quests">
+		<item label="Reroll Weekly Quest By Id" action="$p.stats.rerollWeeklyQuestDev">
+			<param label="1">(1)</param>
+			<param label="2">(2)</param>
+			<param label="3">(3)</param>
+		</item>
+		<item label="Complete Weekly Quest By Id" action="$p.stats.completeWeeklyQuestDev">
+			<param label="1">(1)</param>
+			<param label="2">(2)</param>
+			<param label="3">(3)</param>
+		</item>
+		<item label="Reset Reroll Timeout" action="$p.stats.resetWeeklyQuestsRerollTimeout()"/>
+		<item label="Trigger New Week Notification" action="$p.stats.weeklyQuestsNewWeek()"/>
+		<item label="Reroll All Quests" action="$p.stats.weeklyQuestsRerollAll()"/>
 	</item>
 
 	<item label="PersonalReserves">
@@ -226,63 +245,24 @@
 		<item label="Remove Equipment Item" action="$p.removeEquipment" input="true" format="('%s')"/>
 	</item>
 
-	<item label="Competitive 7x7">
-		<item label="Show Meta view" action="from comp7.gui.development import showComp7MetaRootView; showComp7MetaRootView()"/>
-		<item label="Show NoVehicles screen" action="from comp7.gui.development import showComp7NoVehiclesScreen; showComp7NoVehiclesScreen()"/>
-		<item label="Show Intro screen" action="from comp7.gui.development import showComp7IntroScreen; showComp7IntroScreen()"/>
-		<item label="Show What's New screen" action="from comp7.gui.development import showComp7WhatsNewScreen; showComp7WhatsNewScreen()"/>
-		<item label="Show Season Statistics screen" action="from comp7.gui.development import showComp7SeasonStatisticsScreen; showComp7SeasonStatisticsScreen" input="true" format="('%s')"/>
-		<item label="Show Ranks Rewards screen" action="from comp7.gui.development import showComp7RanksRewardsScreen; showComp7RanksRewardsScreen">
-			<param label="Iron E">(65)</param>
-			<param label="Iron D">(64)</param>
-			<param label="Iron C">(63)</param>
-			<param label="Iron B">(62)</param>
-			<param label="Iron A">(61)</param>
-			<param label="Bronze E">(55)</param>
-			<param label="Bronze D">(54)</param>
-			<param label="Bronze C">(53)</param>
-			<param label="Bronze B">(52)</param>
-			<param label="Bronze A">(51)</param>
-			<param label="Silver E">(45)</param>
-			<param label="Silver D">(44)</param>
-			<param label="Silver C">(43)</param>
-			<param label="Silver B">(42)</param>
-			<param label="Silver A">(41)</param>
-			<param label="Gold E">(35)</param>
-			<param label="Gold D">(34)</param>
-			<param label="Gold C">(33)</param>
-			<param label="Gold B">(32)</param>
-			<param label="Gold A">(31)</param>
-			<param label="Champion">(21)</param>
-			<param label="Legend">(11)</param>
+	<item label="PersonalMission">
+		<item label="activate Personal Mission Season" action="$p.activatePersonalMissionsSeason">
+			<param label="Season 1 and 2">((0, 2,), lambda x, y:(x, y))</param>
+			<param label="Season 3">((4,), lambda x, y:(x, y))</param>
 		</item>
-		<item label="Show Tokens Rewards screen" action="from comp7.gui.development import showComp7TokensRewardsScreen; showComp7TokensRewardsScreen">
-			<!-- WARNING: String comparison, if more than 9 must 0 pad all! -->
-			<param label="1">('1')</param>
-			<param label="2">('2')</param>
-			<param label="3">('3')</param>
-			<param label="4">('4')</param>
-		</item>
-		<item label="Show Qualification Rewards screen" action="comp7.from gui.development import showComp7QualificationRewardsScreen; showComp7QualificationRewardsScreen">
-			<param label="Iron">([65])</param>
-			<param label="Bronze">([65, 55])</param>
-			<param label="Silver">([65, 55, 45])</param>
-			<param label="Gold">([65, 55, 45, 35])</param>
-		</item>
-		<item label="Show Yearly Rewards screen" action="from comp7.gui.development import showComp7YearlyRewardsScreen; showComp7YearlyRewardsScreen">
-			<param label="3">(0)</param>
-			<param label="6">(1)</param>
-			<param label="9">(2)</param>
-			<param label="12">(3)</param>
-			<param label="15">(4)</param>
-			<param label="18">(5)</param>
-		</item>
-		<item label="Show Yearly Rewards Selection screen" action="from comp7.gui.development import showComp7YearlyRewardsSelectionWindow; showComp7YearlyRewardsSelectionWindow" input="true" format="('%s')"/>
-		<item label="Show Weekly Rewards Selection screen" action="from comp7.gui.development import showComp7WeeklyQuestsRewardsSelectionWindow; showComp7WeeklyQuestsRewardsSelectionWindow" input="true" format="('%s')"/>
-		<item label="Show Rewards Selected view" action="from comp7.gui.development import showComp7SelectedRewardsWindow; showComp7SelectedRewardsWindow()"/>
-		<item label="Tooltips">
-			<item label="Show Weekly Quest Tooltip" action="from comp7.gui.development import showComp7WeeklyQuestTooltipWindow; showComp7WeeklyQuestTooltipWindow()"/>
-		</item>
+		<item label="get PM3 rewards" action="$getPersonalMissionQuestRewards(" input="true" format="'%s')"/>
+		<item label="complete Personal Mission with Additional" action="$p.stats.completePersonalMission(" input="true" format="%s, True)"/>
+		<item label="complete Personal Mission without Additional" action="$p.stats.completePersonalMission(" input="true" format="%s, False)"/>
+		<item label="complete Personal Mission range with Additional" action="$p.stats.completePersonalMissionRange(" input="true" format="'%s', True)"/>
+		<item label="complete Personal Mission range without Additional" action="$p.stats.completePersonalMissionRange(" input="true" format="'%s', False)"/>
+		<item label="add season 1 Free Award Lists" action="$p.stats.addFreeAwardLists(" input="true" format="%s, 1)"/>
+		<item label="add season 2 Free Award Lists" action="$p.stats.addFreeAwardLists(" input="true" format="%s, 2)"/>
+		<item label="draw season 1 Free Award Lists" action="$p.stats.drawFreeAwardLists(" input="true" format="%s, 1)"/>
+		<item label="draw season 2 Free Award Lists" action="$p.stats.drawFreeAwardLists(" input="true" format="%s, 2)"/>
+		<item label="add Tokens pm:points" action="$p.stats.addTokens('pm:points'," input="true" format="%s)"/>
+		<item label="add Tokens pm3:8" action="$p.stats.addTokens('pm3:8:points'," input="true" format="%s)"/>
+		<item label="add Tokens pm3:9" action="$p.stats.addTokens('pm3:9:points'," input="true" format="%s)"/>
+		<item label="add Tokens pm3:10" action="$p.stats.addTokens('pm3:10:points'," input="true" format="%s)"/>
 	</item>
 	<item label="Crew">
 		<item label="earn all skills" action="$earnAllSkills"/>

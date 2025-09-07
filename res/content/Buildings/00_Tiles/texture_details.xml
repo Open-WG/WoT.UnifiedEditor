@@ -1,0 +1,19 @@
+<root>
+	<rule  pattern=".*">
+		<category> buildingTiles </category>
+	</rule>
+	<rule pattern=".*\_AM.png$">
+		<format> DXT5 </format>
+		<paddingMode> DOWNSCALED_CENTERED_TILED </paddingMode>
+	</rule>
+
+	<rule pattern=".*\_GBMT.png$">
+		<format> DXT5 </format>
+		<paddingMode> DOWNSCALED_CENTERED_TILED </paddingMode>
+	</rule>
+
+	<rule pattern=".*\_MAO.png$">
+		<format> DXT1 </format>
+		<paddingMode> DOWNSCALED_CENTERED_TILED </paddingMode>
+	</rule>
+</root>

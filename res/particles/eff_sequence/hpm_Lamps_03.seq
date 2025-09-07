@@ -1,0 +1,71 @@
+<root>
+	<duration> 0.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> glow </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/volume_lights_01.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 -0.000001 -0.021702 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 4.000000 1.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> 01 - Default </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 0.890196 0.749020 0.247059 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> 01 - Default </identifier>
+			<property> lightMultipliers </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 100.000000 0.030000 0.700000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,3808 @@
+<root>
+	<hybrid_effect/>
+	<influx>
+		<dw_mode_lod_effect>
+			<dw_mode_lodeffect_mutable> 1 </dw_mode_lodeffect_mutable>
+		</dw_mode_lod_effect>
+	</influx>
+	<gpu>
+		<version> 2 </version>
+		<system>
+			<name> Smoke_ultra </name>
+			<maxParticles> 768 </maxParticles>
+			<emitter>
+				<material>
+					<shaderPath> shaders/gpu_particles/disk_s.fx </shaderPath>
+					<property>
+						<name> g_rotationParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1135869952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAngle </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAxis </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lifetime </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1094713344 </value>
+							<value> 1097859072 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 3212836864 </value>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomizeEpicenterPos </name>
+						<bytes> 12 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomizeEpicenterDir </name>
+						<bytes> 12 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1082130432 </value>
+							<value> 1084227584 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inertiaMultiplier </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_injectAlbedoColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_diskParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 3212836864 </value>
+							<value> 1065353216 </value>
+							<value> 3204448256 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_diskParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1082130432 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> doubleSided </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> srcBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 5 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> destBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 6 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> texAddressMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_stickToTerrain </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionModes </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+				</material>
+				<lods>
+					<lod>
+						<amount> 5 </amount>
+						<amountMax> 7 </amountMax>
+						<distance> 300.000000 </distance>
+					</lod>
+				</lods>
+				<fields>
+					<field>
+						<from> 9.000000 </from>
+						<to> 12.000000 </to>
+						<userData> 0.000000 </userData>
+						<fieldId> 6 </fieldId>
+					</field>
+				</fields>
+				<infiniteLifetime> true </infiniteLifetime>
+				<lifetime> 0.000000 </lifetime>
+				<lifetimeMax> 0.000000 </lifetimeMax>
+				<startDelay> 0.000000 </startDelay>
+				<startDelayMax> 0.000000 </startDelayMax>
+				<burstPeriod> 0.100000 </burstPeriod>
+				<burstPeriodMax> 0.250000 </burstPeriodMax>
+				<emissionCurve>
+					<name> Emission_rate </name>
+					<keys>
+						<key>
+							<value> 1.008900 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.011180 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.936025 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.674120 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.339337 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.374558 </time>
+						<time> 0.598057 </time>
+						<time> 0.848940 </time>
+						<time> 1.000000 </time>
+					</times>
+				</emissionCurve>
+			</emitter>
+			<behaviour>
+				<shaderPath> shaders/gpu_particles/basic_update_u.fx </shaderPath>
+				<property>
+					<name> g_forceFrom </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 3192704205 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_forceTo </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 3207803699 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_spiralParams </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 1073741824 </value>
+						<value> 1065353216 </value>
+						<value> 1084227584 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerationVariation </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_dragVariation </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1065353216 </value>
+						<value> 1073741824 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applyGravity </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applySpiral </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerate </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applyDrag </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useGravityTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useSpiralTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useAccelerationTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useDragTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useVelocityTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_gravityOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1082130432 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_spiralOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1084227584 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerationOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1086324736 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_dragOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1088421888 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_velocityOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1090519040 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> doubleSided </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> srcBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 5 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> destBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 6 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> texAddressMode </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+			</behaviour>
+			<behaviour>
+				<shaderPath> shaders/gpu_particles/noise_u.fx </shaderPath>
+				<property>
+					<name> g_noiseParameters0 </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1056964608 </value>
+						<value> 1073741824 </value>
+						<value> 1069547520 </value>
+						<value> 1069656572 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseParameters1 </name>
+					<bytes> 8 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseScrollSpeed </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1065353216 </value>
+						<value> 1065353216 </value>
+						<value> 1065353216 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_octaves </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useNoiseTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1093664768 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> doubleSided </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> srcBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 5 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> destBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 6 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> texAddressMode </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseBase </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseModification </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseApplication </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+			</behaviour>
+			<render>
+				<material>
+					<shaderPath> shaders/gpu_particles/render_billboards_r.fx </shaderPath>
+					<property>
+						<name> dynamicObject </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> applyOverlay </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1135869952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAngle </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAxis </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams2 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1056964608 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotate </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveFactor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeThreshold </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV1OffsetX </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV1OffsetY </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV2OffsetX </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV2OffsetY </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeColorIntensity </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_edgeGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_MultiplyBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_use2ndNoiseMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveMapScale </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveMapScaleUV2 </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_length </name>
+						<bytes> 8 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1032805417 </value>
+							<value> 1041865114 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbookParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_tintColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1059234467 </value>
+							<value> 1059234467 </value>
+							<value> 1059234467 </value>
+							<value> 1065353217 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_gloss </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1041865114 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_metallic </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1048576000 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_transmission </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1050253722 </value>
+							<value> 1055286886 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1058642330 </value>
+							<value> 1045220557 </value>
+							<value> 1082130432 </value>
+							<value> 1056964608 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams2 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1080033280 </value>
+							<value> 1084227584 </value>
+							<value> 1112014848 </value>
+							<value> 1084227584 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams3 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1058642330 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_fadeParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1028443341 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_fadeParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatIntensity </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1098907648 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColorLifetime </name>
+						<bytes> 8 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_motionVectorScale </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1018175685 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_absorption </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1056964608 </value>
+							<value> 1045220557 </value>
+							<value> 1075838976 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_tintRemap </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_long </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_alignWithDirection </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbook </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbookLoop </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomFrame </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_blendFrames </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_clusteredShading </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useGlossMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useMetallicMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useSizeTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLengthTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useAnimationLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useColorOpTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useSizeOverDistanceTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useHeatGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useTemperatureGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_sizeOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lengthOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_animationOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOpOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1077936128 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_sizeOverDistance </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1091567616 </value>
+							<value> 2147483648 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColorOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOverTemperature </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useDissolveCurve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1092616192 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_scaleOffsetPerParticleDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_additionalStageDissolveFactor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLifetimeForDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLifetimeUVOffsetForDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> doubleSided </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> srcBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 5 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> destBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 6 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> texAddressMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_animationProgressModes </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_ShadingMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<resource>
+						<name> g_AM </name>
+						<path> particles/content_deferred/PFX_textures/smoke.dds </path>
+					</resource>
+				</material>
+				<visuals/>
+			</render>
+			<flags> 536871985 </flags>
+			<qualityMask> 16 </qualityMask>
+			<curves>
+				<curve>
+					<name> g_sizeOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.892903 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.021110 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.382850 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.932330 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.399293 </time>
+						<time> 0.779152 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_lengthOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_animationOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_colorOpOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_gravityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.342000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.510000 </time>
+						<time> 0.812000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_spiralOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_accelerationOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_dragOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.034000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.518000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.279000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.476000 </time>
+						<time> 0.794000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_velocityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.994000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.010000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.897000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.634000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.204000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.488000 </time>
+						<time> 0.688000 </time>
+						<time> 0.867000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_sizeOverDistance </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_dissolveOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_noiseOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+			</curves>
+			<gradients>
+				<gradient>
+					<name> g_colorOverLifetime </name>
+					<colors>
+						<color>
+							<r> 0.807843 </r>
+							<g> 0.807843 </g>
+							<b> 0.807843 </b>
+							<a> 0.000000 </a>
+						</color>
+						<color>
+							<r> 0.564706 </r>
+							<g> 0.600000 </g>
+							<b> 0.639216 </b>
+							<a> 0.882353 </a>
+						</color>
+						<color>
+							<r> 0.372549 </r>
+							<g> 0.415686 </g>
+							<b> 0.447059 </b>
+							<a> 0.992157 </a>
+						</color>
+						<color>
+							<r> 0.717647 </r>
+							<g> 0.717647 </g>
+							<b> 0.717647 </b>
+							<a> 0.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.137019 </time>
+						<time> 0.862981 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+				<gradient>
+					<name> g_heatColorOverLifetime </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+				<gradient>
+					<name> g_colorOverTemperature </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+			</gradients>
+			<meshSampling>
+				<mesh/>
+				<meshSamplesCount> 0 </meshSamplesCount>
+				<material>
+					<shaderPath/>
+				</material>
+			</meshSampling>
+			<children/>
+		</system>
+		<system>
+			<name> GPU_smoke </name>
+			<maxParticles> 768 </maxParticles>
+			<emitter>
+				<material>
+					<shaderPath> shaders/gpu_particles/disk_s.fx </shaderPath>
+					<property>
+						<name> g_rotationParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1135869952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAngle </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAxis </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lifetime </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1094713344 </value>
+							<value> 1097859072 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 3212836864 </value>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomizeEpicenterPos </name>
+						<bytes> 12 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomizeEpicenterDir </name>
+						<bytes> 12 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1082130432 </value>
+							<value> 1084227584 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inertiaMultiplier </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_injectAlbedoColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_diskParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 3212836864 </value>
+							<value> 1065353216 </value>
+							<value> 3204448256 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_diskParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1082130432 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> doubleSided </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> srcBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 5 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> destBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 6 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> texAddressMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_stickToTerrain </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_directionModes </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+				</material>
+				<lods>
+					<lod>
+						<amount> 5 </amount>
+						<amountMax> 7 </amountMax>
+						<distance> 300.000000 </distance>
+					</lod>
+				</lods>
+				<fields>
+					<field>
+						<from> 9.000000 </from>
+						<to> 12.000000 </to>
+						<userData> 0.000000 </userData>
+						<fieldId> 6 </fieldId>
+					</field>
+				</fields>
+				<infiniteLifetime> true </infiniteLifetime>
+				<lifetime> 0.000000 </lifetime>
+				<lifetimeMax> 0.000000 </lifetimeMax>
+				<startDelay> 0.000000 </startDelay>
+				<startDelayMax> 0.000000 </startDelayMax>
+				<burstPeriod> 0.100000 </burstPeriod>
+				<burstPeriodMax> 0.250000 </burstPeriodMax>
+				<emissionCurve>
+					<name> Emission_rate </name>
+					<keys>
+						<key>
+							<value> 1.008900 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.011180 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.936025 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.674120 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.339337 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.374558 </time>
+						<time> 0.598057 </time>
+						<time> 0.848940 </time>
+						<time> 1.000000 </time>
+					</times>
+				</emissionCurve>
+			</emitter>
+			<behaviour>
+				<shaderPath> shaders/gpu_particles/basic_update_u.fx </shaderPath>
+				<property>
+					<name> g_forceFrom </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 3192704205 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_forceTo </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 3207803699 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_spiralParams </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 1073741824 </value>
+						<value> 1065353216 </value>
+						<value> 1084227584 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerationVariation </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_dragVariation </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1065353216 </value>
+						<value> 1073741824 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applyGravity </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applySpiral </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerate </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_applyDrag </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useGravityTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useSpiralTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useAccelerationTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useDragTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useVelocityTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_gravityOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1082130432 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_spiralOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1084227584 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_accelerationOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1086324736 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_dragOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1088421888 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_velocityOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1090519040 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> doubleSided </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> srcBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 5 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> destBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 6 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> texAddressMode </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+			</behaviour>
+			<behaviour>
+				<shaderPath> shaders/gpu_particles/noise_u.fx </shaderPath>
+				<property>
+					<name> g_noiseParameters0 </name>
+					<bytes> 16 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1056964608 </value>
+						<value> 1073741824 </value>
+						<value> 1069547520 </value>
+						<value> 1069656572 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseParameters1 </name>
+					<bytes> 8 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseScrollSpeed </name>
+					<bytes> 12 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1065353216 </value>
+						<value> 1065353216 </value>
+						<value> 1065353216 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_octaves </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_useNoiseTimeline </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseOverLifetime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1093664768 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> doubleSided </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> srcBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 5 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> destBlend </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 6 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> texAddressMode </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseBase </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseModification </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_noiseApplication </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 1 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+			</behaviour>
+			<render>
+				<material>
+					<shaderPath> shaders/gpu_particles/render_billboards_r.fx </shaderPath>
+					<property>
+						<name> dynamicObject </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> applyOverlay </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1135869952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAngle </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomAxis </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotationParams2 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1056964608 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_rotate </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveFactor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeThreshold </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV1OffsetX </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV1OffsetY </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV2OffsetX </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveUV2OffsetY </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveEdgeColorIntensity </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_edgeGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_MultiplyBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_use2ndNoiseMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveMapScale </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveMapScaleUV2 </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_length </name>
+						<bytes> 8 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1032805417 </value>
+							<value> 1041865114 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbookParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_tintColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1053872337 </value>
+							<value> 1055451369 </value>
+							<value> 1057655435 </value>
+							<value> 1065353217 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_gloss </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1041865114 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_metallic </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1048576000 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_transmission </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1050253722 </value>
+							<value> 1055286886 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1058642330 </value>
+							<value> 1045220557 </value>
+							<value> 1082130432 </value>
+							<value> 1056964608 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams2 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1080033280 </value>
+							<value> 1084227584 </value>
+							<value> 1112014848 </value>
+							<value> 1084227584 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingParams3 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1058642330 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_fadeParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1028443341 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_fadeParams1 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColor </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatIntensity </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1098907648 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColorLifetime </name>
+						<bytes> 8 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_motionVectorScale </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1018175685 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_absorption </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1056964608 </value>
+							<value> 1045220557 </value>
+							<value> 1075838976 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_tintRemap </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_long </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_alignWithDirection </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbook </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbookLoop </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_randomFrame </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_blendFrames </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_clusteredShading </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useGlossMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useMetallicMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useSizeTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLengthTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useAnimationLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useColorOpTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useSizeOverDistanceTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useHeatGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useTemperatureGradient </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_sizeOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lengthOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_animationOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOpOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1077936128 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_sizeOverDistance </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1091567616 </value>
+							<value> 2147483648 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatColorOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_colorOverTemperature </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1073741824 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useDissolveCurve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_dissolveOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1092616192 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_scaleOffsetPerParticleDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1036831949 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_additionalStageDissolveFactor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLifetimeForDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLifetimeUVOffsetForDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> doubleSided </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> srcBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 5 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> destBlend </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 6 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> texAddressMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_animationProgressModes </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_ShadingMode </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<resource>
+						<name> g_AM </name>
+						<path> particles/content_deferred/PFX_textures/smoke.dds </path>
+					</resource>
+				</material>
+				<visuals/>
+			</render>
+			<flags> 536871985 </flags>
+			<qualityMask> 12 </qualityMask>
+			<curves>
+				<curve>
+					<name> g_sizeOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.892903 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.021110 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.382850 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.932330 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.399293 </time>
+						<time> 0.779152 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_lengthOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_animationOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_colorOpOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_gravityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.342000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.510000 </time>
+						<time> 0.812000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_spiralOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_accelerationOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_dragOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.034000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.518000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.279000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.476000 </time>
+						<time> 0.794000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_velocityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.994000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.010000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.897000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.634000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 0.204000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.488000 </time>
+						<time> 0.688000 </time>
+						<time> 0.867000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_sizeOverDistance </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_dissolveOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_noiseOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+			</curves>
+			<gradients>
+				<gradient>
+					<name> g_colorOverLifetime </name>
+					<colors>
+						<color>
+							<r> 0.807843 </r>
+							<g> 0.807843 </g>
+							<b> 0.807843 </b>
+							<a> 0.000000 </a>
+						</color>
+						<color>
+							<r> 0.564706 </r>
+							<g> 0.600000 </g>
+							<b> 0.639216 </b>
+							<a> 0.882353 </a>
+						</color>
+						<color>
+							<r> 0.372549 </r>
+							<g> 0.415686 </g>
+							<b> 0.447059 </b>
+							<a> 0.992157 </a>
+						</color>
+						<color>
+							<r> 0.717647 </r>
+							<g> 0.717647 </g>
+							<b> 0.717647 </b>
+							<a> 0.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 0.137019 </time>
+						<time> 0.862981 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+				<gradient>
+					<name> g_heatColorOverLifetime </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+				<gradient>
+					<name> g_colorOverTemperature </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
+			</gradients>
+			<meshSampling>
+				<mesh/>
+				<meshSamplesCount> 0 </meshSamplesCount>
+				<material>
+					<shaderPath/>
+				</material>
+			</meshSampling>
+			<children/>
+		</system>
+		<dependents/>
+	</gpu>
+</root>

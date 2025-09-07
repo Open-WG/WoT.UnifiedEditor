@@ -1,0 +1,109 @@
+<root>
+	<duration> 1.500000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model 0 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle_02.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> lambert9 </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.517647 0.831373 1.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 3.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 6.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.166667 </startTime>
+				<value> 0.517647 0.831373 1.000000 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 6.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.517647 0.831373 1.000000 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 -2.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.517647 0.831373 1.000000 0.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 -2.000000 </inTangent>
+				<outTangent> 0.000000 -0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Particle 0 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.542869 0.332054 -0.289799 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 2.000000 </inTangent>
+				<outTangent> 6.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.166667 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 6.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -2.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -59,6 +59,18 @@
 				</pixie>
 			</effects>
 		</strv_change_hull_ground>
+		<strv_change_hull_blacksand>
+			<timeline>
+				<impactEnd> 0.7 </impactEnd>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey> start </startKey>
+					<file> particles/Tank/strv_change_hull_blacksand.eff </file>
+					<force> 1 </force>
+				</pixie>
+			</effects>
+		</strv_change_hull_blacksand>
 		<strv_change_hull_oil>
 			<timeline>
 				<impactEnd> 0.7 </impactEnd>
@@ -346,6 +358,15 @@
 							<selector type="effect" name="particles/Tank/movement/oil/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
 							<selector type="effect" name="particles/Tank/movement/oil/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
 							<selector type="effect" name="particles/Tank/movement/oil/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_hullAngle6" type="union"> </selector>
+					</selector>
+					<selector key="blacksand" type="range" variable="_hullAngle">
+						<selector key="_hullAngle1" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
 						</selector>
 						<selector key="_hullAngle6" type="union"> </selector>
 					</selector>
@@ -689,6 +710,59 @@
 						</selector>
 					</selector>
 				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union"> </selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="-2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union"> </selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd1.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd1.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+						<selector key="2" type="range" variable="_rotSpeed">
+							<selector key="-10" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCcw" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CCW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="-0.1" type="union"> </selector>
+							<selector key="0.1" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd2.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd2.eff" effectHP="_TrackRear"/>
+							</selector>
+							<selector key="_rotSpeedMaxCw" type="union">
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackFront"/>
+								<selector type="effect" name="particles/Tank/movement/blacksand/turn_{0}_CW_spd3.eff" effectHP="_TrackRear"/>
+							</selector>
+						</selector>
+					</selector>
+				</selector>
 			</selector>
 		</template>
 		<!--Slip effects -->
@@ -780,6 +854,19 @@
 						</selector>
 					</selector>
 				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
 			</selector>
 		</template>
 		<template name="SlipR">
@@ -866,6 +953,19 @@
 						</selector>
 						<selector key="_groundSlipMaxStart" type="union">
 							<selector type="effect" name="particles/Tank/movement/oil/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
+						</selector>
+					</selector>
+				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_delta">
+						<selector key="_groundSlipMinStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd1.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMedStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd2.eff" effectHP="_TrackRear"/>
+						</selector>
+						<selector key="_groundSlipMaxStart" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/slip_{0}_trackrear_spd3.eff" effectHP="_TrackRear"/>
 						</selector>
 					</selector>
 				</selector>
@@ -1143,6 +1243,42 @@
 						</selector>
 					</selector>
 				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						1
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union"> </selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
 			</selector>
 		</template>
 		<!--Trail effects -->
@@ -1405,6 +1541,41 @@
 							<selector type="effect" name="particles/Tank/movement/oil/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
 							<selector type="effect" name="particles/Tank/movement/oil/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
 							<selector type="effect" name="particles/Tank/movement/oil/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union"> </selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
 						</selector>
 					</selector>
 				</selector>
@@ -1736,6 +1907,41 @@
 						</selector>
 					</selector>
 				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union"> </selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
 			</selector>
 		</template>
 		<template name="Slip_L_NPC">
@@ -2013,6 +2219,41 @@
 						</selector>
 					</selector>
 				</selector>
+				<selector key="blacksand" type="discrete" variable="_direction">
+					<selector key="_const1" type="range" variable="_speed">
+						<selector key="-500" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="-1" type="union"> </selector>
+						<selector key="1" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd1.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd1.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd1.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="5" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd2.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd2.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd2.eff" effectHP="_TrackUpFront"/>
+						</selector>
+						<selector key="9" type="union">
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_spd3.eff" effectHP="_TrackRear"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_spd3.eff" effectHP="_TrackFront"/>
+							<selector type="effect" name="particles/Tank/movement/blacksand/trail_{0}_front_up_spd3.eff" effectHP="_TrackUpFront"/>
+						</selector>
+					</selector>
+				</selector>
 			</selector>
 		</template>
 		<template name="ChassisOneDirEffectsSet">
@@ -2218,6 +2459,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_dust_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
 					<selector key="0.74" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
@@ -2230,6 +2472,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_dust_{0}_spd2.eff" effectHP="_Node"/>
 					</selector>
 				</selector>
 			</selector>
@@ -2248,6 +2491,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
 					<selector key="0.72" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
@@ -2260,6 +2504,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 					</selector>
 				</selector>
 			</selector>
@@ -2278,6 +2523,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_solid_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
 					<selector key="0.72" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
@@ -2290,6 +2536,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_solid_{0}_spd2.eff" effectHP="_Node"/>
 					</selector>
 				</selector>
 			</selector>
@@ -2308,6 +2555,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_finish_{0}_spd1.eff" effectHP="_Node"/>
 					</selector>
 					<selector key="0.76" type="matkind" variable="_matkind">
 						<selector key="sand" type="effect" name="particles/Tank/movement/sand/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
@@ -2320,6 +2568,7 @@
 						</selector>
 						<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
 						<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
+						<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheeltrail_finish_{0}_spd2.eff" effectHP="_Node"/>
 					</selector>
 				</selector>
 			</selector>
@@ -2333,6 +2582,7 @@
 					<selector key="stone" type="effect" name="particles/Tank/movement/stone/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
 					<selector key="dirt" type="effect" name="particles/Tank/movement/dirt/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
 					<selector key="oil" type="effect" name="particles/Tank/movement/oil/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
+					<selector key="blacksand" type="effect" name="particles/Tank/movement/blacksand/wheelslip_{0}_spd1.eff" effectHP="_Node"/>
 				</selector>
 			</selector>
 		</template>
@@ -2814,6 +3064,7 @@
 						<selector key="water" type="effectList" name="strv_change_hull_water" effectHP="chassis"/>
 						<selector key="dirt" type="effectList" name="strv_change_hull_dirt" effectHP="chassis"/>
 						<selector key="oil" type="effectList" name="strv_change_hull_oil" effectHP="chassis"/>
+						<selector key="blacksand" type="effectList" name="strv_change_hull_blacksand" effectHP="chassis"/>
 					</selector>
 				</selector>
 			</selector>
