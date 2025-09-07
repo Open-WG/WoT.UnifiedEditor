@@ -1,0 +1,196 @@
+<root>
+	<duration> 5.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> HorseShoe </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_idle.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> 0.000000 0.008000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.008000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.500000 </startTime>
+				<value> 0.000000 0.510000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> -0.000000 -0.008000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.008000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 180.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 180.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> clover </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> content/3D_Customization/Cus_31_SP_Horseshoe/normal/lod0/Cus_31_SP_Horseshoe_02.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> 0.000000 0.008000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.008000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.500000 </startTime>
+				<value> 0.000000 0.510000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> -0.000000 -0.008000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.008000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 180.000000 0.000000 </value>
+				<inTangent> 0.000000 72.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 72.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 540.000000 0.000000 </value>
+				<inTangent> -0.000000 72.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 72.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> base_glow </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_01_glow.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 180.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> clover_glow </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Clover_01_glow.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> 0.000000 0.008000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.008000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.500000 </startTime>
+				<value> 0.000000 0.510000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 0.490000 0.000000 </value>
+				<inTangent> -0.000000 -0.008000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.008000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 72.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 72.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 360.000000 0.000000 </value>
+				<inTangent> -0.000000 72.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 72.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

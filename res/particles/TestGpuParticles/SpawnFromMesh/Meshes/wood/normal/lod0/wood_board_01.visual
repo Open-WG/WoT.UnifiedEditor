@@ -1,0 +1,92 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> Material #104 </identifier>
+					<fx> shaders/gpu_particles/gpu_particle_pbs_ext.fx </fx>
+					<collisionFlags> 0 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<property> diffuseMap
+						<Texture> particles/mesh_particles/tex/wood_am.dds </Texture>
+					</property>
+					<property> g_randomAngle
+						<Bool> true </Bool>
+					</property>
+					<property> g_randomAxis
+						<Bool> true </Bool>
+					</property>
+					<property> g_rotationParams2
+						<Vector4> 1.000000 4.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> g_useDitherOverLifetime
+						<Bool> true </Bool>
+					</property>
+					<property> g_rotationParams1
+						<Vector4> 0.000000 360.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> ditherTestEnable
+						<Bool> true </Bool>
+					</property>
+					<property> dynamicObject
+						<Bool> true </Bool>
+					</property>
+					<property> g_applyScreenSpaceMorphing
+						<Bool> false </Bool>
+					</property>
+					<property> metallicGlossMap
+						<Texture> particles/TestGpuParticles/SpawnFromMesh/Meshes/wood/MG.dds </Texture>
+					</property>
+					<property> normalMap
+						<Texture> particles/TestGpuParticles/SpawnFromMesh/Meshes/wood/normal.dds </Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.077182 -0.026753 -0.781545 </min>
+		<max> 0.077182 0.026753 0.781545 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 17 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> true </allowScale>
+			<bumpMapped> true </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<unitScale> 0.100000 </unitScale>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> true </copyExternalTextures>
+			<copyTexturesTo/>
+			<textureOverwriteOption> 2 </textureOverwriteOption>
+			<debug> false </debug>
+		</settings>
+	</metaData>
+</root>

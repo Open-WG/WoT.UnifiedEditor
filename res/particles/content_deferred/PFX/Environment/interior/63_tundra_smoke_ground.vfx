@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -66,8 +66,8 @@
 				<ps_emitter_ext_mode_accept_tint> 0 </ps_emitter_ext_mode_accept_tint>
 			</dw_ext_mode>
 			<i_RT_shader_num> -1 </i_RT_shader_num>
-			<emitter.f_life_min> 50000.000000 </emitter.f_life_min>
-			<emitter.f_life_max> 50000.000000 </emitter.f_life_max>
+			<emitter.f_life_min> 6000.000000 </emitter.f_life_min>
+			<emitter.f_life_max> 6000.000000 </emitter.f_life_max>
 			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.500000 0.000000 </emitter.fa_start_pos>
@@ -82,9 +82,9 @@
 			<f_strt_angle_speed_max> 0.087266 </f_strt_angle_speed_max>
 			<f_tangent_speed_min> -0.500000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.500000 </f_tangent_speed_max>
-			<f_fire_smoke> 0.000000 </f_fire_smoke>
+			<f_fire_smoke> 1.000000 </f_fire_smoke>
 			<f_wind_weight> 0.000100 </f_wind_weight>
-			<f_wind_weight_max> 0.001000 </f_wind_weight_max>
+			<f_wind_weight_max> 0.015000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
 			<f_Espeed_time> 0.000000 </f_Espeed_time>
 			<f_Espeed_mult> 1.000000 </f_Espeed_mult>
@@ -137,9 +137,7 @@
 				<time> 0.000000 </time>
 				<value_RGBA> 135.000000 135.000000 135.000000 0.000000 </value_RGBA>
 				<time> 0.243000 </time>
-				<value_RGBA> 186.000000 186.000000 186.000000 0.317647 </value_RGBA>
-				<time> 0.736000 </time>
-				<value_RGBA> 183.000000 183.000000 183.000000 0.317647 </value_RGBA>
+				<value_RGBA> 186.000000 186.000000 186.000000 0.301961 </value_RGBA>
 				<time> 1.000000 </time>
 				<value_RGBA> 130.000000 130.000000 130.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
@@ -172,7 +170,7 @@
 			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
 			<particle_ex.f_soft_factor> 3.000000 </particle_ex.f_soft_factor>
 			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
-			<particle_ex.deffered_color_mult> 0.500000 </particle_ex.deffered_color_mult>
+			<particle_ex.deffered_color_mult> 0.600000 </particle_ex.deffered_color_mult>
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
@@ -215,20 +213,20 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_deferred\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
-			<lighting_params.f_diffuse_light_multiplier> 0.100000 </lighting_params.f_diffuse_light_multiplier>
-			<lighting_params.f_indirect_light_multiplier> 0.100000 </lighting_params.f_indirect_light_multiplier>
-			<lighting_params.f_scattered_light_multiplier> 0.100000 </lighting_params.f_scattered_light_multiplier>
-			<lighting_params.f_constant_scattered_light_ammount> 0.500000 </lighting_params.f_constant_scattered_light_ammount>
-			<lighting_params.f_self_shadow_power> 0.000000 </lighting_params.f_self_shadow_power>
-			<lighting_params.f_halo_alpha_threshold> 0.000000 </lighting_params.f_halo_alpha_threshold>
-			<lighting_params.f_halo_multiplier> 0.000000 </lighting_params.f_halo_multiplier>
-			<lighting_params.f_halo_shadow_power> 0.000000 </lighting_params.f_halo_shadow_power>
-			<lighting_params.f_halo_fade_power> 0.000000 </lighting_params.f_halo_fade_power>
+			<lighting_params.f_diffuse_light_multiplier> 0.400000 </lighting_params.f_diffuse_light_multiplier>
+			<lighting_params.f_indirect_light_multiplier> 1.000000 </lighting_params.f_indirect_light_multiplier>
+			<lighting_params.f_scattered_light_multiplier> 0.600000 </lighting_params.f_scattered_light_multiplier>
+			<lighting_params.f_constant_scattered_light_ammount> 0.200000 </lighting_params.f_constant_scattered_light_ammount>
+			<lighting_params.f_self_shadow_power> 4.000000 </lighting_params.f_self_shadow_power>
+			<lighting_params.f_halo_alpha_threshold> 0.500000 </lighting_params.f_halo_alpha_threshold>
+			<lighting_params.f_halo_multiplier> 3.000000 </lighting_params.f_halo_multiplier>
+			<lighting_params.f_halo_shadow_power> 5.000000 </lighting_params.f_halo_shadow_power>
+			<lighting_params.f_halo_fade_power> 30.000000 </lighting_params.f_halo_fade_power>
 			<lighting_params.f_self_illum> 0.000000 </lighting_params.f_self_illum>
-			<lighting_params.f_normal_generation_offset> 0.000000 </lighting_params.f_normal_generation_offset>
-			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
+			<lighting_params.f_normal_generation_offset> 0.600000 </lighting_params.f_normal_generation_offset>
+			<lighting_params.f_tessellation_factor> 1.000000 </lighting_params.f_tessellation_factor>
 		</emitter>
 	</lod>
 </root>

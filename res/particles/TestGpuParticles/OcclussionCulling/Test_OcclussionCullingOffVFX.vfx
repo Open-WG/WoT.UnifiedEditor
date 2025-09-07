@@ -6,7 +6,7 @@
 		</dw_mode_lod_effect>
 	</influx>
 	<gpu>
-		<version> 1 </version>
+		<version> 2 </version>
 		<system>
 			<name> Occlusion Culling OFF </name>
 			<maxParticles> 128000 </maxParticles>
@@ -69,17 +69,6 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_stickToTerrain </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
 						<name> g_directionParams0 </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
@@ -119,6 +108,28 @@
 						<field_data>
 							<value> 1092616192 </value>
 							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inertiaMultiplier </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_injectAlbedoColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -190,6 +201,17 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_stickToTerrain </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_positioningModes </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
@@ -222,7 +244,7 @@
 				<fields>
 					<field>
 						<from> 0.126296 </from>
-						<to> 0.534982 </to>
+						<to> 0.544815 </to>
 						<userData> 0.000000 </userData>
 						<fieldId> 6 </fieldId>
 					</field>
@@ -693,6 +715,13 @@
 				</curve>
 			</curves>
 			<gradients/>
+			<meshSampling>
+				<mesh/>
+				<meshSamplesCount> 0 </meshSamplesCount>
+				<material>
+					<shaderPath/>
+				</material>
+			</meshSampling>
 			<children/>
 		</system>
 		<dependents/>

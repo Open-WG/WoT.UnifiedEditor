@@ -1,0 +1,93 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> Material #146 </identifier>
+					<fx> shaders/custom/hw_volumetric_effect_freshnel_invert.fx </fx>
+					<property> diffuseMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/boss_aura.dds </Texture>
+					</property>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> doubleSided
+						<Bool> true </Bool>
+					</property>
+					<property> diffuseUVSpeedAlphaOffset
+						<Vector4> 0.005000 0.080000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> distortion_UV_Speed_Amount
+						<Vector4> 0.010000 0.140000 0.300000 0.400000 </Vector4>
+					</property>
+					<property> distortionMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/SandStorm_03_distortion.dds </Texture>
+					</property>
+					<property> lightMultipliers
+						<Vector4> 7.000000 0.030000 5.000000 0.000000 </Vector4>
+					</property>
+					<property> softFactor
+						<Float> 1.200000 </Float>
+					</property>
+					<property> alphaFadeAmountFresnel
+						<Vector4> 1.000000 1.500000 1.000000 -0.010000 </Vector4>
+					</property>
+					<property> alphaFreshnelEnable
+						<Bool> true </Bool>
+					</property>
+					<property> g_snapMaxHeight
+						<Float> 4.000000 </Float>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -50.000000 -12.340407 -50.000000 </min>
+		<max> 50.000000 19.791813 50.000000 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 17 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> false </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<unitScale> 0.100000 </unitScale>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> false </copyExternalTextures>
+			<copyTexturesTo/>
+			<textureOverwriteOption> 2 </textureOverwriteOption>
+			<debug> false </debug>
+		</settings>
+	</metaData>
+</root>

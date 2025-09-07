@@ -162,7 +162,12 @@ Menu {
 		title: "Help"
 
 		Details.ActionMenuItem {
-			source: context.action("getHelp")
+			source: context.action("ueHome")
+			visible: !context.isLite
+		}
+
+		Details.ActionMenuItem {
+			source: context.action("ueDoc")
 			visible: !context.isLite
 		}
 

@@ -1,0 +1,399 @@
+<root>
+	<duration> 15.000001 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> small_cityshot_01 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/environment/halloween/hw23_battleshot_small.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -163.323532 7.016039 14.305908 </value>
+				<inTangent> -0.000153 14.967059 -0.000000 </inTangent>
+				<outTangent> -0.000153 14.967059 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.000000 </inTangent>
+				<outTangent> -2.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.100000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 13.100001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Big_cityshot_01 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/environment/halloween/hw23_battleshot_big.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -136.423630 2.000000 -68.066345 </value>
+				<inTangent> -0.000203 1.788076 10.795898 </inTangent>
+				<outTangent> -0.000203 1.788076 10.795898 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.700000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 14.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 14.200001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> small_cityshot_02 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/environment/halloween/hw23_battleshot_small.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 102.571098 5.000000 -115.441406 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.200000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.333333 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 10.500001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.000001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.200001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Big_cityshot_02 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/environment/halloween/hw23_battleshot_big.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 250.109497 5.000000 66.763306 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 8.500000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 2 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> small_cityshot_03 </name>
+		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/environment/halloween/hw23_battleshot_small.eff </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -78.073669 -6.376160 -232.431152 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> emission </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 2.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.500000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 2.000000 </inTangent>
+				<outTangent> -2.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -2.000000 </inTangent>
+				<outTangent> 0.480000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.083334 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.480000 </inTangent>
+				<outTangent> -3.000003 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.416667 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -3.000003 </inTangent>
+				<outTangent> 0.179104 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.000000 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 0.179104 </inTangent>
+				<outTangent> -1.999996 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.500001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -1.999996 </inTangent>
+				<outTangent> -12.000046 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 14.250001 </startTime>
+				<value> 1.000000 </value>
+				<inTangent> 3.106127 </inTangent>
+				<outTangent> 3.106127 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 14.750001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.720209 </inTangent>
+				<outTangent> -0.720209 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000001 </startTime>
+				<value> 0.000000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 514 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

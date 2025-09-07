@@ -15,9 +15,13 @@
 
         <Sensor/>
     </Simulation>
-    <PostHierarchy>
-        <postHierarchyUpdate/>
-        <postHierarchyUpdateFinish/>
-    </PostHierarchy>
-    <Finalize/>
+    <PostTick>
+        <postTickUpdate/>
+        <postTickUpdateFinish/>
+    </PostTick>
+    <Finalize>
+        <preFinalize>
+            <before> true </before>
+        </preFinalize>
+    </Finalize>
 </root>

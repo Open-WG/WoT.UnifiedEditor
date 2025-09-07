@@ -1,0 +1,88 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> s_nd0 </identifier>
+					<fx> shaders/custom/emissive.fx </fx>
+					<collisionFlags> 255 </collisionFlags>
+					<materialKind> 112 </materialKind>
+					<property> emissiveTexture
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds </Texture>
+					</property>
+					<property> g_coldColor
+						<Vector4> 1.000000 0.980392 0.760784 1.000000 </Vector4>
+					</property>
+					<property> g_emissiveParams
+						<Vector4> 1.000000 3.000000 0.250000 1.000000 </Vector4>
+					</property>
+					<property> g_hotColor
+						<Vector4> 1.000000 0.450980 0.000000 1.000000 </Vector4>
+					</property>
+					<property> g_maskFromTex
+						<Bool> true </Bool>
+					</property>
+					<property> phaseTexture
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Masks/udes_mask_01.dds </Texture>
+					</property>
+					<property> srcBlend
+						<Int> 9 </Int>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.234194 0.251173 -0.077791 </min>
+		<max> 0.234194 0.801289 0.039179 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 130 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> false </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> true </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> true </copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

@@ -1,0 +1,34 @@
+<root>
+	<duration> 15.033334 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model 0 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+			<dummyModel> true </dummyModel>
+		</editorOnly>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 15.033334 </duration>
+				<value> particles/eff_sequence/halloween/volot/volot_idle_full.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -55,6 +55,9 @@
 			<trophyUpgradedAdditionalInvisibilityDevice>
 				<invisibilityBonus/>
 			</trophyUpgradedAdditionalInvisibilityDevice>
+			<deluxeAdditionalInvisibilityDevice>
+				<invisibilityBonus />
+			</deluxeAdditionalInvisibilityDevice>
 		</optDevsOverrides>
 		<repairCost />
 		<xpFactor />
@@ -238,6 +241,11 @@
 							<preChargeIndication />
 							<chargeCancelTime />
 						</dualGun>
+						<twinGun>
+							<afterShotDelay />
+							<gunMarkerOffset />
+							<shootImpulse />
+						</twinGun>
 						<dualAccuracy>
 							<afterShotDispersionRadius />
 							<coolingDelay />
@@ -304,6 +312,7 @@
 			<_ANYTHING_ />
 		</radios>
 		<siege_mode>
+			<device/>
 			<switchOnTime/>
 			<switchOffTime/>
 			<engineDamageCoeff/>

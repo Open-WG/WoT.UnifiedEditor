@@ -1,0 +1,147 @@
+<root>
+	<duration> 3.333333 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> raven_01 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> content/Decor/hd_dec_UNI_006_Raven/normal/lod0/hd_dec_UNI_006_Raven_01_anim.model </resource>
+		<track>
+			<name> animation </name>
+			<type> animation </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 3.333333 </duration>
+				<resourceID> content/Decor/hd_dec_UNI_006_Raven/animation/hd_dec_UNI_006_Raven_01_anim_Glide.fbx </resourceID>
+				<clipName/>
+				<speed> 2.000000 </speed>
+				<layer> 0 </layer>
+				<blendIn> constant </blendIn>
+				<blendOut> constant </blendOut>
+				<blendInTime> 0.000000 </blendInTime>
+				<blendOutTime> 0.000000 </blendOutTime>
+				<clipStartTime> 0.000000 </clipStartTime>
+				<clipEndTime> 6.666667 </clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 6.755816 -25.836823 </value>
+				<inTangent> 0.003647 -2.963292 8.772972 </inTangent>
+				<outTangent> 0.003647 -2.963292 8.772972 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 0.007294 0.829233 -8.290878 </value>
+				<inTangent> -0.000912 -1.792608 7.495565 </inTangent>
+				<outTangent> -0.000912 -1.792608 7.495565 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.333333 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> -0.005470 -0.621924 6.218158 </inTangent>
+				<outTangent> -0.005470 -0.621924 6.218158 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -16.095369 180.000000 -0.000004 </value>
+				<inTangent> 7.595755 0.000000 -0.000001 </inTangent>
+				<outTangent> 7.595755 0.000000 -0.000001 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> -0.903859 180.000000 -0.000006 </value>
+				<inTangent> 4.136825 0.000000 0.000000 </inTangent>
+				<outTangent> 4.136825 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.333333 </startTime>
+				<value> 0.000000 180.000000 -0.000004 </value>
+				<inTangent> 0.677894 -0.000000 0.000002 </inTangent>
+				<outTangent> 0.677894 -0.000000 0.000002 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 1.000000 1.000000 1.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> 1.000000 1.000000 1.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.333333 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> style_cust_It35_raven_fade_in_01 </name>
+		<type> sound </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<track>
+			<name> attach </name>
+			<type> attach </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 3.300000 </duration>
+				<value> raven_01|Raven_Head01 </value>
+			</frame>
+		</track>
+		<track>
+			<name> style_cust_It35_raven_fade_in </name>
+			<type> sound </type>
+			<editorOnly>
+				<activated> true </activated>
+				<solo> false </solo>
+			</editorOnly>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 3.300000 </duration>
+				<sequenceSound> style_cust_It35_raven_fade_in </sequenceSound>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

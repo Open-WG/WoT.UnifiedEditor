@@ -16,8 +16,9 @@
 			<primitive> indices </primitive>
 			<primitiveGroup> 0
 				<material>
-					<identifier> lambert27 </identifier>
+					<identifier> hammer </identifier>
 					<fx> shaders/gpu_particles/gpu_particle_pbs_ext.fx </fx>
+					<collisionFlags> 0 </collisionFlags>
 					<materialKind> 0 </materialKind>
 					<collisionFlags> 0 </collisionFlags>
 					<property> diffuseMap
@@ -49,8 +50,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min> -1.037453 -0.000892 -0.306366 </min>
-		<max> 1.298076 5.309032 0.306366 </max>
+		<min> -1.037453 -3.000892 -0.306366 </min>
+		<max> 1.298076 2.309032 0.306366 </max>
 	</boundingBox>
 	<metaData>
 		<settings>

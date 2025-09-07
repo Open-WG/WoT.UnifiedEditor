@@ -1,0 +1,107 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> burn </identifier>
+					<fx> shaders/custom/emissive_playground.fx </fx>
+					<materialKind> 0 </materialKind>
+					<collisionFlags> 255 </collisionFlags>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> emissionMap
+						<Texture> particles/mesh_particles/tex/weakzone_lum.dds </Texture>
+					</property>
+					<property> g_chromaOffsetBlue
+						<Float> 0.430000 </Float>
+					</property>
+					<property> g_chromaOffsetGreen
+						<Float> 0.060000 </Float>
+					</property>
+					<property> g_deferredMult
+						<Float> 30.000000 </Float>
+					</property>
+					<property> g_offsetBlack
+						<Float> 0.140000 </Float>
+					</property>
+					<property> g_tint
+						<Vector4> 1.000000 0.325490 0.000000 1.000000 </Vector4>
+					</property>
+					<property> phaseMap
+						<Texture> particles/mesh_particles/tex/weakzone_ctrl.dds </Texture>
+					</property>
+					<property> speed
+						<Float> 0.600000 </Float>
+					</property>
+					<property> usePhaseMap
+						<Bool> true </Bool>
+					</property>
+					<property> useVersicolorMode
+						<Bool> true </Bool>
+					</property>
+					<property> waveLen
+						<Float> 3.000000 </Float>
+					</property>
+					<property> g_forwardMult
+						<Float> 5.000000 </Float>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> 3.315325 2.661884 4.100108 </min>
+		<max> 3.351241 3.800948 5.647020 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 17 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> true </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> true </copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

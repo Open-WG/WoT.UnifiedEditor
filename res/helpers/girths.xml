@@ -1,7 +1,7 @@
 <root>
 	<navmesh>
-		<!-- Note: radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
-		     Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
+		<!--Note: radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
+		Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
 		-->
 		<config>	
 			<girth> CTF_2.5 </girth>
@@ -46,7 +46,7 @@
 			<girth> CTF_5.5 </girth>
 			<height>	4.000000	</height>
 			<radius>	5.500000	</radius>
-            <halfWidth>	2.750000	</halfWidth>
+			<halfWidth>	2.750000	</halfWidth>
 			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
@@ -62,6 +62,19 @@
 			<halfWidth>	2.000000	</halfWidth>            
 			<narrowInnerThreshold>	4.000000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	4.000000	</narrowOuterThreshold>
+			<upSlope>	25.000000	</upSlope>
+			<downSlope>	25.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
+		<config>
+			<girth> Onboarding_5.0 </girth>
+			<height>	3.700000	</height>
+			<radius>	5.000000	</radius>
+			<halfWidth>	2.500000	</halfWidth>
+			<narrowInnerThreshold>	5.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.000000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
 			<downSlope>	25.000000	</downSlope>
 			<upClimb>	1.330000	</upClimb>
@@ -94,11 +107,77 @@
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
 		</config>
+		<config>
+			<girth> HELL_2.0 </girth>
+			<height>	2.40000	</height>
+			<radius>	2.00000	</radius>
+			<halfWidth>	1.00000	</halfWidth>
+			<narrowInnerThreshold>	2.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	2.000000	</narrowOuterThreshold>
+			<upSlope>	35.000000	</upSlope>
+			<downSlope>	35.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
+		<config>
+			<girth> HELL_3.0 </girth>
+			<height>	2.40000	</height>
+			<radius>	3.00000	</radius>
+			<halfWidth>	1.50000	</halfWidth>
+			<narrowInnerThreshold>	3.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	3.000000	</narrowOuterThreshold>
+			<upSlope>	35.000000	</upSlope>
+			<downSlope>	35.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
+		<config>
+			<girth> HELL_4.0 </girth>
+			<height>	5.900000	</height>
+			<radius>	4.000000	</radius>
+			<halfWidth>	2.000000	</halfWidth>
+			<narrowInnerThreshold>	4.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	4.000000	</narrowOuterThreshold>
+			<upSlope>	35.000000	</upSlope>
+			<downSlope>	35.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
+		<config>
+			<girth> HELL_5.5 </girth>
+			<height>	4.000000	</height>
+			<radius>	5.500000	</radius>
+			<halfWidth>	2.7500000	</halfWidth>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
+			<upSlope>	35.000000	</upSlope>
+			<downSlope>	35.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
+		<config>
+			<girth> HELLBOSS_11.5 </girth>
+			<height>	6.200000	</height>
+			<radius>	11.50000	</radius>
+			<halfWidth>	5.750000	</halfWidth>
+			<narrowInnerThreshold>	11.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	11.500000	</narrowOuterThreshold>
+			<upSlope>	40.000000	</upSlope>
+			<downSlope>	40.000000	</downSlope>
+			<upClimb>	2.5000000	</upClimb>
+			<downClimb>	2.5000000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+		</config>
 	</navmesh>
 	<covers>
 		<Default>
-			<gridStep> 6.0 </gridStep>
-			<gridDivisions> 3 </gridDivisions>
+			<gridChunkSize> 50.0 </gridChunkSize>
+			<gridCellSize> 2.0 </gridCellSize>
+			<maxHeightsPerGridCell> 5 </maxHeightsPerGridCell>
 			<minSampleAngle> 2.0 </minSampleAngle>
 			<coverValidationEnabled> true </coverValidationEnabled>
 			<coverValidationNumHeights> 3 </coverValidationNumHeights>
@@ -141,12 +220,14 @@
 			</visibilityRayCastParams>
 			<antiSpgRayCastFlatRadius> 150.0 </antiSpgRayCastFlatRadius>
 			<maxSampleHeightDifference> </maxSampleHeightDifference>
-			<minSpacingMulSq> 1.0 </minSpacingMulSq>
+			<minCoverSpacingMul> 1.0 </minCoverSpacingMul>
 			<minCoversToGenerate> 1 </minCoversToGenerate>
 			<agentDependent>
 				<default>
 					<shootingHeight>	2.000000	</shootingHeight>
 					<lowCoverHeight>	1.3	</lowCoverHeight>
+					<minCoverSpacing>	7.0	</minCoverSpacing>
+					<coverVerticalSpacingThreshold>	2.0 </coverVerticalSpacingThreshold>
 				</default>
 				<agent>
 					<girth> CTF_2.5 </girth>
@@ -261,7 +342,7 @@
 					<limitDistanceByCoverRadius> true </limitDistanceByCoverRadius>
 				</rule>
 			</shootingPoints>
-			<minSpacingMulSq> 9.0 </minSpacingMulSq>
+			<minCoverSpacingMul> 3.0 </minCoverSpacingMul>
 		</Slope>
 		<Low>
 			<coverValidationEnabled> false </coverValidationEnabled>
@@ -297,28 +378,11 @@
 				<arcOverlapRatioThreshold> 0.8 </arcOverlapRatioThreshold>
 				<maxResultsPerCluster> 4 </maxResultsPerCluster>
 			</similarityFilter>
+			<patchFilter>
+				<reconPathLengthEpsilon> 1.0 </reconPathLengthEpsilon>
+			</patchFilter>
 		</active>
 	</recon>
-	<visibilityGrid>
-		<saveDebugData> false </saveDebugData>
-		<gridSourceWidth> 50 </gridSourceWidth>
-		<gridSourceHeight> 50 </gridSourceHeight>
-		<gridTargetWidth> 50 </gridTargetWidth>
-		<gridTargetHeight> 50 </gridTargetHeight>
-		<startFinishHeight>
-			<min> 
-				<from> 1.0 </from>
-				<to> 1.0 </to>
-			</min>
-			<max> 
-				<from> 3.35 </from>
-				<to> 4.00 </to>
-			</max>
-		</startFinishHeight>
-		<samplesPerCell> 100 </samplesPerCell>
-		<searchRadiusFactor> 0.5 </searchRadiusFactor>
-		<searchRadiusStepFactor> 0.5 </searchRadiusStepFactor>
-	</visibilityGrid>
 	<navHeightMap>
 		<gridCellWidth> 4 </gridCellWidth>
 		<gridCellHeight> 4 </gridCellHeight>
@@ -387,4 +451,14 @@
 	<computeGrid>
 		<cellSize> 20.0 20.0 </cellSize>
 	</computeGrid>
+	<visibilityCache>
+		<sourceTraceHeights>
+			<height> 1.0 </height>
+			<height> 3.35 </height>
+		</sourceTraceHeights>
+		<topPitch>-0.25</topPitch>
+		<bottomPitch>0.30</bottomPitch>
+		<subsamplesYaw>3</subsamplesYaw>
+		<subsamplesPitch>3</subsamplesPitch>
+	</visibilityCache>
 </root>

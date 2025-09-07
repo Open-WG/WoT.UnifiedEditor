@@ -1,0 +1,261 @@
+<root>
+	<duration> 5.500000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Energy_field </name>
+		<type> model </type>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/volot/collecting/CollectingAura.model </resource>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.483333 </startTime>
+				<value> 1.200000 1.200000 1.200000 </value>
+				<inTangent> 0.179498 -0.008583 0.242662 </inTangent>
+				<outTangent> 0.179498 -0.008583 0.242662 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 1.500000 1.200000 1.500000 </value>
+				<inTangent> 0.012724 0.009267 -0.001660 </inTangent>
+				<outTangent> 0.012724 0.009267 -0.001660 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.500000 1.200000 1.500000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 1.500000 1.200000 1.500000 </value>
+				<inTangent> -0.002584 0.000000 0.004187 </inTangent>
+				<outTangent> -0.002584 0.000000 0.004187 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.500000 </startTime>
+				<value> 1.000000 1.200000 1.000000 </value>
+				<inTangent> -0.500000 -0.000000 -0.500000 </inTangent>
+				<outTangent> -0.500000 -0.000000 -0.500000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> prominence1 </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.483333 </startTime>
+				<value> 0.309804 0.000000 0.960784 0.000000 </value>
+				<inTangent> 0.637565 0.831964 0.052288 0.711163 </inTangent>
+				<outTangent> 0.637565 0.831964 0.052288 0.711163 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.483333 </startTime>
+				<value> 1.000000 1.000000 1.000000 1.000000 </value>
+				<inTangent> -0.023136 0.031214 0.007401 0.021573 </inTangent>
+				<outTangent> -0.023136 0.031214 0.007401 0.021573 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.500000 </startTime>
+				<value> 1.000000 1.000000 1.000000 1.000000 </value>
+				<inTangent> 0.007922 -0.019632 0.000000 -0.006612 </inTangent>
+				<outTangent> 0.007922 -0.019632 0.000000 -0.006612 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.500000 </startTime>
+				<value> 0.250980 0.000000 1.000000 0.000000 </value>
+				<inTangent> -0.749020 -1.000000 -0.000000 -1.000000 </inTangent>
+				<outTangent> -0.749020 -1.000000 -0.000000 -1.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Helix_01 </name>
+		<type> model </type>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/volot/collecting/Helix_enegrgy_01.model </resource>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.294477 1.100000 1.294477 </value>
+				<inTangent> -0.776203 -0.127928 -0.359459 </inTangent>
+				<outTangent> -0.776203 -0.127928 -0.359459 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.483333 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> 0.010342 0.001411 0.011088 </inTangent>
+				<outTangent> 0.010342 0.001411 0.011088 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> -0.020365 0.000000 -0.022492 </inTangent>
+				<outTangent> -0.020365 0.000000 -0.022492 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.500000 1.000000 0.500000 </value>
+				<inTangent> -0.726171 -0.000000 -0.500000 </inTangent>
+				<outTangent> -0.726171 -0.000000 -0.500000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> EnergyGather </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.145098 0.000000 1.000000 0.000000 </value>
+				<inTangent> 1.424837 1.666667 0.000000 1.626352 </inTangent>
+				<outTangent> 1.424837 1.666667 0.000000 1.626352 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.600000 </startTime>
+				<value> 1.000000 1.000000 1.000000 0.580000 </value>
+				<inTangent> 0.034429 0.013952 0.000000 0.000934 </inTangent>
+				<outTangent> 0.034429 0.013952 0.000000 0.000934 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 0.580000 </value>
+				<inTangent> -0.015796 0.003302 0.000000 0.017029 </inTangent>
+				<outTangent> -0.015796 0.003302 0.000000 0.017029 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.113725 0.000000 1.000000 0.000000 </value>
+				<inTangent> -1.323624 -1.647405 -0.000000 -1.050404 </inTangent>
+				<outTangent> -1.323624 -1.647405 -0.000000 -1.050404 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Energy_Streams </name>
+		<type> model </type>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/volot/collecting/Streams_enegrgy_01.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 11.000000 0.000000 </value>
+				<inTangent> 0.000000 7.548707 0.000000 </inTangent>
+				<outTangent> 0.000000 7.548707 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 0.000000 16.800673 0.000000 </value>
+				<inTangent> -0.000000 0.045358 -0.000000 </inTangent>
+				<outTangent> -0.000000 0.045358 -0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 0.000000 16.800673 0.000000 </value>
+				<inTangent> -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 3 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.700000 0.400000 0.700000 </value>
+				<inTangent> 0.200000 0.804748 0.468042 </inTangent>
+				<outTangent> 0.200000 0.804748 0.468042 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> 0.025278 0.025841 0.013278 </inTangent>
+				<outTangent> 0.025278 0.025841 0.013278 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 </value>
+				<inTangent> -0.012010 0.003979 0.004258 </inTangent>
+				<outTangent> -0.012010 0.003979 0.004258 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.900000 0.300000 0.900000 </value>
+				<inTangent> -0.100000 -0.700000 -0.100000 </inTangent>
+				<outTangent> -0.100000 -0.700000 -0.100000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> EnergyGather </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.274510 0.054902 1.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.628912 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.628912 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 1.000000 1.000000 1.000000 0.600000 </value>
+				<inTangent> 0.006605 0.006913 -0.000000 -0.012248 </inTangent>
+				<outTangent> 0.006605 0.006913 -0.000000 -0.012248 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 4.000000 </startTime>
+				<value> 1.000000 1.000000 1.000000 0.600000 </value>
+				<inTangent> -0.020487 0.011930 -0.001961 0.013713 </inTangent>
+				<outTangent> -0.020487 0.011930 -0.001961 0.013713 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.286275 0.000000 0.996078 0.000000 </value>
+				<inTangent> -0.713725 -1.511661 -0.003922 -0.600000 </inTangent>
+				<outTangent> -0.713725 -1.511661 -0.003922 -0.600000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

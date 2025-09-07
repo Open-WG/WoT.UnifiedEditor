@@ -1,0 +1,73 @@
+<root>
+	<duration> 23.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<resource/>
+		<track>
+			<name> rotation </name>
+			<type> quaternion </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 -0.044837 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 0.000000 -0.222088 0.975027 </value>
+				<inTangent> 0.000000 0.000000 0.001541 0.000346 </inTangent>
+				<outTangent> 0.000000 0.000000 0.001761 0.000401 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.000000 </startTime>
+				<value> 0.000000 0.000000 0.300706 0.953717 </value>
+				<inTangent> 0.000000 0.000000 0.002276 -0.000721 </inTangent>
+				<outTangent> 0.000000 0.000000 0.002056 -0.000647 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 23.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 1.000000 </value>
+				<inTangent> 0.000000 0.000000 -0.043671 0.000009 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 -5.132675 </inTangent>
+				<outTangent> 0.000000 0.000000 -5.132675 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 5.000000 </startTime>
+				<value> 0.000000 0.000000 -25.663376 </value>
+				<inTangent> 0.000000 0.000000 0.191089 </inTangent>
+				<outTangent> 0.000000 0.000000 0.191089 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 16.000000 </startTime>
+				<value> 0.000000 0.000000 35.000000 </value>
+				<inTangent> 0.000000 0.000000 0.257426 </inTangent>
+				<outTangent> 0.000000 0.000000 0.257426 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 23.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> -0.000000 -0.000000 -5.000000 </inTangent>
+				<outTangent> -0.000000 -0.000000 -5.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,167 @@
+<root>
+	<duration> 4.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> MGL </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/normal/lod0/machine_gun_L.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.192910 1.344440 -0.237220 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 4499.999512 </inTangent>
+				<outTangent> 0.000000 0.000000 1799.999878 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.200000 </startTime>
+				<value> 0.000000 0.000000 360.000000 </value>
+				<inTangent> -0.000000 -0.000000 1800.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 1800.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.000000 0.000000 1800.000000 </value>
+				<inTangent> -0.000000 -0.000000 1800.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 1800.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 0.000000 0.000000 3600.000000 </value>
+				<inTangent> -0.000000 -0.000000 1632.883911 </inTangent>
+				<outTangent> 0.000000 0.000000 1632.883911 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 0.000000 4320.000000 </value>
+				<inTangent> -0.000000 -0.000000 -48.245205 </inTangent>
+				<outTangent> -0.000000 -0.000000 -48.245205 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> MGR </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/normal/lod0/machine_gun_L.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.548910 1.344440 -0.237220 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 4499.999512 </inTangent>
+				<outTangent> 0.000000 0.000000 1799.999878 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.200000 </startTime>
+				<value> 0.000000 0.000000 360.000000 </value>
+				<inTangent> -0.000000 -0.000000 1800.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 1800.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.000000 </startTime>
+				<value> 0.000000 0.000000 1800.000000 </value>
+				<inTangent> -0.000000 -0.000000 1800.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 1800.000000 </outTangent>
+				<tangentMode> 257 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 0.000000 0.000000 3600.000000 </value>
+				<inTangent> -0.000000 -0.000000 1311.014404 </inTangent>
+				<outTangent> -0.000000 -0.000000 1311.014404 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.000000 </startTime>
+				<value> 0.000000 0.000000 4320.000000 </value>
+				<inTangent> -0.000000 -0.000000 237.563980 </inTangent>
+				<outTangent> -0.000000 -0.000000 237.563980 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> style_cust_minigun </name>
+		<type> sound </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.192910 1.344440 -0.237220 </value>
+				<inTangent> 2.893650 20.166599 -3.558300 </inTangent>
+				<outTangent> 2.893650 20.166599 -3.558300 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> Sound </name>
+			<type> sound </type>
+			<editorOnly>
+				<activated> true </activated>
+				<solo> false </solo>
+			</editorOnly>
+			<frame>
+				<startTime> 0.033333 </startTime>
+				<duration> 3.966667 </duration>
+				<sequenceSound> style_cust_gb_86_minigun </sequenceSound>
+				<type> play_till_end </type>
+				<fade> 0.000000 </fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

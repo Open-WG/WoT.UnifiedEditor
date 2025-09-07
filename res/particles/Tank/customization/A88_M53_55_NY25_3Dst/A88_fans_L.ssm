@@ -1,0 +1,34 @@
+<root>
+	<params>
+		<param>
+			<name> engine_start_trigger </name>
+			<type> trigger </type>
+		</param>
+	</params>
+	<node>
+		<name> wait_to start </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/A88_M53_55_NY25_3Dst/A88_fans_stop_L.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> idle </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<conditions>
+				<condition>
+					<type> trigger </type>
+					<name> engine_start_trigger </name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -412.000000 33.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> idle </name>
+		<type> sequence </type>
+		<resource> particles/Tank/customization/A88_M53_55_NY25_3Dst/A88_fans_idle_L.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<uiPosition> -290.000000 -102.000000 0.000000 </uiPosition>
+	</node>
+</root>

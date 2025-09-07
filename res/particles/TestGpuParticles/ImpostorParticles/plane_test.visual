@@ -1,0 +1,113 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> lambert1 </identifier>
+					<fx> shaders/gpu_particles/gpu_particle_imposter_pbs_ext.fx </fx>
+					<materialKind> 0 </materialKind>
+					<collisionFlags> 0 </collisionFlags>
+					<property> alphaReference
+						<Int> 175 </Int>
+					</property>
+					<property> diffuseMap
+						<Texture> particles/TestGpuParticles/ImpostorParticles/impostor_pig_bc.dds </Texture>
+					</property>
+					<property> g_framesXY
+						<Int> 24 </Int>
+					</property>
+					<property> g_parallax
+						<Float> 1.500000 </Float>
+					</property>
+					<property> g_useNormalPackDXT1
+						<Bool> true </Bool>
+					</property>
+					<property> normalMap
+						<Texture> particles/TestGpuParticles/ImpostorParticles/impostor_pig_NormalDepth_comp.dds </Texture>
+					</property>
+					<property> g_shadowBias
+						<Float> 0.000700 </Float>
+					</property>
+					<property> g_rotationParams1
+						<Vector4> -180.000000 180.000000 0.000000 0.000000 </Vector4>
+					</property>
+					<property> alphaTestEnable
+						<Bool> true </Bool>
+					</property>
+					<property> ditherTestEnable
+						<Bool> true </Bool>
+					</property>
+					<property> g_rotate
+						<Bool> true </Bool>
+					</property>
+					<property> g_randomAngle
+						<Bool> true </Bool>
+					</property>
+					<property> g_randomAxis
+						<Bool> true </Bool>
+					</property>
+					<property> g_enableConvertTolinear
+						<Bool> true </Bool>
+					</property>
+					<property> g_useDitherOverLifetime
+						<Bool> true </Bool>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.499924 -0.500000 -0.008726 </min>
+		<max> 0.499924 0.500000 0.008726 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 85 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> true </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<snapVertices> false </snapVertices>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> false </copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

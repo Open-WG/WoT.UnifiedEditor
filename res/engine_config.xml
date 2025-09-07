@@ -366,6 +366,8 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<dumpTimeout> 600000 </dumpTimeout>
 		<!-- Sets archive size threshold when the user alert appears. -->
 		<reportArchiveSizeThresholdKb> 1024 </reportArchiveSizeThresholdKb>
+		<!-- Keeps 5 last processed reports, instead of deletion, report will be renamed with a *.processed extension in client's Reports folder -->
+		<createSessionFiles> false </createSessionFiles>
 	</cat_config>
 	<debug>
 		<!-- if set to anything greater than zero, the client
@@ -615,6 +617,12 @@ customise the behaviour of the BigWorld Client Engine. -->
 				<bank>
 					<name> custom_styles.pck </name>
 				</bank>
+				<bank>
+					<name> custom_elements.bnk </name>
+				</bank>
+				<bank>
+					<name> custom_elements.pck </name>
+				</bank>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
 				<bank>
@@ -691,9 +699,11 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> comp_7.bnk </name>
+					<extension> comp7 </extension>
 				</bank>
 				<bank>
 					<name> comp_7.pck </name>
+					<extension> comp7 </extension>
 				</bank>
 				<bank>
 					<name> ev_fep_hangar.bnk </name>
@@ -712,6 +722,18 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> crew.bnk </name>
+				</bank>
+				<bank>
+					<name> lootbox_system.bnk </name>
+				</bank>
+				<bank>
+					<name> lootbox_system.pck </name>
+				</bank>
+				<bank>
+					<name> wdr.bnk </name>
+				</bank>
+				<bank>
+					<name> wdr.pck </name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>

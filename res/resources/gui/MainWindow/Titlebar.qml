@@ -105,6 +105,7 @@ ColumnLayout {
 		}
 
 		Button {
+			id: submitBugButton
 			anchors {
 				right: prefixText.left
 				top: parent.top
@@ -132,6 +133,40 @@ ColumnLayout {
 			onClicked: Qt.openUrlExternally("https://confluence.wargaming.net/x/GHGIfQ")
 
 			ToolTip.text: "Submit a Bug"
+			ToolTip.visible: hovered
+			ToolTip.delay: ControlsSettings.tooltipDelay
+			ToolTip.timeout: ControlsSettings.tooltipTimeout
+		}
+
+		Button {
+			anchors {
+				right: submitBugButton.left
+				top: parent.top
+				bottom: parent.bottom
+				rightMargin: 10
+			}
+
+			icon.source: context.isEventEnabled ? "image://gui/" + context.eventIcon("event_on") : "image://gui/" + context.eventIcon("event_off")
+			icon.color: "transparent"
+
+			icon.width: 20
+			icon.height: 20
+
+			hoverEnabled: true
+			flat: true
+			visible: context.isEventTime
+
+			Rectangle {
+				anchors.fill: parent
+				z: -1
+				color: parent.hovered
+					? _palette.color6
+					: "transparent"
+			}
+
+			onClicked: context.setEventEnabled(!context.isEventEnabled)
+
+			ToolTip.text: context.isEventEnabled ? "Switch event off" : "Switch event on"
 			ToolTip.visible: hovered
 			ToolTip.delay: ControlsSettings.tooltipDelay
 			ToolTip.timeout: ControlsSettings.tooltipTimeout

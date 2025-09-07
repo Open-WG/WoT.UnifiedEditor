@@ -2933,7 +2933,7 @@
 		</lod>
 	</influx>
 	<gpu>
-		<version> 1 </version>
+		<version> 2 </version>
 		<system>
 			<name> GPU Emitter </name>
 			<maxParticles> 320 </maxParticles>
@@ -2996,17 +2996,6 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_stickToTerrain </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
 						<name> g_directionParams0 </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
@@ -3046,6 +3035,28 @@
 						<field_data>
 							<value> 1092616192 </value>
 							<value> 1103626240 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inertiaMultiplier </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_injectAlbedoColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -3111,6 +3122,17 @@
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_stickToTerrain </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -3586,10 +3608,21 @@
 							<value> 0 </value>
 						</field_data>
 					</property>
+					<property>
+						<name> g_colorOverTemperature </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
 				</material>
 				<visuals>
 					<visual>
-						<path> particles/gpu_demo/mesh/stone.visual </path>
+						<path> particles/gpu_mesh/mesh/stone_medium_01.visual </path>
 					</visual>
 				</visuals>
 			</render>
@@ -3828,7 +3861,35 @@
 						<time> 1.000000 </time>
 					</times>
 				</gradient>
+				<gradient>
+					<name> g_colorOverTemperature </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
 			</gradients>
+			<meshSampling>
+				<mesh/>
+				<meshSamplesCount> 0 </meshSamplesCount>
+				<material>
+					<shaderPath/>
+				</material>
+			</meshSampling>
 			<children/>
 		</system>
 		<system>
@@ -3893,17 +3954,6 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_stickToTerrain </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
 						<name> g_directionParams0 </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
@@ -3943,6 +3993,28 @@
 						<field_data>
 							<value> 1092616192 </value>
 							<value> 1108082688 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inertiaMultiplier </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_injectAlbedoColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -4008,6 +4080,17 @@
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_stickToTerrain </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -4483,10 +4566,21 @@
 							<value> 0 </value>
 						</field_data>
 					</property>
+					<property>
+						<name> g_colorOverTemperature </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
 				</material>
 				<visuals>
 					<visual>
-						<path> particles/gpu_demo/mesh/stone.visual </path>
+						<path> particles/gpu_mesh/mesh/stone_medium_01.visual </path>
 					</visual>
 				</visuals>
 			</render>
@@ -4706,7 +4800,35 @@
 						<time> 1.000000 </time>
 					</times>
 				</gradient>
+				<gradient>
+					<name> g_colorOverTemperature </name>
+					<colors>
+						<color>
+							<r> 0.000000 </r>
+							<g> 0.000000 </g>
+							<b> 0.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+						<color>
+							<r> 1.000000 </r>
+							<g> 1.000000 </g>
+							<b> 1.000000 </b>
+							<a> 1.000000 </a>
+						</color>
+					</colors>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</gradient>
 			</gradients>
+			<meshSampling>
+				<mesh/>
+				<meshSamplesCount> 0 </meshSamplesCount>
+				<material>
+					<shaderPath/>
+				</material>
+			</meshSampling>
 			<children/>
 		</system>
 		<dependents/>

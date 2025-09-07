@@ -1,0 +1,23 @@
+<root>
+	<duration> 0.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> fans </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod0/sequence_hull_R.model </resource>
+		<castsShadow> false </castsShadow>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,87 @@
+<root>
+	<duration> 2.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> hellboss_aura_01 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/enemies/hellboss_aura_01.model </resource>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.600000 0.600000 0.600000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> hellboss_aura_02 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/enemies/hellboss_aura_02.model </resource>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.600000 0.600000 0.600000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> Material #146 </identifier>
+			<property> lightMultipliers </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 10.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> 11.040143 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 11.040143 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 0.500000 </startTime>
+				<value> 25.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> 3.175938 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 3.175938 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.500000 </startTime>
+				<value> 15.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> -18.680025 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> -18.680025 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 10.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> 1.397801 -0.000000 -0.000000 -0.000000 </inTangent>
+				<outTangent> 1.397801 -0.000000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 771 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

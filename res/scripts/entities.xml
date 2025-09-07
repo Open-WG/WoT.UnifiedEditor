@@ -49,9 +49,7 @@
 		<ClientSelectableHangarsSwitcher/>
 		<StaticDeathZone/>
 		<BasicMine/>
-		<ApplicationPoint/>
 		<NetworkEntity/>
-		<Comp7Lighting/>
 	</ClientServerEntities>
 
 	<ServerOnlyEntities>
@@ -106,8 +104,6 @@
 		<MapsTrainingBattlesMgr/>
 		<BaseBattleMgr/>
 		<AccountsInvitationsWhiteList/>
-		<Comp7Mgr/>
-		<Comp7UnitMgr/>
 		<WinbackMgr/>
 		<NoviceStage2Mgr/>
 	</ServerOnlyEntities>

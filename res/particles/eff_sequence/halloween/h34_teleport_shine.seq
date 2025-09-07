@@ -1,0 +1,379 @@
+<root>
+	<duration> 15.000001 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shine_01 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/h34_halloween/teleport_shine_01.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.735226 23.797508 -0.000015 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000003 0.000050 0.000000 </value>
+				<inTangent> 0.000001 23.929346 -0.003360 </inTangent>
+				<outTangent> 0.000001 23.929346 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.533334 </startTime>
+				<value> 0.000000 84.550415 -0.011873 </value>
+				<inTangent> 0.000000 23.929354 -0.003360 </inTangent>
+				<outTangent> 0.000000 23.929354 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.900001 </startTime>
+				<value> 0.000000 189.041962 -0.026547 </value>
+				<inTangent> 0.000000 23.929359 -0.003360 </inTangent>
+				<outTangent> 0.000000 23.929359 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.000001 </startTime>
+				<value> 0.000000 287.152344 -0.040324 </value>
+				<inTangent> 0.000000 23.939293 -0.003370 </inTangent>
+				<outTangent> 0.000000 23.939293 -0.003370 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 359.000000 -0.050461 </value>
+				<inTangent> -0.000000 23.949226 -0.003379 </inTangent>
+				<outTangent> -0.000000 23.949226 -0.003379 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 2.159183 12.078218 2.159183 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> Energy_torus_ </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.290196 0.341176 0.752941 0.500000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> Energy_torus_ </identifier>
+			<property> lightMultipliers </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 150.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shine_02 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/h34_halloween/teleport_shine_02.model </resource>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 27.586493 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 23.929361 -0.003360 </inTangent>
+				<outTangent> 0.000000 23.929361 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.533334 </startTime>
+				<value> 0.000000 84.550415 -0.011873 </value>
+				<inTangent> 0.000000 23.929361 -0.003360 </inTangent>
+				<outTangent> 0.000000 23.929361 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.900001 </startTime>
+				<value> 0.000000 189.041962 -0.026547 </value>
+				<inTangent> 0.000000 23.929359 -0.003360 </inTangent>
+				<outTangent> 0.000000 23.929359 -0.003360 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.000001 </startTime>
+				<value> 0.000000 287.152344 -0.040324 </value>
+				<inTangent> 0.000000 23.939293 -0.003370 </inTangent>
+				<outTangent> 0.000000 23.939293 -0.003370 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 359.000000 -0.050461 </value>
+				<inTangent> -0.000000 23.949226 -0.003379 </inTangent>
+				<outTangent> -0.000000 23.949226 -0.003379 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> scale </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 1.000000 4.756341 1.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+		<track>
+			<name> material property color </name>
+			<type> vector4 </type>
+			<identifier> Energy_torus_inside </identifier>
+			<property> TintlColor </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.678431 0.729412 0.968627 0.300000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> Energy_torus_inside </identifier>
+			<property> lightMultipliers </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 150.000000 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> lights </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000004 -113.500000 -0.000008 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 48.546062 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546062 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 1.983333 </startTime>
+				<value> 0.000000 96.283028 0.000000 </value>
+				<inTangent> 0.000000 48.546062 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546062 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 3.966667 </startTime>
+				<value> 0.000000 192.566055 0.000000 </value>
+				<inTangent> 0.000000 48.546059 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546059 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 6.000000 </startTime>
+				<value> 0.000000 291.276367 0.000000 </value>
+				<inTangent> 0.000000 48.546059 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546059 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 7.983334 </startTime>
+				<value> 0.000000 387.559387 0.000000 </value>
+				<inTangent> 0.000000 48.546066 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546066 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 9.983334 </startTime>
+				<value> 0.000000 484.651520 0.000000 </value>
+				<inTangent> 0.000000 48.546066 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546066 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 12.083334 </startTime>
+				<value> 0.000000 586.598267 0.000000 </value>
+				<inTangent> 0.000000 47.141907 0.000000 </inTangent>
+				<outTangent> 0.000000 47.141907 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 15.000000 </startTime>
+				<value> 0.000000 720.000000 0.000000 </value>
+				<inTangent> -0.000000 45.737747 -0.000000 </inTangent>
+				<outTangent> -0.000000 45.737747 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 0.000000 </duration>
+				<value> particles/eff_sequence/halloween/volot/volot_lights.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 15.000000 </duration>
+				<value> particles/eff_sequence/halloween/volot/volot_lights_aura.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Ray </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/content_deferred/GFX_models/environment/halloween/volot/volot_ray.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> false </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name> lights_copied </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> content/Environment/env_null_model/null_model.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> position </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> -0.000013 -13.400405 -0.000015 </value>
+				<inTangent> 0.000000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> rotationEuler </name>
+			<type> vector3 </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 0.000000 </value>
+				<inTangent> 0.000000 48.546074 0.000000 </inTangent>
+				<outTangent> 0.000000 48.546074 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name> sequence </name>
+			<type> sequence </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<duration> 15.000001 </duration>
+				<value> particles/eff_sequence/halloween/volot/volot_lights_aura.seq </value>
+				<speed> 1.000000 </speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>
