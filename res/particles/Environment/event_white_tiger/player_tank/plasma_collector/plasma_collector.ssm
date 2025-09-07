@@ -1,0 +1,152 @@
+<root>
+	<params>
+		<param>
+			<name> plasmaBuffCount </name>
+			<type> int </type>
+		</param>
+	</params>
+	<node>
+		<name> 4_stacks </name>
+		<type> sequence </type>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_stack_4.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> 3_stacks </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 3 </rangeStart>
+					<rangeEnd> 3 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -272.000000 -31.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> 3_stacks </name>
+		<type> sequence </type>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_stack_3.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> 4_stacks </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 4 </rangeStart>
+					<rangeEnd> 4 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> 2_stacks </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 2 </rangeStart>
+					<rangeEnd> 2 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -272.000000 46.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> Empty </name>
+		<type> sequence </type>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_stack_0.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> 1_stack </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 1 </rangeStart>
+					<rangeEnd> 1 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -273.000000 286.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> 2_stacks </name>
+		<type> sequence </type>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_stack_2.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> 1_stack </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 1 </rangeStart>
+					<rangeEnd> 1 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> 3_stacks </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 3 </rangeStart>
+					<rangeEnd> 3 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -272.000000 120.000000 0.000000 </uiPosition>
+	</node>
+	<node>
+		<name> 1_stack </name>
+		<type> sequence </type>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_stack_1.seq </resource>
+		<isLoop> true </isLoop>
+		<loop> -1 </loop>
+		<transition>
+			<to> Empty </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 0 </rangeStart>
+					<rangeEnd> 0 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to> 2_stacks </to>
+			<blendDuration> 0.000000 </blendDuration>
+			<allowRootMotion> false </allowRootMotion>
+			<conditions>
+				<condition>
+					<type> int </type>
+					<name> plasmaBuffCount </name>
+					<rangeStart> 2 </rangeStart>
+					<rangeEnd> 2 </rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition> -273.000000 196.000000 0.000000 </uiPosition>
+	</node>
+</root>

@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -270,7 +270,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -484,7 +484,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -511,8 +511,8 @@
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
 			<f_fire_smoke> 1.000000 </f_fire_smoke>
-			<f_wind_weight> 0.150000 </f_wind_weight>
-			<f_wind_weight_max> 0.250000 </f_wind_weight_max>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
 			<f_Espeed_time> 2.000000 </f_Espeed_time>
 			<f_Espeed_mult> 0.500000 </f_Espeed_mult>
@@ -577,7 +577,7 @@
 				<time> 1.000000 </time>
 				<value> 3.466667 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 -2.000000 -1.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 2.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -602,7 +602,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>
@@ -711,7 +711,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -738,8 +738,8 @@
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
 			<f_fire_smoke> 1.000000 </f_fire_smoke>
-			<f_wind_weight> 0.150000 </f_wind_weight>
-			<f_wind_weight_max> 0.250000 </f_wind_weight_max>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
 			<f_Espeed_time> 2.000000 </f_Espeed_time>
 			<f_Espeed_mult> 0.500000 </f_Espeed_mult>
@@ -804,7 +804,7 @@
 				<time> 1.000000 </time>
 				<value> 3.466667 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 -2.000000 -1.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 2.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -829,7 +829,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>
@@ -938,7 +938,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -965,8 +965,8 @@
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
 			<f_fire_smoke> 1.000000 </f_fire_smoke>
-			<f_wind_weight> 0.150000 </f_wind_weight>
-			<f_wind_weight_max> 0.250000 </f_wind_weight_max>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
 			<f_Espeed_time> 2.000000 </f_Espeed_time>
 			<f_Espeed_mult> 0.500000 </f_Espeed_mult>
@@ -1031,7 +1031,7 @@
 				<time> 1.000000 </time>
 				<value> 3.466667 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 -2.000000 -1.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 2.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -1056,7 +1056,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>
@@ -1165,7 +1165,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1192,8 +1192,8 @@
 			<f_tangent_speed_min> 0.000000 </f_tangent_speed_min>
 			<f_tangent_speed_max> 0.000000 </f_tangent_speed_max>
 			<f_fire_smoke> 1.000000 </f_fire_smoke>
-			<f_wind_weight> 0.150000 </f_wind_weight>
-			<f_wind_weight_max> 0.250000 </f_wind_weight_max>
+			<f_wind_weight> 0.000000 </f_wind_weight>
+			<f_wind_weight_max> 0.000000 </f_wind_weight_max>
 			<f_part_tangenta> 0.000000 </f_part_tangenta>
 			<f_Espeed_time> 2.000000 </f_Espeed_time>
 			<f_Espeed_mult> 0.500000 </f_Espeed_mult>
@@ -1258,7 +1258,7 @@
 				<time> 1.000000 </time>
 				<value> 3.466667 </value>
 			</tl_color_op_key>
-			<coordinate_system> Local </coordinate_system>
+			<coordinate_system> World </coordinate_system>
 			<fa_epicenter_pos> 0.000000 -2.000000 -1.000000 </fa_epicenter_pos>
 			<fa_epicenter_box> 2.000000 0.000000 0.000000 </fa_epicenter_box>
 			<Ex_Filename/>
@@ -1283,7 +1283,7 @@
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
-				<ps_particle_local> 1 </ps_particle_local>
+				<ps_particle_local> 0 </ps_particle_local>
 				<ps_particle_horizont> 0 </ps_particle_horizont>
 				<ps_particle_soft> 0 </ps_particle_soft>
 				<ps_particle_water_level> 0 </ps_particle_water_level>

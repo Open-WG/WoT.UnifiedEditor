@@ -14,4 +14,7 @@
 	<rule pattern=".*_ID\.dds$">
 		<allowSplit> false </allowSplit>
 	</rule>
+	<rule pattern=".*_T2DA\.dds$">
+		<allowSplit> false </allowSplit>
+	</rule>
 </root>

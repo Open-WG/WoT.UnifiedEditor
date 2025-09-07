@@ -6,8 +6,11 @@
         <xmlref:content>
 			<preferences> preferences_sb.xml </preferences>
 			<cat_config>
-				<botsUrl> http://cat-st1.wargaming.net </botsUrl>
+				<isOnline> true </isOnline>
+				<clientUrl> http://cat.wargaming.net </clientUrl>
 				<fullDump> false </fullDump>
+				<dxdiag> false </dxdiag>
+				<freezeTime> 0 </freezeTime>
 			</cat_config>
         </xmlref:content>
     </xmlref:merge>

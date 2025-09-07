@@ -652,8 +652,8 @@
 			<light>
 				<startKey> start </startKey>
 				<endKey> lighting2 </endKey>
-				<innerRadius> 100 </innerRadius>
-				<outerRadius> 600 </outerRadius>
+				<innerRadius> 1.5 </innerRadius>
+				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
 				<position> HP_gunFire </position>
 				<animation>
@@ -768,8 +768,8 @@
 			<light>
 				<startKey> start </startKey>
 				<endKey> lighting2 </endKey>
-				<innerRadius> 100 </innerRadius>
-				<outerRadius> 600 </outerRadius>
+				<innerRadius> 1.5 </innerRadius>
+				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
 				<position> HP_gunFire </position>
 				<animation>
@@ -1818,8 +1818,8 @@
 			<light>
 				<startKey> start </startKey>
 				<endKey> lighting2 </endKey>
-				<innerRadius> 100 </innerRadius>
-				<outerRadius> 600</outerRadius>
+				<innerRadius> 1.5 </innerRadius>
+				<outerRadius> 8</outerRadius>
 				<castShadows> false </castShadows>
 				<position> HP_gunFire </position>
 				<animation>
@@ -1934,8 +1934,8 @@
 			<light>
 				<startKey> start </startKey>
 				<endKey> lighting2 </endKey>
-				<innerRadius> 100 </innerRadius>
-				<outerRadius> 600 </outerRadius>
+				<innerRadius> 1.5 </innerRadius>
+				<outerRadius> 8 </outerRadius>
 				<castShadows> false </castShadows>
 				<position> HP_gunFire </position>
 				<animation>
@@ -5077,4 +5077,27 @@
 			</shotSound>
 		</effects>
 	</shot_env_artillery>
+	<!-- FEP arty rockets -->
+	<fep_qfg_shot_rocket>
+		<!-- Any number of arbitrarily named timeline. Times are in seconds. -->
+		<timeline>
+			<lighting2> 0.075 </lighting2>
+			<end> 0.3 </end>
+			<endpixie> 0.1 </endpixie>
+			<soundplaystop> 8 </soundplaystop>
+		</timeline>
+		<effects>
+			<pixie>
+				<startKey> start </startKey>
+				<endKey> endpixie </endKey>
+				<file> particles/Tank/fep_qfg/guns/fep_qfg_shot_rocket.eff</file>
+				<force> 1 </force>
+			</pixie>
+			<shotSound>
+				<startKey> start </startKey>
+				<wwsoundPC> wpn_mlrs_main_PC </wwsoundPC>
+				<wwsoundNPC> wpn_mlrs_main_NPC </wwsoundNPC>
+			</shotSound>
+		</effects>
+	</fep_qfg_shot_rocket>
 </root>

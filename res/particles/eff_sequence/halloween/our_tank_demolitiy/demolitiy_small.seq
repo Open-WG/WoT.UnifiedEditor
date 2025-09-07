@@ -3,11 +3,19 @@
 	<sequenceObject>
 		<name> Root </name>
 		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
 		<name> centre </name>
 		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> content/Environment/env_null_model/null_model.model </resource>
 		<castsShadow> false </castsShadow>
 		<track>
@@ -25,6 +33,10 @@
 	<sequenceObject>
 		<name> Particles </name>
 		<type> particle </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<resource> particles/Environment/halloween/our_tank_demolitiy/demolitiy_small.eff </resource>
 		<track>
 			<name> attach </name>
@@ -39,6 +51,10 @@
 	<sequenceObject>
 		<name> Light </name>
 		<type> light </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
 		<lightType> omnilight </lightType>
 		<track>
 			<name> attach </name>
@@ -65,7 +81,7 @@
 			<type> float </type>
 			<frame>
 				<startTime> 0.000000 </startTime>
-				<value> 4.000000 </value>
+				<value> 2.250000 </value>
 				<inTangent> 0.000000 </inTangent>
 				<outTangent> 0.000000 </outTangent>
 				<tangentMode> 0 </tangentMode>

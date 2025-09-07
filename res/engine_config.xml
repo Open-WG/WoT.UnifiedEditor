@@ -1,7 +1,7 @@
 <!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Wargaming Limited (Wargaming Group Limited) -->
 <engine_config.xml>
 	<!-- This file contains a variety of options to control and
-customise the behaviour of the BigWorld Client Engine. -->
+	customise the behaviour of the BigWorld Client Engine. -->
 	<personality> game </personality>
 	<!-- This is the global personality script for the game. This should
 	set up the game, camera, GUI, etc.  The engine expects a properly
@@ -45,7 +45,7 @@ customise the behaviour of the BigWorld Client Engine. -->
 	</lod>
 	<renderer>
 		<!-- The render options are used by client engine to detail how
-	the application is to start up. -->
+		the application is to start up. -->
 		<concurrentRenderer> true </concurrentRenderer>
 		<!-- Enables multithreaded rendering. -->
 		<disableSLI> false </disableSLI>
@@ -87,6 +87,11 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<minScale> 0.5 </minScale>
 			<!-- Minimum DRR scale, which autoscaler can set. -->
 		</DRRAutoscaler>
+		<DRRAutodetect>
+			<DRRScale> 0.80
+				<GPUScore> 300 </GPUScore>
+			</DRRScale>
+		</DRRAutodetect>
 		<globalVBSize> 12582912 </globalVBSize>
 		<globalIBSize> 131072 </globalIBSize>
 		<streaming>
@@ -152,8 +157,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 			<distance> 312 </distance>
 			<frames> 6 </frames>
 		</lod>
-		<dynamicShadows> false </dynamicShadows>
-		<!-- Dynamic shadows by sequence items. -->
 	</animation>
 	<screenShot>
 		<!-- These are the defaults when taking a screenshot. -->
@@ -347,6 +350,9 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<PS_PERFORMANCE_SPEED_MULT> 10 </PS_PERFORMANCE_SPEED_MULT>
 		<PS_PERFORMANCE_LOD_OFFSET> 0 </PS_PERFORMANCE_LOD_OFFSET>
 		<PS_PERFORMANCE_LOD_MULT> 1.2 </PS_PERFORMANCE_LOD_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_SPEED_MULT> 1.2 </PS_PERFORMANCE_SIMPLIFIED_SPEED_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_RATE_MULT> 0.3 </PS_PERFORMANCE_SIMPLIFIED_RATE_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_MESH_RATE_MULT> 0.3 </PS_PERFORMANCE_SIMPLIFIED_MESH_RATE_MULT>
 	</ParticleSystem>
 	<!-- This section is used to control and customise the behaviour of the
 	CAT (Crash Analysis Tool). These parameters might be overriden using either cat_config.xml
@@ -368,6 +374,8 @@ customise the behaviour of the BigWorld Client Engine. -->
 		<reportArchiveSizeThresholdKb> 1024 </reportArchiveSizeThresholdKb>
 		<!-- Keeps 5 last processed reports, instead of deletion, report will be renamed with a *.processed extension in client's Reports folder -->
 		<createSessionFiles> false </createSessionFiles>
+		<!-- Sets time(s) after which we consider the app to be frozen. 0 is inf. -->
+		<freezeTime> 0 </freezeTime>
 	</cat_config>
 	<debug>
 		<!-- if set to anything greater than zero, the client
@@ -690,9 +698,6 @@ customise the behaviour of the BigWorld Client Engine. -->
 				</bank>
 				<bank>
 					<name> cn_wot_plus.bnk </name>
-				</bank>
-				<bank>
-					<name> resources_well.bnk </name>
 				</bank>
 				<bank>
 					<name> account_dashboard.bnk </name>

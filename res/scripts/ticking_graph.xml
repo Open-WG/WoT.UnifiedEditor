@@ -3,6 +3,18 @@
         <preInitGroup> <!-- this group is called just before Init -->
             <before> true </before>
         </preInitGroup>
+        <journalInit/>
+        <journalUpdate/>
+        <clientRecreate/>
+        <networkObjectsUpdate/>
+        <transformPreUpdate/>
+        <transformUpdate/>
+        <transformPostUpdate/>
+        <modelUpdate/>
+        <vehicleHierarchyUpdate/>
+        <compositionUpdate/>
+        <vehicleHierarchyPostUpdate/>
+        <postModelUpdate/>
     </Init>
     <Simulation>
         <PreSimulation>

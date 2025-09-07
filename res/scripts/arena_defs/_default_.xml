@@ -31,6 +31,8 @@
 	<explicitRequestOnly> false </explicitRequestOnly>
 	<defaultGroundEffect> None </defaultGroundEffect>
 	<wwbattleCountdownTimerSound> timer_oneshot </wwbattleCountdownTimerSound>
+	<soundNotificationsPlan> soundNotifications </soundNotificationsPlan>
+	<soundNotificationsContext> visual_script_client.contexts.sound_notifications_context.SoundNotificationsContext </soundNotificationsContext>
 	<wwmusicDroneSetup>
 		<timeRemained>
 			<value> 180 </value>
@@ -201,6 +203,9 @@
 			<runDelay> 30 </runDelay>
 			<runDelayDev> 15 </runDelayDev>
 		</BATTLE_ROYALE_TRN_SQUAD>
+		<FUN_RANDOM>
+			<estimatedLoad> 0.8 </estimatedLoad>
+		</FUN_RANDOM>
 	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf>
@@ -373,6 +378,21 @@
 		</comp7>
 	</gameplayTypes>
 	<extraSoundRemapping>
+		<!-- label is defined in wot_ext\white_tiger\scripts\client\white_tiger\gui\white_tiger_gui_constants.py -->
+		<white_tiger>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>ev_white_tiger_2021_hangar.bnk</name>
+						<extension> white_tiger </extension>
+					</bank>
+					<bank>
+						<name>ev_white_tiger_2021_hangar.pck</name>
+						<extension> white_tiger </extension>
+					</bank>
+				</loadBanks>
+			</soundRemapping>
+		</white_tiger>
 		<story_mode>
 			<soundRemapping>
 				<loadBanks>
@@ -427,6 +447,22 @@
 				</loadBanks>
 			</soundRemapping>
 		</comp7>
+		<fep_auto_shoot_guns>
+			<soundRemapping>
+				<events>
+					<event>
+						<name>wpn_auto_shoot_50_75_PC_start</name>
+						<mod>wpn_auto_shoot_50_75_PC_start</mod>
+						<modAUX>overheat_auto_shoot_PC</modAUX>
+					</event>
+					<event>
+						<name>wpn_auto_shoot_20_49_PC_start</name>
+						<mod>wpn_auto_shoot_20_49_PC_start</mod>
+						<modAUX>overheat_auto_shoot_PC</modAUX>
+					</event>
+				</events>
+			</soundRemapping>
+		</fep_auto_shoot_guns>
 		<!--
 		<[game_mode_name]>
 			<soundRemapping>

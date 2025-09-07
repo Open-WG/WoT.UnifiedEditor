@@ -61,6 +61,7 @@
 				<drawDecorModelsMax>	true	</drawDecorModelsMax>
 				<drawDecorModelsMaxHight>	true	</drawDecorModelsMaxHight>
 				<drawDecorModelsDeferredOnly>	true	</drawDecorModelsDeferredOnly>
+				<drawDecorModelsSimplifiedDeferredOnly>	true	</drawDecorModelsSimplifiedDeferredOnly>
 				<highLightDecorObjects>	false	</highLightDecorObjects>
 				<highLightDecorObjectsColorMax>	1881210656	</highLightDecorObjectsColorMax>
 				<highLightDecorObjectsColorMaxHigh>	1881153791	</highLightDecorObjectsColorMaxHigh>
@@ -136,6 +137,11 @@
 	<terrain2>
 		<blendsBuildInterval>	100	</blendsBuildInterval>
 	</terrain2>
+	<brush>
+		<overlay>
+			<brushOverlay> 12 </brushOverlay>
+		</overlay>
+	</brush>
 	<settings>
 		<resolutions>	1024*768;1152*864;1280*1024;1366*768;1400*1050;1440*1080;1600*900;1600*1024;1600*1200;1920*1080;1920*1200;1920*1440;2048*1536;2560*1440;2560*1600;3840*2160;	</resolutions>
 		<centeringViewport>	false	</centeringViewport>
@@ -243,6 +249,11 @@
 	</Visibility>
 	<enableStatisticsAlarm>	false	</enableStatisticsAlarm>
 	<tools>
+		<prefabMode>
+			<footer>
+				<items> |Dynamic Model|Particle|Embedded Decal|Sequence|Animator|Sound3D| </items>
+			</footer>
+		</prefabMode>
 		<useHangingItemsAutoFix>	false	</useHangingItemsAutoFix>
 		<coordFilter>	World	</coordFilter>
 	</tools>
@@ -507,6 +518,9 @@
 		<plugins_plg_python_remote_debug> false </plugins_plg_python_remote_debug>
 		<plugins_plg_asset_root_viewer> false </plugins_plg_asset_root_viewer>
 	</dynamic_plugins>
+	<AIhelperBrush>
+		<ModelURL> http://cy1-wb-017:8100 </ModelURL>
+	</AIhelperBrush>
 	<visualScriptEditor>
 		<connection> false </connection>
 	</visualScriptEditor>

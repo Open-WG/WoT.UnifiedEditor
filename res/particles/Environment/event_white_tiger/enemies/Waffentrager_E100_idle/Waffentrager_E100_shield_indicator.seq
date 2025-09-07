@@ -1,0 +1,43 @@
+<root>
+	<duration> 2.000000 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> shield_idicator </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/Environment/event_white_tiger/enemies/Waffentrager_E100_idle/Waffentrager_E100_shield_indicator.model </resource>
+		<castsShadow> false </castsShadow>
+		<track>
+			<name> material property vector4 </name>
+			<type> vector4 </type>
+			<identifier> progress1 </identifier>
+			<property> diffuseUVSpeedAlphaOffset </property>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.000000 0.000000 1.000000 0.000000 </value>
+				<inTangent> 0.000000 -0.250000 0.000000 0.000000 </inTangent>
+				<outTangent> 0.000000 -0.250000 0.000000 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 2.000000 </startTime>
+				<value> 0.000000 -0.500000 1.000000 0.000000 </value>
+				<inTangent> -0.000000 -0.250000 -0.000000 -0.000000 </inTangent>
+				<outTangent> -0.000000 -0.250000 -0.000000 -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

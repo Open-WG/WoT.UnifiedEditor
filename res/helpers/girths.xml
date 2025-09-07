@@ -3,7 +3,7 @@
 		<!--Note: radius should be multiple of 0.5 (half meter), halfWidth should be multiple of 0.25.
 		Anything in between will be rounded upwards (e.g. radius 5.6 will be treated as 6.0).
 		-->
-		<config>	
+		<config>
 			<girth> CTF_2.5 </girth>
 			<height>	2.500000	</height>
 			<radius>	2.500000	</radius>
@@ -15,8 +15,9 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.500000	</waterDepthLimit2>
 		</config>
-		<config>	
+		<config>
 			<girth> CTF_3.5 </girth>
 			<height>	2.950000	</height>
 			<radius>	3.500000	</radius>
@@ -28,8 +29,9 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.950000	</waterDepthLimit2>
 		</config>
-		<config>	
+		<config>
 			<girth> CTF_4.5 </girth>
 			<height>	3.550000	</height>
 			<radius>	4.500000	</radius>
@@ -41,7 +43,8 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.250000	</waterDepthLimit1>
-		</config>		
+			<waterDepthLimit2>	4.550000	</waterDepthLimit2>
+		</config>
 		<config>
 			<girth> CTF_5.5 </girth>
 			<height>	4.000000	</height>
@@ -54,12 +57,55 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
-		</config> 
-		<config>	
+			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+		</config>
+		<config>
+			<girth> WT_3.5 </girth>
+			<height>	2.960000	</height>
+			<radius>	3.500000	</radius>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
+			<halfWidth>	1.750000	</halfWidth>
+			<upSlope>	30.000000	</upSlope>
+			<downSlope>	30.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.950000	</waterDepthLimit2>
+		</config>
+		<config>
+			<girth> WT_4.0 </girth>
+			<height>	3.120000	</height>
+			<radius>	4.000000	</radius>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
+			<halfWidth>	2.000000	</halfWidth>
+			<upSlope>	25.000000	</upSlope>
+			<downSlope>	25.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
+			<waterDepthLimit2>	4.550000	</waterDepthLimit2>
+		</config>
+		<config>
+			<girth> WT_5.0 </girth>
+			<height>	3.640000	</height>
+			<radius>	5.000000	</radius>
+			<narrowInnerThreshold>	5.500000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.500000	</narrowOuterThreshold>
+			<halfWidth>	2.500000	</halfWidth>
+			<upSlope>	25.000000	</upSlope>
+			<downSlope>	25.000000	</downSlope>
+			<upClimb>	1.330000	</upClimb>
+			<downClimb>	1.330000	</downClimb>
+			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
+			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
+		</config>
+		<config>
 			<girth> Onboarding_4.0 </girth>
 			<height>	3.070000	</height>
 			<radius>	4.000000	</radius>
-			<halfWidth>	2.000000	</halfWidth>            
+			<halfWidth>	2.000000	</halfWidth>
 			<narrowInnerThreshold>	4.000000	</narrowInnerThreshold>
 			<narrowOuterThreshold>	4.000000	</narrowOuterThreshold>
 			<upSlope>	25.000000	</upSlope>
@@ -67,6 +113,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	4.070000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> Onboarding_5.0 </girth>
@@ -80,6 +127,21 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	4.700000	</waterDepthLimit2>
+		</config>
+		<config>
+			<girth> Onboarding_ability </girth>
+			<height>	6.000000	</height>
+			<radius>	6.000000	</radius>
+			<halfWidth>	2.500000	</halfWidth>
+			<narrowInnerThreshold>	5.000000	</narrowInnerThreshold>
+			<narrowOuterThreshold>	5.000000	</narrowOuterThreshold>
+			<upSlope>	45.000000	</upSlope>
+			<downSlope>	45.000000	</downSlope>
+			<upClimb>	2.000000	</upClimb>
+			<downClimb>	2.000000	</downClimb>
+			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	7.00000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> BR_8 </girth>
@@ -93,6 +155,7 @@
 			<upClimb>	1.000000	</upClimb>
 			<downClimb>	1.000000	</downClimb>
 			<waterDepthLimit1>	1.500000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.500000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> BR_3.5 </girth>
@@ -106,6 +169,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	1.000000	</waterDepthLimit1>
+			<waterDepthLimit2>	4.100000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> HELL_2.0 </girth>
@@ -119,6 +183,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.400000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> HELL_3.0 </girth>
@@ -132,6 +197,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	3.400000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> HELL_4.0 </girth>
@@ -145,6 +211,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	6.900000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> HELL_5.5 </girth>
@@ -158,6 +225,7 @@
 			<upClimb>	1.330000	</upClimb>
 			<downClimb>	1.330000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	5.000000	</waterDepthLimit2>
 		</config>
 		<config>
 			<girth> HELLBOSS_11.5 </girth>
@@ -171,8 +239,143 @@
 			<upClimb>	2.5000000	</upClimb>
 			<downClimb>	2.5000000	</downClimb>
 			<waterDepthLimit1>	0.650000	</waterDepthLimit1>
+			<waterDepthLimit2>	7.200000	</waterDepthLimit2>
 		</config>
 	</navmesh>
+	<hierarchical_pathfinding>
+		<disabled> false </disabled>
+		<coarsening> <!-- parameters for offline HPF data generation, stage 1 of MLkP graph partitioning algorithm -->
+			<!--
+				Iterative graph coarsening stops when the result has no more than stopMinVertices vertices remaining,
+				where stopMinVertices = stopMinVerticesMul * 2^numBisections.
+				E.g. if stopMinVerticesMul = 15 and numBisections = 5, coarsening stops after reaching 15*32 = 480 or less vertices.
+			-->
+			<stopMinVerticesMul> 15 </stopMinVerticesMul>
+			<!--
+				Iterative graph coarsening also stops if graph size (number of vertices) after the last iteration
+				is more than this ratio multiplied by its previous size.
+				E.g. with stopMinReduction = 0.8, graph with 1000 vertices must be reduced to at most 800 by a single coarsening iteration
+				for the whole coarsening stage to continue.
+			-->
+			<stopMinReduction> 0.8 </stopMinReduction>
+			<!--
+				During graph coarsening, "enclaves" are small vertices having just one bigger neighbour multivertex (i.e. "surrounded" by its contents).
+				Such enclaves will be forcibly joined with their bigger neighbour as long as their weights ratio is less or equal to this value.
+			-->
+			<maxEnclaveWeightRatio> 0.25 </maxEnclaveWeightRatio>
+		</coarsening>
+		<initial_partitioning> <!-- parameters for offline HPF data generation, stage 2 of MLkP graph partitioning algorithm -->
+			<!--
+				Number of iterative graph bisections to perform at the initial partitioning stage.
+				Final number of partitions can be estimated as 2^numBisections (e.g. 32 for numBisections=5),
+				but actual results will often be slightly different (usually more than this estimation) due to dynamic event dependencies
+				and the fact that the bisection algorithm (GGGP) may produce disconnected half-graphs, which are then treated as two or more partitions.
+
+				This setting also affects runtime performance: more bisections => more partitions => smaller partitions.
+				Smaller partitions are good for sub-queries using normal pathfinding to connect given point to the portals.
+				Such queries are first done by a multiple-goals search, which may fail to find all portals if the partition is too large
+				(compared to pathfinding buffer size). If that happens, direct searches will be used to find remaining portals,
+				which can be very expensive if it happens too often.
+
+				However, more partitions also means more unique portals and intra-edges,
+				thus increasing memory consumption, amount of runtime score calculations and main HPF search loop (A*).
+				So be cautious when tweaking this!
+
+				Default value is meant to be optimized for standard spaces, most of which are 1000x1000 meters.
+				It should be overridden as necessary for spaces of different size (e.g. 3000x3000 in Frontline).
+			-->
+			<numBisections> 8 </numBisections>
+			<!--
+				Number of attempts to choose starting point for each bisection (using seeded random).
+				Of all the corresponding results, only the ones with the best (lowest) edge-cut are kept and used for the next stage.
+				Higher values might improve results quality but degrade initial partitioning performance.
+			-->
+			<bisectionNumStartVertexOptions> 4 </bisectionNumStartVertexOptions>
+		</initial_partitioning>
+		<refinement>  <!-- parameters for offline HPF data generation, stage 3 of MLkP graph partitioning algorithm -->
+			<!--
+				At the beginning of each uncoarsening & refinement iteration, if a partition is less than this ratio from the average partition size,
+				it will automatically be joined to the smallest neighbour partition bigger than itself.
+			-->
+			<microPartitionThreshold> 0.1 </microPartitionThreshold>
+			<!--
+				New partition weight limits for refinement algorithm's attempts to move vertices between partitions.
+				Specified as ratio from the average partition size. I.e. if both limits are 1.0, refinement stage
+				will attempt to make all partitions of equal size (although this may not be possible due to various other conditions).
+				More difference from 1.0 gives the algorithm more freedom and might will lead to different (better or worse) results quality.
+			-->
+			<balancingLimitMin> 0.8 </balancingLimitMin>
+			<balancingLimitMax> 1.2 </balancingLimitMax>
+			<!--
+				Maximum number of sub-iterations at each refinement stage (number of these stages is equal to number of coarsening iterations).
+				Each sub-iteration processes a priority queue built from all available vertices.
+				Increasing this number might improve results quality, but will degrade refinement performance.
+			-->
+			<maxMainLoopIterations> 10 </maxMainLoopIterations>
+			<!--
+				Maximum number of "bad" (not decreasing the graph's edge-cut) vertex moves in a row during each refinement sub-iteration
+				before all these moves are undone and the sub-iteration is finished. Increasing this value might improve results quality
+				by finding longer move sequences that result in an edge-cut decrease (despite increasing it intermediately),
+				but will degrade refinement performance.
+			-->
+			<hillClimbingLimit> 100 </hillClimbingLimit>
+			<!--
+				Enable or disable extra refinement logic which can move whole parts of partitions, connected to the rest of the partition
+				by a narrow bridge/bottleneck, to another partition. This has a strong effect on results quality,
+				but also heavily degrades refinement performance.
+			-->
+			<processBottlenecks> true </processBottlenecks>
+		</refinement>
+		<annotation> <!-- parameters for extra data added to offline-generated HPF space partitions -->
+			<!-- Margins in meters around oriented bounding boxes generated for each partition. -->
+			<partitionBoundsMargins> 1.0 1.0 1.0 </partitionBoundsMargins>
+			<!--
+				Precision parameters for partition border generator.
+				Default values are based on the grid used by the navmesh generator.
+				Y precision should be high enough to account for a known navmesh generator bug,
+				occasionally causing significant height differences between neighbour polygons.
+				Only override these values for specific spaces if you encounter problems with intra-edge generation!
+			-->
+			<borderGridBias> 0.05 </borderGridBias>
+			<borderGridPrecisionXZ> 0.25 </borderGridPrecisionXZ>
+			<borderGridPrecisionY> 3.0 </borderGridPrecisionY>
+			<!--
+				Maximum length in meters of a border segments sequence (bordering with the same target partition)
+				for which only one inter-partition portal is generated (in the middle).
+				Exceeding this length N times will split that sequence into (N+1) equal-length parts and create portals between each pair.
+				If the threshold is set to 0 or less, one portal will be generated at the middle of each sequence, regardless of its length.
+			-->
+			<extraPortalThreshold> 0.0 </extraPortalThreshold>
+			<!--
+				Maximum slope angle, in degrees, for pathfinding when generating intra-edges.
+				This must not be higher than MAX_SLOPE_UP_MIN_ANGLE in ai_base_params.xml,
+				otherwise pre-generated data may include intra-edges that are not traversible by some bots.
+				Since slope angles in pathfinding and in costs calculations don't always match each other precisely,
+				set it to at least few degrees less to be safe (both during generation and in runtime).
+				
+				Note that in HPF data generation, this is not a hard limit:
+				if a path cannot be found without exceeding it, it will be exceeded,
+				leading to higher (but not infinite) default costs.
+			-->
+			<intraEdgeMaxSlopeAngle> 15.0 </intraEdgeMaxSlopeAngle>
+		</annotation>
+		<partition_search>
+			<!--
+				Parameters for the auxilliary tree structure generated to optimize finding partition by point in runtime.
+				Changing these may affect memory usage, HPF performance and precision.
+			-->
+			<maxTreeLeafSize> 50.0 </maxTreeLeafSize>
+			<snapDistance> 10.0 </snapDistance>
+			<!--
+				Cell size in meters of intermediate grids used to filter "world points" (aka navmesh polygon centers) in each partition.
+				Filter will replace all points inside the same grid cell with a single point (centroid) before storing them in .aidata.
+				Increasing this step will significantly decrease memory usage, but may somewhat reduce HPF precision.
+				It is highly recommended to keep it less than the snapDistance above.
+				Setting the step to 0 or less will disable this filter.
+			-->
+			<pointsFilterStep> 7.5 </pointsFilterStep>
+		</partition_search>
+	</hierarchical_pathfinding>
 	<covers>
 		<Default>
 			<gridChunkSize> 50.0 </gridChunkSize>
@@ -187,7 +390,7 @@
 			<minCoverAngle> 20.0 </minCoverAngle>
 			<shootingPoints>
 				<defaults>
-					<directionLimits> 
+					<directionLimits>
 						<min> 0.0 </min>
 						<max> 360.0 </max>
 					</directionLimits>
@@ -202,7 +405,7 @@
 				<rule/>
 			</shootingPoints>
 			<initialSamples> 20 </initialSamples>
-			<coverRayCastParams> 
+			<coverRayCastParams>
 				<param>
 					<radius> 20.0 </radius>
 					<hillRadius> 20.0 </hillRadius>
@@ -250,6 +453,21 @@
 					<lowCoverHeight>	1.3	</lowCoverHeight>
 				</agent>
 				<agent>
+					<girth> WT_3.5 </girth>
+					<shootingHeight>	2.360000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> WT_4.0 </girth>
+					<shootingHeight>	2.840000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
+					<girth> WT_5.0 </girth>
+					<shootingHeight>	3.200000	</shootingHeight>
+					<lowCoverHeight>	1.3	</lowCoverHeight>
+				</agent>
+				<agent>
 					<girth> BTCAMP_4.0 </girth>
 					<shootingHeight>	1.56	</shootingHeight>
 					<lowCoverHeight>	1.3	</lowCoverHeight>
@@ -269,7 +487,7 @@
 		<Static>
 		</Static>
 		<Flora>
-			<coverRayCastParams> 
+			<coverRayCastParams>
 				<param>
 					<radius> 10.0 </radius>
 					<hillRadius> 10.0 </hillRadius>
@@ -296,7 +514,7 @@
 			</shootingPoints>
 		</Flora>
 		<Destructible>
-			<coverRayCastParams> 
+			<coverRayCastParams>
 				<param>
 					<radius> 20.0 </radius>
 					<hillRadius> 20.0 </hillRadius>
@@ -307,7 +525,7 @@
 		</Destructible>
 		<Slope>
 			<coverValidationEnabled> false </coverValidationEnabled>
-			<coverRayCastParams> 
+			<coverRayCastParams>
 				<param>
 					<radius> 40.0 </radius>
 					<hillRadius> 150.0 </hillRadius>
@@ -427,21 +645,6 @@
 				<maxDesirability> 100 </maxDesirability>
 			</shoot>
 		</link_generator>
-		<paths>
-			<maxAdditionalPathOverBestRoute> 100 </maxAdditionalPathOverBestRoute>
-
-            <!--
-                Maximum number of ZonesMaps of type "Patch" compatible with the base ZonesMap
-                (the one move link paths are generated for), and affecting move links in some way.
-                Move link path diffs will be generated for each possible combination of these patches
-                (order-independent), meaning that if number of patches is n, there will be (n^2 - 1) combinations.
-                Creating too much patches would cause exponential bloat of the data (and generation time),
-                so this setting limits it to "sane" values.
-                Default value 4 allows up to 15 diffs to be generated.
-                Maximum allowed value is hardcoded to 16 (65535 diffs - not recommended).
-            -->
-			<maxPatches> 4 </maxPatches>
-		</paths>
 	</zones>
 	<visibilityVolume>
 		<gridCellSize> 100.0 100.0 </gridCellSize>
@@ -461,4 +664,73 @@
 		<subsamplesYaw>3</subsamplesYaw>
 		<subsamplesPitch>3</subsamplesPitch>
 	</visibilityCache>
+	<areaTypes>
+		<area>
+			<id> 9 </id>
+			<costWeight> 1.0 </costWeight>
+		</area>
+		<area>
+			<id> 10 </id>
+			<costWeight> 1.0 </costWeight>
+		</area>
+		<area>
+			<id> 20 </id>
+			<costWeight> 0.0 </costWeight>
+			<matkinds>
+				<id> 102 </id>
+				<id> 114 </id>
+				<id> 115 </id>
+			</matkinds>
+		</area>
+		<area>
+			<id> 40 </id>
+			<costWeight> 0.0 </costWeight>
+			<matkinds>
+				<id> 101 </id>
+				<id> 103 </id>
+				<id> 104 </id>
+				<id> 105 </id>
+				<id> 108 </id>
+				<id> 110 </id>
+			</matkinds>
+		</area>
+		<area>
+			<id> 55 </id>
+			<costWeight> 5.0 </costWeight>
+			<matkinds>
+				<id> 11111 </id>
+			</matkinds>
+		</area>
+		<area>
+			<id> 56 </id>
+			<costWeight> 1.0 </costWeight>
+		</area>
+		<area>
+			<id> 57 </id>
+			<costWeight> 1.0 </costWeight>
+		</area>
+		<area>
+			<id> 59 </id>
+			<costWeight> 4.5 </costWeight>
+		</area>
+		<area>
+			<id> 60 </id>
+			<costWeight> 0.0 </costWeight>
+			<matkinds>
+				<id> 106 </id>
+				<id> 107 </id>
+				<id> 109 </id>
+				<id> 111 </id>
+				<id> 112 </id>
+				<id> 113 </id>
+			</matkinds>
+		</area>
+		<area>
+			<id> 62 </id>
+			<costWeight> 0.0 </costWeight>
+			<matkinds>
+				<id> 100 </id>
+			</matkinds>
+		</area>
+	</areaTypes>
 </root>

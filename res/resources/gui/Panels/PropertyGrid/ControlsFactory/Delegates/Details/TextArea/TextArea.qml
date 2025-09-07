@@ -67,8 +67,6 @@ Flickable {
 			}
 		}
 
-		background: {}
-
 		Misc.QmlEventFilter {
 			target: control
 		}

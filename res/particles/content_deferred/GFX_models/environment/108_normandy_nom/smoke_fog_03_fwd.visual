@@ -43,7 +43,7 @@
 						<Float> 1.000000 </Float>
 					</property>
 					<property> lightMultipliers
-						<Vector4> 4.000000 0.200000 1.000000 0.000000 </Vector4>
+						<Vector4> 0.800000 0.200000 1.000000 0.000000 </Vector4>
 					</property>
 					<property> selfIllumLight
 						<Vector3> 1.000000 1.000000 1.000000 </Vector3>
@@ -55,7 +55,10 @@
 						<Vector4> 0.768627 0.701961 0.678431 0.266667 </Vector4>
 					</property>
 					<property> alphaFadeAmountSoft
-						<Vector4> 0.000000 30.000000 10.000000 0.000000 </Vector4>
+						<Vector4> 0.000000 70.000000 60.000000 0.500000 </Vector4>
+					</property>
+					<property> rampFreshnelMap
+						<Texture> particles/content_deferred/GFX_models/GFX_textures/Gradients/wt_shield_alphaFreshnel.dds </Texture>
 					</property>
 				</material>
 			</primitiveGroup>

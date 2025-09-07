@@ -62,6 +62,21 @@
 					<property> g_secondLDir
 						<Float> 0.000000 </Float>
 					</property>
+					<property> g_hdrExposure
+						<Float> 0.250000 </Float>
+					</property>
+					<property> g_hdrInvReinhard
+						<Bool> true </Bool>
+					</property>
+					<property> g_hdrBlackPoint
+						<Vector3> 0.000000 0.000000 0.000000 </Vector3>
+					</property>
+					<property> g_hdrWhitePoint
+						<Vector3> 1.060000 1.050000 1.020000 </Vector3>
+					</property>
+					<property> g_hdrFogElevation
+						<Float> 0.000000 </Float>
+					</property>
 					<property> g_horizontalFlip
 						<Float> 0.000000 </Float>
 					</property>

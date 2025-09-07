@@ -286,6 +286,26 @@
 							<maxShotDispersion />
 							<groupSize />
 						</autoShoot>
+						<spin>
+							<startFactor />
+							<isSpinUpShootingEnable />
+							<spinUpTimeout />
+							<spinDownTimeout />
+						</spin>
+						<temperatureMechanics>
+							<heatingPerShot />
+							<heatingPerSec />
+							<coolingDelay />
+							<coolingPerSec />
+							<coolingOverheatPerSec />
+
+							<thermalStateHysteresis />
+							<temperatureSegmentSize />
+
+							<thermalStates>
+								<_ANYTHING_ />
+							</thermalStates>
+						</temperatureMechanics>
 						<shots>
 							<_ANYTHING_ />
 						</shots>
@@ -410,6 +430,12 @@
 			<volumeFactor />
 		</horns>
 		<hull>
+			<slotPrefabs>
+				<_ANYTHING_ />
+			</slotPrefabs>
+			<objectSlots>
+				<_ANYTHING_ />
+			</objectSlots>
 			<prefabs>
 				<_ANYTHING_ />
 			</prefabs>
@@ -554,6 +580,12 @@
 		</hull>
 		<chassis>
 			<_CHASSIS_NAME_>
+				<slotPrefabs>
+					<_ANYTHING_ />
+				</slotPrefabs>
+				<objectSlots>
+					<_ANYTHING_ />
+				</objectSlots>
 				<prefabs>
 					<_ANYTHING_ />
 				</prefabs>
@@ -778,6 +810,12 @@
 		</chassis>
 		<turrets0>
 			<_TURRET_NAME_>
+				<slotPrefabs>
+					<_ANYTHING_ />
+				</slotPrefabs>
+				<objectSlots>
+					<_ANYTHING_ />
+				</objectSlots>
 				<prefabs>
 					<_ANYTHING_ />
 				</prefabs>
@@ -800,8 +838,17 @@
 				<multiGun>
 					<_ANYTHING_ />
 				</multiGun>
+				<multiGunState>
+					<_ANYTHING_ />
+				</multiGunState>
 				<guns>
 					<_GUN_NAME_>
+						<slotPrefabs>
+							<_ANYTHING_ />
+						</slotPrefabs>
+						<objectSlots>
+							<_ANYTHING_ />
+						</objectSlots>
 						<prefabs>
 							<_ANYTHING_ />
 						</prefabs>

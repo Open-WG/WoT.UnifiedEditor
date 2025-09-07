@@ -40,7 +40,7 @@ Item {
 		label.maximumLineCount: parent.height != 0 && label.font.pixelSize != 0 ? parent.height / label.font.pixelSize : 1
 		label.color: root.selected
 			? _palette.color12
-			: (model && model.node.property && model.node.property.dirty)
+			: (model && model.node && model.node.property && model.node.property.dirty)
 				? _palette.color1
 				: _palette.color2
 

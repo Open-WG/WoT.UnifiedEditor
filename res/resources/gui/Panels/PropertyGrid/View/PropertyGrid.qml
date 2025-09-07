@@ -186,7 +186,13 @@ Flickable {
 
 				onEntered: {
 					splitterSharedData.x = Qt.binding(function() {
-						return Math.min(rootGroup.getLabelsImplicitWidth(), width * Settings.splitterMaxAutoPositionRelative)
+						var labelsWidth = rootGroup.getLabelsImplicitWidth()
+						var autoPosWidth = width * Settings.splitterMaxAutoPositionRelative
+						if (labelsWidth > 0) {
+							return Math.min(labelsWidth, autoPosWidth)
+						} else {
+							return autoPosWidth
+						}
 					})
 				}
 

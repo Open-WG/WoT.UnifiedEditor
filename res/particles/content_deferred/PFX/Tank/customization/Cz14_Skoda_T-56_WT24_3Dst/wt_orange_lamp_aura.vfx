@@ -283,7 +283,7 @@
 			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> -0.000000 0.000000 0.000000 </emitter.fa_start_pos>
-			<f_rate> 3.000000 </f_rate>
+			<f_rate> 25.000000 </f_rate>
 			<vt.ui_volume_type> 0 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.200000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.200000 </f_Y_dim_volume>
@@ -344,10 +344,10 @@
 			<tl_Color_key>
 				<time> 0.000000 </time>
 				<value_RGBA> 222.000000 116.000000 9.000000 0.000000 </value_RGBA>
-				<time> 0.101000 </time>
+				<time> 0.473558 </time>
 				<value_RGBA> 222.000000 116.000000 9.000000 0.200000 </value_RGBA>
-				<time> 0.896000 </time>
-				<value_RGBA> 222.000000 114.000000 8.000000 0.200000 </value_RGBA>
+				<time> 0.528846 </time>
+				<value_RGBA> 222.000000 116.000000 9.000000 0.200000 </value_RGBA>
 				<time> 1.000000 </time>
 				<value_RGBA> 222.000000 116.000000 9.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
@@ -397,8 +397,8 @@
 				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
 			</particle.dw_mode>
 			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
-			<particle.base.f_life_min> 2.000000 </particle.base.f_life_min>
-			<particle.base.f_life_max> 2.000000 </particle.base.f_life_max>
+			<particle.base.f_life_min> 0.100000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 0.100000 </particle.base.f_life_max>
 			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
 			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>

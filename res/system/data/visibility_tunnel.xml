@@ -1,0 +1,35 @@
+<root>
+	<cameraMode>
+		<mode>Default</mode>
+		<workingDistance>120.0</workingDistance>
+		<screenSpaceFactor>1.0</screenSpaceFactor>
+		<nearConeRadius>8.0</nearConeRadius>
+		<farConeRadius>0.1</farConeRadius>
+		<opacityPower>2.0</opacityPower>
+		<maxAspectRatio>1.77</maxAspectRatio>
+		<minimumFade>1.0</minimumFade>
+		<patternTexture>system/maps/PSF_ldr2.dds</patternTexture>
+	</cameraMode>
+	<cameraMode>
+		<mode>Sniper</mode>
+		<workingDistance>120.0</workingDistance>
+		<screenSpaceFactor>1.0</screenSpaceFactor>
+		<nearConeRadius>8.0</nearConeRadius>
+		<farConeRadius>0.1</farConeRadius>
+		<opacityPower>2.0</opacityPower>
+		<maxAspectRatio>1.77</maxAspectRatio>
+		<minimumFade>1.0</minimumFade>
+		<patternTexture>system/maps/col_white.dds</patternTexture>
+	</cameraMode>
+	<cameraMode>
+		<mode>Cinematic</mode>
+		<workingDistance>120.0</workingDistance>
+		<screenSpaceFactor>1.0</screenSpaceFactor>
+		<nearConeRadius>8.0</nearConeRadius>
+		<farConeRadius>0.1</farConeRadius>
+		<opacityPower>2.0</opacityPower>
+		<maxAspectRatio>1.77</maxAspectRatio>
+		<minimumFade>1.0</minimumFade>
+		<patternTexture>system/maps/col_white.dds</patternTexture>
+	</cameraMode>
+</root>

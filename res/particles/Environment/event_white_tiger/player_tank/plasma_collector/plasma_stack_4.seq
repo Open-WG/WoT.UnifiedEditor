@@ -1,0 +1,34 @@
+<root>
+	<duration> 30.000002 </duration>
+	<sequenceObject>
+		<name> Root </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name> Model 0 </name>
+		<type> model </type>
+		<editorOnly>
+			<activated> true </activated>
+			<solo> false </solo>
+		</editorOnly>
+		<resource> particles/Environment/event_white_tiger/player_tank/plasma_collector/plasma_collector_4.model </resource>
+		<track>
+			<name> visibility </name>
+			<type> bool </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> true </value>
+			</frame>
+			<frame>
+				<startTime> 30.000002 </startTime>
+				<value> true </value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

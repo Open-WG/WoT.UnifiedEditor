@@ -327,6 +327,7 @@ Views.TreeView {
 			: null
 
 		onObjectAdded : {
+			object.columnModel.columnOrder = index + 1
 			var obj = columnComponent.createObject(null, {
 				"columnModel": object.columnModel,
 				"title" : object.columnModel.fullName,

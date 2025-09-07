@@ -39,6 +39,16 @@
 		<item label="Set WoT+ State Active" action="$wotPlusController.setWotPlusStateDev(1)" />
 		<item label="Set WoT+ State Canceled" action="$wotPlusController.setWotPlusStateDev(2)" />
 		<item label="Give next attendance reward" action="$wotPlusController.giveAttendanceRewardDev()" />
+		<item label="Clear loadouts cache" action="from gui.development.ui import clearWotPlusAssistantCache; clearWotPlusAssistantCache()" />
+		<item label="Request loadouts (with cache clear)" action="from gui.development.ui import invalidateWotPlusAssistant; invalidateWotPlusAssistant()" />
+		<item label="Block from requests" action="from gui.development.ui import blockWotPlusAssistantFromRequests; blockWotPlusAssistantFromRequests()" />
+	</item>
+
+
+	<item label="Easy tank equip">
+		<item label="Clear cache" action="from gui.development.ui import clearEasyTankEquipCache; clearEasyTankEquipCache()" />
+		<item label="Request loadouts" action="from gui.development.ui import invalidateEasyTankEquip; invalidateEasyTankEquip()" />
+		<item label="Block from requests" action="from gui.development.ui import blockEasyTankEquipFromRequests; blockEasyTankEquipFromRequests()" />
 	</item>
 
 	<item label="Prestige system">
@@ -267,7 +277,8 @@
 			<param label="15">(4)</param>
 			<param label="18">(5)</param>
 		</item>
-		<item label="Show Rewards Selection screen" action="from comp7.gui.development import showComp7RewardsSelectionWindow; showComp7RewardsSelectionWindow()"/>
+		<item label="Show Yearly Rewards Selection screen" action="from comp7.gui.development import showComp7YearlyRewardsSelectionWindow; showComp7YearlyRewardsSelectionWindow" input="true" format="('%s')"/>
+		<item label="Show Weekly Rewards Selection screen" action="from comp7.gui.development import showComp7WeeklyQuestsRewardsSelectionWindow; showComp7WeeklyQuestsRewardsSelectionWindow" input="true" format="('%s')"/>
 		<item label="Show Rewards Selected view" action="from comp7.gui.development import showComp7SelectedRewardsWindow; showComp7SelectedRewardsWindow()"/>
 		<item label="Tooltips">
 			<item label="Show Weekly Quest Tooltip" action="from comp7.gui.development import showComp7WeeklyQuestTooltipWindow; showComp7WeeklyQuestTooltipWindow()"/>
@@ -293,6 +304,17 @@
 
 	<item label="Environment Switching">
 		<item label="Change battle environment" action="$p.base.setDevelopmentFeature" input="true" format="(0, 'changeEnvironment', 0, '%s')"/>
+	</item>
+
+	 <item label="Sounds">
+		<item label="Debug Messages">
+			<item label="Events" action="import WWISE; WWISE.WW_switchDebugMessagesType(1)"/>
+			<item label="Switches" action="import WWISE; WWISE.WW_switchDebugMessagesType(2)"/>
+			<item label="States" action="import WWISE; WWISE.WW_switchDebugMessagesType(4)"/>
+		</item>
+		<item label="Enable VO logging" action="from gui import IngameSoundNotifications; IngameSoundNotifications._ENABLE_VO_LOGS = True">
+		</item>
+		<item label="Play VO" action="from gui.battle_control.avatar_getter import getSoundNotifications; getSoundNotifications().play" input="true" format="('%s')"/>
 	</item>
 
 </root>

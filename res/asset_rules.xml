@@ -66,12 +66,12 @@
   </rule>
   <rule pattern="^virtual://.*(\.fxo)$">
     <converter>EffectConverter</converter>
-    <converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow </converterParams>
+    <converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow;shaders/gpu_decals;shaders </converterParams>
   </rule>
   <rule pattern=".*(\.fx)$">
     <root>true</root>
     <converter>EffectConverter</converter>
-    <converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow </converterParams>
+    <converterParams>-includePath shaders/std_effects/;shaders/terrain;shaders/post_processing;shaders/generic;shaders/water;shaders/shadow;shaders/gpu_decals;shaders </converterParams>
   </rule>
   <rule pattern=".*(collision_client.*\.model)$">
     <root>false</root>
@@ -386,6 +386,8 @@
   <ruleDirectory>cat</ruleDirectory>
   <ruleDirectory>cef</ruleDirectory>
   <ruleDirectory>compatibility</ruleDirectory>
+  <ruleDirectory>content/3D_Customization/Bakeable_Attachments</ruleDirectory>
+  <ruleDirectory>content/3D_Customization/Statrackers</ruleDirectory>
   <ruleDirectory>gui</ruleDirectory>
   <ruleDirectory>particles</ruleDirectory>
   <ruleDirectory>spaces</ruleDirectory>
@@ -394,6 +396,7 @@
   <ruleDirectory>vehicles</ruleDirectory>
   <ruleDirectory>system/maps</ruleDirectory>
   <ruleDirectory>system/debug_ui</ruleDirectory>
+  <ruleDirectory> content/LightMasks/IESProfiles</ruleDirectory>
   <!-- tools resources -->
   <ruleDirectory>resources</ruleDirectory>
   <ruleDirectory>resources/data</ruleDirectory>

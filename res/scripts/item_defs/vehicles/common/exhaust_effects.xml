@@ -138,6 +138,10 @@
 					</selector>
 					<selector key="2" type="effect" name="particles/Tank/exhaust/strv_engine_crit.eff"/>
 				</selector>
+				<selector key="2" type="range" variable="_engine_load">
+					<selector key="1" type="effect" name="particles/Tank/exhaust/forsage_gas/forsage_idle.eff"/>
+					<selector key="2" type="effect" name="particles/Tank/exhaust/forsage_gas/forsage_work_load.eff"/>
+				</selector>
 			</selector>
 		</template>
 		<template name="ExhaustSTRV">

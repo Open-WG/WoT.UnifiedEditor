@@ -203,6 +203,10 @@ Menu {
 			source: context.action("showDynamicPluginsPanel")
 		}
 
+		Details.ActionMenuItem {
+			source: context.action("reloadCgfLibrary")
+		}
+
 		Menu {
 			id: crash
 			title: "Crash"

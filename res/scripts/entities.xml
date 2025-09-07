@@ -59,7 +59,6 @@
 		<TeamBase/>
 		<RepairBase/>
 		<ChatChannel/>
-		<SysMessenger/>
 		<BaseAppChatManager/>
 		<Clan/>
 		<ClanRequestProcessor/>
@@ -72,22 +71,19 @@
 		<MapBoxUnitMgr/>
 		<VoiceChatMgr/>
 		<MessageFilterManager/>
-		<CenterStatusReader/>
 		<AccountRegistrator/>
 		<WebPrebattleMgr/>
 		<LoginQueue/>
 		<GameStatsCollector/>
 		<YYChatMgr/>
 		<UnitAssembler/>
-		<ClusterDismissal/>
+		<CenterDismissal/>
+		<PeripheryDismissal/>
 		<UnitFinder/>
 		<EventBattlesMgr/>
-		<RankedBattlesMgr/>
 		<SpecBattleMgr/>
 		<ExternalDataUpdater/>
 		<ClanRelay/>
-		<AccountSurrogate/>
-		<RankedMatchmaker/>
 		<RandomBattleMatchmaker/>
 		<SingletonLock/>
 		<ChannelsManagerGameParamsHandler/>
@@ -106,5 +102,6 @@
 		<AccountsInvitationsWhiteList/>
 		<WinbackMgr/>
 		<NoviceStage2Mgr/>
+		<PrebattleManager/>
 	</ServerOnlyEntities>
 </root>
