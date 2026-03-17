@@ -1,26 +1,5 @@
 <root>
 	<model>
-		<resource> content/Hangars/hangar_v4/Buildings/hv4_066_StreetFactory/normal/lod0/hv4_066_StreetFactory_Pipe_02.model </resource>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<transform>
-			<row0> -0.032384 0.000000 0.999475 </row0>
-			<row1> 0.000000 1.000000 0.000000 </row1>
-			<row2> -0.999475 0.000000 -0.032384 </row2>
-			<row3> 16.047043 -0.441864 68.865189 </row3>
-		</transform>
-		<castsShadow> true </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
@@ -167,6 +146,9 @@
 		<destructibleState> undamaged </destructibleState>
 		<decorative> 384 </decorative>
 	</model>
+	<terrain>
+		<resource> fffeffffo.cdata/terrain2 </resource>
+	</terrain>
 	<particles>
 		<resource> particles/environment/hangar/h_v4_crowflock.eff </resource>
 		<editorOnly>
@@ -183,7 +165,4 @@
 		</transform>
 		<decorative> 448 </decorative>
 	</particles>
-	<terrain>
-		<resource> fffeffffo.cdata/terrain2 </resource>
-	</terrain>
 </root>

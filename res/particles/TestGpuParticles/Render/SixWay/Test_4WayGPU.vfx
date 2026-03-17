@@ -150,8 +150,8 @@
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1056964608 </value>
-							<value> 1069547520 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -256,6 +256,17 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_terrainOffset </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1008981770 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_continuousPosition </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
@@ -289,7 +300,29 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_syncLifetimeAndSize </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_syncVelocityAndInertia </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_inheritSize </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -518,8 +551,8 @@
 				</lods>
 				<fields>
 					<field>
-						<from> 26.000000 </from>
-						<to> 40.000000 </to>
+						<from> 15.000000 </from>
+						<to> 15.000000 </to>
 						<userData> 0.000000 </userData>
 						<fieldId> 6 </fieldId>
 					</field>
@@ -529,8 +562,8 @@
 				<lifetimeMax> 0.000000 </lifetimeMax>
 				<startDelay> 0.000000 </startDelay>
 				<startDelayMax> 0.000000 </startDelayMax>
-				<burstPeriod> 0.500000 </burstPeriod>
-				<burstPeriodMax> 0.500000 </burstPeriodMax>
+				<burstPeriod> 1.000000 </burstPeriod>
+				<burstPeriodMax> 1.000000 </burstPeriodMax>
 				<emissionCurve>
 					<name> Emission_rate </name>
 					<keys>
@@ -665,6 +698,28 @@
 				</property>
 				<property>
 					<name> g_applyWind </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_windHardImmuneTime </name>
+					<bytes> 4 </bytes>
+					<metadata> 0 </metadata>
+					<field_data>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+						<value> 0 </value>
+					</field_data>
+				</property>
+				<property>
+					<name> g_windSoftImmuneTime </name>
 					<bytes> 4 </bytes>
 					<metadata> 0 </metadata>
 					<field_data>
@@ -889,7 +944,7 @@
 			</behaviourMasks>
 			<render>
 				<material>
-					<shaderPath> shaders/gpu_particles/render_billboards_r.fx </shaderPath>
+					<shaderPath> shaders/gpu_particles/six_way_r.fx </shaderPath>
 					<property>
 						<name> dynamicObject </name>
 						<bytes> 4 </bytes>
@@ -918,8 +973,8 @@
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
-							<value> 0 </value>
 							<value> 1065353216 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
 					</property>
@@ -939,7 +994,7 @@
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -961,8 +1016,8 @@
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
+							<value> 1084227584 </value>
+							<value> 1084227584 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -979,98 +1034,10 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_dissolveFactor </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveEdgeThreshold </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1036831949 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveUV1OffsetX </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveUV1OffsetY </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveUV2OffsetX </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveUV2OffsetY </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveEdgeColor </name>
+						<name> g_proceduralDissolveParams </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveEdgeColorIntensity </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_edgeGradient </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1078,107 +1045,8 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_MultiplyBlend </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_use2ndNoiseMap </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveMapScale </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveMapScaleUV2 </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_ditherCoeff </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1120403456 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useRandomGradient </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_randomGradientColor </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1077936128 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_proceduralDissolve </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_octaves </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_dissolveNoiseType </name>
-						<bytes> 4 </bytes>
+						<name> g_noiseParameters0 </name>
+						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
@@ -1210,6 +1078,17 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_combineDissolveMap </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_useParticleAlpha </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
@@ -1221,55 +1100,11 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_heatDissolve </name>
-						<bytes> 4 </bytes>
+						<name> g_combinedDissolveParams </name>
+						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_heatOctaves </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_visualizeHeatNoise </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useHeatParticleAlpha </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_heatNoiseType </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
+							<value> 1065353216 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1332,32 +1167,43 @@
 					</property>
 					<property>
 						<name> g_pivotOffset </name>
-						<bytes> 8 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_flipbookParams0 </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1082130432 </value>
-							<value> 1082130432 </value>
-							<value> 1103101952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
 					</property>
 					<property>
-						<name> g_improvedShadingModel </name>
-						<bytes> 4 </bytes>
+						<name> g_stretchParams </name>
+						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_slopeScale </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_sniperSlopeScale </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1056964608 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1368,98 +1214,10 @@
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1055451369 </value>
-							<value> 1055451369 </value>
-							<value> 1055451369 </value>
-							<value> 1063642600 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_gloss </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1041865114 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_metallic </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1048576000 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_transmission </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
+							<value> 1041009805 </value>
+							<value> 1041009805 </value>
+							<value> 1041009805 </value>
 							<value> 1065353216 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_emissionColor </name>
-						<bytes> 16 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 1065353216 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_emissionColorMultiplier </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_lightingParams0 </name>
-						<bytes> 16 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-							<value> 1053609165 </value>
-							<value> 1065353216 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_lightingParams1 </name>
-						<bytes> 16 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1058642330 </value>
-							<value> 1045220557 </value>
-							<value> 1082130432 </value>
-							<value> 1056964608 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_lightingParams2 </name>
-						<bytes> 16 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1077936128 </value>
-							<value> 1084227584 </value>
-							<value> 1106247680 </value>
-							<value> 0 </value>
 						</field_data>
 					</property>
 					<property>
@@ -1467,8 +1225,8 @@
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1058642330 </value>
-							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -1489,9 +1247,20 @@
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1036831949 </value>
-							<value> 1092616192 </value>
 							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_fadeParams2 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 1056964608 </value>
 							<value> 0 </value>
 						</field_data>
 					</property>
@@ -1501,9 +1270,9 @@
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 1065353216 </value>
-							<value> 1050056343 </value>
-							<value> 0 </value>
-							<value> 1065353217 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
 						</field_data>
 					</property>
 					<property>
@@ -1511,7 +1280,7 @@
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1058642330 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1523,7 +1292,7 @@
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
-							<value> 1065353216 </value>
+							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -1533,40 +1302,7 @@
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1018980991 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_tintRemap </name>
-						<bytes> 16 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-							<value> 1065353216 </value>
-							<value> 1065353217 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useAbsorptionColor </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_highPrecisionLighting </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
+							<value> 1028443341 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1579,6 +1315,116 @@
 						<field_data>
 							<value> 0 </value>
 							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useComplexSeed </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_outputEmissiveOnly </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_enableEmissiveAlpha </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_absorption </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1056964608 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_alphaParams </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1050253722 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightmapNormalization </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_tintRemap </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useAbsorptionColor </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_indirectMultipliers </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1069547520 </value>
+							<value> 1056964608 </value>
+							<value> 1073741824 </value>
+							<value> 1056964608 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightingMultipliers </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1065353216 </value>
+							<value> 1065353216 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
@@ -1639,8 +1485,41 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_overrideMainAxis </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_axisRotationParams </name>
 						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_flipbookParams0 </name>
+						<bytes> 16 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1090519040 </value>
+							<value> 1090519040 </value>
+							<value> 1106247680 </value>
+							<value> 1106247680 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_animationProgressModes </name>
+						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
@@ -1705,39 +1584,6 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_clusteredShading </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useGlossMap </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useMetallicMap </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
 						<name> g_uvFlip </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
@@ -1749,7 +1595,7 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_useEmissionMap </name>
+						<name> g_useSizeTimeline </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -1760,7 +1606,18 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_useSizeTimeline </name>
+						<name> g_useStretchTimeline </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_useLightmapDensityTimeline </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -1782,7 +1639,7 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_useAnimationLifetime </name>
+						<name> g_useHeatFadeTimeline </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -1793,7 +1650,7 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_useColorOpTimeline </name>
+						<name> g_useAnimationLifetime </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -1859,11 +1716,55 @@
 						</field_data>
 					</property>
 					<property>
+						<name> g_useHeatIntensityOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_proceduralDissolve </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
 						<name> g_sizeOverLifetime </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_stretchOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1102053376 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_lightmapDensityOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1102577664 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1892,17 +1793,6 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_colorOpOverLifetime </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1077936128 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
 						<name> g_sizeOverDistance </name>
 						<bytes> 16 </bytes>
 						<metadata> 0 </metadata>
@@ -1918,7 +1808,18 @@
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1082130432 </value>
+							<value> 1103101952 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+							<value> 0 </value>
+						</field_data>
+					</property>
+					<property>
+						<name> g_heatIntensityOverLifetime </name>
+						<bytes> 4 </bytes>
+						<metadata> 0 </metadata>
+						<field_data>
+							<value> 1103626240 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1947,22 +1848,22 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_colorOverTemperature </name>
+						<name> g_heatFadeOverLifetime </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1073741824 </value>
+							<value> 1104150528 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 						</field_data>
 					</property>
 					<property>
-						<name> g_useDissolveCurve </name>
+						<name> g_colorOverTemperature </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 0 </value>
+							<value> 1073741824 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -1980,40 +1881,7 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_dissolveSmokeDensityOverLifetime </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1095761920 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_heatDissolveOverLifetime </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1096810496 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_scaleOffsetPerParticleDissolve </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1036831949 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_additionalStageDissolveFactor </name>
+						<name> g_useRandomGradient </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
@@ -2024,33 +1892,11 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_useLifetimeForDissolve </name>
+						<name> g_randomGradientColor </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
-							<value> 1 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_useLifetimeUVOffsetForDissolve </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_smokeDissolve </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 0 </value>
+							<value> 1077936128 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -2101,22 +1947,11 @@
 						</field_data>
 					</property>
 					<property>
-						<name> g_animationProgressModes </name>
+						<name> g_excludeFromTaa </name>
 						<bytes> 4 </bytes>
 						<metadata> 0 </metadata>
 						<field_data>
 							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-							<value> 0 </value>
-						</field_data>
-					</property>
-					<property>
-						<name> g_ShadingMode </name>
-						<bytes> 4 </bytes>
-						<metadata> 0 </metadata>
-						<field_data>
-							<value> 1 </value>
 							<value> 0 </value>
 							<value> 0 </value>
 							<value> 0 </value>
@@ -2124,11 +1959,11 @@
 					</property>
 					<resource>
 						<name> g_lightmapPositive </name>
-						<path> particles/TestGpuParticles/Render/SixWay/test_texture_sheets1_4w.dds </path>
+						<path> particles/TestGpuParticles/Samples/textures/curly_02_loop_8x8_4W.dds </path>
 					</resource>
 					<resource>
 						<name> g_motionVectors </name>
-						<path> particles/TestGpuParticles/Render/SixWay/test_texture_sheets1_6w_1_MV.dds </path>
+						<path> particles/TestGpuParticles/Samples/textures/curly_02_loop_8x8_MV.dds </path>
 					</resource>
 				</material>
 				<visuals/>
@@ -2554,6 +2389,101 @@
 							<value> 3.000000 </value>
 							<inTangent> 1.000000 </inTangent>
 							<outTangent> 1.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_stretchOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_lightmapDensityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_heatInfluenceOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_heatIntensityOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+					</keys>
+					<times>
+						<time> 0.000000 </time>
+						<time> 1.000000 </time>
+					</times>
+				</curve>
+				<curve>
+					<name> g_heatFadeOverLifetime </name>
+					<keys>
+						<key>
+							<value> 0.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
+						</key>
+						<key>
+							<value> 1.000000 </value>
+							<inTangent> 0.000000 </inTangent>
+							<outTangent> 0.000000 </outTangent>
 						</key>
 					</keys>
 					<times>

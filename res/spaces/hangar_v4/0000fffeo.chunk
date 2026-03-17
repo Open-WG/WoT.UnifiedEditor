@@ -114,27 +114,6 @@
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/smoke_zone.model </resource>
-		<transform>
-			<row0> 9.125179 -0.000034 20.157139 </row0>
-			<row1> 0.000025 14.211687 0.000013 </row1>
-			<row2> -20.111855 0.000027 9.104679 </row2>
-			<row3> 42.026569 -6.178221 81.329712 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
 		<resource> content/Hangars/hangar_v4/Environment/hv4_103_AssemblyConstructor/normal/lod0/hv4_103_AssemblyConstructor_02.model </resource>
 		<transform>
 			<row0> 1.759194 0.000000 -0.000001 </row0>
@@ -561,29 +540,6 @@
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
-			<groupName> group_43 </groupName>
-			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
-		<transform>
-			<row0> 2.711808 0.534349 3.624905 </row0>
-			<row1> 0.891981 -4.443750 -0.012240 </row1>
-			<row2> 2.452885 0.497617 -1.908368 </row2>
-			<row3> 45.836452 12.696603 83.184868 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
 			<groupName> group_44 </groupName>
 			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
 		</editorOnly>
@@ -663,29 +619,6 @@
 			<row1> 0.000002 1.000000 -0.000002 </row1>
 			<row2> -0.866027 0.000003 0.499997 </row2>
 			<row3> 63.583096 25.183001 58.354996 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-			<groupName> group_44 </groupName>
-			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
-		<transform>
-			<row0> -2.216305 0.113905 -3.981756 </row0>
-			<row1> -1.095990 4.336200 0.734089 </row1>
-			<row2> 2.642952 0.912645 -1.444999 </row2>
-			<row3> 46.152470 12.639475 34.512848 </row3>
 		</transform>
 		<castsShadow> false </castsShadow>
 		<alwaysDynamic> false </alwaysDynamic>
@@ -927,214 +860,6 @@
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
 		<serverId> 30 </serverId>
-	</model>
-	<model>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<transform>
-			<row0> 1.830825 0.000000 0.000000 </row0>
-			<row1> 0.000000 1.640977 0.000000 </row1>
-			<row2> 0.000000 0.000000 1.000000 </row2>
-			<row3> 17.308229 9.980606 18.687531 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> 1.060660 0.000000 1.060660 </row0>
-			<row1> 0.000000 1.500000 0.000000 </row1>
-			<row2> -1.060660 0.000000 1.060660 </row2>
-			<row3> 46.801495 14.755471 37.384888 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -0.986005 0.000000 -1.130395 </row0>
-			<row1> 0.000001 1.500000 0.000000 </row1>
-			<row2> 1.130395 -0.000001 -0.986005 </row2>
-			<row3> 46.851318 14.755471 58.552322 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<transform>
-			<row0> 0.875096 0.000000 2.869531 </row0>
-			<row1> 0.000000 3.000000 0.000000 </row1>
-			<row2> -2.869531 0.000000 0.875096 </row2>
-			<row3> 94.928284 5.794754 82.801361 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -0.363763 0.000000 -1.966640 </row0>
-			<row1> 0.000000 2.000000 0.000000 </row1>
-			<row2> 1.966641 0.000000 -0.363763 </row2>
-			<row3> 94.811378 11.069917 82.864326 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<sequence>
-			<resource> particles/eff_sequence/h_v4_lamp_red.seq </resource>
-			<autoStart> true </autoStart>
-			<isSynchronized> false </isSynchronized>
-			<speed> 1.000000 </speed>
-			<delay> 0.000000 </delay>
-			<loop> true </loop>
-			<loopCount> -1 </loopCount>
-		</sequence>
-		<inverseKinematics>
-			<avatar/>
-			<binding/>
-			<collisionFlags> 0 </collisionFlags>
-			<balancerPower> 0.100000 0.050000 </balancerPower>
-			<rootSmoothing> 0.200000 </rootSmoothing>
-			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
-			<maxIterations> 50 </maxIterations>
-			<maxDistanceError> 0.000100 </maxDistanceError>
-			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
-		</inverseKinematics>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -1.500000 0.000000 -0.000001 </row0>
-			<row1> 0.000000 1.500000 0.000000 </row1>
-			<row2> 0.000001 0.000000 -1.500000 </row2>
-			<row3> 38.547031 15.548244 31.146042 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -1.500000 0.000000 -0.000001 </row0>
-			<row1> 0.000000 1.500000 0.000000 </row1>
-			<row2> 0.000001 0.000000 -1.500000 </row2>
-			<row3> 58.917282 15.548242 97.103554 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -1.024080 0.000028 -1.096021 </row0>
-			<row1> -0.000024 1.500000 0.000061 </row1>
-			<row2> 1.096021 0.000059 -1.024080 </row2>
-			<row3> 46.904911 14.755471 82.857224 </row3>
-		</transform>
-		<sequence>
-			<resource> particles/eff_sequence/h_v4_lamp_red.seq </resource>
-			<autoStart> true </autoStart>
-			<isSynchronized> false </isSynchronized>
-			<speed> 1.000000 </speed>
-			<delay> 0.000000 </delay>
-			<loop> true </loop>
-			<loopCount> -1 </loopCount>
-		</sequence>
-		<inverseKinematics>
-			<avatar/>
-			<binding/>
-			<collisionFlags> 0 </collisionFlags>
-			<balancerPower> 0.100000 0.050000 </balancerPower>
-			<rootSmoothing> 0.200000 </rootSmoothing>
-			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
-			<maxIterations> 50 </maxIterations>
-			<maxDistanceError> 0.000100 </maxDistanceError>
-			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
-		</inverseKinematics>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
 	</model>
 	<model>
 		<editorOnly>
@@ -1700,15 +1425,224 @@
 		<visibilityMask> 4294967295 </visibilityMask>
 		<metaData/>
 		<megalodFlag> 0 </megalodFlag>
-		<resource> content/Hangars/hangar_v4/Environment/hv4_047_Lamps/normal/lod0/hv4_047_Lamps_06.model </resource>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
 		<transform>
-			<row0> -1.198137 0.000000 0.069995 </row0>
-			<row1> 0.000000 1.200000 0.000000 </row1>
-			<row2> -0.069995 0.000000 -1.198137 </row2>
-			<row3> 17.720240 3.483938 86.191063 </row3>
+			<row0> 2.711808 0.534349 3.624905 </row0>
+			<row1> 0.891981 -4.443749 -0.012240 </row1>
+			<row2> 2.452885 0.497617 -1.908367 </row2>
+			<row3> 45.836452 12.696603 83.184868 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
+		<transform>
+			<row0> -2.216305 0.113905 -3.981756 </row0>
+			<row1> -1.095990 4.336200 0.734090 </row1>
+			<row2> 2.642952 0.912645 -1.444999 </row2>
+			<row3> 46.152470 12.639475 34.512848 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.830825 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.640977 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 17.308229 9.980606 18.687531 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 0.875096 0.000000 2.869531 </row0>
+			<row1> 0.000000 3.000000 0.000000 </row1>
+			<row2> -2.869531 0.000000 0.875096 </row2>
+			<row3> 94.928284 5.794754 82.801361 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> 1.060660 0.000000 1.060660 </row0>
+			<row1> 0.000000 1.500000 0.000000 </row1>
+			<row2> -1.060660 0.000000 1.060660 </row2>
+			<row3> 46.801495 14.755471 37.384888 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -0.986005 0.000000 -1.130395 </row0>
+			<row1> 0.000001 1.500000 -0.000000 </row1>
+			<row2> 1.130395 -0.000001 -0.986005 </row2>
+			<row3> 46.851318 14.755471 58.552322 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -0.363763 0.000000 -1.966640 </row0>
+			<row1> 0.000000 2.000000 0.000000 </row1>
+			<row2> 1.966641 0.000000 -0.363763 </row2>
+			<row3> 94.811378 11.069917 82.864326 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<sequence>
+			<resource> particles/eff_sequence/h_v4_lamp_red.seq </resource>
+			<autoStart> true </autoStart>
+			<isSynchronized> false </isSynchronized>
+			<speed> 1.000000 </speed>
+			<delay> 0.000000 </delay>
+			<loop> true </loop>
+			<loopCount> -1 </loopCount>
+		</sequence>
+		<inverseKinematics>
+			<avatar/>
+			<binding/>
+			<collisionFlags> 0 </collisionFlags>
+			<balancerPower> 0.100000 0.050000 </balancerPower>
+			<rootSmoothing> 0.200000 </rootSmoothing>
+			<colliderNormalAdjustmentHeight> 0.010000 </colliderNormalAdjustmentHeight>
+			<maxIterations> 50 </maxIterations>
+			<maxDistanceError> 0.000100 </maxDistanceError>
+			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
+		</inverseKinematics>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -1.500000 0.000000 -0.000001 </row0>
+			<row1> 0.000000 1.500000 0.000000 </row1>
+			<row2> 0.000001 0.000000 -1.500000 </row2>
+			<row3> 38.547031 15.548244 31.146042 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -1.500000 0.000000 -0.000001 </row0>
+			<row1> 0.000000 1.500000 0.000000 </row1>
+			<row2> 0.000001 0.000000 -1.500000 </row2>
+			<row3> 58.917282 15.548242 97.103554 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -1.024080 0.000028 -1.096021 </row0>
+			<row1> -0.000024 1.500000 0.000061 </row1>
+			<row2> 1.096021 0.000059 -1.024080 </row2>
+			<row3> 46.904911 14.755471 82.857224 </row3>
 		</transform>
 		<sequence>
-			<resource> particles/eff_sequence/h_v4_Lamps_06.seq </resource>
+			<resource> particles/eff_sequence/h_v4_lamp_red.seq </resource>
 			<autoStart> true </autoStart>
 			<isSynchronized> false </isSynchronized>
 			<speed> 1.000000 </speed>
@@ -1731,8 +1665,27 @@
 		<alwaysDynamic> false </alwaysDynamic>
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
-		<decorative> 448 </decorative>
+		<decorative> 384 </decorative>
 	</model>
+	<audio>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 20.585243 1.807900 95.040581 </row3>
+		</transform>
+		<wweventName> hangar_v4_metal_low </wweventName>
+		<maxDistance> 150.000000 </maxDistance>
+	</audio>
+	<terrain>
+		<resource> 0000fffeo.cdata/terrain2 </resource>
+	</terrain>
 	<particles>
 		<resource> particles/environment/hangar/hangar_v4_smoke.eff </resource>
 		<editorOnly>
@@ -1765,23 +1718,4 @@
 		</transform>
 		<decorative> 448 </decorative>
 	</particles>
-	<audio>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<transform>
-			<row0> 1.000000 0.000000 0.000000 </row0>
-			<row1> 0.000000 1.000000 0.000000 </row1>
-			<row2> 0.000000 0.000000 1.000000 </row2>
-			<row3> 20.585243 1.807900 95.040581 </row3>
-		</transform>
-		<wweventName> hangar_v4_metal_low </wweventName>
-		<maxDistance> 150.000000 </maxDistance>
-	</audio>
-	<terrain>
-		<resource> 0000fffeo.cdata/terrain2 </resource>
-	</terrain>
 </root>

@@ -189,6 +189,7 @@
 		<unbound>
 			<cameraZoom> 100.000000 </cameraZoom>
 		</unbound>
+		<enableSurvey> false </enableSurvey>
 	</settings>
 	<screenshots>
 		<isDisablePostProcessing> false </isDisablePostProcessing>
@@ -519,7 +520,11 @@
 		<plugins_plg_asset_root_viewer> false </plugins_plg_asset_root_viewer>
 	</dynamic_plugins>
 	<AIhelperBrush>
-		<ModelURL> http://cy1-wb-017:8100 </ModelURL>
+		<ModelURL4> https://ai.wgprod.net/level-art-aws/api/v1/ </ModelURL4>
+		<ModelURL5> https://ai.wgtest.net/level-art-aws/api/v1/ </ModelURL5>
+		<ServerTimeout> 300 </ServerTimeout>
+		<ServerType> 0 </ServerType>
+		<xApiKey> 1MBQjPiNjGq7Ij89DLg3p1w5vhTx2SxW </xApiKey>
 	</AIhelperBrush>
 	<visualScriptEditor>
 		<connection> false </connection>
@@ -545,7 +550,7 @@
 			</defaultShortcut>
 			<path> Unified Editor/Editors/Space Editor/Modes/Default Mode </path>
 			<name> Create Null Model </name>
-			<resource> content/environment/env_null_model/null_model.model </resource>
+			<resource> content/Environment/env_null_model/null_model.model </resource>
 			<isEnabled> true </isEnabled>
 		</create_null_model>
 		<create_spot_light>

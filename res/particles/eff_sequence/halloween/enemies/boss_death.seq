@@ -540,7 +540,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name> Sound_seq_boss_death </name>
+		<name> sound_seq_boss_death </name>
 		<type> sound </type>
 		<editorOnly>
 			<activated> true </activated>
@@ -556,7 +556,7 @@
 			</frame>
 		</track>
 		<track>
-			<name> ev_halloween_2021_gameplay_boss_death </name>
+			<name> Wwise_event </name>
 			<type> sound </type>
 			<editorOnly>
 				<activated> true </activated>
@@ -565,7 +565,7 @@
 			<frame>
 				<startTime> 0.000000 </startTime>
 				<duration> 10.000001 </duration>
-				<sequenceSound> ev_halloween_2021_gameplay_boss_death </sequenceSound>
+				<sequenceSound> ev_hw_gp_bf_boss_death_seq </sequenceSound>
 				<type> play_till_end </type>
 				<fade> 4.000000 </fade>
 			</frame>

@@ -18,8 +18,8 @@
 				<material>
 					<identifier> tank_turret_01 </identifier>
 					<fx> shaders/custom/emissive_angle_falloff.fx </fx>
-					<materialKind> 0 </materialKind>
 					<collisionFlags> 0 </collisionFlags>
+					<materialKind> 0 </materialKind>
 					<property> destBlend
 						<Int> 2 </Int>
 					</property>
@@ -40,17 +40,17 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min> -4.357984 -2.285587 -9.306390 </min>
-		<max> 4.357984 2.241826 3.680337 </max>
+		<min> -3.097441 -1.132994 -9.306390 </min>
+		<max> 3.097441 2.269237 -5.956352 </max>
 	</boundingBox>
 	<metaData>
 		<settings>
 			<exportAnimation> false </exportAnimation>
 			<exportMode> 1 </exportMode>
-			<boneCount> 85 </boneCount>
+			<boneCount> 130 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
 			<allowScale> false </allowScale>
-			<bumpMapped> false </bumpMapped>
+			<bumpMapped> true </bumpMapped>
 			<keepExistingMaterials> false </keepExistingMaterials>
 			<snapVertices> false </snapVertices>
 			<stripRefPrefix> false </stripRefPrefix>
@@ -75,7 +75,7 @@
 			<unitScale> 0.100000 </unitScale>
 			<localHierarchy> false </localHierarchy>
 			<nodeFilter> 1 </nodeFilter>
-			<copyExternalTextures> false </copyExternalTextures>
+			<copyExternalTextures> true </copyExternalTextures>
 			<copyTexturesTo/>
 		</settings>
 	</metaData>

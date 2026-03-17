@@ -56,7 +56,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -272,7 +272,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -490,7 +490,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -653,7 +653,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -708,7 +708,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -871,7 +871,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -926,7 +926,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1142,7 +1142,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1358,7 +1358,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1574,7 +1574,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1788,7 +1788,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -1949,7 +1949,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.200000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -2004,7 +2004,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -2233,7 +2233,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -2394,7 +2394,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -2449,7 +2449,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -2612,7 +2612,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -2667,7 +2667,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -2883,7 +2883,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -3099,7 +3099,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -3313,7 +3313,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -3472,7 +3472,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> 0.000000 </particle.f_z_offset>
-			<particle.ch_fn_texture> particles/content_deferred/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> \Data\Shaders\ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.200000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.700000 </lighting_params.f_indirect_light_multiplier>
@@ -3542,7 +3542,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -3703,7 +3703,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -3758,7 +3758,7 @@
 				<ps_element_epicentr_emission> 1 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>
@@ -3921,7 +3921,7 @@
 			<particle.f_ROLL_max> 0.000000 </particle.f_ROLL_max>
 			<particle.f_speed_sensor> 0.000000 </particle.f_speed_sensor>
 			<particle.f_z_offset> -0.400000 </particle.f_z_offset>
-			<particle.ch_fn_texture> \particles\content_forward\PFX_textures\eff_tex.dds </particle.ch_fn_texture>
+			<particle.ch_fn_texture> particles/content_forward/PFX_textures/eff_tex.dds </particle.ch_fn_texture>
 			<particle.ch_fn_Shader> data/shaders/ps.fx </particle.ch_fn_Shader>
 			<lighting_params.f_diffuse_light_multiplier> 0.000000 </lighting_params.f_diffuse_light_multiplier>
 			<lighting_params.f_indirect_light_multiplier> 0.000000 </lighting_params.f_indirect_light_multiplier>
@@ -3976,7 +3976,7 @@
 				<ps_element_epicentr_emission> 0 </ps_element_epicentr_emission>
 			</dw_mode>
 			<dw_ext_mode>
-				<ps_emitter_ext_mode_reserved> 0 </ps_emitter_ext_mode_reserved>
+				<ps_emitter_ext_ignore_camera_factor> 0 </ps_emitter_ext_ignore_camera_factor>
 				<ps_emitter_ext_mode_eee_slave> 0 </ps_emitter_ext_mode_eee_slave>
 				<ps_emitter_ext_mode_model_emission> 0 </ps_emitter_ext_mode_model_emission>
 				<ps_emitter_ext_mode_model_reserved> 0 </ps_emitter_ext_mode_model_reserved>

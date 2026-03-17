@@ -347,6 +347,24 @@
 				<tangentMode> 0 </tangentMode>
 			</frame>
 		</track>
+		<track>
+			<name> opacity </name>
+			<type> float </type>
+			<frame>
+				<startTime> 0.000000 </startTime>
+				<value> 0.120000 </value>
+				<inTangent> 0.000000 </inTangent>
+				<outTangent> 0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+			<frame>
+				<startTime> 60.000004 </startTime>
+				<value> 0.120000 </value>
+				<inTangent> -0.000000 </inTangent>
+				<outTangent> -0.000000 </outTangent>
+				<tangentMode> 0 </tangentMode>
+			</frame>
+		</track>
 	</sequenceObject>
 	<sequenceObject>
 		<name> ring_glow </name>

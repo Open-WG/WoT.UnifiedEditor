@@ -252,6 +252,27 @@
 		<serverId> 2 </serverId>
 	</model>
 	<model>
+		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.115681 </row2>
+			<row3> 40.110992 26.170000 27.238998 </row3>
+		</transform>
+		<castsShadow> true </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<serverId> 1 </serverId>
+	</model>
+	<model>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
@@ -291,27 +312,6 @@
 			<smoothingCoefficient> 0.200000 </smoothingCoefficient>
 		</inverseKinematics>
 		<decorative> 256 </decorative>
-	</model>
-	<model>
-		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<transform>
-			<row0> 1.000000 0.000000 0.000000 </row0>
-			<row1> 0.000000 1.000000 0.000000 </row1>
-			<row2> 0.000000 0.000000 1.115681 </row2>
-			<row3> 40.110992 26.170000 27.238998 </row3>
-		</transform>
-		<castsShadow> true </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<serverId> 1 </serverId>
 	</model>
 	<terrain>
 		<resource> 00010001o.cdata/terrain2 </resource>

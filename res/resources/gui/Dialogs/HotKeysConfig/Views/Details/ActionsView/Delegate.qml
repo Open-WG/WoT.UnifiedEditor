@@ -15,8 +15,34 @@ ItemDelegate {
 	text: model.display
 	highlighted: ListView.isCurrentItem
 	focusPolicy: Qt.ClickFocus
-	background: DelegateBackground {}
+	background: DelegateBackground {
+        anchors.fill: parent  
+    }
 	onPressed: view.currentIndex = index
+
+	contentItem: Row {
+        spacing: control.spacing
+        
+        Image {
+            source: control.icon.source
+            sourceSize.width: control.icon.width
+            sourceSize.height: control.icon.height
+            width: control.icon.width
+            height: control.icon.height
+            anchors.verticalCenter: parent.verticalCenter
+        }
+        
+        Text {
+            text: control.text
+            textFormat: Text.StyledText
+            font: control.font
+            color: control.palette.highlightedText
+            verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
+            width: control.availableWidth - parent.spacing - (control.icon.source != "" ? control.icon.width + parent.spacing : 0)
+            anchors.verticalCenter: parent.verticalCenter
+        }
+    }
 
 	icon.color: "transparent"
 	icon.source: {

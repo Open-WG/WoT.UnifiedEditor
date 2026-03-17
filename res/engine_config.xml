@@ -65,6 +65,8 @@
 		<!-- Maximum frame rate can be limited to allow other processes
 		some CPU time. In the fantasydemo example, this is used to provide
 		more time to the loading of terrain chunks. -->
+		<maxDetailDistance> 50 </maxDetailDistance>
+		<!-- Maximum distance within which micro-detail is visible.-->
 		<reducedFrameRate> 60 </reducedFrameRate>
 		<!-- Maximum frame rate in reduced mode. Used to prevent GPU overheating in hangar.-->
 		<!-- Shaders that need to setup an effect technique setting. -->
@@ -751,6 +753,9 @@
 				<bank>
 					<name> hangar_personal_missions.bnk </name>
 				</bank>
+				<bank>
+					<name> pet_system.bnk </name>
+				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
 				<bank>
@@ -913,6 +918,142 @@
 				<reverbs>false</reverbs>
 			</soundRender>
 		</WWISE_nil_profile>
+		<!--
+			WOTD-286516, WOTD-256975 Configuration of wwise Spatial Audio library 
+			https://www.audiokinetic.com/en/library/edge/?source=SDK&id=struct_ak_spatial_audio_init_settings.html
+		-->
+		<spatialAudio>
+			<presetMap>
+				<disabled> low </disabled>
+				<low> medium high </low>
+				<medium> max </medium>
+				<high> ultra </high>
+			</presetMap>
+			<presetConfigs>
+				<!-- Default preset is disabled -->
+				<default>
+					<!-- 
+						Maximum number of portals that sound can propagate through; 
+						must be less than or equal to AK_MAX_SOUND_PROPAGATION_DEPTH(8).
+					-->
+					<maxSoundPropagationDepth> 8 </maxSoundPropagationDepth>
+					<!--
+						Amount that an emitter or listener has to move to trigger a validation of reflections/diffraction. 
+						Larger values can reduce the CPU load at the cost of reduced accuracy. 
+						Note that the ray tracing itself is not affected by this value. 
+						Rays are cast each time a Spatial Audio update is executed.
+					-->
+					<movementThreshold> 0.1 </movementThreshold>
+					<!--
+						The number of primary rays used in the ray tracing engine. A larger number of rays will increase 
+						the chances of finding reflection and diffraction paths, but will result in higher CPU usage. 
+						When CPU limit is active (see \ref AkSpatialAudioInitSettings::fCPULimitPercentage), this setting represents 
+						the maximum allowed number of primary rays. Default value (35) should be good for most applications.
+					-->
+					<numberOfPrimaryRays> 0 </numberOfPrimaryRays>
+					<!--
+						Maximum reflection order [0, 4] - the number of 'bounces' in a reflection path. 
+						A high reflection order renders more details at the expense of higher CPU usage.
+						Set to 0 to globally disable reflections processing.
+					-->
+					<maxReflectionOrder> 1 </maxReflectionOrder>
+					<!--
+						Maximum diffraction order [0, 8] - the number of 'bends' in a diffraction path. 
+						A high diffraction order accommodates more complex geometry at the expense of higher CPU usage.
+						Diffraction must be enabled on the geometry to find diffraction paths (refer to \c AkGeometryParams). 
+						Set to 0 to disable diffraction on all geometry. This parameter limits the recursion 
+						depth of diffraction rays cast from the listener to scan the environment, and also 
+						the depth of the diffraction search to find paths between emitter and listener.
+						To optimize CPU usage, set it to the maximum number of edges you expect the obstructing geometry to traverse.
+						For example, if box-shaped geometry is used exclusively, and only a single box is expected 
+						between an emitter and then listener, limiting \c uMaxDiffractionOrder to 2 may be sufficient.
+						A diffraction path search starts from the listener, so when the maximum diffraction order is exceeded, 
+						the remaining geometry between the end of the path and the emitter is ignored. 
+						In such case, where the search is terminated before reaching the emitter, 
+						the diffraction coefficient will be underestimated. It is calculated from a partial path, ignoring any remaining geometry.	
+					-->
+					<maxDiffractionOrder> 1 </maxDiffractionOrder>
+					<!--
+						The maximum number of game-defined auxiliary sends that can originate from a single emitter. 
+						An emitter can send to its own room, and to all adjacent rooms if the emitter and listener are in the same room. 
+						If a limit is set, the most prominent sends are kept, 
+						based on spread to the adjacent portal from the emitters perspective.
+						Set to 1 to only allow emitters to send directly to their current room. Set to 0 to disable the limit.
+					-->
+					<maxEmitterRoomAuxSends> 2 </maxEmitterRoomAuxSends>
+					<!--
+						The maximum possible number of diffraction points at each end of a reflection path. 
+						Diffraction on reflection allows reflections to fade in and out smoothly as the listener or emitter 
+						moves in and out of the reflection's shadow zone.
+						When greater than zero, diffraction rays are sent from the listener to search for 
+						reflections around one or more corners from the listener.
+						Diffraction must be enabled on the geometry to find diffracted reflections (refer to \c AkGeometryParams). 
+						Set to 0 to disable diffraction on reflections.
+						To allow reflections to propagate through portals without being cut off, 
+						set \c uDiffractionOnReflectionsOrder to 2 or greater.
+					-->
+					<diffractionOnReflectionsOrder> 1 </diffractionOnReflectionsOrder>
+					<!--
+						The total length of a path composed of a sequence of segments (or rays) cannot exceed the defined maximum path length. 
+						High values compute longer paths but increase the CPU cost.
+						Each individual sound is also affected by its maximum attenuation distance, specified in the Authoring tool. 
+						Reflection or diffraction paths, calculated inside Spatial Audio, will never exceed a sound's maximum attenuation distance.
+						Note, however, that attenuation is considered infinite if the furthest point is above the audibility threshold.
+					-->
+					<maxPathLength> 250 </maxPathLength>
+					<!--
+						Defines the targeted computation time allocated for the ray tracing engine. 
+						Defined as a percentage [0, 100] of the current audio frame. 
+						The ray tracing engine dynamically adapts the number of primary rays to target the specified computation time value. 
+						In all circumstances, the computed number of primary rays cannot exceed the number of primary rays 
+						specified by AkSpatialAudioInitSettings::uNumberOfPrimaryRays.
+						A value of 0 indicates no target has been set. In this case, the number of primary rays is fixed and is set 
+						by AkSpatialAudioInitSettings::uNumberOfPrimaryRays.
+					-->
+					<cpuLimitPercentage>50</cpuLimitPercentage>
+					<!--
+						Spread the computation of paths on uLoadBalancingSpread frames [1..[. 
+						When uLoadBalancingSpread is set to 1, no load balancing is done. 
+						Values greater than 1 indicate the computation of paths will be spread on this number of frames.
+					-->
+					<loadBalancingSpread> 2 </loadBalancingSpread>
+					<!--
+						Enable computation of geometric diffraction and transmission paths for all sources that have the 
+						<b>Enable Diffraction and Transmission</b> box checked in the Positioning tab of the Wwise Property Editor.
+						This flag enables sound paths around (diffraction) and through (transmission) geometry 
+						(see \c AK::SpatialAudio::SetGeometry). Setting \c bEnableGeometricDiffractionAndTransmission to false 
+						implies that geometry is only to be used for reflection calculation.
+						Diffraction edges must be enabled on geometry for diffraction calculation (see \c AkGeometryParams).
+						If \c bEnableGeometricDiffractionAndTransmission is false but a sound has 
+						<b>Enable Diffraction and Transmission</b> selected in the Positioning tab of the authoring tool, 
+						the sound will diffract through portals but will pass through geometry as if it is not there.
+						One would typically disable this setting in the case that the game intends to perform its own obstruction calculation, 
+						but geometry is still passed to spatial audio for reflection calculation.
+					-->
+					<enableGeometricDiffractionAndTransmission> true </enableGeometricDiffractionAndTransmission>
+					<!--
+						An emitter that is diffracted through a portal or around geometry will have its apparent or 
+						virtual position calculated by Wwise Spatial Audio and passed on to the sound engine.
+					-->
+					<calcEmitterVirtualPosition> true </calcEmitterVirtualPosition>
+				</default>
+				<userPresets>
+					<!-- disabled uses default settings -->
+					<disabled/>
+					<low>
+						<numberOfPrimaryRays> 8 </numberOfPrimaryRays>
+					</low>
+					<medium>
+						<numberOfPrimaryRays> 8 </numberOfPrimaryRays>
+						<maxDiffractionOrder> 2 </maxDiffractionOrder>
+					</medium>
+					<high>
+						<numberOfPrimaryRays> 12 </numberOfPrimaryRays>
+						<maxDiffractionOrder> 3 </maxDiffractionOrder>
+					</high>
+				</userPresets>
+			</presetConfigs>
+		</spatialAudio>
 	</soundMgr>
 	<logging>
 		<!--
@@ -1040,13 +1181,16 @@
 		<taskSystem>
 			<!-- Number of threads for resources and layout works are computed as -->
 			<!-- threadsCount = min(maxThreads, max(minThreads, int(cpuCores / cpuCoresThreshold) + 1)) -->
-			<maxThreads>2</maxThreads>
+			<maxThreads>4</maxThreads>
 			<!-- Do not set fewer than 2 threads - it may cause video decoding issues. See WOTD-277499 -->
 			<minThreads>2</minThreads>
-			<cpuCoresThreshold>5</cpuCoresThreshold>
+			<cpuCoresThreshold>1</cpuCoresThreshold>
 		</taskSystem>
 	</gameface>
 	<visualScript>
 		<debuggerPort>    1454    </debuggerPort>
 	</visualScript>
+	<visibilityTunnel>
+		<enabled> true </enabled>
+	</visibilityTunnel>
 </engine_config.xml>

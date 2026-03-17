@@ -469,7 +469,7 @@
 		</emitter>
 	</lod>
 	<lod>
-		<s_effect_name>Lod_4000_4200</s_effect_name>
+		<s_effect_name> Lod_4000_4200 </s_effect_name>
 		<i_lod_mask>
 			<ps_particle_lod_default> 0 </ps_particle_lod_default>
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
@@ -603,11 +603,11 @@
 			</tl_angle_speed_key>
 			<tl_Color_key>
 				<time> 0.000000 </time>
-				<value_RGBA> 188.000000 201.000000 231.000000 0.800000 </value_RGBA>
+				<value_RGBA> 188.000000 201.000000 231.000000 0.356863 </value_RGBA>
 				<time> 0.030660 </time>
-				<value_RGBA> 173.000000 195.000000 220.000000 0.537250 </value_RGBA>
+				<value_RGBA> 173.000000 195.000000 220.000000 0.223529 </value_RGBA>
 				<time> 0.360849 </time>
-				<value_RGBA> 168.000000 197.000000 226.000000 0.207840 </value_RGBA>
+				<value_RGBA> 168.000000 197.000000 226.000000 0.137255 </value_RGBA>
 				<time> 1.000000 </time>
 				<value_RGBA> 168.000000 191.000000 221.000000 0.000000 </value_RGBA>
 			</tl_Color_key>
@@ -634,15 +634,15 @@
 			<m_supportedQualityMask> 1 </m_supportedQualityMask>
 			<m_supportedPassMask> 1021 </m_supportedPassMask>
 			<m_supportedSniperPassMask> 131072 </m_supportedSniperPassMask>
-			<f_fadeInOffsetFrom> 2.000000 </f_fadeInOffsetFrom>
-			<f_fadeInOffsetTo> 5.000000 </f_fadeInOffsetTo>
+			<f_fadeInOffsetFrom> 6.000000 </f_fadeInOffsetFrom>
+			<f_fadeInOffsetTo> 8.000000 </f_fadeInOffsetTo>
 			<f_dir_length_max> 0.000000 </f_dir_length_max>
 			<f_slopeFadeCoeff> 0.000000 </f_slopeFadeCoeff>
 			<particle_ex.YPR_start> 0.000000 0.000000 0.000000 </particle_ex.YPR_start>
 			<particle_ex.YPR_start_spread> 0.000000 0.000000 0.000000 </particle_ex.YPR_start_spread>
 			<particle_ex.f_soft_factor> 1.000000 </particle_ex.f_soft_factor>
 			<particle_ex.f_ground_height_offset> 0.000000 </particle_ex.f_ground_height_offset>
-			<particle_ex.deffered_color_mult> 1.000000 </particle_ex.deffered_color_mult>
+			<particle_ex.deffered_color_mult> 0.800000 </particle_ex.deffered_color_mult>
 			<particle.dw_mode>
 				<ps_particle_use_frames> 1 </ps_particle_use_frames>
 				<ps_particle_random_frame> 0 </ps_particle_random_frame>
@@ -657,14 +657,14 @@
 				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
 			</particle.dw_mode>
 			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
-			<particle.base.f_life_min> 1.000000 </particle.base.f_life_min>
-			<particle.base.f_life_max> 1.300000 </particle.base.f_life_max>
+			<particle.base.f_life_min> 0.600000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 0.900000 </particle.base.f_life_max>
 			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
 			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
 			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
-			<particle.f_particle_size> 1.300000 </particle.f_particle_size>
-			<particle.f_particle_size_max> 1.300000 </particle.f_particle_size_max>
+			<particle.f_particle_size> 1.000000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 1.000000 </particle.f_particle_size_max>
 			<particle.f_part_speed_module> 2.000000 </particle.f_part_speed_module>
 			<particle.f_part_speed_module_max> 3.000000 </particle.f_part_speed_module_max>
 			<particle.UV_set.left> 0.250000 </particle.UV_set.left>

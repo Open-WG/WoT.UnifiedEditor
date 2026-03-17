@@ -442,6 +442,9 @@
 			<coverValidationHeightStep> 0.25 </coverValidationHeightStep>
 			<coverValidationSubSampleNumDirections> 3 </coverValidationSubSampleNumDirections>
 			<coverValidationSubSampleNumDistances> 3 </coverValidationSubSampleNumDistances>
+			<coverValidationUnreachableDistanceMin> 1.25 </coverValidationUnreachableDistanceMin>
+			<coverValidationUnreachableDistanceMax> 100.0 </coverValidationUnreachableDistanceMax>
+			<coverValidationUnreachableNumPoints> 3 </coverValidationUnreachableNumPoints>
 			<minCoverAngle> 20.0 </minCoverAngle>
 			<shootingPoints>
 				<defaults>
@@ -456,6 +459,8 @@
 					<sampleRadius> 20.0 </sampleRadius>
 					<minShootingWindow> 5.0 </minShootingWindow>
 					<minSampleAngle> 5.0 </minSampleAngle>
+					<checkArcMin> 0.0 </checkArcMin>
+					<checkArcMax> 0.0 </checkArcMax>
 				</defaults>
 				<rule/>
 			</shootingPoints>
@@ -618,12 +623,17 @@
 			<minCoverSpacingMul> 3.0 </minCoverSpacingMul>
 		</Slope>
 		<Low>
-			<coverValidationEnabled> false </coverValidationEnabled>
+			<coverValidationEnabled> true </coverValidationEnabled>
+			<coverValidationNumHeights> 1 </coverValidationNumHeights>
+			<coverValidationSubSampleNumDirections> 2 </coverValidationSubSampleNumDirections>
+			<coverValidationSubSampleNumDistances> 1 </coverValidationSubSampleNumDistances>
 			<shootingPoints>
 				<rule>
 					<distance> 0.0 </distance>
 					<pointAtOrigin> true </pointAtOrigin>
-					<minShootingWindow> 2.0 </minShootingWindow>
+					<minShootingWindow> 2.5 </minShootingWindow>
+					<checkArcMin> 15.0 </checkArcMin>
+					<checkArcMax> 90.0 </checkArcMax>
 				</rule>
 			</shootingPoints>
 		</Low>
@@ -708,6 +718,11 @@
 	</visibilityVolume>
 	<computeGrid>
 		<cellSize> 20.0 20.0 </cellSize>
+		<!--
+			Optional parameter for ai_generation.config: specifies the navmesh to use for ComputeGrid generation.
+     		If left empty, the smallest available navmesh will be selected automatically.
+     	-->
+		<!-- <navmesh> CTF_2.5 </navmesh> -->
 	</computeGrid>
 	<visibilityCache>
 		<sourceTraceHeights>
@@ -718,6 +733,7 @@
 		<bottomPitch>0.30</bottomPitch>
 		<subsamplesYaw>3</subsamplesYaw>
 		<subsamplesPitch>3</subsamplesPitch>
+		<targetTraceHeight> 5 </targetTraceHeight>
 	</visibilityCache>
 	<areaTypes>
 		<area>

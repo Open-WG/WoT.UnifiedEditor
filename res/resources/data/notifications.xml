@@ -1,5 +1,19 @@
 <notifications>
 	<notification>
+		<serial_id> 8 </serial_id>
+		<header> Notice performance improvement? </header>
+		<message> Find out why </message>
+		<link_text> Remote Cache for JIT Compiler </link_text>
+		<link> https://techdoc.wargaming.net/ue-sandbox/asset-pipeline/bigworld-jit-compiler/?q=jit </link>
+	</notification>
+	<notification>
+		<serial_id> 6 </serial_id>
+		<header> Record Mode for Sequence Editor is here! </header>
+		<message> Check out the newest enhancement for the tool: </message>
+		<link_text> Record Mode for Sequence Editor </link_text>
+		<link> https://techdoc.wargaming.net/ue/updates/v2.0.1-record-mode/ </link>
+	</notification>
+	<notification>
 		<serial_id> 5 </serial_id>
 		<header> New: Curves Editor in Particles mode </header>
 		<link_text> Learn more </link_text>
@@ -7,20 +21,20 @@
 		<icon></icon>
 	</notification>
 	<notification>
-		<serial_id> 4 </serial_id>
-		<from> 20.12.2024 </from>
-		<to> 07.01.2025 </to>
+		<serial_id> 9 </serial_id>
+		<from> 22.12.2025 </from>
+		<to> 07.01.2026 </to>
 		<header> Ho! Ho! Ho! </header>
 		<icon> resources/images/events/christmas/santa.svg </icon>
-		<message> Christmas time is coming! Enjoy new UE icons for Winter Holidays. If you want to switch the changes off, please, push the hat button in the header and restart the app </message>
+		<message> Christmas time is coming! Enjoy icons for Winter Holidays in UE. If you want to switch the changes off, please, push the hat button in the header and restart the app </message>
 	</notification>
 	<notification>
-		<serial_id> 3 </serial_id>
-		<from> 27.10.2024 </from>
-		<to> 03.11.2024 </to>
+		<serial_id> 7 </serial_id>
+		<from> 24.10.2025 </from>
+		<to> 03.11.2025 </to>
 		<header> Booooooooooo! </header>
 		<icon> resources/images/events/halloween/scream.svg </icon>
-		<message> Spooky time is coming! Enjoy new UE icons for Halloween. If you want to switch the changes off, please, push the pumpkin button in the header and restart the app </message>
+		<message> Spooky time is coming! Enjoy Halloween icons in UE. If you want to switch the changes off, please, push the pumpkin button in the header and restart the app </message>
 	</notification>
 	<notification>
 		<serial_id> 2 </serial_id>

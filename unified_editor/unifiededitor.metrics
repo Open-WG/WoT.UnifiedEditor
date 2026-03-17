@@ -1,3 +1,5 @@
+<!-- GRAPHYTE DB address - carbon-stg.wgtest.net -->
+<!-- GRAFANA address - https://grafana.wgtest.net/d/vL1fupXnk/unified-editor-health-metrics-v0?orgId=1 -->
 <root>
 	<storages>
 		<panels>
@@ -338,6 +340,27 @@
 				</info>
 			</StorageTypeInfo>
 		</editor_init_time>
+		<editor_init_time_remote>
+			<pushType> update </pushType>
+			<StorageTypeInfo>
+				<info>
+					<name> resource </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> editor_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> ue_name </name>
+					<type> string </type>
+				</info>
+				<info>
+					<name> seconds </name>
+					<type> int64 </type>
+				</info>
+			</StorageTypeInfo>
+		</editor_init_time_remote>
 		<mode_total_time>
 			<pushType> update </pushType>
 			<StorageTypeInfo>
@@ -494,6 +517,7 @@
 						<key> application.metrics_version/users/user.location/user.userid/editor/application.name/user.svn_branch/modes/editor_active_time.editor_name/editor_active_time.resource/info/session_active/editor_active_time.seconds </key>
 						<key> application.metrics_version/users/user.location/user.userid/editor/application.name/user.svn_branch/modes/editor_focus_time.editor_name/editor_focus_time.resource/info/session_focus/editor_focus_time.seconds </key>
 						<key> application.metrics_version/users/user.location/user.userid/editor/application.name/user.svn_branch/modes/editor_init_time.editor_name/editor_init_time.resource/info/initialize/editor_init_time.seconds </key>
+						<key> application.metrics_version/users/user.location/user.userid/editor/application.name/user.svn_branch/modes/editor_init_time_remote.editor_name/editor_init_time_remote.resource/info/initialize_remote/editor_init_time_remote.seconds </key>
 						<!-- TOOL -->
 						<!-- ELI_FR_4 -->
 						<key> application.metrics_version/users/user.location/user.userid/editor/application.name/user.svn_branch/modes/mode_total_time.editor_name/mode_total_time.resource/tools/mode_total_time.mode_name/info/session_total/mode_total_time.seconds </key>

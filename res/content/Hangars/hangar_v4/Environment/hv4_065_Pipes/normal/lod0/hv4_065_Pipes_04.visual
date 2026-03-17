@@ -187,21 +187,22 @@
 	<metaData>
 		<settings>
 			<exportAnimation> false </exportAnimation>
-			<exportMode> 1 </exportMode>
+			<exportMode> 2 </exportMode>
 			<boneCount> 130 </boneCount>
 			<transformToOrigin> false </transformToOrigin>
 			<allowScale> false </allowScale>
 			<bumpMapped> true </bumpMapped>
 			<keepExistingMaterials> true </keepExistingMaterials>
-			<supportSkinningWithBsp> false </supportSkinningWithBsp>
+			<supportSkinningWithBsp> true </supportSkinningWithBsp>
 			<snapVertices> false </snapVertices>
+			<ignoreUvsAndNormals> false </ignoreUvsAndNormals>
 			<stripRefPrefix> false </stripRefPrefix>
 			<useReferenceNode> false </useReferenceNode>
 			<referenceNodesFile/>
 			<disableVisualChecker> false </disableVisualChecker>
 			<useLegacyScaling> false </useLegacyScaling>
 			<fixCylindrical> false </fixCylindrical>
-			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<fixNodeTreeLOD> true </fixNodeTreeLOD>
 			<useLegacyOrientation> false </useLegacyOrientation>
 			<sceneRootAdded> false </sceneRootAdded>
 			<recalculateTangents> false </recalculateTangents>

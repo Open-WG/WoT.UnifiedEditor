@@ -464,8 +464,8 @@
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
 			<ps_particle_lod_last_available> 1 </ps_particle_lod_last_available>
 		</i_lod_mask>
-		<f_near_clip> 0.000000 </f_near_clip>
-		<f_far_clip> 11000.000000 </f_far_clip>
+		<f_near_clip> 4000.000000 </f_near_clip>
+		<f_far_clip> 8000.000000 </f_far_clip>
 		<f_Skip_time> 0.000000 </f_Skip_time>
 		<buffer/>
 		<dw_mode>
@@ -501,7 +501,7 @@
 				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
 				<ps_element_not_render> 0 </ps_element_not_render>
 				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
-				<ps_element_off> 1 </ps_element_off>
+				<ps_element_off> 0 </ps_element_off>
 				<ps_emitter_off> 0 </ps_emitter_off>
 				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
 				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
@@ -526,7 +526,7 @@
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 3.000000 0.100000 </emitter.fa_start_pos>
-			<f_rate> 12.000000 </f_rate>
+			<f_rate> 4.000000 </f_rate>
 			<vt.ui_volume_type> 1 </vt.ui_volume_type>
 			<f_X_dim_volume> 1.000000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.100000 </f_Y_dim_volume>
@@ -618,11 +618,11 @@
 			<Ex_Filename/>
 			<f_solidThreshold> 0.000000 </f_solidThreshold>
 			<QUALITY_MIN> true </QUALITY_MIN>
-			<QUALITY_LOW> true </QUALITY_LOW>
-			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
-			<QUALITY_HIGH> true </QUALITY_HIGH>
-			<QUALITY_ULTRA> true </QUALITY_ULTRA>
-			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> false </QUALITY_MEDIUM>
+			<QUALITY_HIGH> false </QUALITY_HIGH>
+			<QUALITY_ULTRA> false </QUALITY_ULTRA>
+			<m_supportedQualityMask> 1 </m_supportedQualityMask>
 			<m_supportedPassMask> 1 </m_supportedPassMask>
 			<m_supportedSniperPassMask> 1 </m_supportedSniperPassMask>
 			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>
@@ -721,7 +721,7 @@
 				<ps_element_use_timeline_10> 0 </ps_element_use_timeline_10>
 				<ps_element_not_render> 0 </ps_element_not_render>
 				<ps_element_use_tangent_speed> 0 </ps_element_use_tangent_speed>
-				<ps_element_off> 1 </ps_element_off>
+				<ps_element_off> 0 </ps_element_off>
 				<ps_emitter_off> 0 </ps_emitter_off>
 				<ps_element_r_type_dx> 0 </ps_element_r_type_dx>
 				<ps_element_r_type_shader> 0 </ps_element_r_type_shader>
@@ -746,7 +746,7 @@
 			<emitter.f_delay_min> 0.010000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.010000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 3.000000 0.100000 </emitter.fa_start_pos>
-			<f_rate> 3.000000 </f_rate>
+			<f_rate> 1.000000 </f_rate>
 			<vt.ui_volume_type> 1 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.300000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.100000 </f_Y_dim_volume>
@@ -838,11 +838,11 @@
 			<Ex_Filename/>
 			<f_solidThreshold> 0.000000 </f_solidThreshold>
 			<QUALITY_MIN> true </QUALITY_MIN>
-			<QUALITY_LOW> true </QUALITY_LOW>
-			<QUALITY_MEDIUM> true </QUALITY_MEDIUM>
-			<QUALITY_HIGH> true </QUALITY_HIGH>
-			<QUALITY_ULTRA> true </QUALITY_ULTRA>
-			<m_supportedQualityMask> 31 </m_supportedQualityMask>
+			<QUALITY_LOW> false </QUALITY_LOW>
+			<QUALITY_MEDIUM> false </QUALITY_MEDIUM>
+			<QUALITY_HIGH> false </QUALITY_HIGH>
+			<QUALITY_ULTRA> false </QUALITY_ULTRA>
+			<m_supportedQualityMask> 1 </m_supportedQualityMask>
 			<m_supportedPassMask> 1 </m_supportedPassMask>
 			<m_supportedSniperPassMask> 1 </m_supportedSniperPassMask>
 			<f_fadeInOffsetFrom> 0.000000 </f_fadeInOffsetFrom>

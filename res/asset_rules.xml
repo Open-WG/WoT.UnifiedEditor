@@ -57,7 +57,8 @@
   <rule pattern="^system/data/texture_detail_levels.config$">
     <root>true</root>
     <converter>HierarchicalConfigConverter</converter>
-    <converterParams>-f texture_details.xml -o system/data/texture_detail_levels.xml</converterParams>
+    <!-- */gui/gameface excludes the gameface folder in res/wot_ext: * matches any folder (the extension folder) -->
+    <converterParams>--exclude-dir gui/gameface --exclude-dir */gui/gameface -f texture_details.xml -o system/data/texture_detail_levels.xml</converterParams>
   </rule>
   <rule pattern=".*(\.(bmp|tga|png|dds))$">
     <root>true</root>
@@ -259,10 +260,6 @@
     <root>true</root>
     <converter>FbxConverter</converter>
   </rule>
-  <rule pattern="^virtual://.*(\.fbx)?FbxConverter$">
-    <root>true</root>
-    <converter>FbxConverter</converter>
-  </rule>
   <!-- realm-specific texture overrides aren't to be considered root -->
   <rule pattern=".*/_realm/.*">
     <root>false</root>
@@ -377,7 +374,7 @@
   </rule>
   <rule pattern=".*(\.anim_processed)$">
     <sourcePattern>(.*)\.anim_processed$</sourcePattern>
-    <sourceFormat>virtual://\1.fbx?FbxConverter</sourceFormat>
+    <sourceFormat>\1.fbx</sourceFormat>
   </rule>
   <ruleDirectory>helpers/spaces</ruleDirectory>
   <ruleDirectory>scripts</ruleDirectory>

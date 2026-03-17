@@ -46,6 +46,9 @@
 			<camouflageNet>
 				<invisibilityBonus/>
 			</camouflageNet>
+			<deluxeCamouflageNet>
+				<invisibilityBonus/>
+			</deluxeCamouflageNet>
 			<additionalInvisibilityDevice>
 				<invisibilityBonus/>
 			</additionalInvisibilityDevice>
@@ -281,8 +284,9 @@
 							<rate />
 						</burst>
 						<autoShoot>
-							<shotDispersionPerSec />
+							<shotDispersionPerShot />
 							<maxShotDispersion />
+							<aimingDelay />
 							<groupSize />
 						</autoShoot>
 						<controllableReload>
@@ -494,6 +498,7 @@
 				<collisionModelServer/>
 				<collisionModelClient/>
 				<crashed/>
+				<capsuleScale/>
 			</hitTester>
 			<emblemSlots>
 				<clan>
@@ -851,6 +856,7 @@
 					<collisionModelServer/>
 					<collisionModelClient/>
 					<crashed/>
+					<capsuleScale/>
 				</hitTester>
 				<gunPosition />
 				<gunJointPitch />
@@ -881,6 +887,7 @@
 							<collisionModelServer/>
 							<collisionModelClient/>
 							<crashed/>
+							<capsuleScale/>
 						</hitTester>
 						<emblemSlots>
 							<insigniaOnGun>
@@ -899,6 +906,8 @@
 						<animateEmblemSlots />
 						<reloadEffect />
 						<effects />
+						<prefabEffects />
+						<muzzleBrake />
 						<shotOffset />
 						<multiGunState>
 							<_ANYTHING_ />

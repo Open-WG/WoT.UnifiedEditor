@@ -171,29 +171,6 @@
 		<serverId> 0 </serverId>
 	</model>
 	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-			<groupName> group_55 </groupName>
-			<groupPivotYPR> 0.000000 -0.000000 0.000000 </groupPivotYPR>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
-		<transform>
-			<row0> 2.711812 0.534349 3.624908 </row0>
-			<row1> 0.891983 -4.443753 -0.012242 </row1>
-			<row2> 2.452885 0.497619 -1.908369 </row2>
-			<row3> 6.804794 12.696617 83.184845 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
 		<resource> content/Hangars/hangar_v4/Buildings/hv4_034_HangarConstruction/normal/lod0/hv4_034_HangarConstruction_01.model </resource>
 		<editorOnly>
 			<hidden> false </hidden>
@@ -385,27 +362,6 @@
 		<serverId> 15 </serverId>
 	</model>
 	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_blue.model </resource>
-		<transform>
-			<row0> 2.010154 -0.401373 1.969675 </row0>
-			<row1> 0.000000 2.769632 0.564385 </row1>
-			<row2> -1.387920 -0.277130 1.359971 </row2>
-			<row3> 7.560440 14.845264 71.044464 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
 		<resource> content/Hangars/hangar_v4/Buildings/hv4_030_RoofModule/normal/lod0/hv4_030_RoofModule_01.model </resource>
 		<editorOnly>
 			<hidden> false </hidden>
@@ -516,27 +472,6 @@
 			<frozen> false </frozen>
 		</editorOnly>
 		<visibilityMask> 4294967295 </visibilityMask>
-		<metaData/>
-		<megalodFlag> 0 </megalodFlag>
-		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
-		<transform>
-			<row0> -1.500000 0.000000 -0.000001 </row0>
-			<row1> 0.000000 1.500000 0.000000 </row1>
-			<row2> 0.000001 0.000000 -1.500000 </row2>
-			<row3> 0.474602 15.548242 97.103546 </row3>
-		</transform>
-		<castsShadow> false </castsShadow>
-		<alwaysDynamic> false </alwaysDynamic>
-		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
-		<destructibleState> undamaged </destructibleState>
-		<decorative> 384 </decorative>
-	</model>
-	<model>
-		<editorOnly>
-			<hidden> false </hidden>
-			<frozen> false </frozen>
-		</editorOnly>
-		<visibilityMask> 4294967295 </visibilityMask>
 		<decorative> 56 </decorative>
 		<metaData/>
 		<megalodFlag> 0 </megalodFlag>
@@ -563,10 +498,56 @@
 		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
 		<destructibleState> undamaged </destructibleState>
 	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp.model </resource>
+		<transform>
+			<row0> 2.711811 0.534349 3.624908 </row0>
+			<row1> 0.891983 -4.443752 -0.012242 </row1>
+			<row2> 2.452884 0.497619 -1.908369 </row2>
+			<row3> 6.804794 12.696617 83.184845 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<model>
+		<editorOnly>
+			<hidden> false </hidden>
+			<frozen> false </frozen>
+		</editorOnly>
+		<visibilityMask> 4294967295 </visibilityMask>
+		<metaData/>
+		<megalodFlag> 0 </megalodFlag>
+		<resource> particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model </resource>
+		<transform>
+			<row0> -1.500000 0.000000 -0.000001 </row0>
+			<row1> 0.000000 1.500000 0.000000 </row1>
+			<row2> 0.000001 0.000000 -1.500000 </row2>
+			<row3> 0.474602 15.548242 97.103546 </row3>
+		</transform>
+		<castsShadow> false </castsShadow>
+		<alwaysDynamic> false </alwaysDynamic>
+		<ignoresObjectsFarplane> false </ignoresObjectsFarplane>
+		<destructibleState> undamaged </destructibleState>
+		<decorative> 384 </decorative>
+	</model>
+	<terrain>
+		<resource> 0001fffeo.cdata/terrain2 </resource>
+	</terrain>
 	<spotLight>
 		<colour> 255.000000 136.000000 71.000000 </colour>
 		<position> 67.853165 8.430585 98.737892 </position>
 		<direction> 0.045683 0.314830 -0.948048 </direction>
+		<orientation> -0.003838 0.986919 0.159409 0.023764 </orientation>
 		<innerRadius> 4.904546 </innerRadius>
 		<outerRadius> 30.922976 </outerRadius>
 		<lodShift> 1000.000000 </lodShift>
@@ -583,6 +564,12 @@
 		<colorTemperature> 1000.000000 </colorTemperature>
 		<isVolumetric> false </isVolumetric>
 		<volumetricIntensity> 0.300000 </volumetricIntensity>
+		<photometricProfile/>
+		<cookieTexture/>
+		<isScrollingTexture> false </isScrollingTexture>
+		<scrollingSpeed> 1.000000 </scrollingSpeed>
+		<scrollingDirection> 1.000000 0.000000 </scrollingDirection>
+		<tilingFactor> 1.000000 1.000000 </tilingFactor>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
@@ -592,9 +579,10 @@
 		<metaData/>
 	</spotLight>
 	<spotLight>
-		<colour> 188.000000 241.000305 255.000000 </colour>
+		<colour> 188.000000 241.000336 255.000000 </colour>
 		<position> 56.251587 22.211901 48.370605 </position>
 		<direction> 0.184336 -0.463987 0.866451 </direction>
+		<orientation> 0.237601 0.101590 -0.024995 0.965712 </orientation>
 		<innerRadius> 5.719175 </innerRadius>
 		<outerRadius> 45.675957 </outerRadius>
 		<lodShift> 1000.000000 </lodShift>
@@ -611,6 +599,12 @@
 		<colorTemperature> 1000.000000 </colorTemperature>
 		<isVolumetric> false </isVolumetric>
 		<volumetricIntensity> 0.300000 </volumetricIntensity>
+		<photometricProfile/>
+		<cookieTexture/>
+		<isScrollingTexture> false </isScrollingTexture>
+		<scrollingSpeed> 1.000000 </scrollingSpeed>
+		<scrollingDirection> 1.000000 0.000000 </scrollingDirection>
+		<tilingFactor> 1.000000 1.000000 </tilingFactor>
 		<editorOnly>
 			<hidden> false </hidden>
 			<frozen> false </frozen>
@@ -619,7 +613,4 @@
 		<decorative> 384 </decorative>
 		<metaData/>
 	</spotLight>
-	<terrain>
-		<resource> 0001fffeo.cdata/terrain2 </resource>
-	</terrain>
 </root>

@@ -1,0 +1,91 @@
+<root>
+	<node>
+		<identifier> Scene Root </identifier>
+		<transform>
+			<row0> 1.000000 0.000000 0.000000 </row0>
+			<row1> 0.000000 1.000000 0.000000 </row1>
+			<row2> 0.000000 0.000000 1.000000 </row2>
+			<row3> 0.000000 0.000000 0.000000 </row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject> false </treatAsWorldSpaceObject>
+		<node> Scene Root </node>
+		<geometry>
+			<vertices> vertices </vertices>
+			<stream> colour </stream>
+			<primitive> indices </primitive>
+			<primitiveGroup> 0
+				<material>
+					<identifier> s_nd0 </identifier>
+					<fx> shaders/custom/emissive_playground.fx </fx>
+					<collisionFlags> 0 </collisionFlags>
+					<materialKind> 0 </materialKind>
+					<property> destBlend
+						<Int> 2 </Int>
+					</property>
+					<property> emissionMap
+						<Texture> particles/3D_Customization/Cus_129_Revelry_Gnome/cus_129_garland_y_g_64.dds </Texture>
+					</property>
+					<property> g_deferredMult
+						<Float> 50.000000 </Float>
+					</property>
+					<property> speed
+						<Float> 0.500000 </Float>
+					</property>
+					<property> g_contrast
+						<Float> 2.000000 </Float>
+					</property>
+					<property> g_tint
+						<Vector4> 1.000000 0.505882 0.066667 1.000000 </Vector4>
+					</property>
+					<property> g_offsetBlack
+						<Float> 0.210000 </Float>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min> -0.189681 0.256006 -0.290137 </min>
+		<max> 0.147345 0.489099 0.185203 </max>
+	</boundingBox>
+	<metaData>
+		<settings>
+			<exportAnimation> false </exportAnimation>
+			<exportMode> 1 </exportMode>
+			<boneCount> 5 </boneCount>
+			<transformToOrigin> false </transformToOrigin>
+			<allowScale> false </allowScale>
+			<bumpMapped> false </bumpMapped>
+			<keepExistingMaterials> true </keepExistingMaterials>
+			<supportSkinningWithBsp> false </supportSkinningWithBsp>
+			<snapVertices> false </snapVertices>
+			<ignoreUvsAndNormals> false </ignoreUvsAndNormals>
+			<stripRefPrefix> false </stripRefPrefix>
+			<useReferenceNode> false </useReferenceNode>
+			<referenceNodesFile/>
+			<disableVisualChecker> false </disableVisualChecker>
+			<useLegacyScaling> false </useLegacyScaling>
+			<fixCylindrical> false </fixCylindrical>
+			<fixNodeTreeLOD> false </fixNodeTreeLOD>
+			<useLegacyOrientation> false </useLegacyOrientation>
+			<sceneRootAdded> false </sceneRootAdded>
+			<recalculateTangents> false </recalculateTangents>
+			<includeMeshes> true </includeMeshes>
+			<includeEnvelopesAndBones> false </includeEnvelopesAndBones>
+			<includeNodes> true </includeNodes>
+			<includeMaterials> true </includeMaterials>
+			<includeAnimations> false </includeAnimations>
+			<useCharacterMode> false </useCharacterMode>
+			<animationName> anim </animationName>
+			<includePortals> false </includePortals>
+			<worldSpaceOrigin> false </worldSpaceOrigin>
+			<unitScale> 0.100000 </unitScale>
+			<localHierarchy> false </localHierarchy>
+			<nodeFilter> 1 </nodeFilter>
+			<copyExternalTextures> false </copyExternalTextures>
+			<copyTexturesTo/>
+		</settings>
+	</metaData>
+</root>

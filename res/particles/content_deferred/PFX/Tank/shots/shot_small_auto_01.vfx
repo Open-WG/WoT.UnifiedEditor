@@ -2165,7 +2165,7 @@
 		</emitter>
 	</lod>
 	<lod>
-		<s_effect_name>Lod_4000_4200</s_effect_name>
+		<s_effect_name> Lod_4000_4200 </s_effect_name>
 		<i_lod_mask>
 			<ps_particle_lod_default> 0 </ps_particle_lod_default>
 			<ps_particle_lod_last_disableable> 0 </ps_particle_lod_last_disableable>
@@ -2233,7 +2233,7 @@
 			<emitter.f_delay_min> 0.000000 </emitter.f_delay_min>
 			<emitter.f_delay_max> 0.000000 </emitter.f_delay_max>
 			<emitter.fa_start_pos> 0.000000 0.000000 0.100000 </emitter.fa_start_pos>
-			<f_rate> 2.000000 </f_rate>
+			<f_rate> 1.000000 </f_rate>
 			<vt.ui_volume_type> 1 </vt.ui_volume_type>
 			<f_X_dim_volume> 0.010000 </f_X_dim_volume>
 			<f_Y_dim_volume> 0.010000 </f_Y_dim_volume>
@@ -2353,14 +2353,14 @@
 				<ps_element_speed_oriented> 0 </ps_element_speed_oriented>
 			</particle.dw_mode>
 			<particle.dw_mode_Ext_inv> 4294967295 </particle.dw_mode_Ext_inv>
-			<particle.base.f_life_min> 0.400000 </particle.base.f_life_min>
-			<particle.base.f_life_max> 0.600000 </particle.base.f_life_max>
+			<particle.base.f_life_min> 0.200000 </particle.base.f_life_min>
+			<particle.base.f_life_max> 0.340000 </particle.base.f_life_max>
 			<particle.base.f_delay_min> 0.000000 </particle.base.f_delay_min>
 			<particle.base.f_delay_max> 0.000000 </particle.base.f_delay_max>
 			<particle.base.fa_start_pos> 0.000000 0.000000 0.000000 </particle.base.fa_start_pos>
 			<particle.ui_particle_Type> 1 </particle.ui_particle_Type>
-			<particle.f_particle_size> 0.900000 </particle.f_particle_size>
-			<particle.f_particle_size_max> 1.100000 </particle.f_particle_size_max>
+			<particle.f_particle_size> 0.600000 </particle.f_particle_size>
+			<particle.f_particle_size_max> 0.800000 </particle.f_particle_size_max>
 			<particle.f_part_speed_module> 2.000000 </particle.f_part_speed_module>
 			<particle.f_part_speed_module_max> 3.000000 </particle.f_part_speed_module_max>
 			<particle.UV_set.left> 0.250000 </particle.UV_set.left>
@@ -2814,5 +2814,5 @@
 			<lighting_params.f_normal_generation_offset> 0.100000 </lighting_params.f_normal_generation_offset>
 			<lighting_params.f_tessellation_factor> 0.000000 </lighting_params.f_tessellation_factor>
 		</emitter>
-		</lod>
+	</lod>
 </root>

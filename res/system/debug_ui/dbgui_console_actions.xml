@@ -14,16 +14,31 @@
 	</item>
 
 	<item label="Add BattlePass points">
-		<item label="Standard amounts" action="$p.stats.addBattlePassPoints">
-			<param label="50">(0, 50)</param>
-			<param label="500">(0, 500)</param>
-			<param label="1250">(0, 1250)</param>
-			<param label="2500">(0, 2500)</param>
-			<param label="5000">(0, 5000)</param>
-			<param label="7500">(0, 7500)</param>
+		<item label="Standard amounts" action="$addBattlePassPoints">
+			<param label="50">(50)</param>
+			<param label="500">(500)</param>
+			<param label="1250">(1250)</param>
+			<param label="2500">(2500)</param>
+			<param label="5000">(5000)</param>
+			<param label="7500">(7500)</param>
 		</item>
-		<item label="Custom amount" action="$p.stats.addBattlePassPoints(0, " input="true" format="%s)"/>
+		<item label="Custom amount" action="$addBattlePassPoints(" input="true" format="%s)"/>
 	</item>
+
+	<item label="Add customization | id, (opt) amount">
+		<item label="Decal" action="$addCustomizationItem('DECAL', " input="true" format="%s)"/>
+		<item label="Style" action="$addCustomizationItem('STYLE', " input="true" format="%s)"/>
+		<item label="Projection Decal" action="$addCustomizationItem('PROJECTION_DECAL', " input="true" format="%s)"/>
+		<item label="3D Attachment" action="$addCustomizationItem('ATTACHMENT', " input="true" format="%s)"/>
+		<item label="Others">
+			<item label="Paint" action="$addCustomizationItem('PAINT', " input="true" format="%s)"/>
+			<item label="Camouflage" action="$addCustomizationItem('CAMOUFLAGE', " input="true" format="%s)"/>
+			<item label="Modification" action="$addCustomizationItem('MODIFICATION', " input="true" format="%s)"/>
+			<item label="Personal Number" action="$addCustomizationItem('PERSONAL_NUMBER', " input="true" format="%s)"/>
+		</item>
+	</item>
+
+	<item label="Add Lootboxes | id, (opt) count" action="$addLootboxes(" input="true" format="%s)"/>
 
 	<item label="Set battlesCount" action="$p.stats.setDossierField('a15x15.battlesCount', " input="true" format="%s)"/>
 
@@ -35,14 +50,18 @@
 	</item>
 
 	<item label="WoT+">
-		<item label="Toggle WoT+" action="$wotPlusController.toggleWotPlusDev()" />
+		<item label="Toggle WoT+ with tier" action="$wotPlusController.toggleWotPlusDev( " input="true" format="%s)" />
 		<item label="Set WoT+ State Available" action="$wotPlusController.setWotPlusStateDev(0)" />
 		<item label="Set WoT+ State Active" action="$wotPlusController.setWotPlusStateDev(1)" />
 		<item label="Set WoT+ State Canceled" action="$wotPlusController.setWotPlusStateDev(2)" />
+		<item label="Set Pro Boost Tank" action="$wotPlusController.activateProBoostOnCurrentVehicleDev()" />
+        <item label="Refresh Pro Boost Cooldown" action="$wotPlusController.refreshProBoostCooldownDev()" />
 		<item label="Give next attendance reward" action="$wotPlusController.giveAttendanceRewardDev()" />
+        <item label="Open Reward Screen with tier" action="from gui.impl.dialogs.dialogs import showRenewableSubscriptionRewardDialog; from time import time; showRenewableSubscriptionRewardDialog(" input="true" format="%s, time(), 180)" />
 		<item label="Clear loadouts cache" action="from gui.development.ui import clearWotPlusAssistantCache; clearWotPlusAssistantCache()" />
 		<item label="Request loadouts (with cache clear)" action="from gui.development.ui import invalidateWotPlusAssistant; invalidateWotPlusAssistant()" />
 		<item label="Block from requests" action="from gui.development.ui import blockWotPlusAssistantFromRequests; blockWotPlusAssistantFromRequests()" />
+        <item label="Simulate balance update" action="$wotPlusController.simulateWGMoneyBalanceUpdate()" />
 	</item>
 
 
@@ -260,12 +279,9 @@
 		<item label="draw season 1 Free Award Lists" action="$p.stats.drawFreeAwardLists(" input="true" format="%s, 1)"/>
 		<item label="draw season 2 Free Award Lists" action="$p.stats.drawFreeAwardLists(" input="true" format="%s, 2)"/>
 		<item label="add Tokens pm:points" action="$p.stats.addTokens('pm:points'," input="true" format="%s)"/>
-		<item label="add Tokens pm3:8" action="$p.stats.addTokens('pm3:8:points'," input="true" format="%s)"/>
-		<item label="add Tokens pm3:9" action="$p.stats.addTokens('pm3:9:points'," input="true" format="%s)"/>
-		<item label="add Tokens pm3:10" action="$p.stats.addTokens('pm3:10:points'," input="true" format="%s)"/>
 	</item>
 	<item label="Crew">
-		<item label="earn all skills" action="$earnAllSkills"/>
+		<item label="Earn all skills in current vehicle" action="$earnAllSkills"/>
 		<item label="Add all unique tankmen" action="$p.inventory.addAllUniqueTankmen()"/>
 		<item label="Empty barracks" action="$p.inventory.emptyBarracks()"/>
 		<item label="Show exact loading tip" action="from helpers.tips import showExactTip; showExactTip" input="true" format="('%s')"/>
@@ -274,6 +290,29 @@
 		<item label="Reset all tankmen skills" action="$p.inventory.resetAllTankmenSkills()"/>
 		<item label="Output TTC logs" action="from constants import IS_DEVELOPMENT;from gui.shared.items_parameters import params; setattr(params, '_DO_TTC_LOG', not params._DO_TTC_LOG and IS_DEVELOPMENT)"/>
 		<item label="Add mentoring license" action="$p.inventory.addMentoringLicense()"/>
+	</item>
+
+	<item label="Pet">
+		<item label="Unlock pet by id(1)" action="$pet.addPetDev" input="true" format="('%s')"/>
+		<item label="Buy pet by id(1)" action="$pet.buyPet" input="true" format="('%s')"/>
+		<item label="Select pet by id(1)" action="$pet.selectActivePet" input="true" format="('%s')"/>
+		<item label="Activate event by id(1)" action="$pet.activateEvent" input="true" format="('%s')"/>
+		<item label="Add synergy points" action="$pet.addSynergyDev" input="true" format="('%s')"/>
+		<item label="Change pet state" action="from pet_system_common.pet_constants import PetStateBehavior; $pet.selectPetStateBehavior">
+			<param label="default">(PetStateBehavior.BASIC )</param>
+			<param label="calm">(PetStateBehavior.CALM)</param>
+			<param label="hide">(PetStateBehavior.HIDDEN)</param>
+		</item>
+		<item label="Static Trigger" action="from pet_system_common.pet_constants import PetStaticTrigger; $pet.petProxy.setPetStaticTrigger">
+			<param label="afk">(PetStaticTrigger.AFK)</param>
+			<param label="idle">(PetStaticTrigger.IDLE)</param>
+			<param label="event">(PetStaticTrigger.EVENT)</param>
+		</item>
+		<item label="Trigger pet events" action="from pet_system_common.pet_constants import PetTrigger; $pet.petProxy.triggerAnimation">
+			<param label="login">(PetTrigger.LOGIN)</param>
+			<param label="first click">(PetTrigger.FIRST_CLICK)</param>
+			<param label="medal">(PetTrigger.MEDAL)</param>
+		</item>
 	</item>
 
 	<item label="Game Loading">
@@ -295,6 +334,19 @@
 		<item label="Enable VO logging" action="from gui import IngameSoundNotifications; IngameSoundNotifications._ENABLE_VO_LOGS = True">
 		</item>
 		<item label="Play VO" action="from gui.battle_control.avatar_getter import getSoundNotifications; getSoundNotifications().play" input="true" format="('%s')"/>
+	</item>
+
+	<item label="Tournament mock states">
+		<item label="WCI/OLS (only from tournament view)">
+			<item label="Sheduled Full - Twitch" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('scheduled_full_twitch')"/>
+			<item label="Live 1 match" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('live_1_match')"/>
+			<item label="Live 2 matches" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('live_2_matches')"/>
+			<item label="Live Final LB, Grand Final scheduled" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('final_lb_in_live_grand_final_scheduled')"/>
+			<item label="Grand Final, China platforms, no sheduled" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('grand_final_china_platforms_and_no_sheduled')"/>
+			<item label="Results, final pool" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('results_final_pool')"/>
+			<item label="Sheduled, china platforms" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData('scheduled_china_platforms')"/>
+			<item label="Error: Missing data" action="from gui.development.dev_tournament_mock import mockTournamentData; mockTournamentData()"/>
+		</item>
 	</item>
 
 </root>
